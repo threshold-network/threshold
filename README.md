@@ -1,3 +1,5 @@
+# Threshold Network
+
 The [Threshold Network](https://threshold.network) empowers users to utilize novel, strange, and straightforward threshold cryptography,
 run in a Byzantine-fault tolerant fashion by nodes which execute the logic of this repository.
 
