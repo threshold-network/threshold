@@ -14,7 +14,10 @@
 * [Threshold Applications](fundamentals/threshold-applications/README.md)
   * [Proxy Re-encryption (PRE)](fundamentals/threshold-applications/proxy-re-encryption-pre.md)
   * [tBTC](fundamentals/threshold-applications/tbtc.md)
-* [DAO](fundamentals/dao.md)
+* [DAO](fundamentals/dao/README.md)
+  * [Treasury Guild](fundamentals/dao/treasury-guild.md)
+  * [Integrations Guild](fundamentals/dao/integrations-guild.md)
+  * [Marketing Guild](fundamentals/dao/marketing-guild.md)
 
 ## Extras
 
