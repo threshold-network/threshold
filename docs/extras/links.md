@@ -1,11 +1,15 @@
 # Links
 
-| Title                     | Link                                                                                         |
-| ------------------------- | -------------------------------------------------------------------------------------------- |
-| Threshold Website         | [https://threshold.org/](https://threshold.org)                                              |
-| Staking Dashboard         | [https://dashboard.threshold.network/](https://dashboard.threshold.network/overview/network) |
-| Testnet Staking Dashbord  | [https://dashboard.test.threshold.network/](https://dashboard.test.threshold.network)        |
-| Official Blog             | [https://blog.threshold.network/](https://blog.threshold.network)                            |
-| PRE Application Dashboard | [https://stake.nucypher.network/](https://stake.nucypher.network)                            |
-| NuCypher  Website         | [https://www.nucypher.com/](https://www.nucypher.com)                                        |
-| Keep Website              | [https://keep.network/](https://keep.network)                                                |
+
+
+| Resource                  | Link                                                                                        |
+| ------------------------- | ------------------------------------------------------------------------------------------- |
+| Threshold Website         | [https://threshold.network](https://threshold.network)                                      |
+| Staking Dashboard         | [https://dashboard.threshold.network](https://dashboard.threshold.network/overview/network) |
+| Testnet Staking Dashbord  | [https://dashboard.test.threshold.network](https://dashboard.test.threshold.network)        |
+| PRE Application Dashboard | [https://stake.nucypher.network](https://stake.nucypher.network)                            |
+| Github                    | [https://github.com/threshold-network](https://github.com/threshold-network)                |
+| Discord                   | [https://discord.gg/threshold](https://discord.gg/threshold)                                |
+| Governance                | [https://forum.threshold.network](https://forum.threshold.network)                          |
+| Official Blog             | [https://blog.threshold.network](https://blog.threshold.network)                            |
+| Twitter                   | [https://twitter.com/thetnetwork](https://twitter.com/thetnetwork)                          |
