@@ -24,7 +24,7 @@ Follow our handy guides to get started on staking basics as quickly as possible:
 
 ### Fundamentals: Dive a little deeper
 
-Learn the fundamentals of the Thresold Network to get a deeper understanding of our main features:
+Learn the fundamentals of the Threshold Network to get a deeper understanding of our main features:
 
 {% content-ref url="fundamentals/threshold-applications/" %}
 [threshold-applications](fundamentals/threshold-applications/)
