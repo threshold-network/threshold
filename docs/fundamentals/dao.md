@@ -11,8 +11,4 @@ From an implementation perspective, both the Tokenholder DAO and the Staker DAO 
 * **Step Three — Vote Period**: Proposal voting remains open for 10 days. If the proposal passes according to requirements outlined above it moves onto step four. If the proposal fails it is canceled. Creators and supporters of the proposal may bring a modified proposal forward again but it must be sufficiently different and pass requirements outlined in step one.
 * **Step Four — Execution**: Once a proposal passes, it will be executed. Proposals are executed by the particular GovernorBravo instance hosting them.
 
-### Threshold Guilds
-
-Additionally, there are community-led guilds such as the Marketing Guild, the Integrations Guild, and the Treasury Guild. Each guild is managed by an elected committee and holds regular, rotating elections.
-
-Join a guild (via [Discord](https://discord.gg/threshold) - #dao-contribute channel) and work together with other Threshold DAO members based on your interests and expertise!
+###

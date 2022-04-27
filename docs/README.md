@@ -38,6 +38,6 @@ Learn the fundamentals of the Threshold Network to get a deeper understanding of
 [tbtc-v2.md](fundamentals/threshold-applications/tbtc-v2.md)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/threshold-dao/" %}
-[threshold-dao](fundamentals/threshold-dao/)
+{% content-ref url="fundamentals/dao.md" %}
+[dao.md](fundamentals/dao.md)
 {% endcontent-ref %}
