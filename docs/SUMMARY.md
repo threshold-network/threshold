@@ -16,7 +16,10 @@
   * [Proxy Re-encryption (PRE)](fundamentals/threshold-applications/proxy-re-encryption-pre.md)
   * [tBTC v2](fundamentals/threshold-applications/tbtc-v2.md)
 * [Threshold DAO](fundamentals/dao.md)
-  * [Guilds](fundamentals/threshold-dao/guilds.md)
+  * [🗳 Governance Process](fundamentals/threshold-dao/governance-process.md)
+  * [🏛 Governor](fundamentals/threshold-dao/governor.md)
+  * [⚡ Snapshots](fundamentals/threshold-dao/snapshots.md)
+  * [🙋♀ Guilds](fundamentals/dao/treasury-guild.md)
 
 ## Extras
 

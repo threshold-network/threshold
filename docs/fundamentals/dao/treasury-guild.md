@@ -1,4 +1,4 @@
-# Guilds
+# 🙋♀ Guilds
 
 Additionally to the DAO governance bodies, there are community-led guilds such as the Marketing Guild, the Integrations Guild, and the Treasury Guild. Each guild is managed by an elected committee and holds regular, rotating elections.
 
