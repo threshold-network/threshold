@@ -9,3 +9,5 @@ Threshold is not a single application, but the synergy of several; its origins a
 Since these applications are maintained by different teams, in different respositories,
 written in different languages, this respository contains only the tooling to ensure that
 they can be run harmoniously and contemporanouesly on a common fleet of nodes.
+
+*[Documentation powered by [GitBook](https://www.gitbook.com/)]*
