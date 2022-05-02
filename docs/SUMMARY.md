@@ -23,6 +23,7 @@
 
 ## Extras
 
+* [Staking Providers](extras/staking-providers.md)
 * [Contribution](extras/contribution.md)
 * [Contract Addresses](extras/contract-addresses.md)
 * [Best Practices](extras/best-practices.md)
