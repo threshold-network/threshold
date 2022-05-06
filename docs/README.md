@@ -14,8 +14,8 @@ Follow our handy guides to get started on staking basics as quickly as possible:
 [token-staking.md](guides/token-staking.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides/stake-delegation.md" %}
-[stake-delegation.md](guides/stake-delegation.md)
+{% content-ref url="guides/stake-delegation/" %}
+[stake-delegation](guides/stake-delegation/)
 {% endcontent-ref %}
 
 {% content-ref url="guides/migrating-legacy-stakes.md" %}

@@ -2,11 +2,11 @@
 
 Additionally to the DAO governance bodies, there are community-led guilds such as the Marketing Guild, the Integrations Guild, and the Treasury Guild. Each guild is managed by an elected committee and holds regular, rotating elections.
 
-Join a guild (via [Discord](https://discord.gg/threshold) - #dao-contribute channel) and work together with other Threshold DAO members based on your interests and expertise!
+Join a guild (via [Discord](https://discord.gg/threshold) - `#dao-contribute` channel) and work together with other Threshold DAO members based on your interests and expertise!
 
 ### Treasury Guild
 
-The [Threshold Treasury Guild](https://thresholdnetwork.notion.site/Treasury-Guild-7b50c4d66c0a4f93991cc64352d6ce73) manages the allocation and sustainability of the DAO's assets.
+The [Threshold Treasury Guild](https://thresholdnetwork.notion.site/Treasury-Guild-7b50c4d66c0a4f93991cc64352d6ce73) is responsible for effectively managing the Threshold DAO treasury. This includes growing Protocol Owned Liquidity (POL), researching / implementing best practice treasury management strategies, executing ecosystem liquidity incentives, diversifying the treasury, etc.
 
 ### Integrations Guild
 
