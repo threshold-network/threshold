@@ -27,6 +27,6 @@ Here is a summary of the overall process:
 
 ## Migrate Legacy KEEP Stake
 
-* Authorize Keep Network legacy stake - [https://dashboard.keep.network/applications/threshold](https://dashboard.keep.network/applications/threshold)
+* Authorize Threshold Staking for the Keep Network legacy stake - [https://dashboard.keep.network/applications/threshold](https://dashboard.keep.network/applications/threshold)
 
-![Stake KEEP on Threshold](../../.gitbook/assets/stake\_legacy\_keep\_on\_threshold.png)
+![Stake KEEP on Threshold](../../.gitbook/assets/stake\_legacy\_keep\_on\_threshold.jpg)
