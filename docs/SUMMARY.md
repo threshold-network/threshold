@@ -17,6 +17,7 @@
 * [Threshold Applications](fundamentals/threshold-applications/README.md)
   * [Proxy Re-encryption (PRE)](fundamentals/threshold-applications/proxy-re-encryption-pre.md)
   * [tBTC v2](fundamentals/threshold-applications/tbtc-v2.md)
+  * [Threshold USD](fundamentals/threshold-applications/threshold-usd.md)
 * [Threshold DAO](fundamentals/dao.md)
   * [🗳 Governance Process](fundamentals/threshold-dao/governance-process.md)
   * [🏛 Governor](fundamentals/threshold-dao/governor.md)
