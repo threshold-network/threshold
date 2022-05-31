@@ -10,7 +10,7 @@
 * [DAO Vote Delegation](guides/stake-delegation/README.md)
   * [Token Weight Delegation](guides/stake-delegation/token-weight-delegation.md)
   * [Stake Weight Delegation](guides/stake-delegation/stake-weight-delegation.md)
-* [Ropsten Testnet Staking](guides/ropsten-testnet-staking.md)
+* [Ropsten Testnet](guides/ropsten-testnet-staking.md)
 
 ## Fundamentals
 
