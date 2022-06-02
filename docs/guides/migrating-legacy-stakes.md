@@ -8,7 +8,7 @@ Stakes on Threshold can take the following forms:
 
 Here is a summary of the overall process:
 
-![Stake Creation](../../.gitbook/assets/staking\_initialization\_process.png)
+![Stake Creation](../.gitbook/assets/staking\_initialization\_process.png)
 
 ## Stake Liquid T
 
@@ -23,10 +23,10 @@ Here is a summary of the overall process:
 * Go to [https://stake.nucypher.network/manage/stake](https://stake.nucypher.network/manage/stake)
 * Click _"Stake NU on Threshold"_
 
-![Stake NU on Threshold](../../.gitbook/assets/stake\_legacy\_nu\_on\_threshold.png)
+![Stake NU on Threshold](../.gitbook/assets/stake\_legacy\_nu\_on\_threshold.png)
 
 ## Migrate Legacy KEEP Stake
 
 * Authorize Threshold Staking for the Keep Network legacy stake - [https://dashboard.keep.network/applications/threshold](https://dashboard.keep.network/applications/threshold)
 
-![Stake KEEP on Threshold](../../.gitbook/assets/stake\_legacy\_keep\_on\_threshold.jpg)
+![Stake KEEP on Threshold](../.gitbook/assets/stake\_legacy\_keep\_on\_threshold.jpg)
