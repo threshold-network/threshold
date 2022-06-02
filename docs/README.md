@@ -30,12 +30,12 @@ Learn the fundamentals of the Threshold Network to get a deeper understanding of
 [Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/proxy-re-encryption-pre.md" %}
-[proxy-re-encryption-pre.md](fundamentals/proxy-re-encryption-pre.md)
+{% content-ref url="fundamentals/threshold-applications/proxy-re-encryption-pre.md" %}
+[proxy-re-encryption-pre.md](fundamentals/threshold-applications/proxy-re-encryption-pre.md)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/tbtc-v2.md" %}
-[tbtc-v2.md](fundamentals/tbtc-v2.md)
+{% content-ref url="fundamentals/threshold-applications/tbtc-v2.md" %}
+[tbtc-v2.md](fundamentals/threshold-applications/tbtc-v2.md)
 {% endcontent-ref %}
 
 {% content-ref url="fundamentals/dao.md" %}

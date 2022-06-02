@@ -12,11 +12,11 @@
 
 ## Fundamentals
 
-* [Proxy Re-encryption (PRE)](fundamentals/proxy-re-encryption-pre.md)
-* [tBTC v2](fundamentals/tbtc-v2.md)
-* [Threshold USD](fundamentals/threshold-usd/README.md)
-  * [Initial Protocol Loan](fundamentals/threshold-usd/initial-protocol-loan.md)
-  * [B. Protocol](fundamentals/threshold-usd/b.-protocol.md)
+* [Proxy Re-encryption (PRE)](fundamentals/threshold-applications/proxy-re-encryption-pre.md)
+* [tBTC v2](fundamentals/threshold-applications/tbtc-v2.md)
+* [Threshold USD](fundamentals/threshold-applications/threshold-usd.md)
+  * [Initial Protocol Loan](fundamentals/threshold-applications/threshold-usd/initial-protocol-loan.md)
+  * [B. Protocol](fundamentals/threshold-applications/threshold-usd/b.-protocol.md)
 * [Threshold DAO](fundamentals/dao.md)
   * [🗳 Governance Process](fundamentals/threshold-dao/governance-process.md)
   * [🏛 Governor](fundamentals/threshold-dao/governor.md)

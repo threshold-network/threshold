@@ -20,10 +20,10 @@ For normal, healthy operations of the protocol, it's vital that there is suffici
 
 In Threshold USD we take a different approach. A newer concept in DeFi known as Protocol Controlled Value (PCV) is the idea that the protocol itself can own liquidity and use that to improve the protocol. This is a new alternative to renting it elsewhere (aka yield-farming) and has the benefit of long-term sustainability.&#x20;
 
-But the PCV has to come from somewhere. In thUSD we resolve this by issuing an [Initial Protocol Loan](initial-protocol-loan.md) to the PCV which then deposit these funds directly to the stability pool. Read more about this here:
+But the PCV has to come from somewhere. In thUSD we resolve this by issuing an [Initial Protocol Loan](threshold-usd/initial-protocol-loan.md) to the PCV which then deposit these funds directly to the stability pool. Read more about this here:
 
-{% content-ref url="initial-protocol-loan.md" %}
-[initial-protocol-loan.md](initial-protocol-loan.md)
+{% content-ref url="threshold-usd/initial-protocol-loan.md" %}
+[initial-protocol-loan.md](threshold-usd/initial-protocol-loan.md)
 {% endcontent-ref %}
 
 That lets us bootstrap the stability pool at zero cost to the protocol.

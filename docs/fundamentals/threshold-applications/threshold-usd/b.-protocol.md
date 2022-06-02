@@ -24,7 +24,7 @@ Once liquidation happens, the discounted tBTC is automatically offered for sale 
 
 If there are no takers for the offer on the B.AMM, Gelato Keepers will arbitrage through popular DEX pairs to fulfill the order.&#x20;
 
-![](../../.gitbook/assets/BProtocolChart.png)
+![](../../../.gitbook/assets/BProtocolChart.png)
 
 This way the PCV becomes self-sufficient and able to operate indefinitely without outside interference.&#x20;
 
@@ -54,9 +54,9 @@ Example:​
 
 In this case funds are routed through the following Curve Finance stable pools:
 
-![](../../.gitbook/assets/curve-3pool.png)
+![](../../../.gitbook/assets/curve-3pool.png)
 
-![](../../.gitbook/assets/curve-ren.png)
+![](../../../.gitbook/assets/curve-ren.png)
 
 In addition, funds are routed through uniswap (v2 or v3) WBTC/USDC pools.&#x20;
 
