@@ -5,9 +5,10 @@
 ## Guides
 
 * [Staking on Threshold](guides/token-staking/migrating-legacy-stakes.md)
-* [DAO Vote Delegation](guides/stake-delegation/README.md)
-  * [Token Weight Delegation](guides/stake-delegation/token-weight-delegation.md)
-  * [Stake Weight Delegation](guides/stake-delegation/stake-weight-delegation.md)
+* [DAO Vote Delegation](guides/stake-delegation.md)
+* [Upgrade KEEP or NU](guides/upgrade-keep-or-nu/README.md)
+  * [Token Weight Delegation](guides/upgrade-keep-or-nu/token-weight-delegation.md)
+  * [Stake Weight Delegation](guides/upgrade-keep-or-nu/stake-weight-delegation.md)
 * [Ropsten Testnet](guides/ropsten-testnet-staking.md)
 
 ## Fundamentals
@@ -28,8 +29,7 @@
 * [Staking Providers](extras/staking-providers.md)
 * [Contribution](extras/contribution.md)
 * [Contract Addresses](extras/contract-addresses.md)
-* [Best Practices](extras/best-practices.md)
-* [FAQ](extras/faq.md)
+* [FAQ (Coming Soon)](extras/faq.md)
 * [Glossary](extras/glossary.md)
 * [Links](extras/links.md)
 * [Between Two Keys](extras/between-two-keys.md)
