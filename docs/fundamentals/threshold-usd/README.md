@@ -1,4 +1,12 @@
-# Bootstrapping
+---
+description: Threshold application
+---
+
+# Threshold USD
+
+Threshold USD (thUSD) is a tBTC backed stablecoin pegged 1:1 against USD.
+
+### Background: About Bootstrapping
 
 A certain network effect is required for a stablecoin to function well. Bootstrapping is the process of ensuring the protocol has gained enough traction to become self-sufficient.&#x20;
 
@@ -8,9 +16,15 @@ Liquity Protocol bootstrapped by issuing LQTY tokens to depositors in the stabil
 
 For normal, healthy operations of the protocol, it's vital that there is sufficient funds in the stability pool to cover all liquidations. However the LQTY incentive resulted in far more deposits than is required and this is essentially wasted capital. Furthermore there are concerns on how sustainable Liquity will be after the initial 100 million LQTY has been issued and the pool is only sustained through liquidations rewards.&#x20;
 
+#### How does Threshold USD approach this?
+
 In Threshold USD we take a different approach. A newer concept in DeFi known as Protocol Controlled Value (PCV) is the idea that the protocol itself can own liquidity and use that to improve the protocol. This is a new alternative to renting it elsewhere (aka yield-farming) and has the benefit of long-term sustainability.&#x20;
 
-But the PCV has to come from somewhere. In thUSD we resolve this by issuing an [Initial Protocol Loan](initial-protocol-loan.md) to the PCV which then deposit these funds directly to the stability pool.&#x20;
+But the PCV has to come from somewhere. In thUSD we resolve this by issuing an [Initial Protocol Loan](initial-protocol-loan.md) to the PCV which then deposit these funds directly to the stability pool. Read more about this here:
+
+{% content-ref url="initial-protocol-loan.md" %}
+[initial-protocol-loan.md](initial-protocol-loan.md)
+{% endcontent-ref %}
 
 That lets us bootstrap the stability pool at zero cost to the protocol.
 
@@ -25,3 +39,4 @@ How fast we want to grow can be almost entirely adjusted by how much reward is s
 This part is indeed rented liquidity with all its drawbacks, but remember that Threshold USD profits are sent to the PCV instead of LQTY holders: As the protocol grows in popularity, profits from the protocol itself can be used to fund these rewards, thus creating a self-sustaining feedback loop.
 
 On top of that, Threshold DAO will store some of its reserves in stablecoins, so the Threshold DAO can initiate a PCV with deposits on curve. That will result in more stability for thUSD which is important for adoption.&#x20;
+

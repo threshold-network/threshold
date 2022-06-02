@@ -1,3 +1,7 @@
+---
+description: Threshold application
+---
+
 # tBTC v2
 
 Existing solutions that bridge Bitcoin to Ethereum require users to send their Bitcoin to an intermediary, in exchange for an Ethereum token that represents the original asset. This centralized model requires you to trust a third party and is prone to censorship, threatening Bitcoin's promise of secure, permissionless decentralization.

@@ -18,24 +18,24 @@ Follow our handy guides to get started on staking basics as quickly as possible:
 [stake-delegation](guides/stake-delegation/)
 {% endcontent-ref %}
 
-{% content-ref url="guides/migrating-legacy-stakes.md" %}
-[migrating-legacy-stakes.md](guides/migrating-legacy-stakes.md)
+{% content-ref url="guides/token-staking/migrating-legacy-stakes.md" %}
+[migrating-legacy-stakes.md](guides/token-staking/migrating-legacy-stakes.md)
 {% endcontent-ref %}
 
 ### Fundamentals: Dive a little deeper
 
 Learn the fundamentals of the Threshold Network to get a deeper understanding of our main features:
 
-{% content-ref url="fundamentals/threshold-applications/" %}
-[threshold-applications](fundamentals/threshold-applications/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/threshold-applications/proxy-re-encryption-pre.md" %}
-[proxy-re-encryption-pre.md](fundamentals/threshold-applications/proxy-re-encryption-pre.md)
+{% content-ref url="fundamentals/proxy-re-encryption-pre.md" %}
+[proxy-re-encryption-pre.md](fundamentals/proxy-re-encryption-pre.md)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/threshold-applications/tbtc-v2.md" %}
-[tbtc-v2.md](fundamentals/threshold-applications/tbtc-v2.md)
+{% content-ref url="fundamentals/tbtc-v2.md" %}
+[tbtc-v2.md](fundamentals/tbtc-v2.md)
 {% endcontent-ref %}
 
 {% content-ref url="fundamentals/dao.md" %}
