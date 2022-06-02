@@ -17,7 +17,7 @@
 * [Threshold Applications](fundamentals/threshold-applications/README.md)
   * [Proxy Re-encryption (PRE)](fundamentals/threshold-applications/proxy-re-encryption-pre.md)
   * [tBTC v2](fundamentals/threshold-applications/tbtc-v2.md)
-  * [Threshold USD](fundamentals/threshold-applications/threshold-usd/README.md)
+  * [Threshold USD](fundamentals/threshold-applications/threshold-usd.md)
     * [Bootstrapping](fundamentals/threshold-applications/threshold-usd/bootstrapping.md)
     * [Initial Protocol Loan](fundamentals/threshold-applications/threshold-usd/initial-protocol-loan.md)
     * [B. Protocol](fundamentals/threshold-applications/threshold-usd/b.-protocol.md)
