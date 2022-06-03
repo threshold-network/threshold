@@ -10,25 +10,21 @@
 
 Follow our handy guides to get started on staking basics as quickly as possible:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="guides/token-staking/migrating-legacy-stakes.md" %}
+[migrating-legacy-stakes.md](guides/token-staking/migrating-legacy-stakes.md)
 {% endcontent-ref %}
 
 {% content-ref url="guides/stake-delegation.md" %}
 [stake-delegation.md](guides/stake-delegation.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides/token-staking/migrating-legacy-stakes.md" %}
-[migrating-legacy-stakes.md](guides/token-staking/migrating-legacy-stakes.md)
+{% content-ref url="guides/upgrade-keep-or-nu/" %}
+[upgrade-keep-or-nu](guides/upgrade-keep-or-nu/)
 {% endcontent-ref %}
 
 ### Fundamentals: Dive a little deeper
 
 Learn the fundamentals of the Threshold Network to get a deeper understanding of our main features:
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
 
 {% content-ref url="fundamentals/threshold-applications/proxy-re-encryption-pre.md" %}
 [proxy-re-encryption-pre.md](fundamentals/threshold-applications/proxy-re-encryption-pre.md)
