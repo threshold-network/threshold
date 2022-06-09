@@ -13,8 +13,9 @@ _**Staking Providers have not been vetted or endorsed by Threshold. Use your jud
 | [Blockdaemon](https://blockdaemon.com/)             | [konstantin@blockdaemon.com](mailto:konstantin@blockdaemon.com)     |
 | [Boar](https://boar.network/)                       | [hello@boar.network](mailto:hello@boar.network)                     |
 | [DELIGHT](https://delightlabs.io/)                  | [contact@delightlabs.io](mailto:contact@delightlabs.io)             |
-| [Figment](https://figment.io/)                      | [yannick@figment.io](mailto:yannick@figment.io)                     |
+| [Figment](https://figment.io/)                      | [support@figment.io](mailto:support@figment.io)                     |
 | [Infinity Stones](https://infstones.io/)            | [contact@infinitystones.io](mailto:contact@delightlabs.io)          |
 | [Low Fee Validation](https://lowfeevalidation.com/) | [eduardo@lowfeevalidation.com](mailto:eduardo@lowfeevalidation.com) |
+| [Nodefolio](https://nodefolio.io/)                  | [stake@nodefolio.io](mailto:stake%40nodefolio.io)                   |
 | [P2P](https://p2p.org/)                             | [am@p2p.org](mailto:am@p2p.org)                                     |
-| [Staked](https://staked.us/)                        | [togilvie@staked.us](mailto:togilvie@staked.us)                     |
+| [Staked](https://staked.us/)                        | [staked@staked.us](mailto:staked%40staked.us)                       |
