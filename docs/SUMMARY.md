@@ -5,9 +5,9 @@
 ## Guides
 
 * [Staking on Threshold](guides/token-staking/migrating-legacy-stakes.md)
-* [DAO Vote Delegation](guides/stake-delegation/README.md)
-  * [Token Weight Delegation](guides/stake-delegation/token-weight-delegation.md)
-  * [Stake Weight Delegation](guides/stake-delegation/stake-weight-delegation.md)
+* [DAO Vote Delegation](guides/dao-vote-delegation/README.md)
+  * [Token Weight Delegation](guides/dao-vote-delegation/token-weight-delegation.md)
+  * [Stake Weight Delegation](guides/dao-vote-delegation/stake-weight-delegation.md)
 * [Upgrade NU / KEEP to T](guides/upgrade-nu-keep-to-t.md)
 * [Ropsten Testnet](guides/ropsten-testnet-staking.md)
 

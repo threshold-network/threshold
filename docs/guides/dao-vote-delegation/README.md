@@ -16,7 +16,3 @@ It is ideal for those who are unsure or uninterested in governance and does not 
 There is no established compensation for third-party delegate contribution to governance.
 {% endhint %}
 
-
-
-
-
