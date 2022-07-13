@@ -9,7 +9,7 @@ _**Staking Providers have not been vetted or endorsed by Threshold. Use your jud
 | Staking Provider                                    | Contact Information                                                 |
 | --------------------------------------------------- | ------------------------------------------------------------------- |
 | [Ankr](https://www.ankr.com/)                       | [sales@ankr.com](mailto:sales@ankr.com)                             |
-| [Bison Trails](https://bisontrails.co/)             | [cloud-sales@coinbase.com](mailto:cloud-sales@coinbase.com)         |
+| [Coinbase Cloud](https://www.coinbase.com/cloud)    | [cloud-sales@coinbase.com](mailto:cloud-sales@coinbase.com)         |
 | [Blockdaemon](https://blockdaemon.com/)             | [konstantin@blockdaemon.com](mailto:konstantin@blockdaemon.com)     |
 | [Boar](https://boar.network/)                       | [hello@boar.network](mailto:hello@boar.network)                     |
 | [DELIGHT](https://delightlabs.io/)                  | [contact@delightlabs.io](mailto:contact@delightlabs.io)             |
