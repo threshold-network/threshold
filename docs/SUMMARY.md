@@ -22,7 +22,7 @@
   * [🗳 Governance Process](fundamentals/threshold-dao/governance-process.md)
   * [🏛 Governor](fundamentals/threshold-dao/governor.md)
   * [⚡ Snapshots](fundamentals/threshold-dao/snapshots.md)
-  * [🙋♀ Guilds](fundamentals/dao/treasury-guild.md)
+  * [🙋♀ Guilds](fundamentals/dao/guilds.md)
 
 ## Extras
 
