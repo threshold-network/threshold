@@ -14,14 +14,6 @@ Follow our handy guides to get started on staking basics as quickly as possible:
 [migrating-legacy-stakes.md](guides/token-staking/migrating-legacy-stakes.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
 ### Fundamentals: Dive a little deeper
 
 Learn the fundamentals of the Threshold Network to get a deeper understanding of our main features:
