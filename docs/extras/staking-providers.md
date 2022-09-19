@@ -14,7 +14,7 @@ _**Staking Providers have not been vetted or endorsed by Threshold. Use your jud
 | [Boar](https://boar.network/)                       | [hello@boar.network](mailto:hello@boar.network)                     |
 | [DELIGHT](https://delightlabs.io/)                  | [contact@delightlabs.io](mailto:contact@delightlabs.io)             |
 | [Figment](https://figment.io/)                      | [support@figment.io](mailto:support@figment.io)                     |
-| [Infinity Stones](https://infstones.io/)            | [contact@infinitystones.io](mailto:contact@delightlabs.io)          |
+| [InfStones](https://infstones.com/)                 | [sales@infstones.com](mailto:)                                      |
 | [Low Fee Validation](https://lowfeevalidation.com/) | [eduardo@lowfeevalidation.com](mailto:eduardo@lowfeevalidation.com) |
 | [Nodefolio](https://nodefolio.io/)                  | [stake@nodefolio.io](mailto:stake%40nodefolio.io)                   |
 | [P2P](https://p2p.org/)                             | [am@p2p.org](mailto:am@p2p.org)                                     |
