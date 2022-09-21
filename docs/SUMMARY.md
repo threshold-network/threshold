@@ -9,6 +9,8 @@
   * [Token Weight Delegation](guides/dao-vote-delegation/token-weight-delegation.md)
   * [Stake Weight Delegation](guides/dao-vote-delegation/stake-weight-delegation.md)
 * [Upgrade NU / KEEP to T](guides/upgrade-nu-keep-to-t.md)
+* [Threshold Applications](guides/threshold-applications/README.md)
+  * [PRE setup (nucypher-ops)](guides/threshold-applications/pre-setup-nucypher-ops.md)
 * [Ropsten Testnet](guides/ropsten-testnet-staking.md)
 
 ## Fundamentals
