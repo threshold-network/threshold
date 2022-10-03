@@ -11,6 +11,17 @@
 * [Upgrade NU / KEEP to T](guides/upgrade-nu-keep-to-t.md)
 * [Threshold Applications](guides/threshold-applications/README.md)
   * [PRE setup (nucypher-ops)](guides/threshold-applications/pre-setup-nucypher-ops.md)
+  * [tBTC v2 Client Setup](guides/threshold-applications/tbtc-v2-client-setup/README.md)
+    * [Operator Account](guides/threshold-applications/tbtc-v2-client-setup/operator-account.md)
+    * [Network configuration](guides/threshold-applications/tbtc-v2-client-setup/network-configuration.md)
+    * [Application Authorization & Operator Registration](guides/threshold-applications/tbtc-v2-client-setup/application-authorization-and-operator-registration.md)
+    * [Data Storage](guides/threshold-applications/tbtc-v2-client-setup/data-storage.md)
+    * [Docker Installation](guides/threshold-applications/tbtc-v2-client-setup/docker-installation.md)
+    * [Advanced Options](guides/threshold-applications/tbtc-v2-client-setup/advanced-options/README.md)
+      * [Logging](guides/threshold-applications/tbtc-v2-client-setup/advanced-options/logging.md)
+      * [Alternatives to Dashboard](guides/threshold-applications/tbtc-v2-client-setup/advanced-options/alternatives-to-dashboard.md)
+      * [Config File](guides/threshold-applications/tbtc-v2-client-setup/advanced-options/config-file.md)
+      * [CLI Options](guides/threshold-applications/tbtc-v2-client-setup/advanced-options/cli-options.md)
 * [Ropsten Testnet](guides/ropsten-testnet-staking.md)
 
 ## Fundamentals
