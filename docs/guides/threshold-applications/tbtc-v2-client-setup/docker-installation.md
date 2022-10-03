@@ -61,7 +61,7 @@ docker run \
     --log-opt max-file=3 \
     -p 3919:3919 \
     -p 9601:9601 \
-    us-docker.pkg.dev/keep-test-f3e0/public/keep-client:latest \
+    keepnetwork/keep-client:latest \
     start \
     --ethereum.url $ETHEREUM_WS_URL \
     --ethereum.keyFile /mnt/keep/config/$OPERATOR_KEY_FILE_NAME \
