@@ -123,7 +123,7 @@ Trust math, not hardware.
 -----------------------------------------------------------------------------------
 | Keep Client Node                                                                |
 |                                                                                 |
-| Version: v1.3.1-6307-g5cf99c50e (5cf99c50e)                                     |
+| Version: Version: v2.0.0-m1 (4d745f6d0)                                         |
 |                                                                                 |
 | Operator: 0x_your_operator_address                                              |
 |                                                                                 |
@@ -131,9 +131,9 @@ Trust math, not hardware.
 | IPs : /ip4/111.222.333.444/tcp/3919/ipfs/redacted                               |
 |                                                                                 |
 | Contracts:                                                                      |
-| RandomBeacon   : 0x2bA82903B635a96154A515488d2952E86D6adc3A                     |
-| WalletRegistry : 0x2363cc10b7680000C02E4a7067A68d1788ffc86F                     |
-| TokenStaking   : 0x69f962a0fbA5635e84eC94131f9072108E2E4F24                     |
+| RandomBeacon   : 0x5499f54b4A1CB4816eefCf78962040461be3D80b                     |
+| WalletRegistry : 0x46d52E41C2F300BC82217Ce22b920c34995204eb                     |
+| TokenStaking   : 0x01B67b1194C75264d06F808A921228a95C765dd7                     |
 -----------------------------------------------------------------------------------
 ```
 
