@@ -52,7 +52,7 @@ CONFIG_DIR="/home/keep/config"
 STORAGE_DIR="/home/keep/storage"
 
 docker run \
-    --detached \
+    --detach \
     --volume $CONFIG_DIR:/mnt/keep/config \
     --volume $STORAGE_DIR:/mnt/keep/storage \
     --env KEEP_ETHEREUM_PASSWORD=$OPERATOR_KEY_FILE_PASSWORD \
@@ -83,14 +83,14 @@ bash keep.sh
 ```
 
 {% hint style="info" %}
-The `--detached` property will prevent the status messages from the client to be printed to the console. Review the Docker logs for detailed status information.
+The `--detach` property will prevent the status messages from the client to be printed to the console. Review the Docker logs for detailed status information.
 {% endhint %}
 
 
 
 ## Client Startup
 
-Unless the `--detached` flag was removed from the startup script, there will be no console output. In order to check your node, retrieve the Docker logs.
+Unless the `--detach` flag was removed from the startup script, there will be no console output. In order to check your node, retrieve the Docker logs.
 
 First, find your Docker instance identification, it'll be a random combination of words, e.g. `stinky_brownie`:
 
