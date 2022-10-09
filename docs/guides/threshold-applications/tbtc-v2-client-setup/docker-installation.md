@@ -52,7 +52,8 @@ CONFIG_DIR="/home/keep/config"
 STORAGE_DIR="/home/keep/storage"
 
 docker run \
-    --detached \
+    --detach \
+    --restart on-failure \
     --volume $CONFIG_DIR:/mnt/keep/config \
     --volume $STORAGE_DIR:/mnt/keep/storage \
     --env KEEP_ETHEREUM_PASSWORD=$OPERATOR_KEY_FILE_PASSWORD \
@@ -78,9 +79,7 @@ sudo chmod +x keep.sh
 
 To launch the tBTC v2 client, execute:
 
-```bash
-bash keep.sh
-```
+<pre class="language-bash"><code class="lang-bash"><strong>sudo bash keep.sh</strong></code></pre>
 
 {% hint style="info" %}
 The `--detached` property will prevent the status messages from the client to be printed to the console. Review the Docker logs for detailed status information.
@@ -95,13 +94,13 @@ Unless the `--detached` flag was removed from the startup script, there will be 
 First, find your Docker instance identification, it'll be a random combination of words, e.g. `stinky_brownie`:
 
 ```bash
-docker ps
+sudo docker ps
 ```
 
 Use your specific identification and substitute:
 
 ```
-docker logs stinky_brownie >& /path/to/output/file
+sudo docker logs stinky_brownie >& /path/to/output/file
 ```
 
 Scroll down about half a page, and you should see the following:

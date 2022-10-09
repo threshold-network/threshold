@@ -10,24 +10,32 @@ The Ethereum Key File is expected to be encrypted with a password. The password 
 
 The Operator Account has to maintain a positive Ether balance at all times. We strongly advise you monitor the account and top-up when its balance gets below 0,5 Ether.
 
+{% hint style="warning" %}
+Please do NOT reuse an operator account that is being used for PRE or other applications.&#x20;
+{% endhint %}
+
 ### Install Geth (GoEthereum)
 
 To create a new Ethereum account, [install Geth](https://geth.ethereum.org/docs/install-and-build/installing-geth#ubuntu-via-ppas) (GoEthereum) and create a new account using the command below. This account will subsequently be referred to as the Operator Account.
 
-<pre class="language-bash"><code class="lang-bash"><strong>geth account new --keystore ./keystore</strong></code></pre>
+<pre class="language-bash"><code class="lang-bash"><strong>geth account new --keystore ./operator-key</strong></code></pre>
 
-When prompted, provide a password to protect the keystore file.&#x20;
+When prompted, provide a password to protect the operator key file.&#x20;
 
 {% hint style="info" %}
 Use a password manager to generate a strong password and store it safely. It will be needed again during setup.
 {% endhint %}
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Avoid passwords that contain the following characters: ', ", \`, $\
 These characters may be interpreted as part of the configuration which can lead to undesirable outcomes that may be extremely time intensive to correct.
 {% endhint %}
 
 Once the process completes, your public key will be displayed. Take note of your Operator Account public key.
+
+{% hint style="danger" %}
+DO NOT LOSE THE PASSWORD TO THE OPERATOR ACCOUNT.
+{% endhint %}
 
 ### Funding your Operator Account
 
