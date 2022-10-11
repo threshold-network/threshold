@@ -41,8 +41,10 @@
 
 ## Fundamentals
 
-* [Staking on Threshold](fundamentals/migrating-legacy-stakes.md)
-* [Proxy Re-encryption (PRE)](fundamentals/threshold-applications/proxy-re-encryption-pre.md)
+* [Threshold Access Control](fundamentals/threshold-access-control/README.md)
+  * [Conditions-Based Decryption (CBD)](fundamentals/threshold-access-control/conditions-based-decryption-cbd.md)
+* [Staking on Threshold](fundamentals/migrating-legacy-stakes/README.md)
+  * [Proxy Re-Encryption (PRE)](fundamentals/migrating-legacy-stakes/proxy-re-encryption-pre.md)
 * [tBTC v2](fundamentals/threshold-applications/tbtc-v2.md)
 * [Threshold USD](fundamentals/threshold-applications/threshold-usd.md)
   * [Initial Protocol Loan](fundamentals/threshold-applications/threshold-usd/initial-protocol-loan.md)

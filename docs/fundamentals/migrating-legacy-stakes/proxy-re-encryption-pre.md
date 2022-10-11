@@ -1,8 +1,10 @@
 ---
-description: Threshold application
+description: Threshold application – underlying technology
 ---
 
-# Proxy Re-encryption (PRE)
+# Proxy Re-Encryption (PRE)
+
+
 
 {% embed url="https://www.youtube.com/watch?t=10s&v=SXn1zShgVI8" %}
 
