@@ -12,6 +12,6 @@ PRE is directly applicable to use cases that aim to maintain data ownership whil
 \
 Want to get started staking with Threshold and running a node for PRE? Follow this guide:
 
-{% content-ref url="../../guides/threshold-applications/pre-setup-nucypher-ops.md" %}
-[pre-setup-nucypher-ops.md](../../guides/threshold-applications/pre-setup-nucypher-ops.md)
+{% content-ref url="../../guides/staking/pre-node-setup.md" %}
+[pre-node-setup.md](../../guides/staking/pre-node-setup.md)
 {% endcontent-ref %}

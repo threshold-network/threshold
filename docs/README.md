@@ -10,8 +10,8 @@
 
 Follow our handy guides to get started on staking basics as quickly as possible:
 
-{% content-ref url="guides/token-staking/migrating-legacy-stakes.md" %}
-[migrating-legacy-stakes.md](guides/token-staking/migrating-legacy-stakes.md)
+{% content-ref url="fundamentals/migrating-legacy-stakes.md" %}
+[migrating-legacy-stakes.md](fundamentals/migrating-legacy-stakes.md)
 {% endcontent-ref %}
 
 ### Fundamentals: Dive a little deeper
