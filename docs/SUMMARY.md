@@ -5,6 +5,7 @@
 ## Guides
 
 * [Staking](guides/staking/README.md)
+  * [Staking on Threshold](guides/staking/migrating-legacy-stakes.md)
   * [tBTC v2 Node Setup](guides/staking/tbtc-v2-node-setup/README.md)
     * [Operator Account](guides/staking/tbtc-v2-node-setup/operator-account.md)
     * [Network configuration](guides/staking/tbtc-v2-node-setup/network-configuration.md)
@@ -24,8 +25,8 @@
   * [Ropsten Testnet](guides/staking/ropsten-testnet-staking.md)
 * [Using Threshold Applications](guides/using-threshold-applications/README.md)
   * [Threshold Access Control](guides/using-threshold-applications/threshold-access-control/README.md)
-    * [Typescript Library](guides/using-threshold-applications/threshold-access-control/typescript-library.md)
     * [Getting Started](guides/using-threshold-applications/threshold-access-control/getting-started/README.md)
+      * [Typescript Library](guides/using-threshold-applications/threshold-access-control/getting-started/typescript-library.md)
       * [Condition-Based Decryption](guides/using-threshold-applications/threshold-access-control/getting-started/condition-based-decryption.md)
       * [Proxy Re-Encryption](guides/using-threshold-applications/threshold-access-control/getting-started/proxy-re-encryption.md)
     * [How-to Guides](guides/using-threshold-applications/threshold-access-control/how-to-guides/README.md)
@@ -37,14 +38,13 @@
       * [Conditions](guides/using-threshold-applications/threshold-access-control/references/conditions.md)
       * [Condition Set](guides/using-threshold-applications/threshold-access-control/references/condition-set.md)
       * [Strategy](guides/using-threshold-applications/threshold-access-control/references/strategy.md)
-* [Upgrade NU / KEEP to T](guides/upgrade-nu-keep-to-t.md)
+* [Upgrade NU & KEEP](guides/upgrade-nu-and-keep.md)
 
 ## Fundamentals
 
 * [Threshold Access Control](fundamentals/threshold-access-control/README.md)
   * [Conditions-Based Decryption (CBD)](fundamentals/threshold-access-control/conditions-based-decryption-cbd.md)
-* [Staking on Threshold](fundamentals/migrating-legacy-stakes/README.md)
-  * [Proxy Re-Encryption (PRE)](fundamentals/migrating-legacy-stakes/proxy-re-encryption-pre.md)
+  * [Proxy Re-Encryption (PRE)](fundamentals/threshold-access-control/proxy-re-encryption-pre.md)
 * [tBTC v2](fundamentals/threshold-applications/tbtc-v2.md)
 * [Threshold USD](fundamentals/threshold-applications/threshold-usd.md)
   * [Initial Protocol Loan](fundamentals/threshold-applications/threshold-usd/initial-protocol-loan.md)

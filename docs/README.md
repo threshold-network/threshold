@@ -10,16 +10,16 @@
 
 Follow our handy guides to get started on staking basics as quickly as possible:
 
-{% content-ref url="fundamentals/migrating-legacy-stakes/" %}
-[migrating-legacy-stakes](fundamentals/migrating-legacy-stakes/)
+{% content-ref url="guides/staking/migrating-legacy-stakes.md" %}
+[migrating-legacy-stakes.md](guides/staking/migrating-legacy-stakes.md)
 {% endcontent-ref %}
 
 ### Fundamentals: Dive a little deeper
 
 Learn the fundamentals of the Threshold Network to get a deeper understanding of our main features:
 
-{% content-ref url="fundamentals/migrating-legacy-stakes/proxy-re-encryption-pre.md" %}
-[proxy-re-encryption-pre.md](fundamentals/migrating-legacy-stakes/proxy-re-encryption-pre.md)
+{% content-ref url="fundamentals/threshold-access-control/proxy-re-encryption-pre.md" %}
+[proxy-re-encryption-pre.md](fundamentals/threshold-access-control/proxy-re-encryption-pre.md)
 {% endcontent-ref %}
 
 {% content-ref url="fundamentals/threshold-applications/tbtc-v2.md" %}
