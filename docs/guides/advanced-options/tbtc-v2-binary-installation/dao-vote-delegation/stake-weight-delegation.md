@@ -12,12 +12,12 @@ Delegation is accomplished via an on-chain transaction which costs ETH.
 
 3\. Click on the _"delegate"_ tab in the navigation bar
 
-!["delegate" Tab](../../../.gitbook/assets/gov-stake-delegate-tab.jpeg)
+!["delegate" Tab](../../../../.gitbook/assets/gov-stake-delegate-tab.jpeg)
 
 4\. Enter the delegate address - once an address is entered, a _“Delegate”_ button will appear
 
-![Enter Delegate Address](../../../.gitbook/assets/gov-stake-enter-delegate.jpeg)
+![Enter Delegate Address](../../../../.gitbook/assets/gov-stake-enter-delegate.jpeg)
 
 5\. Click _"Delegate"_ and sign the transaction.
 
-![Delegate Button](../../../.gitbook/assets/gov-stake-delegate.jpeg)
+![Delegate Button](../../../../.gitbook/assets/gov-stake-delegate.jpeg)

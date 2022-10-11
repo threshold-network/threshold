@@ -94,7 +94,7 @@ The following flags must be set at minimum:
 
 ```
 
-For a complete list of client commands and flags, see [CLI Options](advanced-options/cli-options.md).
+For a complete list of client commands and flags, see [CLI Options](../cli-options.md).
 
 To launch the client, execute the following:
 
