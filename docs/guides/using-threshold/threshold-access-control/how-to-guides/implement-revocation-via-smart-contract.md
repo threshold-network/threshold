@@ -2,7 +2,7 @@
 
 It is possible to implement Revocation using Conditions that rely on a function call to a Custom Smart Contract. This allows the handling of revocation to be decentralized and transparent. Here is an example of a smart contract (not suitable for production):
 
-```js
+```solidity
 pragma solidity 0.8.7;
 
 contract Revocation {
@@ -21,7 +21,7 @@ contract Revocation {
 
 And the associated Condition:
 
-```js
+```javascript
 const revocationCondition = {
   contractAddress: 'DEPLOYED_CONTRACT_ADDRESS',
   functionName: 'isRevoked',

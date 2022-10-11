@@ -15,7 +15,7 @@ If the optional secret keys are not provided, new ones will be generated instead
 
 Assuming we have a Cohort already defined, we can construct a Strategy:
 
-```js
+```javascript
 import { Cohort, Strategy } from '@nucypher/nucypher-ts';
 
 const config = {
@@ -36,7 +36,7 @@ const newStrategy = Strategy.create(
 
 Before we can encrypt/decrypt, the Threshold network needs to be made aware of our Strategy. We do this by deploying:
 
-```js
+```javascript
 import detectEthereumProvider from '@metamask/detect-provider';
 import providers from 'ethers';
 
@@ -59,7 +59,7 @@ if (MMprovider) {
 
 Deploying a strategy returns a new `DeployedStrategy` object. This object grants us access to the `encrypter` and `decrypter` which can then be used throughout an application.
 
-```js
+```javascript
 const encrypter = newDeployed.encrypter;
 const decrypter = newDeployed.decrypter;
 
@@ -75,7 +75,7 @@ const decryptedMessage = await decrypter.retrieveAndDecrypt([
 
 Strategies can be exported allowing them to be reused easily. The syntax is the same whether the strategy has been deployed or not.
 
-```js
+```javascript
 import { DeployedStrategy } from '@nucypher/nucypher-ts';
 
 const configJSON = newDeployed.toJSON();

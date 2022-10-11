@@ -10,7 +10,7 @@ A Cohort defines the collection of nodes that will provide CBD services. _Thresh
 
 We can define a cohort by:
 
-```js
+```javascript
 import { Cohort } from '@nucypher/nucypher-ts';
 
 const config = {
@@ -27,19 +27,19 @@ We also provide `porterUri`. Porter is a web-based service that interacts with n
 
 Condition-Based Decryption also needs some Conditions. In this tutorial, we will check that the user owns a specific ERC721 NFT.
 
-```js
+```javascript
 import { Conditions } from '@nucypher/nucypher-ts';
 
 const NFTOwnership = new Conditions.ERC721Ownership({
   contractAddress: '0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D',
   chain: 'Rinkeby', // Ibex uses Rinkeby testnet
-  parameters: ['5954'],
+  parameters: [5954],
 });
 ```
 
 It is possible to compose multiple Conditions into a ConditionSet, but for now, we will only use one:
 
-```js
+```javascript
 import { Conditions, ConditionSet } from '@nucypher/nucypher-ts';
 
 const conditions = new ConditionSet([NFTOwnership]);
@@ -49,7 +49,7 @@ const conditions = new ConditionSet([NFTOwnership]);
 
 We combine our Cohort, Conditions, and any other extra parameters into a Strategy.
 
-```js
+```javascript
 import { Strategy } from '@nucypher/nucypher-ts';
 
 const newStrategy = Strategy.create(
@@ -62,11 +62,11 @@ const newStrategy = Strategy.create(
 
 Finally, we can deploy this Strategy to the Threshold Network, and begin using Condition-Based Decryption:
 
-:::note
-
+{% hint style="info" %}
 Deploying a Strategy requires writing to the blockchain. This means both a funded wallet is required and also a connection to the blockchain via a `provider` (eg. MetaMask).
+{% endhint %}
 
-:::
+
 
 ```typescript
 import detectEthereumProvider from '@metamask/detect-provider';
@@ -86,7 +86,7 @@ if (MMprovider) {
 
 Our encrypter and decrypter objects are available by:
 
-```js
+```javascript
 const encrypter = newDeployed.encrypter;
 const decrypter = newDeployed.decrypter;
 

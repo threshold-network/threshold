@@ -2,7 +2,7 @@
 
 Providing configurable security to your users is easy with re-usable Cohorts. Below we define 3 cohorts; small, medium, and large. `smallCohort`, `mediumCohort`, and `largeCohort` can then be re-used by multiple Strategies.
 
-```js
+```javascript
 const smallConfig = {
   threshold: 3,
   shares: 5,

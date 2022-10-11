@@ -12,7 +12,7 @@ We provide many helper objects to streamline the creation of common conditions. 
 
 `Conditions.ERC721Ownership` is a shortcut for building conditions that test for ownership of a specific ERC721 token (NFT):
 
-```js
+```javascript
 const NFTOwnership = new Conditions.ERC721Ownership({
   contractAddress: '0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D',
   parameters: [5954],
@@ -21,13 +21,13 @@ const NFTOwnership = new Conditions.ERC721Ownership({
 
 If we want to be more verbose we can use `Conditions.Condition`. The above and below examples are completely equivalent:
 
-```js
+```javascript
 const NFTOwnershipConfig = {
   contractAddress: '0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D',
   standardContractType: 'ERC721',
   chain: 'ethereum',
   method: 'ownerOf',
-  parameters: ['5954'],
+  parameters: [5954],
   returnValueTest: {
     comparator: '==',
     value: ':userAddress',
@@ -40,7 +40,7 @@ const NFTOwnership = new Conditions.Condition(NFTOwnershipConfig);
 
 `Conditions.ERC721Balance` is a shortcut for building conditions that test for ownership of at least one ERC721 token (NFT) within a collection.
 
-```js
+```javascript
 const NFTBalance = new Conditions.ERC721Balance({
   contractAddress: '0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D',
 });
@@ -48,7 +48,7 @@ const NFTBalance = new Conditions.ERC721Balance({
 
 Alternatively:
 
-```js
+```javascript
 const NFTBalanceConfig = {
   contractAddress: '0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D',
   standardContractType: 'ERC721',
@@ -57,7 +57,7 @@ const NFTBalanceConfig = {
   parameters: [':userAddress'],
   returnValueTest: {
     comparator: '>',
-    value: '0',
+    value: 0,
   },
 };
 
@@ -68,18 +68,18 @@ const NFTBalance = new Conditions.Condition(NFTBalanceConfig);
 
 `Conditions.TimelockCondition` is a shortcut for building conditions that test against block height.
 
-```js
+```javascript
 const timelock = Conditions.TimelockCondition({
   returnValueTest: {
     comparator: '>',
-    value: '100',
+    value: 100,
   },
 });
 ```
 
 or:
 
-```js
+```javascript
 const timelockConfig = {
   contractAddress: '',
   standardContractType: '',
@@ -87,7 +87,7 @@ const timelockConfig = {
   method: 'timelock',
   returnValueTest: {
     comparator: '>',
-    value: '100',
+    value: 100,
   },
 };
 const timelock = Conditions.Condition(timelockConfig);
@@ -97,7 +97,7 @@ const timelock = Conditions.Condition(timelockConfig);
 
 `Conditions.RpcCondition` is a shortcut for building conditions that test against standard [RPC calls](https://ethereum.org/en/developers/docs/apis/json-rpc/)
 
-```js
+```javascript
 const const rpc = new Conditions.RpcCondition({
   chain: 'ethereum',
   method: 'eth_getBalance',
@@ -107,14 +107,14 @@ const const rpc = new Conditions.RpcCondition({
     ],
   returnValueTest: {
     comparator: ">=",
-    value: "10000000000000"
+    value: 10000000000000
   }
 });
 ```
 
 or:
 
-```js
+```javascript
 const rpcConfig = {
   contractAddress: '',
   standardContractType: '',
@@ -123,7 +123,7 @@ const rpcConfig = {
   parameters: [':userAddress', 'latest'],
   returnValueTest: {
     comparator: '>=',
-    value: '10000000000000',
+    value: 10000000000000,
   },
 };
 const rpc = Conditions.Condition(rpcConfig);
@@ -145,7 +145,7 @@ const rpc = Conditions.Condition(rpcConfig);
 
 Here we're checking whether the user owns any `T` Threshold Network token:
 
-```js
+```javascript
 const ERC20Conditions = {
   contractAddress: '0xCdF7028ceAB81fA0C6971208e83fa7872994beE5',
   standardContractType: 'ERC20',
@@ -154,7 +154,7 @@ const ERC20Conditions = {
   parameters: [':userAddress'],
   returnValueTest: {
     comparator: '>',
-    value: '0',
+    value: 0,
   },
 };
 ```
@@ -163,7 +163,7 @@ const ERC20Conditions = {
 
 In this example, we will check that the user is able to vote in the `T` Threshold DAO. The Threshold staking contract is located at [`0x01B67b1194C75264d06F808A921228a95C765dd7`](https://etherscan.io/address/0x01b67b1194c75264d06f808a921228a95c765dd7#readProxyContract). The function we wish to call is `getVotes` which takes an `address` as its parameter. We need to provide the `contractAddress`, `functionName`, `functionParams`, and `functionAbi` when defining the condition.
 
-```js
+```javascript
 const customABICondition = {
   contractAddress: '0x01B67b1194C75264d06F808A921228a95C765dd7',
   functionName: 'getVotes',
@@ -190,7 +190,7 @@ const customABICondition = {
   chain: 'ethereum',
   returnValueTest: {
     comparator: '>',
-    value: '0',
+    value: 0,
   },
 };
 ```
