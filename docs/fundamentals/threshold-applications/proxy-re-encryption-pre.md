@@ -12,6 +12,6 @@ PRE is directly applicable to use cases that aim to maintain data ownership whil
 \
 Want to get started staking with Threshold and running a node for PRE? Follow this guide:
 
-{% content-ref url="../../guides/tbtc-v2-binary-installation/pre-node-setup.md" %}
-[pre-node-setup.md](../../guides/tbtc-v2-binary-installation/pre-node-setup.md)
+{% content-ref url="../../guides/staking/pre-node-setup.md" %}
+[pre-node-setup.md](../../guides/staking/pre-node-setup.md)
 {% endcontent-ref %}
