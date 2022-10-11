@@ -45,13 +45,11 @@ const conditions = new ConditionSet([NFTOwnership]);
 
 We combine our Cohort, Conditions, and any other extra parameters into a Strategy.
 
-```javascript
+```js
 import { Strategy } from '@nucypher/nucypher-ts';
 
 const newStrategy = Strategy.create(
   newCohort,
-  new Date(),
-  new Date(Date.now() + 1000 * 60 * 60 * 24 * 30), // 30 days
   conditions
 );
 ```

@@ -3,8 +3,6 @@
 A Strategy combines all possible configuration parameters for using CBD. It takes the following parameters:
 
 * `cohort` - a `Cohort` object
-* `startDate` - the Strategy is valid from this date onwards
-* `endDate`- the Strategy becomes invalid after this date
 * `conditionSet?` - an optional `ConditionSet`. If used, all encryptions made via this strategy have a default Condition Set assigned
 * `aliceSecretKey?` - an optional Secret Key for the encrypter
 * `bobSecretKey?` - an optional SecretKey for decrypter
@@ -15,7 +13,7 @@ If the optional secret keys are not provided, new ones will be generated instead
 
 Assuming we have a Cohort already defined, we can construct a Strategy:
 
-```javascript
+```js
 import { Cohort, Strategy } from '@nucypher/nucypher-ts';
 
 const config = {
@@ -26,9 +24,7 @@ const config = {
 const newCohort = await Cohort.create(config);
 
 const newStrategy = Strategy.create(
-  newCohort,
-  new Date(),
-  new Date(Date.now() + 1000 * 60 * 60 * 24 * 30) // 30 days
+  newCohort
 );
 ```
 
