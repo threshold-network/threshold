@@ -4,7 +4,7 @@
 
 `nucypher-ops` is an ansible script that automates setup and configuration of a PRE node.
 
-#### [nucypher-ops setup guide](pre-node-setup.md)
+#### [nucypher-ops setup guide](../tbtc-v2-binary-installation/pre-node-setup.md)
 
 ## tBTC v2 Client Setup
 
