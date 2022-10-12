@@ -8,11 +8,11 @@ description: >-
 
 One important step to get your node operating on the Threshold Network is proper application authorization as well as operator account registration. Applications need only be authorized once.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 It is **CRITICALLY** important that both the tBTC application as well as the Random Beacon applications are authorized. A node cannot be deployed without both applications being properly authorized.
 {% endhint %}
 
-{% hint style="info" %}
+{% hint style="danger" %}
 **Please note:** by authorizing these applications, an unbonding period of 45 days will go into effect on the T you stake for these applications. This cool-down period begins the day you submit an unstake request.
 {% endhint %}
 
@@ -48,7 +48,7 @@ Enter your Operator Address in the field provided and click on "Map Address."
 
 Once the steps above have been successfully completed, you are ready to move on to the next step in the node deployment process.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Don't forget: a tBTC v2 node will not be able to be deployed without successfully authorizing both the tBTC and Random Beacon applications, and registering the node's operator address **FIRST**.
 {% endhint %}
 

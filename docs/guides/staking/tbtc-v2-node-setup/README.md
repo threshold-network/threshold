@@ -4,7 +4,7 @@ description: >-
   v2 staking client.
 ---
 
-# tBTC v2 Client Setup
+# tBTC v2 Node Setup
 
 This document is intended for members of the community who would like to run their own tBTC v2 node.&#x20;
 
@@ -48,4 +48,4 @@ A Keep Node requires a connection to a WebSocket Ethereum API. You should obtain
 
 ### Configuration
 
-The client expects configuration options to be passed as CLI flags or specified in a config file. If you specify an option by using a parameter on the command line, it will override the value read from the configuration file.
+The client expects configuration options to be passed as CLI flags or specified in a [config file](advanced-options/config-file.md). If you specify an option by using a parameter on the command line, it will override the value read from the configuration file.
