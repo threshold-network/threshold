@@ -12,15 +12,15 @@ Delegation is accomplished via an on-chain transaction which costs ETH.
 
 3\. Click "_Set Up Delegation"_
 
-![Set Up Delegation](../../../.gitbook/assets/gov-set-up-delegation.png)
+![Set Up Delegation](../../.gitbook/assets/gov-set-up-delegation.png)
 
 4\. Select your _"Delegation Type"_ - either to yourself or a third party.
 
-![Choose Delegation Type](../../../.gitbook/assets/gov-delegate-type.png)
+![Choose Delegation Type](../../.gitbook/assets/gov-delegate-type.png)
 
 5\. Enter _"Delegate Address"_ and click on _"Delegate Votes"_
 
-![Delegate Votes](../../../.gitbook/assets/gov-delegate-vote.png)
+![Delegate Votes](../../.gitbook/assets/gov-delegate-vote.png)
 
 6\. Sign the transaction
 

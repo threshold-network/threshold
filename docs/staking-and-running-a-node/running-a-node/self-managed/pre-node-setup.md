@@ -18,7 +18,7 @@ Nucypher-ops is an ansible script that will setup and configure a PRE node for y
 {% tab title="Windows" %}
 Install Ubuntu 20.04.4 LTS through the Windows Store:
 
-<figure><img src="../../.gitbook/assets/ubuntu-wsl.jpeg" alt=""><figcaption><p>WSL is the most convenient way to run nucypher-ops on a Windows based local machine</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ubuntu-wsl.jpeg" alt=""><figcaption><p>WSL is the most convenient way to run nucypher-ops on a Windows based local machine</p></figcaption></figure>
 
 To begin, update your local machine and install dependencies
 
@@ -71,21 +71,21 @@ ssh-keygen -t rsa
  cat .ssh/id_rsa.pub
 ```
 
-<figure><img src="../../.gitbook/assets/ssh-key-gen.jpg" alt=""><figcaption><p>Generating a new SSH Key</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ssh-key-gen.jpg" alt=""><figcaption><p>Generating a new SSH Key</p></figcaption></figure>
 
 Copy the highlighted part
 
-<figure><img src="../../.gitbook/assets/ssh-copy-this.jpg" alt=""><figcaption><p>New SSH Key</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ssh-copy-this.jpg" alt=""><figcaption><p>New SSH Key</p></figcaption></figure>
 
 In your Digital Ocean dashboard:
 
 Go to **Settings** > **Security** and click the **Add SSH Key** button.
 
-<figure><img src="../../.gitbook/assets/ssh-key-do-arrows.jpg" alt=""><figcaption><p>Adding a new SSH Key</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ssh-key-do-arrows.jpg" alt=""><figcaption><p>Adding a new SSH Key</p></figcaption></figure>
 
 Paste the key into the box, give your key a name, and click the **Add SSH Key** button.
 
-<figure><img src="../../.gitbook/assets/ssh-key-do-pasted.jpg" alt=""><figcaption><p>Adding a new SSH Key</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ssh-key-do-pasted.jpg" alt=""><figcaption><p>Adding a new SSH Key</p></figcaption></figure>
 
 Open a Text Document to make notes. Copy the SSH Fingerprint into this text file.
 
@@ -93,11 +93,11 @@ Open a Text Document to make notes. Copy the SSH Fingerprint into this text file
 Do not share the fingerprint with anyone. Save and store in a secure place such as a password manager.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/ssh-fingerprint.jpg" alt=""><figcaption><p>SSH Fingerprint</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ssh-fingerprint.jpg" alt=""><figcaption><p>SSH Fingerprint</p></figcaption></figure>
 
 While we're here, let's create an API key as well. Go to **API** > **Tokens/Keys** and click the **Generate New Token** button.
 
-<figure><img src="../../.gitbook/assets/api-generate-arrows.jpg" alt=""><figcaption><p>Generating an API Access Token</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/api-generate-arrows.jpg" alt=""><figcaption><p>Generating an API Access Token</p></figcaption></figure>
 
 Name your token and click the **Generate New Token** button.
 
@@ -105,11 +105,11 @@ Name your token and click the **Generate New Token** button.
 Unless you plan to periodically refresh this token yourself, you can set "Expiration" to NEVER
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/api-generate-token-arrows.jpg" alt=""><figcaption><p>Generating an API Access Token</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/api-generate-token-arrows.jpg" alt=""><figcaption><p>Generating an API Access Token</p></figcaption></figure>
 
 Copy the API Key into your Text file or password manager.
 
-<figure><img src="../../.gitbook/assets/api-generate-token-save-arrows.jpg" alt=""><figcaption><p>Generating an API Access Token</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/api-generate-token-save-arrows.jpg" alt=""><figcaption><p>Generating an API Access Token</p></figcaption></figure>
 
 ## L2 Providers
 
@@ -134,7 +134,7 @@ Let's review and make sure you have everything needed to be successful:
 * Endpoint URL for Ethereum
 * Endpoint URL for Polygon
 
-<figure><img src="../../.gitbook/assets/notepad.jpg" alt=""><figcaption><p>Sample text file</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/notepad.jpg" alt=""><figcaption><p>Sample text file</p></figcaption></figure>
 
 These items should be kept readily available.
 
@@ -146,7 +146,7 @@ pip install nucypher-ops
 
 This will download the utility, and install dependencies. This process will take several minutes.
 
-<figure><img src="../../.gitbook/assets/nucypher-ops-installed.jpg" alt=""><figcaption><p>nucypher-ops installation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/nucypher-ops-installed.jpg" alt=""><figcaption><p>nucypher-ops installation</p></figcaption></figure>
 
 ### Creating Your Node
 
@@ -160,21 +160,21 @@ This will connect to your Digital Ocean account, spin up a VPS, configure and se
 
 The utility will ask which provider you are using. Answer accordingly and press **ENTER**.
 
-<figure><img src="../../.gitbook/assets/nucypher-ops-do.jpg" alt=""><figcaption><p>Selecting VPS provider in nucypher-ops</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/nucypher-ops-do.jpg" alt=""><figcaption><p>Selecting VPS provider in nucypher-ops</p></figcaption></figure>
 
 Provide your API Key and press **ENTER**.
 
-<figure><img src="../../.gitbook/assets/paste-api-key.jpg" alt=""><figcaption><p>Providing API Key in nucypher-ops</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/paste-api-key.jpg" alt=""><figcaption><p>Providing API Key in nucypher-ops</p></figcaption></figure>
 
 Provide your SSH Fingerprint and press **ENTER**.
 
-<figure><img src="../../.gitbook/assets/paste-ssh-fingerprint.jpg" alt=""><figcaption><p>Providing SSH fingerprint in nucypher-ops</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/paste-ssh-fingerprint.jpg" alt=""><figcaption><p>Providing SSH fingerprint in nucypher-ops</p></figcaption></figure>
 
 Then be patient.
 
-<figure><img src="../../.gitbook/assets/setting-up-node-1.jpg" alt=""><figcaption><p>Creating VPS instance &#x26; PRE node</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/setting-up-node-1.jpg" alt=""><figcaption><p>Creating VPS instance &#x26; PRE node</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/setting-up-node-2.jpg" alt=""><figcaption><p>VPS instance &#x26; PRE node created</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/setting-up-node-2.jpg" alt=""><figcaption><p>VPS instance &#x26; PRE node created</p></figcaption></figure>
 
 ### Deploying Ursula
 
@@ -188,11 +188,11 @@ Provide your ETH endpoint when requested and press **ENTER**.
 
 Provide your Polygon endpoint when requested and press **ENTER**.
 
-<figure><img src="../../.gitbook/assets/ursula-deploy-1.jpg" alt=""><figcaption><p>Configuring and deploying Ursula</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ursula-deploy-1.jpg" alt=""><figcaption><p>Configuring and deploying Ursula</p></figcaption></figure>
 
 Wait for it...
 
-<figure><img src="../../.gitbook/assets/ursula-deploy-2-arrows.jpg" alt=""><figcaption><p>PRE node ready to bond</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ursula-deploy-2-arrows.jpg" alt=""><figcaption><p>PRE node ready to bond</p></figcaption></figure>
 
 The items at the bottom are your node's IP address and Operator address, to which you will need to bond your stake.
 
