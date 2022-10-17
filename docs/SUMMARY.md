@@ -66,7 +66,6 @@
 
 * [Contribution](extras/contribution.md)
 * [Contract Addresses](extras/contract-addresses.md)
-* [FAQ (Coming Soon)](extras/faq.md)
 * [Glossary](extras/glossary.md)
 * [Links](extras/links.md)
 * [Between Two Keys](extras/between-two-keys.md)

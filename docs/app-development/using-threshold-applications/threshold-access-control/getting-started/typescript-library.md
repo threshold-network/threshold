@@ -1,12 +1,12 @@
 # Typescript Library
 
-`nucypher-ts` is a TypeScript library to allow developers to interact with core NuCypher functionality within the browser.
+`nucypher-ts` is a TypeScript library for interactingwith NuCypher's access control functionality in the browser.
 
 {% hint style="warning" %}
-`nucypher-ts` is in active development, so please be aware that things may change!
+`nucypher-ts` is under active development, so please be aware that things may change!
 {% endhint %}
 
-If you have any questions, don't hesitate to create an issue on [Github](https://github.com/nucypher/nucypher-ts), or come and say hello on our [Discord](https://discord.gg/threshold)]\(https://discord.gg/threshold).
+If you have any questions, don't hesitate to create an issue on [Github](https://github.com/nucypher/nucypher-ts), or come and say hello on our [Discord](https://discord.gg/threshold).
 
 ## Installation
 
