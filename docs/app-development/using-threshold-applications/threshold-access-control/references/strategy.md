@@ -13,7 +13,7 @@ If the optional secret keys are not provided, new ones will be generated instead
 
 Assuming we have a Cohort already defined, we can construct a Strategy:
 
-```js
+```javascript
 import { Cohort, Strategy } from '@nucypher/nucypher-ts';
 
 const config = {
@@ -80,4 +80,18 @@ console.log(configJSON);
 LARGE JSON OBJECT
 */
 const importedStrategy = DeployedStrategy.fromJSON(configJSON);
+```
+
+Similarly, we can import and export the decrypter objects to JSON. This allows us to rebuild the decrypter on a client facing application:
+
+```javascript
+import { DeployedStrategy } from '@nucypher/nucypher-ts';
+
+const decrypter = newDeployed.decrypter;
+const decrypterJSON = decrypter.toJSON();
+// save this JSON are send it over a side channel to a client facing app
+
+// on the client app
+import { tDecDecrypter } from '@nucypher/nucypher-ts';
+const newDecrypter = tDecDecrypter.fromJSON(decrypterJSON);
 ```
