@@ -65,7 +65,9 @@
 ## Extras
 
 * [Contribution](extras/contribution.md)
-* [Contract Addresses](extras/contract-addresses.md)
+* [Contract Addresses](extras/contract-addresses/README.md)
+  * [Ethereum Mainnet](extras/contract-addresses/ethereum-mainnet.md)
+  * [Görli Testnet](extras/contract-addresses/goerli-testnet.md)
 * [Glossary](extras/glossary.md)
 * [Links](extras/links.md)
 * [Between Two Keys](extras/between-two-keys.md)

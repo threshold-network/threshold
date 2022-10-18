@@ -1,11 +1,14 @@
-# Contract Addresses
+# Ethereum Mainnet
 
 ## Threshold Contracts
+
+Delivered in `@threshold-network/solidity-contracts@1.1.0` package.
 
 | Contract                | Address                                                                                                               |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | T Token                 | [0xCdF7028ceAB81fA0C6971208e83fa7872994beE5](https://etherscan.io/address/0xCdF7028ceAB81fA0C6971208e83fa7872994beE5) |
 | TokenStaking            | [0x01b67b1194c75264d06f808a921228a95c765dd7](https://etherscan.io/address/0x01b67b1194c75264d06f808a921228a95c765dd7) |
+| KeepStake               | [0x10DE37cF84202A20cae61069C617B3Aa874aF8b4](https://etherscan.io/address/0x10DE37cF84202A20cae61069C617B3Aa874aF8b4) |
 | NU<>T Vending Machine   | [0x1CCA7E410eE41739792eA0A24e00349Dd247680e](https://etherscan.io/address/0x1CCA7E410eE41739792eA0A24e00349Dd247680e) |
 | KEEP<>T Vending Machine | [0xE47c80e8c23f6B4A1aE41c34837a0599D5D16bb0](https://etherscan.io/address/0xE47c80e8c23f6B4A1aE41c34837a0599D5D16bb0) |
 
@@ -26,8 +29,18 @@
 
 ## Legacy Keep Contracts
 
+Delivered in `@keep-network/keep-core@1.8.0` package.
+
 | Contract     | Address                                                                                                               |
 | ------------ | --------------------------------------------------------------------------------------------------------------------- |
 | KEEP Token   | [0x85Eee30c52B0b379b046Fb0F85F4f3Dc3009aFEC](https://etherscan.io/address/0x85Eee30c52B0b379b046Fb0F85F4f3Dc3009aFEC) |
 | TokenStaking | [0x1293a54e160D1cd7075487898d65266081A15458](https://etherscan.io/address/0x1293a54e160D1cd7075487898d65266081A15458) |
-|              |                                                                                                                       |
+
+## TBTC Application Contracts
+
+Delivered in `@keep-network/random-beacon@2.0.0` and `@keep-network/ecdsa@2.0.0` packages.
+
+| Contract       | Address                                                                                                               |
+| -------------- | --------------------------------------------------------------------------------------------------------------------- |
+| RandomBeacon   | [0x5499f54b4A1CB4816eefCf78962040461be3D80b](https://etherscan.io/address/0x5499f54b4A1CB4816eefCf78962040461be3D80b) |
+| WalletRegistry | [0xfbae130e06bbc8ca198861beecae6e2b830398fb](https://etherscan.io/address/0xfbae130e06bbc8ca198861beecae6e2b830398fb) |
