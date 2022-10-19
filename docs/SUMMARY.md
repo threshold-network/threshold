@@ -60,7 +60,8 @@
       * [Conditions](app-development/using-threshold-applications/threshold-access-control/references/conditions.md)
       * [Condition Set](app-development/using-threshold-applications/threshold-access-control/references/condition-set.md)
       * [Strategy](app-development/using-threshold-applications/threshold-access-control/references/strategy.md)
-* [Goerli Testnet](app-development/ropsten-testnet-staking.md)
+* [Goerli Testnet](app-development/ropsten-testnet-staking/README.md)
+  * [Testnet tBTC v2 node Setup](app-development/ropsten-testnet-staking/testnet-tbtc-v2-node-setup.md)
 
 ## Extras
 
