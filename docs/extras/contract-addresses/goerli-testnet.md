@@ -32,8 +32,8 @@ Delivered in `@keep-network/keep-core@1.8.1-goerli.0` NPM package.
 
 Delivered in `@keep-network/random-beacon@2.1.0-goerli.1`, `@keep-network/ecdsa@2.1.0-goerli.1` and `@keep-network/tbtc-v2@0.1.1-goerli.6` NPM packages.
 
-| Contract       | Address                                                                                                                      |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Bridge         | [0x52E861c35240d722e9EF7B605dC72C71ff8fc185](https://goerli.etherscan.io/address/0x52E861c35240d722e9EF7B605dC72C71ff8fc185) |
-| RandomBeacon   | [0xaFfCD4734eEa140Ba5666Bf60541CCAFfa74F4be](https://goerli.etherscan.io/address/0xaFfCD4734eEa140Ba5666Bf60541CCAFfa74F4be) |
-| WalletRegistry | [0x82BE0F8C8d43fAC584B03f4b782370E202A34527](https://goerli.etherscan.io/address/0x82BE0F8C8d43fAC584B03f4b782370E202A34527) |
+| Contract       | Address                                                                                                                                         |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Bridge         | [0x52E861c35240d722e9EF7B605dC72C71ff8fc185](https://goerli.etherscan.io/address/0x52E861c35240d722e9EF7B605dC72C71ff8fc185)                    |
+| RandomBeacon   | [0xaFfCD4734eEa140Ba5666Bf60541CCAFfa74F4be](https://goerli.etherscan.io/address/0xaFfCD4734eEa140Ba5666Bf60541CCAFfa74F4be)                    |
+| WalletRegistry | [0x82BE0F8C8d43fAC584B03f4b782370E202A34527](https://goerli.etherscan.io/address/0x82BE0F8C8d43fAC584B03f4b782370E202A34527#writeProxyContract) |

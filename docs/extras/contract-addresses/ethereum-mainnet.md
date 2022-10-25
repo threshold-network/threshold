@@ -40,7 +40,7 @@ Delivered in `@keep-network/keep-core@1.8.0` package.
 
 Delivered in `@keep-network/random-beacon@2.0.0` and `@keep-network/ecdsa@2.0.0` packages.
 
-| Contract       | Address                                                                                                               |
-| -------------- | --------------------------------------------------------------------------------------------------------------------- |
-| RandomBeacon   | [0x5499f54b4A1CB4816eefCf78962040461be3D80b](https://etherscan.io/address/0x5499f54b4A1CB4816eefCf78962040461be3D80b) |
-| WalletRegistry | [0xfbae130e06bbc8ca198861beecae6e2b830398fb](https://etherscan.io/address/0xfbae130e06bbc8ca198861beecae6e2b830398fb) |
+| Contract       | Address                                                                                                                                  |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| RandomBeacon   | [0x5499f54b4A1CB4816eefCf78962040461be3D80b](https://etherscan.io/address/0x5499f54b4A1CB4816eefCf78962040461be3D80b)                    |
+| WalletRegistry | [0x46d52E41C2F300BC82217Ce22b920c34995204eb](https://etherscan.io/address/0x46d52E41C2F300BC82217Ce22b920c34995204eb#writeProxyContract) |
