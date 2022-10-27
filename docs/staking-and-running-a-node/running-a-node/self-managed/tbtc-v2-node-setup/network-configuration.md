@@ -6,23 +6,19 @@ description: Required network configuration for the tBTC v2 staking client.
 
 ### Required Ports
 
-The node has to be accessible publicly to establish and maintain connections with bootstrap nodes and discovered peers. The node exposes metrics and diagnostics services for network health monitoring purposes.
-
-{% hint style="info" %}
-Update firewall rules as necessary, including application level firewalls.
-{% endhint %}
+The node has to be accessible publicly to establish and maintain connections with bootstrap nodes and discovered peers. The node exposes metrics and diagnostics services for network health monitoring purposes.  Update firewall rules as necessary, including application level firewalls for the following ports
 
 | Purpose | Config Property | Protocol | Default |
 | ------- | --------------- | -------- | ------- |
 | Network | network.port    | TCP      | 3919    |
 | Status  | clientInfo.port | TCP      | 9601    |
 
-{% hint style="info" %}
-A Network Port has to be exposed publicly, so the peers can connect to your node.
+{% hint style="warning" %}
+The network port must be exposed publicly for peers to connect to your node.
 {% endhint %}
 
-{% hint style="info" %}
-A Status Port has to be exposed publicly, for the rewards allocation.
+{% hint style="warning" %}
+The status port must be exposed publicly for rewards allocation.
 {% endhint %}
 
 ### **Announced Addresses**
