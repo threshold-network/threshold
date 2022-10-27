@@ -65,6 +65,7 @@
 
 ## Extras
 
+* [Security](extras/security.md)
 * [Contribution](extras/contribution.md)
 * [Contract Addresses](extras/contract-addresses/README.md)
   * [Ethereum Mainnet](extras/contract-addresses/ethereum-mainnet.md)
