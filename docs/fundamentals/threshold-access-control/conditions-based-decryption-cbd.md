@@ -8,6 +8,10 @@ Conditions-Based Decryption (CBD) is one of two technologies underpinning the Th
 
 In broad terms, CBD enables the users of adopting applications to specify conditions for accessing their encrypted data. If those conditions are not fulfilled – which means formal verification by a cohort of nodes from the Threshold network – then the data remain entirely unreadable to anyone besides the original data owner/encryptor. However, if the predefined conditions are provably satisfied, then the data requester gains decryption rights.&#x20;
 
+**Threshold Decryption**
+
+Under the hood, CBD involves splitting a joint secret – a decryption key – into multiples _shares_ and distributing those among authorized and collateralized node operators (stakers in the Threshold network). A minimum number – a _threshold_ – of those operators holding the key shares must be online and actively participate in partial decryptions. These are subsequently combined on the requester's client to reconstruct the original plaintext data.
+
 **Conditionality**
 
 A range of access condition types can be defined by the data owner. For example:&#x20;
@@ -21,9 +25,9 @@ A range of access condition types can be defined by the data owner. For example:
 
 These conditions are also composable and can be combined in any logical sequence or decision tree.&#x20;
 
-Under the hood, CBD involves splitting a joint secret – a decryption key – into multiples _shares_ and distributing those among authorized and collateralized node operators (stakers in the Threshold network). A minimum number – a _threshold_ – of those operators holding the key shares must be online and actively participate in partial decryptions. These are subsequently combined on the requester's client to reconstruct the original plaintext data.
+Conditions are 'attached' on a per-ciphertext basis. In other words, each and every payload, message or bit can theoretically can have accessed restricted by a unique set of specified conditions. In most situations, condition sets will be automatically reused until the end-user proactively configures them – for example, in order to remove an address from continuing to access the messages in a group chat.&#x20;
 
-**Verification**
+**Conditions Verification**
 
 Currently, requesters prove their association with condition fulfillment – i.e. their right to receive a threshold number of decrypting shares – by signing a transaction that verifies their ownership of a given Ethereum wallet. That wallet is checked for fulfillment of the specific condition – e.g. owning an NFT in order to access a DAO's knowledge base.&#x20;
 
