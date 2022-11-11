@@ -1,6 +1,8 @@
-# Create Security Optionality With Re-usable Cohorts
+# Create Security Optionality With Reusable Cohorts
 
-Providing configurable security to your users is easy with re-usable Cohorts. Below we define 3 cohorts; small, medium, and large. `smallCohort`, `mediumCohort`, and `largeCohort` can then be re-used by multiple Strategies.
+Providing configurable security to end-users is easy with _Reusable Cohorts_. Below we define thre cohorts; small, medium, and large.&#x20;
+
+`smallCohort`, `mediumCohort`, and `largeCohort` can then be reused by multiple Strategies.
 
 ```javascript
 const smallConfig = {

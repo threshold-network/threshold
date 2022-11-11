@@ -4,7 +4,7 @@ description: Threshold Application
 
 # Threshold Access Control
 
-Threshold Access Control enables end-to-end encrypted data sharing and communication without the need to trust a centralized authority. It is the only access control layer available to Web3 developers that has **already achieved true decentralization** through a live and well-collateralized network, with sensitive cryptographic operations disassembled and distributable across \~250 independently operated servers.&#x20;
+Threshold Access Control (TAC) enables end-to-end encrypted data sharing and communication without the need to trust a centralized authority. It is the only access control layer available to Web3 developers that has **already achieved true decentralization** through a live and well-collateralized network, with sensitive cryptographic operations disassembled and distributable across \~250 independently operated servers.&#x20;
 
 End-users of applications which have integrated Threshold Access Control enjoy the following features & benefits:
 
