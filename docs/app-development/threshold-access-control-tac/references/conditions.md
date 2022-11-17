@@ -25,7 +25,7 @@ If we want to be more verbose we can use `Conditions.Condition`. The above and b
 const NFTOwnershipConfig = {
   contractAddress: '0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D',
   standardContractType: 'ERC721',
-  chain: 'ethereum',
+  chain: 1,
   method: 'ownerOf',
   parameters: [5954],
   returnValueTest: {
@@ -52,7 +52,7 @@ Alternatively:
 const NFTBalanceConfig = {
   contractAddress: '0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D',
   standardContractType: 'ERC721',
-  chain: 'ethereum',
+  chain: 5,
   method: 'balanceOf',
   parameters: [':userAddress'],
   returnValueTest: {
@@ -83,7 +83,7 @@ or:
 const timelockConfig = {
   contractAddress: '',
   standardContractType: '',
-  chain: 'ethereum',
+  chain: 5,
   method: 'timelock',
   returnValueTest: {
     comparator: '>',
@@ -99,7 +99,7 @@ const timelock = Conditions.Condition(timelockConfig);
 
 ```javascript
 const const rpc = new Conditions.RpcCondition({
-  chain: 'ethereum',
+  chain: 1,
   method: 'eth_getBalance',
   parameters: [
       ":userAddress",
@@ -118,7 +118,7 @@ or:
 const rpcConfig = {
   contractAddress: '',
   standardContractType: '',
-  chain: 'ethereum',
+  chain: 1,
   method: 'eth_getBalance',
   parameters: [':userAddress', 'latest'],
   returnValueTest: {
@@ -149,7 +149,7 @@ Here we're checking whether the user owns any `T` Threshold Network token:
 const ERC20Conditions = {
   contractAddress: '0xCdF7028ceAB81fA0C6971208e83fa7872994beE5',
   standardContractType: 'ERC20',
-  chain: 'ethereum',
+  chain: 5,
   method: 'balanceOf',
   parameters: [':userAddress'],
   returnValueTest: {
@@ -166,8 +166,8 @@ In this example, we will check that the user is able to vote in the `T` Threshol
 ```javascript
 const customABICondition = {
   contractAddress: '0x01B67b1194C75264d06F808A921228a95C765dd7',
-  functionName: 'getVotes',
-  functionParams: [':userAddress'],
+  method: 'getVotes',
+  parameters: [':userAddress'],
   functionAbi: {
     inputs: [
       {
@@ -187,7 +187,7 @@ const customABICondition = {
     stateMutability: 'view',
     type: 'function',
   },
-  chain: 'ethereum',
+  chain: 1,
   returnValueTest: {
     comparator: '>',
     value: 0,
