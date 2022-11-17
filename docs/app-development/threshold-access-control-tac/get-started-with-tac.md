@@ -47,7 +47,7 @@ const NFTOwnership = new Conditions.ERC721Ownership({
 });
 ```
 
-Note that it is possible to compose and combine multiple Condition objects into a _ConditionSet:_
+Note that there are other Condition [types](references/conditions.md), and it is possible to compose and combine multiple Condition objects into a [_ConditionSet_](references/condition-set.md)_:_
 
 ```javascript
 import { Conditions, ConditionSet } from '@nucypher/nucypher-ts';
@@ -55,11 +55,11 @@ import { Conditions, ConditionSet } from '@nucypher/nucypher-ts';
 const conditions = new ConditionSet([NFTOwnership]);
 ```
 
-For now, we'll only specify a single Condition.
+In this tutorial, we'll only specify a single Condition to access the data. &#x20;
 
 ## 5. Build a Strategy
 
-We now bundle the Cohort, ConditionSet, and any other extra parameters into a _Strategy:_
+We now bundle the Cohort, ConditionSet, and any other extra parameters into a [_Strategy_](references/strategy.md)_:_
 
 ```javascript
 import { Strategy } from '@nucypher/nucypher-ts';
@@ -85,7 +85,7 @@ if (MMprovider) {
     rinkeby
   );
   const newDeployed = await newStrategy.deploy('test', web3Provider);
-}
+} 
 ```
 
 {% hint style="info" %}
@@ -117,4 +117,5 @@ const decryptedMessage = await decrypter.retrieveAndDecrypt([
 
 At decryption time, the requester will be asked to verify their address by signing a message in MetaMask. If they own the correct NFT, the message will decrypt successfully.
 
-##
+For more guidance on Cohort, Condition and Strategy object reuse and customization, check out the [References](references/) page.&#x20;
+
