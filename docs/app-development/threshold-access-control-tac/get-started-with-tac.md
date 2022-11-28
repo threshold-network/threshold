@@ -7,7 +7,13 @@ The following interactive tutorial is a quick way for developers to familiarize 
 We'll kick things off by installing `nucypher-ts` – a TypeScript library for interacting with access control functionality in the browser. The APIs for leveraging most TAC functionality are contained in nucypher-ts.
 
 ```
-yarn add @nucypher/nucypher-ts
+yarn add @nucypher/nucypher-ts@alpha
+```
+
+Also, for this example we will need some extra packages:
+
+```
+yarn add ethers @metamask/detect-provider
 ```
 
 {% hint style="warning" %}
@@ -26,23 +32,23 @@ import { Cohort } from '@nucypher/nucypher-ts';
 const config = {
   threshold: 3,
   shares: 5,
-  porterUri: 'https://porter-ibex.nucypher.community',
+  porterUri: 'https://porter-tapir.nucypher.community',
 };
 const newCohort = await Cohort.create(config);
 ```
 
-Notice that we have also provided a `porterUri`. **Porter is a web-based service that interacts with nodes on the network on behalf of applications – an "Infura for TAC".** In this example, we've chosen an `ibex` (testnet) Porter endpoint.
+Notice that we have also provided a `porterUri`. **Porter is a web-based service that interacts with nodes on the network on behalf of applications – an "Infura for TAC".** In this example, we've chosen an tapir (testnet) Porter endpoint.
 
 ## 3. Create Conditions
 
-We will now specify the conditions on which data access will be predicated – i.e. what will the data requester need to prove in order to gain decryption rights. In this tutorial, nodes will check that the requester owns a specific ERC721 NFT:
+We will now specify the conditions on which data access will be predicated – i.e. what will the data requester need to prove in order to gain decryption rights. In this tutorial, nodes will check that the requester owns a specific ERC721 NFT. The token ID is specified in the 'parameters' argument.
 
 ```javascript
 import { Conditions } from '@nucypher/nucypher-ts';
 
 const NFTOwnership = new Conditions.ERC721Ownership({
   contractAddress: '0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D',
-  chain: 'Rinkeby', // Ibex uses Rinkeby testnet
+  chain: 5, // Tapir network uses Görli testnet
   parameters: [5954],
 });
 ```
@@ -55,9 +61,9 @@ import { Conditions, ConditionSet } from '@nucypher/nucypher-ts';
 const conditions = new ConditionSet([NFTOwnership]);
 ```
 
-In this tutorial, we'll only specify a single Condition to access the data. &#x20;
+This tutorial will only specify a single Condition to access the data. &#x20;
 
-## 5. Build a Strategy
+## 4. Build a Strategy
 
 We now bundle the Cohort, ConditionSet, and any other extra parameters into a [_Strategy_](references/strategy.md)_:_
 
@@ -92,7 +98,7 @@ if (MMprovider) {
 Deploying a Strategy requires writing to the blockchain. This requires a funded wallet and connection to the blockchain via a `provider`(e.g. MetaMask).
 {% endhint %}
 
-## 6. Encrypt the plaintext
+## 5. Encrypt the plaintext
 
 We're now able to encrypt data to this newly deployed Strategy – which implies future access to this data will be based on ownership of the previously specified NFT, and nothing else. We'll now encrypt a plaintext using the encryptor object:
 
@@ -103,7 +109,7 @@ const plaintext = 'this is a secret';
 const encryptedMessageKit = encrypter.encryptMessage(plaintext);
 ```
 
-## 7. Request decryption rights
+## 6. Request decryption rights
 
 Finally, we'll test the access control service by submitting a request to the network:
 
