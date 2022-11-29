@@ -37,11 +37,11 @@ const config = {
 const newCohort = await Cohort.create(config);
 ```
 
-Notice that we have also provided a `porterUri`. **Porter is a web-based service that interacts with nodes on the network on behalf of applications – an "Infura for TAC".** In this example, we've chosen an tapir (testnet) Porter endpoint.
+Notice that we have also provided a `porterUri`. [**Porter**](https://github.com/nucypher/nucypher-porter) **is a web-based service that interacts with nodes on the network on behalf of applications – an "Infura for TAC".** In this example, we've chosen an tapir (testnet) Porter endpoint.
 
 ## 3. Create Conditions
 
-We will now specify the conditions on which data access will be predicated – i.e. what will the data requester need to prove in order to gain decryption rights. In this tutorial, nodes will check that the requester owns a specific ERC721 NFT. The token ID is specified in the 'parameters' argument.
+We will now specify the conditions on which data access will be predicated – i.e. what will the data requester need to prove in order to gain decryption rights. In this tutorial, nodes will check that the requester owns an ERC721 NFT with a token ID of `5954`.
 
 ```javascript
 import { Conditions } from '@nucypher/nucypher-ts';
@@ -53,7 +53,7 @@ const NFTOwnership = new Conditions.ERC721Ownership({
 });
 ```
 
-Note that there are other Condition [types](references/conditions.md), and it is possible to compose and combine multiple Condition objects into a [_ConditionSet_](references/condition-set.md)_:_
+ERC721Ownership is provided for convenience. The full underlying configuration can be viewed [here](https://docs.threshold.network/app-development/threshold-access-control-tac/references/conditions#conditions.erc721ownership).
 
 ```javascript
 import { Conditions, ConditionSet } from '@nucypher/nucypher-ts';
@@ -62,6 +62,10 @@ const conditions = new ConditionSet([NFTOwnership]);
 ```
 
 This tutorial will only specify a single Condition to access the data. &#x20;
+
+{% hint style="info" %}
+There is support for a variety of [Condition types](references/conditions.md) and more granular configurations. It is also possible to logically compose and combine multiple conditions into a single overall condition via [ConditionSet.](references/condition-set.md)
+{% endhint %}
 
 ## 4. Build a Strategy
 
