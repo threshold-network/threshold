@@ -1,6 +1,8 @@
 # Conditions
 
-Several types of access conditions can be defined:
+This page focuses on Condition types and composition. To understand how Conditions are added and enforced with respect to runtime, check out the [Condition Hierarchies](../advanced-usage/condition-hierarchies.md) page. \
+\
+Several distinct categories of access conditions can be specified and combined:&#x20;
 
 * EVM - on-chain state, eg NFT ownership, ETH balance, tx status, contract function call
 * RPC - ethereum RPC calls as defined in the [Official API](https://ethereum.org/en/developers/docs/apis/json-rpc/#json-rpc-methods)

@@ -50,6 +50,7 @@
 * [Threshold Access Control (TAC)](app-development/threshold-access-control-tac/README.md)
   * [Get Started with TAC](app-development/threshold-access-control-tac/get-started-with-tac.md)
   * [Advanced Usage](app-development/threshold-access-control-tac/advanced-usage/README.md)
+    * [Condition Hierarchies](app-development/threshold-access-control-tac/advanced-usage/condition-hierarchies.md)
     * [Create Security Optionality With Reusable Cohorts](app-development/threshold-access-control-tac/advanced-usage/create-security-optionality-with-reusable-cohorts.md)
     * [Implementing Revocation via Smart Contract](app-development/threshold-access-control-tac/advanced-usage/implementing-revocation-via-smart-contract.md)
     * [Proxy Re-Encryption](app-development/threshold-access-control-tac/advanced-usage/proxy-re-encryption.md)

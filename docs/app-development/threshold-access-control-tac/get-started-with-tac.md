@@ -37,17 +37,11 @@ const config = {
 const newCohort = await Cohort.create(config);
 ```
 
-Notice that we have also provided a `porterUri`. [**Porter**](https://github.com/nucypher/nucypher-porter) **is a web-based service that interacts with nodes on the network on behalf of applications – an "Infura for TAC".** In this example, we've chosen an tapir (testnet) Porter endpoint.&#x20;
+Notice that we have also provided a `porterUri`. [**Porter**](https://github.com/nucypher/nucypher-porter) **is a web-based service that interacts with nodes on the network on behalf of applications – an "Infura for TAC".** In this example, we've chosen an tapir (testnet) Porter endpoint.
 
-## 3. Specify default Conditions
+## 3. Create Conditions
 
-Conditions are the requirements for a data requester or recipient to access the plaintext data – i.e. what they will need to prove to gain decryption rights.&#x20;
-
-{% hint style="info" %}
-CBD allows developers to enforce conditional access at various stages of runtime, depending on what makes the most sense for the use case. At this point, we will add the _default_ or _subordinate_ Conditions_,_ which will only gate-keep access _if no other conditions are included later at encryption time_.&#x20;
-{% endhint %}
-
-For now, we will specify that Threshold nodes must confirm that the requester owns an ERC721 NFT with a token ID of `5954` to qualify for access. &#x20;
+We will now specify the conditions on which data access will be predicated – i.e. what will the data requester need to prove in order to gain decryption rights. In this tutorial, nodes will check that the requester owns an ERC721 NFT with a token ID of `5954`.
 
 ```javascript
 import { Conditions } from '@nucypher/nucypher-ts';
@@ -59,7 +53,7 @@ const NFTOwnership = new Conditions.ERC721Ownership({
 });
 ```
 
-The ERC721Ownership function is provided for convenience. The full underlying configuration can be viewed [here](https://docs.threshold.network/app-development/threshold-access-control-tac/references/conditions#conditions.erc721ownership).
+ERC721Ownership is provided for convenience. The full underlying configuration can be viewed [here](https://docs.threshold.network/app-development/threshold-access-control-tac/references/conditions#conditions.erc721ownership).
 
 ```javascript
 import { Conditions, ConditionSet } from '@nucypher/nucypher-ts';
@@ -67,8 +61,10 @@ import { Conditions, ConditionSet } from '@nucypher/nucypher-ts';
 const conditions = new ConditionSet([NFTOwnership]);
 ```
 
+This tutorial will only specify a single Condition to access the data. &#x20;
+
 {% hint style="info" %}
-There is support for a variety of [Condition types](references/conditions.md) and more granular configurations. It is also possible to logically compose and combine multiple conditions into more complex conditionality via the [ConditionSet](references/condition-set.md) object.&#x20;
+There is support for a variety of [Condition types](references/conditions.md) and more granular configurations. It is also possible to logically compose and combine multiple conditions into a single overall condition via [ConditionSet.](references/condition-set.md)
 {% endhint %}
 
 ## 4. Build a Strategy
@@ -106,13 +102,9 @@ if (MMprovider) {
 Deploying a Strategy requires writing to the blockchain. This requires a funded wallet and connection to the blockchain via a `provider`(e.g. MetaMask).
 {% endhint %}
 
-Strategies are a convenient way to bundle together frequently used configurations, including specific combinations of network parameters and conditionality. For more guidance on Cohort, Condition and Strategy object reuse and customization, check out the [References](references/) page.&#x20;
+## 5. Encrypt the plaintext
 
-## 5. Encrypt the plaintext & add predominant Conditions
-
-Using our newly deployed Strategy, we're now able to encrypt the data payload. At this point, we will specify the _primary_ or _predominant_ conditions on which data access will be predicated – i.e. these will override the default conditions contained in the Strategy. In this case, we will require the requester's wallet to hold a minimum number (3) of the same NFTs as before. Note that Threshold nodes will check this using the `balanceOf` method.&#x20;
-
-We'll now encrypt a plaintext using the encryptor function, which includes the new predominant Conditions as an argument:
+We're now able to encrypt data to this newly deployed Strategy – which implies future access to this data will be based on ownership of the previously specified NFT, and nothing else. We'll now encrypt a plaintext using the encryptor object:
 
 ```javascript
 const encrypter = newDeployed.encrypter;
@@ -123,7 +115,7 @@ const encryptedMessageKit = encrypter.encryptMessage(plaintext);
 
 ## 6. Request decryption rights
 
-Finally, we'll test the conditional access control service by submitting a request to the network:
+Finally, we'll test the access control service by submitting a request to the network:
 
 ```javascript
 const decrypter = newDeployed.decrypter;
@@ -133,5 +125,7 @@ const decryptedMessage = await decrypter.retrieveAndDecrypt([
 ]);
 ```
 
-At decryption time, the requester will be asked to verify their address by signing a message in MetaMask. If they own the minimum number of NFTs, the message will decrypt successfully.
+At decryption time, the requester will be asked to verify their address by signing a message in MetaMask. If they own the correct NFT, the message will decrypt successfully.
+
+For more guidance on Cohort, Condition and Strategy object reuse and customization, check out the [References](references/) page.&#x20;
 
