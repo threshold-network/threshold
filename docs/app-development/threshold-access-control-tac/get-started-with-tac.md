@@ -107,7 +107,7 @@ if (MMprovider) {
 ```
 
 {% hint style="info" %}
-Deploying a `Strategy` requires writing to the blockchain. This requires a wallet funded with testnet MATIC and connection to the blockchain via an `provider`(e.g. MetaMask).
+Deploying a `Strategy` requires writing to the blockchain. This requires a wallet funded with testnet MATIC and connection to the blockchain via a `provider`(e.g. MetaMask).
 {% endhint %}
 
 For more information about customizing and reusing `Cohort`, `Condition`, and `Strategy` objects, see the [References](references/) page in the documentation.
