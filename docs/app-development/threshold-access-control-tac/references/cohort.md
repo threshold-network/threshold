@@ -4,7 +4,7 @@
 
 When creating a new cohort, the configuration **must** include `threshold`, `shares`, and `porterUri`. We also make available the parameters `include` and `exclude` which can be used to filter particular Nodes.
 
-```js
+```typescript
 const config = {
   threshold: 3,
   shares: 5,
@@ -17,7 +17,7 @@ const newCohort = await Cohort.create(config, (include = []), (exclude = []));
 
 A cohort can be serialized to a JSON object so that it can be stored and re-used at a later time.
 
-```js
+```typescript
 const cohortJSON = newCohort.toJSON();
 console.log(cohortJSON);
 // {
@@ -36,7 +36,7 @@ console.log(cohortJSON);
 
 Similarly, we can read in a valid JSON object to build a new Cohort.
 
-```js
+```typescript
 const importedCohort = Cohort.fromJSON(cohortJSON);
 console.log(importedCohort);
 // Cohort {
