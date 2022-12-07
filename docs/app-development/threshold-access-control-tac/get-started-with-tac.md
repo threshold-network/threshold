@@ -60,7 +60,7 @@ const NFTOwnership = new Conditions.ERC721Ownership({
 ```
 
 {% hint style="info" %}
-There are other [`Condition` types](references/conditions.md), and it is possible to combine multiple conditions into a [`ConditionSet`](references/condition-set.md)``
+There are multiple [Condition types](references/conditions.md) and it is possible combine multiple conditions into a [ConditionSet](references/condition-set.md).&#x20;
 {% endhint %}
 
 ```javascript
@@ -104,17 +104,30 @@ if (MMprovider) {
 Deploying a `Strategy` requires writing to the blockchain. This requires a wallet funded with testnet MATIC and connection to the blockchain via an `provider`(e.g. MetaMask).
 {% endhint %}
 
-## 5. Encrypt the plaintext & add predominant Conditions
+## 5. Encrypt the plaintext & update Conditions
 
 We can now encrypt data using the newly deployed `Strategy`. At this point, we can specify new conditions on which data access will be predicated. These take a higher precedence and will override the default conditions contained in the Strategy. In this case, we will require the requester's wallet to hold a minimum number (3) of the same NFTs as before. Note that Threshold nodes will check this using the `balanceOf` method.&#x20;
 
 To encrypt the data, use the following code:
 
 ```javascript
+const NFTBalanceConfig = {
+  contractAddress: '0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D',
+  standardContractType: 'ERC721',
+  chain: 5,
+  method: 'balanceOf',
+  parameters: [':userAddress'],
+  returnValueTest: {
+    comparator: '>=',
+    value: 3,
+  },
+};
+const NFTBalance = new Conditions.Condition(NFTBalanceConfig);
+
 const encrypter = newDeployed.encrypter;
 
 const plaintext = 'this is a secret';
-const encryptedMessageKit = encrypter.encryptMessage(plaintext);
+const encryptedMessageKit = encrypter.encryptMessage(plaintext, new ConditionSet([NFTBalance]));
 ```
 
 ## 6. Request decryption rights
