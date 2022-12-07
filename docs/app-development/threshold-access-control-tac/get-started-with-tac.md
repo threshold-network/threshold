@@ -114,9 +114,9 @@ For more information about customizing and reusing `Cohort`, `Condition`, and `S
 
 ## 5. Encrypt the plaintext & update Conditions
 
-We can now encrypt data using the newly deployed `Strategy`. At this point, we can specify new conditions on which data access will be predicated. These take a higher precedence and will override the default conditions contained in the Strategy. In this case, we will require the requester's wallet to hold a minimum number (3) of the same NFTs as before. Note that Threshold nodes will check this using the `balanceOf` method.&#x20;
+We can now encrypt data using the newly deployed `Strategy`. At this point, we can specify new conditions on which data access will be predicated. These take a higher precedence and will override the default conditions contained in the Strategy. For our example, let's introduce an overriding rqeuirement that the requester's wallet hold a minimum number (3) of the same NFTs that we specified in the previous step.  Note that Threshold nodes will check this using the `balanceOf` method.&#x20;
 
-To encrypt the data, use the following code:
+To encrypt the data:
 
 ```javascript
 const NFTBalanceConfig = {
@@ -156,7 +156,7 @@ At decryption time, the requester will be asked to verify their address by signi
 
 ## Application examples
 
-The following code samples showcase integration with React-based web apps, and serve as a  'end-to-end' development reference for creating conditions-based encryption & decryption:&#x20;
+The following samples show integration with React-based web apps, and serve as an 'end-to-end' reference for creating conditions-based encryption & decryption:&#x20;
 
 * [nucypher/tdec-sandbox](https://github.com/nucypher/tdec-sandbox)
 * [nucypher/tdec-nft-example](https://github.com/nucypher/tdec-nft-example)
