@@ -154,3 +154,11 @@ At decryption time, the requester will be asked to verify their address by signi
 
 For more information about customizing and reusing `Cohort`, `Condition`, and `Strategy` objects, see the [References](references/) page in the documentation.
 
+## Examples
+
+We provide two code samples of TAC applications:
+
+* [nucypher/tdec-sandbox](https://github.com/nucypher/tdec-sandbox)
+* [nucypher/tdec-nft-example](https://github.com/nucypher/tdec-nft-example)
+
+They showcase integration with React-based web application and an end-to-end flow of creating conditioned encryption, and encrypting & decrypting data.
