@@ -24,8 +24,8 @@ And the associated Condition:
 ```javascript
 const revocationCondition = {
   contractAddress: 'DEPLOYED_CONTRACT_ADDRESS',
-  functionName: 'isRevoked',
-  functionParams: [':userAddress'],
+  method: 'isRevoked',
+  parameters: [':userAddress'],
   functionAbi: {
     inputs: [
       {
