@@ -44,7 +44,7 @@ const newNFTOwnership = new Conditions.ERC721Ownership({
   parameters: [5000], // let's change the specific NFT
 })
 
-encrypter.conditions = new ConditionSet([newNFTOwnership]
+encrypter.conditions = new ConditionSet([newNFTOwnership])
 ```
 
 This will **overwrite** the Strategy conditions we defined above - only the new Conditions will be evaluated, not both. All messages encrypted with `encrypter` will require `newNFTOwnership` to be satisfied.
