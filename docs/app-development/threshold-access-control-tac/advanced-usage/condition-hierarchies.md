@@ -33,7 +33,7 @@ All `encrypter` objects that a deployed Strategy produces will automatically hav
 
 ## Encrypter Conditions
 
-This is the next level of precedence the hierarchy, where each encrypter object can have its own conditions. Assuming the above strategy has been deployed, we can attach conditions in the following way:
+This is the next level of precedence in the hierarchy, where each encrypter object can have its own conditions. Assuming the above strategy has been deployed, we can attach conditions in the following way:
 
 ```javascript
 const encrypter = deployedStrategy.encrypter;
