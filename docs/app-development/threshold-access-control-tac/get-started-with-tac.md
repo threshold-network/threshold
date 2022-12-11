@@ -114,7 +114,7 @@ For more information about customizing and reusing `Cohort`, `Condition`, and `S
 
 ## 5. Encrypt the plaintext & update Conditions
 
-We can now encrypt data using the newly deployed `Strategy`. At this point, we can specify new conditions on which data access will be predicated. These take a higher precedence and will override the default conditions contained in the Strategy. For our example, let's introduce an overriding rqeuirement that the requester's wallet hold a minimum number (3) of the same NFTs that we specified in the previous step. Note that Threshold nodes will check this using the `balanceOf` method.
+We can now encrypt data using the newly deployed `Strategy`. At this point, we can specify new conditions on which data access will be predicated. These take a higher precedence and will override the default conditions contained in the Strategy. For our example, let's introduce an overriding requirement that the requester's wallet hold a minimum number (3) of NFT of the same collection that we specified in the previous step. Note that Threshold nodes will check this using the `balanceOf` method.
 
 To encrypt the data:
 
