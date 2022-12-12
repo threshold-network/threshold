@@ -97,10 +97,10 @@ const timelock = Conditions.Condition(timelockConfig);
 
 ## `Conditions.RpcCondition`
 
-`Conditions.RpcCondition` is a shortcut for building conditions that test against standard [RPC calls](https://ethereum.org/en/developers/docs/apis/json-rpc/)
+`Conditions.RpcCondition` is a shortcut for building conditions that test against standard [RPC calls](https://ethereum.org/en/developers/docs/apis/json-rpc/).
 
 ```javascript
-const const rpc = new Conditions.RpcCondition({
+const rpc = new Conditions.RpcCondition({
   chain: 1,
   method: 'eth_getBalance',
   parameters: [
