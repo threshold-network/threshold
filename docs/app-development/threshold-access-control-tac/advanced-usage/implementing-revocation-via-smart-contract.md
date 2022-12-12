@@ -53,4 +53,4 @@ const revocationCondition = {
 };
 ```
 
-The condition we have defined calls the `isRevoked` function of the smart contract and passes the user's address. If the call returns `false` (**not** revoked, ie granted), then decryption will occur. If the call returns `true` (**is** revoked), then decryption will fail.
+The condition we have defined calls the `isRevoked` function of the smart contract and passes the user's address. If the call returns `false` (**not** revoked, i.e. granted), then decryption will occur. If the call returns `true` (**is** revoked), then decryption will fail.
