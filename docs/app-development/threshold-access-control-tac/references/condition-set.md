@@ -58,6 +58,6 @@ console.log(NFTConditionSetJSON);
 
 And then easily import:
 
-```javascript
+```js
 const newConditionSet = ConditionSet.fromJSON(NFTConditionSetJSON);
 ```
