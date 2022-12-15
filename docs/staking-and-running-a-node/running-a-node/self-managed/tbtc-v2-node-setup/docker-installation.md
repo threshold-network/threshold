@@ -75,6 +75,7 @@ RestartSec=15s
 
 [Install]
 WantedBy=default.target
+
 </code></pre>
 
 Replace the placeholders inside the <> brackets, remove the <> brackets but be sure to not edit anything further.
@@ -184,7 +185,8 @@ sudo chmod +x keep.sh
 
 To launch the tBTC v2 client, execute:
 
-<pre class="language-bash"><code class="lang-bash"><strong>sudo bash keep.sh</strong></code></pre>
+<pre class="language-bash"><code class="lang-bash"><strong>sudo bash keep.sh
+</strong></code></pre>
 
 {% hint style="info" %}
 The `--detach` property will prevent the status messages from the client to be printed to the console. Review the Docker logs for detailed status information.
@@ -241,6 +243,7 @@ Trust math, not hardware.
 | RandomBeacon   : 0x5499f54b4A1CB4816eefCf78962040461be3D80b                     |
 | WalletRegistry : 0x46d52E41C2F300BC82217Ce22b920c34995204eb                     |
 | TokenStaking   : 0x01B67b1194C75264d06F808A921228a95C765dd7                     |
------------------------------------------------------------------------------------</code></pre>
+-----------------------------------------------------------------------------------
+</code></pre>
 
 Congratulations, your node is up and running.&#x20;

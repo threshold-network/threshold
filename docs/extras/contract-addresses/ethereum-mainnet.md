@@ -2,7 +2,7 @@
 
 ## Threshold Contracts
 
-Delivered in `@threshold-network/solidity-contracts@1.1.0` package.
+Delivered in `@threshold-network/solidity-contracts@1.2.1` package.
 
 | Contract                | Address                                                                                                               |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------- |

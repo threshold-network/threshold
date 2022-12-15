@@ -42,8 +42,8 @@
         * [CLI Options](staking-and-running-a-node/running-a-node/self-managed/tbtc-v2-node-setup/advanced-options/cli-options.md)
       * [Frequently Asked Questions](staking-and-running-a-node/running-a-node/self-managed/tbtc-v2-node-setup/frequently-asked-questions.md)
   * [Staking Providers](staking-and-running-a-node/running-a-node/staking-providers.md)
-* [Goerli Testnet](staking-and-running-a-node/ropsten-testnet-staking/README.md)
-  * [Testnet tBTC v2 node Setup](staking-and-running-a-node/ropsten-testnet-staking/testnet-tbtc-v2-node-setup.md)
+* [Goerli Testnet](staking-and-running-a-node/goerli-testnet-staking/README.md)
+  * [Testnet tBTC v2 node Setup](staking-and-running-a-node/goerli-testnet-staking/testnet-tbtc-v2-node-setup.md)
 
 ## App Development
 
