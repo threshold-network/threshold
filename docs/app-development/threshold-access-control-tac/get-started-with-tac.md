@@ -1,6 +1,8 @@
-# Get Started with TAC
+# Get Started (CBD Proof-of-Concept)
 
-This tutorial is a quick way for developers to learn about the Threshold Access Control service. We recommend reading about [Conditions-Based Decryption](../../fundamentals/threshold-access-control/conditions-based-decryption-cbd.md)[ ](../../fundamentals/threshold-access-control/conditions-based-decryption-cbd.md)(CBD) before starting. CBD is a technology used in Threshold Access Control that allows for data sharing based on certain conditions.
+This tutorial is a quick way for developers to learn about the Threshold Access Control service by building with the **Proof-of-Concept** version of [Conditions-Based Decryption](../../fundamentals/threshold-access-control/conditions-based-decryption-cbd.md).&#x20;
+
+Note that the [trust assumptions](trust-assumptions/) vary between versions and technologies; these are detailed for the [CBD Proof-of-Concept](trust-assumptions/cbd-proof-of-concept-version.md), [CBD Mainnet](trust-assumptions/cbd-mainnet-version.md), and [PRE Mainnet](trust-assumptions/cbd-mainnet-version.md) .&#x20;
 
 ## 1. Install `nucypher-ts`
 

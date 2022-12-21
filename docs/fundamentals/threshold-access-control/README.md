@@ -4,7 +4,7 @@ description: Threshold Application
 
 # Threshold Access Control
 
-Threshold Access Control (TAC) enables end-to-end encrypted data sharing and communication without the need to trust a centralized authority. It is the only access control layer available to Web3 developers that has **already achieved true decentralization** through a live and well-collateralized network, with sensitive cryptographic operations disassembled and distributable across \~250 independently operated servers.
+Threshold Access Control enables end-to-end encrypted data sharing and communication without the need to trust a centralized authority. It is the only access control layer available to Web3 developers that has **already achieved true decentralization** through a live and well-collateralized network, with sensitive cryptographic operations disassembled and distributable across \~250 independently operated servers.
 
 End-users of applications which have integrated Threshold Access Control enjoy the following features & benefits:
 
@@ -23,6 +23,6 @@ End-users of applications which have integrated Threshold Access Control enjoy t
 * _Optional: keypair-only decryption._\
   If even stricter security guarantees are required, and data recipients' public keys are known in advance, developers may opt for end-user data to be re-encrypted by node operators such that they are only decryptable by pre-designated clients.
 
-The Threshold Access Control service is built on two distinct but interwoven technologies; _Conditions-Based Decryption_ (CBD) and _Proxy Re-Encryption_ (PRE). Both offer trust-minimized end-to-end encryption and access control is executed by the same decentralized array of nodes. There are some trade-offs between (explicit) security and access condition customization, which are explored in later subsections.
+The Threshold Access Control service is built on two distinct but interwoven technologies; _Conditions-Based Decryption_ (CBD) and _Proxy Re-Encryption_ (PRE). Both offer trust-minimized end-to-end encryption and access control is executed by the same decentralized array of nodes. There are some trade-offs between (explicit) security and access condition customization, which are explored in the [trust assumptions](../../app-development/threshold-access-control-tac/trust-assumptions/) section.
 
 Note for Threshold stakers: the up-and-running 'PRE app' will eventually be renamed to encompass the broader Threshold Access Control service, and will also acquire new functionality via the addition of CBD technology. This will require a DAO-driven upgrade but will not fundamentally change the operational requirements or compensation.

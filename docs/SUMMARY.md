@@ -47,18 +47,22 @@
 
 ## App Development
 
-* [Threshold Access Control (TAC)](app-development/threshold-access-control-tac/README.md)
-  * [Get Started with TAC](app-development/threshold-access-control-tac/get-started-with-tac.md)
-  * [Advanced Usage](app-development/threshold-access-control-tac/advanced-usage/README.md)
+* [Threshold Access Control](app-development/threshold-access-control-tac/README.md)
+  * [Get Started (CBD Proof-of-Concept)](app-development/threshold-access-control-tac/get-started-with-tac.md)
+  * [CBD Advanced Usage](app-development/threshold-access-control-tac/advanced-usage/README.md)
     * [Condition Hierarchies](app-development/threshold-access-control-tac/advanced-usage/condition-hierarchies.md)
     * [Create Security Optionality With Reusable Cohorts](app-development/threshold-access-control-tac/advanced-usage/create-security-optionality-with-reusable-cohorts.md)
     * [Implementing Revocation via Smart Contract](app-development/threshold-access-control-tac/advanced-usage/implementing-revocation-via-smart-contract.md)
-    * [Proxy Re-Encryption](app-development/threshold-access-control-tac/advanced-usage/proxy-re-encryption.md)
-  * [References](app-development/threshold-access-control-tac/references/README.md)
+  * [CBD References](app-development/threshold-access-control-tac/references/README.md)
     * [Cohort](app-development/threshold-access-control-tac/references/cohort.md)
     * [Conditions](app-development/threshold-access-control-tac/references/conditions.md)
     * [Condition Set](app-development/threshold-access-control-tac/references/condition-set.md)
     * [Strategy](app-development/threshold-access-control-tac/references/strategy.md)
+  * [Trust Assumptions](app-development/threshold-access-control-tac/trust-assumptions/README.md)
+    * [CBD Proof-of-Concept Version](app-development/threshold-access-control-tac/trust-assumptions/cbd-proof-of-concept-version.md)
+    * [CBD Mainnet Version](app-development/threshold-access-control-tac/trust-assumptions/cbd-mainnet-version.md)
+    * [PRE Mainnet Version](app-development/threshold-access-control-tac/trust-assumptions/pre-mainnet-version.md)
+  * [Get Started (PRE Mainnet)](app-development/threshold-access-control-tac/proxy-re-encryption.md)
 * [Contribution Guide](app-development/contribution-guide.md)
 
 ## Extras
