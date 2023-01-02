@@ -11,5 +11,5 @@ There are multiple products and versions under the umbrella of 'Threshold Access
 * Conditions-Based Encryption, **Mainnet version** \
   ****This version is under intense development and will be released in early Q2 2022. Learn about the vision for the product [here](../../fundamentals/threshold-access-control/conditions-based-decryption-cbd.md) and underlying trust model [here](trust-assumptions/cbd-mainnet-version.md).
 * Proxy Re-encryption, **Mainnet version**\
-  This product and version is currently live on the Threshold Mainnet and has been battle-tested for over 2 years. Learn the fundamentals of the PRE offering [here](../../fundamentals/threshold-access-control/proxy-re-encryption-pre.md) and get started building with PRE [here](proxy-re-encryption.md).&#x20;
+  This product and version is currently live on the Threshold Mainnet and has been battle-tested for over 2 years. Learn the fundamentals of the PRE offering [here](../../fundamentals/threshold-access-control/proxy-re-encryption-pre.md) and get started building with PRE [here](advanced-usage/proxy-re-encryption.md).&#x20;
 

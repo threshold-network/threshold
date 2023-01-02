@@ -1,10 +1,8 @@
-# Proxy Re-Encryption
+# Get Started (PRE Mainnet)
 
 {% hint style="info" %}
 This page is under construction.  In the meantime use the Read-The-Docs and Github Documentation linked below.
 {% endhint %}
-
-
 
 **External documentation and examples**\
 [https://github.com/nucypher/nucypher-ts](https://github.com/nucypher/nucypher-ts)\

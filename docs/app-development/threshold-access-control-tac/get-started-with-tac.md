@@ -1,8 +1,8 @@
-# Get Started (CBD Proof-of-Concept)
+# Get Started (CBD PoC)
 
-This tutorial is a quick way for developers to learn about the Threshold Access Control service by building with the **Proof-of-Concept** version of [Conditions-Based Decryption](../../fundamentals/threshold-access-control/conditions-based-decryption-cbd.md).&#x20;
+This tutorial is a quick way for developers to learn about the Threshold Access Control service by building with the **Proof-of-Concept** **(PoC)** version of [Conditions-Based Decryption](../../fundamentals/threshold-access-control/conditions-based-decryption-cbd.md).&#x20;
 
-Note that the [trust assumptions](trust-assumptions/) vary between versions and technologies; these are detailed for the [CBD Proof-of-Concept](trust-assumptions/cbd-proof-of-concept-version.md), [CBD Mainnet](trust-assumptions/cbd-mainnet-version.md), and [PRE Mainnet](trust-assumptions/cbd-mainnet-version.md) .&#x20;
+Note that the underlying [trust assumptions](trust-assumptions/) vary between versions and technologies; these are explained in detail for the [CBD Proof-of-Concept](trust-assumptions/cbd-proof-of-concept-version.md), [CBD Mainnet](trust-assumptions/cbd-mainnet-version.md), and [PRE Mainnet](trust-assumptions/cbd-mainnet-version.md) versions.&#x20;
 
 ## 1. Install `nucypher-ts`
 
@@ -156,9 +156,9 @@ const decryptedMessage = await decrypter.retrieveAndDecrypt(
 
 At decryption time, the requester will be asked to verify their address by signing a message in MetaMask. This is where `conditionContext` comes into play. If they own the correct NFT, the message will decrypt successfully.
 
-## Application examples
+## _Example applications_
 
-The following samples show integration with React-based web apps, and serve as an 'end-to-end' reference for creating conditions-based encryption & decryption:
+The following samples showcase integrations with React-based web apps, and serve as an 'end-to-end' reference for creating conditions-based encryption & decryption:
 
 * [nucypher/tdec-sandbox](https://github.com/nucypher/tdec-sandbox)
 * [nucypher/tdec-nft-example](https://github.com/nucypher/tdec-nft-example)
