@@ -116,9 +116,9 @@ For more information about customizing and reusing `Cohort`, `Condition`, and `S
 
 ## 5. Encrypt the plaintext & update Conditions
 
-We can now encrypt data using the newly deployed `Strategy`. At this point, we can specify new conditions on which data access will be predicated. These take a higher precedence and will override the default conditions contained in the Strategy. For our example, let's introduce an overriding requirement that the requester's wallet hold a minimum number (3) of NFT of the same collection that we specified in the previous step. Note that Threshold nodes will check this using the `balanceOf` method.
+We can now encrypt data using the newly deployed `Strategy`. At this point, we can also specify new conditions on which data access will be predicated. These will take a higher precedence and override the default conditions contained in the Strategy. For this example, let's make it so the overriding requirement is that the requester's wallet hold a minimum number (three) of NFTs. The NFTs are from the same collection that we specified in Step 3. Note that Threshold nodes will check this new condition using the `balanceOf` method.
 
-To encrypt the data:
+To encrypt the plaintext:
 
 ```javascript
 const NFTBalanceConfig = {
@@ -142,7 +142,7 @@ const encryptedMessageKit = encrypter.encryptMessage(plaintext, new ConditionSet
 
 ## 6. Request decryption rights
 
-Finally, we will test the access control service by requesting decryption rights:
+Finally, we will test the conditional access control service by requesting decryption rights:
 
 ```javascript
 const decrypter = newDeployed.decrypter;
@@ -154,9 +154,13 @@ const decryptedMessage = await decrypter.retrieveAndDecrypt(
 );
 ```
 
-At decryption time, the requester will be asked to verify their address by signing a message in MetaMask. This is where `conditionContext` comes into play. If they own the correct NFT, the message will decrypt successfully.
+At decryption time, the requester will be asked to verify their address by signing a message in MetaMask. This is where `conditionContext` comes into play – if the requester's address controls the minimum number (or greater) of the specified NFT, they are eligible to receive the requisite number of decryption fragments. By assembling these fragments, they are able to decrypt and view the plaintext encrypted in the previous step.&#x20;
 
-## _Example applications_
+{% hint style="info" %}
+Note that the requester does not need to manually sign the next time they seek access to the data, as their client can temporarily cache their signature. Fresh plaintexts encrypted under any conditions involving the same wallet address are automatically accessible to any requester who has signed at least once, provided they still fulfill the (new) conditions, and the cached signature has not expired.&#x20;
+{% endhint %}
+
+### Example applications
 
 The following samples showcase integrations with React-based web apps, and serve as an 'end-to-end' reference for creating conditions-based encryption & decryption:
 

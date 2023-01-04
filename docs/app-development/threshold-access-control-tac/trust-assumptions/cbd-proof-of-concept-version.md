@@ -6,5 +6,7 @@ The Proof-of-Concept version exists to help developers familiarize themselves wi
 2. Conditions can technically be 'stripped' from ciphertexts by a sophisticated user, which would enable them to maliciously gain decryption rights by presenting a ciphertext with no attached access conditionality.&#x20;
 3. The node array managing decryption fragments – and validating condition (non/)fulfillment – are running on testnet, are operated primarily by NuCypher team-members, and are not subject to a cryptoeconomic protocol or a requirement to deposit/risk collateral.
 
+Note that these three limitations will be addressed in the CBD Mainnet version. Upgrading from this version to the Mainnet version involves entirely replacing the underlying cryptosystem, which means all data encrypted via the Proof-of-Concept will have to be (downloaded and) encrypted again from plaintext utilizing the new cryptography.
+
 
 
