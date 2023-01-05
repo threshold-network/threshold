@@ -103,7 +103,7 @@ const MMprovider = await detectEthereumProvider();
 const mumbai = providers.getNetwork(80001);
 
 if (MMprovider) {
-  const web3Provider = new providers.providers.Web3Provider(MMprovider, mumbai);
+  const web3Provider = new providers.Web3Provider(MMprovider, mumbai);
   const newDeployed = await newStrategy.deploy('test', web3Provider);
 }
 ```
