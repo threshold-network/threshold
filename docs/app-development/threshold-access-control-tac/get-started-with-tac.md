@@ -100,7 +100,7 @@ import detectEthereumProvider from '@metamask/detect-provider';
 import { providers } from 'ethers';
 
 const MMprovider = await detectEthereumProvider();
-const mumbai = providers.providers.getNetwork(80001);
+const mumbai = providers.getNetwork(80001);
 
 if (MMprovider) {
   const web3Provider = new providers.providers.Web3Provider(MMprovider, mumbai);
