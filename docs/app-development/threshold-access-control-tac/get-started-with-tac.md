@@ -134,7 +134,10 @@ const NFTBalance = new Conditions.Condition(NFTBalanceConfig);
 const encrypter = newDeployed.encrypter;
 
 const plaintext = 'this is a secret';
-const encryptedMessageKit = encrypter.encryptMessage(plaintext, new ConditionSet([NFTBalance]));
+const encryptedMessageKit = encrypter.encryptMessage(
+  plaintext,
+  new ConditionSet([NFTBalance])
+);
 ```
 
 ## 6. Request decryption rights
