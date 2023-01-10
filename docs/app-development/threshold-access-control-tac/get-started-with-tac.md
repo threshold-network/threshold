@@ -87,10 +87,7 @@ We will now combine the `Cohort`, `ConditionSet`, and any other necessary parame
 ```javascript
 import { Strategy } from '@nucypher/nucypher-ts';
 
-const newStrategy = Strategy.create(
-  newCohort,
-  conditions
-);
+const newStrategy = Strategy.create(newCohort, conditions);
 ```
 
 Next, we will deploy this `Strategy` to the Threshold Network. To do that, we're going to transact on Polygon Mumbai:
