@@ -166,3 +166,4 @@ The following samples showcase integrations with React-based web apps, and serve
 
 * [nucypher/tdec-sandbox](https://github.com/nucypher/tdec-sandbox)
 * [nucypher/tdec-nft-example](https://github.com/nucypher/tdec-nft-example)
+* [nucypher/alpha-leaks-demo](https://github.com/nucypher/alpha-leaks-demo)
