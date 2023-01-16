@@ -99,10 +99,8 @@ import { providers } from 'ethers';
 const MMprovider = await detectEthereumProvider();
 const mumbai = providers.getNetwork(80001);
 
-if (MMprovider) {
-  const web3Provider = new providers.Web3Provider(MMprovider, mumbai);
-  const newDeployed = await newStrategy.deploy('test', web3Provider);
-}
+const web3Provider = new providers.Web3Provider(MMprovider, mumbai);
+const newDeployed = await newStrategy.deploy('test', web3Provider);
 ```
 
 {% hint style="info" %}
