@@ -4,10 +4,6 @@ description: This page will guide you through Docker setup steps.
 
 # Docker Installation
 
-{% hint style="warning" %}
-Choose either Docker installation OR Binary installation.
-{% endhint %}
-
 ### Install Docker
 
 Install or update Docker to the latest version. Visit the [Official Docker website](https://docs.docker.com/engine/install/ubuntu/) for detailed instructions. Use the command below to find  your installed version if needed:
@@ -23,7 +19,7 @@ General best practices recommend against running the tBTC v2 client as the `root
 Next, choose ONE of the following options. The **tBTC v2 Service** option configures the client to run as a service in order to ensure that the client is restarted automatically, should your machine reboot. The **Docker Launch Script** is faster to setup, but won't start the client if your machine reboots.
 
 {% tabs %}
-{% tab title="tBTC v2 Service" %}
+{% tab title="Systemd Service" %}
 Create the tbtcv2.service file:
 
 ```bash
@@ -117,7 +113,7 @@ reboot now
 Log back in to your machine and check that the service is running. If it is, you're done. If not, go back and review your work.
 {% endtab %}
 
-{% tab title="Docker Launch Script" %}
+{% tab title="Docker Container" %}
 ### Docker Launch Script
 
 To launch the tBTC v2 client, several configuration flags and environmental values need to be set. For simplicity, a bash script can be used rather than typing or pasting all the flags into the console.
