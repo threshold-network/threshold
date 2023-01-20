@@ -138,6 +138,8 @@ const encryptedMessageKit = encrypter.encryptMessage(
 );
 ```
 
+The resulting `encryptedMessageKit` contains the encrypted data and associated condition(s).
+
 ## 6. Request decryption rights
 
 Finally, we will test the conditional access control service by requesting decryption rights:
