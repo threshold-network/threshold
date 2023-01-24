@@ -30,11 +30,14 @@ Delivered in `@keep-network/keep-core@1.8.1-goerli.0` NPM package.
 
 ## TBTC Application Contracts
 
-Delivered in `@keep-network/random-beacon@2.1.0-goerli.4`, `@keep-network/ecdsa@2.1.0-goerli.2` and `@keep-network/tbtc-v2@1.0.1-goerli.0` NPM packages.
+Delivered in `@keep-network/random-beacon@2.1.0-goerli.6`, `@keep-network/ecdsa@2.1.0-goerli.4` and `@keep-network/tbtc-v2@1.0.3-goerli.0` NPM packages.
 
-| Contract       | Address                                                                                                                                         |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| Bridge         | [0x946fEd1fa5d09B33884383a05381E198525D241D](https://goerli.etherscan.io/address/0x946fEd1fa5d09B33884383a05381E198525D241D)                    |
-| RandomBeacon   | [0x6E39C4513300999c73E9A79465b0fC53920dFcf8](https://goerli.etherscan.io/address/0x6E39C4513300999c73E9A79465b0fC53920dFcf8)                    |
-| WalletRegistry | [0x253f91F821516C2F83F76EDE65D0d6a7Ae8eDfFc](https://goerli.etherscan.io/address/0x253f91F821516C2F83F76EDE65D0d6a7Ae8eDfFc#writeProxyContract) |
+| Contract       | Address                                                                                                                      |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Bridge         | [0x0Cad3257C4B7ec6de1f6926Fbf5714255a6632c3](https://goerli.etherscan.io/address/0x0Cad3257C4B7ec6de1f6926Fbf5714255a6632c3) |
+| RandomBeacon   | [0xF177CfA720ceC42841c04A458f6c68e1243C1b49](https://goerli.etherscan.io/address/0xF177CfA720ceC42841c04A458f6c68e1243C1b49) |
+| TBTC           | [0x679874fBE6D4E7Cc54A59e315FF1eB266686a937](https://goerli.etherscan.io/address/0x679874fbe6d4e7cc54a59e315ff1eb266686a937) |
+| TBCTVault      | [0x65eB0562FCe858f8328858c76E689aBedB78621F](https://goerli.etherscan.io/address/0x65eB0562FCe858f8328858c76E689aBedB78621F) |
+| VendingMachine | [0x36B7383077a2CEeFd53e796512760a1888cEeb97](https://goerli.etherscan.io/address/0x36B7383077a2CEeFd53e796512760a1888cEeb97) |
+| WalletRegistry | [0x5b1ebF8008097Ac3EF6785220bFb9ecA2B1a73Dd](https://goerli.etherscan.io/address/0x5b1ebF8008097Ac3EF6785220bFb9ecA2B1a73Dd) |
 
