@@ -40,11 +40,11 @@ Delivered in `@keep-network/keep-core@1.8.0` package.
 
 Delivered in `@keep-network/random-beacon@2.0.0` and `@keep-network/ecdsa@2.0.0` packages.
 
-| Contract       | Address                                                                                                                                  |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Bridge         | [0x5e4861a80B55f035D899f66772117F00FA0E8e7B](https://etherscan.io/address/0x5e4861a80B55f035D899f66772117F00FA0E8e7B)                    |
-| RandomBeacon   | [0x5499f54b4A1CB4816eefCf78962040461be3D80b](https://etherscan.io/address/0x5499f54b4A1CB4816eefCf78962040461be3D80b)                    |
-| TBTC           | [0x18084fbA666a33d37592fA2633fD49a74DD93a88](https://etherscan.io/address/0x18084fbA666a33d37592fA2633fD49a74DD93a88)                    |
-| TBTCVault      | [0x9C070027cdC9dc8F82416B2e5314E11DFb4FE3CD](https://etherscan.io/address/0x9C070027cdC9dc8F82416B2e5314E11DFb4FE3CD)                    |
-| VendingMachine | [0x6590DFF6abEd7C077839E8227A4f12Ec90E6D85F](https://etherscan.io/address/0x6590DFF6abEd7C077839E8227A4f12Ec90E6D85F)                    |
-| WalletRegistry | [0x46d52E41C2F300BC82217Ce22b920c34995204eb](https://etherscan.io/address/0x46d52E41C2F300BC82217Ce22b920c34995204eb#writeProxyContract) |
+| Contract       | Address                                                                                                                                         |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Bridge         | [0x5e4861a80B55f035D899f66772117F00FA0E8e7B](https://etherscan.io/address/0x5e4861a80B55f035D899f66772117F00FA0E8e7B)                           |
+| RandomBeacon   | [0x5499f54b4A1CB4816eefCf78962040461be3D80b](https://etherscan.io/address/0x5499f54b4A1CB4816eefCf78962040461be3D80b)                           |
+| TBTC           | [0x18084fbA666a33d37592fA2633fD49a74DD93a88](https://etherscan.io/address/0x18084fbA666a33d37592fA2633fD49a74DD93a88)                           |
+| TBTCVault      | [0x9C070027cdC9dc8F82416B2e5314E11DFb4FE3CD](https://etherscan.io/address/0x9C070027cdC9dc8F82416B2e5314E11DFb4FE3CD)                           |
+| VendingMachine | [0x6590DFF6abEd7C077839E8227A4f12Ec90E6D85F](https://etherscan.io/address/0x6590DFF6abEd7C077839E8227A4f12Ec90E6D85F)                           |
+| WalletRegistry | [0x0f0E2afF99A55B11026Fb270A05f04d37724dE86](https://goerli.etherscan.io/address/0x0f0E2afF99A55B11026Fb270A05f04d37724dE86#writeProxyContract) |

@@ -39,5 +39,5 @@ Delivered in `@keep-network/random-beacon@2.1.0-goerli.6`, `@keep-network/ecdsa@
 | TBTC           | [0x679874fBE6D4E7Cc54A59e315FF1eB266686a937](https://goerli.etherscan.io/address/0x679874fbe6d4e7cc54a59e315ff1eb266686a937) |
 | TBCTVault      | [0x65eB0562FCe858f8328858c76E689aBedB78621F](https://goerli.etherscan.io/address/0x65eB0562FCe858f8328858c76E689aBedB78621F) |
 | VendingMachine | [0x36B7383077a2CEeFd53e796512760a1888cEeb97](https://goerli.etherscan.io/address/0x36B7383077a2CEeFd53e796512760a1888cEeb97) |
-| WalletRegistry | [0x5b1ebF8008097Ac3EF6785220bFb9ecA2B1a73Dd](https://goerli.etherscan.io/address/0x5b1ebF8008097Ac3EF6785220bFb9ecA2B1a73Dd) |
+| WalletRegistry | [0x0f0E2afF99A55B11026Fb270A05f04d37724dE86](https://goerli.etherscan.io/address/0x0f0E2afF99A55B11026Fb270A05f04d37724dE86) |
 
