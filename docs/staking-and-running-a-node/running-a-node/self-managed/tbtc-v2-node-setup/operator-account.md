@@ -16,9 +16,10 @@ Please do NOT reuse an operator account that is being used for PRE or other appl
 
 ### Install Geth (GoEthereum)
 
-To create a new Ethereum account, [install Geth](https://geth.ethereum.org/docs/install-and-build/installing-geth#ubuntu-via-ppas) (GoEthereum) and create a new account using the command below. This account will subsequently be referred to as the Operator Account.
+To create a new Ethereum account, [install Geth](https://geth.ethereum.org/docs/getting-started/installing-geth) (GoEthereum) and create a new account using the command below. This account will subsequently be referred to as the Operator Account.
 
-<pre class="language-bash"><code class="lang-bash"><strong>geth account new --keystore ./operator-key</strong></code></pre>
+<pre class="language-bash"><code class="lang-bash"><strong>geth account new --keystore ./operator-key
+</strong></code></pre>
 
 When prompted, provide a password to protect the operator key file.&#x20;
 
