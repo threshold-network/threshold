@@ -1,5 +1,10 @@
 # Get Started (CBD PoC)
 
+{% hint style="warning" %}
+**Update (02.28.23)** \
+The Proof-of-Concept is now configured for compatibility with Polygon Mainnet, which means discontinuing the service on Mumbai (Polygon Testnet). Conditions will only be evaluated if they are specified on **Polygon Mainnet**, and will not be evaluated if they pertain to some state on Mumbai (e.g. grant access if a wallet holds a certain number of testnet MATIC).&#x20;
+{% endhint %}
+
 This tutorial is a quick way for developers to learn about the Threshold Access Control service by building with the **Proof-of-Concept** **(PoC)** version of [Conditions-Based Decryption](../../fundamentals/threshold-access-control/conditions-based-decryption-cbd.md).&#x20;
 
 Note that the underlying [trust assumptions](trust-assumptions/) vary between versions and technologies; these are explained in detail for the [CBD Proof-of-Concept](trust-assumptions/cbd-proof-of-concept-version.md), [CBD Mainnet](trust-assumptions/cbd-mainnet-version.md), and [PRE Mainnet](trust-assumptions/cbd-mainnet-version.md) versions.&#x20;
