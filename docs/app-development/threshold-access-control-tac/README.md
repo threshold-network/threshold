@@ -1,5 +1,10 @@
 # Threshold Access Control
 
+{% hint style="warning" %}
+**Update (02.28.23)** \
+The [Proof-of-Concept version](get-started-with-tac.md) is now configured for compatibility with Polygon Mainnet, which means discontinuing the service on Mumbai (Polygon Testnet). Conditions will only be evaluated if they are specified on **Polygon Mainnet**, and will not be evaluated if they pertain to some state on Mumbai (e.g. grant access if a wallet holds a certain number of testnet MATIC).&#x20;
+{% endhint %}
+
 Use Threshold Access Control for end-to-end encrypted, end-to-end decentralized data sharing and communication.&#x20;
 
 \-> See [threshold-access-control](../../fundamentals/threshold-access-control/ "mention") in the Fundamentals section for an overview of the over-arching concepts and value propositions.&#x20;
