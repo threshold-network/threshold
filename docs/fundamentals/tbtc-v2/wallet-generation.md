@@ -37,7 +37,7 @@ That means we can use a [Binomial Probability Calculator](https://stattrek.com/o
 
 It's the last figure: "Cumulative probability: P(X>51)" that's relevant. That says there is a \~0.074% chance that Carol would have a controlling Share of any particular wallet.
 
-The next important question is "The probability that Carol controls a Wallet is low, but it only needs to happen once for things to be bad. What is the probability that she controls _any_ wallet in the next 5 years?"
+The next important question is "The probability that Carol controls a Wallet is low, but it only needs to happen once for things to be bad. What is the probability that she controls _any_ wallet in the next 2 years?"
 
 A wallet is generated every 14 days, so over the next 2 years, the system would generate \~52 wallets. Each wallet has a `1 - 0.00074 = .99926` or 99.926% chance of _not_ being controlled by Carol. That means we can exponentiate:
 
