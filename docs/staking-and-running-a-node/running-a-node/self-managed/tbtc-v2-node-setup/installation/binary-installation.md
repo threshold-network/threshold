@@ -15,7 +15,7 @@ Download the client binary file, make sure you are in the correct directory.
 {% code overflow="wrap" %}
 ```bash
 cd /home/keep
-wget https://github.com/keep-network/keep-core/releases/download/v2.0.0-m1/keep-client-mainnet-v2.0.0-m1-linux-amd64.tar.gz
+wget https://github.com/keep-network/keep-core/releases/download/v2.0.0-m2/keep-client-mainnet-v2.0.0-m2-linux-amd64.tar.gz
 ```
 {% endcode %}
 
