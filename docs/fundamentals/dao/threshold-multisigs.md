@@ -25,7 +25,7 @@ Treasury Guild Multisig at Gnosis Safe
 {% endembed %}
 
 {% hint style="info" %}
-This multisig is set to **6 of 9** and can be changed by the guild committee if needed.
+This multisig is set to **5 of 9** and can be changed by the guild committee if needed.
 {% endhint %}
 
 ### Integrations Guild Multisig
@@ -54,9 +54,5 @@ This multisig is set to **5 of 8** and can be changed by the guild committee if 
 
 {% hint style="warning" %}
 To be created
-{% endhint %}
-
-{% hint style="info" %}
-The Threshold ESDM multisig will be set to **3 of 4**.
 {% endhint %}
 
