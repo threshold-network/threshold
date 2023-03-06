@@ -7,7 +7,7 @@
 * [Threshold Access Control](fundamentals/threshold-access-control/README.md)
   * [Conditions-Based Decryption (CBD)](fundamentals/threshold-access-control/conditions-based-decryption-cbd.md)
   * [Proxy Re-Encryption (PRE)](fundamentals/threshold-access-control/proxy-re-encryption-pre.md)
-* [tBTC v2](fundamentals/threshold-applications/tbtc-v2.md)
+* [tBTC v2](fundamentals/tbtc-v2/README.md)
   * [Wallet Generation](fundamentals/tbtc-v2/wallet-generation.md)
 * [Threshold USD](fundamentals/threshold-applications/threshold-usd.md)
   * [Initial Protocol Loan](fundamentals/threshold-applications/threshold-usd/initial-protocol-loan.md)
