@@ -9,6 +9,7 @@
   * [Proxy Re-Encryption (PRE)](fundamentals/threshold-access-control/proxy-re-encryption-pre.md)
 * [tBTC v2](fundamentals/tbtc-v2/README.md)
   * [Wallet Generation](fundamentals/tbtc-v2/wallet-generation.md)
+  * [The Path to Permissionlessness](fundamentals/tbtc-v2/the-path-to-permissionlessness.md)
 * [Threshold USD](fundamentals/threshold-applications/threshold-usd.md)
   * [Initial Protocol Loan](fundamentals/threshold-applications/threshold-usd/initial-protocol-loan.md)
   * [B. Protocol](fundamentals/threshold-applications/threshold-usd/b.-protocol.md)
@@ -51,7 +52,7 @@
 ## App Development
 
 * [Threshold Access Control](app-development/threshold-access-control-tac/README.md)
-  * [Get Started (CBD PoC)](app-development/threshold-access-control-tac/get-started-with-tac.md)
+  * [Get Started (CBD Proof-of-Concept)](app-development/threshold-access-control-tac/get-started-with-tac.md)
   * [Trust Assumptions](app-development/threshold-access-control-tac/trust-assumptions/README.md)
     * [Trust Packages](app-development/threshold-access-control-tac/trust-assumptions/trust-packages.md)
     * [CBD Mainnet Version](app-development/threshold-access-control-tac/trust-assumptions/cbd-mainnet-version.md)
