@@ -30,7 +30,11 @@ To address this issue, we have been developing a proof-of-concept for [CGGMP](ht
 
 Guardians and Minters will remain permissioned indefinitely, as they are a set of high-trust public operators with their reputations on the line. If we were to make these lists permissionless, a malicious Minter could flood the system with fake minting requests for the Guardians to deal with, or a malicious Guardian could veto every proposed mint to halt growth.
 
+<figure><img src="../../.gitbook/assets/optimistic minting.png" alt=""><figcaption><p>Optimistic Minting diagram for minting tBTC</p></figcaption></figure>
+
 If a Guardian or Minter misbehaves, the [Threshold DAO](https://threshold.network/governance) can vote to remove them.
+
+<figure><img src="../../.gitbook/assets/sweeping.png" alt=""><figcaption><p>Sweeping option for minting tBTC</p></figcaption></figure>
 
 Once sweeping is enabled and the Signers are permissionless, any deposit that all Minters refuse to approve or that a Guardian refuses to accept can still be minted every eight hours by the Signers. This ensures that the system remains resilient and able to handle situations in which a malicious actor attempts to disrupt the minting process.
 
