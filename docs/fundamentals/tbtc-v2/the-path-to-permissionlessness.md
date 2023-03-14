@@ -28,9 +28,9 @@ To address this issue, we have been developing a proof-of-concept for [CGGMP](ht
 
 ## Guardians and Minters
 
-Guardians and Minters will remain permissioned indefinitely, as they are a set of high-trust public operators with their reputations on the line. If we were to make these lists permissionless, a malicious Minter could flood the system with fake minting requests for the Guardians to deal with, or a malicious Guardian could veto every proposed mint to halt growth.
-
 <figure><img src="../../.gitbook/assets/optimistic minting.png" alt=""><figcaption><p>Optimistic Minting diagram for minting tBTC</p></figcaption></figure>
+
+Guardians and Minters will remain permissioned indefinitely, as they are a set of high-trust public operators with their reputations on the line. If we were to make these lists permissionless, a malicious Minter could flood the system with fake minting requests for the Guardians to deal with, or a malicious Guardian could veto every proposed mint to halt growth.
 
 If a Guardian or Minter misbehaves, the [Threshold DAO](https://threshold.network/governance) can vote to remove them.
 
