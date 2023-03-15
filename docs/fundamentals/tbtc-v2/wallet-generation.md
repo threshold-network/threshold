@@ -33,7 +33,7 @@ This is exactly our situation! From Carol's perspective, there will be `n=100` i
 
 That means we can use a [Binomial Probability Calculator](https://stattrek.com/online-calculator/binomial) to answer our question:\
 \
-![](<../../.gitbook/assets/image (1).png>)
+![](../../.gitbook/assets/image.png)
 
 It's the last figure: "Cumulative probability: P(X>51)" that's relevant. That says there is a \~0.074% chance that Carol would have a controlling Share of any particular wallet.
 

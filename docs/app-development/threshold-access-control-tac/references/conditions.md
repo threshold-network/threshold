@@ -17,6 +17,7 @@ We provide many helper objects to streamline the creation of common conditions. 
 ```javascript
 const NFTOwnership = new Conditions.ERC721Ownership({
   contractAddress: '0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D',
+  // check for ownership of NFT with token ID 5954
   parameters: [5954],
 });
 ```

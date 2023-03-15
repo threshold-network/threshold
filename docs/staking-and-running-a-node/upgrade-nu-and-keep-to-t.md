@@ -1,4 +1,4 @@
-# Upgrade NU / KEEP to T
+# Upgrade NU & KEEP to T
 
 NU and KEEP tokens can be upgraded to T tokens via the Vending Machine contracts. \
 \

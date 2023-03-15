@@ -8,4 +8,4 @@ From an implementation perspective, the Tokenholder DAO is based on the Governor
 
 A technical architecture diagram is show below.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Threshold DAO Governance Architecture Diagram</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Threshold DAO Governance Architecture Diagram</p></figcaption></figure>

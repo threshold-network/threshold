@@ -5,14 +5,14 @@
 ## Applications
 
 * [tBTC Bitcoin Bridge](applications/tbtc-v2/README.md)
-  * [Wallet Generation](applications/tbtc-v2/wallet-generation.md)
+  * [Wallet Generation](fundamentals/tbtc-v2/wallet-generation.md)
 * [Threshold USD](applications/threshold-usd/README.md)
   * [Initial Protocol Loan](applications/threshold-usd/initial-protocol-loan.md)
   * [B. Protocol](applications/threshold-usd/b.-protocol.md)
   * [The Path to Permissionlessness](applications/threshold-usd/the-path-to-permissionlessness.md)
 * [Threshold Access Control](applications/threshold-access-control/README.md)
-  * [Conditions-Based Decryption (CBD)](applications/threshold-access-control/conditions-based-decryption-cbd.md)
-  * [Proxy Re-Encryption (PRE)](applications/threshold-access-control/proxy-re-encryption-pre.md)
+  * [Conditions-Based Decryption (CBD)](fundamentals/threshold-access-control/conditions-based-decryption-cbd.md)
+  * [Proxy Re-Encryption (PRE)](fundamentals/threshold-access-control/proxy-re-encryption-pre.md)
 
 ## Governance
 
@@ -68,11 +68,11 @@
     * [Condition Set](app-development/threshold-access-control-tac/references/condition-set.md)
     * [Strategy](app-development/threshold-access-control-tac/references/strategy.md)
   * [Get Started (PRE Mainnet)](app-development/threshold-access-control-tac/advanced-usage/proxy-re-encryption.md)
-  * [Contribution Guide](app-development/threshold-access-control-tac/contribution-guide.md)
+  * [Contribution Guide](app-development/contribution-guide.md)
 
 ## Extras
 
-* [Upgrade NU & KEEP to T](extras/upgrade-nu-and-keep-to-t.md)
+* [Upgrade NU & KEEP to T](staking-and-running-a-node/upgrade-nu-and-keep-to-t.md)
 * [Security](extras/security.md)
 * [Contribution](extras/contribution.md)
 * [Contract Addresses](extras/contract-addresses/README.md)
