@@ -25,6 +25,8 @@ The second is the _honest threshold_ assumption, the protocol's most fundamental
 
 Note that the _orderly threshold_ and _honest threshold_ assumptions are conceptually similar to the more common _honest majority_ assumption. However, they are more flexible than simply requiring those who control 50% of the staked tokens to be honest. Unlike most BFT or pBFT-based protocols, the _honest threshold_ can be partially decoupled from the operators’ stake weights, depending on the cohort sampling parameters specified by the developer or end-user.&#x20;
 
+Some example cohort size and threshold configurations can be seen in [Create Security Optionality With Reusable Cohorts](../advanced-usage/create-security-optionality-with-reusable-cohorts.md)
+
 ### Sampling-based trust assumptions&#x20;
 
 The _orderly threshold_ and _honest threshold_ trust assumptions above treat each Cohort as an isolated group, where the chosen parameters (`m-of-n`) determine the group’s redundancy, latency and collusion resistance. However, the reality is that each Cohort is selected from a larger sample of Threshold nodes, which is far larger than the typical/optimal size of each cohort – there is not necessarily much overlap between Cohorts.\
