@@ -2,30 +2,30 @@
 
 * [What is the Threshold Network?](README.md)
 
-## Fundamentals
+## Applications
 
-* [Threshold Access Control](fundamentals/threshold-access-control/README.md)
-  * [Conditions-Based Decryption (CBD)](fundamentals/threshold-access-control/conditions-based-decryption-cbd.md)
-  * [Proxy Re-Encryption (PRE)](fundamentals/threshold-access-control/proxy-re-encryption-pre.md)
-* [tBTC v2](fundamentals/tbtc-v2/README.md)
-  * [Wallet Generation](fundamentals/tbtc-v2/wallet-generation.md)
-  * [The Path to Permissionlessness](fundamentals/tbtc-v2/the-path-to-permissionlessness.md)
-* [Threshold USD](fundamentals/threshold-applications/threshold-usd.md)
-  * [Initial Protocol Loan](fundamentals/threshold-applications/threshold-usd/initial-protocol-loan.md)
-  * [B. Protocol](fundamentals/threshold-applications/threshold-usd/b.-protocol.md)
-* [Threshold DAO](fundamentals/dao.md)
-  * [🗳 Governance Process](fundamentals/threshold-dao/governance-process.md)
-  * [🏛 Governor](fundamentals/threshold-dao/governor.md)
-  * [⚡ Snapshots](fundamentals/threshold-dao/snapshots.md)
-  * [🙋♀ 🙋♀ 🙋♀ Guilds](fundamentals/dao/guilds.md)
-  * [💰 Threshold Multisigs](fundamentals/dao/threshold-multisigs.md)
-* [DAO Vote Delegation](fundamentals/dao-vote-delegation/README.md)
-  * [Token Weight Delegation](fundamentals/dao-vote-delegation/token-weight-delegation.md)
-  * [Stake Weight Delegation](fundamentals/dao-vote-delegation/stake-weight-delegation.md)
+* [tBTC Bitcoin Bridge](applications/tbtc-v2/README.md)
+  * [Wallet Generation](applications/tbtc-v2/wallet-generation.md)
+* [Threshold USD](applications/threshold-usd/README.md)
+  * [Initial Protocol Loan](applications/threshold-usd/initial-protocol-loan.md)
+  * [B. Protocol](applications/threshold-usd/b.-protocol.md)
+  * [The Path to Permissionlessness](applications/threshold-usd/the-path-to-permissionlessness.md)
+* [Threshold Access Control](applications/threshold-access-control/README.md)
+  * [Conditions-Based Decryption (CBD)](applications/threshold-access-control/conditions-based-decryption-cbd.md)
+  * [Proxy Re-Encryption (PRE)](applications/threshold-access-control/proxy-re-encryption-pre.md)
+
+## Governance
+
+* [Threshold DAO](governance/dao/README.md)
+  * [🗳 Governance Process](governance/dao/governance-process.md)
+  * [🙋♀ 🙋♀ 🙋♀ Guilds](governance/dao/guilds.md)
+  * [💰 Threshold Multisigs](governance/dao/threshold-multisigs.md)
+* [Vote Delegation](governance/dao-vote-delegation/README.md)
+  * [Liquid Token Delegation](governance/dao-vote-delegation/token-weight-delegation.md)
+  * [Staked Token Delegation](governance/dao-vote-delegation/stake-weight-delegation.md)
 
 ## Staking & Running a Node
 
-* [Upgrade NU & KEEP to T](staking-and-running-a-node/upgrade-nu-and-keep-to-t.md)
 * [Staking on Threshold](staking-and-running-a-node/migrating-legacy-stakes.md)
 * [Running a Node](staking-and-running-a-node/running-a-node/README.md)
   * [Self-Managed](staking-and-running-a-node/running-a-node/self-managed/README.md)
@@ -68,10 +68,11 @@
     * [Condition Set](app-development/threshold-access-control-tac/references/condition-set.md)
     * [Strategy](app-development/threshold-access-control-tac/references/strategy.md)
   * [Get Started (PRE Mainnet)](app-development/threshold-access-control-tac/advanced-usage/proxy-re-encryption.md)
-* [Contribution Guide](app-development/contribution-guide.md)
+  * [Contribution Guide](app-development/threshold-access-control-tac/contribution-guide.md)
 
 ## Extras
 
+* [Upgrade NU & KEEP to T](extras/upgrade-nu-and-keep-to-t.md)
 * [Security](extras/security.md)
 * [Contribution](extras/contribution.md)
 * [Contract Addresses](extras/contract-addresses/README.md)
@@ -79,4 +80,3 @@
   * [Görli Testnet](extras/contract-addresses/goerli-testnet.md)
 * [Glossary](extras/glossary.md)
 * [Links](extras/links.md)
-* [Between Two Keys](extras/between-two-keys.md)

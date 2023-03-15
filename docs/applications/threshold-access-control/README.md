@@ -1,16 +1,16 @@
 ---
-description: Threshold Application
+description: Trust-minimized Access Control
 ---
 
 # Threshold Access Control
 
-Threshold Access Control enables end-to-end encrypted data sharing and communication without the need to trust a centralized authority. It is the only access control layer available to Web3 developers that has **already achieved true decentralization** through a live and well-collateralized network, with sensitive cryptographic operations disassembled and distributable across \~250 independently operated servers.
+Threshold Access Control enables end-to-end encrypted data sharing and communication without the need to trust a centralized authority. It is the only access control layer available to Web3 developers that has **already achieved true decentralization** through a live and well-collateralized network, with sensitive cryptographic operations disassembled and distributed across \~250 independently operated servers.
 
 End-users of applications which have integrated Threshold Access Control enjoy the following features & benefits:
 
 * _End-to-end encryption for everything_.\
   Built on the privacy-for-everyone principles of popular end-to-end encrypted messengers but applicable to a far wider set of use cases, including private NFTs, connected vehicles, DBaaS, live-streaming, private DAO group chats, and much more.
-* _Trustlessness via true decentralization._\
+* _Trust-minimization via cryptography and true decentralization._\
   Key management, condition verification and ciphertext re-encryption are operationally distributed across a geographically diverse array of machines/servers, operated by economically independent individuals and commercial entities.
 * _Powerful, per-ciphertext conditionality._\
   Future access to data can be contingent on the fulfillment of nearly any predefined condition, and those conditions attached to any granularity of data payload (e.g. a single message or an entire table).
@@ -19,7 +19,7 @@ End-users of applications which have integrated Threshold Access Control enjoy t
 * _Tunable collusion-resistance, redundancy & latency._\
   Developers have full control over the cohort(s) of node operators which manage access to a given data payload, user base or entire application. These security parameters can also be packaged into simpler user-facing optionality for custom risk preferences.
 * _Highly incentivized uptime._\
-  The Threshold network's multi-app model strongly incentivizes node operators to provision service to tBTCv2, and its strict availability requirements. Threshold Access Control 'piggybacks' on tBTCv2 uptime, reliability and technical competence.
+  Threshold Network's multi-app model strongly incentivizes node operators to provision service to tBTC, and its strict availability requirements. Threshold Access Control 'piggybacks' on tBTC uptime, reliability and technical competence.
 * _Optional: keypair-only decryption._\
   If even stricter security guarantees are required, and data recipients' public keys are known in advance, developers may opt for end-user data to be re-encrypted by node operators such that they are only decryptable by pre-designated clients.
 

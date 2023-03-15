@@ -18,14 +18,14 @@ Follow our handy guides to get started on staking basics as quickly as possible:
 
 Learn the fundamentals of the Threshold Network to get a deeper understanding of our main features:
 
-{% content-ref url="fundamentals/threshold-access-control/proxy-re-encryption-pre.md" %}
-[proxy-re-encryption-pre.md](fundamentals/threshold-access-control/proxy-re-encryption-pre.md)
+{% content-ref url="applications/tbtc-v2/" %}
+[tbtc-v2](applications/tbtc-v2/)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/tbtc-v2/" %}
-[tbtc-v2](fundamentals/tbtc-v2/)
+{% content-ref url="applications/threshold-access-control/" %}
+[threshold-access-control](applications/threshold-access-control/)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/dao.md" %}
-[dao.md](fundamentals/dao.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}

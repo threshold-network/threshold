@@ -12,6 +12,19 @@ Delivered in `@threshold-network/solidity-contracts@1.2.1` package.
 | NU<>T Vending Machine   | [0x1CCA7E410eE41739792eA0A24e00349Dd247680e](https://etherscan.io/address/0x1CCA7E410eE41739792eA0A24e00349Dd247680e) |
 | KEEP<>T Vending Machine | [0xE47c80e8c23f6B4A1aE41c34837a0599D5D16bb0](https://etherscan.io/address/0xE47c80e8c23f6B4A1aE41c34837a0599D5D16bb0) |
 
+## TBTC Application Contracts
+
+Delivered in `@keep-network/random-beacon@2.0.0` and `@keep-network/ecdsa@2.0.0` packages.
+
+| Contract       | Address                                                                                                                                         |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Bridge         | [0x5e4861a80B55f035D899f66772117F00FA0E8e7B](https://etherscan.io/address/0x5e4861a80B55f035D899f66772117F00FA0E8e7B)                           |
+| RandomBeacon   | [0x5499f54b4A1CB4816eefCf78962040461be3D80b](https://etherscan.io/address/0x5499f54b4A1CB4816eefCf78962040461be3D80b)                           |
+| TBTC           | [0x18084fbA666a33d37592fA2633fD49a74DD93a88](https://etherscan.io/address/0x18084fbA666a33d37592fA2633fD49a74DD93a88)                           |
+| TBTCVault      | [0x9C070027cdC9dc8F82416B2e5314E11DFb4FE3CD](https://etherscan.io/address/0x9C070027cdC9dc8F82416B2e5314E11DFb4FE3CD)                           |
+| VendingMachine | [0x6590DFF6abEd7C077839E8227A4f12Ec90E6D85F](https://etherscan.io/address/0x6590DFF6abEd7C077839E8227A4f12Ec90E6D85F)                           |
+| WalletRegistry | [0x0f0E2afF99A55B11026Fb270A05f04d37724dE86](https://goerli.etherscan.io/address/0x0f0E2afF99A55B11026Fb270A05f04d37724dE86#writeProxyContract) |
+
 ## PRE Application Contracts
 
 | Contract                              | Address                                                                                                               |
@@ -35,16 +48,3 @@ Delivered in `@keep-network/keep-core@1.8.0` package.
 | ------------ | --------------------------------------------------------------------------------------------------------------------- |
 | KEEP Token   | [0x85Eee30c52B0b379b046Fb0F85F4f3Dc3009aFEC](https://etherscan.io/address/0x85Eee30c52B0b379b046Fb0F85F4f3Dc3009aFEC) |
 | TokenStaking | [0x1293a54e160D1cd7075487898d65266081A15458](https://etherscan.io/address/0x1293a54e160D1cd7075487898d65266081A15458) |
-
-## TBTC Application Contracts
-
-Delivered in `@keep-network/random-beacon@2.0.0` and `@keep-network/ecdsa@2.0.0` packages.
-
-| Contract       | Address                                                                                                                                         |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| Bridge         | [0x5e4861a80B55f035D899f66772117F00FA0E8e7B](https://etherscan.io/address/0x5e4861a80B55f035D899f66772117F00FA0E8e7B)                           |
-| RandomBeacon   | [0x5499f54b4A1CB4816eefCf78962040461be3D80b](https://etherscan.io/address/0x5499f54b4A1CB4816eefCf78962040461be3D80b)                           |
-| TBTC           | [0x18084fbA666a33d37592fA2633fD49a74DD93a88](https://etherscan.io/address/0x18084fbA666a33d37592fA2633fD49a74DD93a88)                           |
-| TBTCVault      | [0x9C070027cdC9dc8F82416B2e5314E11DFb4FE3CD](https://etherscan.io/address/0x9C070027cdC9dc8F82416B2e5314E11DFb4FE3CD)                           |
-| VendingMachine | [0x6590DFF6abEd7C077839E8227A4f12Ec90E6D85F](https://etherscan.io/address/0x6590DFF6abEd7C077839E8227A4f12Ec90E6D85F)                           |
-| WalletRegistry | [0x0f0E2afF99A55B11026Fb270A05f04d37724dE86](https://goerli.etherscan.io/address/0x0f0E2afF99A55B11026Fb270A05f04d37724dE86#writeProxyContract) |

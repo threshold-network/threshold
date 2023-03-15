@@ -5,7 +5,7 @@
 The Proof-of-Concept version is currently compatible with condition evaluation on Mumbai (Polygon testnet), via the Threshold node-facing Tapir testnet. Soon, a separate node-facing testnet – Oryx **** – will additionally point to **Polygon** **mainnet**. This means access conditions can be checked and verified by Threshold nodes if they pertain to state on either of the Polygon networks. Note that it is not possible to evaluate conditions on both Mumbai and Polygon mainnet in a single runtime, because pre-configuration requires choosing between Tapir and Oryx.&#x20;
 {% endhint %}
 
-This tutorial is a quick way for developers to learn about the Threshold Access Control service by building with the **Proof-of-Concept** **(PoC)** version of [Conditions-Based Decryption](../../fundamentals/threshold-access-control/conditions-based-decryption-cbd.md).&#x20;
+This tutorial is a quick way for developers to learn about the Threshold Access Control service by building with the **Proof-of-Concept** **(PoC)** version of [Conditions-Based Decryption](../../applications/threshold-access-control/conditions-based-decryption-cbd.md).&#x20;
 
 Note that the underlying [trust assumptions](trust-assumptions/) vary between versions and technologies; these are explained in detail for the [CBD Proof-of-Concept](trust-assumptions/cbd-proof-of-concept-version.md), [CBD Mainnet](trust-assumptions/cbd-mainnet-version.md), and [PRE Mainnet](trust-assumptions/cbd-mainnet-version.md) versions.&#x20;
 

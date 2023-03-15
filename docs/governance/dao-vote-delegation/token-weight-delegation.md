@@ -1,9 +1,13 @@
-# Token Weight Delegation
+---
+description: How to delegate liquid T tokens
+---
+
+# Liquid Token Delegation
 
 Liquid T holders who aren't staking on Threshold can delegate their token weights to themselves or a third party for voting on governance proposals.
 
 {% hint style="info" %}
-Delegation is accomplished via an on-chain transaction which costs ETH.
+Delegation is accomplished via an on-chain transaction which costs ETH gas.
 {% endhint %}
 
 1. Go to [https://boardroom.io/threshold](https://boardroom.io/threshold)
