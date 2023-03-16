@@ -8,7 +8,7 @@ Threshold USD (thUSD) is a stablecoin pegged 1:1 against USD.
 
 With either BTC or ETH as your collateral, you'll be able to borrow USD at low interest rate.
 
-Threshold USD is a modified fork of [Liquity Protocol](https://www.liquity.org/) built to be self-sustained through a PCV ("Protocol Controlled Value"). There is no equivalent of LQTY token in Threshold USD. Instead all profits accrue into the PCV. Since there is no token, [Bootsrapping](threshold-usd/) is completed through an I[nitial Protocol Loan](threshold-usd/initial-protocol-loan.md).&#x20;
+Threshold USD is a modified fork of [Liquity Protocol](https://www.liquity.org/) built to be self-sustained through a PCV ("Protocol Controlled Value"). There is no equivalent of LQTY token in Threshold USD. Instead all profits accrue into the PCV. Since there is no token, [Bootstrapping](threshold-usd/) is completed through an [Initial Protocol Loan](threshold-usd/initial-protocol-loan.md).&#x20;
 
 The result of protocol owning its own liquidity ("PCV") is a more predictable trajectory and sustainability long-term. The stability pool is funded by the PCV instead of user deposits. Thanks to this, no funds are wasted on rewards to passive LQTY stakers (rented liquidity) and those funds can instead by re-injected into the stability pool. As the protocol grows and accrue fees, the stability pool will be consistently topped up.&#x20;
 
