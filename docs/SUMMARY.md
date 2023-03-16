@@ -6,10 +6,11 @@
 
 * [tBTC Bitcoin Bridge](applications/tbtc-v2/README.md)
   * [Wallet Generation](fundamentals/tbtc-v2/wallet-generation.md)
+  * [The Path to Permissionlessness](applications/tbtc-v2/the-path-to-permissionlessness.md)
 * [Threshold USD](applications/threshold-usd/README.md)
-  * [Initial Protocol Loan](applications/threshold-usd/initial-protocol-loan.md)
+  * [Bootstrapping](applications/threshold-usd/threshold-usd/README.md)
+    * [Initial Protocol Loan](applications/threshold-usd/threshold-usd/initial-protocol-loan.md)
   * [B. Protocol](applications/threshold-usd/b.-protocol.md)
-  * [The Path to Permissionlessness](applications/threshold-usd/the-path-to-permissionlessness.md)
 * [Threshold Access Control](applications/threshold-access-control/README.md)
   * [Conditions-Based Decryption (CBD)](fundamentals/threshold-access-control/conditions-based-decryption-cbd.md)
   * [Proxy Re-Encryption (PRE)](fundamentals/threshold-access-control/proxy-re-encryption-pre.md)

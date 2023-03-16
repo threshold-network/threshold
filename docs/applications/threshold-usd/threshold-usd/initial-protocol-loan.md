@@ -23,7 +23,7 @@ _**Disadvantages**_
 
 ### About the risk
 
-Each liquidation that occurs will draw against the stability pool and result in \~10% profit to the stability pool. This also means that the price can drop up to 10% after a liquidation before the stability pool is at risk of losing money on the liquidation. Our integration with [B.Protocol](b.-protocol.md) ensures that liquidated tBTC is automatically converted back to thUSD and re-deposited into the stability pool. Under normal circumstances and without other factors, it is expected that the balance of thUSD in the pool will grow over time.&#x20;
+Each liquidation that occurs will draw against the stability pool and result in \~10% profit to the stability pool. This also means that the price can drop up to 10% after a liquidation before the stability pool is at risk of losing money on the liquidation. Our integration with [B.Protocol](../b.-protocol.md) ensures that liquidated tBTC is automatically converted back to thUSD and re-deposited into the stability pool. Under normal circumstances and without other factors, it is expected that the balance of thUSD in the pool will grow over time.&#x20;
 
 But there can be Black Swan events, large drops in the price of BTC in a short period of time or liquidity issues that results in a loss, even at \~10% profit. This is a risk of the protocol becoming undercollateralized, but the same issue would apply even without debt (stability pool not being profitable). The protocol is created to be sustainable, so these types of rare events will be averaged out. In addition, all income streams from Threshold USD also ends up in the PCV which further decrease the risk of undercollaterization.&#x20;
 
