@@ -52,13 +52,9 @@ Example:​
 
 `tBTC -> WBTC -> USDC -> thUSD`
 
-In this case funds are routed through the following Curve Finance stable pools:
+In this example funds could be routed through Curve Finance pools (both stablecoin and wrapped bitcoin pools).&#x20;
 
-![](../../.gitbook/assets/curve-3pool.png)
-
-![](../../.gitbook/assets/curve-ren.png)
-
-In addition, funds are routed through uniswap (v2 or v3) WBTC/USDC pools.&#x20;
+In addition, funds could be routed through uniswap (v2 or v3) WBTC or USDC paired pools.&#x20;
 
 Other routes could be:
 
