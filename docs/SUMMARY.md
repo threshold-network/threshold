@@ -44,6 +44,7 @@
         * [Logging](staking-and-running-a-node/running-a-node/self-managed/tbtc-v2-node-setup/advanced-options/logging.md)
         * [Config File](staking-and-running-a-node/running-a-node/self-managed/tbtc-v2-node-setup/advanced-options/config-file.md)
         * [CLI Options](staking-and-running-a-node/running-a-node/self-managed/tbtc-v2-node-setup/advanced-options/cli-options.md)
+        * [Client Info](staking-and-running-a-node/running-a-node/self-managed/tbtc-v2-node-setup/advanced-options/client-info.md)
       * [Frequently Asked Questions](staking-and-running-a-node/running-a-node/self-managed/tbtc-v2-node-setup/frequently-asked-questions.md)
     * [Updating tBTC v2 Node](staking-and-running-a-node/running-a-node/self-managed/updating-tbtc-v2-node.md)
   * [Staking Providers](staking-and-running-a-node/running-a-node/staking-providers.md)

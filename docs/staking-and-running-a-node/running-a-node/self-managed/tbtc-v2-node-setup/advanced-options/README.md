@@ -18,7 +18,6 @@ Application configuration can be stored in a file and passed to the application 
 
 ### [CLI Options](cli-options.md)
 
+### [Client Info](client-info.md)
 
-
-
-
+Client information exposed by the tBTC v2 staking client.
