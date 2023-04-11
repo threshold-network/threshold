@@ -4,7 +4,7 @@ description: A Bitcoin-backed Stablecoin
 
 # Threshold USD
 
-Threshold USD (thUSD) is a stablecoin pegged 1:1 against USD.
+Threshold USD (thUSD) is a stablecoin soft-pegged against USD and backed by ETH and tBTC as collaterals with a minimum collateral ratio of 110%.
 
 With either BTC or ETH as your collateral, you'll be able to borrow USD at low interest rate.
 
