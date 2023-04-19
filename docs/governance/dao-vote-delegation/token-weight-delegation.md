@@ -28,4 +28,3 @@ Delegation is accomplished via an on-chain transaction which costs ETH gas.
 
 6\. Sign the transaction
 
-****

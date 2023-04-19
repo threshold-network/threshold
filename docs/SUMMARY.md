@@ -7,6 +7,7 @@
 * [tBTC Bitcoin Bridge](applications/tbtc-v2/README.md)
   * [Wallet Generation](fundamentals/tbtc-v2/wallet-generation.md)
   * [The Path to Permissionlessness](applications/tbtc-v2/the-path-to-permissionlessness.md)
+  * [tBTC Minting Walkthrough](applications/tbtc-v2/tbtc-minting-walkthrough.md)
 * [Threshold USD](applications/threshold-usd/README.md)
   * [Bootstrapping](applications/threshold-usd/threshold-usd/README.md)
     * [Initial Protocol Loan](applications/threshold-usd/threshold-usd/initial-protocol-loan.md)

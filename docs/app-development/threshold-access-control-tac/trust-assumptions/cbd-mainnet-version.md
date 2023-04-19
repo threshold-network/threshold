@@ -44,7 +44,7 @@ It could be argued that with very frequent Cohort refresh, a wily attacker could
 The logic which _prompts_ the refreshing of Cohort members is also customizable. For example, a group chat application might include the option to mark a conversation as 'sensitive', in which case messages sent within this conversation will be assigned to and managed by fresh Cohorts with a greater frequency (or randomness) than regular messages.&#x20;
 
 {% hint style="info" %}
-It’s worth noting that the refreshing of Cohort members is unavoidable, regardless __ of the frequency or prompts chosen by a developer or end-user. This is because node operators will naturally wind down their operations and commitment to the network ('unbonding') over time. Although there are staker-facing protocol mechanisms in place to minimize the probability of a disorderly exodus, the proactive refreshing of Cohorts can also mitigate against abandonment of duties, for example by preemptively replacing operators with pending stake withdrawals (i.e. those who have initiated unbonding) with those with a longer-term economic commitment to the network (i.e. no unbonding initiated, or some longer token lock-up period).&#x20;
+It’s worth noting that the refreshing of Cohort members is unavoidable, regardless of the frequency or prompts chosen by a developer or end-user. This is because node operators will naturally wind down their operations and commitment to the network ('unbonding') over time. Although there are staker-facing protocol mechanisms in place to minimize the probability of a disorderly exodus, the proactive refreshing of Cohorts can also mitigate against abandonment of duties, for example by preemptively replacing operators with pending stake withdrawals (i.e. those who have initiated unbonding) with those with a longer-term economic commitment to the network (i.e. no unbonding initiated, or some longer token lock-up period).&#x20;
 {% endhint %}
 
 #### (2) Cohort composition beyond m & n
@@ -67,7 +67,7 @@ The protocol is also permissionless and psuedonymous (Ethereum addresses), which
 
 The node population is also non-uniform; rather, it is comprised of a heterogeneous set of operators, ranging from the hobbyist to institutional stakers. Although there is a degree of standardization with respect to requisite machine memory, CPU power, latency and availability, the actual underlying servers are only observable anecdotally – i.e. this cannot yet be verified on-chain. However, this anecdotal, informal insight into the node population can be supplemented and corroborated with conclusions drawn from on-chain activity, such as slashing or unbonding events.
 
-### Infrastructure-based trust assumptions __&#x20;
+### Infrastructure-based trust assumptions&#x20;
 
 {% hint style="warning" %}
 This section is under construction.
