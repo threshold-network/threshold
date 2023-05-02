@@ -36,15 +36,17 @@ Delivered in `@keep-network/keep-core@1.8.1-goerli.0` NPM package.
 
 ## TBTC Application Contracts
 
-Delivered in `@keep-network/random-beacon@2.1.0-goerli.6`, `@keep-network/ecdsa@2.1.0-goerli.4` and `@keep-network/tbtc-v2@1.0.3-goerli.0` NPM packages.
+Delivered in `@keep-network/random-beacon@2.1.0-goerli.6`, `@keep-network/ecdsa@2.1.0-goerli.4` and `@keep-network/tbtc-v2@1.2.0-goerli.2` NPM packages.
 
-| Contract          | Address                                                                                                                      |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Bridge            | [0x0Cad3257C4B7ec6de1f6926Fbf5714255a6632c3](https://goerli.etherscan.io/address/0x0Cad3257C4B7ec6de1f6926Fbf5714255a6632c3) |
-| RandomBeacon      | [0xF177CfA720ceC42841c04A458f6c68e1243C1b49](https://goerli.etherscan.io/address/0xF177CfA720ceC42841c04A458f6c68e1243C1b49) |
-| TBTC              | [0x679874fBE6D4E7Cc54A59e315FF1eB266686a937](https://goerli.etherscan.io/address/0x679874fbe6d4e7cc54a59e315ff1eb266686a937) |
-| TBCTVault         | [0x65eB0562FCe858f8328858c76E689aBedB78621F](https://goerli.etherscan.io/address/0x65eB0562FCe858f8328858c76E689aBedB78621F) |
-| VendingMachine    | [0x36B7383077a2CEeFd53e796512760a1888cEeb97](https://goerli.etherscan.io/address/0x36B7383077a2CEeFd53e796512760a1888cEeb97) |
-| WalletRegistry    | [0x0f0E2afF99A55B11026Fb270A05f04d37724dE86](https://goerli.etherscan.io/address/0x0f0E2afF99A55B11026Fb270A05f04d37724dE86) |
-| WalletCoordinator | [0x5AcEe207Ac74ad35BcecC2da6CEE2Fe10D47E0EC](https://goerli.etherscan.io/address/0x5AcEe207Ac74ad35BcecC2da6CEE2Fe10D47E0EC) |
+| Contract                  | Address                                                                                                                      |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Bridge                    | [0x0Cad3257C4B7ec6de1f6926Fbf5714255a6632c3](https://goerli.etherscan.io/address/0x0Cad3257C4B7ec6de1f6926Fbf5714255a6632c3) |
+| RandomBeacon              | [0xF177CfA720ceC42841c04A458f6c68e1243C1b49](https://goerli.etherscan.io/address/0xF177CfA720ceC42841c04A458f6c68e1243C1b49) |
+| TBTC                      | [0x679874fBE6D4E7Cc54A59e315FF1eB266686a937](https://goerli.etherscan.io/address/0x679874fbe6d4e7cc54a59e315ff1eb266686a937) |
+| TBCTVault                 | [0x65eB0562FCe858f8328858c76E689aBedB78621F](https://goerli.etherscan.io/address/0x65eB0562FCe858f8328858c76E689aBedB78621F) |
+| VendingMachine            | [0x36B7383077a2CEeFd53e796512760a1888cEeb97](https://goerli.etherscan.io/address/0x36B7383077a2CEeFd53e796512760a1888cEeb97) |
+| WalletRegistry            | [0x0f0E2afF99A55B11026Fb270A05f04d37724dE86](https://goerli.etherscan.io/address/0x0f0E2afF99A55B11026Fb270A05f04d37724dE86) |
+| WalletCoordinator         | [0x5AcEe207Ac74ad35BcecC2da6CEE2Fe10D47E0EC](https://goerli.etherscan.io/address/0x5AcEe207Ac74ad35BcecC2da6CEE2Fe10D47E0EC) |
+| LightRelay                | [0xa6F06A363B2b524e38A0c858B206415FB1b0D776](https://goerli.etherscan.io/address/0xa6F06A363B2b524e38A0c858B206415FB1b0D776) |
+| LightRelayMaintainerProxy | [0x68757C9b6d78B089D1c922E4864Edf6d2bC2F3aC](https://goerli.etherscan.io/address/0x68757C9b6d78B089D1c922E4864Edf6d2bC2F3aC) |
 
