@@ -4,6 +4,11 @@ description: Security Policies for Threshold Network
 
 # Security
 
+{% hint style="success" %}
+[**Bug Bounty program is live on Immunefi**](https://immunefi.com/bounty/thresholdnetwork/) [↗](https://www.toptal.com/designers/htmlarrows/arrows/north-east-arrow/) \
+Find bugs and vulnerabilities on Threshold Network and get paid up to $500,000
+{% endhint %}
+
 If you identify vulnerabilities with _any_ Threshold Network code, please email [security@threshold.network](mailto:security@threshold.network) with relevant information to your findings. We will work with researchers to coordinate vulnerability disclosure between our stakers, partners, and users to ensure the successful mitigation of vulnerabilities.
 
 Throughout the reporting process, we expect researchers to honor an embargo period that may vary depending on the severity of the disclosure. This ensures that we have the opportunity to fix any issues, identify further issues (if any), and inform our users.
@@ -44,5 +49,3 @@ The following activities are prohibited by this bug bounty program:
 * Public disclosure of an unpatched vulnerability in an embargoed bounty.
 
 Rewards are distributed according to the impact of the vulnerability based on the [Immunefi Vulnerability Severity Classification System V2.2](https://immunefi.com/immunefi-vulnerability-severity-classification-system-v2-2/). This is a simplified 5-level scale, with separate scales for websites/apps, smart contracts, and blockchains/DLTs, focusing on the impact of the vulnerability reported.
-
-Threshold DAO is currently in the process of establishing a Bug Bounty program on Immunefi.
