@@ -22,7 +22,7 @@ Delivered in `@threshold-network/solidity-contracts@1.2.1` package.
 | Integrations Guild Multisig      | [0x2ff7aB212cD6FEaE21bAc5300465E149FB6b85a9](https://etherscan.io/address/0x2ff7aB212cD6FEaE21bAc5300465E149FB6b85a9) |
 | Marketing Guild Multisig         | [0xd55c4261145EA1752662faA0485AfBC8C431b0CA](https://etherscan.io/address/0xd55c4261145EA1752662faA0485AfBC8C431b0CA) |
 
-## TBTC Application Contracts
+## tBTC Application Contracts
 
 Delivered in `@keep-network/random-beacon@2.0.0` and `@keep-network/ecdsa@2.0.0` packages.
 
@@ -35,6 +35,30 @@ Delivered in `@keep-network/random-beacon@2.0.0` and `@keep-network/ecdsa@2.0.0`
 | VendingMachine | [0x6590DFF6abEd7C077839E8227A4f12Ec90E6D85F](https://etherscan.io/address/0x6590DFF6abEd7C077839E8227A4f12Ec90E6D85F) |
 | WalletRegistry | [0x46d52E41C2F300BC82217Ce22b920c34995204eb](https://etherscan.io/address/0x46d52E41C2F300BC82217Ce22b920c34995204eb) |
 | CoveragePool   | [0x7D7B622C07f216d99eFc3EfB9Cf71872F46D811A](https://etherscan.io/address/0x7D7B622C07f216d99eFc3EfB9Cf71872F46D811A) |
+
+## L2 tBTC Application Contracts
+
+### Arbitrum One (chain ID: 42161)
+
+| Contract                | Address                                                                                                              |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| ArbitrumTBTC            | [0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40](https://arbiscan.io/address/0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40) |
+| ArbitrumWormholeGateway | [0x1293a54e160D1cd7075487898d65266081A15458](https://arbiscan.io/address/0x1293a54e160D1cd7075487898d65266081A15458) |
+
+### Optimism (chain ID: 10)
+
+| Contract                | Address                                                                                                                          |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| OptimismTBTC            | [0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40](https://optimistic.etherscan.io/address/0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40) |
+| OptimismWormholeGateway | [0x1293a54e160D1cd7075487898d65266081A15458](https://optimistic.etherscan.io/address/0x1293a54e160D1cd7075487898d65266081A15458) |
+|                         |                                                                                                                                  |
+
+### Polygon PoS (chain ID: 137)
+
+| Contract               | Address                                                                                                                  |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| PolygonTBTC            | [0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b](https://polygonscan.com/address/0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b) |
+| PolygonWormholeGateway | [0x09959798B95d00a3183d20FaC298E4594E599eab](https://polygonscan.com/address/0x09959798B95d00a3183d20FaC298E4594E599eab) |
 
 ## PRE Application Contracts
 

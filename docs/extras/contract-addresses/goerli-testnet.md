@@ -50,3 +50,25 @@ Delivered in `@keep-network/random-beacon@2.1.0-goerli.6`, `@keep-network/ecdsa@
 | LightRelay                | [0xa6F06A363B2b524e38A0c858B206415FB1b0D776](https://goerli.etherscan.io/address/0xa6F06A363B2b524e38A0c858B206415FB1b0D776) |
 | LightRelayMaintainerProxy | [0x68757C9b6d78B089D1c922E4864Edf6d2bC2F3aC](https://goerli.etherscan.io/address/0x68757C9b6d78B089D1c922E4864Edf6d2bC2F3aC) |
 
+## L2 tBTC Application Contracts
+
+### Arbitrum Goerli (chain ID: 421613)
+
+| Contract                | Address                                                                                                                     |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| ArbitrumTBTC            | [0x6449F4381f3d63bDfb36B3bDc375724aD3cD4621](https://goerli.arbiscan.io/address/0x6449F4381f3d63bDfb36B3bDc375724aD3cD4621) |
+| ArbitrumWormholeGateway | [0xe3e0511EEbD87F08FbaE4486419cb5dFB06e1343](https://goerli.arbiscan.io/address/0xe3e0511EEbD87F08FbaE4486419cb5dFB06e1343) |
+
+### Optimism Goerli (chain ID: 420)
+
+| Contract                | Address                                                                                                                               |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| OptimismTBTC            | [0xb8f31A249bcb45267d06b9E51252c4793B917Cd0](https://goerli-optimism.etherscan.io/address/0xb8f31A249bcb45267d06b9E51252c4793B917Cd0) |
+| OptimismWormholeGateway | [0xc3D46e0266d95215589DE639cC4E93b79f88fc6C](https://goerli-optimism.etherscan.io/address/0xc3D46e0266d95215589DE639cC4E93b79f88fc6C) |
+
+### Polygon PoS Mumbai (chain ID: 80001)
+
+| Contract               | Address                                                                                                                         |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| PolygonTBTC            | [0xb8f31A249bcb45267d06b9E51252c4793B917Cd0](https://mumbai.polygonscan.com/address/0xb8f31A249bcb45267d06b9E51252c4793B917Cd0) |
+| PolygonWormholeGateway | [0xc3D46e0266d95215589DE639cC4E93b79f88fc6C](https://mumbai.polygonscan.com/address/0xc3D46e0266d95215589DE639cC4E93b79f88fc6C) |
