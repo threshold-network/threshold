@@ -36,7 +36,7 @@ Delivered in `@keep-network/keep-core@1.8.1-goerli.0` NPM package.
 
 ## TBTC Application Contracts
 
-Delivered in `@keep-network/random-beacon@2.1.0-goerli.6`, `@keep-network/ecdsa@2.1.0-goerli.4` and `@keep-network/tbtc-v2@1.2.0-goerli.2` NPM packages.
+Delivered in `@keep-network/random-beacon@2.1.0-goerli.6`, `@keep-network/ecdsa@2.1.0-goerli.4` and `@keep-network/tbtc-v2@1.2.0-goerli.4` NPM packages.
 
 | Contract                  | Address                                                                                                                      |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
@@ -47,7 +47,7 @@ Delivered in `@keep-network/random-beacon@2.1.0-goerli.6`, `@keep-network/ecdsa@
 | VendingMachine            | [0x36B7383077a2CEeFd53e796512760a1888cEeb97](https://goerli.etherscan.io/address/0x36B7383077a2CEeFd53e796512760a1888cEeb97) |
 | WalletRegistry            | [0x0f0E2afF99A55B11026Fb270A05f04d37724dE86](https://goerli.etherscan.io/address/0x0f0E2afF99A55B11026Fb270A05f04d37724dE86) |
 | WalletCoordinator         | [0x5AcEe207Ac74ad35BcecC2da6CEE2Fe10D47E0EC](https://goerli.etherscan.io/address/0x5AcEe207Ac74ad35BcecC2da6CEE2Fe10D47E0EC) |
-| LightRelay                | [0xa6F06A363B2b524e38A0c858B206415FB1b0D776](https://goerli.etherscan.io/address/0xa6F06A363B2b524e38A0c858B206415FB1b0D776) |
+| LightRelay                | [0xe73A3026Ec67e81dCAD8e51e0bD420C9702e73a8](https://goerli.etherscan.io/address/0xe73a3026ec67e81dcad8e51e0bd420c9702e73a8) |
 | LightRelayMaintainerProxy | [0x68757C9b6d78B089D1c922E4864Edf6d2bC2F3aC](https://goerli.etherscan.io/address/0x68757C9b6d78B089D1c922E4864Edf6d2bC2F3aC) |
 
 ## L2 tBTC Application Contracts
