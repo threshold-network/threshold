@@ -22,10 +22,10 @@ Learn the fundamentals of the Threshold Network to get a deeper understanding of
 [tbtc-v2](applications/tbtc-v2/)
 {% endcontent-ref %}
 
-{% content-ref url="applications/threshold-access-control/" %}
-[threshold-access-control](applications/threshold-access-control/)
+{% content-ref url="applications/threshold-usd/" %}
+[threshold-usd](applications/threshold-usd/)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="applications/threshold-access-control/" %}
+[threshold-access-control](applications/threshold-access-control/)
 {% endcontent-ref %}
