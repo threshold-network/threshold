@@ -1,6 +1,6 @@
 # Görli Testnet
 
-## Threshold Contracts
+Threshold Contracts
 
 Delivered in `@threshold-network/solidity-contracts@1.3.0-goerli.0` NPM package.
 
@@ -56,19 +56,19 @@ Delivered in `@keep-network/random-beacon@2.1.0-goerli.6`, `@keep-network/ecdsa@
 
 | Contract                | Address                                                                                                                     |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| ArbitrumTBTC            | [0x6449F4381f3d63bDfb36B3bDc375724aD3cD4621](https://goerli.arbiscan.io/address/0x6449F4381f3d63bDfb36B3bDc375724aD3cD4621) |
-| ArbitrumWormholeGateway | [0xe3e0511EEbD87F08FbaE4486419cb5dFB06e1343](https://goerli.arbiscan.io/address/0xe3e0511EEbD87F08FbaE4486419cb5dFB06e1343) |
+| ArbitrumTBTC            | [0x85727F4725A4B2834e00Db1AA8e1b843a188162F](https://goerli.arbiscan.io/address/0x85727F4725A4B2834e00Db1AA8e1b843a188162F) |
+| ArbitrumWormholeGateway | [0x31A15e213B59E230b45e8c5c99dAFAc3d1236Ee2](https://goerli.arbiscan.io/address/0x31A15e213B59E230b45e8c5c99dAFAc3d1236Ee2) |
 
 ### Optimism Goerli (chain ID: 420)
 
 | Contract                | Address                                                                                                                               |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| OptimismTBTC            | [0xb8f31A249bcb45267d06b9E51252c4793B917Cd0](https://goerli-optimism.etherscan.io/address/0xb8f31A249bcb45267d06b9E51252c4793B917Cd0) |
-| OptimismWormholeGateway | [0xc3D46e0266d95215589DE639cC4E93b79f88fc6C](https://goerli-optimism.etherscan.io/address/0xc3D46e0266d95215589DE639cC4E93b79f88fc6C) |
+| OptimismTBTC            | [0x1a53759DE2eADf73bd0b05c07a4F1F5B7912dA3d](https://goerli-optimism.etherscan.io/address/0x1a53759DE2eADf73bd0b05c07a4F1F5B7912dA3d) |
+| OptimismWormholeGateway | [0x6449F4381f3d63bDfb36B3bDc375724aD3cD4621](https://goerli-optimism.etherscan.io/address/0x6449F4381f3d63bDfb36B3bDc375724aD3cD4621) |
 
 ### Polygon PoS Mumbai (chain ID: 80001)
 
 | Contract               | Address                                                                                                                         |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| PolygonTBTC            | [0xb8f31A249bcb45267d06b9E51252c4793B917Cd0](https://mumbai.polygonscan.com/address/0xb8f31A249bcb45267d06b9E51252c4793B917Cd0) |
-| PolygonWormholeGateway | [0xc3D46e0266d95215589DE639cC4E93b79f88fc6C](https://mumbai.polygonscan.com/address/0xc3D46e0266d95215589DE639cC4E93b79f88fc6C) |
+| PolygonTBTC            | [0xBcD7917282E529BAA6f232DdDc75F3901245A492](https://mumbai.polygonscan.com/address/0xBcD7917282E529BAA6f232DdDc75F3901245A492) |
+| PolygonWormholeGateway | [0x91Fe7128f74dBd4F031ea3D90FC5Ea4DCfD81818](https://mumbai.polygonscan.com/address/0x91fe7128f74dbd4f031ea3d90fc5ea4dcfd81818) |
