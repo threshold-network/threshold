@@ -46,6 +46,10 @@ The preferred OS is Ubuntu.
 
 A Keep Node requires a connection to a WebSocket Ethereum API. You should obtain a WS API URL from a service provider (e.g. [Alchemy](https://www.alchemy.com/), [Infura](https://www.infura.io/), [Ankr](https://www.ankr.com/rpc-service/)) or run your own Ethereum node (e.g. [Geth](https://geth.ethereum.org/)).
 
+### Bitcoin API
+
+Starting from version `v2.0.0-m3` , the Keep Node interacts with the Bitcoin network through an Electrum protocol server. You can use one of the publicly available servers or run your own. The URL of the chosen server should be passed under the `bitcoin.electrum` section of the configuration. If no Electrum server is set explicitly in the `bitcoin.electrum` configuration section, the Keep Node will randomly pick one server from its embedded server list, appropriate for the Bitcoin network the Keep Node is currently running against.
+
 ### Configuration
 
 The client expects configuration options to be passed as CLI flags or specified in a [config file](advanced-options/config-file.md). If you specify an option by using a parameter on the command line, it will override the value read from the configuration file.
