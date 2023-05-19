@@ -2,13 +2,18 @@
 
 * [What is the Threshold Network?](README.md)
 
+## THRESHOLD DASHBOARD
+
+* [tBTC Minting Walkthrough](threshold-dashboard/tbtc-minting-walkthrough.md)
+* [Fees](threshold-dashboard/fees.md)
+* [Upgrade NU & KEEP to T](threshold-dashboard/upgrade-nu-and-keep-to-t.md)
+
 ## Applications
 
 * [tBTC Bitcoin Bridge](applications/tbtc-v2/README.md)
   * [Wallet Generation](fundamentals/tbtc-v2/wallet-generation.md)
   * [Wallet Signing](applications/tbtc-v2/wallet-signing.md)
   * [The Path to Permissionlessness](applications/tbtc-v2/the-path-to-permissionlessness.md)
-  * [tBTC Minting Walkthrough](applications/tbtc-v2/tbtc-minting-walkthrough.md)
 * [Threshold USD](applications/threshold-usd/README.md)
   * [Bootstrapping](applications/threshold-usd/threshold-usd/README.md)
     * [Initial Protocol Loan](applications/threshold-usd/threshold-usd/initial-protocol-loan.md)
@@ -76,7 +81,6 @@
 
 ## Extras
 
-* [Upgrade NU & KEEP to T](staking-and-running-a-node/upgrade-nu-and-keep-to-t.md)
 * [Security](extras/security.md)
 * [Contribution](extras/contribution.md)
 * [Contract Addresses](extras/contract-addresses/README.md)

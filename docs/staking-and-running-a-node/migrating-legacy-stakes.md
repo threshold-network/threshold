@@ -23,10 +23,18 @@ Here is a summary of the overall process:
 * Go to [https://stake.nucypher.network/manage/stake](https://stake.nucypher.network/manage/stake)
 * Click _"Stake NU on Threshold"_
 
-![Stake NU on Threshold](../.gitbook/assets/stake\_legacy\_nu\_on\_threshold.png)
+<div align="left">
+
+<img src="../.gitbook/assets/stake_legacy_nu_on_threshold.png" alt="Stake NU on Threshold">
+
+</div>
 
 ## Migrate Legacy KEEP Stake
 
 * Authorize Threshold Staking for the Keep Network legacy stake - [https://dashboard.keep.network/applications/threshold](https://dashboard.keep.network/applications/threshold)
 
-![Stake KEEP on Threshold](../.gitbook/assets/stake\_legacy\_keep\_on\_threshold.jpg)
+<div align="left">
+
+<img src="../.gitbook/assets/stake_legacy_keep_on_threshold.jpg" alt="Stake KEEP on Threshold">
+
+</div>
