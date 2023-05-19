@@ -79,12 +79,12 @@
   * [Get Started (PRE Mainnet)](app-development/threshold-access-control-tac/advanced-usage/proxy-re-encryption.md)
   * [Contribution Guide](app-development/contribution-guide.md)
 
-## Extras
+## Resources
 
-* [Security](extras/security.md)
-* [Contribution](extras/contribution.md)
-* [Contract Addresses](extras/contract-addresses/README.md)
-  * [Ethereum Mainnet](extras/contract-addresses/ethereum-mainnet.md)
-  * [Görli Testnet](extras/contract-addresses/goerli-testnet.md)
-* [Glossary](extras/glossary.md)
-* [Links](extras/links.md)
+* [Security](resources/security.md)
+* [Contribution](resources/contribution.md)
+* [Contract Addresses](resources/contract-addresses/README.md)
+  * [Ethereum Mainnet](resources/contract-addresses/ethereum-mainnet.md)
+  * [Görli Testnet](resources/contract-addresses/goerli-testnet.md)
+* [Glossary](resources/glossary.md)
+* [Links](resources/links.md)

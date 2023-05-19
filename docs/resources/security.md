@@ -15,7 +15,7 @@ Throughout the reporting process, we expect researchers to honor an embargo peri
 
 Sometimes vulnerabilities are more sensitive in nature and require extra precautions. We are happy to work together to use a more secure medium, such as Signal. Email [security@threshold.network](mailto:security@threshold.network) and we will coordinate a communication channel that we're both comfortable with.
 
-A great place to begin your research is by working on our testnet. Please see our [documentation](broken-reference/) to get started. We ask that you please respect network machines and their owners. If you find a vulnerability that you suspect has given you access to a machine against the owner's permission, stop what you're doing and immediately email [security@threshold.network](mailto:security@threshold.network).
+A great place to begin your research is by working on our testnet. Please see our [documentation](../extras/broken-reference/) to get started. We ask that you please respect network machines and their owners. If you find a vulnerability that you suspect has given you access to a machine against the owner's permission, stop what you're doing and immediately email [security@threshold.network](mailto:security@threshold.network).
 
 The Threshold team will make its best effort to respond to a new report **within 48 hours**. This response may be a simple acknowledgment that the report was received or may be an initial assessment from the team. Unless the report is assessed as irrelevant or incorrect, this response will include expected next steps and communication time frames from the Threshold team.
 
