@@ -43,7 +43,6 @@ The following flags must be set at minimum:
 
 ```bash
 --ethereum.url "wss://mainnet-ETH-enpoint-here"
---mainnet
 --storage.dir "/home/keep/storage"
 --ethereum.keyFile "/home/keep/config/UTC--Your-Operator-Key-Name"
 # to configure your node to use your machine's public IP
@@ -60,7 +59,7 @@ To launch the client, execute the following:
 
 {% code overflow="wrap" %}
 ```bash
-./keep-client start --ethereum.url "wss://mainnet-ETH-enpoint-here" --mainnet --storage.dir "/home/keep/storage" --ethereum.keyFile "/home/keep/config/UTC--Your-Operator-Key-Name" --network.announcedAddresses "/ip4/your.ipv4.address.here/tcp/3919"
+./keep-client start --ethereum.url "wss://mainnet-ETH-enpoint-here" --storage.dir "/home/keep/storage" --ethereum.keyFile "/home/keep/config/UTC--Your-Operator-Key-Name" --network.announcedAddresses "/ip4/your.ipv4.address.here/tcp/3919"
 ```
 {% endcode %}
 
