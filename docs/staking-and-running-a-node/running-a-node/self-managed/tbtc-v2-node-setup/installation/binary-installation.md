@@ -10,12 +10,14 @@ Choose either Docker installation OR Binary installation.
 
 ### Download the Binary
 
-Download the client binary file, make sure you are in the correct directory.
+See GitHub for the latest release: [https://github.com/keep-network/keep-core/releases](https://github.com/keep-network/keep-core/releases)
+
+Under Assets, copy the path to the compressed binary and use the command below to download the file. Make relevant adjustments to version as necessary:
 
 {% code overflow="wrap" %}
 ```bash
 cd /home/keep
-wget https://github.com/keep-network/keep-core/releases/download/v2.0.0-m2/keep-client-mainnet-v2.0.0-m2-linux-amd64.tar.gz
+wget https://github.com/keep-network/keep-core/releases/download/XX.X.X-XX/keep-client-mainnet-XX.X.X-XX-linux-amd64.tar.gz
 ```
 {% endcode %}
 
@@ -84,7 +86,7 @@ Trust math, not hardware.
 -----------------------------------------------------------------------------------
 | Keep Client Node                                                                |
 |                                                                                 |
-| Version: Version: v2.0.0-m1 (4d745f6d0)                                         |
+| Version: Version: vX.X.X-XX (4d745f6d0)                                         |
 |                                                                                 |
 | Operator: 0x_your_operator_address                                              |
 |                                                                                 |

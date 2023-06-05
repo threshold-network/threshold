@@ -228,7 +228,7 @@ Trust math, not hardware.
 -----------------------------------------------------------------------------------
 | Keep Client Node                                                                |
 |                                                                                 |
-| Version: Version: v2.0.0-m1 (4d745f6d0)                                         |
+| Version: Version: vX.X.X-XX (4d745f6d0)                                         |
 |                                                                                 |
 | Operator: 0x_your_operator_address                                              |
 |                                                                                 |
