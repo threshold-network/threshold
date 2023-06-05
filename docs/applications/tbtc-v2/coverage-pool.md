@@ -10,7 +10,7 @@ Threshold Coverage Pool serves as a backstop for assets secured by the tBTC prot
 
 ### Asset Strategy
 
-Currently, the coverage pool contains only T tokens, with deposits sourced exclusively from the DAO treasury. The Threshold DAO is responsible for determining how much T enters the pool and how much to withdraw in the event of lost Bitcoin. The DAO has determined via governance to allocate up to **50 million T** in coverage at this time. Threshold Treasury Guild can add T dynamically to the pool in accordance to market conditions up to this total amount allocated. Full rational for this strategy is outlined in [TIP 51](https://forum.threshold.network/t/tip-51-coverage-pool-allocation/610).&#x20;
+Currently, the coverage pool contains only T tokens, with deposits sourced exclusively from the DAO treasury. The Threshold DAO is responsible for determining how much T enters the pool and how much to withdraw in the event of lost Bitcoin. The DAO has [determined via governance](https://etherscan.io/tx/0x26806758e05ff3f31d2e85a2875803905fc6c8a68b6c34b4201ebeb44399a27a) to allocate up to **50 million T** in coverage at this time. Threshold Treasury Guild can add T dynamically to the pool in accordance to market conditions up to this total amount allocated. Full rational for this strategy is outlined in Threshold Network Forum in [TIP 51](https://forum.threshold.network/t/tip-51-coverage-pool-allocation/610).&#x20;
 
 ### Evolution
 
