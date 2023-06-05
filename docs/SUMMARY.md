@@ -14,6 +14,7 @@
   * [Wallet Generation](fundamentals/tbtc-v2/wallet-generation.md)
   * [Wallet Signing](applications/tbtc-v2/wallet-signing.md)
   * [The Path to Permissionlessness](applications/tbtc-v2/the-path-to-permissionlessness.md)
+  * [Coverage Pool](applications/tbtc-v2/coverage-pool.md)
 * [Threshold USD](applications/threshold-usd/README.md)
   * [Bootstrapping](applications/threshold-usd/threshold-usd/README.md)
     * [Initial Protocol Loan](applications/threshold-usd/threshold-usd/initial-protocol-loan.md)
