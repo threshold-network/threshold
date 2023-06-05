@@ -6,7 +6,7 @@ description: Update procedure for the tBTC v2 client depends on installation met
 
 ## Docker Installation
 
-The following instructions assume your docker install followed [these](tbtc-v2-node-setup/installation/docker-installation.md) installation instructions.&#x20;
+The following instructions assume your docker install followed [these](installation/docker-installation.md) installation instructions.&#x20;
 
 {% tabs %}
 {% tab title="Docker Install" %}
@@ -26,10 +26,13 @@ sudo systemctl restart tbtcv2
 
 To free system resources, run
 
-<pre class="language-bash"><code class="lang-bash">sudo docker container prune
+```bash
+sudo docker container prune
+```
 
-<strong>sudo docker image prune
-</strong></code></pre>
+```bash
+sudo docker image prune
+```
 
 Examine logs to ensure the node started correctly. Find Docker instance identification; it'll be a random combination of words, e.g. `stinky_brownie`:
 
@@ -97,7 +100,7 @@ client_info{version="vX.X.X-XX"}
 {% endtab %}
 
 {% tab title="Binary Install" %}
-This install method requires downloading the latest version of the binary. Follow the installation steps provided [here](tbtc-v2-node-setup/installation/binary-installation.md).
+This install method requires downloading the latest version of the binary. Follow the installation steps provided [here](installation/binary-installation.md).
 {% endtab %}
 {% endtabs %}
 

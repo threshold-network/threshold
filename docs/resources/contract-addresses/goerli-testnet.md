@@ -4,13 +4,7 @@ Threshold Contracts
 
 Delivered in `@threshold-network/solidity-contracts@1.3.0-goerli.0` NPM package.
 
-| Contract                | Address                                                                                                                      |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| T Token                 | [0x3f16380656cAE45D3f80D8833682d2b606eD094A](https://goerli.etherscan.io/address/0x3f16380656cAE45D3f80D8833682d2b606eD094A) |
-| TokenStaking            | [0x1da5d88C26EA4f87b5e09C3452eE2384Ee20DC75](https://goerli.etherscan.io/address/0x1da5d88C26EA4f87b5e09C3452eE2384Ee20DC75) |
-| KeepStake               | [0xC76796B031232976cb17521342B0d12283588E6F](https://goerli.etherscan.io/address/0xC76796B031232976cb17521342B0d12283588E6F) |
-| NU<>T Vending Machine   | [0x8D4Ccc04D17d055b88fbaB8634C7F0611d8Aa946](https://goerli.etherscan.io/address/0x8D4Ccc04D17d055b88fbaB8634C7F0611d8Aa946) |
-| KEEP<>T Vending Machine | [0x8d1EDfee0510537E1081a28Fa4A94769Cfa3969a](https://goerli.etherscan.io/address/0x8d1EDfee0510537E1081a28Fa4A94769Cfa3969a) |
+<table><thead><tr><th width="209.54782383508018">Contract</th><th>Address</th></tr></thead><tbody><tr><td>T Token</td><td><a href="https://goerli.etherscan.io/address/0x3f16380656cAE45D3f80D8833682d2b606eD094A">0x3f16380656cAE45D3f80D8833682d2b606eD094A</a></td></tr><tr><td>TokenStaking</td><td><a href="https://goerli.etherscan.io/address/0x1da5d88C26EA4f87b5e09C3452eE2384Ee20DC75">0x1da5d88C26EA4f87b5e09C3452eE2384Ee20DC75</a></td></tr><tr><td>KeepStake</td><td><a href="https://goerli.etherscan.io/address/0xC76796B031232976cb17521342B0d12283588E6F">0xC76796B031232976cb17521342B0d12283588E6F</a></td></tr><tr><td>NU&#x3C;>T Vending Machine</td><td><a href="https://goerli.etherscan.io/address/0x8D4Ccc04D17d055b88fbaB8634C7F0611d8Aa946">0x8D4Ccc04D17d055b88fbaB8634C7F0611d8Aa946</a></td></tr><tr><td>KEEP&#x3C;>T Vending Machine</td><td><a href="https://goerli.etherscan.io/address/0x8d1EDfee0510537E1081a28Fa4A94769Cfa3969a">0x8d1EDfee0510537E1081a28Fa4A94769Cfa3969a</a></td></tr></tbody></table>
 
 ## Legacy NU Contracts
 

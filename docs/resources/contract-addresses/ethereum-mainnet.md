@@ -4,13 +4,7 @@
 
 Delivered in `@threshold-network/solidity-contracts@1.2.1` package.
 
-| Contract                | Address                                                                                                               |
-| ----------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| T Token                 | [0xCdF7028ceAB81fA0C6971208e83fa7872994beE5](https://etherscan.io/address/0xCdF7028ceAB81fA0C6971208e83fa7872994beE5) |
-| TokenStaking            | [0x01b67b1194c75264d06f808a921228a95c765dd7](https://etherscan.io/address/0x01b67b1194c75264d06f808a921228a95c765dd7) |
-| KeepStake               | [0x10DE37cF84202A20cae61069C617B3Aa874aF8b4](https://etherscan.io/address/0x10DE37cF84202A20cae61069C617B3Aa874aF8b4) |
-| NU<>T Vending Machine   | [0x1CCA7E410eE41739792eA0A24e00349Dd247680e](https://etherscan.io/address/0x1CCA7E410eE41739792eA0A24e00349Dd247680e) |
-| KEEP<>T Vending Machine | [0xE47c80e8c23f6B4A1aE41c34837a0599D5D16bb0](https://etherscan.io/address/0xE47c80e8c23f6B4A1aE41c34837a0599D5D16bb0) |
+<table><thead><tr><th width="186.54782383508018">Contract</th><th>Address</th></tr></thead><tbody><tr><td>T Token</td><td><a href="https://etherscan.io/address/0xCdF7028ceAB81fA0C6971208e83fa7872994beE5">0xCdF7028ceAB81fA0C6971208e83fa7872994beE5</a></td></tr><tr><td>TokenStaking</td><td><a href="https://etherscan.io/address/0x01b67b1194c75264d06f808a921228a95c765dd7">0x01b67b1194c75264d06f808a921228a95c765dd7</a></td></tr><tr><td>KeepStake</td><td><a href="https://etherscan.io/address/0x10DE37cF84202A20cae61069C617B3Aa874aF8b4">0x10DE37cF84202A20cae61069C617B3Aa874aF8b4</a></td></tr><tr><td>NU&#x3C;>T Vending Machine</td><td><a href="https://etherscan.io/address/0x1CCA7E410eE41739792eA0A24e00349Dd247680e">0x1CCA7E410eE41739792eA0A24e00349Dd247680e</a></td></tr><tr><td>KEEP&#x3C;>T Vending Machine</td><td><a href="https://etherscan.io/address/0xE47c80e8c23f6B4A1aE41c34837a0599D5D16bb0">0xE47c80e8c23f6B4A1aE41c34837a0599D5D16bb0</a></td></tr></tbody></table>
 
 ## Threshold DAO Contracts
 
@@ -55,10 +49,7 @@ Delivered in `@keep-network/random-beacon@2.0.0` and `@keep-network/ecdsa@2.0.0`
 
 ### Polygon PoS (chain ID: 137)
 
-| Contract               | Address                                                                                                                  |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| PolygonTBTC            | [0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b](https://polygonscan.com/address/0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b) |
-| PolygonWormholeGateway | [0x09959798B95d00a3183d20FaC298E4594E599eab](https://polygonscan.com/address/0x09959798B95d00a3183d20FaC298E4594E599eab) |
+<table><thead><tr><th width="373">Contract</th><th>Address</th></tr></thead><tbody><tr><td>PolygonTBTC</td><td><a href="https://polygonscan.com/address/0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b">0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b</a></td></tr><tr><td>PolygonWormholeGateway</td><td><a href="https://polygonscan.com/address/0x09959798B95d00a3183d20FaC298E4594E599eab">0x09959798B95d00a3183d20FaC298E4594E599eab</a></td></tr></tbody></table>
 
 ## PRE Application Contracts
 
