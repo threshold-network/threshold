@@ -17,5 +17,5 @@ Currently, the coverage pool contains only T tokens, with deposits sourced exclu
 Coverage pool in its current state is an iteration of tBTC risk management, and its evolution will be determined by Threshold DAO. In the future, Threshold DAO may decide to diversify pool assets to reduce coverage dependency to a single asset type. In addition, the DAO can propose a rewards mechanism to incentivize deposits into the coverage pool from outside parties in return for T rewards. Such a mechanism could grow TVL in the pool, providing even more coverage for tBTC users.
 
 {% hint style="info" %}
-Have questions or keen to join the discussion? Head over the [Treasury Guild Channel](https://discord.com/channels/866378471868727316/971861255100981277) in Threshold Network Discord.&#x20;
+Join the discussion and ask questions about the coverage pool in [Treasury Guild Channel](https://discord.com/channels/866378471868727316/971861255100981277) in Threshold Network Discord
 {% endhint %}
