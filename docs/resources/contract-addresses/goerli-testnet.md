@@ -30,7 +30,7 @@ Delivered in `@keep-network/keep-core@1.8.1-goerli.0` NPM package.
 
 ## TBTC Application Contracts
 
-Delivered in `@keep-network/random-beacon@2.1.0-goerli.6`, `@keep-network/ecdsa@2.1.0-goerli.4` and `@keep-network/tbtc-v2@1.2.0-goerli.4` NPM packages.
+Delivered in `@keep-network/random-beacon@2.1.0-goerli.6`, `@keep-network/ecdsa@2.1.0-goerli.4` and `@keep-network/tbtc-v2@1.5.0-goerli.0` NPM packages.
 
 | Contract                  | Address                                                                                                                      |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
