@@ -79,6 +79,13 @@
     * [Strategy](app-development/threshold-access-control-tac/references/strategy.md)
   * [Get Started (PRE Mainnet)](app-development/threshold-access-control-tac/advanced-usage/proxy-re-encryption.md)
   * [Contribution Guide](app-development/contribution-guide.md)
+* [Staking Contract and DAO](app-development/staking-contract-and-dao/README.md)
+  * [Random Beacon API](app-development/staking-contract-and-dao/staking-contract-and-dao-api/generated-docs/index.md)
+* [Random Beacon](app-development/random-beacon/README.md)
+  * [Random Beacon API](app-development/random-beacon/random-beacon-api/generated-docs/index.md)
+* [TBTCv2](app-development/tbtc-v2/README.md)
+  * [ECDSA API](app-development/tbtc-v2/ecdsa-api/generated-docs/index.md)
+  * [TBTCv2 API](app-development/tbtc-v2/tbtc-v2-api/generated-docs/index.md)
 
 ## Resources
 
