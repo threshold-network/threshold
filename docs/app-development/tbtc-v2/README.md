@@ -1,4 +1,4 @@
-# TBTCv2
+# tBTC
 
 To get familiarized with ECDSA contracts API, go [here](ecdsa-api/generated-docs/index.md).
 
