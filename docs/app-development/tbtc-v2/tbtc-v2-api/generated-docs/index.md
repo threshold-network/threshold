@@ -1,46 +1,4 @@
 # Solidity API
-## Table Of Contents
-
-<!-- toc -->
-
-- [Bank](#bank)
-- [IReceiveBalanceApproval](#ireceivebalanceapproval)
-- [BitcoinTx](#bitcointx)
-- [Bridge](#bridge)
-- [BridgeGovernance](#bridgegovernance)
-- [BridgeGovernanceParameters](#bridgegovernanceparameters)
-- [BridgeState](#bridgestate)
-- [Deposit](#deposit)
-- [DepositSweep](#depositsweep)
-- [EcdsaLib](#ecdsalib)
-- [Fraud](#fraud)
-- [Heartbeat](#heartbeat)
-- [IRelay](#irelay)
-- [MovingFunds](#movingfunds)
-- [OutboundTx](#outboundtx)
-- [Redemption](#redemption)
-- [Wallets](#wallets)
-- [IVault](#ivault)
-- [GovernanceUtils](#governanceutils)
-- [VendingMachine](#vendingmachine)
-- [VendingMachineV2](#vendingmachinev2)
-- [VendingMachineV3](#vendingmachinev3)
-- [WalletCoordinator](#walletcoordinator)
-- [L2TBTC](#l2tbtc)
-- [IWormholeTokenBridge](#iwormholetokenbridge)
-- [L2WormholeGateway](#l2wormholegateway)
-- [MaintainerProxy](#maintainerproxy)
-- [Epoch](#epoch)
-- [ILightRelay](#ilightrelay)
-- [RelayUtils](#relayutils)
-- [LightRelay](#lightrelay)
-- [LightRelayMaintainerProxy](#lightrelaymaintainerproxy)
-- [TBTC](#tbtc)
-- [DonationVault](#donationvault)
-- [TBTCOptimisticMinting](#tbtcoptimisticminting)
-- [TBTCVault](#tbtcvault)
-
-<!-- tocstop -->
 
 ## Bank
 
