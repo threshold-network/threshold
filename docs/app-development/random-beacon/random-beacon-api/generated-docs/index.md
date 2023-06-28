@@ -1,29 +1,4 @@
 # Solidity API
-## Table Of Contents
-
-<!-- toc -->
-
-- [BeaconDkgValidator](#beacondkgvalidator)
-- [Governable](#governable)
-- [RandomBeacon](#randombeacon)
-- [RandomBeaconChaosnet](#randombeaconchaosnet)
-- [RandomBeaconGovernance](#randombeacongovernance)
-- [Reimbursable](#reimbursable)
-- [ReimbursementPool](#reimbursementpool)
-- [IRandomBeacon](#irandombeacon)
-- [IRandomBeaconConsumer](#irandombeaconconsumer)
-- [AltBn128](#altbn128)
-- [BLS](#bls)
-- [BeaconAuthorization](#beaconauthorization)
-- [BeaconDkg](#beacondkg)
-- [BeaconInactivity](#beaconinactivity)
-- [BytesLib](#byteslib)
-- [Callback](#callback)
-- [Groups](#groups)
-- [ModUtils](#modutils)
-- [Relay](#relay)
-
-<!-- tocstop -->
 
 ## BeaconDkgValidator
 
