@@ -1,5 +1,5 @@
 ---
-description: How to make edits
+description: Ways to participate in Threshold Network
 ---
 
 # Contribution

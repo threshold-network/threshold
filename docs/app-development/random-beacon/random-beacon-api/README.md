@@ -1,42 +1,41 @@
 # Random Beacon API
 
-You can learn about APIs of contracts related to the Random Beacon under the
-following links:
+You can learn about APIs of contracts related to the Random Beacon under the following links:
 
-[AltBn128](./generated-docs/libraries/AltBn128.md)
+[AltBn128](altbn128.md)
 
-[BeaconAuthorization](./generated-docs/libraries/BeaconAuthorization.md)
+[BeaconAuthorization](beaconauthorization.md)
 
-[BeaconDkg](./generated-docs/libraries/BeaconDkg.md)
+[BeaconDkg](beacondkg.md)
 
-[BeaconDkgValidator](./generated-docs/BeaconDkgValidator.md)
+[BeaconDkgValidator](beacondkgvalidator.md)
 
-[BeaconInactivity](./generated-docs/libraries/BeaconInactivity.md)
+[BeaconInactivity](beaconinactivity.md)
 
-[BLS](./generated-docs/libraries/BLS.md)
+[BLS](bls.md)
 
-[BytesLib](./generated-docs/libraries/BytesLib.md)
+[BytesLib](byteslib.md)
 
-[Callback](./generated-docs/libraries/Callback.md)
+[Callback](callback.md)
 
-[Governable](./generated-docs/Governable.md)
+[Governable](governable.md)
 
-[Groups](./generated-docs/libraries/Groups.md)
+[Groups](groups.md)
 
-[IRandomBeacon](./generated-docs/api/IRandomBeacon.md)
+[IRandomBeacon](irandombeacon.md)
 
-[IRandomBeaconConsumer](./generated-docs/api/IRandomBeaconConsumer.md)
+[IRandomBeaconConsumer](irandombeaconconsumer.md)
 
-[ModUtils](./generated-docs/libraries/ModUtils.md)
+[ModUtils](modutils.md)
 
-[RandomBeacon](./generated-docs/RandomBeacon.md)
+[RandomBeacon](randombeacon.md)
 
-[RandomBeaconChaosnet](./generated-docs/RandomBeaconChaosnet.md)
+[RandomBeaconChaosnet](randombeaconchaosnet.md)
 
-[RandomBeaconGovernance](./generated-docs/RandomBeaconGovernance.md)
+[RandomBeaconGovernance](randombeacongovernance.md)
 
-[Reimbursable](./generated-docs/Reimbursable.md)
+[Reimbursable](reimbursable.md)
 
-[ReimbursementPool](./generated-docs/ReimbursementPool.md)
+[ReimbursementPool](reimbursementpool.md)
 
-[Relay](./generated-docs/libraries/Relay.md)
+[Relay](relay.md)

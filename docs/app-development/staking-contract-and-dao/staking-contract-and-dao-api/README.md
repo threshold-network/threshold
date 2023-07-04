@@ -1,40 +1,39 @@
 # Staking Contract and DAO API
 
-You can learn about APIs of contracts related to staking and DAO under the
-following links:
+You can learn about APIs of contracts related to staking and DAO under the following links:
 
-[BaseTokenholderGovernor](./generated-docs/governance/BaseTokenholderGovernor.md)
+[BaseTokenholderGovernor](basetokenholdergovernor.md)
 
-[Checkpoints](./generated-docs/governance/Checkpoints.md)
+[Checkpoints](checkpoints.md)
 
-[GovernorParameters](./generated-docs/governance/GovernorParameters.md)
+[GovernorParameters](governorparameters.md)
 
-[IApplication](./generated-docs/staking/IApplication.md)
+[IApplication](iapplication.md)
 
-[ILegacyTokenStaking](./generated-docs/staking/ILegacyTokenStaking.md)
+[ILegacyTokenStaking](ilegacytokenstaking.md)
 
-[IStaking](./generated-docs/staking/IStaking.md)
+[IStaking](istaking.md)
 
-[IVotesHistory](./generated-docs/governance/IVotesHistory.md)
+[IVotesHistory](ivoteshistory.md)
 
-[KeepStake](./generated-docs/staking/KeepStake.md)
+[KeepStake](keepstake.md)
 
-[PercentUtils](./generated-docs/utils/PercentUtils.md)
+[PercentUtils](percentutils.md)
 
-[ProxyAdminWithDeputy](./generated-docs/governance/ProxyAdminWithDeputy.md)
+[ProxyAdminWithDeputy](proxyadminwithdeputy.md)
 
-[SafeTUpgradeable](./generated-docs/utils/SafeTUpgradeable.md)
+[SafeTUpgradeable](safetupgradeable.md)
 
-[StakerGovernor](./generated-docs/governance/StakerGovernor.md)
+[StakerGovernor](stakergovernor.md)
 
-[StakerGovernorVotes](./generated-docs/governance/StakerGovernorVotes.md)
+[StakerGovernorVotes](stakergovernorvotes.md)
 
-[T](./generated-docs/token/T.md)
+[T](t.md)
 
-[TokenholderGovernor](./generated-docs/governance/TokenholderGovernor.md)
+[TokenholderGovernor](tokenholdergovernor.md)
 
-[TokenholderGovernorVotes](./generated-docs/governance/TokenholderGovernorVotes.md)
+[TokenholderGovernorVotes](tokenholdergovernorvotes.md)
 
-[TokenStaking](./generated-docs/staking/TokenStaking.md)
+[TokenStaking](tokenstaking.md)
 
-[VendingMachine](./generated-docs/vendingVendingMachine.md)
+[VendingMachine](generated-docs/vendingVendingMachine.md)

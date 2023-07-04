@@ -1,3 +1,3 @@
 # Random Beacon
 
-To get familiarized with Random Bitcoin contracts API, go [here](random-beacon-api/generated-docs/index.md).
+To get familiarized with Random Bitcoin contracts API, go [here](broken-reference).

@@ -1,22 +1,21 @@
 # ECDSA API
 
-You can learn about APIs of contracts related to ECDSA under the following
-links:
+You can learn about APIs of contracts related to ECDSA under the following links:
 
-[EcdsaAuthorization](./generated-docs/libraries/EcdsaAuthorization.md)
+[EcdsaAuthorization](ecdsaauthorization.md)
 
-[EcdsaDkg](./generated-docs/libraries/EcdsaDkg.md)
+[EcdsaDkg](ecdsadkg.md)
 
-[EcdsaDkgValidator](./generated-docs/EcdsaDkgValidator.md)
+[EcdsaDkgValidator](ecdsadkgvalidator.md)
 
-[EcdsaInactivity](./generated-docs/libraries/EcdsaInactivity.md)
+[EcdsaInactivity](ecdsainactivity.md)
 
-[IWalletOwner](./generated-docs/api/IWalletOwner.md)
+[IWalletOwner](iwalletowner.md)
 
-[IWalletRegistry](./generated-docs/api/IWalletRegistry.md)
+[IWalletRegistry](iwalletregistry.md)
 
-[WalletRegistry](./generated-docs/WalletRegistry.md)
+[WalletRegistry](walletregistry.md)
 
-[WalletRegistryGovernance](./generated-docs/WalletRegistryGovernance.md)
+[WalletRegistryGovernance](walletregistrygovernance.md)
 
-[Wallets](./generated-docs/libraries/Wallets.md)
+[Wallets](wallets.md)

@@ -1,66 +1,65 @@
 # Bridge API
 
-You can learn about APIs of contracts related to the Bridge under the following
-links:
+You can learn about APIs of contracts related to the Bridge under the following links:
 
-[Bank](./generated-docs/bank/Bank.md)
+[Bank](bank.md)
 
-[BitcoinTx](./generated-docs/bridge/BitcoinTx.md)
+[BitcoinTx](bitcointx.md)
 
-[Bridge](./generated-docs/bridge/Bridge.md)
+[Bridge](bridge.md)
 
-[BridgeGovernance](./generated-docs/bridge/BridgeGovernance.md)
+[BridgeGovernance](bridgegovernance.md)
 
-[BridgeGovernanceParameters](./generated-docs/bridge/BridgeGovernanceParameters.md)
+[BridgeGovernanceParameters](bridgegovernanceparameters.md)
 
-[BridgeState](./generated-docs/bridge/BridgeState.md)
+[BridgeState](bridgestate.md)
 
-[Deposit](./generated-docs/bridge/Deposit.md)
+[Deposit](deposit.md)
 
-[DepositSweep](./generated-docs/bridge/DepositSweep.md)
+[DepositSweep](depositsweep.md)
 
-[DonationVault](./generated-docs/vault/DonationVault.md)
+[DonationVault](donationvault.md)
 
-[EcdsaLib](./generated-docs/bridge/EcdsaLib.md)
+[EcdsaLib](ecdsalib.md)
 
-[Fraud](./generated-docs/bridge/Fraud.md)
+[Fraud](fraud.md)
 
-[GovernanceUtils](./generated-docs/GovernanceUtils.md)
+[GovernanceUtils](governanceutils.md)
 
-[Heartbeat](./generated-docs/bridge/Heartbeat.md)
+[Heartbeat](heartbeat.md)
 
-[IReceiveBalanceApproval](./generated-docs/bank/IReceiveBalanceApproval.md)
+[IReceiveBalanceApproval](ireceivebalanceapproval.md)
 
-[IRelay](./generated-docs/bridge/IRelay.md)
+[IRelay](irelay.md)
 
-[IVault](./generated-docs/vault/IVault.md)
+[IVault](ivault.md)
 
-[L2TBTC](./generated-docs/l2/L2TBTC.md)
+[L2TBTC](l2tbtc.md)
 
-[L2WormholeGateway](./generated-docs/l2/L2WormholeGateway.md)
+[L2WormholeGateway](l2wormholegateway.md)
 
-[LightRelay](./generated-docs/relay/LightRelay.md)
+[LightRelay](lightrelay.md)
 
-[LightRelayMaintainerProxy](./generated-docs/relay/LightRelayMaintainerProxy.md)
+[LightRelayMaintainerProxy](lightrelaymaintainerproxy.md)
 
-[MaintainerProxy](./generated-docs/maintainer/MaintainerProxy.md)
+[MaintainerProxy](maintainerproxy.md)
 
-[MovingFunds](./generated-docs/bridge/MovingFunds.md)
+[MovingFunds](movingfunds.md)
 
-[Redemption](./generated-docs/bridge/Redemption.md)
+[Redemption](redemption.md)
 
-[TBTC](./generated-docs/token/TBTC.md)
+[TBTC](tbtc.md)
 
-[TBTCOptimisticMinting](./generated-docs/vault/TBTCOptimisticMinting.md)
+[TBTCOptimisticMinting](tbtcoptimisticminting.md)
 
-[TBTCVault](./generated-docs/vault/TBTCVault.md)
+[TBTCVault](tbtcvault.md)
 
-[VendingMachine](./generated-docs/bridge/VendingMachine.md)
+[VendingMachine](vendingmachine.md)
 
-[VendingMachineV2](./generated-docs/bridge/VendingMachineV2.md)
+[VendingMachineV2](vendingmachinev2.md)
 
-[VendingMachineV3](./generated-docs/bridge/VendingMachineV3.md)
+[VendingMachineV3](vendingmachinev3.md)
 
-[WalletCoordinator](./generated-docs/bridge/WalletCoordinator.md)
+[WalletCoordinator](walletcoordinator.md)
 
-[Wallets](./generated-docs/bridge/Wallets.md)
+[Wallets](wallets.md)

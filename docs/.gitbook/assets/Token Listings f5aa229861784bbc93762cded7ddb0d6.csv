@@ -1,0 +1,24 @@
+﻿Listing,tBTC Version Listed,Link to listing,Type,Up to date,Required Changes,Network,Form to update,Comments,Status
+Token lists - Uniswap,tBTC v1,https://tokenlists.org/,List,No,Update: listed inside,"Mainnet, Polygon",https://github.com/Uniswap/token-lists#authoring-token-lists,https://tokenlists.org/token-list?url=https://gateway.ipfs.io/ipns/tokens.uniswap.org,Not started
+Token lists - CMC Defi,,https://tokenlists.org/token-list?url=defi.cmc.eth,List,,,,,,Not started
+Token lists - ERC20,,https://tokenlists.org/token-list?url=erc20.cmc.eth,List,,,,,,Not started
+"Token lists Tokensoft Wrapped ",Tokensoft Wrapped - token lists . org,https://wrapped.tokensoft.eth.link/,List,,,,,,Not started
+CoinGecko,tBTC v1,https://www.coingecko.com/en/coins/tbtc,List,No,Update: listed inside,Mainnet,https://www.coingecko.com/request-form/updates/new?locale=en,Outreach from official account needed,Not started
+CoinMarketCap,tBTC v1,https://coinmarketcap.com/es/currencies/tbtc/,List,No,Update: listed inside,Mainnet,https://support.coinmarketcap.com/hc/en-us/requests/new?ticket_form_id=360000562051,Submission form → internal form,Not started
+Curve,tBTC v1,https://curve.fi/#/ethereum/pools,DEX,No,Signal deprecated,Mainnet,"https://github.com/curvefi/curve-assets/tree/main/images/assets
+
+https://github.com/curvefi/curve-assets/blob/main/images/assets/0x8daebade922df735c38c80c7ebd708af50815faa.png",We have to indicate the deprecated status,Not started
+CowSwap,,https://swap.cow.fi/#/1/swap/TBTC,DEX,Yes,Update: logo,Mainnet,"https://github.com/curvefi/curve-assets/tree/main/images/assets
+
+https://github.com/curvefi/curve-assets/blob/main/images/assets/0x18084fba666a33d37592fa2633fd49a74dd93a88.png",incorrect logo,Done
+Coinlist,"tBTC v1? ",coinlist.co,,,,,,,Not started
+Kraken,"Not sure, to verify",https://www.kraken.com/,,,,,,,Not started
+,ITEMS BELOW ARE SEPARETE - THESE ARE TARGET LISTS TO GET tBTC ADDED,,,,,,,,Not started
+Yearn,,https://meta.yearn.finance/api/tokens/list,,,,,,,Not started
+Messari,,https://messari.io/tokenlist/messari-verified,,,,,,,Not started
+1inch,tBTC v1,https://tokenlists.org/token-list?url=tokens.1inch.eth,DEX,No,,,,East: mail to mailto:support@1inch.io,Not started
+Tally Ho,,https://github.com/tallycash/token-list,,,,,,"submitted a PR ",Not started
+mStable,tBTCv2 old logo,,DEX,No,,,,East: reached out to team on Discord,In progress
+,,,,,,,,,Not started
+,Uphold,,,,,,,"Another to add to token updates (wrong token ticker). I have an Uphold account, if you’d like me to reach out.
+https://uphold.com/prices/crypto/threshold",Not started
