@@ -2,6 +2,10 @@
 
 ## RandomBeaconGovernance
 
+{% hint style="warning" %}
+This file documents a contract which is not yet deployed to Mainnet.
+{% endhint %}
+
 Owns the `RandomBeacon` contract and is responsible for updating its
 governable parameters in respect to governance delay individual
 for each parameter.

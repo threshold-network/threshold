@@ -2,6 +2,10 @@
 
 ## RandomBeaconChaosnet
 
+{% hint style="warning" %}
+This file documents a contract which is not yet deployed to Mainnet.
+{% endhint %}
+
 A stub contract that will be used temporarily until the real-world
 random beacon client implementation is ready.
 

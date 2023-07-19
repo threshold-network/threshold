@@ -2,6 +2,10 @@
 
 ## Groups
 
+{% hint style="warning" %}
+This file documents a contract which is not yet deployed to Mainnet.
+{% endhint %}
+
 This library is used as a registry of created groups.
 
 This library should be used along with DKG library that ensures linear
