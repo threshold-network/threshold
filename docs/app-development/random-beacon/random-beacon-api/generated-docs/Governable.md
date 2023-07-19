@@ -2,6 +2,10 @@
 
 ## Governable
 
+{% hint style="warning" %}
+This file documents a code which is not yet deployed to Mainnet.
+{% endhint %}
+
 Governable contract.
 
 A constructor is not defined, which makes the contract compatible with

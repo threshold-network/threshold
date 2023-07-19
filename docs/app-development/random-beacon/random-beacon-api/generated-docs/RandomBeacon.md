@@ -2,6 +2,10 @@
 
 ## RandomBeacon
 
+{% hint style="warning" %}
+This file documents a code which is not yet deployed to Mainnet.
+{% endhint %}
+
 Keep Random Beacon contract. It lets to request a new
 relay entry and validates the new relay entry provided by the
 network. This contract is in charge of all other Random Beacon
