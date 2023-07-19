@@ -3,7 +3,7 @@
 ## BLS
 
 {% hint style="warning" %}
-This file documents a code which is not yet deployed to Mainnet.
+This file documents a contract which is not yet deployed to Mainnet.
 {% endhint %}
 
 Library for verification of 2-pairing-check BLS signatures, including

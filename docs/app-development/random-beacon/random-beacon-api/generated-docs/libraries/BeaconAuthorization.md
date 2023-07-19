@@ -3,7 +3,7 @@
 ## BeaconAuthorization
 
 {% hint style="warning" %}
-This file documents a code which is not yet deployed to Mainnet.
+This file documents a contract which is not yet deployed to Mainnet.
 {% endhint %}
 
 Library managing the state of stake authorizations for the operator

@@ -3,7 +3,7 @@
 ## AltBn128
 
 {% hint style="warning" %}
-This file documents a code which is not yet deployed to Mainnet.
+This file documents a contract which is not yet deployed to Mainnet.
 {% endhint %}
 
 Implementations of common elliptic curve operations on Ethereum's
