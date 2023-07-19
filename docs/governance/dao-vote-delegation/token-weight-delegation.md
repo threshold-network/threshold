@@ -10,11 +10,11 @@ Liquid T holders who aren't staking on Threshold can delegate their token weight
 Delegation is accomplished via an on-chain transaction which costs ETH gas.
 {% endhint %}
 
-1. Go to [https://boardroom.io/threshold](https://boardroom.io/threshold)
+1. Go to [https://boardroom.io/threshold](https://boardroom.io/threshold).
 
-2\. Connect your wallet
+2\. Connect your wallet.
 
-3\. Click "_Set Up Delegation"_
+3\. Click "_Set Up Delegation"._
 
 <div align="left">
 
@@ -30,7 +30,7 @@ Delegation is accomplished via an on-chain transaction which costs ETH gas.
 
 </div>
 
-5\. Enter _"Delegate Address"_ and click on _"Delegate Votes"_
+5\. Enter _"Delegate Address"_ and click on _"Delegate Votes"._
 
 <div align="left">
 
@@ -38,5 +38,5 @@ Delegation is accomplished via an on-chain transaction which costs ETH gas.
 
 </div>
 
-6\. Sign the transaction
+6\. Sign the transaction.
 
