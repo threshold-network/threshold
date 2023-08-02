@@ -66,3 +66,10 @@ Delivered in `@keep-network/random-beacon@2.1.0-goerli.6`, `@keep-network/ecdsa@
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | PolygonTBTC            | [0xBcD7917282E529BAA6f232DdDc75F3901245A492](https://mumbai.polygonscan.com/address/0xBcD7917282E529BAA6f232DdDc75F3901245A492) |
 | PolygonWormholeGateway | [0x91Fe7128f74dBd4F031ea3D90FC5Ea4DCfD81818](https://mumbai.polygonscan.com/address/0x91fe7128f74dbd4f031ea3d90fc5ea4dcfd81818) |
+
+### Base Goerli (chain ID: 84531)
+
+| Contract            | Address                                                                                                                      |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| BaseTBTC            | [0x783349cd20f26CE12e747b1a17bC38D252c9e119](https://goerli.basescan.org/address/0x783349cd20f26CE12e747b1a17bC38D252c9e119) |
+| BaseWormholeGateway | [0xe3e0511EEbD87F08FbaE4486419cb5dFB06e1343](https://goerli.basescan.org/address/0xe3e0511EEbD87F08FbaE4486419cb5dFB06e1343) |
