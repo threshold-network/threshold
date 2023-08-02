@@ -2,6 +2,10 @@
 
 ## BeaconAuthorization
 
+{% hint style="warning" %}
+This file documents a contract which is not yet deployed to Mainnet.
+{% endhint %}
+
 Library managing the state of stake authorizations for the operator
 contract and the presence of operators in the sortition
 pool based on the stake authorized for them.
