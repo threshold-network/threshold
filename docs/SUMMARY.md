@@ -14,6 +14,7 @@
   * [Wallet Generation](fundamentals/tbtc-v2/wallet-generation.md)
   * [Wallet Signing](applications/tbtc-v2/wallet-signing.md)
   * [The Path to Permissionlessness](applications/tbtc-v2/the-path-to-permissionlessness.md)
+  * [Sweeping](applications/tbtc-v2/sweeping.md)
   * [Coverage Pool](applications/tbtc-v2/coverage-pool.md)
 * [Threshold USD](applications/threshold-usd/README.md)
   * [Bootstrapping](applications/threshold-usd/threshold-usd/README.md)
@@ -27,7 +28,7 @@
 
 * [Threshold DAO](governance/dao/README.md)
   * [🗳 Governance Process](governance/dao/governance-process.md)
-  * [🙋♀ 🙋♀ 🙋♀ 🙋♀ 🙋♀ Guilds](governance/dao/guilds.md)
+  * [🙋♀ 🙋♀ 🙋♀ 🙋♀ 🙋♀ 🙋♀ Guilds](governance/dao/guilds.md)
   * [💰 Threshold Multisigs](governance/dao/threshold-multisigs.md)
 * [Vote Delegation](governance/dao-vote-delegation/README.md)
   * [Liquid Token Delegation](governance/dao-vote-delegation/token-weight-delegation.md)
