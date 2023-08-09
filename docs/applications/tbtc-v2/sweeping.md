@@ -1,6 +1,10 @@
 # Sweeping
 
-**Disclaimer**: This is a technical implementation detail!
+### What is Sweeping?&#x20;
+
+Sweeping is an accounting optimization for tracking bitcoin deposits in tBTC contracts. It involves periodically consolidating recent bitcoin deposits into a single Unspent Transaction Output (UTXO) for a more optimal commitment cadence to Ethereum. This process simplifies tracking associated public keys and refund time locks while also helping prevent supply peg disruption. Typically, Sweeping runs every 8 hours depending on the volume and size of deposits.&#x20;
+
+### How it works
 
 When a user makes a deposit, they're locking up the funds using our specific [locking script](https://blog.threshold.network/tbtcv2-deposits-explained/). This creates an Unspent Transaction Output ([UTXO](https://learnmeabitcoin.com/technical/utxo)).&#x20;
 
