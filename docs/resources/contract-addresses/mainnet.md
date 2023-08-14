@@ -1,12 +1,12 @@
-# Ethereum Mainnet
+# Mainnet
 
-## Threshold Contracts
+## Threshold Contracts (Ethereum L1)
 
 Delivered in `@threshold-network/solidity-contracts@1.2.1` package.
 
 <table><thead><tr><th width="186.54782383508018">Contract</th><th>Address</th></tr></thead><tbody><tr><td>T Token</td><td><a href="https://etherscan.io/address/0xCdF7028ceAB81fA0C6971208e83fa7872994beE5">0xCdF7028ceAB81fA0C6971208e83fa7872994beE5</a></td></tr><tr><td>TokenStaking</td><td><a href="https://etherscan.io/address/0x01b67b1194c75264d06f808a921228a95c765dd7">0x01b67b1194c75264d06f808a921228a95c765dd7</a></td></tr><tr><td>KeepStake</td><td><a href="https://etherscan.io/address/0x10DE37cF84202A20cae61069C617B3Aa874aF8b4">0x10DE37cF84202A20cae61069C617B3Aa874aF8b4</a></td></tr><tr><td>NU&#x3C;>T Vending Machine</td><td><a href="https://etherscan.io/address/0x1CCA7E410eE41739792eA0A24e00349Dd247680e">0x1CCA7E410eE41739792eA0A24e00349Dd247680e</a></td></tr><tr><td>KEEP&#x3C;>T Vending Machine</td><td><a href="https://etherscan.io/address/0xE47c80e8c23f6B4A1aE41c34837a0599D5D16bb0">0xE47c80e8c23f6B4A1aE41c34837a0599D5D16bb0</a></td></tr></tbody></table>
 
-## Threshold DAO Contracts
+## Threshold DAO Contracts (Ethereum L1)
 
 | Contract                         | Address                                                                                                               |
 | -------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
@@ -16,7 +16,7 @@ Delivered in `@threshold-network/solidity-contracts@1.2.1` package.
 | Integrations Guild Multisig      | [0x2ff7aB212cD6FEaE21bAc5300465E149FB6b85a9](https://etherscan.io/address/0x2ff7aB212cD6FEaE21bAc5300465E149FB6b85a9) |
 | Marketing Guild Multisig         | [0xd55c4261145EA1752662faA0485AfBC8C431b0CA](https://etherscan.io/address/0xd55c4261145EA1752662faA0485AfBC8C431b0CA) |
 
-## tBTC Application Contracts
+## tBTC Application Contracts (Ethereum L1)
 
 Delivered in `@keep-network/random-beacon@2.0.0`, `@keep-network/ecdsa@2.0.0` and `@keep-network/tbtc-v2@1.5.0` packages.
 
@@ -31,7 +31,7 @@ Delivered in `@keep-network/random-beacon@2.0.0`, `@keep-network/ecdsa@2.0.0` an
 | CoveragePool      | [0x7D7B622C07f216d99eFc3EfB9Cf71872F46D811A](https://etherscan.io/address/0x7D7B622C07f216d99eFc3EfB9Cf71872F46D811A) |
 | WalletCoordinator | [0x64EA4b84e2BdfD313428b96658260E495a420093](https://etherscan.io/address/0x64EA4b84e2BdfD313428b96658260E495a420093) |
 
-## L2 tBTC Application Contracts
+## L2/Other tBTC Application Contracts
 
 ### Arbitrum One (chain ID: 42161)
 
@@ -40,17 +40,27 @@ Delivered in `@keep-network/random-beacon@2.0.0`, `@keep-network/ecdsa@2.0.0` an
 | ArbitrumTBTC            | [0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40](https://arbiscan.io/address/0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40) |
 | ArbitrumWormholeGateway | [0x1293a54e160D1cd7075487898d65266081A15458](https://arbiscan.io/address/0x1293a54e160D1cd7075487898d65266081A15458) |
 
+### Base (chain ID: 8453)
+
+| Contract            | Address                                                                                                               |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| BaseTBTC            | [0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b](https://basescan.org/token/0x236aa50979d5f3de3bd1eeb40e81137f22ab794b)   |
+| BaseWormholeGateway | [0x09959798B95d00a3183d20FaC298E4594E599eab](https://basescan.org/address/0x09959798b95d00a3183d20fac298e4594e599eab) |
+
 ### Optimism (chain ID: 10)
 
 | Contract                | Address                                                                                                                          |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | OptimismTBTC            | [0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40](https://optimistic.etherscan.io/address/0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40) |
 | OptimismWormholeGateway | [0x1293a54e160D1cd7075487898d65266081A15458](https://optimistic.etherscan.io/address/0x1293a54e160D1cd7075487898d65266081A15458) |
-|                         |                                                                                                                                  |
 
 ### Polygon PoS (chain ID: 137)
 
 <table><thead><tr><th width="373">Contract</th><th>Address</th></tr></thead><tbody><tr><td>PolygonTBTC</td><td><a href="https://polygonscan.com/address/0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b">0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b</a></td></tr><tr><td>PolygonWormholeGateway</td><td><a href="https://polygonscan.com/address/0x09959798B95d00a3183d20FaC298E4594E599eab">0x09959798B95d00a3183d20FaC298E4594E599eab</a></td></tr></tbody></table>
+
+### Solana
+
+<table><thead><tr><th width="373">Contract</th><th>Address</th></tr></thead><tbody><tr><td>SolanaTBTC (Token)</td><td><a href="https://solscan.io/token/6DNSN2BJsaPFdFFc1zP37kkeNe4Usc1Sqkzr9C9vPWcU">6DNSN2BJsaPFdFFc1zP37kkeNe4Usc1Sqkzr9C9vPWcU</a></td></tr><tr><td>SolanaTBTC (Program)</td><td><a href="https://solscan.io/account/Gj93RRt6QB7FjmyokAD5rcMAku7pq3Fk2Aa8y6nNbwsV">Gj93RRt6QB7FjmyokAD5rcMAku7pq3Fk2Aa8y6nNbwsV</a></td></tr><tr><td>SolanaWormholeGateway</td><td><a href="https://solscan.io/account/87MEvHZCXE3ML5rrmh5uX1FbShHmRXXS32xJDGbQ7h5t">87MEvHZCXE3ML5rrmh5uX1FbShHmRXXS32xJDGbQ7h5t</a></td></tr></tbody></table>
 
 ## PRE Application Contracts
 
