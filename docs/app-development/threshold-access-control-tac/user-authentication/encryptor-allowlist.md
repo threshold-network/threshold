@@ -1,0 +1,2 @@
+# Encryptor allowlist
+

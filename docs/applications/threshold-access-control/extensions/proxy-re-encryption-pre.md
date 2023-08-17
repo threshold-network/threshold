@@ -14,6 +14,6 @@ PRE is directly applicable to use cases that aim to maintain data ownership whil
 \
 Want to get started staking with Threshold and running a node for PRE? Follow this guide:
 
-{% content-ref url="../../staking-and-running-a-node/running-a-node/self-managed/pre-node-setup.md" %}
-[pre-node-setup.md](../../staking-and-running-a-node/running-a-node/self-managed/pre-node-setup.md)
+{% content-ref url="../../../staking-and-running-a-node/running-a-node/self-managed/pre-node-setup.md" %}
+[pre-node-setup.md](../../../staking-and-running-a-node/running-a-node/self-managed/pre-node-setup.md)
 {% endcontent-ref %}

@@ -1,10 +1,10 @@
-# Condition Hierarchies
+# Customize condition hierarchies
 
-[Conditions](../references/conditions.md) can be attached at several steps in the TAC lifecycle, and they have a fixed hierarchy at runtime. This means default Conditions can be specified and subsequently overwritten later on in the process.&#x20;
+[Conditions](../conditions/) can be attached at several steps in the TAC lifecycle, and they have a fixed hierarchy at runtime. This means default Conditions can be specified and subsequently overwritten later on in the process.&#x20;
 
 ## Strategy Conditions
 
-Conditions can be attached directly to a [Strategy](../references/strategy.md). They have the lowest precedence and are a great place for including defaults or 'fall back' conditions.
+Conditions can be attached directly to a [Strategy](../network-level-objects/strategy.md). They have the lowest precedence and are a great place for including defaults or 'fall back' conditions.
 
 ```javascript
 import { Cohort, Conditions, ConditionSet, Strategy } from '@nucypher/nucypher-ts';

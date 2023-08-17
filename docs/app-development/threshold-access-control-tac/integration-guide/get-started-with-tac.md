@@ -1,4 +1,4 @@
-# Get Started (CBD Proof-of-Concept)
+# Testnet
 
 {% hint style="warning" %}
 **Update (04.14.23)** \
@@ -7,9 +7,9 @@ The Proof-of-Concept version is compatible with condition evaluation on Mumbai (
 An additional node-facing testnet (_Oryx_) now points to **Polygon** **mainnet**. This means access conditions can be checked and verified by Threshold nodes if they pertain to state on either of the Polygon networks. Note that it is not possible to evaluate conditions on both Mumbai and Polygon mainnet in a single runtime, because pre-configuration requires choosing between _Tapir_ and _Oryx_.&#x20;
 {% endhint %}
 
-This tutorial is a quick way for developers to learn about the Threshold Access Control service by building with the **Proof-of-Concept** **(PoC)** version of [Conditions-Based Decryption](../../fundamentals/threshold-access-control/conditions-based-decryption-cbd.md).&#x20;
+This tutorial is a quick way for developers to learn about the Threshold Access Control service by building with the **Proof-of-Concept** **(PoC)** version of [Conditions-Based Decryption](../../../fundamentals/threshold-access-control/conditions-based-decryption-cbd.md).&#x20;
 
-Note that the underlying [trust assumptions](trust-assumptions/) vary between versions and technologies; these are explained in detail for the [CBD Proof-of-Concept](trust-assumptions/cbd-proof-of-concept-version.md), [CBD Mainnet](trust-assumptions/cbd-mainnet-version.md), and [PRE Mainnet](trust-assumptions/cbd-mainnet-version.md) versions.&#x20;
+Note that the underlying [trust assumptions](../trust-assumptions/) vary between versions and technologies; these are explained in detail for the [CBD Proof-of-Concept](../trust-assumptions/cbd-proof-of-concept-version.md), [CBD Mainnet](../trust-assumptions/cbd-mainnet-version.md), and [PRE Mainnet](../trust-assumptions/cbd-mainnet-version.md) versions.&#x20;
 
 ## 1. Install `nucypher-ts`
 
@@ -56,10 +56,10 @@ Notice that we provided a `porterUri` parameter. [Porter](https://docs.nucypher.
 
 _Conditions_ are the requirements for a data requester or recipient to access the plaintext data – i.e. what they will need to prove later to gain decryption rights.
 
-The `ERC721Ownership` condition checks the owner of a given token ID. It can be customized by using the `ownerOf` contract method and comparing it with the requestor's signature. For more information, see the [References](references/) section.
+The `ERC721Ownership` condition checks the owner of a given token ID. It can be customized by using the `ownerOf` contract method and comparing it with the requestor's signature. For more information, see the [References](../references.md) section.
 
 {% hint style="info" %}
-CBD allows developers to enforce conditional access at various runtime stages, depending on what makes the most sense for the use case. At this point, we will add the _default_ Conditions, which will only gate-keep access _if no other conditions are included later at encryption time_. This is explained further in [Condition Hierarchies](advanced-usage/condition-hierarchies.md).
+CBD allows developers to enforce conditional access at various runtime stages, depending on what makes the most sense for the use case. At this point, we will add the _default_ Conditions, which will only gate-keep access _if no other conditions are included later at encryption time_. This is explained further in [Condition Hierarchies](../advanced-usage/condition-hierarchies.md).
 {% endhint %}
 
 We will now specify the conditions that must be met to access the data. In this tutorial, we will require that the requester owns an ERC721 token with a token ID of 5954.
@@ -75,7 +75,7 @@ const NFTOwnership = new Conditions.ERC721Ownership({
 ```
 
 {% hint style="info" %}
-There are multiple [Condition types](references/conditions.md) and it is possible to combine multiple conditions into a [ConditionSet](references/condition-set.md).
+There are multiple [Condition types](../conditions/) and it is possible to combine multiple conditions into a [ConditionSet](../conditions-schema/condition-set.md).
 {% endhint %}
 
 ```javascript
@@ -89,7 +89,7 @@ const conditions = new ConditionSet([
 
 ## 4. Build a Strategy
 
-We will now combine the `Cohort`, `ConditionSet`, and any other necessary parameters into a [`Strategy`](references/strategy.md). Strategies are a convenient way to bundle together frequently used configurations, including specific combinations of network parameters and conditionality.
+We will now combine the `Cohort`, `ConditionSet`, and any other necessary parameters into a [`Strategy`](../network-level-objects/strategy.md). Strategies are a convenient way to bundle together frequently used configurations, including specific combinations of network parameters and conditionality.
 
 ```javascript
 import { Strategy } from '@nucypher/nucypher-ts';
@@ -114,7 +114,7 @@ const newDeployed = await newStrategy.deploy('test', web3Provider);
 Deploying a `Strategy` requires writing to the blockchain. This requires a wallet funded with testnet MATIC and connection to the blockchain via a `provider`(e.g. MetaMask).
 {% endhint %}
 
-For more information about customizing and reusing `Cohort`, `Condition`, and `Strategy` objects, see the [References](references/) page in the documentation.
+For more information about customizing and reusing `Cohort`, `Condition`, and `Strategy` objects, see the [References](../references.md) page in the documentation.
 
 ## 5. Encrypt the plaintext & update Conditions
 
