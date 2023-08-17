@@ -197,6 +197,7 @@
 * [Contract Addresses](resources/contract-addresses/README.md)
   * [Mainnet](resources/contract-addresses/mainnet.md)
   * [Görli Testnet](resources/contract-addresses/goerli-testnet.md)
+* [tBTC Pools](https://linktr.ee/earnyield)
 * [Brand Assets](https://thresholdnetwork.notion.site/06ca766fc2cd402ab99bfe952a41c5af?v=5d3a1877e34f43d99fb8490190543e0c)
 * [Glossary](resources/glossary.md)
 * [Links](resources/links.md)
