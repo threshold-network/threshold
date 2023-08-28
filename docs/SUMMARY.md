@@ -17,7 +17,7 @@
   * [Sweeping](applications/tbtc-v2/sweeping.md)
   * [Coverage Pool](applications/tbtc-v2/coverage-pool.md)
 * [TACo Access Control](applications/threshold-access-control/README.md)
-  * [Introduction](fundamentals/threshold-access-control/conditions-based-decryption-cbd.md)
+  * [Simple Overview](fundamentals/threshold-access-control/conditions-based-decryption-cbd.md)
   * [Value Propositions](applications/threshold-access-control/value-propositions.md)
   * [Key Concepts](applications/threshold-access-control/key-concepts.md)
   * [Transparent Decentralization](applications/threshold-access-control/transparent-decentralization.md)
