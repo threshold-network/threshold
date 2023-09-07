@@ -45,7 +45,7 @@
 * [Running a Node](staking-and-running-a-node/running-a-node/README.md)
   * [Self-Managed](staking-and-running-a-node/running-a-node/self-managed/README.md)
     * [TACo Node](staking-and-running-a-node/running-a-node/self-managed/pre-node-setup/README.md)
-      * [Machine Requirements](staking-and-running-a-node/running-a-node/self-managed/pre-node-setup/machine-requirements.md)
+      * [Minimum System Requirements](staking-and-running-a-node/running-a-node/self-managed/pre-node-setup/minimum-system-requirements.md)
       * [Duties & Compensation](staking-and-running-a-node/running-a-node/self-managed/pre-node-setup/duties-and-compensation.md)
       * [Installation](staking-and-running-a-node/running-a-node/self-managed/pre-node-setup/installation/README.md)
         * [Docker Setup](staking-and-running-a-node/running-a-node/self-managed/pre-node-setup/installation/docker-setup.md)

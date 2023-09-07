@@ -3,9 +3,7 @@
 This tutorial makes use of `nucypher-ops`_:_ an Ansible script that will setup and configure a TACo node for you. The following steps help you launch a node on a DigitalOcean droplet, but `nucypher-ops` supports both Digital Ocean and AWS.&#x20;
 
 {% hint style="warning" %}
-TACo service provision is an active responsibility. `nucypher-ops` automates the launch of a TACo node – **it does not setup security measures of any sort**.\
-\
-You alone are responsible for operational security, as well as backing up any relevant data. Carefully review your firewall rules and make the necessary adjustments.&#x20;
+This script automates certain steps to launch a TACo node, but **does not implement security measures of any sort**. You alone are responsible for operational security, as well as backing up relevant data. Carefully review your firewall rules and make the necessary adjustments.&#x20;
 {% endhint %}
 
 ## Local Machine Requirements
