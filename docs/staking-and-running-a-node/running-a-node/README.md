@@ -6,7 +6,7 @@ description: Get involved in staking the Threshold Network
 
 ### Have what it takes to run a node of your own?
 
-Click [here](self-managed/taco-node-setup/) for a guide on how to setup your own PRE node.
+Click [here](self-managed/pre-node-setup/) for a guide on how to setup your own PRE node.
 
 Click [here](self-managed/tbtc-v2-node-setup/) to learn how to setup a tBTC v2 node.
 
