@@ -207,13 +207,13 @@ Do not make changes without making a backup.&#x20;
 
 ## Updating TACo node
 
-If you need to update your node to a new version of TACo run the following command:&#x20;
+If you need to update your node to a new version of TACo, run the following command:&#x20;
 
 ```bash
 nucypher-ops ursula update
 ```
 
-To learn out about other `nucypher-ops` features:&#x20;
+To learn about other `nucypher-ops` features:&#x20;
 
 ```bash
 nucypher-ops --help
