@@ -1,4 +1,8 @@
-# Condition Set
+---
+description: 'TODO: These are "CompoundConditions" now - rewrite'
+---
+
+# Condition Sets
 
 Conditions can be combined into Condition Sets using `AND` and `OR` operators.
 

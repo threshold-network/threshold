@@ -75,9 +75,9 @@
 
 * [TACo Access Control](app-development/threshold-access-control-tac/README.md)
   * [Quickstart (Testnet)](app-development/threshold-access-control-tac/quickstart-testnet.md)
-  * [Integration Guide](app-development/threshold-access-control-tac/integration-guide/README.md)
-    * [Mainnet](app-development/threshold-access-control-tac/integration-guide/mainnet.md)
-    * [Testnet](app-development/threshold-access-control-tac/integration-guide/get-started-with-tac.md)
+  * [Full Integration Guides](app-development/threshold-access-control-tac/full-integration-guides/README.md)
+    * [Mainnet](app-development/threshold-access-control-tac/full-integration-guides/mainnet.md)
+    * [Testnet](app-development/threshold-access-control-tac/full-integration-guides/get-started-with-tac.md)
   * [Trust Assumptions](app-development/threshold-access-control-tac/trust-assumptions/README.md)
     * [Mainnet](app-development/threshold-access-control-tac/trust-assumptions/cbd-mainnet-version.md)
     * [Testnet](app-development/threshold-access-control-tac/trust-assumptions/cbd-proof-of-concept-version.md)
