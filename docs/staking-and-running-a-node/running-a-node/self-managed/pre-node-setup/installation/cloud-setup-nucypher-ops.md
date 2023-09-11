@@ -45,7 +45,7 @@ sudo apt-get install libffi-dev python3-dev python3-pip python3-virtualenv build
 {% endtab %}
 {% endtabs %}
 
-## 1. Connecting to DigitalOcean via an SSH Key
+## 1. Connect to DigitalOcean via an SSH Key
 
 Generate an SSH key pair (RSA) and output the **public key**:&#x20;
 
@@ -92,7 +92,7 @@ Copy the API Key into your text file or password manager:
 
 <figure><img src="../../../../../.gitbook/assets/api-generate-token-save-arrows.jpg" alt=""><figcaption><p>Generating an API Access Token</p></figcaption></figure>
 
-## 2. Setting up an Web3 Provider
+## 2. Set up an Web3 Provider
 
 The PRE application requires access to an **Ethereum** and **Polygon** endpoint.&#x20;
 
@@ -157,7 +157,7 @@ Input your SSH Fingerprint and press ENTER:
 
 <figure><img src="../../../../../.gitbook/assets/setting-up-node-2.jpg" alt=""><figcaption><p>VPS instance &#x26; PRE node created</p></figcaption></figure>
 
-## 5. Deploying the Node&#x20;
+## 5. Deploy the Node&#x20;
 
 Deploy the node (Ursula):&#x20;
 
@@ -178,8 +178,6 @@ You can now bond your stake to a TACo node. The items at the bottom are your nod
 {% hint style="info" %}
 Make sure you note down your operator address.&#x20;
 {% endhint %}
-
-##
 
 ## Nucypher-Ops Configuration
 
@@ -205,7 +203,7 @@ Do not make changes to these files unless you know and understand what you are d
 Do not make changes without making a backup.&#x20;
 {% endhint %}
 
-## Updating TACo node
+## Update TACo Node
 
 If you need to update your node to a new version of TACo, run the following command:&#x20;
 
@@ -218,4 +216,3 @@ To learn about other `nucypher-ops` features:&#x20;
 ```bash
 nucypher-ops --help
 ```
-

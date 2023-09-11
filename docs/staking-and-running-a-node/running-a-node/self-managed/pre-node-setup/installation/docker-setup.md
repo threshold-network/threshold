@@ -6,23 +6,25 @@ description: Instructions for setting up a TACo node on a server.
 
 ## 1. Install Docker
 
-Docker installation instructions can be found [here](https://docs.docker.com/get-docker/).
+Docker installation [instructions](https://docs.docker.com/get-docker/).
 
-## 2. Docker Best Practices (Optional)
+It is recommended to check out Docker [post-install configurations](https://docs.docker.com/engine/install/linux-postinstall/). For example, managing docker as non-root user.
 
-There are recommended (but optional) docker post-install configurations [here](https://docs.docker.com/engine/install/linux-postinstall/) e.g. managing docker as non-root user.
+## 2. Install Geth
 
-## 3. Install Geth
+Geth installation [instructions](https://geth.ethereum.org/docs/getting-started/installing-geth).
 
-Geth installation instructions can be found [here](https://geth.ethereum.org/docs/getting-started/installing-geth).
+## 3. Get Docker Image&#x20;
 
-## 4. Get the latest Docker Image
+Pull the latest Docker image from NuCypher's primary repo (NuCypher is a contributing team to the Threshold Network & the primary developers of TACo):&#x20;
 
 ```bash
 docker pull nucypher/nucypher:latest
 ```
 
-## 5. Export Node Environment Variables
+## 4. Export Node Environment Variables
+
+Run the following commands:&#x20;
 
 ```bash
 # Password used for creation/update of nucypher keystore
@@ -34,9 +36,9 @@ $ export NUCYPHER_KEYSTORE_PASSWORD=<YOUR NUCYPHER KEYSTORE PASSWORD>
 $ export NUCYPHER_OPERATOR_ETH_PASSWORD=<YOUR OPERATOR ETH ACCOUNT PASSWORD>
 ```
 
-## 6. Initialize Node Configuration
+## 5. Initialize Node Configuration
 
-Creates and stores the node configuration and only needs to be executed once.
+Create and store  the node configuration (this only needs to be executed once):&#x20;
 
 ```bash
 $ docker run -it --rm  \
@@ -57,16 +59,24 @@ nucypher ursula init                          \
 
 Replace the following values with your own:
 
-* `<ETH KEYSTORE URI>` - The local ethereum keystore URI, `keystore://<PATH TO KEYSTORE FILE>` (e.g. `keystore:///root/.ethereum/keystore` for `mainnet`)
-* `<L1 NETWORK NAME>` - The name of the TACo network e.g. `mainnet` (or `tapir`, `lynx` for testnets)
-* `<L1 PROVIDER URI>` - The URI of a local or hosted ethereum node (e.g. `https://infura.io/…`)
-* `<L2 NETWORK NAME>` - The name of a payment network e.g. `polygon` (or `mumbai` for testnet)
-* `<L2 PROVIDER URI>` - The URI of a local or hosted L2 node (e.g.. `https://infura.io/...`)
-* `<OPERATOR ADDRESS>` - The Ethereum wallet address to be used by the node
+* `<ETH KEYSTORE URI>` \
+  The local ethereum keystore URI, `keystore://<PATH TO KEYSTORE FILE>` (e.g. `keystore:///root/.ethereum/keystore` for `mainnet`)
+* `<L1 NETWORK NAME>` \
+  The name of the TACo network e.g. `mainnet` (or `tapir`, `lynx` for testnets)
+* `<L1 PROVIDER URI>` \
+  The URI of a local or hosted ethereum node (e.g. `https://infura.io/…`)
+* `<L2 NETWORK NAME>` \
+  The name of a payment network e.g. `polygon` (or `mumbai` for testnet)
+* `<L2 PROVIDER URI>` \
+  The URI of a local or hosted L2 node (e.g.. `https://infura.io/...`)
+* `<OPERATOR ADDRESS>` \
+  The Ethereum wallet address to be used by the TACo node (your staker address).&#x20;
 
 The configuration files will be stored in `~/.local/share/nucypher` on the host machine.
 
-## 7. Launch the Node
+## 6. Launch the TACo Node
+
+Run the following command to launch the node:&#x20;
 
 ```bash
 $ docker run -d --rm \
@@ -111,7 +121,7 @@ nucypher ursula run
 
 ### Update Node Configuration
 
-configuration settings will be stored in an Ursula configuration file, `ursula.json`, stored in `/home/<user>/.local/share/nucypher` by default.
+Configuration settings will be stored in an Ursula configuration file, `ursula.json`, stored in `/home/<user>/.local/share/nucypher` by default.
 
 All node configuration values can be modified using the `nucypher ursula config` command.
 
