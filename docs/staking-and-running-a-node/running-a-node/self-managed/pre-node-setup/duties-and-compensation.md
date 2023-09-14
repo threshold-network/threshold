@@ -4,12 +4,8 @@
 
 Running a TACo node is not a passive activity, but the on-going responsibilities for stakers are very manageable. To supply a high quality service and sustain the utility of the Threshold Network, TACo node operators must:&#x20;
 
-* Keep the server/machine running TACo online and accessible at all times; such that incoming decryption requests an be verified and answered immediately, and there is no delay in reaching a threshold and supplying decryption material to qualifying data recipients.&#x20;
-* Ensure their machine is running the latest version of TACo. New version releases will be shared on the Threshold Discord [#announcements](https://discord.com/channels/866378471868727316/870384195636199455) channel – make sure you have notifications enabled. Installing software upgrades is straightforward using the following `nucypher-ops` command:&#x20;
-
-```bash
-nucypher-ops ursula update
-```
+* Keep the server/machine running TACo online and accessible at all times; such that incoming decryption requests are verified and answered immediately, and there is no delay in reaching a threshold and supplying decryption material to qualifying data recipients.&#x20;
+* Ensure their machine is running the latest version of TACo. New version releases will be shared on the Threshold Discord [#announcements](https://discord.com/channels/866378471868727316/870384195636199455) channel – make sure you have notifications enabled. Installing software upgrades is straightforward using [nucypher-ops](installation/cloud-setup-nucypher-ops.md#update-taco-node).
 
 ### **Deauthorization Delay**&#x20;
 

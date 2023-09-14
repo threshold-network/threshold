@@ -1,3 +1,7 @@
+---
+description: Automatic set up of a TACo node on cloud
+---
+
 # Cloud Setup (nucypher-ops)
 
 This tutorial makes use of `nucypher-ops`_:_ an Ansible script that will setup and configure a TACo node for you. The following steps help you launch a node on a DigitalOcean droplet, but `nucypher-ops` supports both Digital Ocean and AWS.&#x20;
@@ -50,8 +54,8 @@ sudo apt-get install libffi-dev python3-dev python3-pip python3-virtualenv build
 Generate an SSH key pair (RSA) and output the **public key**:&#x20;
 
 ```
-ssh-keygen -t rsa
- cat .ssh/id_rsa.pub
+$ ssh-keygen -t rsa
+$ cat .ssh/id_rsa.pub
 ```
 
 <figure><img src="../../../../../.gitbook/assets/ssh-key-gen.jpg" alt=""><figcaption><p>Generating a new SSH Key</p></figcaption></figure>
@@ -124,7 +128,7 @@ Keep these items readily available for the next step.
 Install the deployment script:&#x20;
 
 ```bash
-pip install nucypher-ops
+$ pip install nucypher-ops
 ```
 
 This will download the utility and install required dependencies. The process takes a few minutes.
@@ -136,7 +140,7 @@ This will download the utility and install required dependencies. The process ta
 Create a node:&#x20;
 
 ```bash
-nucypher-ops nodes create
+$ nucypher-ops nodes create
 ```
 
 This command connects to your Digital Ocean account, spins up a VPS, configures and secures it, and installs all of the necessary software.&#x20;
@@ -162,7 +166,7 @@ Input your SSH Fingerprint and press ENTER:
 Deploy the node (Ursula):&#x20;
 
 ```bash
-nucypher-ops ursula deploy
+$ nucypher-ops ursula deploy
 ```
 
 Provide your ETH endpoint when requested and press ENTER.
@@ -208,11 +212,11 @@ Do not make changes without making a backup.&#x20;
 If you need to update your node to a new version of TACo, run the following command:&#x20;
 
 ```bash
-nucypher-ops ursula update
+$ nucypher-ops ursula update
 ```
 
 To learn about other `nucypher-ops` features:&#x20;
 
 ```bash
-nucypher-ops --help
+$ nucypher-ops --help
 ```

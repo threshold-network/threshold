@@ -6,7 +6,7 @@ description: Get involved in staking the Threshold Network
 
 ### Have what it takes to run a node of your own?
 
-Click [here](self-managed/pre-node-setup/) for a guide on how to setup your own PRE node.
+Click [here](self-managed/pre-node-setup/) for a guide on how to setup your own TACo node.
 
 Click [here](self-managed/tbtc-v2-node-setup/) to learn how to setup a tBTC v2 node.
 
@@ -18,6 +18,6 @@ Please be aware that running a node is not an easy task and requires technical s
 
 Click [here](staking-providers.md) to see a list of professional grade staking providers.
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 _**Staking Providers have not been vetted or endorsed by Threshold. Use your judgement when selecting a provider.**_
 {% endhint %}

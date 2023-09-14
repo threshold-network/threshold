@@ -4,6 +4,10 @@ description: Instructions for setting up a TACo node on a server.
 
 # Docker Setup
 
+{% hint style="info" %}
+[nucypher-ops](cloud-setup-nucypher-ops.md) is the recommended way to set up a TACo node in the cloud (Digital Ocean, AWS).
+{% endhint %}
+
 ## 1. Install Docker
 
 Docker installation [instructions](https://docs.docker.com/get-docker/).
@@ -40,22 +44,21 @@ $ export NUCYPHER_OPERATOR_ETH_PASSWORD=<YOUR OPERATOR ETH ACCOUNT PASSWORD>
 
 Create and store  the node configuration (this only needs to be executed once):&#x20;
 
-```bash
-$ docker run -it --rm  \
---name ursula        \
--v ~/.local/share/nucypher:/root/.local/share/nucypher \
--v ~/.ethereum/:/root/.ethereum               \
--p 9151:9151                                  \
--e NUCYPHER_KEYSTORE_PASSWORD                 \
-nucypher/nucypher:latest                      \
-nucypher ursula init                          \
---signer <ETH KEYSTORE URI>                   \
---network <L1 NETWORK NAME>                   \
---eth-provider <L1 PROVIDER URI>              \
---payment-network <L2 NETWORK NAME>           \
---payment-provider <L2 PROVIDER URI>          \
---operator-address <OPERATOR ADDRESS>         
-```
+<pre class="language-bash"><code class="lang-bash">$ docker run -it --rm                             \
+    --name ursula                                 \
+<strong>    -v ~/.local/share/nucypher:/root/.local/share/nucypher \
+</strong>    -v ~/.ethereum/:/root/.ethereum               \
+    -p 9151:9151                                  \
+    -e NUCYPHER_KEYSTORE_PASSWORD                 \
+    nucypher/nucypher:latest                      \
+<strong>    nucypher ursula init                          \
+</strong>    --signer &#x3C;ETH KEYSTORE URI>                   \
+    --network &#x3C;L1 NETWORK NAME>                   \
+<strong>    --eth-provider &#x3C;L1 PROVIDER URI>              \
+</strong>    --payment-network &#x3C;L2 NETWORK NAME>           \
+    --payment-provider &#x3C;L2 PROVIDER URI>          \
+    --operator-address &#x3C;OPERATOR ADDRESS>         
+</code></pre>
 
 Replace the following values with your own:
 
@@ -80,15 +83,15 @@ Run the following command to launch the node:&#x20;
 
 ```bash
 $ docker run -d --rm \
---name ursula      \
---restart unless-stopped          \
--v ~/.local/share/nucypher:/root/.local/share/nucypher \
--v ~/.ethereum/:/root/.ethereum   \
--p 9151:9151                      \
--e NUCYPHER_KEYSTORE_PASSWORD     \
--e NUCYPHER_OPERATOR_ETH_PASSWORD \
-nucypher/nucypher:latest          \
-nucypher ursula run
+    --name ursula                     \
+    --restart unless-stopped          \
+    -v ~/.local/share/nucypher:/root/.local/share/nucypher \
+    -v ~/.ethereum/:/root/.ethereum   \
+    -p 9151:9151                      \
+    -e NUCYPHER_KEYSTORE_PASSWORD     \
+    -e NUCYPHER_OPERATOR_ETH_PASSWORD \
+    nucypher/nucypher:latest          \
+    nucypher ursula run
 ```
 
 The docker command above is for illustrative purposes and can be modified as necessary.&#x20;
@@ -116,7 +119,8 @@ $ docker pull nucypher/nucypher:latest
 
 # Start node (same aforementioned run command)
 $ docker run -d ... \
-nucypher ursula run
+    [...]
+    nucypher ursula run
 ```
 
 ### Update Node Configuration
@@ -128,33 +132,33 @@ All node configuration values can be modified using the `nucypher ursula config`
 ```bash
 # General format
 $ docker run \
--v ~/.local/share/nucypher:/root/.local/share/nucypher \
-nucypher/nucypher:latest          \
-nucypher ursula config --<OPTION> <NEW VALUE> --<OPTION_2> <OPTION_2 NEW VALUE>
+    -v ~/.local/share/nucypher:/root/.local/share/nucypher \
+    nucypher/nucypher:latest \
+    nucypher ursula config --<OPTION> <NEW VALUE> --<OPTION_2> <OPTION_2 NEW VALUE>
 
 # Usage
 $ docker run \
--v ~/.local/share/nucypher:/root/.local/share/nucypher \
-nucypher/nucypher:latest          \
-nucypher ursula config --help
+    -v ~/.local/share/nucypher:/root/.local/share/nucypher \
+    nucypher/nucypher:latest \
+    nucypher ursula config --help
 
 # View the current configuration
 $ docker run \
--v ~/.local/share/nucypher:/root/.local/share/nucypher \
-nucypher/nucypher:latest          \
-nucypher ursula config
+    -v ~/.local/share/nucypher:/root/.local/share/nucypher \
+    nucypher/nucypher:latest \
+    nucypher ursula config
 
 # Change the Ethereum provider to use
 $ docker run \
--v ~/.local/share/nucypher:/root/.local/share/nucypher \
-nucypher/nucypher:latest          \
-nucypher ursula config --eth-provider <ETH PROVIDER URI>
+    -v ~/.local/share/nucypher:/root/.local/share/nucypher \
+    nucypher/nucypher:latest \
+    nucypher ursula config --eth-provider <ETH PROVIDER URI>
 
 # View the current configuration of a non-default configuration file path
 $ docker run \
--v ~/.local/share/nucypher:/root/.local/share/nucypher \
-nucypher/nucypher:latest          \
-nucypher ursula config --config-file <CONFIG PATH>
+    -v ~/.local/share/nucypher:/root/.local/share/nucypher \
+    nucypher/nucypher:latest \
+    nucypher ursula config --config-file <CONFIG PATH>
 ```
 
 {% hint style="info" %}
