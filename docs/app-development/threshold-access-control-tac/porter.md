@@ -6,7 +6,7 @@ Porter can be described as the _“Infura for TACo”_. Porter is a web-based se
 
 Its goal is to simplify and abstract the complexities surrounding the TACo protocol to negate the need for applications to interact with it via a Python client. Porter introduces the TACo protocol to cross-platform functionality, including web and mobile applications.
 
-<figure><img src="../../.gitbook/assets/porter_diagram (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/porter_diagram.png" alt=""><figcaption></figcaption></figure>
 
 Any publicly available Porter can be used to interface with the Threshold Network, or some application developers opt to [run their own](porter.md#running-a-porter-instance).
 
