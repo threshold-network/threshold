@@ -1,20 +1,4 @@
-# Mainnet
-
-## Threshold Contracts (Ethereum L1)
-
-Delivered in `@threshold-network/solidity-contracts@1.2.1` package.
-
-<table><thead><tr><th width="186.54782383508018">Contract</th><th>Address</th></tr></thead><tbody><tr><td>T Token</td><td><a href="https://etherscan.io/address/0xCdF7028ceAB81fA0C6971208e83fa7872994beE5">0xCdF7028ceAB81fA0C6971208e83fa7872994beE5</a></td></tr><tr><td>TokenStaking</td><td><a href="https://etherscan.io/address/0x01b67b1194c75264d06f808a921228a95c765dd7">0x01b67b1194c75264d06f808a921228a95c765dd7</a></td></tr><tr><td>KeepStake</td><td><a href="https://etherscan.io/address/0x10DE37cF84202A20cae61069C617B3Aa874aF8b4">0x10DE37cF84202A20cae61069C617B3Aa874aF8b4</a></td></tr><tr><td>NU&#x3C;>T Vending Machine</td><td><a href="https://etherscan.io/address/0x1CCA7E410eE41739792eA0A24e00349Dd247680e">0x1CCA7E410eE41739792eA0A24e00349Dd247680e</a></td></tr><tr><td>KEEP&#x3C;>T Vending Machine</td><td><a href="https://etherscan.io/address/0xE47c80e8c23f6B4A1aE41c34837a0599D5D16bb0">0xE47c80e8c23f6B4A1aE41c34837a0599D5D16bb0</a></td></tr></tbody></table>
-
-## Threshold DAO Contracts (Ethereum L1)
-
-| Contract                         | Address                                                                                                               |
-| -------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| GovernorBravo TimelockController | [0x87F005317692D05BAA4193AB0c961c69e175f45f](https://etherscan.io/address/0x87F005317692D05BAA4193AB0c961c69e175f45f) |
-| Council Multisig                 | [0x9F6e831c8F8939DC0C830C6e492e7cEf4f9C2F5f](https://etherscan.io/address/0x9F6e831c8F8939DC0C830C6e492e7cEf4f9C2F5f) |
-| Treasury Guild Multisig          | [0x71E47a4429d35827e0312AA13162197C23287546](https://etherscan.io/address/0x71E47a4429d35827e0312AA13162197C23287546) |
-| Integrations Guild Multisig      | [0x2ff7aB212cD6FEaE21bAc5300465E149FB6b85a9](https://etherscan.io/address/0x2ff7aB212cD6FEaE21bAc5300465E149FB6b85a9) |
-| Marketing Guild Multisig         | [0xd55c4261145EA1752662faA0485AfBC8C431b0CA](https://etherscan.io/address/0xd55c4261145EA1752662faA0485AfBC8C431b0CA) |
+# tBTC
 
 ## tBTC Application Contracts (Ethereum L1)
 
@@ -61,27 +45,3 @@ Delivered in `@keep-network/random-beacon@2.0.0`, `@keep-network/ecdsa@2.0.0` an
 ### Solana
 
 <table><thead><tr><th width="373">Contract</th><th>Address</th></tr></thead><tbody><tr><td>SolanaTBTC (Token)</td><td><a href="https://solscan.io/token/6DNSN2BJsaPFdFFc1zP37kkeNe4Usc1Sqkzr9C9vPWcU">6DNSN2BJsaPFdFFc1zP37kkeNe4Usc1Sqkzr9C9vPWcU</a></td></tr><tr><td>SolanaTBTC (Program)</td><td><a href="https://solscan.io/account/Gj93RRt6QB7FjmyokAD5rcMAku7pq3Fk2Aa8y6nNbwsV">Gj93RRt6QB7FjmyokAD5rcMAku7pq3Fk2Aa8y6nNbwsV</a></td></tr><tr><td>SolanaWormholeGateway</td><td><a href="https://solscan.io/account/87MEvHZCXE3ML5rrmh5uX1FbShHmRXXS32xJDGbQ7h5t">87MEvHZCXE3ML5rrmh5uX1FbShHmRXXS32xJDGbQ7h5t</a></td></tr></tbody></table>
-
-## PRE Application Contracts
-
-| Contract                              | Address                                                                                                               |
-| ------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| PRE Application                       | [0x7E01c9c03FD3737294dbD7630a34845B0F70E5Dd](https://etherscan.io/address/0x7E01c9c03FD3737294dbD7630a34845B0F70E5Dd) |
-| SubscriptionManager (Polygon-mainnet) | [0xB0194073421192F6Cf38d72c791Be8729721A0b3](https://etherscan.io/address/0xB0194073421192F6Cf38d72c791Be8729721A0b3) |
-
-## Legacy NU Contracts
-
-| Contract      | Address                                                                                                                    |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| NU Token      | [0x4fE83213D56308330EC302a8BD641f1d0113A4Cc](https://etherscan.io/address/0x4fE83213D56308330EC302a8BD641f1d0113A4Cc)      |
-| StakingEscrow | [0xbbD3C0C794F40c4f993B03F65343aCC6fcfCb2e2](https://etherscan.io/address/0xbbD3C0C794F40c4f993B03F65343aCC6fcfCb2e2#code) |
-| WorkLock      | [0xe9778e69a961e64d3cdbb34cf6778281d34667c2](https://etherscan.io/address/0xe9778e69a961e64d3cdbb34cf6778281d34667c2)      |
-
-## Legacy Keep Contracts
-
-Delivered in `@keep-network/keep-core@1.8.0` package.
-
-| Contract     | Address                                                                                                               |
-| ------------ | --------------------------------------------------------------------------------------------------------------------- |
-| KEEP Token   | [0x85Eee30c52B0b379b046Fb0F85F4f3Dc3009aFEC](https://etherscan.io/address/0x85Eee30c52B0b379b046Fb0F85F4f3Dc3009aFEC) |
-| TokenStaking | [0x1293a54e160D1cd7075487898d65266081A15458](https://etherscan.io/address/0x1293a54e160D1cd7075487898d65266081A15458) |
