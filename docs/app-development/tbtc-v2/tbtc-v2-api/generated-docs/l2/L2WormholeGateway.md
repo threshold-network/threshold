@@ -237,39 +237,20 @@ contract.
 - The receiver of the canonical tBTC should be abi-encoded in the
 payload.
 - The receiver of the canonical tBTC must not be the zero address.
+
 The Wormhole Token Bridge contract has protection against redeeming
 the same VAA again. When a Token Bridge VAA is redeemed, its
 message body hash is stored in a map. This map is used to check
 whether the hash has already been set in this map. For this reason,
-this function does not have to be nonReentrant.
+this function does not have to be nonReentrant in theory. However,
+to make this function non-dependent on Wormhole Bridge implementation,
+we are making it nonReentrant anyway.
 
 #### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | encodedVm | bytes | A byte array containing a Wormhole VAA signed by the guardians. |
-
-### depositWormholeTbtc
-
-```solidity
-function depositWormholeTbtc(uint256 amount) external
-```
-
-Allows to deposit Wormhole tBTC token in exchange for canonical
-tBTC. Useful in a situation when user received wormhole tBTC
-instead of canonical tBTC. One example of such situation is
-when the minting limit was exceeded but the user minted anyway.
-
-Requirements:
-- The sender must have at least `amount` of the Wormhole tBTC and
-it has to be approved for L2WormholeGateway.
-- The minting limit must allow for minting the given amount.
-
-#### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| amount | uint256 | The amount of Wormhole tBTC to deposit. |
 
 ### updateGatewayAddress
 
