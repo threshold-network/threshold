@@ -9,7 +9,7 @@ An additional node-facing testnet (_Oryx_) now points to **Polygon** **mainnet**
 
 This tutorial is a quick way for developers to learn about the Threshold Access Control service by building with the **Proof-of-Concept** **(PoC)** version of [Conditions-Based Decryption](../../../fundamentals/threshold-access-control/conditions-based-decryption-cbd.md).&#x20;
 
-Note that the underlying [trust assumptions](../trust-assumptions/) vary between versions and technologies; these are explained in detail for the [CBD Proof-of-Concept](../trust-assumptions/cbd-proof-of-concept-version.md), [CBD Mainnet](../trust-assumptions/cbd-mainnet-version.md), and [PRE Mainnet](../trust-assumptions/cbd-mainnet-version.md) versions.&#x20;
+Note that the underlying [trust assumptions](../trust-assumptions/) vary between versions and technologies; these are explained in detail for the [CBD Proof-of-Concept](../trust-assumptions/cbd-proof-of-concept-version/), [CBD Mainnet](../trust-assumptions/cbd-mainnet-version.md), and [PRE Mainnet](../trust-assumptions/cbd-mainnet-version.md) versions.&#x20;
 
 ## 1. Install `nucypher-ts`
 

@@ -1,14 +1,8 @@
-# CBD Mainnet Version
+# Mainnet Trust Model
 
 {% hint style="warning" %}
- Note that the CBD Mainnet version remains under development and is planned for release in Q2 2023. However, for developers considering integrating Conditions-Based Decryption into their application, it is worthwhile familiarizing oneself with the underlying trust model.
+This page is under construction.
 {% endhint %}
-
-### Trust Packages
-
-CBD allows adopting developers to pull a range of 'trust levers' in order to satisfy and assuage the trust, risk, cost, redundancy and latency preferences of their end-users. However, correctly selecting individual parameters across each and every trust/risk dimension requires a deep understanding of the underlying mechanisms and cryptology. Moreover, these parameters must be combined into a coherent bundle that, as a whole, aligns with the risk aversion and trust-minimization desiderata of end-users. Hence, to avoid burdening developers with onerous analysis, the Threshold team has constructed a set of pre-configured 'trust packages'. They are introduced and detailed [here](cbd-mainnet-version.md#trust-packages).&#x20;
-
-The context for configuring the trust packages follows below.&#x20;
 
 ### Cohort-based trust assumptions&#x20;
 
@@ -25,7 +19,7 @@ The second is the _honest threshold_ assumption, the protocol's most fundamental
 
 Note that the _orderly threshold_ and _honest threshold_ assumptions are conceptually similar to the more common _honest majority_ assumption. However, they are more flexible than simply requiring those who control 50% of the staked tokens to be honest. Unlike most BFT or pBFT-based protocols, the _honest threshold_ can be partially decoupled from the operators’ stake weights, depending on the cohort sampling parameters specified by the developer or end-user.&#x20;
 
-Some example cohort size and threshold configurations can be seen in [Create Security Optionality With Reusable Cohorts](../advanced-usage/create-security-optionality-with-reusable-cohorts.md)
+Some example cohort size and threshold configurations can be seen in [Create Security Optionality With Reusable Cohorts](../advanced-usage/create-security-optionality-with-reusable-cohorts.md).
 
 ### Sampling-based trust assumptions&#x20;
 
@@ -59,17 +53,6 @@ Developers may also toggle certain Cohort characteristics via the sampling mecha
 
 ### Population-based trust assumptions&#x20;
 
-{% hint style="warning" %}
-This section is under construction.
-{% endhint %}
-
-The protocol is also permissionless and psuedonymous (Ethereum addresses), which means the total _population_ of node operators will expand, contract and change its composition over time, and that change will not be perfectly discernible.&#x20;
+The protocol is also permissionless and pseudonymous (Ethereum addresses), which means the total _population_ of node operators will expand, contract and change its composition over time, and that change will not be perfectly discernible.&#x20;
 
 The node population is also non-uniform; rather, it is comprised of a heterogeneous set of operators, ranging from the hobbyist to institutional stakers. Although there is a degree of standardization with respect to requisite machine memory, CPU power, latency and availability, the actual underlying servers are only observable anecdotally – i.e. this cannot yet be verified on-chain. However, this anecdotal, informal insight into the node population can be supplemented and corroborated with conclusions drawn from on-chain activity, such as slashing or unbonding events.
-
-### Infrastructure-based trust assumptions&#x20;
-
-{% hint style="warning" %}
-This section is under construction.
-{% endhint %}
-

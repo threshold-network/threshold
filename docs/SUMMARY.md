@@ -79,9 +79,10 @@
     * [Mainnet](app-development/threshold-access-control-tac/integration-guide/mainnet.md)
     * [Testnet](app-development/threshold-access-control-tac/integration-guide/get-started-with-tac.md)
   * [Trust Assumptions](app-development/threshold-access-control-tac/trust-assumptions/README.md)
-    * [Mainnet](app-development/threshold-access-control-tac/trust-assumptions/cbd-mainnet-version.md)
-    * [Testnet](app-development/threshold-access-control-tac/trust-assumptions/cbd-proof-of-concept-version.md)
-    * [Network Parameters](app-development/threshold-access-control-tac/trust-assumptions/trust-packages.md)
+    * [Provider Answers/Disclosure](app-development/threshold-access-control-tac/trust-assumptions/provider-answers-disclosure.md)
+    * [Mainnet Trust Model](app-development/threshold-access-control-tac/trust-assumptions/cbd-mainnet-version.md)
+    * [Testnet Trust Model](app-development/threshold-access-control-tac/trust-assumptions/cbd-proof-of-concept-version/README.md)
+      * [Godmode Alice Trust Model](app-development/threshold-access-control-tac/trust-assumptions/cbd-proof-of-concept-version/godmode-alice-trust-model.md)
   * [Condition Examples](app-development/threshold-access-control-tac/conditions/README.md)
     * [Gatekeeping access with an NFT](app-development/threshold-access-control-tac/conditions/gatekeeping-access-with-an-nft.md)
     * [Gatekeeping access with an RPC condition](app-development/threshold-access-control-tac/conditions/gatekeeping-access-with-an-rpc-condition.md)
@@ -97,6 +98,7 @@
     * [Implement revocation via smart contract](app-development/threshold-access-control-tac/advanced-usage/implementing-revocation-via-smart-contract.md)
     * [Customize condition hierarchies](app-development/threshold-access-control-tac/advanced-usage/condition-hierarchies.md)
     * [Build side-channels for key material](app-development/threshold-access-control-tac/advanced-usage/build-side-channels-for-key-material.md)
+    * [Running your own Porter instance](app-development/threshold-access-control-tac/advanced-usage/running-your-own-porter-instance.md)
     * [Implement highly secure data sharing with Proxy Re-Encryption](app-development/threshold-access-control-tac/advanced-usage/proxy-re-encryption.md)
   * [Conditions Schema](app-development/threshold-access-control-tac/conditions-schema/README.md)
     * [Contract conditions](app-development/threshold-access-control-tac/conditions-schema/contract-conditions.md)
@@ -196,6 +198,7 @@
     * [VendingMachineV3](app-development/tbtc-v2/tbtc-v2-api/vendingmachinev3.md)
     * [WalletCoordinator](app-development/tbtc-v2/tbtc-v2-api/walletcoordinator.md)
     * [Wallets](app-development/tbtc-v2/tbtc-v2-api/wallets.md)
+* [Ask Your Provider](app-development/ask-your-provider.md)
 
 ## Resources
 
