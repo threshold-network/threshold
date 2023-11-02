@@ -1,4 +1,4 @@
-# tBTC contracts API
+# tBTC Contracts API
 
 To get familiarized with ECDSA contracts API, see [ecdsa-api](ecdsa-api/ "mention")
 
