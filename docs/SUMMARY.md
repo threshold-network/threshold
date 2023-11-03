@@ -160,7 +160,7 @@
     * [Quickstart](app-development/tbtc-v2/tbtc-sdk/quickstart.md)
     * [Architecture](app-development/tbtc-v2/tbtc-sdk/architecture.md)
     * [Guides](app-development/tbtc-v2/tbtc-sdk/guides.md)
-    * [API Reference](app-development/tbtc-v2/tbtc-sdk/api-reference.md)
+    * [API Reference](https://github.com/keep-network/tbtc-v2/tree/main/typescript/api-reference)
   * [tBTC Contracts API](app-development/tbtc-v2/tbtc-contracts-api/README.md)
     * [Bridge API](app-development/tbtc-v2/tbtc-contracts-api/tbtc-v2-api/README.md)
       * [Bank](app-development/tbtc-v2/tbtc-contracts-api/tbtc-v2-api/bank.md)

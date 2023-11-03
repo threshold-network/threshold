@@ -9,6 +9,6 @@ The SDK documentation consists of the following parts:
 * [quickstart.md](quickstart.md "mention")&#x20;
 * [architecture.md](architecture.md "mention")
 * [guides.md](guides.md "mention")
-* [api-reference.md](api-reference.md "mention")
+* [API Reference](https://github.com/keep-network/tbtc-v2/tree/main/typescript/api-reference)
 
 For a high-level overview of the tBTC protocol, please see the [tbtc-v2](../../../applications/tbtc-v2/ "mention") section.
