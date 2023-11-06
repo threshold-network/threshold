@@ -1,4 +1,4 @@
-# Implementing Revocation via Smart Contract
+# Implement access revocation via smart contract
 
 It is possible to implement _Revocation_ using Conditions that rely on a function call to a Custom Smart Contract. This allows the handling of revocation to be decentralized and transparent. Here is an example of a smart contract (not suitable for production):
 
@@ -23,7 +23,7 @@ And the associated Condition:
 
 ```javascript
 const revocationCondition = {
-  contractAddress: 'DEPLOYED_CONTRACT_ADDRESS',
+  contractAddress: '<DEPLOYED_CONTRACT_ADDRESS>',
   method: 'isRevoked',
   parameters: [':userAddress'],
   functionAbi: {
@@ -45,7 +45,7 @@ const revocationCondition = {
     stateMutability: 'view',
     type: 'function',
   },
-  chain: 'ethereum',
+  chain: 1,
   returnValueTest: {
     comparator: '==',
     value: false,

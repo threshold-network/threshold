@@ -1,2 +1,0 @@
-# Blocktime Conditions
-

@@ -14,21 +14,24 @@ In just a few minutes you will able to:
 
 Install `taco` and `ethers` with your favorite package manager:
 
-<pre class="language-bash"><code class="lang-bash"><strong>$ npm install @threshold-network/taco ethers@5.7.2
+<pre class="language-bash"><code class="lang-bash"><strong>$ npm install @nucypher/taco ethers@5.7.2
 </strong></code></pre>
 
 ## Configuration
 
-In order to run the code examples below, you will need the `ritualId` encryption parameter. Please reach out to us [here](https://discord.com/channels/866378471868727316/870383642751430666) if you don't already have it.
+In order to run the code examples below, you will need the `ritualId` encryption parameter. Your wallet address (encryptor) will also have to be allow-listed for this specific ritual. Please reach out to us [here](https://discord.com/channels/866378471868727316/870383642751430666) in order to receive  `ritualId` and allow-list access, or use the [publicly available testnet rituals](integration-guide/get-started-with-tac.md#testnet-configuration).
 
 ## Encrypt your data
 
 With `ritualId` and [a web3 provider from `ethers`](https://docs.ethers.org/v5/api/providers/#providers-getDefaultProvider), we can `taco.encrypt` our data:
 
-<pre class="language-typescript"><code class="lang-typescript">import taco, { conditions } from '@threshold-network/taco'
+<pre class="language-typescript"><code class="lang-typescript">import { initialize, encrypt, conditions, domains } from '@nucypher/taco';
 import { ethers } from "ethers";
 
-const web3Provider = ethers.getDefaultProvider();
+// We have to initialize the TACo library first
+await initialize();
+
+const web3Provider = new ethers.providers.Web3Provider(window.ethereum);
 
 const ownsNFT = new conditions.predefined.ERC721Ownership({
   contractAddress: '0x1e988ba4692e52Bc50b375bcC8585b95c48AaD77',
@@ -36,41 +39,51 @@ const ownsNFT = new conditions.predefined.ERC721Ownership({
   chain: 5,
 });
 
-const messageKit = await taco.encrypt(
+const message = "my secret message";
+
+const messageKit = await encrypt(
 <strong>  web3Provider,
+</strong><strong>  domains.TESTNET,
 </strong>  message,
   ownsNFT,
-  ritualId 
+  ritualId,
+  web3Provider.getSigner() 
 );
-
 </code></pre>
 
 ## Decrypt your data
 
 Now we just have to pass the  `messageKit` to the intended recipient:
 
-```typescript
-import taco from '@threshold-network/taco'
-import { ethers } from "ethers";
+<pre class="language-typescript"><code class="lang-typescript"><strong>import { initialize, decrypt, domains, getPorterUri } from '@nucypher/taco';
+</strong>import { ethers } from "ethers";
 
-const web3Provider = ethers.getDefaultProvider(); 
+// We have to initialize the TACo library first
+await initialize();
 
-const decryptedMessage = await taco.decrypt(
+const web3Provider = new ethers.providers.Web3Provider(window.ethereum); 
+
+const decryptedMessage = await decrypt(
   web3Provider,
+  domains.TESTNET,
   messageKit,
+  getPorterUri(domains.TESTNET),
   web3Provider.getSigner()
 );
+</code></pre>
 
-```
-
-Since `ownsNFT` condition refers to an NFT owned by the recipient, `taco.decrypt` call will prompt the recipient to sign a message and prove the ownership of the caller's wallet.
+Since `ownsNFT` condition refers to an NFT owned by the recipient, `decrypt` call will prompt the recipient to sign a message and prove the ownership of the caller's wallet.
 
 ## Next steps
 
-TODO: Link to TACo explainer? High-level overview + trust assumptions
+Learn more about using TACo on the testnet - [get-started-with-tac.md](integration-guide/get-started-with-tac.md "mention").&#x20;
 
-TODO: A list of the most popular/interesting/handy "recipes" for using/integrating TACo into your app.&#x20;
+Learn more about testnet trust assumptions and limitations - [cbd-proof-of-concept-version.md](trust-assumptions/cbd-proof-of-concept-version.md "mention")
 
-* Learn more about conditions here
-* ... about composing conditions here
-* ...
+### Example applications
+
+The following samples showcase integrations with React-based web apps, and serve as an 'end-to-end' reference for creating conditions-based encryption & decryption:
+
+* [`nucypher-ts/demos`](https://github.com/nucypher/nucypher-ts/tree/main/demos)
+* [`nucypher-ts/examples/taco`](https://github.com/nucypher/nucypher-ts/tree/main/examples/taco)
+* [`nucypher/alpha-leaks-demo`](https://github.com/nucypher/alpha-leaks-demo)

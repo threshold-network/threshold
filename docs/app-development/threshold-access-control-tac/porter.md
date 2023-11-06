@@ -10,13 +10,26 @@ Its goal is to simplify and abstract the complexities surrounding the TACo proto
 
 Any publicly available Porter can be used to interface with the Threshold Network, or some application developers opt to [run their own](porter.md#running-a-porter-instance).
 
+## Using public Porter instances
+
+Public Porter instances are operated by centralized entities and have different security properties than user-operated instances. If you're interested in running your own Porter, see this paragraph - [#running-a-porter-instance](porter.md#running-a-porter-instance "mention")
+
+To use the public Porter instances in `taco`, run:
+
+```typescript
+import { domains, getPorterUri } from '@nucypher/taco';
+
+const devPorter = getPorterUri(domains.DEV);
+const testnetPorter = getPorterUri(domains.TESTNET);
+```
+
 ## Running a Porter Instance
 
 ### Security Considerations
 
 * **HTTPS:** To run the Porter service over HTTPS, it will require a TLS key and a TLS certificate.
 * **CORS:** Allowed origins for [Cross-Origin Resource Sharing (CORS)](https://en.wikipedia.org/wiki/Cross-origin\_resource\_sharing)
-* **Authentication:** Usage restriction via authentication protocols, e.g. basic authentication etc.
+* **Authentication:** Usage restriction via authentication protocols, e.g. basic authentication, etc.
 
 {% hint style="info" %}
 Ideally, you would run Porter behind a reverse proxy (e.g. [nginx](https://www.nginx.com/)) for additional functionality such as HTTPS, CORS, authentication etc.

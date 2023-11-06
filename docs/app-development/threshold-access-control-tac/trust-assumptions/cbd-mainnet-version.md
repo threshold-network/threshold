@@ -1,4 +1,10 @@
-# Mainnet Trust Model
+# Mainnet Trust Assumptions
+
+{% hint style="warning" %}
+ Note that the TACo Mainnet version remains under development and is planned for release in Q2 2023. However, for developers considering integrating Conditions-Based Decryption into their application, it is worthwhile familiarizing oneself with the underlying trust model.
+{% endhint %}
+
+TACo allows adopting developers to pull a range of 'trust levers' in order to satisfy and assuage the trust, risk, cost, redundancy, and latency preferences of their end-users. However, correctly selecting individual parameters across each and every trust/risk dimension requires a deep understanding of the underlying mechanisms and cryptology. Moreover, these parameters must be combined into a coherent bundle that, as a whole, aligns with the risk aversion and trust-minimization desiderata of end-users. Hence, to avoid burdening developers with onerous analysis, the Threshold team has constructed a set of pre-configured 'trust packages'. They are introduced and detailed [here](cbd-mainnet-version.md#trust-packages).&#x20;
 
 {% hint style="warning" %}
 This page is under construction.
@@ -13,19 +19,19 @@ The foundation of the Threshold Access Control trust model (and indeed, threshol
 
 All Cohorts are parametrized on formation, including the Cohort _size_ (`n`) and Cohort _threshold_ (`m`). These parameters are the inputs for the following core trust assumptions: \
 \
-The first is the _orderly threshold_ assumption, wherein the protocol relies on a minimum number – the threshold – of node operators within each Cohort to follow the protocol correctly. For example, a 16-of-32 cohort would require at least **16** nodes to be online, responsive and (ideally) run an up-to-date version of CBD software. If any fewer than 16 are online, data requesters will be unable to retrieve decryption fragments. \
+The first is the _orderly threshold_ assumption, wherein the protocol relies on a minimum number – the threshold – of node operators within each Cohort to follow the protocol correctly. For example, a 16-of-32 cohort would require at least **16** nodes to be online, responsive, and (ideally) run an up-to-date version of TACo software. If any fewer than 16 are online, data requesters will be unable to retrieve decryption fragments. \
 \
-The second is the _honest threshold_ assumption, the protocol's most fundamental form of collusion-resistance – that is, protection against deliberate, unlawful attempts to access private data. In this case, the protocol relies on a minimum number of operators to be ‘honest’ – i.e. not susceptible to bribery, coercion or other attempts to maliciously collude. This minimum is calculated as the threshold node count (`m`) subtracted from the total cohort size, plus one (`n - m + 1`). Using the same example as before, a 16-of-32 Cohort would require a minimum of 32 - 16 + 1 = **17** honest operators. In other words, if at least 17 individual operators refuse to collude, there is nothing the remaining 15 operators can do, regardless of their war chest or aggregate stake power.&#x20;
+The second is the _honest threshold_ assumption, the protocol's most fundamental form of collusion-resistance – that is, protection against deliberate, unlawful attempts to access private data. In this case, the protocol relies on a minimum number of operators to be ‘honest’ – i.e. not susceptible to bribery, coercion,, or other attempts to maliciously collude. This minimum is calculated as the threshold node count (`m`) subtracted from the total cohort size, plus one (`n - m + 1`). Using the same example as before, a 16-of-32 Cohort would require a minimum of 32 - 16 + 1 = **17** honest operators. In other words, if at least 17 individual operators refuse to collude, there is nothing the remaining 15 operators can do, regardless of their war chest or aggregate stake power.&#x20;
 
 Note that the _orderly threshold_ and _honest threshold_ assumptions are conceptually similar to the more common _honest majority_ assumption. However, they are more flexible than simply requiring those who control 50% of the staked tokens to be honest. Unlike most BFT or pBFT-based protocols, the _honest threshold_ can be partially decoupled from the operators’ stake weights, depending on the cohort sampling parameters specified by the developer or end-user.&#x20;
 
-Some example cohort size and threshold configurations can be seen in [Create Security Optionality With Reusable Cohorts](../advanced-usage/create-security-optionality-with-reusable-cohorts.md).
+Some example cohort size and threshold configurations can be seen in [Create Security Optionality With Reusable Cohorts](broken-reference).
 
 ### Sampling-based trust assumptions&#x20;
 
-The _orderly threshold_ and _honest threshold_ trust assumptions above treat each Cohort as an isolated group, where the chosen parameters (`m-of-n`) determine the group’s redundancy, latency and collusion resistance. However, the reality is that each Cohort is selected from a larger sample of Threshold nodes, which is far larger than the typical/optimal size of each cohort – there is not necessarily much overlap between Cohorts.\
+The _orderly threshold_ and _honest threshold_ trust assumptions above treat each Cohort as an isolated group, where the chosen parameters (`m-of-n`) determine the group’s redundancy, latency, and collusion resistance. However, the reality is that each Cohort is selected from a larger sample of Threshold nodes, which is far larger than the typical/optimal size of each cohort – there is not necessarily much overlap between Cohorts.\
 \
-Therefore, the mechanisms through which nodes are selected to form Cohorts carry their own trust assumptions. More specifically, the _sampling parameters_ impact the security and collusion-resistance of a given data sharing flow. Sampling parametrization can be divided into; (1) those relating to frequency and prompting of (re-)sampling, and (2) compositional requirements to form a Cohort, besides the top-level `m` & `n` parameters.&#x20;
+Therefore, the mechanisms through which nodes are selected to form Cohorts carry their own trust assumptions. More specifically, the _sampling parameters_ impact the security and collusion-resistance of a given data-sharing flow. Sampling parametrization can be divided into; (1) those relating to frequency and prompting of (re-)sampling, and (2) compositional requirements to form a Cohort, besides the top-level `m` & `n` parameters.&#x20;
 
 #### (1) Cohort refresh
 
@@ -53,6 +59,6 @@ Developers may also toggle certain Cohort characteristics via the sampling mecha
 
 ### Population-based trust assumptions&#x20;
 
-The protocol is also permissionless and pseudonymous (Ethereum addresses), which means the total _population_ of node operators will expand, contract and change its composition over time, and that change will not be perfectly discernible.&#x20;
+The protocol is also permissionless and pseudonymous (Ethereum addresses), which means the total _population_ of node operators will expand, contract, and change its composition over time, and that change will not be perfectly discernible.&#x20;
 
-The node population is also non-uniform; rather, it is comprised of a heterogeneous set of operators, ranging from the hobbyist to institutional stakers. Although there is a degree of standardization with respect to requisite machine memory, CPU power, latency and availability, the actual underlying servers are only observable anecdotally – i.e. this cannot yet be verified on-chain. However, this anecdotal, informal insight into the node population can be supplemented and corroborated with conclusions drawn from on-chain activity, such as slashing or unbonding events.
+The node population is also non-uniform; rather, it is comprised of a heterogeneous set of operators, ranging from the hobbyist to institutional stakers. Although there is a degree of standardization with respect to requisite machine memory, CPU power, latency, and availability, the actual underlying servers are only observable anecdotally – i.e. this cannot yet be verified on-chain. However, this anecdotal, informal insight into the node population can be supplemented and corroborated with conclusions drawn from on-chain activity, such as slashing or unbonding events.
