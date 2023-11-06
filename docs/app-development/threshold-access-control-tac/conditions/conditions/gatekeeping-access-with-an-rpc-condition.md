@@ -10,7 +10,6 @@ const hasAnyNativeAsset = new conditions.base.RpcCondition({
   method: 'eth_getBalance',
   parameters: [':userAddress'],
   returnValueTest: {
-    index: 0,
     comparator: '>',
     value: 0,
   },
