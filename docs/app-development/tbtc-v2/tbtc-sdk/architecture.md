@@ -18,9 +18,9 @@ The `TBTC` component is the main entry point to the SDK. It provides different w
 
 The role of the SDK feature services is to provide seamless access to the core features of the tBTC bridge. The most important feature services of the SDK are:
 
-* **Deposits:** exposes the tBTC v2 deposit and mint flow for BTC depositors
-* **Redemptions:** exposes the tBTC v2 unmint and redeem flow for TBTC redeemers&#x20;
-* **Maintenance:** exposes authorized maintenance actions for maintainers (e.g. optimistic minting guardians)
+* **Deposits:** deposit and mint flow for BTC depositors
+* **Redemptions:** unmint and redeem flow for TBTC redeemers&#x20;
+* **Maintenance:** authorized maintenance actions for maintainers (e.g. optimistic minting guardians)
 
 ### Shared libraries
 
