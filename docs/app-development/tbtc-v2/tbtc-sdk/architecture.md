@@ -23,3 +23,11 @@ The role of the SDK feature services is to provide seamless access to the core f
 * **Maintenance:** exposes authorized maintenance actions for maintainers (e.g. optimistic minting guardians)
 
 ### Shared libraries
+
+Shared libraries are reusable modules that provide cross-cutting concerns leveraged by multiple feature services and the `TBTC` component. The main shared libraries of the SDK are:
+
+* **Bitcoin**: interfaces and utilities necessary to interact with the Bitcoin chain
+* **Contracts**: chain-agnostic interfaces allowing to interact with tBTC smart contracts
+* **Electrum**: Electrum-based implementation of the Bitcoin client
+* **Ethereum**: implementations of tBTC smart contract interfaces for Ethereum chain
+* **Utils**: general utility functions
