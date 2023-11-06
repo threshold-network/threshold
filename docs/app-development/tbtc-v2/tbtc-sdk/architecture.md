@@ -1,6 +1,6 @@
 # Architecture
 
-The following diagram presents the architecture of the tBTC SDK and how it fits in the ecosystem:
+The following diagram presents the architecture of the tBTC SDK and its place in the ecosystem:
 
 <figure><img src="../../../.gitbook/assets/tbtc-sdk-diagram.png" alt=""><figcaption><p>tBTC SDK Architecture</p></figcaption></figure>
 
