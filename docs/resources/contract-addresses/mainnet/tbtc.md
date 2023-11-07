@@ -10,7 +10,7 @@ Delivered in `@keep-network/random-beacon@2.0.0`, `@keep-network/ecdsa@2.0.0` an
 | RandomBeacon      | [0x5499f54b4A1CB4816eefCf78962040461be3D80b](https://etherscan.io/address/0x5499f54b4A1CB4816eefCf78962040461be3D80b) |
 | TBTC              | [0x18084fbA666a33d37592fA2633fD49a74DD93a88](https://etherscan.io/address/0x18084fbA666a33d37592fA2633fD49a74DD93a88) |
 | TBTCVault         | [0x9C070027cdC9dc8F82416B2e5314E11DFb4FE3CD](https://etherscan.io/address/0x9C070027cdC9dc8F82416B2e5314E11DFb4FE3CD) |
-| VendingMachine    | [0x6590DFF6abEd7C077839E8227A4f12Ec90E6D85F](https://etherscan.io/address/0x6590DFF6abEd7C077839E8227A4f12Ec90E6D85F) |
+| VendingMachineV3  | [0x7570a2350183b4BdF7CA74faD3Fc19048E6437e6](https://etherscan.io/address/0x7570a2350183b4BdF7CA74faD3Fc19048E6437e6) |
 | WalletRegistry    | [0x46d52E41C2F300BC82217Ce22b920c34995204eb](https://etherscan.io/address/0x46d52E41C2F300BC82217Ce22b920c34995204eb) |
 | CoveragePool      | [0x7D7B622C07f216d99eFc3EfB9Cf71872F46D811A](https://etherscan.io/address/0x7D7B622C07f216d99eFc3EfB9Cf71872F46D811A) |
 | WalletCoordinator | [0x64EA4b84e2BdfD313428b96658260E495a420093](https://etherscan.io/address/0x64EA4b84e2BdfD313428b96658260E495a420093) |
