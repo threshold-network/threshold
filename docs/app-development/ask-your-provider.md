@@ -2,7 +2,7 @@
 
 This page is a reference for users, app developers, and other partners/participants in the Web3 ecosystem. Before integrating an infrastructure layer, staking on a protocol, moving assets across a bridge, or even just using any Web3 application – we recommend seeking answers to the following questions. Given that **Web3's core value proposition is reducing imposed trust via decentralization,** the current 'state of trust' should be accessible and easy to understand. Not every imperfection can can be ironed out prior to launch, but if some component of a Web3 product isn't practically and meaningfully decentralized, there should be a reasonable explanation, and a clear path towards addressing the limitation.
 
-For a proactive disclosure of the **TACo** application from a trust, risk and security perspective, see the TACo [Provider Answers](threshold-access-control-tac/trust-assumptions/provider-answers-disclosure.md) page.
+For a proactive disclosure of the **TACo** application from a trust, risk and security perspective, see the TACo [Provider Answers](threshold-access-control-tac/trust-assumptions/mainnet-trust-disclosure-provider-answers.md) page.
 
 Ask your provider:&#x20;
 

@@ -1,4 +1,4 @@
-# Provider Answers/Disclosure
+# Mainnet Trust Disclosure (Provider Answers)
 
 This page serves as a proactive disclosure of the **TACo** application from a trust, risk and security perspective. It includes overviews of the Mainnet launch state (_Genesis_) and forthcoming states (_Future Versions_) of the service.&#x20;
 
@@ -8,10 +8,6 @@ This page serves as a proactive disclosure of the **TACo** application from a tr
 
 _Genesis_\
 Threshold nodes are distinguishable by the staker's Ethereum address. There are [**434**](https://dune.com/embeds/3037106/5053569) distinct  addresses that have activated a stake since network inception in January 2022. The applications that are currently live have the following numbers of distinct addresses serving them:
-
-* tBTC | [**249**](https://dune.com/queries/2233403/3661648) **stakers**
-* Random Beacon | **249 stakers**&#x20;
-* TACo | **Mainnet version not yet available to stakers**&#x20;
 
 TACo _cohorts_ – a group of nodes which provide the access control service to a single application or external project – have a standard size of 30 members (stakers). To reliably sample and generate distinct cohorts, TACo requires a total staker population least 60.&#x20;
 

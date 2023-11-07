@@ -1,7 +1,3 @@
----
-description: Using TACo in development environments
----
-
 # Testnet Integration
 
 ## Testnet domains
