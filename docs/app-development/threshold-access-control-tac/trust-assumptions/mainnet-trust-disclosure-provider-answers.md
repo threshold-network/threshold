@@ -36,7 +36,7 @@ Stakers are mobilized to install the first or latest versions of the node client
 TACo software automates much of the coordination burden for stakers. The node-facing client connects to the network, joins cohorts, runs a DKG initialization (and refresh) rituals, holds decryption fragments, receives requests for decryption, checks condition fulfillment, and provisions decryption material – all without any intervention from the staker. However, they (and the public) are privy to all the [code](https://github.com/nucypher/nucypher) that performs these automations, and can check their client code for any unexpected behavior.&#x20;
 
 _Future Versions_\
-In later versions, TACo will charge an _action-based_ fee. As with the _availability-based_ fee, it will likely be converted into T before distribution, and further the incentive to follow the protocol and provide a reliable/secure service. More detail on this fee model can be found on the [Action-based fees](../fee-models-and-price-points/action-based-fees.md) page.
+In later versions, TACo will charge an _action-based_ fee. As with the _availability-based_ fee, it will likely be converted into T before distribution, and further the incentive to follow the protocol and provide a reliable/secure service. More detail on this fee model can be found on the [Action-based fees](broken-reference) page.
 
 ### E**ntities with disproportionate power**
 

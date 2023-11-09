@@ -8,7 +8,7 @@ However, correctly selecting individual parameters across each and every trust/r
 `m` : 16, `n` : 30 (16-of-30)&#x20;
 
 **Package II** \
-`m` : 11 `n` : 20 (11-of-20)&#x20;
+`m` : 8 `n` : 15 (8-of-15)&#x20;
 
 Both parameter packages will be subject to identical Sampling-related and Population-related trust assumptions, but come with slightly different Cohort-related trust assumptions. \
 \

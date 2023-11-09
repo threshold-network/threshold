@@ -21,7 +21,7 @@ Note that this delay is universal and independent of any other token lock-up or 
 
 ### **Fees**&#x20;
 
-The first version of TACo will launch with fee-paying adopters. They will each pay a [duration-based ](../../../../app-development/threshold-access-control-tac/fee-models-and-price-points/duration-based-fees.md) fee upfront, which gets them 6 months of access to the TACo API and a corresponding cohort of nodes to manage access to their users' data. These fees are paid in **DAI**.&#x20;
+The first version of TACo will launch with fee-paying adopters. They will each pay a duration-based fee upfront, which gets them 6 months of access to the TACo API and a corresponding cohort of nodes to manage access to their users' data. These fees are paid in **DAI**.&#x20;
 
 Fees will be collected and held by the Coordinator contract, which will be temporarily placed under the control of the Threshold Council.&#x20;
 
