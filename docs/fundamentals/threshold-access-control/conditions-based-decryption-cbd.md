@@ -1,8 +1,8 @@
 # Simple Overview
 
-TACo is a plug-in service that enables the sharing of any form of private or sensitive data within Web3 applications. Private data is encrypted by a data owner and remains encrypted until it reaches the device of a recipient. From a privacy point of view, it is comparable to the end-to-end encryption that a mobile messaging service like Signal offers.&#x20;
+TACo is a plug-in service that enables the safe sharing of private or sensitive data within Web3 applications. Private data is encrypted by a data owner and remains encrypted until it reaches the device of a recipient. From a privacy point of view, it is comparable to the end-to-end encryption that a mobile messaging service like Signal offers.&#x20;
 
-Whether or not a recipient qualifies to see a given piece of data depends on whether they are able to show that they fulfill certain conditions. These conditions are chosen in advance by the owner of that data, and often (but not only) involve buying, receiving and holding a special-purpose NFT.&#x20;
+Whether or not a recipient qualifies to see a given piece of data depends on whether they are able to show that they fulfill certain conditions. These conditions are chosen in advance by the owner of that data, and often (but not exclusively) involve holding a special-purpose NFT.&#x20;
 
 Here are some real-world examples of TACo in action: \
 \
