@@ -42,7 +42,7 @@ As of Nov 14 2023, there are 149 tBTC nodes in Threshold Network. The number of 
 
 Running a node and staking requires technical competence and operational commitment. Stakers need to monitor their nodes closely to ensure correct node version, uptime, and prompt maintenance when needed.
 
-### What is thhe tBTC Beta Stakers Program?&#x20;
+### What is the tBTC Beta Stakers Program?&#x20;
 
 As part of bootstrapping tBTC utility, Threshold Network allow-lists authorized stakers to participate in tBTC minting and redemptions to ensure system continuity during progressive decentralization. These allow-listed stakers are called Beta Stakers. The goal of the Beta Staker program is to ensure key operations run properly without interruptions during early growth.
 
@@ -50,7 +50,7 @@ As of Nov 14, 2023, there are 20 Beta Stakers across three staking providers (Bo
 
 <figure><img src="../.gitbook/assets/image (8).png" alt="" width="563"><figcaption><p>As of Nov 14, 2023, there are 20 Beta Stakers</p></figcaption></figure>
 
-For system requirements and cost estimates to run a staker node, please see [tbtc-beta-stakers-program.md](tbtc-beta-stakers-program.md "mention")
+For system requirements and cost estimates to run a staker node, please see [beta-stakers-program.md](beta-stakers-program.md "mention")
 
 
 

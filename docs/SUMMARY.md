@@ -69,8 +69,8 @@
   * [Staking Providers](staking-and-running-a-node/running-a-node/staking-providers.md)
 * [Goerli Testnet](staking-and-running-a-node/goerli-testnet-staking/README.md)
   * [Testnet tBTC v2 node Setup](staking-and-running-a-node/goerli-testnet-staking/testnet-tbtc-v2-node-setup.md)
-* [tBTC Stakers FAQ](staking-and-running-a-node/tbtc-stakers-faq.md)
-* [tBTC Beta Stakers Program](staking-and-running-a-node/tbtc-beta-stakers-program.md)
+* [tBTC Stakers FAQ](staking-and-running-a-node/stakers-faq.md)
+* [tBTC Beta Stakers Program](staking-and-running-a-node/beta-stakers-program.md)
 
 ## App Development
 
