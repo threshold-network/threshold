@@ -28,6 +28,15 @@ A Beta Staker node performs more computationally expensive operations (DKG, thre
 * 80 Mbps of network bandwidth
 * Linux OS
 
+In addition to the above:&#x20;
+
+* The underlying machine’s operating system and tools must be up to date, especially regarding recent security patches.
+* Backups of the persistent disk must be performed on an ongoing basis. This is crucial to ensure the safety of mission-critical data (e.g. key material). The usage of an additional encryption layer for backups is highly recommended.
+* The network layer must provide a unique public IPv4 address allowing the node to be reached from the external network. A proper firewall configuration must be in place and ensure a safe perimeter allowing inbound traffic on two ports (communication and diagnostics). The internet connection must be stable and failover scenarios must be taken into account.
+* A Beta Staker node requires access to an Ethereum node. It is highly recommended to set up a private Ethereum stack (e.g. Geth + Prysm) and use public providers as failover (e.g. Alchemy, Infura, etc). Such a setup is crucial for network diversity and decentralization as it helps avoid the single-point-of-failure risk associated with public providers. Beta Staker operators should use their own judgement for selecting stack components. Specific technical requirements for a private Ethereum stack depend on the software used. For example, a stack based on [Geth + Prysm requires 4 CPU / 16 GB RAM / 2 TB SSD](https://docs.prylabs.network/docs/install/install-with-script#step-1-review-prerequisites-and-best-practices).
+* A Beta Staker node requires an Electrum protocol server to interact with Bitcoin. It is highly recommended to set up a private stack consisting of an Electrum server (e.g. Fulcrum, ElectrumX, Electrs, etc) paired with a Bitcoin node (e.g. Bitcoin Core) and use public servers as failover. The reasons are exactly the same as for a private Ethereum stack. Beta Staker operators should use their own judgement for selecting stack components. Specific technical requirements for a private Bitcoin stack depend on the software used. For example, a stack based on Fulcrum + Bitcoin Core requires 8 CPU / 16 GB RAM / 2 TB SSD.
+* It is highly recommended to set up a private monitoring stack to ensure observability and alerting. The monitoring system should supervise the node itself as well as Ethereum and Bitcoin stacks. Beta Staker operators should use their own judgement for selecting stack components. Specific technical requirements for a monitoring stack depend on the software used. For example, a stack based on Grafana + Prometheus requires 2 CPU / 4 GB RAM / 20 GB HDD.
+
 ## Cost estimation
 
 The actual monthly costs of running a Beta Staker node depends on the hosting model (VPS vs self-hosting) and infrastructure configuration. The following estimation aims to provide a ballpark figure. It also assumes that all aforementioned technical requirements and recommendations are taken into account.&#x20;
