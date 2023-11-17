@@ -1,14 +1,14 @@
-# Beta Stakers Program
+# tBTC Beta Stakers Program
 
-## About Beta Stakers Program
+## About tBTC Beta Stakers Program
 
-As part of bootstrapping tBTC utility, Threshold Network allowlists authorized stakers to participate in tBTC minting and redemptions to ensure system continuity during progressive decentralization. These allowlisted stakers are called Beta Stakers. The goal with the Beta Staker program is to ensure key operations run properly without interruptions during early growth.
+As part of bootstrapping tBTC utility, Threshold Network allow-lists authorized stakers to participate in tBTC minting and redemptions to ensure system continuity during progressive decentralization. These allow-listed stakers are called Beta Stakers. The goal with the Beta Staker program is to ensure key operations run properly without interruptions during early growth.
 
 {% hint style="info" %}
 Visit [contract page on Etherscan](https://etherscan.io/address/0xc2731fb2823af3Efc2694c9bC86F444d5c5bb4Dc#readContract#F16) to see the current number of Beta Stakers.&#x20;
 {% endhint %}
 
-Beta Staker nodes form a permissioned set that is allowed to create tBTC wallets and take BTC into custody. Running a tBTC Beta Staker node is a significant commitment with specific requirements. This document aims to highlight such requirements, technical recommendations, and possible costs of operating a Beta Staker tBTC node. The document's scope is limited to tBTC and does not encompass other Threshold applications (PRE/TACo).
+Beta Staker nodes form a permissioned set that is responsible for creating tBTC wallets that custody BTC. Running a tBTC Beta Staker node is a significant commitment with specific requirements. This document aims to highlight such requirements, technical recommendations, and possible costs of operating a Beta Staker tBTC node. The document's scope is limited to tBTC and does not encompass other Threshold applications (PRE/TACo).
 
 ## General requirements
 
@@ -67,4 +67,4 @@ Estimating the general cost for the self-hosting model is non-trivial due to the
 
 Above assumptions and figures should be used cautiously as it is only intended to provide a general sense of the infrastructure costs. Each prospective Beta Staker node operator should conduct their own estimates based on their individual circumstances.&#x20;
 
-Last but not least, the presented estimate refers only to the infrastructure-related costs of operating a tBTC node. This estimate DOES NOT include human operational costs or costs associated with operating other Threshold applications such as PRE or TACo. Each Beta Staker operator must include this overhead when making their own estimates.\
+Last but not least, the presented estimate refers only to the infrastructure-related costs of operating a tBTC node. This estimate DOES NOT include human operational costs or costs associated with operating other Threshold applications such as PRE/TACo. Each Beta Staker operator must include this overhead when making their own estimates.\
