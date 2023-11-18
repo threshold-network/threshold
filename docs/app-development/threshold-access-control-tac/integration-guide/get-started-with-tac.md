@@ -24,13 +24,13 @@ Testnet domains have no trust minimization or stability guarantees, which makes 
 
 Learn more about the testnet trust assumptions here [cbd-proof-of-concept-version.md](../trust-assumptions/cbd-proof-of-concept-version.md "mention")
 
-## Testnet configuration
+## Testnet Configuration
 
 Each of the `domain` corresponds to a test network with contracts deployed on an L1&#x20;
 
-<table><thead><tr><th>domain</th><th>network name</th><th>L1 (chain id)</th><th data-type="number">open ritual id*</th></tr></thead><tbody><tr><td>DEV</td><td>lynx</td><td>Mumbai (80001)</td><td>0</td></tr><tr><td>TESTNET</td><td>tapir</td><td>Mumbai (80001)</td><td>5</td></tr></tbody></table>
+<table><thead><tr><th width="122">Domain</th><th width="143">Domain Name</th><th width="132">L1 (chain id)</th><th width="126">L2 (chain id)</th><th data-type="number">*Open ID</th><th>Expiration</th></tr></thead><tbody><tr><td>DEV</td><td>lynx</td><td>Goerli<br>(5)</td><td>Mumbai (80001)</td><td>0</td><td>Jan 16, 2024</td></tr><tr><td>TESTNET</td><td>tapir</td><td>Sepolia<br>(11155111)</td><td>Mumbai (80001)</td><td>5</td><td>Jan 27, 2024</td></tr></tbody></table>
 
-`* Open ritual id refers to rituals that have permisionless encryptor allowlists. See` [`encryptor allowlist`](../user-authentication/encryptor-allowlist.md) `section to learn more.`
+`* Open id refers to rituals that have permisionless encryptor allowlists. See` [`encryptor allowlist`](../user-authentication/encryptor-allowlist.md) `section to learn more.`
 
 ## Contracts
 
