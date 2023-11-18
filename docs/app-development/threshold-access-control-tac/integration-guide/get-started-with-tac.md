@@ -28,7 +28,7 @@ Learn more about the testnet trust assumptions here [cbd-proof-of-concept-versio
 
 Each of the `domain` corresponds to a test network with contracts deployed on an L1&#x20;
 
-<table><thead><tr><th>domain</th><th>network name</th><th>L1 (chain id)</th><th data-type="number">open ritual id*</th></tr></thead><tbody><tr><td>DEV</td><td>lynx</td><td>Mumbai (80001)</td><td>24</td></tr><tr><td>TESTNET</td><td>tapir</td><td>Mumbai (80001)</td><td>5</td></tr></tbody></table>
+<table><thead><tr><th>domain</th><th>network name</th><th>L1 (chain id)</th><th data-type="number">open ritual id*</th></tr></thead><tbody><tr><td>DEV</td><td>lynx</td><td>Mumbai (80001)</td><td>0</td></tr><tr><td>TESTNET</td><td>tapir</td><td>Mumbai (80001)</td><td>5</td></tr></tbody></table>
 
 `* Open ritual id refers to rituals that have permisionless encryptor allowlists. See` [`encryptor allowlist`](../user-authentication/encryptor-allowlist.md) `section to learn more.`
 
