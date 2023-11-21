@@ -39,16 +39,12 @@ The above code snippet presents just one way of creating an Ethers signer/provid
 
 ### Ethereum and Bitcoin testnet
 
-This is the case where you want to use the SDK to interact with the tBTC bridge on Ethereum and Bitcoin testnet. The SDK addresses it by exposing the `TBTC.initializeGoerli` function. That function:
+This is the case where you want to use the SDK to interact with the tBTC bridge on Ethereum and Bitcoin testnet. The SDK addresses it by exposing the `TBTC.initializeSepolia` function. That function:
 
-* Takes an Ethers signer or provider as a parameter and uses it to interact with tBTC contracts deployed on Ethereum Goerli
+* Takes an Ethers signer or provider as a parameter and uses it to interact with tBTC contracts deployed on Ethereum Sepolia
 * Automatically configures an Electrum Bitcoin client to communicate with the Bitcoin testnet (communication is done through a set of pre-configured Electrum servers)
 
 The usage of this function is exactly the same as for the previous `TBTC.initializeMainnet` function.
-
-{% hint style="warning" %}
-Ethereum Goerli shutdown is planned for the end of 2023. Because of that, the tBTC bridge is switching to Sepolia. That switch will be reflected in the SDK soon.
-{% endhint %}
 
 ### Custom mode
 

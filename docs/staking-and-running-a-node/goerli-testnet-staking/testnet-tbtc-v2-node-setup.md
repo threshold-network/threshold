@@ -65,7 +65,7 @@ DO NOT LOSE THE PASSWORD TO THE OPERATOR ACCOUNT.
 
 ### Funding your Operator Account
 
-Your Operator Account will need to be funded with goerli ETH and maintain a positive balance at all times to ensure proper operation and availability of your tBTC v2 node.
+Your Operator Account will need to be funded with sepolia ETH and maintain a positive balance at all times to ensure proper operation and availability of your tBTC v2 node.
 
 ## Network Configuration
 
@@ -212,7 +212,7 @@ And paste the following:
 #
 # Ethereum endpoint WebSocket URL
 # This can be a provider such as Infura, Alchemy, Ankr, etc or your own Geth Nodeq
-# ETHEREUM_WS_URL="wss://goerli.infura.io/ws/v3/redacted_credentials"
+# ETHEREUM_WS_URL="wss://sepolia.infura.io/ws/v3/redacted_credentials"
 # note: only replace characters inside the " ". The Quotation marks must be retained
 ETHEREUM_WS_URL="<Ethereum API WS URL>"
 
