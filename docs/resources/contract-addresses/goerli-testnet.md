@@ -1,6 +1,10 @@
 # Görli Testnet
 
-Threshold Contracts
+{% hint style="warning" %}
+The Görli testnet will become deprecated at the end of 2023. Threshold now uses Sepolia as a primary testnet. You can learn about the contracts addresses on that testnet [here](sepolia-testnet.md).
+{% endhint %}
+
+## Threshold Contracts
 
 Delivered in `@threshold-network/solidity-contracts@1.3.0-goerli.0` NPM package.
 
