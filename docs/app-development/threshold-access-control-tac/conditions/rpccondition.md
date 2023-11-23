@@ -12,7 +12,6 @@ const ownsNFT = new conditions.base.RpcCondition({
   parameters: [':userAddress'],
   chain: 5,
   returnValueTest: {
-    index: 0,
     comparator: '>=',
     value: 1,
   },
@@ -39,7 +38,6 @@ Now that we've specified our contract call, we need to figure out what to do wit
 
 ```typescript
 returnValueTest: {
-  index: 0,
   comparator: '>=',
   value: 1,
 },
@@ -47,13 +45,13 @@ returnValueTest: {
 
 `returnValueTest` is going to evaluate the contract call result according to the following logic:
 
-* Take the first value returned by the contract call, `index: 0`
+* Since the contract call returns only one value, we don't need to specify the `index` field
 * Compare it using the following comparator, `comparator: '>='`
 * Compare it to the following value, `value: 1`
 
 Combining these three, we can see that the `returnValueTest` will "trigger" if the value returned by the RPC call is greater than one.
 
-In other words, our condition is only satisfied if `ERC721.`eth\_getBalance`(:userAddress)[0] >= 1`
+In other words, our condition is only satisfied if `ERC721.eth_getBalance(:userAddress) >= 1`
 
 ### Learn more&#x20;
 

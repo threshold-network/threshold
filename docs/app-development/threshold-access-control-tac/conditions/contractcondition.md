@@ -14,7 +14,6 @@ const ownsNFT = new conditions.base.ContractCondition({
   contractAddress: '0x1e988ba4692e52Bc50b375bcC8585b95c48AaD77',
   chain: 5,
   returnValueTest: {
-    index: 0,
     comparator: '>',
     value: 0,
   },
@@ -51,7 +50,6 @@ Now that we've specified our contract call, we need to figure out what to do wit
 
 ```typescript
 returnValueTest: {
-  index: 0,
   comparator: '>',
   value: 0,
 },
@@ -59,13 +57,13 @@ returnValueTest: {
 
 `returnValueTest` is going to evaluate the contract call result according to the following logic:
 
-* Take the first value returned by the contract call, `index: 0`
+* Since the contract call returns only one value, we don't need to specify the `index` field
 * Compare it using the following comparator, `comparator: '>'`
 * Compare it to the following value, `value: 0`
 
 Combining these three, we can see that the `returnValueTest` will "trigger" if the value returned by the contract call is greater than zero.
 
-In other words, our condition is only satisfied if `ERC721.balanceOf(:userAddress)[0] > 0`
+In other words, our condition is only satisfied if `ERC721.balanceOf(:userAddress) > 0`
 
 ### Learn more
 

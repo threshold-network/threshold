@@ -11,7 +11,6 @@ const ownsNFT = new conditions.base.TimeCondition({
   method: 'blocktime',
   chain: 5,
   returnValueTest: {
-    index: 0,
     comparator: '>=',
     value: 1000000,
   },
@@ -19,7 +18,7 @@ const ownsNFT = new conditions.base.TimeCondition({
 
 ```
 
-`TimeCondition` contains `returnValueTest` which we can use select a comparison operator `comparator` and the desired block height threshold, `1000000`.
+`TimeCondition` contains `returnValueTest` which we can use to select a comparison operator `comparator` and the desired block height threshold, `1000000`.
 
 ### Learn more&#x20;
 

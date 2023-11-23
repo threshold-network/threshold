@@ -2,7 +2,7 @@
 
 We can condition access to the state on two different networks. To do that, we create two (or more) conditions that target different `chain` ids and then compose them together using `CompoundCondition`
 
-<pre class="language-typescript"><code class="lang-typescript"><strong>import { conditions } from '@nucypher/taco'
+<pre class="language-typescript"><code class="lang-typescript"><strong>import { conditions } from '@nucypher/taco';
 </strong><strong>
 </strong><strong>const ownsNFTOnChain5 = new conditions.predefined.ERC721Ownership({
 </strong>  contractAddress: '0x1e988ba4692e52Bc50b375bcC8585b95c48AaD77',

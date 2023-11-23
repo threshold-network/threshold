@@ -7,7 +7,7 @@ Let's start with the following example:
 ```typescript
 import { conditions } from '@nucypher/taco';
 
-const myFunctionAbi: conditions.FunctionAbiProps =  {
+const myFunctionAbi: conditions.base.FunctionAbiProps =  {
   name: 'myFunction',
   type: 'function',
   stateMutability: 'view',
@@ -39,7 +39,6 @@ const myContractCallCondition = new conditions.base.ContractCondition({
   contractAddress: '0x0...1',
   chain: 5,
   returnValueTest: {
-    index: 0,
     comparator: '>',
     value: 0,
   },
