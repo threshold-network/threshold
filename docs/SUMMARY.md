@@ -16,7 +16,7 @@
   * [The Path to Permissionlessness](applications/tbtc-v2/the-path-to-permissionlessness.md)
   * [Sweeping](applications/tbtc-v2/sweeping.md)
   * [Coverage Pool](applications/tbtc-v2/coverage-pool.md)
-* [TACo Access Control](applications/threshold-access-control/README.md)
+* [TACo - Threshold Access Control](applications/threshold-access-control/README.md)
   * [Simple Overview](fundamentals/threshold-access-control/conditions-based-decryption-cbd.md)
   * [Value Propositions](applications/threshold-access-control/value-propositions.md)
   * [Key Concepts](applications/threshold-access-control/key-concepts.md)
