@@ -1,10 +1,10 @@
 ---
-description: Automatic set up of a TACo node on cloud
+description: Automatic set up of a TACo node on cloud provider infrastructure
 ---
 
-# Cloud Setup (nucypher-ops)
+# Automated TACo Node Launcher (nucypher-ops)
 
-This tutorial makes use of `nucypher-ops`_:_ an Ansible script that will setup and configure a TACo node for you. The following steps help you launch a node on a DigitalOcean droplet, but `nucypher-ops` supports both Digital Ocean and AWS.&#x20;
+This tutorial makes use of `nucypher-ops`_:_ an python-wrapped Ansible playbook suite that will setup and configure a TACo node for you. The following steps help you launch a node on a DigitalOcean droplet, but `nucypher-ops` supports both Digital Ocean and AWS.&#x20;
 
 {% hint style="warning" %}
 This script automates certain steps to launch a TACo node, but **does not implement security measures of any sort**. You alone are responsible for operational security, as well as backing up relevant data. Carefully review your firewall rules and make the necessary adjustments.&#x20;
@@ -35,7 +35,7 @@ sudo apt-get install libffi-dev python3-dev python3-pip python3-virtualenv build
 {% tab title="Windows" %}
 Install Ubuntu 20.04.4 LTS through the Windows Store:
 
-<figure><img src="../../../../../.gitbook/assets/ubuntu-wsl.jpeg" alt=""><figcaption><p>WSL is the most convenient way to run nucypher-ops on a Windows based local machine</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ubuntu-wsl.jpeg" alt=""><figcaption><p>WSL is the most convenient way to run nucypher-ops on a Windows based local machine</p></figcaption></figure>
 
 Update your local machine and install dependencies:
 
@@ -58,19 +58,19 @@ $ ssh-keygen -t rsa
 $ cat .ssh/id_rsa.pub
 ```
 
-<figure><img src="../../../../../.gitbook/assets/ssh-key-gen.jpg" alt=""><figcaption><p>Generating a new SSH Key</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ssh-key-gen.jpg" alt=""><figcaption><p>Generating a new SSH Key</p></figcaption></figure>
 
 Copy the highlighted section of the public key:&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/ssh-copy-this.jpg" alt=""><figcaption><p>New SSH Key</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ssh-copy-this.jpg" alt=""><figcaption><p>New SSH Key</p></figcaption></figure>
 
 In your Digital Ocean dashboard, go to **Settings** > **Security** and click the **Add SSH Key** button:
 
-<figure><img src="../../../../../.gitbook/assets/ssh-key-do-arrows.jpg" alt=""><figcaption><p>Adding a new SSH Key</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ssh-key-do-arrows.jpg" alt=""><figcaption><p>Adding a new SSH Key</p></figcaption></figure>
 
 Paste the key into the box, give your key a name, and click the **Add SSH Key** button:
 
-<figure><img src="../../../../../.gitbook/assets/ssh-key-do-pasted.jpg" alt=""><figcaption><p>Adding a new SSH Key</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ssh-key-do-pasted.jpg" alt=""><figcaption><p>Adding a new SSH Key</p></figcaption></figure>
 
 Open a text file or password manager, and copy the SSH Fingerprint into it:
 
@@ -78,11 +78,11 @@ Open a text file or password manager, and copy the SSH Fingerprint into it:
 Do not share the SSH Fingerprint with anyone. Save and store it in a secure place.&#x20;
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/ssh-fingerprint.jpg" alt=""><figcaption><p>Locating the SSH Fingerprint</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ssh-fingerprint.jpg" alt=""><figcaption><p>Locating the SSH Fingerprint</p></figcaption></figure>
 
 Create an API key by going to **API** > **Tokens/Keys** and click the **Generate New Token** button.
 
-<figure><img src="../../../../../.gitbook/assets/api-generate-arrows.jpg" alt=""><figcaption><p>Generating an API Access Token</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/api-generate-arrows.jpg" alt=""><figcaption><p>Generating an API Access Token</p></figcaption></figure>
 
 Name your token and click the **Generate New Token** button:
 
@@ -90,11 +90,11 @@ Name your token and click the **Generate New Token** button:
 Unless you plan to periodically refresh this token yourself, you can set **Expiration** to 'NEVER'.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/api-generate-token-arrows.jpg" alt=""><figcaption><p>Generating an API Access Token</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/api-generate-token-arrows.jpg" alt=""><figcaption><p>Generating an API Access Token</p></figcaption></figure>
 
 Copy the API Key into your text file or password manager:
 
-<figure><img src="../../../../../.gitbook/assets/api-generate-token-save-arrows.jpg" alt=""><figcaption><p>Generating an API Access Token</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/api-generate-token-save-arrows.jpg" alt=""><figcaption><p>Generating an API Access Token</p></figcaption></figure>
 
 ## 2. Set up an Web3 Provider
 
@@ -119,7 +119,7 @@ You should now have the following in your text file or password manager:&#x20;
 * Endpoint URL for Ethereum
 * Endpoint URL for Polygon
 
-<figure><img src="../../../../../.gitbook/assets/notepad.jpg" alt=""><figcaption><p>Example text file with all required data</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/notepad.jpg" alt=""><figcaption><p>Example text file with all required data</p></figcaption></figure>
 
 Keep these items readily available for the next step.
 
@@ -133,7 +133,7 @@ $ pip install nucypher-ops
 
 This will download the utility and install required dependencies. The process takes a few minutes.
 
-<figure><img src="../../../../../.gitbook/assets/nucypher-ops-installed.jpg" alt=""><figcaption><p>nucypher-ops installation</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/nucypher-ops-installed.jpg" alt=""><figcaption><p>nucypher-ops installation</p></figcaption></figure>
 
 ## 4. Generate a TACo Node&#x20;
 
@@ -147,19 +147,19 @@ This command connects to your Digital Ocean account, spins up a VPS, configures 
 
 The utility will ask which cloud service you are using. Answer accordingly and press ENTER**:**&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/nucypher-ops-do.jpg" alt=""><figcaption><p>Selecting VPS provider in nucypher-ops</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/nucypher-ops-do.jpg" alt=""><figcaption><p>Selecting VPS provider in nucypher-ops</p></figcaption></figure>
 
 Input your API Key and press ENTER**:**&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/paste-api-key.jpg" alt=""><figcaption><p>Providing API Key in nucypher-ops</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/paste-api-key.jpg" alt=""><figcaption><p>Providing API Key in nucypher-ops</p></figcaption></figure>
 
 Input your SSH Fingerprint and press ENTER:
 
-<figure><img src="../../../../../.gitbook/assets/paste-ssh-fingerprint.jpg" alt=""><figcaption><p>Providing SSH fingerprint in nucypher-ops</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/paste-ssh-fingerprint.jpg" alt=""><figcaption><p>Providing SSH fingerprint in nucypher-ops</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/setting-up-node-1.jpg" alt=""><figcaption><p>Creating VPS instance &#x26; PRE node</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/setting-up-node-1.jpg" alt=""><figcaption><p>Creating VPS instance &#x26; PRE node</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/setting-up-node-2.jpg" alt=""><figcaption><p>VPS instance &#x26; PRE node created</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/setting-up-node-2.jpg" alt=""><figcaption><p>VPS instance &#x26; PRE node created</p></figcaption></figure>
 
 ## 5. Deploy the Node&#x20;
 
@@ -173,9 +173,9 @@ Provide your ETH endpoint when requested and press ENTER.
 
 Provide your Polygon endpoint when requested and press ENTER.
 
-<figure><img src="../../../../../.gitbook/assets/ursula-deploy-1.jpg" alt=""><figcaption><p>Configuring and deploying TACo Node</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ursula-deploy-1.jpg" alt=""><figcaption><p>Configuring and deploying TACo Node</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/ursula-deploy-2-arrows.jpg" alt=""><figcaption><p>TACo node ready to bond</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ursula-deploy-2-arrows.jpg" alt=""><figcaption><p>TACo node ready to bond</p></figcaption></figure>
 
 You can now bond your stake to a TACo node. The items at the bottom are your node's IP address and Operator address, which you will need for bonding.&#x20;
 
