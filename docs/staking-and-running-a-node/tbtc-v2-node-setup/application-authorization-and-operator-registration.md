@@ -20,15 +20,15 @@ It is **CRITICALLY** important that both the tBTC application as well as the Ran
 
 To get started, visit the [Threshold Dashboard](https://dashboard.threshold.network/) and connect your wallet.
 
-<figure><img src="../../../../.gitbook/assets/Authorize_All_Apps.png" alt=""><figcaption><p>Threshold Dashboard</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Authorize_All_Apps.png" alt=""><figcaption><p>Threshold Dashboard</p></figcaption></figure>
 
 Click on "Configure Apps"
 
-<figure><img src="../../../../.gitbook/assets/Documentation_Authorize_Apps.png" alt=""><figcaption><p>Authorizing Threshold Applications</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Documentation_Authorize_Apps.png" alt=""><figcaption><p>Authorizing Threshold Applications</p></figcaption></figure>
 
 Select BOTH tBTC and Random Beacon applications and enter your desired amount of T to stake per application. Note that the minimum is 40,000T.
 
-<figure><img src="../../../../.gitbook/assets/Documentation_AuthorizeAppsModal.png" alt=""><figcaption><p>Authorizing Threshold Applications</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Documentation_AuthorizeAppsModal.png" alt=""><figcaption><p>Authorizing Threshold Applications</p></figcaption></figure>
 
 ### Operator Registration
 
@@ -38,11 +38,11 @@ The operator account is the Ethereum account created on your node. In order for 
 An Operator for the Provider registration can be submitted just once. The Operator address assignment cannot be updated.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/Operator_Mapping-1.png" alt=""><figcaption><p>Registering Operator Address</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Operator_Mapping-1.png" alt=""><figcaption><p>Registering Operator Address</p></figcaption></figure>
 
 After both applications have been authorized, click on "Start Mapping" to begin the Operator Registration process.
 
-<figure><img src="../../../../.gitbook/assets/Operator_Mapping.png" alt=""><figcaption><p>Registering Operator Address</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Operator_Mapping.png" alt=""><figcaption><p>Registering Operator Address</p></figcaption></figure>
 
 Enter your Operator Address in the field provided and click on "Map Address."
 
