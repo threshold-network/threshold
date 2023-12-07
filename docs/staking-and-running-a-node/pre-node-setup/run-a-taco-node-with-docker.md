@@ -70,8 +70,8 @@ The configuration files will be stored in `~/.local/share/nucypher` on the host 
 Run the following command to launch the node:&#x20;
 
 ```bash
-$ docker run -d --rm \
-    --name ursula                     \
+$ docker run -d \
+    --name Ursula                     \
     --restart unless-stopped          \
     -v ~/.local/share/nucypher:/root/.local/share/nucypher \
     -v ~/.ethereum/:/root/.ethereum   \
