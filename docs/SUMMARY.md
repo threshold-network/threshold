@@ -40,6 +40,8 @@
 
 ## Staking & Running a Node
 
+* [Running a Node](staking-and-running-a-node/running-a-node/README.md)
+  * [Self-Managed](staking-and-running-a-node/running-a-node/self-managed.md)
 * [tBTC v2 Node Setup](staking-and-running-a-node/tbtc-v2-node-setup/README.md)
   * [Operator Account](staking-and-running-a-node/tbtc-v2-node-setup/operator-account.md)
   * [Application Authorization & Operator Registration](staking-and-running-a-node/tbtc-v2-node-setup/application-authorization-and-operator-registration.md)
@@ -60,7 +62,7 @@
   * [Minimum System Requirements](staking-and-running-a-node/pre-node-setup/minimum-system-requirements.md)
   * [Duties & Compensation](staking-and-running-a-node/pre-node-setup/duties-and-compensation.md)
   * [TACo Authorization & Operator Registration](staking-and-running-a-node/pre-node-setup/taco-authorization-and-operator-registration.md)
-  * [Run a TACo Node with Docker](staking-and-running-a-node/pre-node-setup/run-a-taco-node-with-docker.md)
+  * [Run a TACo Node with Docker](staking-and-running-a-node/running-a-node/self-managed/pre-node-setup/run-a-taco-node-with-docker.md)
   * [Automated TACo Node Launcher (nucypher-ops)](staking-and-running-a-node/pre-node-setup/automated-taco-node-launcher-nucypher-ops.md)
   * [Sepolia Testnet](staking-and-running-a-node/pre-node-setup/goerli-testnet-staking/README.md)
     * [Testnet tBTC v2 node Setup](staking-and-running-a-node/pre-node-setup/goerli-testnet-staking/testnet-tbtc-v2-node-setup.md)

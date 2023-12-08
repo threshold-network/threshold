@@ -24,8 +24,8 @@ Follow our handy guides to get started on staking basics as quickly as possible:
 [migrating-legacy-stakes.md](staking-and-running-a-node/migrating-legacy-stakes.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="staking-and-running-a-node/running-a-node/" %}
+[running-a-node](staking-and-running-a-node/running-a-node/)
 {% endcontent-ref %}
 
 ### Fundamentals: Dive a little deeper
