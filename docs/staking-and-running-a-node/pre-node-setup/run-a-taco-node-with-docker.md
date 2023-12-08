@@ -61,7 +61,7 @@ Path of the secret key file: /home/user/.ethereum/keystore/UTC--2023-12-08T18-58
 Take note of your new operator address and secret key file, you will need them in the next steps.
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 Secure your password and operator secret key file off-site. Loss of your operator wallet or password will result in disruptions to rewards and necessitate manual intervention.
 {% endhint %}
 
@@ -108,9 +108,15 @@ Replace the following values with your own:
 * `<OPERATOR ADDRESS>` \
   The dedicated ethereum wallet address to be used by the TACo node. In most cases this is the local signer address that was generated when you created an Ethereum operator (e.g. Geth) account. You will bond this address a provider address later.&#x20;
 
-You should now see a public key for your TACo node. Make sure to back up your keystore and make a secure copy of your seed words.&#x20;
+Follow the in-terminal prompts. You will see a public key for your TACo node and be assigned a mnemonic phrase.
 
+{% hint style="danger" %}
+The TACo mnemonic is a secret -- do not share it with anyone.  Secure your node's secret mnemonic off-site.  Loss of the mnemonic means you will be unable to recover your node's network keys and will be unable to perform duties resulting in rewards disruption.
+{% endhint %}
+
+{% hint style="info" %}
 The configuration files will be stored in `~/.local/share/nucypher` on the host machine.
+{% endhint %}
 
 ## 6. Launch the TACo Node
 
@@ -132,11 +138,19 @@ nucypher ursula run               \
 
 The docker command above is for illustrative purposes and can be modified as necessary.&#x20;
 
+### View Logs
+
+Verify your node is running correctly by viewing the logs:
+
+```bash
+docker logs -f ursula
+```
+
 {% hint style="info" %}
-Once the node is running, you can view its public status page at `https://<node_ip>:9151/status0`
+Once the node is running, you can view its public status page at `https://<node_ip>:9151/status/?json=true`
 {% endhint %}
 
-## Automatic Updates
+## 7. (Optional) Automatic Updates
 
 You can optionally configure your server to automatically update any running docker containers using watchtower.  This will automatically relaunch your node with the same commands and environment when an update to nucypher is published:
 
@@ -152,12 +166,6 @@ For more information see the official watchtower documentation here:
 &#x20;[https://containrrr.dev/watchtower/](https://containrrr.dev/watchtower/)
 
 ## Node Management
-
-### View Logs
-
-```bash
-docker logs -f ursula
-```
 
 ### Manually Upgrade Node
 

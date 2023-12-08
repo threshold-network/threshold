@@ -9,4 +9,4 @@ TACo nodes are very light and can be run inexpensively, on a remote instance or 
 * Static IP address
 * Exposed TCP port **9151**
 
-TACo can be run on cloud infrastructure. For example, a Digital Ocean [4GB Basic Droplet](https://www.digitalocean.com/pricing/droplets) satisfies the requirements listed above. See [Cloud Setup](automated-taco-node-launcher-nucypher-ops.md) for an Ansible script that automates some of the node setup and configuration.&#x20;
+TACo can be run on cloud infrastructure. For example, a Digital Ocean [4GB Basic Droplet](https://www.digitalocean.com/pricing/droplets) satisfies the requirements listed above. See [Cloud Setup](broken-reference) for an Ansible script that automates some of the node setup and configuration.&#x20;
