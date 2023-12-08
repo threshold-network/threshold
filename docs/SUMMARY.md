@@ -62,7 +62,7 @@
   * [Minimum System Requirements](staking-and-running-a-node/pre-node-setup/minimum-system-requirements.md)
   * [Duties & Compensation](staking-and-running-a-node/pre-node-setup/duties-and-compensation.md)
   * [TACo Authorization & Operator Registration](staking-and-running-a-node/pre-node-setup/taco-authorization-and-operator-registration.md)
-  * [Run a TACo Node with Docker](staking-and-running-a-node/running-a-node/self-managed/pre-node-setup/run-a-taco-node-with-docker.md)
+  * [Run a TACo Node with Docker](staking-and-running-a-node/pre-node-setup/run-a-taco-node-with-docker.md)
   * [Automated TACo Node Launcher (nucypher-ops)](staking-and-running-a-node/pre-node-setup/automated-taco-node-launcher-nucypher-ops.md)
   * [Sepolia Testnet](staking-and-running-a-node/pre-node-setup/goerli-testnet-staking/README.md)
     * [Testnet tBTC v2 node Setup](staking-and-running-a-node/pre-node-setup/goerli-testnet-staking/testnet-tbtc-v2-node-setup.md)

@@ -4,6 +4,12 @@ description: Instructions for setting up a TACo node on a server.
 
 # Run a TACo Node with Docker
 
+## Before you begin&#x20;
+
+* Running a TACo node requires maintenance and comes with certain constraints. Please review the [duties](duties-and-compensation.md) expected of a node operator, and make sure you are comfortable with the minimum deauthorization delay of 6 months.&#x20;
+* Your operator account will need to be funded with about $10 worth of MATIC to connect to the Threshold network. You can do this after setting up the node.
+* Once TACo is running smoothly on your machine or VPS, the [next step](taco-authorization-and-operator-registration.md) is to authorize your stake to the TACo app and bond the node to that provider address.
+
 ## 1. Install Docker
 
 Docker installation [instructions](https://docs.docker.com/engine/install/ubuntu/).
@@ -23,18 +29,54 @@ For testnets use the name of the testnet instead of `latest` \
 (e.g. `nucypher/nucypher:lynx`)
 {% endhint %}
 
+## 3. Create Operator Ethereum Wallet
+
+The "Operator" is a dedicated ethereum wallet address to be used by the TACo node. You will bond (aka "map") this address a staking provider on the threshold dashboard later.   This wallet must be in geth-compatible JSON format and can be generated with a variety of publicly available tools like geth or MyCryptoWallet.
+
+In this guide you will create an ethereum software wallet using geth.   Here are the geth installation [instructions](https://geth.ethereum.org/docs/getting-started/installing-geth). Note that installing Geth on an Ubuntu server can generate errors with newer versions. To avoid this, choose a long term support version – e.g. Ubuntu 20.04 (LTS).
+
+To create a new ethereum wallet using geth run:
+
+```bash
+geth account new
+```
+
+successful output looks like this:
+
+```bash
+$ geth account new
+...
+Your new account is locked with a password. Please give a password. Do not forget this password.
+Password: 
+Repeat password: 
+
+Your new key was generated
+
+Public address of the key:   0xdEB634255A534870505D085717898F1A8A0B53d8
+Path of the secret key file: /home/user/.ethereum/keystore/UTC--2023-12-08T18-58-13.845048610Z--deb634255a534870505d085717898f1a8a0b53d8
+...
+```
+
+{% hint style="info" %}
+Take note of your new operator address and secret key file, you will need them in the next steps.
+{% endhint %}
+
+{% hint style="warning" %}
+Secure your password and operator secret key file off-site. Loss of your operator wallet or password will result in disruptions to rewards and necessitate manual intervention.
+{% endhint %}
+
 ## 4. Export Node Environment Variables
 
 Run the following commands:&#x20;
 
 ```bash
-# Password used for creation/update of nucypher keystore
-$ export NUCYPHER_KEYSTORE_PASSWORD=<YOUR NUCYPHER KEYSTORE PASSWORD>
+# Set a password to create and update the nucypher keystore
+export NUCYPHER_KEYSTORE_PASSWORD=<YOUR NUCYPHER KEYSTORE PASSWORD>
 ```
 
 ```bash
-# Password used to unlock node's ethereum operator account
-$ export NUCYPHER_OPERATOR_ETH_PASSWORD=<YOUR OPERATOR ETH ACCOUNT PASSWORD>
+# Re-enter your ethereum operator account password (e.g. set on creation of a new Geth account)
+export NUCYPHER_OPERATOR_ETH_PASSWORD=<YOUR OPERATOR ETH ACCOUNT PASSWORD>
 ```
 
 ## 5. Initialize Node Configuration
@@ -64,7 +106,9 @@ Replace the following values with your own:
 * `<POLYGON ENDPOINT URI>` \
   The URI of a local or hosted polygon node RPC endpoint  (e.g.. `https://infura.io/...`)
 * `<OPERATOR ADDRESS>` \
-  The dedicated ethereum wallet address to be used by the TACo node.&#x20;
+  The dedicated ethereum wallet address to be used by the TACo node. In most cases this is the local signer address that was generated when you created an Ethereum operator (e.g. Geth) account. You will bond this address a provider address later.&#x20;
+
+You should now see a public key for your TACo node. Make sure to back up your keystore and make a secure copy of your seed words.&#x20;
 
 The configuration files will be stored in `~/.local/share/nucypher` on the host machine.
 
@@ -89,7 +133,7 @@ nucypher ursula run               \
 The docker command above is for illustrative purposes and can be modified as necessary.&#x20;
 
 {% hint style="info" %}
-Once the node is running, you can view its public status page at `https://<node_ip>:9151/status`.
+Once the node is running, you can view its public status page at `https://<node_ip>:9151/status0`
 {% endhint %}
 
 ## Automatic Updates
@@ -107,7 +151,7 @@ For more information see the official watchtower documentation here:
 
 &#x20;[https://containrrr.dev/watchtower/](https://containrrr.dev/watchtower/)
 
-## TACo Node Management
+## Node Management
 
 ### View Logs
 
@@ -116,6 +160,8 @@ docker logs -f ursula
 ```
 
 ### Manually Upgrade Node
+
+If you run into errors, note that you have to stop the node from running before attempting to troubleshoot or try a different configuration.
 
 ```bash
 # Stop container
