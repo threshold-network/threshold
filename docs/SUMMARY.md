@@ -65,6 +65,7 @@
   * [Duties & Compensation](staking-and-running-a-node/pre-node-setup/duties-and-compensation.md)
   * [TACo Authorization & Operator Registration](staking-and-running-a-node/pre-node-setup/taco-authorization-and-operator-registration.md)
   * [Run a TACo Node with Docker](staking-and-running-a-node/pre-node-setup/run-a-taco-node-with-docker.md)
+  * [TACo Node Management](staking-and-running-a-node/pre-node-setup/taco-node-management.md)
 * [tBTC Stakers FAQ](staking-and-running-a-node/stakers-faq.md)
 * [tBTC Beta Stakers Program](staking-and-running-a-node/beta-stakers-program.md)
 * [Staking Providers](staking-and-running-a-node/staking-providers.md)

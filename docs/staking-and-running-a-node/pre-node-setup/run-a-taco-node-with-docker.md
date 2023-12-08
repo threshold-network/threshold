@@ -6,30 +6,23 @@ description: Instructions for setting up a TACo node on a server.
 
 ## Before you begin&#x20;
 
+{% hint style="info" %}
+Please be aware that running a node is not an easy task and requires technical skill and commitment to maintaining node uptime and availability.
+{% endhint %}
+
 * Running a TACo node requires maintenance and comes with certain constraints. Please review the [duties](duties-and-compensation.md) expected of a node operator, and make sure you are comfortable with the minimum deauthorization delay of 6 months.&#x20;
 * Your operator account will need to be funded with about $10 worth of MATIC to connect to the Threshold network. You can do this after setting up the node.
 * Once TACo is running smoothly on your machine or VPS, the [next step](taco-authorization-and-operator-registration.md) is to authorize your stake to the TACo app and bond the node to that provider address.
 
-## 1. Install Docker
+## 1. Get Docker Image&#x20;
 
-Docker installation [instructions](https://docs.docker.com/engine/install/ubuntu/).
-
-It is recommended to check out Docker [post-install configurations](https://docs.docker.com/engine/install/linux-postinstall/). For example, managing docker as non-root user.
-
-## 2. Get Docker Image&#x20;
-
-Pull the latest Docker image from NuCypher's primary repo (NuCypher is a contributing team to the Threshold Network & the primary developers of TACo):&#x20;
+In case your server does not already have docker installer, follow the official docker installation [instructions](https://docs.docker.com/engine/install/ubuntu/).  Pull the latest Docker image from NuCypher's primary repo (NuCypher is a contributing team to the Threshold Network & the primary developers of TACo):&#x20;
 
 ```bash
 docker pull nucypher/nucypher:latest
 ```
 
-{% hint style="info" %}
-For testnets use the name of the testnet instead of `latest` \
-(e.g. `nucypher/nucypher:lynx`)
-{% endhint %}
-
-## 3. Create Operator Ethereum Wallet
+## 2. Create Operator Ethereum Wallet
 
 The "Operator" is a dedicated ethereum wallet address to be used by the TACo node. You will bond (aka "map") this address a staking provider on the threshold dashboard later.   This wallet must be in geth-compatible JSON format and can be generated with a variety of publicly available tools like geth or MyCryptoWallet.
 
@@ -65,7 +58,7 @@ Take note of your new operator address and secret key file, you will need them i
 Secure your password and operator secret key file off-site. Loss of your operator wallet or password will result in disruptions to rewards and necessitate manual intervention.
 {% endhint %}
 
-## 4. Export Node Environment Variables
+## 3. Export Node Environment Variables
 
 Run the following commands:&#x20;
 
@@ -79,7 +72,7 @@ export NUCYPHER_KEYSTORE_PASSWORD=<YOUR NUCYPHER KEYSTORE PASSWORD>
 export NUCYPHER_OPERATOR_ETH_PASSWORD=<YOUR OPERATOR ETH ACCOUNT PASSWORD>
 ```
 
-## 5. Initialize Node Configuration
+## 4. Initialize Node Configuration
 
 Create and store  the node configuration (this only needs to be executed once):&#x20;
 
@@ -118,7 +111,7 @@ The TACo mnemonic is a secret -- do not share it with anyone.  Secure your node'
 The configuration files will be stored in `~/.local/share/nucypher` on the host machine.
 {% endhint %}
 
-## 6. Launch the TACo Node
+## 5. Launch the TACo Node
 
 Run the following command to launch the node:&#x20;
 
@@ -150,7 +143,7 @@ docker logs -f ursula
 Once the node is running, you can view its public status page at `https://<node_ip>:9151/status/?json=true`
 {% endhint %}
 
-## 7. (Optional) Automatic Updates
+## 6. (Optional) Automatic Updates
 
 You can optionally configure your server to automatically update any running docker containers using watchtower.  This will automatically relaunch your node with the same commands and environment when an update to nucypher is published:
 
