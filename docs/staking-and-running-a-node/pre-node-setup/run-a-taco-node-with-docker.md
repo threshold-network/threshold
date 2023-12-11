@@ -115,10 +115,6 @@ Follow the in-terminal prompts. You will see a public key for your TACo node and
 The TACo mnemonic is a secret -- do not share it with anyone.  Secure your node's secret mnemonic off-site.  Loss of the mnemonic means you will be unable to recover your node's network keys and will be unable to perform duties resulting in rewards disruption.
 {% endhint %}
 
-{% hint style="info" %}
-The configuration files will be stored in `~/.local/share/nucypher` on the host machine.
-{% endhint %}
-
 ## 5. Launch
 
 Run the following command to launch the node:&#x20;
