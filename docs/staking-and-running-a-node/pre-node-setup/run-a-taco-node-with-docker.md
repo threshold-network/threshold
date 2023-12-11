@@ -7,7 +7,7 @@ description: Instructions for setting up a TACo node on a server.
 {% hint style="warning" %}
 Attention PRE Node Operators:\
 \
-We do not recommend reusing the same server use for PRE as TACo Node.  Doing so introduces complexity and divergence from the following guide.
+It is strongly recommended not to use the same server for both PRE and TACo Node functions. This practice can lead to unnecessary complexity and a departure from the standard operating procedures outlined in our documentation.
 {% endhint %}
 
 ## Before you begin&#x20;
