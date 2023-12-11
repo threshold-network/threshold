@@ -142,9 +142,7 @@ docker run -d                     \
 -e NUCYPHER_KEYSTORE_PASSWORD     \
 -e NUCYPHER_OPERATOR_ETH_PASSWORD \
 nucypher/nucypher:latest          \
-nucypher ursula run               \
---teacher https://mainnet.nucypher.network:9151 \
---no-ip-checkup
+nucypher ursula run 
 ```
 
 Successful execution will resemble this example:
