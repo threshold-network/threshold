@@ -100,7 +100,7 @@ TACo nodes must be initialized before launching. This is an interactive one-time
 <pre class="language-bash"><code class="lang-bash">docker run -it --rm                        \
 --name ursula                              \
 <strong>-v ~/.local/share/nucypher:/root/.local/share/nucypher \
-</strong>-v ~/.ethereum/:/root/.ethereum            \
+</strong>-v ~/.ethereum/:/root/.ethereum:ro         \
 -p 9151:9151                               \
 -e NUCYPHER_KEYSTORE_PASSWORD              \
 nucypher/nucypher:latest                   \
