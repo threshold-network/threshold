@@ -78,7 +78,10 @@ Secure your password and operator secret key file off-site. Loss of your operato
 
 ## 3. Export Environment Variables
 
-Run the following commands:&#x20;
+There are two passwords associated with a TACo node: a "_nucypher keystore password_" and an "_operator password_".
+
+* _nucypher keystore password_ - This password is used to encrypt your network participation keys.  You can create this password now.
+* _operator password_ - This is the password used to unlock you operator ethereum wallet.  Use the same password you used when you created your wallet.
 
 ```bash
 # Set a password to create and update the nucypher keystore
