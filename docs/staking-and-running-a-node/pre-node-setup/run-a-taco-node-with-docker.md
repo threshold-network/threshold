@@ -4,6 +4,12 @@ description: Instructions for setting up a TACo node on a server.
 
 # Run a TACo Node with Docker
 
+{% hint style="warning" %}
+Attention PRE Node Operators:\
+\
+We do not recommend reusing the same server use for PRE as TACo Node.  Doing so introduces complexity and divergence from the following guide.
+{% endhint %}
+
 ## Before you begin&#x20;
 
 {% hint style="info" %}
