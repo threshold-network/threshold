@@ -22,7 +22,9 @@ Please be aware that running a node is not an easy task and requires technical s
 
 ## 1. Get Docker Image&#x20;
 
-In case your server does not already have docker installer, follow the official docker installation [instructions](https://docs.docker.com/engine/install/ubuntu/).  Pull the latest Docker image from NuCypher's primary repo (NuCypher is a contributing team to the Threshold Network & the primary developers of TACo):&#x20;
+In case your server does not already have docker installed, follow the official docker installation [instructions](https://docs.docker.com/engine/install/ubuntu/). &#x20;
+
+Pull the latest Docker image from NuCypher's primary repo (NuCypher is a contributing team to the Threshold Network & the primary developers of TACo):&#x20;
 
 ```bash
 docker pull nucypher/nucypher:latest
@@ -64,7 +66,7 @@ Take note of your new operator address and secret key file, you will need them i
 Secure your password and operator secret key file off-site. Loss of your operator wallet or password will result in disruptions to rewards and necessitate manual intervention.
 {% endhint %}
 
-## 3. Export Node Environment Variables
+## 3. Export Environment Variables
 
 Run the following commands:&#x20;
 
@@ -78,9 +80,9 @@ export NUCYPHER_KEYSTORE_PASSWORD=<YOUR NUCYPHER KEYSTORE PASSWORD>
 export NUCYPHER_OPERATOR_ETH_PASSWORD=<YOUR OPERATOR ETH ACCOUNT PASSWORD>
 ```
 
-## 4. Initialize Node Configuration
+## 4. Initialize
 
-TACo nodes must be initialized before launching. This is a on-time step that will create network participation keys and an initial node configuration JSON file:&#x20;
+TACo nodes must be initialized before launching. This is an interactive one-time step that will create network participation keys and an initial JSON configuration file:&#x20;
 
 <pre class="language-bash"><code class="lang-bash">docker run -it --rm                        \
 --name ursula                              \
@@ -117,7 +119,7 @@ The TACo mnemonic is a secret -- do not share it with anyone.  Secure your node'
 The configuration files will be stored in `~/.local/share/nucypher` on the host machine.
 {% endhint %}
 
-## 5. Launch the TACo Node
+## 5. Launch
 
 Run the following command to launch the node:&#x20;
 
@@ -145,7 +147,7 @@ $ docker run -d --name ursula ...
 
 ### View Logs
 
-When your node starts up, it will connect to Polygon and Ethereum mainnet to determine the two qualification criteria:&#x20;
+When your node starts up, it will connect to Polygon and Ethereum mainnet to determine if the two qualification criteria are satisfied:&#x20;
 
 1\. Operator account is funded with MATIC (\~30 MATIC is recommended)\
 2\. Operator account is bonded (aka "mapped") to a staking provider.
