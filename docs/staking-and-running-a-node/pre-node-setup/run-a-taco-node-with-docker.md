@@ -10,9 +10,9 @@ description: Instructions for setting up a TACo node on a server.
 Please be aware that running a node is not an easy task and requires technical skill and commitment to maintaining node uptime and availability.
 {% endhint %}
 
-* Running a TACo node requires maintenance and comes with certain constraints. Please review the [duties](duties-and-compensation.md) expected of a node operator, and make sure you are comfortable with the minimum deauthorization delay of 6 months.&#x20;
+* Running a TACo node requires maintenance and comes with certain constraints. Please review the [duties](../taco-node-setup/duties-and-compensation.md) expected of a node operator, and make sure you are comfortable with the minimum deauthorization delay of 6 months.&#x20;
 * Your operator account will need to be funded with about $10 worth of MATIC to connect to the Threshold network. You can do this after setting up the node.
-* Once TACo is running smoothly on your machine or VPS, the [next step](taco-authorization-and-operator-registration.md) is to authorize your stake to the TACo app and bond the node to that provider address.
+* Once TACo is running smoothly on your machine or VPS, the [next step](../taco-node-setup/taco-authorization-and-operator-registration.md) is to authorize your stake to the TACo app and bond the node to that provider address.
 
 ## 1. Get Docker Image&#x20;
 
@@ -74,7 +74,7 @@ export NUCYPHER_OPERATOR_ETH_PASSWORD=<YOUR OPERATOR ETH ACCOUNT PASSWORD>
 
 ## 4. Initialize Node Configuration
 
-Create and store  the node configuration (this only needs to be executed once):&#x20;
+TACo nodes must be initialized before launching. This is a on-time step that will create network participation keys and an initial node configuration JSON file:&#x20;
 
 <pre class="language-bash"><code class="lang-bash">docker run -it --rm                        \
 --name ursula                              \
@@ -126,21 +126,57 @@ docker run -d                     \
 -e NUCYPHER_OPERATOR_ETH_PASSWORD \
 nucypher/nucypher:latest          \
 nucypher ursula run               \
---teacher https://mainnet.nucypher.network:9151  
+--teacher https://mainnet.nucypher.network:9151 \
+--no-ip-checkup
 ```
 
-The docker command above is for illustrative purposes and can be modified as necessary.&#x20;
+Successful execution will resemble this example:
+
+```bash
+$ docker run -d --name ursula ...
+5ecaa04eb319da576c3b2fa2b8aee9cc1a7079cd2675e3202047b50174696a84
+```
 
 ### View Logs
 
+When your node starts up, it will connect to Polygon and Ethereum mainnet to determine the two qualification criteria:&#x20;
+
+1\. Operator account is funded with MATIC (\~30 MATIC is recommended)\
+2\. Operator account is bonded (aka "mapped") to a staking provider.
+
+{% hint style="info" %}
+Operator bonding must be performed on the Threshold Staking dashboard.  Once complete there is a \~20 minute waiting period for your node's status to be automatically bridged to Polygon.   \
+\
+If your node is not bonded and synced the following message will be displayed in logs during this waiting period:\
+\
+`! Bonded staking provider address 0xDB1970...0991D096 on Mainnet not yet synced to child application on Polygon/Mainnet ; waiting for sync`
+{% endhint %}
+
+\
 Verify your node is running correctly by viewing the logs:
 
 ```bash
 docker logs -f ursula
 ```
 
-{% hint style="info" %}
-Once the node is running, you can view its public status page at `https://<node_ip>:9151/status/?json=true`
+Here is an example of the expected output for a node that is funded with MATIC and correctly bonded to an operator on the threshold dashboard:
+
+```bash
+...
+! Bonded staking provider address 0xDB1970...0991D096 on Mainnet not yet synced to child application on Polygon/Mainnet ; waiting for sync
+✓ Operator 0x27cd20d513cD3aB1D030e60f3aFb75599A33Bc2D is bonded to staking provider 0xDB1970e65B501f906f0fD220164800a0E824456E
+! Checking provider's DKG participation public key for 0xDB1970e65B501f906f0fD220164800a0E824456E on Polygon/Mainnet at Coordinator 0xE74259e3dafe30bAA8700238e324b47aC98FE755
+Broadcasting SETPROVIDERPUBLICKEY Legacy Transaction (0.021561263955835524 ETH @ 119.649197331 gwei)
+TXHASH 0xa034bc89f8f30980e1222c9a17a71683849119ae7953e7c04d659a057f77f384
+Waiting 600 seconds for receipt
+✓ Successfully published provider's DKG participation public key for 0xDB1970e65B501f906f0fD220164800a0E824456E on Polygon/Mainnet with txhash 0x40cda7a3120d4555e64802e813f2fd9de2ea5c3616cff24393d332daa92ce2d2)
+✓ Start Operator Bonded Tracker
+✓ Rest Server https://182.16.254.42:9151
+Working ~ Keep Ursula Online!
+```
+
+{% hint style="success" %}
+Working \~ Keep Ursula Online! Indicates successful launch :tada:
 {% endhint %}
 
 ## 6. (Optional) Automatic Updates
