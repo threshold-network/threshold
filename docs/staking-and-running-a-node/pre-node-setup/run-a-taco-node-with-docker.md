@@ -20,6 +20,16 @@ Please be aware that running a node is not an easy task and requires technical s
 * Your operator account will need to be funded with about $10 worth of MATIC to connect to the Threshold network. You can do this after setting up the node.
 * Once TACo is running smoothly on your machine or VPS, the [next step](../taco-node-setup/taco-authorization-and-operator-registration.md) is to authorize your stake to the TACo app and bond the node to that provider address.
 
+## Technical Overview
+
+The overall technical procedure for running a TACo Node is as follows (excluding staking steps):\
+\
+1\. Download docker image\
+2\. Create an Ethereum wallet to be used by the node ("operator")\
+3\. Secure and export two passwords\
+4\. Initialize the node\
+5\. Launch the node
+
 ## 1. Get Docker Image&#x20;
 
 In case your server does not already have docker installed, follow the official docker installation [instructions](https://docs.docker.com/engine/install/ubuntu/). &#x20;
