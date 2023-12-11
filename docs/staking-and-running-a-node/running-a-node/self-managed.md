@@ -4,7 +4,7 @@
 
 `nucypher-ops` is an ansible script that automates setup and configuration of a TACo node.
 
-#### [nucypher-ops setup guide](../pre-node-setup/)
+#### [nucypher-ops setup guide](../taco-node-setup/)
 
 ## tBTC v2 Client Setup
 

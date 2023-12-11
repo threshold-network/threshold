@@ -14,6 +14,6 @@ PRE is directly applicable to use cases that aim to maintain data ownership whil
 \
 Want to get started staking with Threshold and running a node for PRE? Follow this guide:
 
-{% content-ref url="../../../staking-and-running-a-node/pre-node-setup/" %}
-[pre-node-setup](../../../staking-and-running-a-node/pre-node-setup/)
+{% content-ref url="../../../staking-and-running-a-node/taco-node-setup/" %}
+[taco-node-setup](../../../staking-and-running-a-node/taco-node-setup/)
 {% endcontent-ref %}
