@@ -76,21 +76,18 @@ Take note of your new operator address and secret key file, you will need them i
 Secure your password and operator secret key file off-site. Loss of your operator wallet or password will result in disruptions to rewards and necessitate manual intervention.
 {% endhint %}
 
-## 3. Export Environment Variables
+## 3. Set Passwords
 
 There are two passwords associated with a TACo node: a "_nucypher keystore password_" and an "_operator password_".
 
 * _nucypher keystore password_ - This password is used to encrypt your network participation keys.  You can create this password now.
 * _operator password_ - This is the password used to unlock you operator ethereum wallet.  Use the same password you used when you created your wallet.
 
-```bash
-# Set a password to create and update the nucypher keystore
-export NUCYPHER_KEYSTORE_PASSWORD=<YOUR NUCYPHER KEYSTORE PASSWORD>
-```
+Create a plain text file named `nucypher.env` containing the following variables (replace <...> with your passwords):
 
 ```bash
-# Re-enter your ethereum operator account password (e.g. set on creation of a new Geth account)
-export NUCYPHER_OPERATOR_ETH_PASSWORD=<YOUR OPERATOR ETH ACCOUNT PASSWORD>
+NUCYPHER_KEYSTORE_PASSWORD=<YOUR NUCYPHER KEYSTORE PASSWORD>
+NUCYPHER_OPERATOR_ETH_PASSWORD=<YOUR OPERATOR ETH ACCOUNT PASSWORD>
 ```
 
 ## 4. Initialize
@@ -102,7 +99,7 @@ TACo nodes must be initialized before launching. This is an interactive one-time
 <strong>-v ~/.local/share/nucypher:/root/.local/share/nucypher \
 </strong>-v ~/.ethereum/:/root/.ethereum:ro         \
 -p 9151:9151                               \
--e NUCYPHER_KEYSTORE_PASSWORD              \
+--env-file nucypher.env                    \
 nucypher/nucypher:latest                   \
 <strong>nucypher ursula init                       \
 </strong>--signer keystore:///root/.ethereum/keystore/&#x3C;WALLET FILENAME> \
@@ -139,8 +136,7 @@ docker run -d                     \
 -v ~/.local/share/nucypher:/root/.local/share/nucypher \
 -v ~/.ethereum/:/root/.ethereum   \
 -p 9151:9151                      \
--e NUCYPHER_KEYSTORE_PASSWORD     \
--e NUCYPHER_OPERATOR_ETH_PASSWORD \
+--env-file nucypher.env           \
 nucypher/nucypher:latest          \
 nucypher ursula run 
 ```
