@@ -49,15 +49,16 @@ By default, Porter runs on port `9155`.
 2.  Run Porter HTTP Service on port 80
 
     ```bash
-    $ docker run -d --rm \
+    $ docker run -d \
     --name porter \
     -v ~/.local/share/nucypher/:/root/.local/share/nucypher \
     -p 80:9155 \
     --restart=unless-stopped \
     nucypher/porter:latest \
-    nucypher porter run \
-    --eth-provider <YOUR WEB3 PROVIDER URI> \
-    --network <NETWORK NAME>
+    nucypher-porter run \
+    --eth-provider <ETH PROVIDER URI> \
+    --polygon-provider <POLYGON PROVIDER URI> \
+    --domain <NETWORK NAME>
     ```
 
     The command above is for illustrative purposes and can be modified as necessary.&#x20;
