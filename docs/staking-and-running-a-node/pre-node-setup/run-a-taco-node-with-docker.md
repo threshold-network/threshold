@@ -13,22 +13,22 @@ It is strongly recommended not to use the same server for both PRE and TACo Node
 ## Before you begin&#x20;
 
 {% hint style="info" %}
-Please be aware that running a node is not an easy task and requires technical skill and commitment to maintaining node uptime and availability.
+Please be aware that running a node is not an easy task which requires technical skill and commitment to maintaining node uptime and availability.
 {% endhint %}
 
 * Running a TACo node requires maintenance and comes with certain constraints. Please review the [duties](../taco-node-setup/duties-and-compensation.md) expected of a node operator, and make sure you are comfortable with the minimum deauthorization delay of 6 months.&#x20;
-* Your operator account will need to be funded with about $10 worth of MATIC to connect to the Threshold network. You can do this after setting up the node.
+* Your operator account will need to be funded with >= 15 MATIC to connect to the Threshold network. You can do this after setting up the node.
 * Once TACo is running smoothly on your machine or VPS, the [next step](../taco-node-setup/taco-authorization-and-operator-registration.md) is to authorize your stake to the TACo app and bond the node to that provider address.
 
 ## Technical Overview
 
-The overall technical procedure for running a TACo Node is as follows (excluding staking steps):\
+The overall technical procedure for running a TACo Node is as follows (excluding [dashboard steps](../taco-node-setup/taco-authorization-and-operator-registration.md)):\
 \
-1\. Download docker image\
-2\. Create an Ethereum wallet to be used by the node ("operator")\
-3\. Secure and export two passwords\
-4\. Initialize the node\
-5\. Launch the node
+1\. [Get Docker Image](run-a-taco-node-with-docker.md#1.-get-docker-image)\
+2\. [Create an Ethereum wallet to be used by the node ("operator")](run-a-taco-node-with-docker.md#2.-create-operator-ethereum-wallet)\
+3\. [Set passwords](run-a-taco-node-with-docker.md#3.-set-passwords)\
+4\. [Initialize the node](run-a-taco-node-with-docker.md#4.-initialize)\
+5\. [Launch the node](run-a-taco-node-with-docker.md#5.-launch)
 
 ## 1. Get Docker Image&#x20;
 
@@ -42,7 +42,7 @@ docker pull nucypher/nucypher:latest
 
 ## 2. Create Operator Ethereum Wallet
 
-The "Operator" is a dedicated ethereum wallet address to be used by the TACo node. You will bond (aka "map") this address a staking provider on the threshold dashboard later.   This wallet must be in geth-compatible JSON format and can be generated with a variety of publicly available tools like geth or MyCryptoWallet.
+The "Operator" is a dedicated ethereum wallet address to be used by the TACo node. You will [map (aka "bond")](../taco-node-setup/taco-authorization-and-operator-registration.md#operator-account-registration) this address to a staking provider on the threshold dashboard later.   This wallet must be in geth-compatible JSON format ([Web3 Secret Storage Format](https://github.com/ethereum/wiki/wiki/Web3-Secret-Storage-Definition)) and can be generated with a variety of publicly available tools like [go-ethereum](https://geth.ethereum.org/) ("geth") or [MyCryptoWallet](https://mycrypto.com/).
 
 In this guide you will create an ethereum software wallet using geth.   Here are the geth installation [instructions](https://geth.ethereum.org/docs/getting-started/installing-geth). Note that installing Geth on an Ubuntu server can generate errors with newer versions. To avoid this, choose a long term support version – e.g. Ubuntu 20.04 (LTS).
 
@@ -73,7 +73,7 @@ Take note of your new operator address and secret key file, you will need them i
 {% endhint %}
 
 {% hint style="danger" %}
-Secure your password and operator secret key file off-site. Loss of your operator wallet or password will result in disruptions to rewards and necessitate manual intervention.
+Secure your password and operator secret key file off-site. Loss of your operator wallet or password may result in disruptions to rewards and necessitate manual intervention.
 {% endhint %}
 
 ## 3. Set Passwords
@@ -95,8 +95,8 @@ NUCYPHER_OPERATOR_ETH_PASSWORD=<YOUR OPERATOR ETH ACCOUNT PASSWORD>
 TACo nodes must be initialized before launching. This is an interactive one-time step that will create network participation keys and an initial JSON configuration file:&#x20;
 
 <pre class="language-bash"><code class="lang-bash">docker run -it --rm                        \
---name ursula                              \
-<strong>-v ~/.local/share/nucypher:/root/.local/share/nucypher \
+--name ursula-init                         \
+<strong>-v ~/.local/share/nucypher:/root/.local/share/nucypher:rw \
 </strong>-v ~/.ethereum/:/root/.ethereum:ro         \
 -p 9151:9151                               \
 --env-file nucypher.env                    \
@@ -111,18 +111,17 @@ nucypher/nucypher:latest                   \
 
 Replace the following values with your own:
 
-* `<WALLET FILENAME>`  The filename of your operator software wallet (geth JSON format)
-* `<ETH ENDPOINT URI>` \
-  The URI of a local or hosted ethereum node RPC endpoint (e.g. `https://infura.io/…`)
-* `<POLYGON ENDPOINT URI>` \
-  The URI of a local or hosted polygon node RPC endpoint  (e.g.. `https://infura.io/...`)
-* `<OPERATOR ADDRESS>` \
-  The dedicated ethereum wallet address to be used by the TACo node. In most cases this is the local signer address that was generated when you created an Ethereum operator (e.g. Geth) account. You will bond this address a provider address later.&#x20;
+* `<ETH ENDPOINT URI>`  The URI of an ethereum JSON-RPC endpoint (e.g. `https://infura.io/…`)
+* `<POLYGON ENDPOINT URI>` The URI of a polygon JSON-RPC endpoint  (e.g.. `https://infura.io/...`)
+* `<WALLET FILENAME>`  The _filename_ of your [operator software wallet](../tbtc-v2-node-setup/operator-account.md)
+* `<OPERATOR ADDRESS>`  The dedicated ethereum address to be used by the TACo node
 
 Follow the in-terminal prompts. You will see a public key for your TACo node and be assigned a mnemonic phrase.
 
 {% hint style="danger" %}
-The TACo mnemonic is a secret -- do not share it with anyone.  Secure your node's secret mnemonic off-site.  Loss of the mnemonic means you will be unable to recover your node's network keys and will be unable to perform duties resulting in rewards disruption.
+The TACo mnemonic is a secret -- do not share it with anyone. &#x20;
+
+Secure your node's secret mnemonic off-site.  Loss of the mnemonic means you will be unable to recover your node's network keys and will be unable to perform duties resulting in rewards disruption.
 {% endhint %}
 
 ## 5. Launch
@@ -133,8 +132,8 @@ Run the following command to launch the node:&#x20;
 docker run -d                     \
 --name ursula                     \
 --restart unless-stopped          \
--v ~/.local/share/nucypher:/root/.local/share/nucypher \
--v ~/.ethereum/:/root/.ethereum   \
+-v ~/.local/share/nucypher:/root/.local/share/nucypher:rw \
+-v ~/.ethereum/:/root/.ethereum:ro   \
 -p 9151:9151                      \
 --env-file nucypher.env           \
 nucypher/nucypher:latest          \
@@ -197,9 +196,14 @@ You can optionally configure your server to automatically update any running doc
 ```bash
 docker run --detach \
 --name watchtower   \
+--restart unless-stopped \
 --volume /var/run/docker.sock:/var/run/docker.sock \
-containrrr/watchtower
+containrrr/watchtower ursula
 ```
+
+{% hint style="info" %}
+This command assumes the name of your node docker container is `ursula`
+{% endhint %}
 
 For more information see the official watchtower documentation here:
 
