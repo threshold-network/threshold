@@ -9,13 +9,13 @@ import { conditions } from '@nucypher/taco';
 const ownsNFT = new conditions.predefined.ERC721Ownership({
   contractAddress: '0x1e988ba4692e52Bc50b375bcC8585b95c48AaD77',
   parameters: [3591], // Id of a specific NFT
-  chain: 5,
+  chain: 1,
 });
 
 // The decrypter must own at least two of NFT from this series
 const hasAtLeastTwoNFTs = new conditions.predefined.ERC721Balance({
   contractAddress: '0x1e988ba4692e52Bc50b375bcC8585b95c48AaD77',
-  chain: 5,
+  chain: 1,
   returnValueTest: {
     comparator: '>=',
     value: 2
@@ -35,7 +35,7 @@ const ownsNFTRaw = new conditions.base.ContractCondition({
   standardContractType: 'ERC721',
   // Values that we always have to provide
   contractAddress: '0x1e988ba4692e52Bc50b375bcC8585b95c48AaD77',
-  chain: 5,
+  chain: 1,
   returnValueTest: {
     comparator: '>',
     value: 0,
