@@ -18,11 +18,11 @@ Please be aware that running a node is not an easy task which requires technical
 
 * Running a TACo node requires maintenance and comes with certain constraints. Please review the [duties](../taco-node-setup/duties-and-compensation.md) expected of a node operator, and make sure you are comfortable with the minimum deauthorization delay of 6 months.&#x20;
 * Your operator account will need to be funded with >= 15 MATIC to connect to the Threshold network. You can do this after setting up the node.
-* Once TACo is running smoothly on your machine or VPS, the [next step](../taco-node-setup/taco-authorization-and-operator-registration.md) is to authorize your stake to the TACo app and bond the node to that provider address.
+* Once TACo is running smoothly on your machine or VPS, the [next step](../taco-node-setup/taco-authorization-and-operator-registration/) is to authorize your stake to the TACo app and bond the node to that provider address.
 
 ## Technical Overview
 
-The overall technical procedure for running a TACo Node is as follows (excluding [dashboard steps](../taco-node-setup/taco-authorization-and-operator-registration.md)):\
+The overall technical procedure for running a TACo Node is as follows (excluding [dashboard steps](../taco-node-setup/taco-authorization-and-operator-registration/)):\
 \
 1\. [Get Docker Image](run-a-taco-node-with-docker.md#1.-get-docker-image)\
 2\. [Create an Ethereum wallet to be used by the node ("operator")](run-a-taco-node-with-docker.md#2.-create-operator-ethereum-wallet)\
@@ -42,7 +42,7 @@ docker pull nucypher/nucypher:latest
 
 ## 2. Create Operator Ethereum Wallet
 
-The "Operator" is a dedicated ethereum wallet address to be used by the TACo node. You will [map (aka "bond")](../taco-node-setup/taco-authorization-and-operator-registration.md#operator-account-registration) this address to a staking provider on the threshold dashboard later.   This wallet must be in geth-compatible JSON format ([Web3 Secret Storage Format](https://github.com/ethereum/wiki/wiki/Web3-Secret-Storage-Definition)) and can be generated with a variety of publicly available tools like [go-ethereum](https://geth.ethereum.org/) ("geth") or [MyCryptoWallet](https://mycrypto.com/).
+The "Operator" is a dedicated ethereum wallet address to be used by the TACo node. You will [map (aka "bond")](../taco-node-setup/taco-authorization-and-operator-registration/#operator-account-registration) this address to a staking provider on the threshold dashboard later.   This wallet must be in geth-compatible JSON format ([Web3 Secret Storage Format](https://github.com/ethereum/wiki/wiki/Web3-Secret-Storage-Definition)) and can be generated with a variety of publicly available tools like [go-ethereum](https://geth.ethereum.org/) ("geth") or [MyCryptoWallet](https://mycrypto.com/).
 
 In this guide you will create an ethereum software wallet using geth.   Here are the geth installation [instructions](https://geth.ethereum.org/docs/getting-started/installing-geth). Note that installing Geth on an Ubuntu server can generate errors with newer versions. To avoid this, choose a long term support version – e.g. Ubuntu 20.04 (LTS).
 

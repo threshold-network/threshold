@@ -35,27 +35,3 @@ Following a set of competing proposals and votes, the DAO will choose a fee dist
 TACo node operators will earn **3.75%** APY from launch. This yield is maintained, irrespective of the fluctuations to the staking rate, by the [Stable Yield](https://forum.threshold.network/t/tip-003-threshold-network-reward-mechanisms-proposal-i-stable-yield-for-non-institutional-staker-welfare/82) mechanism. \`
 
 Please note that once TACo launches, stakers will not earn any yield if they only run a Proxy Re-Encryption node. PRE is being folded into the TACo application. &#x20;
-
-### **Bonus**
-
-To incentivize longer commitments at genesis, stakers can choose extended token lock-up periods and receive a corresponding bonus: \
-\
-**9 months** total (deauth delay + 3 month extension): **0.5%** extra yield\*&#x20;
-
-**12 months** total (deauth delay + 6 months): **1%** extra yield\*&#x20;
-
-**18 months** total (deauth delay + 12 months): **2%** extra yield\*&#x20;
-
-**24 months** total (deauth delay + 18 months): **3%** extra yield\*
-
-Note that the bonus is a _one-off_ incentive mechanism – stakers will commit to a single token lock-up duration prior to TACo's launch, and post-launch this commitment will **not be editable**. The opportunity to earn a bonus will also not be available post-launch. A more robust mechanism to incentivize longer commitments may be introduced in later versions – i.e. where stakers can freely and arbitrarily prolong their lock-up durations to earn extra yield.&#x20;
-
-{% hint style="warning" %}
-Post-launch, top-ups to one's stake will not count towards the bonus sum, **but will be subject to the same unlock horizon**. In other words, you cannot create multiple sub-stakes.&#x20;
-{% endhint %}
-
-Stakers may only start the clock on the deauthorization delay once the one-off bonus lock-up extension period has elapsed.&#x20;
-
-The bonus will likely be withdrawable immediately – i.e. stakers will not have to wait for their stake to unlock.&#x20;
-
-\*These bonus figures are provisional must be validated by the Threshold DAO prior to launch.&#x20;
