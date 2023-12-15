@@ -1,58 +1,57 @@
 ---
-description: Instructions for setting up a TACo node on a server.
+description: Instructions for setting up a TACo node on a VPS or local machine
 ---
 
 # Run a TACo Node with Docker
 
 {% hint style="warning" %}
-Attention PRE Node Operators:\
-\
-It is strongly recommended not to use the same server for both PRE and TACo Node functions. This practice can lead to unnecessary complexity and a departure from the standard operating procedures outlined in our documentation.
+**For PRE node operators** – it is highly recommended to spin up a new instance for your TACo node. Setting up on the same machine as your PRE node can lead to unnecessary complexity and divergence from the standard instructions and operating procedures outlined here.
 {% endhint %}
 
 ## Before you begin&#x20;
 
-{% hint style="info" %}
-Please be aware that running a node is not an easy task which requires technical skill and commitment to maintaining node uptime and availability.
-{% endhint %}
-
 * Running a TACo node requires maintenance and comes with certain constraints. Please review the [duties](../taco-node-setup/duties-and-compensation.md) expected of a node operator, and make sure you are comfortable with the minimum deauthorization delay of 6 months.&#x20;
-* Your operator account will need to be funded with >= 15 MATIC to connect to the Threshold network. You can do this after setting up the node.
-* Once TACo is running smoothly on your machine or VPS, the [next step](../taco-node-setup/taco-authorization-and-operator-registration/) is to authorize your stake to the TACo app and bond the node to that provider address.
+* Please review the system [requirements](../taco-node-setup/minimum-system-requirements.md) for provisioning the TACo service.
+* Your operator account will need to be funded with at least 15 MATIC to connect to the Threshold network. You should transfer these funds after getting the node running.&#x20;
+* Once TACo is running smoothly on your machine or VPS, the [next step](../taco-node-setup/taco-authorization-and-operator-registration/) is to authorize your stake to the TACo app and register/bond the node to that provider address.
 
 ## Technical Overview
 
-The overall technical procedure for running a TACo Node is as follows (excluding [dashboard steps](../taco-node-setup/taco-authorization-and-operator-registration/)):\
+The overall procedure for setting up a TACo Node is as follows: \
 \
 1\. [Get Docker Image](run-a-taco-node-with-docker.md#1.-get-docker-image)\
-2\. [Create an Ethereum wallet to be used by the node ("operator")](run-a-taco-node-with-docker.md#2.-create-operator-ethereum-wallet)\
-3\. [Set passwords](run-a-taco-node-with-docker.md#3.-set-passwords)\
-4\. [Initialize the node](run-a-taco-node-with-docker.md#4.-initialize)\
-5\. [Launch the node](run-a-taco-node-with-docker.md#5.-launch)
+2\. [Create Operator Ethereum Wallet](run-a-taco-node-with-docker.md#2.-create-operator-ethereum-wallet)\
+3\. [Set Passwords](run-a-taco-node-with-docker.md#3.-set-passwords)\
+4\. [Initialize ](run-a-taco-node-with-docker.md#4.-initialize)[the Node](run-a-taco-node-with-docker.md#4.-initialize-the-node)\
+5\. [Launch the ](run-a-taco-node-with-docker.md#5.-launch)[Node](run-a-taco-node-with-docker.md#5.-launch-the-node)
+
+This excludes [registration and authorization](../taco-node-setup/taco-authorization-and-operator-registration/), which you should attempt once completing the steps on this page.
 
 ## 1. Get Docker Image&#x20;
 
-In case your server does not already have docker installed, follow the official docker installation [instructions](https://docs.docker.com/engine/install/ubuntu/). &#x20;
+If Docker is not already installed on your server, follow the official Docker installation [instructions](https://docs.docker.com/engine/install/ubuntu/). If you are using a DigitalOcean VPS, you may find these [instructions](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04) helpful.
 
-Pull the latest Docker image from NuCypher's primary repo (NuCypher is a contributing team to the Threshold Network & the primary developers of TACo):&#x20;
+Pull the latest Docker image from NuCypher's primary repo:
 
 ```bash
 docker pull nucypher/nucypher:latest
 ```
 
+Note that NuCypher is a contributing team to the Threshold Network and the primary developers of the TACo application.&#x20;
+
 ## 2. Create Operator Ethereum Wallet
 
-The "Operator" is a dedicated ethereum wallet address to be used by the TACo node. You will [map (aka "bond")](../taco-node-setup/taco-authorization-and-operator-registration/#operator-account-registration) this address to a staking provider on the threshold dashboard later.   This wallet must be in geth-compatible JSON format ([Web3 Secret Storage Format](https://github.com/ethereum/wiki/wiki/Web3-Secret-Storage-Definition)) and can be generated with a variety of publicly available tools like [go-ethereum](https://geth.ethereum.org/) ("geth") or [MyCryptoWallet](https://mycrypto.com/).
+The _operator_ is a dedicated Ethereum wallet address that will be used to identify your TACo node. You will map this address to a staking provider on the threshold dashboard later. This mapping step is also referred to as 'bonding' and  'registering'.  This wallet must be in Geth-compatible JSON format ([Web3 Secret Storage Format](https://github.com/ethereum/wiki/wiki/Web3-Secret-Storage-Definition)) and can be generated with a variety of publicly available tools like [go-ethereum](https://geth.ethereum.org/) ("geth") or [MyCryptoWallet](https://mycrypto.com/).
 
-In this guide you will create an ethereum software wallet using geth.   Here are the geth installation [instructions](https://geth.ethereum.org/docs/getting-started/installing-geth). Note that installing Geth on an Ubuntu server can generate errors with newer versions. To avoid this, choose a long term support version – e.g. Ubuntu 20.04 (LTS).
+In this step you will create an ethereum software wallet using Geth, following these installation [instructions](https://geth.ethereum.org/docs/getting-started/installing-geth). Note that installing Geth on an Ubuntu server can generate errors with newer versions. To avoid this, choose a long term support version – e.g. Ubuntu 20.04 (LTS).
 
-To create a new ethereum wallet using geth run:
+Once Geth is installed, create a new ethereum wallet:
 
 ```bash
 geth account new
 ```
 
-successful output looks like this:
+A successful output should look like this:
 
 ```bash
 $ geth account new
@@ -69,28 +68,28 @@ Path of the secret key file: /home/user/.ethereum/keystore/UTC--2023-12-08T18-58
 ```
 
 {% hint style="info" %}
-Take note of your new operator address and secret key file, you will need them in the next steps.
+Take note of your new operator address and secret key file path, as you will need them in the next steps.
 {% endhint %}
 
 {% hint style="danger" %}
-Secure your password and operator secret key file off-site. Loss of your operator wallet or password may result in disruptions to rewards and necessitate manual intervention.
+Secure and back-up your password and operator secret key file off-site. Loss of your operator wallet or password may result in service disruption, loss of rewards, and/or manual intervention.
 {% endhint %}
 
 ## 3. Set Passwords
 
-There are two passwords associated with a TACo node: a "_nucypher keystore password_" and an "_operator password_".
+There are two passwords associated with a TACo node:
 
 * _nucypher keystore password_ - This password is used to encrypt your network participation keys.  You can create this password now.
-* _operator password_ - This is the password used to unlock you operator ethereum wallet.  Use the same password you used when you created your wallet.
+* _operator password_ - This password will be used to unlock you operator ethereum wallet.  Enter the same password you used when you created your (geth) wallet.
 
-Create a plain text file named `nucypher.env` containing the following variables (replace <...> with your passwords):
+Create a plain text file named `nucypher.env` containing the following variables. Replace <...> with your passwords.&#x20;
 
 ```bash
 NUCYPHER_KEYSTORE_PASSWORD=<YOUR NUCYPHER KEYSTORE PASSWORD>
 NUCYPHER_OPERATOR_ETH_PASSWORD=<YOUR OPERATOR ETH ACCOUNT PASSWORD>
 ```
 
-## 4. Initialize
+## 4. Initialize the Node
 
 TACo nodes must be initialized before launching. This is an interactive one-time step that will create network participation keys and an initial JSON configuration file:&#x20;
 
@@ -119,12 +118,12 @@ Replace the following values with your own:
 Follow the in-terminal prompts. You will see a public key for your TACo node and be assigned a mnemonic phrase.
 
 {% hint style="danger" %}
-The TACo mnemonic is a secret -- do not share it with anyone. &#x20;
+The TACo mnemonic is a secret. Do not share it with anyone. &#x20;
 
-Secure your node's secret mnemonic off-site.  Loss of the mnemonic means you will be unable to recover your node's network keys and will be unable to perform duties resulting in rewards disruption.
+Carefully secure and back-up your node's secret mnemonic off-site. Loss of the mnemonic means you will be unable to recover your node's network keys, meaning your node will be unable to provide the TACo service. This will result in a loss of compensation.&#x20;
 {% endhint %}
 
-## 5. Launch
+## 5. Launch the Node
 
 Run the following command to launch the node:&#x20;
 
@@ -151,8 +150,8 @@ $ docker run -d --name ursula ...
 
 When your node starts up, it will connect to Polygon and Ethereum mainnet to determine if the two qualification criteria are satisfied:&#x20;
 
-1\. Operator account is funded with MATIC (\~30 MATIC is recommended)\
-2\. Operator account is bonded (aka "mapped") to a staking provider.
+1\. Operator account is funded with MATIC, At least 15 MATIC is recommended. \
+2\. Operator account is mapped/bonded to a staking provider.
 
 {% hint style="info" %}
 Operator bonding must be performed on the Threshold Staking dashboard.  Once complete there is a \~20 minute waiting period for your node's status to be automatically bridged to Polygon.   \
@@ -169,7 +168,7 @@ Verify your node is running correctly by viewing the logs:
 docker logs -f ursula
 ```
 
-Here is an example of the expected output for a node that is funded with MATIC and correctly bonded to an operator on the threshold dashboard:
+The following is an example of the expected output for a TACo node that is both funded with MATIC and correctly bonded to an operator on the threshold dashboard.
 
 ```bash
 ...
@@ -205,7 +204,7 @@ containrrr/watchtower ursula
 This command assumes the name of your node docker container is `ursula`
 {% endhint %}
 
-For more information see the official watchtower documentation here:
+For more information check out the official Watchtower [documentation](https://containrrr.dev/watchtower/).&#x20;
 
-&#x20;[https://containrrr.dev/watchtower/](https://containrrr.dev/watchtower/)
+
 
