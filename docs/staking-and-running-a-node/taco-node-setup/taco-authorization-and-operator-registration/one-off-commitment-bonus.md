@@ -33,5 +33,6 @@ Note that the bonus is a _one-off_ incentive mechanism. Stakers cannot change th
 The bonus will be withdrawable on February 1st – i.e. stakers will not have to wait for their stake to unlock.&#x20;
 
 {% hint style="warning" %}
-After the bonus deadline of January 15th 2023, top-ups to one’s stake will not count towards increasing the bonus sum (this will have already been calculated and minted), but **top-ups will be subject to the same unlock horizon**. In other words, you cannot create multiple stake tranches that unlock at different times. Please choose your bonus extension duration very carefully.&#x20;
+After the bonus deadline of January 15th 2024, top-ups to one’s stake will not count towards increasing the bonus sum (this will have already been calculated and minted), but **top-ups will be subject to the same unlock horizon**. In other words, you cannot create multiple stake tranches that unlock at different times. Please choose your bonus extension duration very carefully.&#x20;
 {% endhint %}
+
