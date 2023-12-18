@@ -54,3 +54,7 @@ Scroll down to the `TACO` section.
 
 Enter your operator address, click `Map Address`, and confirm the transaction.
 
+{% hint style="info" %}
+Once the map operator address transaction executes on Ethereum Mainnet, it can take \~25 minutes to sync to Polygon Mainnet, which TACo nodes check on startup. The TACo node will wait for this sync to occur before starting up.
+{% endhint %}
+
