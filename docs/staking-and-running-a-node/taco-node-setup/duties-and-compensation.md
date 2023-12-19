@@ -5,7 +5,7 @@
 Running a TACo node is not a passive activity, but the on-going responsibilities for stakers are very manageable. To supply a high quality service and sustain the utility of the Threshold Network, TACo node operators must:&#x20;
 
 * Keep the server/machine running TACo online and accessible at all times; such that incoming decryption requests are verified and answered immediately, and there is no delay in reaching a threshold and supplying decryption material to qualifying data recipients.&#x20;
-* Ensure their machine is running the latest version of TACo. New version releases will be shared on the Threshold Discord [#announcements](https://discord.com/channels/866378471868727316/870384195636199455) channel – make sure you have notifications enabled. Installing software upgrades is straightforward using [nucypher-ops](broken-reference).
+* Ensure their machine is running the latest version of TACo. New version releases will be shared on the Threshold Discord [#announcements](https://discord.com/channels/866378471868727316/870384195636199455) channel – make sure you have notifications enabled.&#x20;
 
 ### **Deauthorization Delay**&#x20;
 
@@ -32,6 +32,6 @@ Following a set of competing proposals and votes, the DAO will choose a fee dist
 
 ### **Rewards**&#x20;
 
-TACo node operators will earn **3.75%** APY from launch. This yield is maintained, irrespective of the fluctuations to the staking rate, by the [Stable Yield](https://forum.threshold.network/t/tip-003-threshold-network-reward-mechanisms-proposal-i-stable-yield-for-non-institutional-staker-welfare/82) mechanism. \`
+TACo node operators earn **3.75%** APY as soon as they authorize to the TACo application. This yield is maintained, irrespective of the fluctuations to the staking rate, by the [Stable Yield](https://forum.threshold.network/t/tip-003-threshold-network-reward-mechanisms-proposal-i-stable-yield-for-non-institutional-staker-welfare/82) mechanism. \`
 
-Please note that once TACo launches, stakers will not earn any yield if they only run a Proxy Re-Encryption node. PRE is being folded into the TACo application. &#x20;
+Please note that from January 1st 2024, stakers will not earn any yield if they only run a Proxy Re-Encryption node. Rewards will only be distributed to stakers who have authorized to TACo. PRE capabilities will be folded into the TACo application in a later update.
