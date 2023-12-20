@@ -2,10 +2,6 @@
 
 ## BeaconDkgValidator
 
-{% hint style="warning" %}
-This file documents a contract which is not yet deployed to Mainnet.
-{% endhint %}
-
 DKGValidator allows performing a full validation of DKG result,
 including checking the format of fields in the result, declared
 selected group members, and signatures of operators supporting the

@@ -2,10 +2,6 @@
 
 ## IRandomBeaconConsumer
 
-{% hint style="warning" %}
-This file documents a contract which is not yet deployed to Mainnet.
-{% endhint %}
-
 ### __beaconCallback
 
 ```solidity

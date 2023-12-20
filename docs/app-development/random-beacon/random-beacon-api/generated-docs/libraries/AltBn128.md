@@ -2,10 +2,6 @@
 
 ## AltBn128
 
-{% hint style="warning" %}
-This file documents a contract which is not yet deployed to Mainnet.
-{% endhint %}
-
 Implementations of common elliptic curve operations on Ethereum's
 (poorly named) alt_bn128 curve. Whenever possible, use post-Byzantium
 pre-compiled contracts to offset gas costs. Note that these
