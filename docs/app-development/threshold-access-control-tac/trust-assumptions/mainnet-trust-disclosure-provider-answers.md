@@ -31,7 +31,7 @@ Correct operator behavior is economically incentivized in the following ways:&#x
 
 Stakers are recruited through the Threshold community, which primarily lives on the Threshold Discord server. There are also special events held like the Staker Townhall, which are an opportunity for both sides of the TACo market – adopters and stakers – to hear from one another. \
 \
-Stakers are mobilized to install the first or latest versions of the node client through announcements in the Threshold Discord server, and can check their node is active and running using the [Threshold Dashboard](https://dashboard.threshold.network/overview/network). They can update using a simple command via the [nucypher-ops](https://docs.threshold.network/staking-and-running-a-node/running-a-node/self-managed/taco-node-setup/installation/cloud-setup-nucypher-ops#update-taco-node) package.
+Stakers are mobilized to install the first or latest versions of the node client through announcements in the Threshold Discord server, and can check their node is active and running using the [Threshold Dashboard](https://dashboard.threshold.network/overview/network).
 
 TACo software automates much of the coordination burden for stakers. The node-facing client connects to the network, joins cohorts, runs a DKG initialization (and refresh) rituals, holds decryption fragments, receives requests for decryption, checks condition fulfillment, and provisions decryption material – all without any intervention from the staker. However, they (and the public) are privy to all the [code](https://github.com/nucypher/nucypher) that performs these automations, and can check their client code for any unexpected behavior.&#x20;
 
