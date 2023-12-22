@@ -12,7 +12,7 @@ description: Instructions for setting up a TACo node on a VPS or local machine
 
 * Running a TACo node requires maintenance and comes with certain constraints. Please review the [duties](../taco-node-setup/duties-and-compensation.md) expected of a node operator, and make sure you are comfortable with the minimum deauthorization delay of 6 months.&#x20;
 * Please review the system [requirements](../taco-node-setup/minimum-system-requirements.md) for provisioning the TACo service.
-* Your operator account will need to be funded with at least 15 MATIC to connect to the Threshold network. You should transfer these funds after getting the node running.&#x20;
+* Your operator account will need to be funded with at least 15 MATIC (Polygon POS) to connect to the Threshold network. You should transfer these funds after getting the node running.&#x20;
 * Once TACo is running smoothly on your machine or VPS, the [next step](../taco-node-setup/taco-authorization-and-operator-registration/) is to authorize your stake to the TACo app and register/bond the node to that provider address.
 
 ## Technical Overview
@@ -150,7 +150,7 @@ $ docker run -d --name ursula ...
 
 When your node starts up, it will connect to Polygon and Ethereum mainnet to determine if the two qualification criteria are satisfied:&#x20;
 
-1\. Operator account is funded with MATIC, At least 15 MATIC is recommended. \
+1\. Operator account is funded with MATIC (Polygon POS); at least 15 MATIC is recommended. \
 2\. Operator account is mapped/bonded to a staking provider.
 
 {% hint style="info" %}
@@ -168,7 +168,8 @@ Verify your node is running correctly by viewing the logs:
 docker logs -f ursula
 ```
 
-The following is an example of the expected output for a TACo node that is both funded with MATIC and correctly bonded to an operator on the threshold dashboard.
+The following is an example of the expected output for a TACo node that is both funded with\
+MATIC and correctly bonded to an operator on the threshold dashboard.
 
 ```bash
 ...
