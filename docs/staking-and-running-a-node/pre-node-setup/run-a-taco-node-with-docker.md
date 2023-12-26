@@ -112,7 +112,7 @@ Replace the following values with your own:
 
 * `<ETH ENDPOINT URI>`  The URI of an ethereum JSON-RPC endpoint (e.g. `https://infura.io/…`)
 * `<POLYGON ENDPOINT URI>` The URI of a polygon JSON-RPC endpoint  (e.g.. `https://infura.io/...`)
-* `<WALLET FILENAME>`  The _filename_ of your [operator software wallet](../tbtc-v2-node-setup/operator-account.md)
+* `<WALLET FILENAME>`  The _filename_ of your [operator software wallet](run-a-taco-node-with-docker.md#2.-create-operator-ethereum-wallet)
 * `<OPERATOR ADDRESS>`  The dedicated ethereum address to be used by the TACo node
 
 Follow the in-terminal prompts. You will see a public key for your TACo node and be assigned a mnemonic phrase.
