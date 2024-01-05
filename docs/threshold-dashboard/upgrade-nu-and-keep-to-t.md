@@ -11,6 +11,6 @@ As a result, the token factors are:
 
 Token upgrades can be performed via the [Threshold Dashboard](https://dashboard.threshold.network/upgrade) which interfaces directly with the Vending Machine smart contracts.
 
-![NU->T Upgrade](<../.gitbook/assets/NU\_to\_T\_Upgrade (1).png>)
+![NU->T Upgrade](../.gitbook/assets/NU\_to\_T\_Upgrade.png)
 
 ![Keep->T Upgrade](../.gitbook/assets/KEEP\_to\_T\_Upgrade.png)

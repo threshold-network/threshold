@@ -46,7 +46,7 @@ If you have questions about terminology, you can toggle over to the **How it Wor
 
 3. Enter a Bitcoin wallet address as the BTC Recovery Address. Click **Generate Deposit Address** to create your unique deposit address.
 
-<figure><img src="../.gitbook/assets/Step 1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Step 1.png" alt=""><figcaption></figcaption></figure>
 
 4. Make sure to download the JSON file by clicking **Download**. The JSON file contains a wallet public key, a refund public key, and a refund lock time. You need to keep this JSON file until you receive your tBTC tokens.
 
@@ -57,7 +57,7 @@ If you have questions about terminology, you can toggle over to the **How it Wor
 1.  In your Bitcoin wallet, take a picture of the QR code of the generated Deposit Address in the tBTC dapp. It will look something like this:\
 
 
-    <figure><img src="../.gitbook/assets/Step 2 (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/Step 2 (2).png" alt=""><figcaption></figcaption></figure>
 2. Send your BTC deposit to this Deposit Address from your Bitcoin wallet. The minimum deposit is 0.01 BTC.
 3. Return to the tBTC dapp**.** After your funds are sent, the screen will automatically advance to Step 3**.**
 
@@ -91,7 +91,7 @@ If you have questions about terminology, you can toggle over to the **How it Wor
 
 5. Make sure to add the tBTC token address to your Ethereum wallet by clicking **token address**.&#x20;
 
-<figure><img src="../.gitbook/assets/token address (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/token address.png" alt=""><figcaption></figcaption></figure>
 
 ### Congrats — you minted! &#x20;
 

@@ -22,7 +22,7 @@ Both `DEV` and `TESTNET` domains are unsuitable for use in a production setting.
 Testnet domains have no trust minimization or stability guarantees, which makes them unfit and unsuitable for real-life usage scenarios.
 {% endhint %}
 
-Learn more about the testnet trust assumptions here [cbd-proof-of-concept-version.md](../trust-assumptions/cbd-proof-of-concept-version.md "mention")
+Learn more about the testnet trust assumptions here [cbd-proof-of-concept-version](../trust-assumptions/cbd-proof-of-concept-version/ "mention")
 
 ## Testnet Configuration
 

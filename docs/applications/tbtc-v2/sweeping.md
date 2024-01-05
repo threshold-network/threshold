@@ -24,15 +24,15 @@ The result is that all of the scattered deposits are "swept" into a single "pile
 
 Here's a deposit for [10.3 BTC](https://mempool.space/tx/a4dc393dc48a82d1bb2d5dc30437fdb83e61565c47274dbe1c064117541ea97d). That deposit is swept in transaction [0db1929c2fa41649264b95b9162bc7a12f43cb455a91bae7177667a53290d7e8](https://mempool.space/tx/0db1929c2fa41649264b95b9162bc7a12f43cb455a91bae7177667a53290d7e8) (along with many other deposits). That was one of three sweeps performed by that wallet (as of writing).
 
-![https://mempool.space/tx/1ddffd9e5d4c84b49c9f912bfc3b97d8f5aba0620e35ec6a50e7043c9141d373](<../../.gitbook/assets/image (4).png>)
+![https://mempool.space/tx/1ddffd9e5d4c84b49c9f912bfc3b97d8f5aba0620e35ec6a50e7043c9141d373](<../../.gitbook/assets/image (8).png>)
 
 That transaction created a UTXO worth 1.51614471 BTC. The next transaction
 
-![https://mempool.space/tx/40240aaa602f534ae7e1654546e7ee5f49a32d6d64215d90acbb9a720f63098e](<../../.gitbook/assets/image (5).png>)
+![https://mempool.space/tx/40240aaa602f534ae7e1654546e7ee5f49a32d6d64215d90acbb9a720f63098e](<../../.gitbook/assets/image (9).png>)
 
 Used the old UTXO (the first input) as well as all of the recent deposits to create a new UTXO (the output on the right) worth 15.42475511 BTC. The final transaction
 
-![https://mempool.space/tx/0db1929c2fa41649264b95b9162bc7a12f43cb455a91bae7177667a53290d7e8](<../../.gitbook/assets/image (6).png>)
+![https://mempool.space/tx/0db1929c2fa41649264b95b9162bc7a12f43cb455a91bae7177667a53290d7e8](<../../.gitbook/assets/image (10).png>)
 
 Follows the same pattern. It uses the old UTXO (the first input) as well as the recent deposits to create a new UTXO worth ‎59.52818486 BTC.
 

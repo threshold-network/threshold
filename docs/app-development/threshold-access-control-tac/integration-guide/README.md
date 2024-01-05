@@ -5,7 +5,7 @@ This guide provides an overview of `@nucypher/taco`. In this guide, we will walk
 Note that the underlying [trust assumptions](../trust-assumptions/) vary between versions and technologies; these are explained in detail on these pages:
 
 * [cbd-mainnet-version.md](../trust-assumptions/cbd-mainnet-version.md "mention")
-* [cbd-proof-of-concept-version.md](../trust-assumptions/cbd-proof-of-concept-version.md "mention")
+* [cbd-proof-of-concept-version](../trust-assumptions/cbd-proof-of-concept-version/ "mention")
 
 ## 1. Install and integrate `taco`
 

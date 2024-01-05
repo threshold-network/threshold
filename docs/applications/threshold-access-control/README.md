@@ -1,4 +1,4 @@
-# TACo Access Control
+# TACo - Threshold Access Control
 
 **TACo** (**T**hreshold **A**ccess **Co**ntrol) enables end-to-end encrypted data sharing and communication. There is no requirement to trust a centralized authority or entity, who might unilaterally deny service or even (surreptitiously) decrypt private end-user data.&#x20;
 
@@ -10,7 +10,7 @@ All third-party services – digital, Web3 and beyond – impose a trust burden 
 
 To get started building on TACo Testnet, head to the [Quickstart](../../app-development/tbtc-v2/tbtc-sdk/quickstart.md) or [Testnet Integration ](../../app-development/threshold-access-control-tac/integration-guide/get-started-with-tac.md)page.
 
-To understand why TACo is useful to your Web3 app, check out the simple [overview](../../fundamentals/threshold-access-control/conditions-based-decryption-cbd.md), the high-level [value propositions](value-propositions.md), or watch this [presentation](https://www.youtube.com/watch?v=3kNXuNbWSO0).&#x20;
+To understand why TACo is useful to your Web3 app, check out the simple [overview](conditions-based-decryption-cbd.md), the high-level [value propositions](value-propositions.md), or watch this [presentation](https://www.youtube.com/watch?v=3kNXuNbWSO0).&#x20;
 
 {% hint style="info" %}
 TACo Mainnet is scheduled for release in November 2023, as an invite-only beta. To learn more about the beta program, check out the [Mainnet Integration](../../app-development/threshold-access-control-tac/integration-guide/mainnet-beta-program.md) page.&#x20;
