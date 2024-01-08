@@ -90,7 +90,7 @@
     * [RpcCondition](app-development/threshold-access-control-tac/conditions/rpccondition.md)
     * [ContractCondition](app-development/threshold-access-control-tac/conditions/contractcondition.md)
     * [CompoundCondition](app-development/threshold-access-control-tac/conditions/condition-set.md)
-    * [Condition Context and Context Variables](app-development/threshold-access-control-tac/conditions/condition-context-and-context-variables.md)
+    * [Condition Context and Context Variables](app-development/threshold-access-control-tac/conditions/context-and-context-parameters.md)
     * [Condition Examples](app-development/threshold-access-control-tac/conditions/conditions/README.md)
       * [Gatekeeping access with an NFT](app-development/threshold-access-control-tac/conditions/conditions/gatekeeping-access-with-an-nft.md)
       * [Gatekeeping access with an RPC condition](app-development/threshold-access-control-tac/conditions/conditions/gatekeeping-access-with-an-rpc-condition.md)

@@ -12,6 +12,6 @@ Each access condition defines a `returnValueTest` used to compare the obtained v
 
 Access conditions can also be combined via a `CompoundCondition` which provides the `or`, `and` , `not` logical operators.
 
-[Context variables](condition-context-and-context-variables.md) provide the ability for placeholder values to be defined for conditions at encryption time, which will be dynamically populated at decryption time e.g. current user wallet address.
+[Context variables](context-and-context-parameters.md) provide the ability for placeholder values to be defined for conditions at encryption time, which will be dynamically populated at decryption time e.g. current user wallet address.
 
 Many helper objects are provided to streamline the creation of conditions. An expressive API allows much more granular control of conditions and examples of both methods wherever possible.

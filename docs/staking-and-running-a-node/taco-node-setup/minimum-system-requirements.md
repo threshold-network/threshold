@@ -1,6 +1,6 @@
 # Minimum System Requirements
 
-TACo nodes are very light and can be run inexpensively, on a remote instance or local machine. Specs similar to (or greater) than the following will suffice: &#x20;
+TACo nodes are very light and can be run inexpensively on a remote instance or local machine. Specs similar to (or greater) than the following will suffice: &#x20;
 
 * **Debian** or **Ubuntu** (recommended distributions)
 * **20GB** storage
@@ -11,4 +11,4 @@ TACo nodes are very light and can be run inexpensively, on a remote instance or 
 
 TACo can be run on cloud infrastructure. For example, a Digital Ocean [4GB Basic Droplet](https://www.digitalocean.com/pricing/droplets) satisfies the requirements listed above.
 
-Additionally, the _operator_ account (i.e. not the provider) will need to be funded with at least **15 MATIC** (Polygon POS) to connect to the Threshold network and participate in DKG initialization rituals during the invite-only beta. You should transfer these funds after getting the node running. DKG ritual costs will likely be reimbursed to stakers in later versions.&#x20;
+Additionally, the _operator_ account (i.e. not the provider) will need to be funded with at least **15 MATIC** (Polygon POS) to connect to the Threshold Network and participate in DKG initialization rituals during the invite-only beta. You should transfer these funds after getting the node running. DKG ritual costs will likely be reimbursed to stakers in later versions.&#x20;
