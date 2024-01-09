@@ -1,6 +1,6 @@
 # One-off Commitment Bonus
 
-To incentivize longer staking commitments at genesis, stakers can choose extended token lock-up periods and receive a commensurate bonus. This deadline to commit to a token lock-up extension is January 15th, 2024 (UTC 00:00).&#x20;
+To incentivize longer staking commitments at genesis, stakers can choose extended token lock-up periods and receive a commensurate bonus. This deadline to commit to a token lock-up extension is January 15th, 2024 (UTC 23:59:59).&#x20;
 
 {% hint style="danger" %}
 Note that once you commit to a token lock-up extension, you cannot go back and edit it, even before the Jan 15th deadline has passed.&#x20;
