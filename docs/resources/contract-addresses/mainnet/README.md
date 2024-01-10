@@ -4,6 +4,6 @@ Mainnet contract addresses for Threshold governance and applications can be foun
 
 * [Threshold DAO](threshold-dao.md)
 * [tBTC](tbtc.md)
+* [TACo](taco.md)
 * [thUSD](thusd.md)
-* [PRE](pre.md)
 * [Legacy](legacy.md)
