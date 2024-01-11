@@ -2,7 +2,7 @@
 
 ## Testnet domains
 
-In order to run `taco` on testnet, we need to configure it to use one of the two available domains:
+To run `taco` on testnet, we need to configure it to use one of the two available domains:
 
 ```typescript
 import { domains } from '@nucypher/taco';
@@ -26,9 +26,9 @@ Learn more about the testnet trust assumptions here [cbd-proof-of-concept-versio
 
 ## Testnet Configuration
 
-Each of the `domain` corresponds to a test network with contracts deployed on an L1&#x20;
+Each `domain` corresponds to a test network with contracts deployed on an L1&#x20;
 
-<table><thead><tr><th width="122">Domain</th><th width="143">Domain Name</th><th width="132">L1 (chain id)</th><th width="126">L2 (chain id)</th><th data-type="number">*Open ID</th><th>Expiration</th></tr></thead><tbody><tr><td>DEV</td><td>lynx</td><td>Goerli<br>(5)</td><td>Mumbai (80001)</td><td>0</td><td>Jan 16, 2024</td></tr><tr><td>TESTNET</td><td>tapir</td><td>Sepolia<br>(11155111)</td><td>Mumbai (80001)</td><td>5</td><td>Jan 27, 2024</td></tr></tbody></table>
+<table><thead><tr><th width="122">Domain</th><th width="143">Domain Name</th><th width="132">L1 (chain id)</th><th width="126">L2 (chain id)</th><th data-type="number">*Open ID</th><th>Expiration</th><th>Threshold configuration</th></tr></thead><tbody><tr><td>DEV</td><td>lynx</td><td>Sepolia<br>(11155111)</td><td>Mumbai (80001)</td><td>0</td><td>Jan 16, 2024</td><td>2-of-3</td></tr><tr><td>TESTNET</td><td>tapir</td><td>Sepolia<br>(11155111)</td><td>Mumbai (80001)</td><td>0</td><td>July 10, 2024</td><td>3-of-5</td></tr></tbody></table>
 
 `* Open id refers to rituals that have permisionless encryptor allowlists. See` [`encryptor allowlist`](../user-authentication/encryptor-allowlist.md) `section to learn more.`
 
