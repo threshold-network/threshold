@@ -8,17 +8,17 @@ The client requires an Ethereum Key File of an Operator Account to connect to th
 
 The Ethereum Key File is expected to be encrypted with a password. The password has to be provided in a prompt after the client starts or configured as a `KEEP_ETHEREUM_PASSWORD` environment variable.
 
-The Operator Account has to maintain a positive Ether balance at all times. We strongly advise you monitor the account and top-up when its balance gets below 0,5 Ether.
+The Operator Account has to maintain a positive Ether balance at all times. We strongly advise you monitor the account and top-up when its balance gets below 0.5 Ether.
 
 {% hint style="warning" %}
-Please do NOT reuse an operator account that is being used for PRE or other applications.&#x20;
+Please do NOT reuse an operator account that is being used for TACo or other applications.&#x20;
 {% endhint %}
 
 ### Install Geth (GoEthereum)
 
 To create a new Ethereum account, [install Geth](https://geth.ethereum.org/docs/getting-started/installing-geth) (GoEthereum) and create a new account using the command below. This account will subsequently be referred to as the Operator Account.
 
-<pre class="language-bash"><code class="lang-bash"><strong>geth account new --keystore ./operator-key
+<pre class="language-bash"><code class="lang-bash"><strong>geth account new --keystore /home/$USER/.operator-key
 </strong></code></pre>
 
 When prompted, provide a password to protect the operator key file.&#x20;

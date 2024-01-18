@@ -16,9 +16,82 @@ docker --version
 
 General best practices recommend against running the tBTC v2 client as the `root` user as a security precaution. One security-minded approach is to [Run the Docker daemon as a non-root user](https://docs.docker.com/engine/security/rootless/) (Rootless mode).&#x20;
 
-Next, choose ONE of the following options. The **tBTC v2 Service** option configures the client to run as a service in order to ensure that the client is restarted automatically, should your machine reboot. The **Docker Launch Script** is faster to setup, but won't start the client if your machine reboots.
+Next, choose ONE of the following options:\
+**Docker Compose** makes managing the container simple, but requires an additional step to ensure the container starts after a reboot.\
+The **tBTC v2 Service** option configures the client to run as a service in order to ensure that the client is restarted automatically, should your machine reboot.\
+The **Docker Launch Script** is faster to setup, but won't start the client if your machine reboots.
 
 {% tabs %}
+{% tab title="Docker Compose" %}
+Navigate to `cd /home/$USER/keep/`
+
+Create a file named `docker-compose.yaml`
+
+Copy the the template below into the file and replace the \<Placeholders> with respective details.
+
+```
+version: '3'
+services:
+  keep-client:
+    image: keepnetwork/keep-client:latest
+    container_name: keep-client
+    restart: on-failure
+    ports:
+      - "3919:3919"
+      - "9601:9601"
+    volumes:
+      - /home/$USER/keep/config/:/mnt/keep/config
+      - /home/$USER/keep/storage/:/mnt/keep/storage
+    environment:
+      - KEEP_ETHEREUM_PASSWORD=<Operator Account keyfile password>
+      - LOG_LEVEL=info
+    logging:
+      options:
+        max-size: "100m"
+        max-file: "3"
+    command: start --ethereum.url "<Ethereum API WS URL>"  --ethereum.keyFile "/mnt/keep/config/<Operator Account keyfile name>" --storage.dir "/mnt/keep/storage" --network.announcedAddresses "/<PUBLIC_IP_OF_MACHINE>/tcp/3919"
+```
+
+Save and close the file when finished.
+
+To start the tBTC client `sudo docker compose up`
+
+tBTC will start up with the console output on screen. Verify that the client is running correctly, then press `CTRL` + `c` to  stop the client.
+
+Restart the client with the 'detach' flag: `sudo docker compose up -d`
+
+To stop the container at a later time, use `sudo docker compose down`
+
+#### Starting Container Automatically After Reboot
+
+To ensure the tBTC container starts after a server reboot, use the template below to create a service in `/etc/systemd/system/` called `docker-compose-app.service`
+
+```
+# /etc/systemd/system/docker-compose-app.service
+
+[Unit]
+Description=Docker Compose Application Service
+Requires=docker.service
+After=docker.service
+StartLimitIntervalSec=60
+
+[Service]
+WorkingDirectory=/home/$USER/keep/
+ExecStart=/usr/local/bin/docker-compose up
+ExecStop=/usr/local/bin/docker-compose down
+TimeoutStartSec=0
+Restart=on-failure
+StartLimitBurst=3
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Adjust the `WorkingDirectory` to the path of your tBTC folder. Save and close the file when finished.
+
+use `sudo systemctl enable docker-compose-app` to enable the service.
+{% endtab %}
+
 {% tab title="Systemd Service" %}
 Create the tbtcv2.service file:
 
@@ -48,7 +121,7 @@ Environment="STORAGE_DIR=/home/&#x3C;user name>/keep/storage"
 #Environment="DOCKER_HOST=unix:///run/&#x3C;user name>/&#x3C;user UID>/docker.sock"
 
 Type=simple
-WorkingDirectory=/home/&#x3C;user>
+WorkingDirectory=/home/$USER
 
 ExecStart=/usr/bin/docker run \
     --volume ${CONFIG_DIR}:/mnt/keep/config \
@@ -190,11 +263,13 @@ The `--detach` property will prevent the status messages from the client to be p
 {% endtab %}
 {% endtabs %}
 
+
+
 {% hint style="danger" %}
 The path shown in the example configuration will differ from yours. Make sure it is configured correctly.
 {% endhint %}
 
-## Client Startup
+## Client Startup and Logs
 
 Unless the `--detach` flag was removed from the startup script, there will be no console output. In order to check your node, retrieve the Docker logs.
 
