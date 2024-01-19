@@ -86,6 +86,8 @@ struct Proof {
   bytes merkleProof;
   uint256 txIndexInBlock;
   bytes bitcoinHeaders;
+  bytes32 coinbasePreimage;
+  bytes coinbaseProof;
 }
 ```
 
