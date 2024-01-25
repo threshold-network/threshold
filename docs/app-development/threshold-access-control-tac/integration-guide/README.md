@@ -7,6 +7,23 @@ Note that the underlying [trust assumptions](../trust-assumptions/) vary between
 * [cbd-mainnet-version.md](../trust-assumptions/cbd-mainnet-version.md "mention")
 * [cbd-proof-of-concept-version](../trust-assumptions/cbd-proof-of-concept-version/ "mention")
 
+## 0. Pick an appropriate `taco` version
+
+Before we install `taco`, we need to consider which network we would like to use:
+
+* `lynx`- a bleeding edge `DEVNET`, compatible with `-alpha` releases
+* `tapir` - a stable `TESTNET`, for testing integrations, compatible with `-beta` releases
+* `mainnet` - a production `MAINNET` environment, compatible with regular releases
+
+Once you picked a network, head over to npmjs.com to find the current version [for a given network](https://www.npmjs.com/package/@nucypher/taco?activeTab=versions). To find the appriopriate network, refer to the "Tags" column in the "Current Tags" section:
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>"Current Tags" section of @nucypher/taco package, with their respective supported networks under the "Tag" column</p></figcaption></figure>
+
+You can learn more about the current state of `mainnet` and test networks here:
+
+* [mainnet-beta-program.md](mainnet-beta-program.md "mention")
+* [get-started-with-tac.md](get-started-with-tac.md "mention")
+
 ## 1. Install and integrate `taco`
 
 To begin, we need to install the `taco` library:

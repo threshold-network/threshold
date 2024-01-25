@@ -39,7 +39,7 @@ Stakers who delegate simply pay service fees to Staking Providers. Each Staking 
 
 As of Nov 18 2023, there are 149 tBTC nodes in Threshold Network. The number of nodes may change at any time. For the latest figure, please visit [https://status.threshold.network/](https://status.threshold.network/). &#x20;
 
-<figure><img src="../.gitbook/assets/image.png" alt="" width="375"><figcaption><p>As of Nov 18 2023, there are 149 staker nodes</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt="" width="375"><figcaption><p>As of Nov 18 2023, there are 149 staker nodes</p></figcaption></figure>
 
 Note that these nodes are on stand-by to join the Beta Stakers Program as the allow-list expands (see below), but the majority are not currently involved in minting, redemption or custody.&#x20;
 
@@ -57,7 +57,7 @@ Note that this is a form of 'progressive decentralization', but with a clear, si
 
 As of Nov 18, 2023, there are 20 Beta Stakers delegating their stakes across three professional staking providers ([Boar](https://boar.network/), [Staked](https://staked.us/), [P2P](https://p2p.org/)). The number of Beta Stakers may change at any time. Visit the [contract page on Etherscan](https://etherscan.io/address/0xc2731fb2823af3Efc2694c9bC86F444d5c5bb4Dc#readContract#F16) for the latest figure.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1).png" alt="" width="563"><figcaption><p>As of Nov 18, 2023, there are 20 Beta Stakers</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt="" width="563"><figcaption><p>As of Nov 18, 2023, there are 20 Beta Stakers</p></figcaption></figure>
 
 For system requirements and cost estimates to run a staker node, please see [tbtc-beta-stakers-program.md](tbtc-beta-stakers-program.md "mention")
 
