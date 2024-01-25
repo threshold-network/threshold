@@ -84,6 +84,6 @@ Learn more about testnet trust assumptions and limitations - [cbd-proof-of-conce
 
 The following samples showcase integrations with React-based web apps, and serve as an 'end-to-end' reference for creating conditions-based encryption & decryption:
 
-* [`nucypher-ts/demos`](https://github.com/nucypher/nucypher-ts/tree/main/demos)
-* [`nucypher-ts/examples/taco`](https://github.com/nucypher/nucypher-ts/tree/main/examples/taco)
+* [`taco-web/demos`](https://github.com/nucypher/taco-web/tree/main/demos)
+* [`taco-web/examples/taco`](https://github.com/nucypher/taco-web/tree/main/examples/taco)
 * [`nucypher/alpha-leaks-demo`](https://github.com/nucypher/alpha-leaks-demo)

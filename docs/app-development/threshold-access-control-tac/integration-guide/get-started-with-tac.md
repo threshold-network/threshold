@@ -19,10 +19,8 @@ We encourage you to use the `TESTNET` domain for developing `taco` based apps, a
 {% hint style="warning" %}
 Both `DEV` and `TESTNET` domains are unsuitable for use in a production setting.\
 \
-Testnet domains have no trust minimization or stability guarantees, which makes them unfit and unsuitable for real-life usage scenarios.
+Testnet domains have no trust minimization or stability guarantees, which makes them unfit and unsuitable for production or real-world data payloads. Learn more about the testnet [trust assumptions](../trust-assumptions/cbd-proof-of-concept-version/).
 {% endhint %}
-
-Learn more about the testnet trust assumptions here [cbd-proof-of-concept-version](../trust-assumptions/cbd-proof-of-concept-version/ "mention")
 
 ## Testnet Configuration
 
