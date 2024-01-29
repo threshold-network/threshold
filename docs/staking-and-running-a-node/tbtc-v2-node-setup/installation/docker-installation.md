@@ -49,7 +49,7 @@ services:
       options:
         max-size: "100m"
         max-file: "3"
-    command: start --ethereum.url "<Ethereum API WS URL>"  --ethereum.keyFile "/mnt/keep/config/<Operator Account keyfile name>" --storage.dir "/mnt/keep/storage" --network.announcedAddresses "/<PUBLIC_IP_OF_MACHINE>/tcp/3919"
+    command: start --ethereum.url "<Ethereum API WS URL>"  --ethereum.keyFile "/mnt/keep/config/<Operator Account keyfile name>" --storage.dir "/mnt/keep/storage" --network.announcedAddresses "/ip4/<PUBLIC_IP_OF_MACHINE>/tcp/3919"
 ```
 
 Save and close the file when finished.
@@ -111,7 +111,7 @@ Wants=network.target
 Environment="ETHEREUM_WS_URL=&#x3C;Ethereum API WS URL>"
 Environment="OPERATOR_KEY_FILE_NAME=&#x3C;Operator Account keyfile name>"
 Environment="OPERATOR_KEY_FILE_PASSWORD=&#x3C;Operator Account keyfile password>"
-Environment="PUBLIC_IP=/dns4/&#x3C;PUBLIC_IP_OF_MACHINE>/tcp/3919"
+Environment="PUBLIC_IP=/ip4/&#x3C;PUBLIC_IP_OF_MACHINE>/tcp/3919"
 Environment="CONFIG_DIR=/home/&#x3C;user name>/keep/config"
 Environment="STORAGE_DIR=/home/&#x3C;user name>/keep/storage"
 
@@ -223,8 +223,8 @@ PUBLIC_IP="<PUBLIC_IP_OF_MACHINE>"
 
 # Setup configuration and storage directories
 # THESE MUST BE PERSISTENT STORAGE
-CONFIG_DIR="/home/keep/config"
-STORAGE_DIR="/home/keep/storage"
+CONFIG_DIR="/home/$USER/keep/config"
+STORAGE_DIR="/home/$USER/keep/storage"
 
 docker run \
     --detach \
