@@ -5,7 +5,7 @@ Using `RpcCondition`, we can execute  `eth_getBalance` JSON-RPC method:
 ```typescript
 import { conditions } from '@nucypher/taco';
 
-const hasAnyNativeAsset = new conditions.base.RpcCondition({
+const hasAnyNativeAsset = new conditions.base.rpc.RpcCondition({
   chain: 1,
   method: 'eth_getBalance',
   parameters: [':userAddress'],

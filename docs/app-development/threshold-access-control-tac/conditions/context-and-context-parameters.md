@@ -7,7 +7,7 @@ Let's take a look at this `ContractConditon` example:
 ```typescript
 import { conditions } from '@nucypher/taco';
 
-const ownsNFTRaw = new conditions.ContractCondition({
+const ownsNFTRaw = new conditions.contract.ContractCondition({
   method: 'balanceOf',
   parameters: [':userAddress'], // <- A context parameter
   standardContractType: 'ERC721',

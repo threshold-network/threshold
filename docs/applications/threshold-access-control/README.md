@@ -8,7 +8,7 @@ It is currently the only access control layer available to Web3 developers is de
 All third-party services – digital, Web3 and beyond – impose a trust burden on the user. TACo minimizes this trust burden by disassembling and distributing sensitive cryptographic operations – key generation, access condition verification, and decryption fragment provision – across a large group of independently operated nodes. To understand TACo's trust model and read the _Mainnet_ _Trust Disclosure_, head to the [Trust Assumptions](../../app-development/threshold-access-control-tac/trust-assumptions/) section.&#x20;
 {% endhint %}
 
-To get started building on TACo Testnet, head to the [Quickstart](../../app-development/tbtc-v2/tbtc-sdk/quickstart.md) or [Testnet Integration ](../../app-development/threshold-access-control-tac/integration-guide/get-started-with-tac.md)page.
+To get started building on TACo Testnet, head to the [Quickstart](../../app-development/threshold-access-control-tac/quickstart-testnet.md) or [Testnet Integration ](../../app-development/threshold-access-control-tac/integration-guide/get-started-with-tac.md)page.
 
 To understand why TACo is useful to your Web3 app, check out the simple [overview](conditions-based-decryption-cbd.md), the high-level [value propositions](value-propositions.md), or watch this [presentation](https://www.youtube.com/watch?v=3kNXuNbWSO0).&#x20;
 

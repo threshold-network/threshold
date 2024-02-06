@@ -4,13 +4,13 @@ We can condition access to the state on two different networks. To do that, we c
 
 <pre class="language-typescript"><code class="lang-typescript"><strong>import { conditions } from '@nucypher/taco';
 </strong><strong>
-</strong><strong>const ownsSpecificNFTOnPolygon = new conditions.predefined.ERC721Ownership({
+</strong><strong>const ownsSpecificNFTOnPolygon = new conditions.predefined.erc721.ERC721Ownership({
 </strong>  chain: 137, // The first network we target - polygon mainnet
   contractAddress: '0x1e988ba4692e52Bc50b375bcC8585b95c48AaD77',
   parameters: [3591],
 });
 
-const ownsSufficientMainnetETH = new conditions.base.RpcCondition({
+const ownsSufficientMainnetETH = new conditions.base.rpc.RpcCondition({
   chain: 1, // The second network we target - eth mainnet
   method: 'eth_getBalance',
   parameters: [':userAddress'],
@@ -21,7 +21,7 @@ const ownsSufficientMainnetETH = new conditions.base.RpcCondition({
 });
 
 // Let's combine our conditions
-const multichainCondition = conditions.base.CompoundCondition.and([
+const multichainCondition = conditions.compound.CompoundCondition.and([
   ownsSpecificNFTOnPolygon, ownsSufficientMainnetETH
 ]);
 

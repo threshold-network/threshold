@@ -7,7 +7,7 @@ Below, we can see an example of using  `ContractConditon` to gate access to our 
 ```typescript
 import { conditions } from '@nucypher/taco';
 
-const ownsNFT = new conditions.base.ContractCondition({
+const ownsNFT = new conditions.base.contract.ContractCondition({
   method: 'balanceOf',
   parameters: [':userAddress'],
   standardContractType: 'ERC721',

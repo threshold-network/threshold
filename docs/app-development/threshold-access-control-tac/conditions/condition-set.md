@@ -14,7 +14,7 @@ import { conditions } from '@nucypher/taco';
 const conditionA = ...
 const conditionB = ...
 
-const aAndB = new conditions.CompoundCondition({
+const aAndB = new conditions.compound.CompoundCondition({
   operator: 'and',
   operands: [conditionA, conditionB],
 });
@@ -25,12 +25,12 @@ Here, we define two conditions `conditionA` and `conditionB`, and combine them i
 We can use two or more  conditions when using `and` and `or` operators:
 
 ```typescript
-const allMustPass = new conditions.CompoundCondition({
+const allMustPass = new conditions.compound.CompoundCondition({
   operator: 'and',
   operands: [conditionA, conditionB, ..., conditionX],
 });
 
-const anyOneMustPass = new conditions.CompoundCondition({
+const anyOneMustPass = new conditions.compound.CompoundCondition({
   operator: 'or',
   operands: [conditionA, conditionB, ..., conditionX],
 });
@@ -40,11 +40,11 @@ const anyOneMustPass = new conditions.CompoundCondition({
 Alternatively, use can use `CompoundCondition.or` and `CompoundCondition.and` short-hand methods
 
 ```typescript
-const allMustMatch = new conditions.CompoundCondition.and([
+const allMustMatch = new conditions.compound.CompoundCondition.and([
     conditionA, conditionB, ..., conditionX],
 ]);
 
-const atLeastOneMustMatch = new conditions.CompoundCondition.or([
+const atLeastOneMustMatch = new conditions.compound.CompoundCondition.or([
     conditionA, conditionB, ..., conditionX],
 ]);
 ```
@@ -60,7 +60,7 @@ import { conditions } from '@nucypher/taco';
 
 const conditionA = ...
 
-const notA = new conditions.CompoundCondition({
+const notA = new conditions.compound.CompoundCondition({
   operator: 'not',
   operands: [conditionA],
 });
@@ -81,18 +81,18 @@ const conditionC = ...
 const conditionD = ...
 const conditionE = ...
 
-const cOrD = new conditions.CompoundCondition({
+const cOrD = new conditions.compound.CompoundCondition({
   operator: 'or',
   operands: [conditionC, conditionD],
 });
 
-const notE = new conditions.CompoundCondition({
+const notE = new conditions.compound.CompoundCondition({
   operator: 'not',
   operands: [conditionE],
 });
 
 // conditionA AND conditionB AND cOrD AND notE
-overallCondition = new conditions.CompoundCondition({
+overallCondition = new conditions.compound.CompoundCondition({
   operator: 'and',
   operands: [conditionA, conditionB, cOrD, notE],
 });

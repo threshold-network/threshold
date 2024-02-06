@@ -7,7 +7,7 @@ Below, we can see an example of using  `RpcCondition` to gate access based on a 
 ```typescript
 import { conditions } from '@nucypher/taco';
 
-const ownsETH = new conditions.base.RpcCondition({
+const ownsETH = new conditions.base.rpc.RpcCondition({
   method: 'eth_getBalance',
   parameters: [':userAddress'],
   chain: 1,
