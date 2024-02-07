@@ -29,8 +29,6 @@ _Minimum: 15 nodes, Default: 30 nodes_\
 (ii) the duration of the cohort’s existence \
 _Minimum: 6 months, Default: 6 months_&#x20;
 
-The base fee is set to **0.35 DAI per node per day**. For the recommended cohort size of 30, this costs **3,832.50 DAI per adopter per year**. There is no free tier of service other than on the limited `Tapir` testnet.
-
 ### Future models&#x20;
 
 In future versions, adopters can generate multiple cohorts to service different components or security levels within their applications, increasing the base fee revenue per adopter.
