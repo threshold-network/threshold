@@ -11,7 +11,7 @@ Profits from usage of the protocol (loan interest, redemption fee, etc) accrues 
 _**Benefits of the hybrid PCV + IPL model:**_
 
 * Bootstrap stability pool for free
-* No need for LQTY token = all profits accrue directly to the PCV
+* No need for a Protocol token = all profits accrue directly to the PCV
 * Immediate surplus on first loan drawn / liquidation
 * Predictability and (once debt is repaid) high resilience against Black Swans
 * No idle capital (it doesn't "really" exist)

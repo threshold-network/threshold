@@ -1,6 +1,6 @@
 # The Path to Permissionlessness
 
-The system was designed from the outset to be fully permissionless - anyone with the minimum amount of T stake, could run a node and have a [proportional chance](wallet-generation.md) of being a custodian.
+The system was designed from the outset to be fully permissionless - anyone with the minimum amount of T stake, could run a node and have a [proportional chance](../../fundamentals/tbtc-v2/wallet-generation.md) of being a custodian.
 
 In order to effectively ship the product, we launched with a permissioned set of Signers, as well as permissioned sets of Guardians and Minters. This document will explain the ideas behind those changes and what we're doing about it going forward.
 

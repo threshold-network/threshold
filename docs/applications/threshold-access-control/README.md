@@ -1,3 +1,7 @@
+---
+description: Trust-minimized Access Control
+---
+
 # TACo - Threshold Access Control
 
 **TACo** (**T**hreshold **A**ccess **Co**ntrol) enables end-to-end encrypted data sharing and communication. There is no requirement to trust a centralized authority or entity, who might unilaterally deny service or even (surreptitiously) decrypt private end-user data.&#x20;

@@ -4,9 +4,9 @@ description: A Bitcoin-backed Stablecoin
 
 # Threshold USD
 
-Threshold USD (thUSD) is a stablecoin soft-pegged against USD and backed by ETH and tBTC as collaterals with a minimum collateral ratio of 110%.
+Threshold USD (thUSD) is a stablecoin soft-pegged against USD and backed by ETH and tBTC as collateral, with a minimum collateral ratio of 110%.
 
-With either BTC or ETH as your collateral, you'll be able to borrow USD at low interest rate.
+With either BTC or ETH as your collateral, you'll be able to borrow thUSD at very low cost.
 
 Threshold USD is a modified fork of [Liquity Protocol](https://www.liquity.org/) built to be self-sustained through a PCV ("Protocol Controlled Value"). There is no equivalent of LQTY token in Threshold USD. Instead all profits accrue into the PCV. Since there is no token, [Bootstrapping](threshold-usd/) is completed through an [Initial Protocol Loan](threshold-usd/initial-protocol-loan.md).&#x20;
 
