@@ -38,7 +38,7 @@ Delivered in `@keep-network/random-beacon@2.1.0-sepolia.1`, `@keep-network/ecdsa
 | TBCTVault                 | [0xB5679dE944A79732A75CE556191DF11F489448d5](https://sepolia.etherscan.io/address/0xB5679dE944A79732A75CE556191DF11F489448d5)      |
 | VendingMachine            | [0x0b82E51164720543dB3FB13043876F37e9a19A4A](https://sepolia.etherscan.io/address/0x0b82E51164720543dB3FB13043876F37e9a19A4A)      |
 | WalletRegistry            | [0x2DfC89675AB5Fb5Be7c2A86d373Daac3E795fc25](https://sepolia.etherscan.io/address/0x2DfC89675AB5Fb5Be7c2A86d373Daac3E795fc25)      |
-| WalletProposalValidator   | [0xBaE114D40ff015224c55470dE7b850172bB487F4](https://sepolia.etherscan.io/address/0xBaE114D40ff015224c55470dE7b850172bB487F4)      |
+| WalletProposalValidator   | [0xB586cb5b95BC8f56dcfc75864966343E7Cd73C0f](https://sepolia.etherscan.io/address/0xB586cb5b95BC8f56dcfc75864966343E7Cd73C0f)      |
 | LightRelay                | [0x998D17122dA4ed98e558198665984E08D1cEAA8d](https://sepolia.etherscan.io/address/0x998D17122dA4ed98e558198665984E08D1cEAA8d)      |
 | LightRelayMaintainerProxy | [0xA669AC294BCf04CEeB5EBC26d9E1bF4fc4574e06](https://sepolia.etherscan.io/address/0xA669AC294BCf04CEeB5EBC26d9E1bF4fc4574e06)      |
 
