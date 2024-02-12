@@ -10,10 +10,10 @@ description: Instructions for setting up a TACo node on a VPS or local machine
 
 ## Before you begin&#x20;
 
-* Running a TACo node requires maintenance and comes with certain constraints. Please review the [duties](../taco-node-setup/duties-and-compensation.md) expected of a node operator, and make sure you are comfortable with the minimum deauthorization delay of 6 months.&#x20;
-* Please review the system [requirements](../taco-node-setup/minimum-system-requirements.md) for provisioning the TACo service.
+* Running a TACo node requires maintenance and comes with certain constraints. Please review the [duties](duties-and-compensation.md) expected of a node operator, and make sure you are comfortable with the minimum deauthorization delay of 6 months.&#x20;
+* Please review the system [requirements](minimum-system-requirements.md) for provisioning the TACo service.
 * Your operator account will need to be funded with at least 15 MATIC (Polygon POS) to connect to the Threshold network. You should transfer these funds after getting the node running.&#x20;
-* Once TACo is running smoothly on your machine or VPS, the [next step](../taco-node-setup/taco-authorization-and-operator-registration/) is to authorize your stake to the TACo app and register/bond the node to that provider address.
+* Once TACo is running smoothly on your machine or VPS, the [next step](taco-authorization-and-operator-registration/) is to authorize your stake to the TACo app and register/bond the node to that provider address.
 
 ## Technical Overview
 
@@ -25,7 +25,7 @@ The overall procedure for setting up a TACo Node is as follows: \
 4\. [Initialize ](run-a-taco-node-with-docker.md#4.-initialize)[the Node](run-a-taco-node-with-docker.md#4.-initialize-the-node)\
 5\. [Launch the ](run-a-taco-node-with-docker.md#5.-launch)[Node](run-a-taco-node-with-docker.md#5.-launch-the-node)
 
-This excludes [registration and authorization](../taco-node-setup/taco-authorization-and-operator-registration/), which you should attempt once completing the steps on this page.
+This excludes [registration and authorization](taco-authorization-and-operator-registration/), which you should attempt once completing the steps on this page.
 
 ## 1. Get Docker Image&#x20;
 
@@ -132,6 +132,7 @@ docker run -d                     \
 --name ursula                     \
 --restart unless-stopped          \
 -v ~/.local/share/nucypher:/root/.local/share/nucypher:rw \
+-v ~/.cache/nucypher:/root/.cache/nucypher:rw \
 -v ~/.ethereum/:/root/.ethereum:ro   \
 -p 9151:9151                      \
 --env-file nucypher.env           \
