@@ -199,7 +199,7 @@ docker run --detach \
 --name watchtower   \
 --restart unless-stopped \
 --volume /var/run/docker.sock:/var/run/docker.sock \
-containrrr/watchtower ursula
+containrrr/watchtower ursula --cleanup
 ```
 
 {% hint style="info" %}
