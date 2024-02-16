@@ -11,4 +11,8 @@ TACo nodes are very light and can be run inexpensively on a remote instance or l
 
 TACo can be run on cloud infrastructure. For example, a Digital Ocean [4GB Basic Droplet](https://www.digitalocean.com/pricing/droplets) satisfies the requirements listed above.
 
-Additionally, the _operator_ account (i.e. not the provider) will need to be funded with at least **15 MATIC** (Polygon POS) to connect to the Threshold Network and participate in DKG initialization rituals during the invite-only beta. You should transfer these funds after getting the node running. DKG ritual costs will likely be reimbursed to stakers in later versions.&#x20;
+Additionally, the operator account (i.e. not the provider) must be funded with at least 15 MATIC (Polygon POS) to connect to the Threshold Network and participate in DKG initialization rituals. Transfer these funds before running your node.
+
+{% hint style="warning" %}
+Note that TACo is currently in an invite-only beta phase, which implies a low volume of DKG rituals, and consequently, of MATIC spending, but the volume may increase in the future. Concerning this, DKG ritual costs may be reimbursed to node operators in later versions.
+{% endhint %}
