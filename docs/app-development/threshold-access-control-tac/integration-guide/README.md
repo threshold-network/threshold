@@ -11,9 +11,13 @@ Note that the underlying [trust assumptions](../trust-assumptions/) vary between
 
 Before we install `taco`, we need to consider which network we would like to use:
 
-* `lynx`- a bleeding edge `DEVNET`, compatible with `-alpha` releases
-* `tapir` - a stable `TESTNET`, for testing integrations, compatible with `-beta` releases
-* `mainnet` - a production `MAINNET` environment, compatible with regular releases
+* `mainnet` - a production MAINNET environment
+* `tapir` - a stable `TESTNET`, for testing integrations, and matches `mainnet`
+* `lynx`- a bleeding-edge `DEVNET`, used for internal development and future features
+
+{% hint style="info" %}
+`tapir` is the stable testnet recommended for developers.
+{% endhint %}
 
 Once you picked a network, head over to npmjs.com to find the current version [for a given network](https://www.npmjs.com/package/@nucypher/taco?activeTab=versions). To find the appriopriate network, refer to the "Tags" column in the "Current Tags" section:
 
