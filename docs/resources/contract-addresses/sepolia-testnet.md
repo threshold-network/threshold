@@ -42,3 +42,33 @@ Delivered in `@keep-network/random-beacon@2.1.0-sepolia.1`, `@keep-network/ecdsa
 | LightRelay                | [0x998D17122dA4ed98e558198665984E08D1cEAA8d](https://sepolia.etherscan.io/address/0x998D17122dA4ed98e558198665984E08D1cEAA8d)      |
 | LightRelayMaintainerProxy | [0xA669AC294BCf04CEeB5EBC26d9E1bF4fc4574e06](https://sepolia.etherscan.io/address/0xA669AC294BCf04CEeB5EBC26d9E1bF4fc4574e06)      |
 
+
+
+## L2 tBTC Application Contracts
+
+### Arbitrum Sepolia (chain ID: 421614)
+
+Delivered in `` @keep-network/tbtc-v2-arbitrum@1.1.1-sepolia.0` `` NPM package.
+
+| Contract                | Address                                                                                                                      |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| ArbitrumTBTC            | [0xb8f31A249bcb45267d06b9E51252c4793B917Cd0](https://sepolia.arbiscan.io/address/0xb8f31A249bcb45267d06b9E51252c4793B917Cd0) |
+| ArbitrumWormholeGateway | [0xc3D46e0266d95215589DE639cC4E93b79f88fc6C](https://sepolia.arbiscan.io/address/0xc3d46e0266d95215589de639cc4e93b79f88fc6c) |
+
+### Optimism Sepolia (chain ID: 11155420)
+
+Delivered in `` @keep-network/tbtc-v2-optimism@1.1.0-sepolia.0` `` NPM package.
+
+| Contract                | Address                                                                                                                                |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| OptimismTBTC            | [0x9A82bE743f0120fA24893b1631B6b2817fD94b1D](https://sepolia-optimism.etherscan.io/address/0x9a82be743f0120fa24893b1631b6b2817fd94b1d) |
+| OptimismWormholeGateway | [0x5FB63D9e076a314023F2D1aB5dBFd7045C281EbA](https://sepolia-optimism.etherscan.io/address/0x5FB63D9e076a314023F2D1aB5dBFd7045C281EbA) |
+
+### Base Sepolia (chain ID: 84532)
+
+Delivered in `` @keep-network/tbtc-v2-base@1.1.0-sepolia.0` `` NPM package.
+
+| Contract            | Address                                                                                                                       |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| BaseTBTC            | [0xb8f31A249bcb45267d06b9E51252c4793B917Cd0](https://sepolia.basescan.org/address/0xb8f31A249bcb45267d06b9E51252c4793B917Cd0) |
+| BaseWormholeGateway | [0xc3D46e0266d95215589DE639cC4E93b79f88fc6C](https://sepolia.basescan.org/address/0xc3D46e0266d95215589DE639cC4E93b79f88fc6C) |
