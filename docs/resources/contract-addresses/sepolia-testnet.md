@@ -28,7 +28,7 @@ Delivered in `@keep-network/keep-core@1.8.1-sepolia.0` NPM package.
 
 ## TBTC Application Contracts
 
-Delivered in `@keep-network/random-beacon@2.1.0-sepolia.1`, `@keep-network/ecdsa@2.1.0-sepolia.1` and `@keep-network/tbtc-v2@1.6.0-sepolia.2` NPM packages.
+Delivered in `@keep-network/random-beacon@2.1.0-sepolia.1`, `@keep-network/ecdsa@2.1.0-sepolia.1` and `@keep-network/tbtc-v2@1.6.0-sepolia.5` NPM packages.
 
 | Contract                  | Address                                                                                                                            |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
@@ -38,9 +38,10 @@ Delivered in `@keep-network/random-beacon@2.1.0-sepolia.1`, `@keep-network/ecdsa
 | TBCTVault                 | [0xB5679dE944A79732A75CE556191DF11F489448d5](https://sepolia.etherscan.io/address/0xB5679dE944A79732A75CE556191DF11F489448d5)      |
 | VendingMachine            | [0x0b82E51164720543dB3FB13043876F37e9a19A4A](https://sepolia.etherscan.io/address/0x0b82E51164720543dB3FB13043876F37e9a19A4A)      |
 | WalletRegistry            | [0x2DfC89675AB5Fb5Be7c2A86d373Daac3E795fc25](https://sepolia.etherscan.io/address/0x2DfC89675AB5Fb5Be7c2A86d373Daac3E795fc25)      |
-| WalletProposalValidator   | [0xB586cb5b95BC8f56dcfc75864966343E7Cd73C0f](https://sepolia.etherscan.io/address/0xB586cb5b95BC8f56dcfc75864966343E7Cd73C0f)      |
+| WalletProposalValidator   | [0xEDDf18FC03FE2dB2889E5213e7894C603466f9ee](https://sepolia.etherscan.io/address/0xEDDf18FC03FE2dB2889E5213e7894C603466f9ee)      |
 | LightRelay                | [0x998D17122dA4ed98e558198665984E08D1cEAA8d](https://sepolia.etherscan.io/address/0x998D17122dA4ed98e558198665984E08D1cEAA8d)      |
 | LightRelayMaintainerProxy | [0xA669AC294BCf04CEeB5EBC26d9E1bF4fc4574e06](https://sepolia.etherscan.io/address/0xA669AC294BCf04CEeB5EBC26d9E1bF4fc4574e06)      |
+| RedemptionWatchtower      | [0x4E6CFb556143381070b17825707b3DE7F3148FaC](https://sepolia.etherscan.io/address/0x4E6CFb556143381070b17825707b3DE7F3148FaC)      |
 
 
 
