@@ -36,8 +36,8 @@
 ## Governance
 
 * [Threshold DAO](governance/dao/README.md)
-  * [🗳 Governance Process](governance/dao/governance-process.md)
-  * [🙋♀ Guilds](governance/dao/guilds.md)
+  * [🗳️ Governance Process](governance/dao/governance-process.md)
+  * [🙋‍♀️ Guilds](governance/dao/guilds.md)
   * [💰 Threshold Multisigs](governance/dao/threshold-multisigs.md)
 * [Vote Delegation](governance/dao-vote-delegation/README.md)
   * [Liquid Token Delegation](governance/dao-vote-delegation/token-weight-delegation.md)
