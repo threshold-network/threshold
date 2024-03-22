@@ -14,11 +14,11 @@ The minimum stake to run a node is 40,000T. Stakers must decide which applicatio
 
 ### How does authorizing applications and reward allocation work?
 
-As of Nov 18, 2023 there are two Threshold applications to which a staker can authorize their stake: tBTC and PRE (soon to be TACo). tBTC has another application bundled with it, called Random Beacon, which must also be authorized via the staker [dashboard](https://dashboard.threshold.network/).
+As of Nov 18, 2023 there are two Threshold applications to which a staker can authorize their stake: tBTC and TACo. tBTC has another application bundled with it, called Random Beacon, which must also be authorized via the staker [dashboard](https://dashboard.threshold.network/).
 
-Rewards are allocated as follows: 75% to tBTC/Random Beacon and 25% to PRE/TACo. To earn the full 15% annual yield on their stake, stakers must fully authorize to both applications.&#x20;
+Rewards are allocated as follows: 75% to tBTC/Random Beacon and 25% to TACo. To earn the full 15% annual yield on their stake, stakers must fully authorize to both applications.&#x20;
 
-For example, a stake of 40,000 T that allocates 100% to tBTC/Random Beacon and 60% to TACo/PRE would earn the following yield per month:&#x20;
+For example, a stake of 40,000 T that allocates 100% to tBTC/Random Beacon and 60% to TACo would earn the following yield per month:&#x20;
 
 $$
 yield_{monthly}= 40000* ( \frac{(1 * 0.75 * 0.15) +(0.6*0.25*0.15)}{12} 
