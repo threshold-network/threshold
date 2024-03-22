@@ -23,7 +23,9 @@ The overall procedure for setting up a TACo Node is as follows: \
 2\. [Create Operator Ethereum Wallet](run-a-taco-node-with-docker.md#2.-create-operator-ethereum-wallet)\
 3\. [Set Passwords](run-a-taco-node-with-docker.md#3.-set-passwords)\
 4\. [Initialize ](run-a-taco-node-with-docker.md#4.-initialize)[the Node](run-a-taco-node-with-docker.md#4.-initialize-the-node)\
-5\. [Launch the ](run-a-taco-node-with-docker.md#5.-launch)[Node](run-a-taco-node-with-docker.md#5.-launch-the-node)
+5\. [Launch the ](run-a-taco-node-with-docker.md#5.-launch)[Node](run-a-taco-node-with-docker.md#5.-launch-the-node)\
+6\. [(Optional) Automatic Updates](run-a-taco-node-with-docker.md#id-6.-optional-automatic-updates)\
+7\. [(Optional) Expose Prometheus Metrics](run-a-taco-node-with-docker.md#id-7.-optional-expose-prometheus-metrics)
 
 This excludes [registration and authorization](taco-authorization-and-operator-registration/), which you should attempt once completing the steps on this page.
 
@@ -208,5 +210,23 @@ This command assumes the name of your node docker container is `ursula`
 
 For more information check out the official Watchtower [documentation](https://containrrr.dev/watchtower/).&#x20;
 
+## 7. (Optional) Expose Prometheus Metrics
 
+In order to aid with monitoring, the TACo node can expose various metrics via [prometheus](https://prometheus.io/). Ursula can optionally provide a metrics endpoint as a data source for real-time monitoring.&#x20;
 
+The metrics endpoint is disabled by default but can be enabled by providing the following parameters to the `nucypher ursula run` command:
+
+* `--prometheus` - a boolean flag to enable the prometheus endpoint
+* `--metrics-port <PORT>` - the HTTP port to run the prometheus endpoint on. If not specified, the default is port `9101`.
+
+{% hint style="warning" %}
+The docker container will need to expose the specified port i.e. add `-p <PORT>:<PORT>` to the `docker run` command. For example, if the default port (`9101`) is used then add `-p 9101:9101`.
+{% endhint %}
+
+* `--metrics-interval <INTERVAL>` - the frequency of metrics collection in seconds. If not specified, the default is `90` seconds i.e. metrics are collected every 90 seconds.
+
+{% hint style="warning" %}
+In general, metrics collection will increase the number of RPC requests made to your provider endpoint; increasing the frequency of metrics collection will further increase this number.
+{% endhint %}
+
+The corresponding endpoint, `http://<node_ip>:<PORT>/metrics`, can be used as a prometheus data source.
