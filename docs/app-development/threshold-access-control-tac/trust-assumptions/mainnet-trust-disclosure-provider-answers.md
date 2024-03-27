@@ -99,4 +99,4 @@ _Genesis_
 * Repository issues track the current system limitations and the corresponding mitigations in place. For example, in the [nucypher/nucypher](https://github.com/nucypher/nucypher/issues) and [nucypher/nucypher-ts](https://github.com/nucypher/nucypher-ts/issues) repos.
 * Conversations among core contributors to TACo (voice & typed) are publicly available for the most part in the Discord [server](https://discord.com/channels/866378471868727316/870383642751430666).&#x20;
 * TACo's [roadmap](https://github.com/orgs/nucypher/projects/31/views/2) (v7.0.0) is currently public, and roadmaps for subsequent versions will be made public once v.7.0.0 is released.&#x20;
-* A detailed [trust model ](cbd-mainnet-version.md)for Mainnet is also featured in the documentation.&#x20;
+* A detailed [trust model ](mainnet-trust-model-foundation.md)for Mainnet is also featured in the documentation.&#x20;

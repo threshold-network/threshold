@@ -4,8 +4,8 @@ This guide provides an overview of `@nucypher/taco`. In this guide, we will walk
 
 Note that the underlying [trust assumptions](../trust-assumptions/) vary between versions and technologies; these are explained in detail on these pages:
 
-* [cbd-mainnet-version.md](../trust-assumptions/cbd-mainnet-version.md "mention")
-* [cbd-proof-of-concept-version](../trust-assumptions/cbd-proof-of-concept-version/ "mention")
+* [mainnet-trust-model-foundation.md](../trust-assumptions/mainnet-trust-model-foundation.md "mention")
+* [testnet-trust-assumptions](../trust-assumptions/testnet-trust-assumptions/ "mention")
 
 ## 0. Pick an appropriate `taco` version
 
