@@ -1,14 +1,14 @@
-# Staking on Threshold
+# Legacy Staking (NU & KEEP)
 
-Stakes on Threshold can take the following forms:
+Legacy Stakes for Threshold can take the following forms:
 
 * T stake using liquid T created on the [Threshold Dashboard](https://dashboard.threshold.network/staking)
-* Legacy NU stake migrated to T from the [NuCypher Dashboard](https://stake.nucypher.network/manage)
-* Legacy KEEP stake migrated to T from the [Keep Dashboard](https://dashboard.keep.network/applications/threshold)
+* Legacy NU: must be withdrawn, upgraded to T, then staked as liquid T
+* Legacy KEEP: must be withdrawn, upgraded to T, then staked as liquid T
 
 Here is a summary of the overall process:
 
-![Stake Creation](../.gitbook/assets/staking\_initialization\_process.png)
+<figure><img src="../.gitbook/assets/staking_initialization_process (1).png" alt=""><figcaption><p>Stake Creation</p></figcaption></figure>
 
 ## Stake Liquid T
 
@@ -20,21 +20,12 @@ Here is a summary of the overall process:
 
 ## Migrate Legacy NU Stake
 
-* Go to [https://stake.nucypher.network/manage/stake](https://stake.nucypher.network/manage/stake)
-* Click _"Stake NU on Threshold"_
-
-<div align="left">
-
-<img src="../.gitbook/assets/stake_legacy_nu_on_threshold.png" alt="Stake NU on Threshold">
-
-</div>
+* Execute `withdraw` method on legacy [Staking Escrow Contract](https://etherscan.io/address/0xbbD3C0C794F40c4f993B03F65343aCC6fcfCb2e2#writeProxyContract#F7)
+* [Upgrade Liquid NU to Liquid T](../threshold-dashboard/upgrade-nu-and-keep-to-t.md)
+* [Stake Liquid T](migrating-legacy-stakes.md#stake-liquid-t)
 
 ## Migrate Legacy KEEP Stake
 
-* Authorize Threshold Staking for the Keep Network legacy stake - [https://dashboard.keep.network/applications/threshold](https://dashboard.keep.network/applications/threshold)
-
-<div align="left">
-
-<img src="../.gitbook/assets/stake_legacy_keep_on_threshold.jpg" alt="Stake KEEP on Threshold">
-
-</div>
+* Withdraw Legacy Keep via [legacy KEEP dashboard](https://dashboard.keep.network/overview)
+* [Upgrade Liquid KEEP to Liquid T](../threshold-dashboard/upgrade-nu-and-keep-to-t.md)
+* [Stake Liquid T](migrating-legacy-stakes.md#stake-liquid-t)
