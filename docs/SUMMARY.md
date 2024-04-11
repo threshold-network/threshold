@@ -5,12 +5,12 @@
 ## THRESHOLD DASHBOARD
 
 * [tBTC Minting Walkthrough](threshold-dashboard/tbtc-minting-walkthrough.md)
-* [Fees](threshold-dashboard/fees.md)
 * [Upgrade NU & KEEP to T](threshold-dashboard/upgrade-nu-and-keep-to-t.md)
 
 ## Applications
 
 * [tBTC Bitcoin Bridge](applications/tbtc-v2/README.md)
+  * [Fees](applications/tbtc-v2/fees.md)
   * [Wallet Generation](fundamentals/tbtc-v2/wallet-generation.md)
   * [Wallet Signing](applications/tbtc-v2/wallet-signing.md)
   * [The Path to Permissionlessness](applications/tbtc-v2/the-path-to-permissionlessness.md)
