@@ -32,6 +32,6 @@ Following a set of competing proposals and votes, the DAO will choose a fee dist
 
 ### **Rewards**&#x20;
 
-TACo node operators earn **3.75%** APY as soon as they authorize to the TACo application. This yield is maintained, irrespective of the fluctuations to the staking rate, by the [Stable Yield](https://forum.threshold.network/t/tip-003-threshold-network-reward-mechanisms-proposal-i-stable-yield-for-non-institutional-staker-welfare/82) mechanism. \`
+TACo node operators earn **3.75%** APY as soon as they authorize to the TACo application. This yield is maintained, irrespective of the fluctuations to the staking rate, by the [Stable Yield](https://forum.threshold.network/t/tip-003-threshold-network-reward-mechanisms-proposal-i-stable-yield-for-non-institutional-staker-welfare/82) mechanism.
 
 Please note that from January 1st 2024, stakers will not earn any yield if they only run a Proxy Re-Encryption node. Rewards will only be distributed to stakers who have authorized to TACo. PRE capabilities will be folded into the TACo application in a later update.
