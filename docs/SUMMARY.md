@@ -1,6 +1,7 @@
 # Table of contents
 
 * [What is the Threshold Network?](README.md)
+  * [T Token](readme/t-token.md)
 
 ## THRESHOLD DASHBOARD
 
