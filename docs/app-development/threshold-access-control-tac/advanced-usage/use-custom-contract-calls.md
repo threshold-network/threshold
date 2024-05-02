@@ -54,7 +54,7 @@ First, let's take a look at `myFunctionAbi`:
 &#x20;Now, looking at `myContractCallCondition` we can see that:
 
 * We need to pass `myFunction` as `method` and `myFunctionAbi` as `functionAbi` for our contract call to be recognized correctly
-* We've mapped our function parameters to `parameters`, so that `address` is represented as `':userAddress'` and `uint256` is represented as `':myCustomParam'` [context parameters](https://app.gitbook.com/o/R2meumXNNad4y1B10iL7/s/WosjlL4zUGUMlcMfuSAp/\~/changes/274/app-development/threshold-access-control-tac/conditions/context-and-context-parameters)
+* We've mapped our function parameters to `parameters`, so that `address` is represented as `':userAddress'` and `uint256` is represented as `':myCustomParam'`. See [Condition Context and Context Variables](../conditions/context-and-context-parameters.md) for more details.
 * Lastly, the `myFunctionAbi.outputs` will be used by `returnValueTest` to compare with the selected threshold `value`, resulting in a test `myFunctionAbi.outputs[0] > 0`
 
 ### Learn more
