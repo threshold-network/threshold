@@ -1,7 +1,6 @@
 # Table of contents
 
 * [What is the Threshold Network?](README.md)
-  * [T Token](readme/t-token.md)
 
 ## THRESHOLD DASHBOARD
 
@@ -64,8 +63,8 @@
     * [CLI Options](staking-and-running-a-node/tbtc-v2-node-setup/advanced-options/cli-options.md)
     * [Client Info](staking-and-running-a-node/tbtc-v2-node-setup/advanced-options/client-info.md)
   * [Frequently Asked Questions](staking-and-running-a-node/tbtc-v2-node-setup/frequently-asked-questions.md)
-  * [Sepolia Testnet](staking-and-running-a-node/tbtc-v2-node-setup/sepolia-testnet-staking/README.md)
-    * [Testnet tBTC v2 node Setup](staking-and-running-a-node/tbtc-v2-node-setup/sepolia-testnet-staking/testnet-tbtc-v2-node-setup.md)
+  * [Sepolia Testnet](staking-and-running-a-node/tbtc-v2-node-setup/goerli-testnet-staking/README.md)
+    * [Testnet tBTC v2 node Setup](staking-and-running-a-node/tbtc-v2-node-setup/goerli-testnet-staking/testnet-tbtc-v2-node-setup.md)
 * [TACo Node Setup](staking-and-running-a-node/taco-node-setup/README.md)
   * [Duties & Compensation](staking-and-running-a-node/taco-node-setup/duties-and-compensation.md)
   * [Minimum System Requirements](staking-and-running-a-node/taco-node-setup/minimum-system-requirements.md)
@@ -208,8 +207,7 @@
 
 ## Resources
 
-* [Security](resources/security.md)
-* [Contribution](resources/contribution.md)
+* [T Token](resources/t-token.md)
 * [Contract Addresses](resources/contract-addresses/README.md)
   * [Mainnet](resources/contract-addresses/mainnet.md)
     * [Threshold DAO](resources/contract-addresses/mainnet/threshold-dao.md)
@@ -220,6 +218,8 @@
   * [Görli Testnet](resources/contract-addresses/goerli-testnet.md)
   * [Sepolia Testnet](resources/contract-addresses/sepolia-testnet.md)
 * [tBTC Pools](https://linktr.ee/earnyield)
+* [Contribution](resources/contribution.md)
+* [Security](resources/security.md)
 * [Brand Assets](https://thresholdnetwork.notion.site/06ca766fc2cd402ab99bfe952a41c5af?v=5d3a1877e34f43d99fb8490190543e0c)
 * [Glossary](resources/glossary.md)
 * [Links](resources/links.md)
