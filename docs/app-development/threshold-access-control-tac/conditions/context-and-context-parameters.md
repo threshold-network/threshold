@@ -32,7 +32,7 @@ We can see that there are two types of context variables
 
 In order to replace the `:userAddress` context variable with an actual user address, `taco` will query the user to sign `EIP712` message to confirm wallet ownership at the decryption time.
 
-The `:selectedBalance` custom context variable has to be providedomains.TESTNETd to the `decrypt` function by the decryptor:
+The `:selectedBalance` custom context variable has to be provided to the `decrypt` function by the decryptor:
 
 ```typescript
 import { decrypt, conditions } from '@nucypher/taco';
