@@ -81,9 +81,10 @@
 
 * [TACo Access Control](app-development/threshold-access-control-tac/README.md)
   * [Quickstart (Testnet)](app-development/threshold-access-control-tac/quickstart-testnet.md)
-  * [Integration Guide](app-development/threshold-access-control-tac/integration-guide/README.md)
-    * [Mainnet Beta Program](app-development/threshold-access-control-tac/integration-guide/mainnet-beta-program.md)
-    * [Testnet Integration](app-development/threshold-access-control-tac/integration-guide/get-started-with-tac.md)
+  * [Integration Guides](app-development/threshold-access-control-tac/integration-guides/README.md)
+    * [Testnet TACo: Integration](app-development/threshold-access-control-tac/integration-guides/get-started-with-tac.md)
+    * [Mainnet TACO: Beta Program](app-development/threshold-access-control-tac/integration-guides/mainnet-taco-beta-program.md)
+    * [Mainnet TACO: Integration](app-development/threshold-access-control-tac/integration-guides/mainnet-taco-integration.md)
   * [Trust Assumptions](app-development/threshold-access-control-tac/trust-assumptions/README.md)
     * [Mainnet Trust Disclosure (Provider Answers)](app-development/threshold-access-control-tac/trust-assumptions/mainnet-trust-disclosure-provider-answers.md)
     * [Mainnet Trust Model Foundation](app-development/threshold-access-control-tac/trust-assumptions/mainnet-trust-model-foundation.md)

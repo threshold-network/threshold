@@ -19,7 +19,7 @@ Install `taco` and `ethers` with your favorite package manager:
 
 ## Configuration
 
-In order to run the code examples below, you will need the `ritualId` encryption parameter. Your wallet address (encryptor) will also have to be allow-listed for this specific ritual. Please reach out to us [here](https://discord.com/channels/866378471868727316/870383642751430666) in order to receive  `ritualId` and allow-list access, or use the [publicly available testnet rituals](integration-guide/get-started-with-tac.md#testnet-configuration).
+In order to run the code examples below, you will need the `ritualId` encryption parameter. Your wallet address (encryptor) will also have to be allow-listed for this specific ritual. Please reach out to us [here](https://discord.com/channels/866378471868727316/870383642751430666) in order to receive  `ritualId` and allow-list access, or use the [publicly available testnet rituals](integration-guides/get-started-with-tac.md#testnet-configuration).
 
 ## Encrypt your data
 
@@ -76,7 +76,7 @@ Since `ownsNFT` condition refers to an NFT owned by the recipient, `decrypt` cal
 
 ## Next steps
 
-Learn more about using TACo on the testnet - [get-started-with-tac.md](integration-guide/get-started-with-tac.md "mention").&#x20;
+Learn more about using TACo on the testnet - [get-started-with-tac.md](integration-guides/get-started-with-tac.md "mention").&#x20;
 
 Learn more about testnet trust assumptions and limitations - [testnet-trust-assumptions](trust-assumptions/testnet-trust-assumptions/ "mention")
 

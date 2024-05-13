@@ -1,11 +1,6 @@
-# Integration Guide
+# Mainnet TACO: Integration
 
-This guide provides an overview of `@nucypher/taco`. In this guide, we will walk through a more complete usage example and explain some of the `taco` concepts.&#x20;
-
-Note that the underlying [trust assumptions](../trust-assumptions/) vary between versions and technologies; these are explained in detail on these pages:
-
-* [mainnet-trust-model-foundation.md](../trust-assumptions/mainnet-trust-model-foundation.md "mention")
-* [testnet-trust-assumptions](../trust-assumptions/testnet-trust-assumptions/ "mention")
+Note that using TACo in production requires a unique DKG initialization ritual, DKG public key and cohort of nodes running TACo software – these are accessed via a unique `ritualID` parameter in the third step below. Please see the [beta program](mainnet-taco-beta-program.md) page for instructions on how to initialize a DKG ritual.
 
 ## 0. Pick an appropriate `taco` version
 
@@ -25,7 +20,7 @@ Once you picked a network, head over to npmjs.com to find the current version [f
 
 You can learn more about the current state of `mainnet` and test networks here:
 
-* [mainnet-beta-program.md](mainnet-beta-program.md "mention")
+* [mainnet-taco-beta-program.md](mainnet-taco-beta-program.md "mention")
 * [get-started-with-tac.md](get-started-with-tac.md "mention")
 
 ## 1. Install and integrate `taco`
@@ -187,12 +182,3 @@ if (decryptedMessage === toBytes(message)) {
   console.log('Success!');
 }
 ```
-
-### Example applications
-
-The following samples showcase integrations with React-based web apps, and serve as an 'end-to-end' reference for creating conditions-based encryption & decryption:
-
-* [`nucypher-ts/demos`](https://github.com/nucypher/nucypher-ts/tree/main/demos)
-* [`nucypher-ts/examples/taco`](https://github.com/nucypher/nucypher-ts/tree/main/examples/taco)
-* [`nucypher/alpha-leaks-demo`](https://github.com/nucypher/alpha-leaks-demo)
-

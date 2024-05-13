@@ -9,7 +9,7 @@ To initiate a DKG ritual and generate a cohort of nodes, a payment into the TACo
 
 In most cases, sponsor and cohort authority can be the same address, but it's also possible that in some scenarios, adopters may prefer to use different addresses. For example, the cohort authority could be a cold wallet address, while the sponsor might simply be a one-off software address. External developers may also prefer to set a DAO, a Multisig, or any kind of smart contract as the Cohort Authority, which would reduce the trust burden on their end-users.&#x20;
 
-After the beta program ends, any address can act as the Sponsor and trigger DKG rituals. In the genesis version (v7.0) of TACo, i.e. during the beta program, generating a cohort of nodes is not permissionless, and so adopting developers must follow the instructions on the [Mainnet Integration](integration-guide/mainnet-beta-program.md) page.
+After the beta program ends, any address can act as the Sponsor and trigger DKG rituals. In the genesis version (v7.0) of TACo, i.e. during the beta program, generating a cohort of nodes is not permissionless, and so adopting developers must follow the instructions on the [Mainnet Integration](integration-guides/mainnet-taco-beta-program.md) page.
 
 ### Duration-based API Fee
 

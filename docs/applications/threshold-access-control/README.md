@@ -12,11 +12,11 @@ It is currently the only access control layer available to Web3 developers that 
 All third-party services – digital, Web3 and beyond – impose a trust burden on the user. TACo minimizes this trust burden by disassembling and distributing sensitive cryptographic operations – key generation, access condition verification, and decryption fragment provision – across a large group of independently operated nodes. To understand TACo's trust model and read the _Mainnet_ _Trust Disclosure_, head to the [Trust Assumptions](../../app-development/threshold-access-control-tac/trust-assumptions/) section.&#x20;
 {% endhint %}
 
-To get started building on TACo Testnet, head to the [Quickstart](../../app-development/threshold-access-control-tac/quickstart-testnet.md) or [Testnet Integration ](../../app-development/threshold-access-control-tac/integration-guide/get-started-with-tac.md)page.
+To get started building on TACo Testnet, head to the [Quickstart](../../app-development/threshold-access-control-tac/quickstart-testnet.md) or [Testnet Integration ](../../app-development/threshold-access-control-tac/integration-guides/get-started-with-tac.md)page.
 
 To understand why TACo is useful to your Web3 app, check out the simple [overview](simple-overview.md), the high-level [value propositions](value-propositions.md), or watch this [presentation](https://twitter.com/EthereumDenver/status/1762615434287661387?s=20).&#x20;
 
 {% hint style="info" %}
-TACo Mainnet launched in January 2024, as an invite-only beta. To learn more about the beta program, check out the [Mainnet Integration](../../app-development/threshold-access-control-tac/integration-guide/mainnet-beta-program.md) page.&#x20;
+TACo Mainnet launched in January 2024, as an invite-only beta. To learn more about the beta program, check out the [Mainnet Integration](../../app-development/threshold-access-control-tac/integration-guides/mainnet-taco-beta-program.md) page.&#x20;
 {% endhint %}
 
