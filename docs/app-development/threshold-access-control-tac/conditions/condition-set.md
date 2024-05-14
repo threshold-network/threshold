@@ -37,7 +37,7 @@ const anyOneMustPass = new conditions.compound.CompoundCondition({
 
 ```
 
-Alternatively, use can use `CompoundCondition.or` and `CompoundCondition.and` short-hand methods
+Alternatively, we can use `CompoundCondition.or` and `CompoundCondition.and` short-hand methods
 
 ```typescript
 const allMustMatch = new conditions.compound.CompoundCondition.and([
