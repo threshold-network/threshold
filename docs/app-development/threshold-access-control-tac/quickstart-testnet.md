@@ -19,7 +19,7 @@ Install `taco` and `ethers` with your favorite package manager:
 
 ## Configuration
 
-In order to run the code examples below, you will need the `ritualId` encryption parameter. Your wallet address (encryptor) will also have to be allow-listed for this specific ritual. Please reach out to us [here](https://discord.com/channels/866378471868727316/870383642751430666) in order to receive  `ritualId` and allow-list access, or use the [publicly available testnet rituals](integration-guides/get-started-with-tac.md#testnet-configuration).
+In order to run the code examples below, you will need the `ritualId` encryption parameter. **In production**, your wallet address (encryptor) will also have to be allow-listed for this specific ritual. Please reach out to us [here](https://discord.com/channels/866378471868727316/870383642751430666) in order to receive  `ritualId` and allow-list access. However, we have [publicly available testnet rituals](integration-guides/get-started-with-tac.md#testnet-configuration) for use when developing your apps.
 
 ## Encrypt your data
 

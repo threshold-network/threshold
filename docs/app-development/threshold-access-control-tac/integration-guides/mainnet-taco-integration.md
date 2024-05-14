@@ -1,6 +1,6 @@
 # Mainnet TACO: Integration
 
-Note that using TACo in production requires a unique DKG initialization ritual, DKG public key and cohort of nodes running TACo software – these are accessed via a unique `ritualID` parameter in the third step below. Please see the [beta program](mainnet-taco-beta-program.md) page for instructions on how to initialize a DKG ritual.
+Note that using TACo in production requires a unique DKG initialization ritual, DKG public key and cohort of nodes running TACo software – these are accessed via a unique `ritualID` parameter in the third step below. Please see the [beta program](../integration-guide/mainnet-beta-program.md) page for instructions on how to initialize a DKG ritual.
 
 ## 0. Pick an appropriate `taco` version
 
@@ -20,7 +20,7 @@ Once you picked a network, head over to npmjs.com to find the current version [f
 
 You can learn more about the current state of `mainnet` and test networks here:
 
-* [mainnet-taco-beta-program.md](mainnet-taco-beta-program.md "mention")
+* [mainnet-beta-program.md](../integration-guide/mainnet-beta-program.md "mention")
 * [get-started-with-tac.md](get-started-with-tac.md "mention")
 
 ## 1. Install and integrate `taco`
