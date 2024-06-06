@@ -65,9 +65,11 @@ For system requirements and cost estimates to run a staker node, please see [tbt
 
 Ultimately, the network's objective is to retire Beta Stakers Program altogether and make staking fully permissionless. For that, the following infrastructure upgrades have to take place:&#x20;
 
-* Enable moving of funds across wallets&#x20;
-* Decentralized Wallet Coordination ([RFC-12](https://github.com/keep-network/tbtc-v2/blob/6432ff0ff8c0bee046150a74f7e27eb06245f67f/docs/rfc/rfc-12.adoc))
-* Optimistic redemptions (_Proposal pending_)&#x20;
-* Signature scheme migration from ECDSA to Schnorr ([RFC-10](https://github.com/keep-network/tbtc-v2/blob/8822b31d74d7d9bf267b312aa54554e675f3fd79/docs/rfc/rfc-10.adoc#L4))
-* Enable fraud and slashing mechanism in contracts in concert with automated fraud-defeat mechanism in Keep Core wallet client&#x20;
-* Rewards calculation migrated to on-chain
+* \[<mark style="color:green;">Released</mark>] Implement decentralized wallet coordination ([RFC-12](https://github.com/keep-network/tbtc-v2/blob/6432ff0ff8c0bee046150a74f7e27eb06245f67f/docs/rfc/rfc-12.adoc))
+* \[<mark style="color:green;">Released</mark>] Implement optimistic redemptions
+* \[<mark style="color:blue;">Release scheduled</mark>] Implement moving funds across wallets and heartbeats in the client
+* \[<mark style="color:yellow;">In progress</mark>] Migrate signature scheme from tECDSA to Schnorr ([RFC-10](https://github.com/keep-network/tbtc-v2/blob/8822b31d74d7d9bf267b312aa54554e675f3fd79/docs/rfc/rfc-10.adoc#L4))
+* Enable fraud and slashing mechanisms in contracts
+* Migrate staking rewards calculation to on-chain contracts
+* Optimize network layer for scale
+* Integrate DKG with the random beacon (or alternative solution)
