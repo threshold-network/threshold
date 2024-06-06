@@ -40,6 +40,7 @@ const ownsNFT = new conditions.predefined.erc721.ERC721Ownership({
 });
 
 const message = "my secret message";
+const ritualId = 0
 
 const messageKit = await encrypt(
 <strong>  web3Provider,
