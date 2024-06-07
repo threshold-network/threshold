@@ -1,8 +1,8 @@
 # Irys + TACo
 
-This three-step guide explains how to integrate TACo with [Irys](https://docs.irys.xyz/), thereby enabling end-users to flexibly share and access encrypted data uploaded to permanent storage on [Arweave](https://www.arweave.org/build). \
+This three-step guide explains how to integrate TACo with [Irys](https://docs.irys.xyz/), thereby enabling end-users to flexibly share/access encrypted data uploaded to permanent storage on [Arweave](https://www.arweave.org/build). \
 \
-Irys's sub-millisecond uploads/data egress can be parallelized with TACo's low-latency decryption material retrieval, ensuring rapid access to shared data. Provenance features like tx receipts and cryptographic proof-of-time are fully compatible with TACo, and are equally (or arguably more) important for sensitive information and messages. Broadly, combining Irys & TACo offers long-term sovereignty to end-users – i.e. that their private data will remains accessible to qualifying devices forever.&#x20;
+There are plenty of reasons to combine these technologies. Irys's sub-millisecond upload & data egress can be parallelized with TACo's low-latency decryption flow, ensuring rapid access to shared data. Provenance features like tx receipts and cryptographic proof-of-time are fully compatible with TACo, and are equally (or arguably more) important for sensitive information and messages. Broadly, integrating Irys & TACo offers long-term sovereignty to end-users – i.e. that their private data will remains accessible to qualifying devices forever.&#x20;
 
 ## Use cases&#x20;
 
@@ -20,15 +20,14 @@ yarn add @irys/sdk
 ## 1. Specify access conditions & encrypt the data&#x20;
 
 {% hint style="warning" %}
-In this guide, the parameters `ritualId = 0` and `domains.TESTNET` are utilized. These refer to an open DKG public key and hacker-facing testnet respectively. Although fully functional and up-to-date with Mainnet, this development environment is **not decentralized** and unsuitable for production or real-world sensitive data. For more information, see the trust assumptions [section](../trust-assumptions/testnet-trust-assumptions/).&#x20;
+This guide utilizes the parameters `ritualId = 0` and `domains.TESTNET`. These refer to an open DKG public key and hacker-facing testnet respectively. Although fully functional and up-to-date with Mainnet, this development environment is **not decentralized** and unsuitable for real-world sensitive data. For more information, see the trust assumptions [section](../trust-assumptions/testnet-trust-assumptions/).&#x20;
 {% endhint %}
 
-First, we initialize the `taco-web` library.&#x20;
+First, we initialize the `taco-web` [library](https://github.com/nucypher/taco-web).&#x20;
 
-As the data producer, we first create an access condition. Here we use the simple condition `ownsNFT`.\
-Data consumers must prove ownership of a specific ERC-721 NFT in order to gain decryption material pertaining to the encrypted message. More on condition types [here](../conditions/).\
+As the data producer, we first create an access condition. Here we use the simple condition `ownsNFT` – data consumers must prove ownership of a specific ERC-721 NFT in order to gain decryption material pertaining to the encrypted message. More on condition types [here](../conditions/).\
 \
-We encrypt the message using the `ownsNFT` condition. We specify the aforementioned testnet domain and ritualID, and also utilize a standard web3 provider/signer. The output of this function is known as a `messageKit` – a payload containing both the encrypted data and embedded metadata necessary for a qualifying data consumer to access the message. Finally, we convert the `messageKit`to a hex string format, which will help us upload it to Irys in a single transaction.&#x20;
+We encrypt the message using the `ownsNFT` condition. We specify the aforementioned testnet `domain` and `ritualID`, and also utilize a standard web3 provider/signer. The output of this function is known as a `messageKit` – a payload containing both the encrypted data and embedded metadata necessary for a qualifying data consumer to access the message. Finally, we convert the `messageKit`to a hex string format, which will help us upload it via Irys in a single transaction.&#x20;
 
 ```typescript
 import { initialize, encrypt, conditions, domains, toHexString } from '@nucypher/taco';
@@ -61,19 +60,20 @@ const encryptedMessageHex = toHexString(encryptedMessage.toBytes());
 
 ## 2. Connect to Irys & store the data&#x20;
 
-First, we connect to an Irys node.&#x20;
+First, we connect to an Irys [Devnet](https://docs.irys.xyz/developer-docs/using-devnet) node. This requires funding a wallet with any of the devnet [tokens](https://docs.irys.xyz/overview/supported-tokens) supported by Irys. In this example we're using Polygon (Amoy) MATIC.&#x20;
 
 {% hint style="info" %}
-This guide uses an Irys Devnet. This means that storage is not decentralized and will only live on Arweave for **60 days**.&#x20;
+The Irys Devnet is for testing purposes only – it is not decentralized and data will only remain on Arweave for **60 days**. See the final section to use TACo & Irys in production.&#x20;
 {% endhint %}
 
-We then construct a JSON object from the `encryptedMessageHex`. Then upload the encrypted data to Arweave.
+We then construct a single JSON object from the `encryptedMessageHex`. We can now upload the encrypted data to Arweave, which will be retrievable once an Irys [gateway](https://docs.irys.xyz/developer-docs/downloading) has indexed the data. This is identifiable via the `receiptID`, which is provided to the data consumer via a side-channel.&#x20;
 
 <pre class="language-typescript"><code class="lang-typescript">import { WebIrys } from '@irys/sdk';
 
 const token = 'matic';
+const network = 'devnet';
 const wallet = { rpcUrl: https://rpc-amoy.polygon.technology/, name: 'ethersv5', web3Provider };
-const webIrys = new WebIrys({ url: https://node2.irys.xyz, token, wallet });
+const webIrys = new WebIrys({ network, token, wallet });
 
 await webIrys.ready();
 
@@ -85,14 +85,14 @@ console.log(`Data uploaded ==> https://gateway.irys.xyz/${receipt.id}`);
 
 ## 3. Retrieve & decrypt the data
 
-As the data consumer, we first retrieve the encrypted data from Arweave&#x20;
+From the data consumer's perspective, we now use the `receiptID` to find and retrieve the encrypted payload via an Irys gateway. Note that the same data identifier works with Arweave gateways.&#x20;
 
-We then decrypt the data.&#x20;
+Finally, we prove we own a particular wallet (and that this wallet holds the correct NFT), retrieve fragments of decryption material from TACo nodes, assemble these fragments locally, and decrypt the payload. All of these steps are contained in the `decrypt()` function below.&#x20;
 
 ```typescript
 import { getPorterUri, ThresholdMessageKit, decrypt } from '@nucypher/taco';
 
-const response = await fetch(`https://gateway.irys.xyz/${receiptId}`);
+const response = await fetch(`https://gateway.irys.xyz/${receipt.id}`);
 const dataJson = await response.text();
 const encryptedMessage = ThresholdMessageKit.fromBytes(
   Buffer.from(JSON.parse(dataJson), 'hex'),
@@ -110,4 +110,9 @@ console.log(decryptedMessage);
 ```
 
 ## Using Irys & TACo in production&#x20;
+
+As noted, the parameters specified this guide are for testing and hacking only. For real-world use cases where uploaded data should remain private & permanent, production versions of Irys & TACo are required:
+
+* For Irys, connect to Mainnet Nodes 1 or 2, rather than a Devnet node. This requires a wallet [funded](https://docs.irys.xyz/overview/cost-to-upload) with any of the supported Mainnet payment tokens.&#x20;
+* For TACo, a funded Mainnet `ritualID` is required – this connects the encrypt/decrypt API to a cohort of independently operated nodes, and corresponds to a DKG public key generated by independent parties. A dedicated `ritualID` for Irys + TACo projects will be sponsored soon. Watch for updates here or in the Discord [#taco](https://discord.com/channels/866378471868727316/870383642751430666) channel.&#x20;
 
