@@ -1,6 +1,6 @@
 # Irys + TACo
 
-This guide explains how to integrate TACo with [Irys](https://docs.irys.xyz/), thereby enabling end-users to flexibly share and access encrypted data uploaded to permanent storage on [Arweave](https://www.arweave.org/build). \
+This three-step guide explains how to integrate TACo with [Irys](https://docs.irys.xyz/), thereby enabling end-users to flexibly share and access encrypted data uploaded to permanent storage on [Arweave](https://www.arweave.org/build). \
 \
 Irys's sub-millisecond uploads/data egress can be parallelized with TACo's low-latency decryption material retrieval, ensuring rapid access to shared data. Provenance features like tx receipts and cryptographic proof-of-time are fully compatible with TACo, and are equally (or arguably more) important for sensitive information and messages. Broadly, combining Irys & TACo offers long-term sovereignty to end-users – i.e. that their private data will remains accessible to qualifying devices forever.&#x20;
 
@@ -17,7 +17,18 @@ yarn add @nucypher/taco
 yarn add @irys/sdk
 ```
 
-## Encrypt Data
+## 1. Specify access conditions & encrypt the data&#x20;
+
+{% hint style="warning" %}
+In this guide, the parameters `ritualId = 0` and `domains.TESTNET` are utilized. These refer to an open DKG public key and hacker-facing testnet respectively. Although fully functional and up-to-date with Mainnet, this development environment is **not decentralized** and unsuitable for production or real-world sensitive data. For more information, see the trust assumptions [section](../trust-assumptions/testnet-trust-assumptions/).&#x20;
+{% endhint %}
+
+First, we initialize the `taco-web` library.&#x20;
+
+As the data producer, we first create an access condition. Here we use the simple condition `ownsNFT`.\
+Data consumers must prove ownership of a specific ERC-721 NFT in order to gain decryption material pertaining to the encrypted message. More on condition types [here](../conditions/).\
+\
+We encrypt the message using the `ownsNFT` condition. We specify the aforementioned testnet domain and ritualID, and also utilize a standard web3 provider/signer. The output of this function is known as a `messageKit` – a payload containing both the encrypted data and embedded metadata necessary for a qualifying data consumer to access the message. Finally, we convert the `messageKit`to a hex string format, which will help us upload it to Irys in a single transaction.&#x20;
 
 ```typescript
 import { initialize, encrypt, conditions, domains, toHexString } from '@nucypher/taco';
@@ -35,7 +46,7 @@ const ownsNFT = new conditions.predefined.erc721.ERC721Ownership({
 });
 const ritualId = 0
 
-const message = "my secret message";
+const message = "this will be here forever";
 
 const messageKit = await encrypt(
   web3Provider,
@@ -48,15 +59,15 @@ const messageKit = await encrypt(
 const encryptedMessageHex = toHexString(encryptedMessage.toBytes());
 ```
 
-This code initializes the TACo library and sets up a [condition](../conditions/) that requires ownership of a specific ERC-721 NFT for decryption. It then encrypts a secret message using this condition, specifying the testnet domain and utilizing the connected web3 provider and signer for the encryption process. The result is a `messageKit` which contains the encrypted data and metadata necessary for controlled decryption.
+## 2. Connect to Irys & store the data&#x20;
+
+First, we connect to an Irys node.&#x20;
 
 {% hint style="info" %}
-`We` are using `ritualId = 0` and `domains.TESTNET` in this example. These correspond to our [publicly available development environment](get-started-with-tac.md) and are **not** suitable for production.&#x20;
+This guide uses an Irys Devnet. This means that storage is not decentralized and will only live on Arweave for **60 days**.&#x20;
 {% endhint %}
 
-## Storing the Data&#x20;
-
-Next, connect to an Irys node and upload the encrypted data to Arweave.
+We then construct a JSON object from the `encryptedMessageHex`. Then upload the encrypted data to Arweave.
 
 <pre class="language-typescript"><code class="lang-typescript">import { WebIrys } from '@irys/sdk';
 
@@ -72,9 +83,11 @@ await webIrys.ready();
 console.log(`Data uploaded ==> https://gateway.irys.xyz/${receipt.id}`);
 </code></pre>
 
-## Retrieving the Data
+## 3. Retrieve & decrypt the data
 
-Finally, retrieve the encrypted data from Arweave and decrypt it.
+As the data consumer, we first retrieve the encrypted data from Arweave&#x20;
+
+We then decrypt the data.&#x20;
 
 ```typescript
 import { getPorterUri, ThresholdMessageKit, decrypt } from '@nucypher/taco';
@@ -95,3 +108,6 @@ const decryptedMessage = await decrypt(
 
 console.log(decryptedMessage);
 ```
+
+## Using Irys & TACo in production&#x20;
+
