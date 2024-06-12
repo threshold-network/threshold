@@ -67,7 +67,7 @@ Ultimately, the network's objective is to retire Beta Stakers Program altogether
 
 * \[<mark style="color:green;">Released</mark>] Implement decentralized wallet coordination ([RFC-12](https://github.com/keep-network/tbtc-v2/blob/6432ff0ff8c0bee046150a74f7e27eb06245f67f/docs/rfc/rfc-12.adoc))
 * \[<mark style="color:green;">Released</mark>] Implement optimistic redemptions
-* \[<mark style="color:blue;">Release scheduled</mark>] Implement moving funds across wallets and heartbeats in the client
+* \[<mark style="color:green;">Released</mark>] Implement moving funds across wallets and heartbeats in the client
 * \[<mark style="color:yellow;">In progress</mark>] Migrate signature scheme from tECDSA to Schnorr ([RFC-10](https://github.com/keep-network/tbtc-v2/blob/8822b31d74d7d9bf267b312aa54554e675f3fd79/docs/rfc/rfc-10.adoc#L4))
 * Enable fraud and slashing mechanisms in contracts
 * Migrate staking rewards calculation to on-chain contracts
