@@ -22,7 +22,7 @@ The NuCypher team â€“  Threshold Network co-founders and TACo core developers â€
 a. the number of nodes required (min. 30)\
 b. the duration of node rental required (min. 12 months)\
 c. the number of unique/reusable encryptors credits required (min. 500) \
-For more details, see the [Fee Model ](../fee-model.md)section. \
+For more details, see the [Fee Model ](../mainnet-fees.md)section. \
 \
 (4) Complete the payment into a proxy contract, which will escrow the funds until the DKG Initialization Ritual is complete. At completion, the payment will be transferred to the Threshold Treasury Guild (part of the Threshold DAO). The proxy contract address will be provided on acceptance to the beta program.&#x20;
 
