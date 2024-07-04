@@ -32,6 +32,10 @@
   * [Bootstrapping](applications/threshold-usd/threshold-usd/README.md)
     * [Initial Protocol Loan](applications/threshold-usd/threshold-usd/initial-protocol-loan.md)
   * [B. Protocol](applications/threshold-usd/b.-protocol.md)
+  * [thUSD on Build on Bitcoin (BOB)](applications/threshold-usd/thusd-on-build-on-bitcoin-bob/README.md)
+    * [Connecting to BOB Network](applications/threshold-usd/thusd-on-build-on-bitcoin-bob/connecting-to-bob-network.md)
+    * [Bridging Collateral to BOB Network](applications/threshold-usd/thusd-on-build-on-bitcoin-bob/bridging-collateral-to-bob-network.md)
+    * [Opening Collateral Vaults and Minting thUSD](applications/threshold-usd/thusd-on-build-on-bitcoin-bob/opening-collateral-vaults-and-minting-thusd.md)
 
 ## Governance
 
