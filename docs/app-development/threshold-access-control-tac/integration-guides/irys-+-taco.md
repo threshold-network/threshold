@@ -109,6 +109,10 @@ const decryptedMessage = await decrypt(
 console.log(decryptedMessage);
 ```
 
+## Example integration
+
+Check out this [token-gated photo album](https://github.com/lukecd/irys-threshold), an intuitive mini-app that demonstrates the power and simplicity of using Irys & TACo in concert. Images are encrypted via the TACo API and stored on-chain via Irys. In order to view the images, users must prove they hold special-purpose NFT.&#x20;
+
 ## Using Irys & TACo in production&#x20;
 
 As noted, the parameters specified this guide are for testing and hacking only. For real-world use cases where uploaded data should remain private & permanent, production versions of Irys & TACo are required:
