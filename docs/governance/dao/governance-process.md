@@ -1,4 +1,4 @@
-# 🗳 Governance Process
+# 🗳️ Governance Process
 
 ### Lifecycle of a successful proposal
 
@@ -15,4 +15,4 @@
 
 * **Council vetos:** During the on-chain phase, the Elected Council can veto any proposal. This is intended to be an extra security mechanism in the event that a dangerous proposal passes.&#x20;
 * **Late quorum prevention:** The 10-days voting period is automatically extended when quorum is reached late, to prevent governance attacks that try to reach quorum at the last minute; in case a proposal reaches quorum less than 2 days before the deadline, the proposal deadline is **extended for 2 more days** from the moment the quorum was reached.
-* **Off-chain proposals:** Some proposals to not imply any on-chain action (e.g. Council and Guild elections). In these cases, there is only a Snapshot vote, with no associated on-chain proposal).
+* **Off-chain proposals:** Some proposals do not imply any on-chain action (e.g. Council and Guild elections). In these cases, there is a Snapshot vote that takes 5 days for regular proposals and 7 days for elections, with no associated on-chain proposal.
