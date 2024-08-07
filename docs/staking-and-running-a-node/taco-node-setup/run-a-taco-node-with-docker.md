@@ -95,6 +95,14 @@ NUCYPHER_OPERATOR_ETH_PASSWORD=<YOUR OPERATOR ETH ACCOUNT PASSWORD>
 
 TACo nodes must be initialized before launching. This is an interactive one-time step that will create network participation keys and an initial JSON configuration file:&#x20;
 
+{% hint style="warning" %}
+Initializing a TACo node is a one-time procedure that requires you to secure a mnemonic seed phrase. This phrase is used to derive cryptographic keys used in TACo protocols.  It is critical to maintain custody of the mnemonic in case of password loss or host relocation.&#x20;
+{% endhint %}
+
+{% hint style="danger" %}
+Loss of the TACo secret mnemonic may result in your stake being slashed.
+{% endhint %}
+
 <pre class="language-bash"><code class="lang-bash">docker run -it --rm                        \
 --name ursula-init                         \
 <strong>-v ~/.local/share/nucypher:/root/.local/share/nucypher:rw \
@@ -118,12 +126,6 @@ Replace the following values with your own:
 * `<OPERATOR ADDRESS>`  The dedicated ethereum address to be used by the TACo node
 
 Follow the in-terminal prompts. You will see a public key for your TACo node and be assigned a mnemonic phrase.
-
-{% hint style="danger" %}
-The TACo mnemonic is a secret. Do not share it with anyone. &#x20;
-
-Carefully secure and back-up your node's secret mnemonic off-site. Loss of the mnemonic means you will be unable to recover your node's network keys, meaning your node will be unable to provide the TACo service. This will result in a loss of compensation.&#x20;
-{% endhint %}
 
 ## 5. Launch the Node
 

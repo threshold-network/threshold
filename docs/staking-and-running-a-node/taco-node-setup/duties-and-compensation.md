@@ -2,10 +2,15 @@
 
 ### Node **Operator Duties**&#x20;
 
-Running a TACo node is not a passive activity, but the on-going responsibilities for participating stakers are very manageable. To supply a high quality service and sustain the utility of the Threshold Network, TACo node operators must:&#x20;
+{% hint style="danger" %}
+Failure to adhere to node operator duties may result in on-chain punishments, including the withholding of rewards and slashing of stakes.&#x20;
+{% endhint %}
 
-* Keep the server/machine running TACo software online and accessible at all times; such that incoming decryption requests are verified and answered immediately, and there is no delay in reaching a threshold and supplying decryption material to qualifying data recipients.&#x20;
-* Ensure their machine is running the latest version of TACo. New version releases will be shared on the Threshold Discord [#announcements](https://discord.com/channels/866378471868727316/870384195636199455) channel – make sure you have notifications enabled.&#x20;
+Operating a TACo node requires active engagement. To provide high-quality service and maintain the reliability of the Threshold Network, TACo node operators must:
+
+1. **Safeguard TACo Private Keys and Secret Mnemonic**: This includes creating an off-site record of the mnemonic assigned to your node in the initialization step and securing a copy of the keystore directory and passwords.
+2. **Maintain Continuous Server Accessibility**: Ensure the server or machine running TACo software is online and accessible at all times, allowing for immediate verification and response to incoming decryption requests. This prevents delays in reaching a threshold and providing decryption material to qualifying data recipients.
+3. **Update to the Latest TACo Version**: Ensure your node is running the latest version of TACo. New releases will be announced on the Threshold Discord #announcements channel; enable notifications to stay updated.
 
 ### **Deauthorization Delay**&#x20;
 
