@@ -4,7 +4,7 @@ As decentralized apps become the digital norm, Web 3.0 platforms will increasing
 
 The Threshold Network remedies these concerns by offering a full suite of decentralized threshold cryptography services. Threshold cryptography protects data by distributing operations across a network of independent nodes. This simple idea increases security and availability and reduces reliance on trusted parties.
 
-Threshold, and its [T token](resources/t-token.md), allow token holders can help power a one-stop platform for threshold cryptographic services by staking and running a decentralized node, and are incentivized to provide these services without any central authority.&#x20;
+Threshold, and its [T token](resources/t-token.md), allow token holders to power a one-stop platform for threshold cryptographic services by staking and running a decentralized node. Node operators are crypto-economically incentivized to provide these services without any central authority.&#x20;
 
 At the heart of the Threshold Network are flagship services like [tBTC](applications/tbtc-v2/), a bitcoin asset bridge, and  [TACo](applications/threshold-access-control/), an access control plugin. Traditionally, critical operations such as signing, randomness generation, and access control require trust in a single entity.
 
