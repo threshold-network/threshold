@@ -1,12 +1,12 @@
 # TACo Node Setup
 
-**Running your own TACo node is not a passive activity, but the set-up and on-going responsibilities are very manageable for independent stakers.**&#x20;
+**Running a TACo node is not a passive activity, and requires some DevOps experience. However, TACo was designed with independent stakers in mind, and is relatively very accessible from a skills and cost perspective . The set-up and ongoing maintenance are manageable and do not require a major time commitment.**&#x20;
 
-Before authorizing your stake to TACo, please read all the pages in this section to understand the system requirements, installation options, operator responsibilities, token lock-up commitments, and reward/fee models.&#x20;
+Before authorizing your stake to TACo, please read all the pages in this section to understand the [system requirements](minimum-system-requirements.md), [installation options](run-a-taco-node-with-docker.md), [authorization & registration steps](taco-authorization-and-operator-registration/), [operator responsibilities](duties-and-compensation.md), [token lock-up commitments](duties-and-compensation.md), [violations & penalties](duties-and-compensation.md), and [reward & fee models](duties-and-compensation.md). \
+\
+Make sure you have notifications enabled for the [#announcements](https://discord.com/channels/866378471868727316/870384195636199455) channel in the Threshold discord, so you don't miss any major updates – even if you have [automatic upgrades](taco-node-management.md) enabled.&#x20;
 
 {% hint style="warning" %}
-As of January 1st 2024, running a Proxy Re-Encryption (PRE) node is no longer compensated by Threshold's inflationary rewards (Stable Yield). Stakers are advised to shut down their PRE server and spin up a TACo node on a fresh instance if they wish to continue earning a 3.75% yield. PRE functionality will be folded into a later version of the TACo service, if and when there is demand from adopting developers.&#x20;
+As of January 1st 2024, running a Proxy Re-Encryption (PRE) node is no longer compensated. Stakers are advised to spin up a TACo node on a fresh instance if they wish to earn rewards & fees. PRE functionality may be folded into a later version of the TACo service, if and when there is demand from adopting developers.&#x20;
 {% endhint %}
-
-
 
