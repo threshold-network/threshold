@@ -12,15 +12,15 @@ Recovery Mode kicks in when the Total Collateral Ratio (TCR) of the system falls
 
 During Recovery Mode, Vaults with a collateral ratio below 150% can be liquidated.
 
-Moreover, the system blocks borrower transactions that would further decrease the TCR. New LUSD may only be issued by adjusting existing Vaults in a way that improves their collateral ratio, or by opening a new Vault with a collateral ratio>=150%. In general, if an existing Vault's adjustment reduces its collateral ratio, the transaction is only executed if the resulting TCR is above 150%.
+Moreover, the system blocks borrower transactions that would further decrease the TCR. New thUSD may only be issued by adjusting existing Vaults in a way that improves their collateral ratio, or by opening a new Vault with a collateral ratio>=150%. In general, if an existing Vault's adjustment reduces its collateral ratio, the transaction is only executed if the resulting TCR is above 150%.
 
 ## What is the Total Collateral Ratio?
 
-The Total Collateral Ratio or TCR is the ratio of the Dollar value of the entire system collateral at the current ETH:USD price, to the entire system debt. In other words, it's the sum of the collateral of all Vaults expressed in USD, divided by the debt of all Vaults expressed in LUSD.
+The Total Collateral Ratio or TCR is the ratio of the Dollar value of the entire system collateral at the current ETH:USD price, to the entire system debt. In other words, it's the sum of the collateral of all Vaults expressed in USD, divided by the debt of all Vaults expressed in thUSD.
 
 ## What is the purpose of Recovery Mode?
 
-The goal of Recovery Mode is to incentivize borrowers to behave in ways that promptly raise the TCR back above 150%, and to incentivize LUSD holders to replenish the Stability Pool.
+The goal of Recovery Mode is to incentivize borrowers to behave in ways that promptly raise the TCR back above 150%, and to incentivize thUSD holders to replenish the Stability Pool.
 
 Economically, Recovery Mode is designed to encourage collateral top-ups and debt repayments, and also itself acts as a self-negating deterrent: the possibility of it occurring actually guides the system away from ever reaching it. Recovery Mode is not a desirable state for the system.
 
