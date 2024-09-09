@@ -13,15 +13,15 @@ Adopting developers pay for the TACo service via a dual fee model, which covers:
 
 There is no charge, payment gate or limit on:
 
-* encryptions.
-* types or combinations of conditions specified.
-* unique requestor identities.
-* throughput/number of requests.
-* decryptions.
-* condition validations/invalidations.
-* additions/removals of addresses to/from the authAdmin list.
-* additions/removals of addresses to/from the encryptor allowlist.
-* any other communication with the network or API.
+* encryptions
+* types or combinations of conditions specified
+* unique requestor identities
+* throughput/number of requests
+* decryptions
+* condition validations/invalidations
+* additions/removals of addresses to/from the authAdmin list
+* additions/removals of addresses to/from the encryptor allowlist
+* any other communication with the network or API
 
 ### `sponsor` & `cohortAdmin` Roles
 

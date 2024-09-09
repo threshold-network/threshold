@@ -26,7 +26,7 @@ Knowing the [signature of this method](https://ethereum.org/en/developers/docs/a
  parameters: [':userAddress'],
 ```
 
-`':userAddress'` is a reserved [context variable](context-and-context-parameters.md) that denotes the address of the recipient that will attempt to decrypt our data. Before the attempt is made, the `':userAddress'` value will be replaced with the actual wallet address.
+`':userAddress'` is a reserved [context variable](conditioncontext-and-context-variables.md) that denotes the address of the recipient that will attempt to decrypt our data. Before the attempt is made, the `':userAddress'` value will be replaced with the actual wallet address.
 
 Now that we've specified our contract call, we need to figure out what to do with the contract call results. Let's take a look at the `returnValueTest` field:
 

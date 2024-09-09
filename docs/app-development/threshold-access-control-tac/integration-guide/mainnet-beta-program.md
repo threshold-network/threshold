@@ -30,4 +30,4 @@ For more details, see the [Fee Model ](../mainnet-fees.md)section. \
 During the beta program, the proxy contract will act as an temporary`sponsor`of the cohort. The`sponsor` role **does not** have any power over the `ritualID.`Rather, the designated Polygon address (the`cohortAdmin`role) will have complete control over the DKG public key, the allow logic to authorize encryptors, and cohort/network-level parameters – e.g. the size of the cohort.&#x20;
 {% endhint %}
 
-(4) Complete the set-up by following the instructions in the Mainnet TACo Integration [guide](../integration-guides/mainnet-taco-integration.md).
+(4) Complete the set-up by following the instructions in the TACo Integration [guide](../integration-guides/taco-integration.md).
