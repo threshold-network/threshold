@@ -14,7 +14,7 @@ The minimum stake to run a node is 40,000T. Stakers must decide which applicatio
 
 ### How does authorizing applications and reward allocation work?
 
-As of Nov 18, 2023 there are two Threshold applications to which a staker can authorize their stake: tBTC and TACo. tBTC has another application bundled with it, called Random Beacon, which must also be authorized via the staker [dashboard](https://dashboard.threshold.network/).
+Currently there are two Threshold applications to which a staker can authorize their stake: tBTC and TACo. tBTC has another application bundled with it, called Random Beacon, which must also be authorized via the staker [dashboard](https://dashboard.threshold.network/).
 
 Rewards are allocated as follows: 75% to tBTC/Random Beacon and 25% to TACo. To earn the full 15% annual yield on their stake, stakers must fully authorize to both applications.&#x20;
 
@@ -37,7 +37,7 @@ Stakers who delegate simply pay service fees to Staking Providers. Each Staking 
 
 ### How many staker nodes are there?
 
-As of Nov 18 2023, there are 149 tBTC nodes in Threshold Network. The number of nodes may change at any time. For the latest figure, please visit [https://status.threshold.network/](https://status.threshold.network/). &#x20;
+As of the second half of 2023 Threshold Network reported 149 tBTC nodes. Given the dynamic nature of the network, the number of nodes is subject to change.For the latest figure and node operations stats please visit [tbtcscan.com/operators](https://tbtcscan.com/operators) or check [status.threshold.network](https://status.threshold.network/).
 
 <figure><img src="../.gitbook/assets/image (2).png" alt="" width="375"><figcaption><p>As of Nov 18 2023, there are 149 staker nodes</p></figcaption></figure>
 
@@ -55,7 +55,11 @@ These allow-listed stakers are called Beta Stakers. The goal of the Beta Staker 
 
 Note that this is a form of 'progressive decentralization', but with a clear, simple and already deployed _pathway_ for the decentralization depth to increase – i.e. by adding more independent stakers to the allow list. To that end, a proposal is in the works to delegate DAO T to additional independent nodes, enabling them to join the Beta Staker Program and increase the infrastructural and geographical diversity of the node array. Note that the longer-term goal is to end the permissioned paradigm and retire the Beta Stakers Program (see below).&#x20;
 
-As of Nov 18, 2023, there are 20 Beta Stakers delegating their stakes across three professional staking providers ([Boar](https://boar.network/), [Staked](https://staked.us/), [P2P](https://p2p.org/)). The number of Beta Stakers may change at any time. Visit the [contract page on Etherscan](https://etherscan.io/address/0xc2731fb2823af3Efc2694c9bC86F444d5c5bb4Dc#readContract#F16) for the latest figure.&#x20;
+As of the latest contract query, there are now 35 Beta Stakers, an increase from 20 as previously reported on November 18, 2023. A few notable professional staking providers can be found requesting DAO approval [here](https://forum.threshold.network/t/tip-067-part-1-add-professional-node-operators-to-beta-staker-program/730/20).&#x20;
+
+<table data-view="cards" data-full-width="false"><thead><tr><th></th></tr></thead><tbody><tr><td><p><a href="https://boar.network/">Boar</a></p><p><a href="https://staked.us/">Staked</a></p><p><a href="https://p2p.org/">P2P</a></p><p><a href="https://www.liquify.io/">Liquify Ltd</a></p><p><a href="https://piertwo.com/">Pier Two</a></p></td></tr><tr><td><p><a href="https://globalstake.io/">GlobalStake</a><br><a href="https://delightlabs.io/">DelightLabs</a></p><p><a href="https://www.ponkila.com/">Ponkila</a></p><p><a href="https://sub7.xyz/">Sub7</a></p></td></tr><tr><td><p>Kiln</p><p>Republic Crypto</p><p>Colossus S.r.l.</p><p>Staked Capital</p></td></tr></tbody></table>
+
+The number of Beta Stakers may change at any time. Visit the [contract page on Etherscan](https://etherscan.io/address/0xc2731fb2823af3Efc2694c9bC86F444d5c5bb4Dc#readContract#F16) for the latest figure.&#x20;
 
 <figure><img src="../.gitbook/assets/image (1) (1).png" alt="" width="563"><figcaption><p>As of Nov 18, 2023, there are 20 Beta Stakers</p></figcaption></figure>
 
