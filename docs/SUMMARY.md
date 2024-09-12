@@ -91,6 +91,7 @@
     * [Mainnet TACo Beta Program](app-development/threshold-access-control-tac/integration-guide/mainnet-beta-program.md)
     * [TACo Integration](app-development/threshold-access-control-tac/integration-guides/taco-integration.md)
     * [Irys + TACo](app-development/threshold-access-control-tac/integration-guides/irys-+-taco.md)
+    * [Ceramic + TACo](app-development/threshold-access-control-tac/integration-guides/ceramic-+-taco.md)
   * [Mainnet Fees](app-development/threshold-access-control-tac/mainnet-fees.md)
   * [Trust Assumptions](app-development/threshold-access-control-tac/trust-assumptions/README.md)
     * [Mainnet Trust Disclosure (Provider Answers)](app-development/threshold-access-control-tac/trust-assumptions/mainnet-trust-disclosure-provider-answers.md)
