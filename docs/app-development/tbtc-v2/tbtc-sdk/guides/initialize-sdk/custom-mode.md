@@ -1,54 +1,12 @@
-# Initialize SDK
+---
+description: >-
+  Apart from the opinionated initialization functions, the SDK provides a
+  flexible TBTC.initializeCustom function for advanced users.
+---
 
-Before initializing the tBTC SDK instance in your project, you need to answer the following questions:
+# Custom mode
 
-* What Bitcoin network and which tBTC contracts do you plan to interact with?
-* Do you want to perform just read-only actions or send transactions as well?
-
-Answering those questions will allow initializing the SDK in the right way. The SDK is prepared to handle common use cases but provides some flexibility as well. This guide explains that in detail.
-
-### Ethereum and Bitcoin mainnet
-
-This is the most common case when you want to use the SDK to interact with the tBTC bridge on Ethereum and Bitcoin mainnet. The SDK addresses it by exposing the `TBTC.initializeMainnet` function. That function:
-
-* Takes an Ethers signer or provider as a parameter and uses it to interact with tBTC contracts deployed on Ethereum mainnet
-* Automatically configures an Electrum Bitcoin client to communicate with the Bitcoin mainnet (communication is done through a set of pre-configured Electrum servers)
-
-The following code snippet presents the usage of this function:
-
-```typescript
-import * as ethers from "ethers"
-import { TBTC } from "@keep-network/tbtc-v2.ts"
-
-// Create an Ethers provider. Pass the URL of an Ethereum mainnet node.
-// For example, Alchemy or Infura.
-const provider = new ethers.providers.JsonRpcProvider("...")
-// Create an Ethers signer. Pass the private key and the above provider.
-const signer = new ethers.Wallet("...", provider)
-
-// If you want to initialize the SDK just for read-only actions, it is
-// enough to pass the provider. 
-const sdkReadonly = await TBTC.initializeMainnet(provider)
-// If you want to make transactions as well, you have to pass the signer.
-const sdk = await TBTC.initializeMainnet(signer)
-```
-
-{% hint style="info" %}
-The above code snippet presents just one way of creating an Ethers signer/provider. Please refer [Ethers v5 documentation](https://docs.ethers.org/v5/api) to learn more.
-{% endhint %}
-
-### Ethereum and Bitcoin testnet
-
-This is the case where you want to use the SDK to interact with the tBTC bridge on Ethereum and Bitcoin testnet. The SDK addresses it by exposing the `TBTC.initializeSepolia` function. That function:
-
-* Takes an Ethers signer or provider as a parameter and uses it to interact with tBTC contracts deployed on Ethereum Sepolia
-* Automatically configures an Electrum Bitcoin client to communicate with the Bitcoin testnet (communication is done through a set of pre-configured Electrum servers)
-
-The usage of this function is exactly the same as for the previous `TBTC.initializeMainnet` function.
-
-### Custom mode
-
-Apart from the _opinionated_ initialization functions, the SDK provides a flexible `TBTC.initializeCustom` function for advanced users. This function allows setting up the SDK to work with custom tBTC smart contracts and custom Bitcoin network. For example, it can be used to address the following use cases:
+This function allows setting up the SDK to work with custom tBTC smart contracts and custom Bitcoin network. For example, it can be used to address the following use cases:
 
 #### Using locally deployed tBTC contracts and local Bitcoin network
 
@@ -204,8 +162,6 @@ const bitcoinClient = new MockBitcoinClient()
 // Initialize the SDK.
 const sdk = await TBTC.initializeCustom(tbtcContracts, bitcoinClient)
 ```
-
-
 
 
 

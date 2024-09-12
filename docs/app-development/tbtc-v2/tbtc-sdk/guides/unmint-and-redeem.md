@@ -4,7 +4,7 @@ Another core feature of the tBTC bridge is unminting (burning) TBTC tokens and r
 
 ### Initialize the SDK
 
-First, initialize the SDK, as described in the [initialize-sdk.md](initialize-sdk.md "mention") guide.
+First, initialize the SDK, as described in the [initialize-sdk](initialize-sdk/ "mention") guide.
 
 ### Request redemption
 

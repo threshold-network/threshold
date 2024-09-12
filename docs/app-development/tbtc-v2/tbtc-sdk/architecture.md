@@ -12,7 +12,7 @@ As you can see, the SDK consists of several major parts:
 
 ### `TBTC` component
 
-The `TBTC` component is the main entry point to the SDK. It provides different ways to initialize the SDK that are supposed to address the common use cases (see [initialize-sdk.md](guides/initialize-sdk.md "mention") guide to learn more). Moreover, the `TBTC` component gives access to the SDK core features through feature services as well as low-level direct access to the underlying tBTC smart contracts and Bitcoin network client.
+The `TBTC` component is the main entry point to the SDK. It provides different ways to initialize the SDK that are supposed to address the common use cases (see [initialize-sdk](guides/initialize-sdk/ "mention") guide to learn more). Moreover, the `TBTC` component gives access to the SDK core features through feature services as well as low-level direct access to the underlying tBTC smart contracts and Bitcoin network client.
 
 ### Feature services
 

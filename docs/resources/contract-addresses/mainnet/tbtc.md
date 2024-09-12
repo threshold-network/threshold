@@ -15,6 +15,7 @@ Delivered in `@keep-network/random-beacon@2.0.0`, `@keep-network/ecdsa@2.0.0` an
 | WalletProposalValidator | [0x30019D85a86ABD3cDA1167F4C052690c32FBDEc2](https://etherscan.io/address/0x30019D85a86ABD3cDA1167F4C052690c32FBDEc2) |
 | RedemptionWatchtower    | [0xB8dF0A949aC45ff8f401553A1dcb742Feb38E6D3](https://etherscan.io/address/0xB8dF0A949aC45ff8f401553A1dcb742Feb38E6D3) |
 | CoveragePool            | [0x7D7B622C07f216d99eFc3EfB9Cf71872F46D811A](https://etherscan.io/address/0x7D7B622C07f216d99eFc3EfB9Cf71872F46D811A) |
+| L1BitcoinDepositor      | [0x75A6e4A7C8fAa162192FAD6C1F7A6d48992c619A](https://etherscan.io/address/0x75A6e4A7C8fAa162192FAD6C1F7A6d48992c619A) |
 
 ## L2/Other tBTC Application Contracts
 
@@ -24,6 +25,7 @@ Delivered in `@keep-network/random-beacon@2.0.0`, `@keep-network/ecdsa@2.0.0` an
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | ArbitrumTBTC            | [0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40](https://arbiscan.io/address/0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40) |
 | ArbitrumWormholeGateway | [0x1293a54e160D1cd7075487898d65266081A15458](https://arbiscan.io/address/0x1293a54e160D1cd7075487898d65266081A15458) |
+| L2BitcoinDepositor      | [0x1C8d7b744b474c080faADd5BF9AD965Be4258F9e](https://arbiscan.io/address/0x1C8d7b744b474c080faADd5BF9AD965Be4258F9e) |
 
 ### Base (chain ID: 8453)
 

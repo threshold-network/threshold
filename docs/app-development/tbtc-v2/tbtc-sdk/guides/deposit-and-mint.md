@@ -4,7 +4,7 @@ The main feature of the tBTC bridge is depositing BTC and using it to mint the E
 
 ### Initialize the SDK
 
-First, initialize the SDK, as described in the [initialize-sdk.md](initialize-sdk.md "mention") guide.
+First, initialize the SDK, as described in the [initialize-sdk](initialize-sdk/ "mention") guide.
 
 ### Initiate the deposit&#x20;
 

@@ -42,6 +42,7 @@ Delivered in `@keep-network/random-beacon@2.1.0-sepolia.1`, `@keep-network/ecdsa
 | LightRelay                | [0x998D17122dA4ed98e558198665984E08D1cEAA8d](https://sepolia.etherscan.io/address/0x998D17122dA4ed98e558198665984E08D1cEAA8d)      |
 | LightRelayMaintainerProxy | [0xA669AC294BCf04CEeB5EBC26d9E1bF4fc4574e06](https://sepolia.etherscan.io/address/0xA669AC294BCf04CEeB5EBC26d9E1bF4fc4574e06)      |
 | RedemptionWatchtower      | [0x4E6CFb556143381070b17825707b3DE7F3148FaC](https://sepolia.etherscan.io/address/0x4E6CFb556143381070b17825707b3DE7F3148FaC)      |
+| L1BitcoinDepositor        | [0xD9B523fb879C63b00ef14e48C98f4e3398d3BA2D](https://sepolia.etherscan.io/address/0xD9B523fb879C63b00ef14e48C98f4e3398d3BA2D)      |
 
 
 
@@ -55,6 +56,7 @@ Delivered in `` @keep-network/tbtc-v2-arbitrum@1.1.1-sepolia.0` `` NPM package.
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | ArbitrumTBTC            | [0xb8f31A249bcb45267d06b9E51252c4793B917Cd0](https://sepolia.arbiscan.io/address/0xb8f31A249bcb45267d06b9E51252c4793B917Cd0) |
 | ArbitrumWormholeGateway | [0xc3D46e0266d95215589DE639cC4E93b79f88fc6C](https://sepolia.arbiscan.io/address/0xc3d46e0266d95215589de639cc4e93b79f88fc6c) |
+| L2BitcoinDepositor      | [0xB2fEC598a9374078Bb639f3d70555fc4389b7a78](https://sepolia.arbiscan.io/address/0xB2fEC598a9374078Bb639f3d70555fc4389b7a78) |
 
 ### Optimism Sepolia (chain ID: 11155420)
 

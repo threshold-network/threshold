@@ -47,7 +47,7 @@ not guaranteed right now.
 
 ### Usage
 
-Here is a short example demonstrating SDK usage:
+Here is a brief example demonstrating the use of the SDK in Ethereum:
 
 ```typescript
 // Import SDK entrypoint component.
@@ -56,8 +56,39 @@ import { TBTC } from "@keep-network/tbtc-v2.ts"
 // Create an instance of ethers signer.
 const signer = (...)
 
-// Initialize the SDK.
+// Initialize the SDK for Ethereum only.
 const sdk = await TBTC.initializeMainnet(signer)
+
+// Access SDK features.
+sdk.deposits.(...)
+sdk.redemptions.(...)
+
+// Access tBTC smart contracts directly.
+sdk.tbtcContracts.(...)
+
+// Access Bitcoin client directly.
+sdk.bitcoinClient.(...)
+```
+
+#### Crosschain
+
+Here is a brief example demonstrating the use of the SDK in some L2, e.g. Arbitrum:
+
+```typescript
+// Import SDK entrypoint component.
+import { TBTC } from "@keep-network/tbtc-v2.ts"
+
+// Create an instance of ethers provider.
+const ethProvider = (...)
+
+// Create an instance of ethers signer.
+const arbitrumSigner = (...)
+
+// Initialize the SDK for Ethereum only.
+const sdk = await TBTC.initializeMainnet(ethProvider, true)
+
+// Initialize it for any L2 (E.g., Arbitrum)
+await sdk.initializeCrossChain("Arbitrum", arbitrumSigner);
 
 // Access SDK features.
 sdk.deposits.(...)
