@@ -7,7 +7,7 @@ Here is an example of using  `TimeCondition` .
 ```typescript
 import { conditions } from '@nucypher/taco';
 
-const ownsNFT = new conditions.base.time.TimeCondition({
+const timeCondition = new conditions.base.time.TimeCondition({
   chain: 1,
   returnValueTest: {
     comparator: '>=',
