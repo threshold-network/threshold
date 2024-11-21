@@ -37,9 +37,9 @@ Stakers who delegate simply pay service fees to Staking Providers. Each Staking 
 
 ### How many staker nodes are there?
 
-As of the second half of 2023 Threshold Network reported 149 tBTC nodes. Given the dynamic nature of the network, the number of nodes is subject to change.For the latest figure and node operations stats please visit [tbtcscan.com/operators](https://tbtcscan.com/operators) or check [status.threshold.network](https://status.threshold.network/).
+As Threshold Network is powered by a decentralized network of staker nodes which secure and maintain the protocol the node count is not fixed but it fluctuates with the entry and exit of independent operators.&#x20;
 
-<figure><img src="../.gitbook/assets/image (2).png" alt="" width="375"><figcaption><p>As of Nov 18 2023, there were 149 staker nodes</p></figcaption></figure>
+To stay informed about current node activity and overall network health please visit [tbtcscan.com/operators](https://tbtcscan.com/operators) or check [status.threshold.network](https://status.threshold.network). These resources provide up-to-date statistics on node counts, stake distribution and operational metrics.
 
 Note that these nodes are on stand-by to join the Beta Stakers Program as the allow-list expands (see below), but the majority are not currently involved in minting, redemption or custody.&#x20;
 
