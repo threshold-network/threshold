@@ -22,3 +22,11 @@ function optimisticMintingFeeDivisor() external view returns (uint32)
 
 See {TBTCVault#optimisticMintingFeeDivisor}
 
+### tbtcToken
+
+```solidity
+function tbtcToken() external view returns (address)
+```
+
+See {TBTCVault#tbtcToken}
+
