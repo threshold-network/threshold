@@ -1,5 +1,9 @@
 # TACo Node Setup
 
+{% hint style="danger" %}
+Note that it has been proposed TACo being migrated to a independent network in [TIP-092 ](https://forum.threshold.network/t/tip-092-make-t-great-again-part-1-eliminate-inflation)and [TIP-100](https://forum.threshold.network/t/tip-100-the-future-of-threshold-continued). If this proposal succeeds, no new stake authorization for TACo will be allowed during the transition process, and, therefore, nor will new TACo node deployments be allowed.
+{% endhint %}
+
 **Running a TACo node is not a passive activity, and requires some DevOps experience. However, TACo was designed with independent stakers in mind, and is relatively very accessible from a skills and cost perspective . The set-up and ongoing maintenance are manageable and do not require a major time commitment.**&#x20;
 
 Before authorizing your stake to TACo, please read all the pages in this section to understand the [system requirements](minimum-system-requirements.md), [installation options](run-a-taco-node-with-docker.md), [authorization & registration steps](taco-authorization-and-operator-registration/), [operator responsibilities](duties-and-compensation.md), [token lock-up commitments](duties-and-compensation.md), [violations & penalties](duties-and-compensation.md), and [reward & fee models](duties-and-compensation.md). \

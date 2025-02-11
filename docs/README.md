@@ -6,7 +6,7 @@ The Threshold Network remedies these concerns by offering a full suite of decent
 
 Threshold, and its [T token](resources/t-token.md), allow token holders to power a one-stop platform for threshold cryptographic services by staking and running a decentralized node. Node operators are crypto-economically incentivized to provide these services without any central authority.&#x20;
 
-At the heart of the Threshold Network are flagship services like [tBTC](applications/tbtc-v2/), a bitcoin asset bridge, and  [TACo](applications/threshold-access-control/), an access control plugin. Traditionally, critical operations such as signing, randomness generation, and access control require trust in a single entity.
+At the heart of the Threshold Network are flagship services like [tBTC](applications/tbtc-v2/), a bitcoin asset bridge, and  [TACo](https://app.gitbook.com/s/Vla4O9odYIvnChf0z1Kk/), an access control plugin. Traditionally, critical operations such as signing, randomness generation, and access control require trust in a single entity.
 
 However, on the Threshold Network, these functionalities are decentralized and trust-minimized, ensuring robust security and integrity.
 
@@ -30,8 +30,8 @@ Learn the fundamentals of the Threshold Network to get a deeper understanding of
 [tbtc-v2](applications/tbtc-v2/)
 {% endcontent-ref %}
 
-{% content-ref url="applications/threshold-access-control/" %}
-[threshold-access-control](applications/threshold-access-control/)
+{% content-ref url="https://app.gitbook.com/s/Vla4O9odYIvnChf0z1Kk/" %}
+[What is TACo?](https://app.gitbook.com/s/Vla4O9odYIvnChf0z1Kk/)
 {% endcontent-ref %}
 
 {% content-ref url="applications/threshold-usd/" %}

@@ -50,7 +50,7 @@ Each action involves wallet signing under the hood. The time necessary to comple
 
 ### Example: Deposit sweep
 
-Let's use the _Deposit sweep_ action to show how signing affects wallet actions_._ This action is initiated by a coordinator that submits a deposit sweep proposal through the `WalletCoordinator` chain contract. An expected outcome of that action is a Bitcoin transaction with multiple inputs (swept deposits) and one output, submitted to the Bitcoin chain. That means the action's execution time strongly depends on the number of deposits suggested as part of the given sweep proposal. The `WalletCoordinator` contract has some governable parameters that impact the _Deposit sweep_ action:
+Let's use the _Deposit sweep_ action to show how signing affects wallet action&#x73;_._ This action is initiated by a coordinator that submits a deposit sweep proposal through the `WalletCoordinator` chain contract. An expected outcome of that action is a Bitcoin transaction with multiple inputs (swept deposits) and one output, submitted to the Bitcoin chain. That means the action's execution time strongly depends on the number of deposits suggested as part of the given sweep proposal. The `WalletCoordinator` contract has some governable parameters that impact the _Deposit sweep_ action:
 
 * `depositSweepMaxSize` that sets the maximum number of deposits within a single sweep proposal
 * `depositSweepProposalValidity` which determines the proposal's validity time. This is an exclusive time the wallet obtains to execute the given sweep and no other actions can be taken meanwhile

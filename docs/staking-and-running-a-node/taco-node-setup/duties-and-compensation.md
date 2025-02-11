@@ -69,7 +69,7 @@ Critical operations required for encryption & decryption follow a threshold desi
 Adopters of TACo require reassurance that the cohorts of nodes managing their users' data will remain intact for extended durations. Although cohort members can be securely replaced, while maintaining a persistent public key, it is preferable for economic reasons to minimize the number of node replacement rituals – particularly in the genesis era of the service. Hence, TACo service provision ideally involves a commitment to provide service for years, rather than months.&#x20;
 
 {% hint style="warning" %}
-The _deauthorization dela_y is the time one must wait between initiating a withdrawal from TACo service provision and being able to complete that withdrawal.\
+The _deauthorization del&#x61;_&#x79; is the time one must wait between initiating a withdrawal from TACo service provision and being able to complete that withdrawal.\
 \
 From genesis, the deauthorization delay is set to **6 months** (183 days).&#x20;
 {% endhint %}

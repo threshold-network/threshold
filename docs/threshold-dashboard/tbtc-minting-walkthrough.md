@@ -20,7 +20,7 @@ Here are some things you will need before you start the minting process:
 If you don't already have one, you'll need to set up a Bitcoin wallet. A solid option to use is Green Wallet. You can download it here:
 
 * [Apple store download](https://apps.apple.com/us/app/green-bitcoin-wallet/id1402243590)
-* [Google store download](https://play.google.com/store/apps/details?id=com.greenaddress.greenbits\_android\_wallet\&gl=US\&pli=1)
+* [Google store download](https://play.google.com/store/apps/details?id=com.greenaddress.greenbits_android_wallet\&gl=US\&pli=1)
 
 After you've created your wallet, select `Bitcoin` as your network.
 
@@ -59,7 +59,7 @@ If you have questions about terminology, you can toggle over to the **How it Wor
 
     <figure><img src="../.gitbook/assets/Step 2 (2).png" alt=""><figcaption></figcaption></figure>
 2. Send your BTC deposit to this Deposit Address from your Bitcoin wallet. The minimum deposit is 0.01 BTC.
-3. Return to the tBTC dapp**.** After your funds are sent, the screen will automatically advance to Step 3**.**
+3. Return to the tBTC dap&#x70;**.** After your funds are sent, the screen will automatically advance to Step &#x33;**.**
 
 
 
