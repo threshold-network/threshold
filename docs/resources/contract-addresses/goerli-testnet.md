@@ -26,12 +26,6 @@ Delivered in `@keep-network/keep-core@1.8.1-goerli.0` NPM package.
 | KEEP Token   | [0x22647FfAe391540d584599818CA22fdF18890753](https://goerli.etherscan.io/address/0x22647FfAe391540d584599818CA22fdF18890753) |
 | TokenStaking | [0x73A63e2Be2D911dc7eFAc189Bfdf48FbB6532B5b](https://goerli.etherscan.io/address/0x73A63e2Be2D911dc7eFAc189Bfdf48FbB6532B5b) |
 
-## PRE Application Contracts
-
-| Contract                               | Address                                                                                                                      |
-| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Simple PRE Application (Tapir testnet) | [0xaF96aa6000ec2B6CF0Fe6B505B6C33fa246967Ca](https://goerli.etherscan.io/address/0xaf96aa6000ec2b6cf0fe6b505b6c33fa246967ca) |
-
 ## TBTC Application Contracts
 
 Delivered in `@keep-network/random-beacon@2.1.0-goerli.6`, `@keep-network/ecdsa@2.1.0-goerli.4` and `@keep-network/tbtc-v2@1.5.0-goerli.0` NPM packages.

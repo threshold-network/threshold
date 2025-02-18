@@ -2,7 +2,7 @@
 
 ### Who are Threshold stakers? &#x20;
 
-Threshold Network runs on staker nodes, where there is one Staker for one node. Stakers can operate their own node or stake via [Staking Providers](staking-providers.md) (also known as delegating). Nodes are virtual or physical computers that run cryptography software ([Keep Core Client)](https://github.com/keep-network/keep-core) to coordinate the decentralized operations.&#x20;
+Threshold Network runs on staker nodes, where there is one Staker for one node. Stakers can operate their own node or stake via [Staking Providers](broken-reference) (also known as delegating). Nodes are virtual or physical computers that run cryptography software ([Keep Core Client)](https://github.com/keep-network/keep-core) to coordinate the decentralized operations.&#x20;
 
 ### How are stakers incentivized?
 

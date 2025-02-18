@@ -16,7 +16,6 @@
   * [The Path to Permissionlessness](applications/tbtc-v2/the-path-to-permissionlessness.md)
   * [Sweeping](applications/tbtc-v2/sweeping.md)
   * [Coverage Pool](applications/tbtc-v2/coverage-pool.md)
-* [TACo - Threshold Access Control](https://docs.taco.build)
 * [Threshold USD](applications/threshold-usd/README.md)
   * [Overview of thUSD](applications/threshold-usd/overview-of-thusd.md)
   * [Borrowing](applications/threshold-usd/borrowing.md)
@@ -44,8 +43,6 @@
 
 ## Staking & Running a Node
 
-* [Running a Node](staking-and-running-a-node/running-a-node/README.md)
-  * [Self-Managed](staking-and-running-a-node/running-a-node/self-managed.md)
 * [tBTC v2 Node Setup](staking-and-running-a-node/tbtc-v2-node-setup/README.md)
   * [Operator Account](staking-and-running-a-node/tbtc-v2-node-setup/operator-account.md)
   * [Application Authorization & Operator Registration](staking-and-running-a-node/tbtc-v2-node-setup/application-authorization-and-operator-registration.md)
@@ -64,21 +61,11 @@
   * [Frequently Asked Questions](staking-and-running-a-node/tbtc-v2-node-setup/frequently-asked-questions.md)
   * [Sepolia Testnet](staking-and-running-a-node/tbtc-v2-node-setup/goerli-testnet-staking/README.md)
     * [Testnet tBTC v2 node Setup](staking-and-running-a-node/tbtc-v2-node-setup/goerli-testnet-staking/testnet-tbtc-v2-node-setup.md)
-* [TACo Node Setup](staking-and-running-a-node/taco-node-setup/README.md)
-  * [Duties, Compensation & Penalties](staking-and-running-a-node/taco-node-setup/duties-and-compensation.md)
-  * [Minimum System Requirements](staking-and-running-a-node/taco-node-setup/minimum-system-requirements.md)
-  * [Run a TACo Node with Docker](staking-and-running-a-node/taco-node-setup/run-a-taco-node-with-docker.md)
-  * [Authorization & Operator Registration](staking-and-running-a-node/taco-node-setup/taco-authorization-and-operator-registration/README.md)
-    * [One-off Commitment Bonus](staking-and-running-a-node/taco-node-setup/taco-authorization-and-operator-registration/one-off-commitment-bonus.md)
-  * [TACo Node Management](staking-and-running-a-node/taco-node-setup/taco-node-management.md)
 * [tBTC Stakers FAQ](staking-and-running-a-node/tbtc-stakers-faq.md)
 * [tBTC Beta Stakers Program](staking-and-running-a-node/tbtc-beta-stakers-program.md)
-* [Staking Providers](staking-and-running-a-node/staking-providers.md)
-* [Legacy Staking (NU & KEEP)](staking-and-running-a-node/migrating-legacy-stakes.md)
 
 ## App Development
 
-* [TACo - Threshold Access Control](https://docs.taco.build)
 * [Staking Contract and DAO](app-development/staking-contract-and-dao/README.md)
   * [Staking Contract and DAO API](app-development/staking-contract-and-dao/staking-contract-and-dao-api/README.md)
     * [BaseTokenholderGovernor](app-development/staking-contract-and-dao/staking-contract-and-dao-api/basetokenholdergovernor.md)
@@ -176,7 +163,6 @@
       * [WalletRegistry](app-development/tbtc-v2/tbtc-contracts-api/ecdsa-api/walletregistry.md)
       * [WalletRegistryGovernance](app-development/tbtc-v2/tbtc-contracts-api/ecdsa-api/walletregistrygovernance.md)
       * [Wallets](app-development/tbtc-v2/tbtc-contracts-api/ecdsa-api/wallets.md)
-* [Ask Your Provider](app-development/ask-your-provider.md)
 
 ## Resources
 
@@ -185,7 +171,6 @@
   * [Mainnet](resources/contract-addresses/mainnet.md)
     * [Threshold DAO](resources/contract-addresses/mainnet/threshold-dao.md)
     * [tBTC](resources/contract-addresses/mainnet/tbtc.md)
-    * [TACo](resources/contract-addresses/mainnet/taco.md)
     * [thUSD](resources/contract-addresses/mainnet/thusd.md)
     * [Legacy](resources/contract-addresses/mainnet/legacy.md)
   * [Görli Testnet](resources/contract-addresses/goerli-testnet.md)
@@ -194,5 +179,4 @@
 * [Contribution](resources/contribution.md)
 * [Security](resources/security.md)
 * [Brand Assets](https://thresholdnetwork.notion.site/06ca766fc2cd402ab99bfe952a41c5af?v=5d3a1877e34f43d99fb8490190543e0c)
-* [Glossary](resources/glossary.md)
 * [Links](resources/links.md)
