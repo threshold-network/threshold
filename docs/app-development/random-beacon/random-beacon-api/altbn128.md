@@ -1,4 +1,4 @@
-# Solidity API
+# AltBn128
 
 ## AltBn128
 
@@ -6,10 +6,7 @@
 This file documents a contract which is not yet deployed to Mainnet.
 {% endhint %}
 
-Implementations of common elliptic curve operations on Ethereum's
-(poorly named) alt_bn128 curve. Whenever possible, use post-Byzantium
-pre-compiled contracts to offset gas costs. Note that these
-pre-compiles might not be available on all (eg private) chains.
+Implementations of common elliptic curve operations on Ethereum's (poorly named) alt\_bn128 curve. Whenever possible, use post-Byzantium pre-compiled contracts to offset gas costs. Note that these pre-compiles might not be available on all (eg private) chains.
 
 ### G1Point
 
@@ -50,8 +47,7 @@ uint256 p
 uint256 g1x
 ```
 
-Gets generator of G1 group.
-Taken from go-ethereum/crypto/bn256/cloudflare/curve.go
+Gets generator of G1 group. Taken from go-ethereum/crypto/bn256/cloudflare/curve.go
 
 ### g1y
 
@@ -65,8 +61,7 @@ uint256 g1y
 uint256 g2xx
 ```
 
-Gets generator of G2 group.
-Taken from go-ethereum/crypto/bn256/cloudflare/twist.go
+Gets generator of G2 group. Taken from go-ethereum/crypto/bn256/cloudflare/twist.go
 
 ### g2xy
 
@@ -92,8 +87,7 @@ uint256 g2yy
 uint256 twistBx
 ```
 
-Gets twist curve B constant.
-Taken from go-ethereum/crypto/bn256/cloudflare/twist.go
+Gets twist curve B constant. Taken from go-ethereum/crypto/bn256/cloudflare/twist.go
 
 ### twistBy
 
@@ -121,10 +115,7 @@ uint256 hexRootY
 function g1YFromX(uint256 x) internal view returns (uint256)
 ```
 
-g1YFromX computes a Y value for a G1 point based on an X value.
-This computation is simply evaluating the curve equation for Y on a
-given X, and allows a point on the curve to be represented by just
-an X value + a sign bit.
+g1YFromX computes a Y value for a G1 point based on an X value. This computation is simply evaluating the curve equation for Y on a given X, and allows a point on the curve to be represented by just an X value + a sign bit.
 
 ### g1HashToPoint
 
@@ -132,10 +123,7 @@ an X value + a sign bit.
 function g1HashToPoint(bytes m) internal view returns (struct AltBn128.G1Point)
 ```
 
-Hash a byte array message, m, and map it deterministically to a
-point on G1. Note that this approach was chosen for its simplicity
-and lower gas cost on the EVM, rather than good distribution of
-points on G1.
+Hash a byte array message, m, and map it deterministically to a point on G1. Note that this approach was chosen for its simplicity and lower gas cost on the EVM, rather than good distribution of points on G1.
 
 ### g1Decompress
 
@@ -151,9 +139,7 @@ Decompress a point on G1 from a single uint256.
 function g1Add(struct AltBn128.G1Point a, struct AltBn128.G1Point b) internal view returns (struct AltBn128.G1Point c)
 ```
 
-Wraps the point addition pre-compile introduced in Byzantium.
-Returns the sum of two points on G1. Revert if the provided points
-are not on the curve.
+Wraps the point addition pre-compile introduced in Byzantium. Returns the sum of two points on G1. Revert if the provided points are not on the curve.
 
 ### isG1PointOnCurve
 
@@ -169,10 +155,7 @@ Returns true if G1 point is on the curve.
 function scalarMultiply(struct AltBn128.G1Point p_1, uint256 scalar) internal view returns (struct AltBn128.G1Point p_2)
 ```
 
-Wraps the scalar point multiplication pre-compile introduced in
-Byzantium. The result of a point from G1 multiplied by a scalar
-should match the point added to itself the same number of times.
-Revert if the provided point isn't on the curve.
+Wraps the scalar point multiplication pre-compile introduced in Byzantium. The result of a point from G1 multiplied by a scalar should match the point added to itself the same number of times. Revert if the provided point isn't on the curve.
 
 ### pairing
 
@@ -180,9 +163,7 @@ Revert if the provided point isn't on the curve.
 function pairing(struct AltBn128.G1Point p1, struct AltBn128.G2Point p2, struct AltBn128.G1Point p3, struct AltBn128.G2Point p4) internal view returns (bool result)
 ```
 
-Wraps the pairing check pre-compile introduced in Byzantium.
-Returns the result of a pairing check of 2 pairs
-(G1 p1, G2 p2) (G1 p3, G2 p4)
+Wraps the pairing check pre-compile introduced in Byzantium. Returns the result of a pairing check of 2 pairs (G1 p1, G2 p2) (G1 p3, G2 p4)
 
 ### getP
 
@@ -208,10 +189,7 @@ function g2() internal pure returns (struct AltBn128.G2Point)
 function g2YFromX(struct AltBn128.gfP2 _x) internal pure returns (struct AltBn128.gfP2 y)
 ```
 
-g2YFromX computes a Y value for a G2 point based on an X value.
-This computation is simply evaluating the curve equation for Y on a
-given X, and allows a point on the curve to be represented by just
-an X value + a sign bit.
+g2YFromX computes a Y value for a G2 point based on an X value. This computation is simply evaluating the curve equation for Y on a given X, and allows a point on the curve to be represented by just an X value + a sign bit.
 
 ### g1Compress
 
@@ -318,4 +296,3 @@ function isG2PointOnCurve(struct AltBn128.G2Point point) internal pure returns (
 ```
 
 Returns true if G2 point is on the curve.
-

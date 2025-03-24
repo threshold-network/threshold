@@ -5,7 +5,6 @@
 ## THRESHOLD DASHBOARD
 
 * [tBTC Minting Walkthrough](threshold-dashboard/tbtc-minting-walkthrough.md)
-* [Upgrade NU & KEEP to T](threshold-dashboard/upgrade-nu-and-keep-to-t.md)
 
 ## Applications
 
@@ -39,7 +38,6 @@
   * [Threshold DAO Rules](governance/dao/threshold-dao-rules.md)
 * [Vote Delegation](governance/dao-vote-delegation/README.md)
   * [Liquid Token Delegation](governance/dao-vote-delegation/token-weight-delegation.md)
-  * [Staked Token Delegation](governance/dao-vote-delegation/stake-weight-delegation.md)
 
 ## Staking & Running a Node
 
@@ -61,13 +59,12 @@
   * [Frequently Asked Questions](staking-and-running-a-node/tbtc-v2-node-setup/frequently-asked-questions.md)
   * [Sepolia Testnet](staking-and-running-a-node/tbtc-v2-node-setup/goerli-testnet-staking/README.md)
     * [Testnet tBTC v2 node Setup](staking-and-running-a-node/tbtc-v2-node-setup/goerli-testnet-staking/testnet-tbtc-v2-node-setup.md)
-* [tBTC Stakers FAQ](staking-and-running-a-node/tbtc-stakers-faq.md)
 * [tBTC Beta Stakers Program](staking-and-running-a-node/tbtc-beta-stakers-program.md)
 
 ## App Development
 
-* [Staking Contract and DAO](app-development/staking-contract-and-dao/README.md)
-  * [Staking Contract and DAO API](app-development/staking-contract-and-dao/staking-contract-and-dao-api/README.md)
+* [DAO Contracts](app-development/staking-contract-and-dao/README.md)
+  * [DAO Contracts API](app-development/staking-contract-and-dao/staking-contract-and-dao-api/README.md)
     * [BaseTokenholderGovernor](app-development/staking-contract-and-dao/staking-contract-and-dao-api/basetokenholdergovernor.md)
     * [Checkpoints](app-development/staking-contract-and-dao/staking-contract-and-dao-api/checkpoints.md)
     * [GovernorParameters](app-development/staking-contract-and-dao/staking-contract-and-dao-api/governorparameters.md)
@@ -176,6 +173,7 @@
   * [Görli Testnet](resources/contract-addresses/goerli-testnet.md)
   * [Sepolia Testnet](resources/contract-addresses/sepolia-testnet.md)
 * [tBTC Pools](https://linktr.ee/earnyield)
+* [Upgrade NU & KEEP to T](resources/upgrade-nu-and-keep-to-t.md)
 * [Contribution](resources/contribution.md)
 * [Security](resources/security.md)
 * [Brand Assets](https://thresholdnetwork.notion.site/06ca766fc2cd402ab99bfe952a41c5af?v=5d3a1877e34f43d99fb8490190543e0c)

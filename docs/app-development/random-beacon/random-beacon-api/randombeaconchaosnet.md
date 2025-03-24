@@ -1,4 +1,4 @@
-# Solidity API
+# RandomBeaconChaosnet
 
 ## RandomBeaconChaosnet
 
@@ -6,8 +6,7 @@
 This file documents a contract which is not yet deployed to Mainnet.
 {% endhint %}
 
-A stub contract that will be used temporarily until the real-world
-random beacon client implementation is ready.
+A stub contract that will be used temporarily until the real-world random beacon client implementation is ready.
 
 ### authorizedRequesters
 
@@ -23,8 +22,7 @@ Authorized addresses that can request a relay entry.
 uint256 entry
 ```
 
-Arbitrary relay entry. Initially set to the Euler's number.
-It's updated after each relay entry request.
+Arbitrary relay entry. Initially set to the Euler's number. It's updated after each relay entry request.
 
 ### RequesterAuthorizationUpdated
 
@@ -44,8 +42,8 @@ The caller must be an authorized requester.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
+| Name             | Type                           | Description                                         |
+| ---------------- | ------------------------------ | --------------------------------------------------- |
 | callbackContract | contract IRandomBeaconConsumer | Beacon consumer callback contract - Wallet Registry |
 
 ### setRequesterAuthorization
@@ -55,4 +53,3 @@ function setRequesterAuthorization(address requester, bool isAuthorized) externa
 ```
 
 Authorizes a requester of the relay entry.
-

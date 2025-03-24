@@ -1,6 +1,6 @@
 # Vote Delegation
 
-To participate in DAO governance, stakers or token holders must set a governance delegate address. Vote delegation is the process of granting a delegate the power to vote on your behalf, using your voting weight, on DAO governance issues. The delegate can be yourself (self-delegation) or a third party. A configured delegate can be changed or revoked at any time.
+To participate in DAO governance, token holders must set a governance delegate address. Vote delegation is the process of granting a delegate the power to vote on your behalf, using your voting weight, on DAO governance issues. The delegate can be yourself (self-delegation) or a third party. A configured delegate can be changed or revoked at any time.
 
 {% hint style="info" %}
 Delegation **never involves the transfer of custody of assets** but rather just the vote weight those assets represent in the Threshold DAO.&#x20;
@@ -18,4 +18,4 @@ Community members interested in serving as delegates can self-nominate [here](ht
 There is no compensation for third-party delegate contribution to governance.
 {% endhint %}
 
-The process for delegating [liquid tokens](token-weight-delegation.md) and delegating [staked tokens](stake-weight-delegation.md) is distinct, and each are explained in the following subsections. It's not currently possible to delegate tokens deposited as LP in AMM pools (e.g. Curve), although this is an area for future improvement.
+The process for delegating [liquid tokens](token-weight-delegation.md) is explained in the following subsection. It's not currently possible to delegate tokens deposited as LP in AMM pools (e.g. Curve), although this is an area for future improvement.

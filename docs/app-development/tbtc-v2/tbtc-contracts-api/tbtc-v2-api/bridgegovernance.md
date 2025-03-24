@@ -1,11 +1,8 @@
-# Solidity API
+# BridgeGovernance
 
 ## BridgeGovernance
 
-Owns the `Bridge` contract and is responsible for updating
-its governable parameters in respect to governance delay individual
-for each parameter. The other responsibility is marking a vault
-address as trusted or no longer trusted.
+Owns the `Bridge` contract and is responsible for updating its governable parameters in respect to governance delay individual for each parameter. The other responsibility is marking a vault address as trusted or no longer trusted.
 
 ### depositData
 
@@ -493,19 +490,17 @@ constructor(contract Bridge _bridge, uint256 _governanceDelay) public
 function setVaultStatus(address vault, bool isTrusted) external
 ```
 
-Allows the Governance to mark the given vault address as trusted
-or no longer trusted. Vaults are not trusted by default.
-Trusted vault must meet the following criteria:
-- `IVault.receiveBalanceIncrease` must have a known, low gas
-cost,
-- `IVault.receiveBalanceIncrease` must never revert.
+Allows the Governance to mark the given vault address as trusted or no longer trusted. Vaults are not trusted by default. Trusted vault must meet the following criteria:
+
+* `IVault.receiveBalanceIncrease` must have a known, low gas cost,
+* `IVault.receiveBalanceIncrease` must never revert.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| vault | address | The address of the vault. |
-| isTrusted | bool | flag indicating whether the vault is trusted or not. |
+| Name      | Type    | Description                                          |
+| --------- | ------- | ---------------------------------------------------- |
+| vault     | address | The address of the vault.                            |
+| isTrusted | bool    | flag indicating whether the vault is trusted or not. |
 
 ### setSpvMaintainerStatus
 
@@ -513,16 +508,14 @@ cost,
 function setSpvMaintainerStatus(address spvMaintainer, bool isTrusted) external
 ```
 
-Allows the Governance to mark the given address as trusted
-or no longer trusted SPV maintainer. Addresses are not trusted
-as SPV maintainers by default.
+Allows the Governance to mark the given address as trusted or no longer trusted SPV maintainer. Addresses are not trusted as SPV maintainers by default.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| spvMaintainer | address | The address of the SPV maintainer. |
-| isTrusted | bool | flag indicating whether the address is trusted or not. |
+| Name          | Type    | Description                                            |
+| ------------- | ------- | ------------------------------------------------------ |
+| spvMaintainer | address | The address of the SPV maintainer.                     |
+| isTrusted     | bool    | flag indicating whether the address is trusted or not. |
 
 ### beginGovernanceDelayUpdate
 
@@ -532,16 +525,13 @@ function beginGovernanceDelayUpdate(uint256 _newGovernanceDelay) external
 
 Begins the governance delay update process.
 
-Can be called only by the contract owner. The event that informs about
-the start of the governance delay was skipped on purpose to trim
-the contract size. All the params inside of the `governanceDelays`
-array are public and can be easily fetched.
+Can be called only by the contract owner. The event that informs about the start of the governance delay was skipped on purpose to trim the contract size. All the params inside of the `governanceDelays` array are public and can be easily fetched.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newGovernanceDelay | uint256 | New governance delay |
+| Name                 | Type    | Description          |
+| -------------------- | ------- | -------------------- |
+| \_newGovernanceDelay | uint256 | New governance delay |
 
 ### finalizeGovernanceDelayUpdate
 
@@ -551,10 +541,7 @@ function finalizeGovernanceDelayUpdate() external
 
 Finalizes the governance delay update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses. Updated event was skipped on purpose to trim the
-contract size. All the params inside of the `governanceDelays`
-array are public and can be easily fetched.
+Can be called only by the contract owner, after the governance delay elapses. Updated event was skipped on purpose to trim the contract size. All the params inside of the `governanceDelays` array are public and can be easily fetched.
 
 ### beginBridgeGovernanceTransfer
 
@@ -564,10 +551,7 @@ function beginBridgeGovernanceTransfer(address _newBridgeGovernance) external
 
 Begins the Bridge governance transfer process.
 
-Can be called only by the contract owner. It is the governance
-responsibility to validate the correctness of the new Bridge
-Governance contract. The other reason for not adding this check is
-to go down with the contract size and leaving only the essential code.
+Can be called only by the contract owner. It is the governance responsibility to validate the correctness of the new Bridge Governance contract. The other reason for not adding this check is to go down with the contract size and leaving only the essential code.
 
 ### finalizeBridgeGovernanceTransfer
 
@@ -577,11 +561,7 @@ function finalizeBridgeGovernanceTransfer() external
 
 Finalizes the bridge governance transfer process.
 
-Can be called only by the contract owner, after the governance
-delay elapses. Bridge governance transferred event can be read
-from the Governable bridge contract 'GovernanceTransferred(old, new)'.
-Event that informs about the transfer in this function is skipped on
-purpose to go down with the contract size.
+Can be called only by the contract owner, after the governance delay elapses. Bridge governance transferred event can be read from the Governable bridge contract 'GovernanceTransferred(old, new)'. Event that informs about the transfer in this function is skipped on purpose to go down with the contract size.
 
 ### beginDepositDustThresholdUpdate
 
@@ -595,9 +575,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newDepositDustThreshold | uint64 | New deposit dust threshold amount. |
+| Name                      | Type   | Description                        |
+| ------------------------- | ------ | ---------------------------------- |
+| \_newDepositDustThreshold | uint64 | New deposit dust threshold amount. |
 
 ### finalizeDepositDustThresholdUpdate
 
@@ -607,8 +587,7 @@ function finalizeDepositDustThresholdUpdate() external
 
 Finalizes the deposit dust threshold amount update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginDepositTreasuryFeeDivisorUpdate
 
@@ -622,9 +601,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newDepositTreasuryFeeDivisor | uint64 | New deposit treasury fee divisor. |
+| Name                           | Type   | Description                       |
+| ------------------------------ | ------ | --------------------------------- |
+| \_newDepositTreasuryFeeDivisor | uint64 | New deposit treasury fee divisor. |
 
 ### finalizeDepositTreasuryFeeDivisorUpdate
 
@@ -634,8 +613,7 @@ function finalizeDepositTreasuryFeeDivisorUpdate() external
 
 Finalizes the deposit treasury fee divisor amount update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginDepositTxMaxFeeUpdate
 
@@ -649,9 +627,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newDepositTxMaxFee | uint64 | New deposit tx max fee. |
+| Name                 | Type   | Description             |
+| -------------------- | ------ | ----------------------- |
+| \_newDepositTxMaxFee | uint64 | New deposit tx max fee. |
 
 ### finalizeDepositTxMaxFeeUpdate
 
@@ -661,8 +639,7 @@ function finalizeDepositTxMaxFeeUpdate() external
 
 Finalizes the deposit tx max fee amount update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginDepositRevealAheadPeriodUpdate
 
@@ -676,9 +653,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newDepositRevealAheadPeriod | uint32 | New deposit reveal ahead period. |
+| Name                          | Type   | Description                      |
+| ----------------------------- | ------ | -------------------------------- |
+| \_newDepositRevealAheadPeriod | uint32 | New deposit reveal ahead period. |
 
 ### finalizeDepositRevealAheadPeriodUpdate
 
@@ -688,8 +665,7 @@ function finalizeDepositRevealAheadPeriodUpdate() external
 
 Finalizes the deposit reveal ahead period update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginRedemptionDustThresholdUpdate
 
@@ -703,9 +679,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newRedemptionDustThreshold | uint64 | New redemption dust threshold. |
+| Name                         | Type   | Description                    |
+| ---------------------------- | ------ | ------------------------------ |
+| \_newRedemptionDustThreshold | uint64 | New redemption dust threshold. |
 
 ### finalizeRedemptionDustThresholdUpdate
 
@@ -715,8 +691,7 @@ function finalizeRedemptionDustThresholdUpdate() external
 
 Finalizes the dust threshold amount update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginRedemptionTreasuryFeeDivisorUpdate
 
@@ -730,9 +705,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newRedemptionTreasuryFeeDivisor | uint64 | New redemption treasury fee divisor. |
+| Name                              | Type   | Description                          |
+| --------------------------------- | ------ | ------------------------------------ |
+| \_newRedemptionTreasuryFeeDivisor | uint64 | New redemption treasury fee divisor. |
 
 ### finalizeRedemptionTreasuryFeeDivisorUpdate
 
@@ -742,8 +717,7 @@ function finalizeRedemptionTreasuryFeeDivisorUpdate() external
 
 Finalizes the redemption treasury fee divisor amount update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginRedemptionTxMaxFeeUpdate
 
@@ -757,9 +731,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newRedemptionTxMaxFee | uint64 | New redemption tx max fee. |
+| Name                    | Type   | Description                |
+| ----------------------- | ------ | -------------------------- |
+| \_newRedemptionTxMaxFee | uint64 | New redemption tx max fee. |
 
 ### finalizeRedemptionTxMaxFeeUpdate
 
@@ -769,8 +743,7 @@ function finalizeRedemptionTxMaxFeeUpdate() external
 
 Finalizes the redemption tx max fee amount update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginRedemptionTxMaxTotalFeeUpdate
 
@@ -784,9 +757,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newRedemptionTxMaxTotalFee | uint64 | New redemption tx max total fee. |
+| Name                         | Type   | Description                      |
+| ---------------------------- | ------ | -------------------------------- |
+| \_newRedemptionTxMaxTotalFee | uint64 | New redemption tx max total fee. |
 
 ### finalizeRedemptionTxMaxTotalFeeUpdate
 
@@ -796,8 +769,7 @@ function finalizeRedemptionTxMaxTotalFeeUpdate() external
 
 Finalizes the redemption tx max total fee amount update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginRedemptionTimeoutUpdate
 
@@ -811,9 +783,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newRedemptionTimeout | uint32 | New redemption timeout. |
+| Name                   | Type   | Description             |
+| ---------------------- | ------ | ----------------------- |
+| \_newRedemptionTimeout | uint32 | New redemption timeout. |
 
 ### finalizeRedemptionTimeoutUpdate
 
@@ -823,8 +795,7 @@ function finalizeRedemptionTimeoutUpdate() external
 
 Finalizes the redemption timeout amount update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginRedemptionTimeoutSlashingAmountUpdate
 
@@ -838,9 +809,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newRedemptionTimeoutSlashingAmount | uint96 | New redemption timeout slashing amount. |
+| Name                                 | Type   | Description                             |
+| ------------------------------------ | ------ | --------------------------------------- |
+| \_newRedemptionTimeoutSlashingAmount | uint96 | New redemption timeout slashing amount. |
 
 ### finalizeRedemptionTimeoutSlashingAmountUpdate
 
@@ -850,8 +821,7 @@ function finalizeRedemptionTimeoutSlashingAmountUpdate() external
 
 Finalizes the redemption timeout slashing amount update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginRedemptionTimeoutNotifierRewardMultiplierUpdate
 
@@ -859,16 +829,15 @@ delay elapses.
 function beginRedemptionTimeoutNotifierRewardMultiplierUpdate(uint32 _newRedemptionTimeoutNotifierRewardMultiplier) external
 ```
 
-Begins the redemption timeout notifier reward multiplier amount
-update process.
+Begins the redemption timeout notifier reward multiplier amount update process.
 
 Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newRedemptionTimeoutNotifierRewardMultiplier | uint32 | New redemption timeout notifier reward multiplier. |
+| Name                                           | Type   | Description                                        |
+| ---------------------------------------------- | ------ | -------------------------------------------------- |
+| \_newRedemptionTimeoutNotifierRewardMultiplier | uint32 | New redemption timeout notifier reward multiplier. |
 
 ### finalizeRedemptionTimeoutNotifierRewardMultiplierUpdate
 
@@ -876,11 +845,9 @@ Can be called only by the contract owner.
 function finalizeRedemptionTimeoutNotifierRewardMultiplierUpdate() external
 ```
 
-Finalizes the redemption timeout notifier reward multiplier amount
-update process.
+Finalizes the redemption timeout notifier reward multiplier amount update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginMovingFundsTxMaxTotalFeeUpdate
 
@@ -894,9 +861,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newMovingFundsTxMaxTotalFee | uint64 | New moving funds tx max total fee. |
+| Name                          | Type   | Description                        |
+| ----------------------------- | ------ | ---------------------------------- |
+| \_newMovingFundsTxMaxTotalFee | uint64 | New moving funds tx max total fee. |
 
 ### finalizeMovingFundsTxMaxTotalFeeUpdate
 
@@ -906,8 +873,7 @@ function finalizeMovingFundsTxMaxTotalFeeUpdate() external
 
 Finalizes the moving funds tx max total fee update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginMovingFundsDustThresholdUpdate
 
@@ -921,9 +887,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newMovingFundsDustThreshold | uint64 | New moving funds dust threshold. |
+| Name                          | Type   | Description                      |
+| ----------------------------- | ------ | -------------------------------- |
+| \_newMovingFundsDustThreshold | uint64 | New moving funds dust threshold. |
 
 ### finalizeMovingFundsDustThresholdUpdate
 
@@ -933,8 +899,7 @@ function finalizeMovingFundsDustThresholdUpdate() external
 
 Finalizes the moving funds dust threshold update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginMovingFundsTimeoutResetDelayUpdate
 
@@ -948,9 +913,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newMovingFundsTimeoutResetDelay | uint32 | New moving funds timeout reset delay. |
+| Name                              | Type   | Description                           |
+| --------------------------------- | ------ | ------------------------------------- |
+| \_newMovingFundsTimeoutResetDelay | uint32 | New moving funds timeout reset delay. |
 
 ### finalizeMovingFundsTimeoutResetDelayUpdate
 
@@ -960,8 +925,7 @@ function finalizeMovingFundsTimeoutResetDelayUpdate() external
 
 Finalizes the moving funds timeout reset delay update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginMovingFundsTimeoutUpdate
 
@@ -975,9 +939,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newMovingFundsTimeout | uint32 | New moving funds timeout. |
+| Name                    | Type   | Description               |
+| ----------------------- | ------ | ------------------------- |
+| \_newMovingFundsTimeout | uint32 | New moving funds timeout. |
 
 ### finalizeMovingFundsTimeoutUpdate
 
@@ -987,8 +951,7 @@ function finalizeMovingFundsTimeoutUpdate() external
 
 Finalizes the moving funds timeout update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginMovingFundsTimeoutSlashingAmountUpdate
 
@@ -1002,9 +965,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newMovingFundsTimeoutSlashingAmount | uint96 | New moving funds timeout slashing amount. |
+| Name                                  | Type   | Description                               |
+| ------------------------------------- | ------ | ----------------------------------------- |
+| \_newMovingFundsTimeoutSlashingAmount | uint96 | New moving funds timeout slashing amount. |
 
 ### finalizeMovingFundsTimeoutSlashingAmountUpdate
 
@@ -1014,8 +977,7 @@ function finalizeMovingFundsTimeoutSlashingAmountUpdate() external
 
 Finalizes the moving funds timeout slashing amount update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginMovingFundsTimeoutNotifierRewardMultiplierUpdate
 
@@ -1023,16 +985,15 @@ delay elapses.
 function beginMovingFundsTimeoutNotifierRewardMultiplierUpdate(uint32 _newMovingFundsTimeoutNotifierRewardMultiplier) external
 ```
 
-Begins the moving funds timeout notifier reward multiplier update
-process.
+Begins the moving funds timeout notifier reward multiplier update process.
 
 Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newMovingFundsTimeoutNotifierRewardMultiplier | uint32 | New moving funds timeout notifier reward multiplier. |
+| Name                                            | Type   | Description                                          |
+| ----------------------------------------------- | ------ | ---------------------------------------------------- |
+| \_newMovingFundsTimeoutNotifierRewardMultiplier | uint32 | New moving funds timeout notifier reward multiplier. |
 
 ### finalizeMovingFundsTimeoutNotifierRewardMultiplierUpdate
 
@@ -1040,11 +1001,9 @@ Can be called only by the contract owner.
 function finalizeMovingFundsTimeoutNotifierRewardMultiplierUpdate() external
 ```
 
-Finalizes the moving funds timeout notifier reward multiplier
-update process.
+Finalizes the moving funds timeout notifier reward multiplier update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginMovingFundsCommitmentGasOffsetUpdate
 
@@ -1058,9 +1017,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newMovingFundsCommitmentGasOffset | uint16 | New moving funds commitment gas offset. |
+| Name                                | Type   | Description                             |
+| ----------------------------------- | ------ | --------------------------------------- |
+| \_newMovingFundsCommitmentGasOffset | uint16 | New moving funds commitment gas offset. |
 
 ### finalizeMovingFundsCommitmentGasOffsetUpdate
 
@@ -1070,8 +1029,7 @@ function finalizeMovingFundsCommitmentGasOffsetUpdate() external
 
 Finalizes the moving funds commitment gas offset update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginMovedFundsSweepTxMaxTotalFeeUpdate
 
@@ -1085,9 +1043,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newMovedFundsSweepTxMaxTotalFee | uint64 | New moved funds sweep tx max total fee. |
+| Name                              | Type   | Description                             |
+| --------------------------------- | ------ | --------------------------------------- |
+| \_newMovedFundsSweepTxMaxTotalFee | uint64 | New moved funds sweep tx max total fee. |
 
 ### finalizeMovedFundsSweepTxMaxTotalFeeUpdate
 
@@ -1097,8 +1055,7 @@ function finalizeMovedFundsSweepTxMaxTotalFeeUpdate() external
 
 Finalizes the moved funds sweep tx max total fee update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginMovedFundsSweepTimeoutUpdate
 
@@ -1112,9 +1069,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newMovedFundsSweepTimeout | uint32 | New moved funds sweep timeout. |
+| Name                        | Type   | Description                    |
+| --------------------------- | ------ | ------------------------------ |
+| \_newMovedFundsSweepTimeout | uint32 | New moved funds sweep timeout. |
 
 ### finalizeMovedFundsSweepTimeoutUpdate
 
@@ -1124,8 +1081,7 @@ function finalizeMovedFundsSweepTimeoutUpdate() external
 
 Finalizes the moved funds sweep timeout update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginMovedFundsSweepTimeoutSlashingAmountUpdate
 
@@ -1139,9 +1095,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newMovedFundsSweepTimeoutSlashingAmount | uint96 | New moved funds sweep timeout slashing amount. |
+| Name                                      | Type   | Description                                    |
+| ----------------------------------------- | ------ | ---------------------------------------------- |
+| \_newMovedFundsSweepTimeoutSlashingAmount | uint96 | New moved funds sweep timeout slashing amount. |
 
 ### finalizeMovedFundsSweepTimeoutSlashingAmountUpdate
 
@@ -1149,11 +1105,9 @@ Can be called only by the contract owner.
 function finalizeMovedFundsSweepTimeoutSlashingAmountUpdate() external
 ```
 
-Finalizes the moved funds sweep timeout slashing amount update
-process.
+Finalizes the moved funds sweep timeout slashing amount update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginMovedFundsSweepTimeoutNotifierRewardMultiplierUpdate
 
@@ -1161,16 +1115,15 @@ delay elapses.
 function beginMovedFundsSweepTimeoutNotifierRewardMultiplierUpdate(uint32 _newMovedFundsSweepTimeoutNotifierRewardMultiplier) external
 ```
 
-Begins the moved funds sweep timeout notifier reward multiplier
-update process.
+Begins the moved funds sweep timeout notifier reward multiplier update process.
 
 Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newMovedFundsSweepTimeoutNotifierRewardMultiplier | uint32 | New moved funds sweep timeout notifier reward multiplier. |
+| Name                                                | Type   | Description                                               |
+| --------------------------------------------------- | ------ | --------------------------------------------------------- |
+| \_newMovedFundsSweepTimeoutNotifierRewardMultiplier | uint32 | New moved funds sweep timeout notifier reward multiplier. |
 
 ### finalizeMovedFundsSweepTimeoutNotifierRewardMultiplierUpdate
 
@@ -1178,11 +1131,9 @@ Can be called only by the contract owner.
 function finalizeMovedFundsSweepTimeoutNotifierRewardMultiplierUpdate() external
 ```
 
-Finalizes the moved funds sweep timeout notifier reward multiplier
-update process.
+Finalizes the moved funds sweep timeout notifier reward multiplier update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginWalletCreationPeriodUpdate
 
@@ -1196,9 +1147,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newWalletCreationPeriod | uint32 | New wallet creation period. |
+| Name                      | Type   | Description                 |
+| ------------------------- | ------ | --------------------------- |
+| \_newWalletCreationPeriod | uint32 | New wallet creation period. |
 
 ### finalizeWalletCreationPeriodUpdate
 
@@ -1208,8 +1159,7 @@ function finalizeWalletCreationPeriodUpdate() external
 
 Finalizes the wallet creation period update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginWalletCreationMinBtcBalanceUpdate
 
@@ -1223,9 +1173,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newWalletCreationMinBtcBalance | uint64 | New wallet creation min btc balance. |
+| Name                             | Type   | Description                          |
+| -------------------------------- | ------ | ------------------------------------ |
+| \_newWalletCreationMinBtcBalance | uint64 | New wallet creation min btc balance. |
 
 ### finalizeWalletCreationMinBtcBalanceUpdate
 
@@ -1235,8 +1185,7 @@ function finalizeWalletCreationMinBtcBalanceUpdate() external
 
 Finalizes the wallet creation min btc balance update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginWalletCreationMaxBtcBalanceUpdate
 
@@ -1250,9 +1199,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newWalletCreationMaxBtcBalance | uint64 | New wallet creation max btc balance. |
+| Name                             | Type   | Description                          |
+| -------------------------------- | ------ | ------------------------------------ |
+| \_newWalletCreationMaxBtcBalance | uint64 | New wallet creation max btc balance. |
 
 ### finalizeWalletCreationMaxBtcBalanceUpdate
 
@@ -1262,8 +1211,7 @@ function finalizeWalletCreationMaxBtcBalanceUpdate() external
 
 Finalizes the wallet creation max btc balance update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginWalletClosureMinBtcBalanceUpdate
 
@@ -1277,9 +1225,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newWalletClosureMinBtcBalance | uint64 | New wallet closure min btc balance. |
+| Name                            | Type   | Description                         |
+| ------------------------------- | ------ | ----------------------------------- |
+| \_newWalletClosureMinBtcBalance | uint64 | New wallet closure min btc balance. |
 
 ### finalizeWalletClosureMinBtcBalanceUpdate
 
@@ -1289,8 +1237,7 @@ function finalizeWalletClosureMinBtcBalanceUpdate() external
 
 Finalizes the wallet closure min btc balance update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginWalletMaxAgeUpdate
 
@@ -1304,9 +1251,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newWalletMaxAge | uint32 | New wallet max age. |
+| Name              | Type   | Description         |
+| ----------------- | ------ | ------------------- |
+| \_newWalletMaxAge | uint32 | New wallet max age. |
 
 ### finalizeWalletMaxAgeUpdate
 
@@ -1316,8 +1263,7 @@ function finalizeWalletMaxAgeUpdate() external
 
 Finalizes the wallet max age update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginWalletMaxBtcTransferUpdate
 
@@ -1331,9 +1277,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newWalletMaxBtcTransfer | uint64 | New wallet max btc transfer. |
+| Name                      | Type   | Description                  |
+| ------------------------- | ------ | ---------------------------- |
+| \_newWalletMaxBtcTransfer | uint64 | New wallet max btc transfer. |
 
 ### finalizeWalletMaxBtcTransferUpdate
 
@@ -1343,8 +1289,7 @@ function finalizeWalletMaxBtcTransferUpdate() external
 
 Finalizes the wallet max btc transfer amount update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginWalletClosingPeriodUpdate
 
@@ -1358,9 +1303,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newWalletClosingPeriod | uint32 | New wallet closing period. |
+| Name                     | Type   | Description                |
+| ------------------------ | ------ | -------------------------- |
+| \_newWalletClosingPeriod | uint32 | New wallet closing period. |
 
 ### finalizeWalletClosingPeriodUpdate
 
@@ -1370,8 +1315,7 @@ function finalizeWalletClosingPeriodUpdate() external
 
 Finalizes the wallet closing period update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginFraudChallengeDepositAmountUpdate
 
@@ -1385,9 +1329,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newFraudChallengeDepositAmount | uint96 | New fraud challenge deposit amount. |
+| Name                             | Type   | Description                         |
+| -------------------------------- | ------ | ----------------------------------- |
+| \_newFraudChallengeDepositAmount | uint96 | New fraud challenge deposit amount. |
 
 ### finalizeFraudChallengeDepositAmountUpdate
 
@@ -1397,8 +1341,7 @@ function finalizeFraudChallengeDepositAmountUpdate() external
 
 Finalizes the fraud challenge deposit amount update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginFraudChallengeDefeatTimeoutUpdate
 
@@ -1412,9 +1355,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newFraudChallengeDefeatTimeout | uint32 | New fraud challenge defeat timeout. |
+| Name                             | Type   | Description                         |
+| -------------------------------- | ------ | ----------------------------------- |
+| \_newFraudChallengeDefeatTimeout | uint32 | New fraud challenge defeat timeout. |
 
 ### finalizeFraudChallengeDefeatTimeoutUpdate
 
@@ -1424,8 +1367,7 @@ function finalizeFraudChallengeDefeatTimeoutUpdate() external
 
 Finalizes the fraud challenge defeat timeout update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginFraudSlashingAmountUpdate
 
@@ -1439,9 +1381,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newFraudSlashingAmount | uint96 | New fraud slashing amount. |
+| Name                     | Type   | Description                |
+| ------------------------ | ------ | -------------------------- |
+| \_newFraudSlashingAmount | uint96 | New fraud slashing amount. |
 
 ### finalizeFraudSlashingAmountUpdate
 
@@ -1451,8 +1393,7 @@ function finalizeFraudSlashingAmountUpdate() external
 
 Finalizes the fraud slashing amount update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginFraudNotifierRewardMultiplierUpdate
 
@@ -1466,9 +1407,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newFraudNotifierRewardMultiplier | uint32 | New fraud notifier reward multiplier. |
+| Name                               | Type   | Description                           |
+| ---------------------------------- | ------ | ------------------------------------- |
+| \_newFraudNotifierRewardMultiplier | uint32 | New fraud notifier reward multiplier. |
 
 ### finalizeFraudNotifierRewardMultiplierUpdate
 
@@ -1478,8 +1419,7 @@ function finalizeFraudNotifierRewardMultiplierUpdate() external
 
 Finalizes the fraud notifier reward multiplier update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginTreasuryUpdate
 
@@ -1489,14 +1429,13 @@ function beginTreasuryUpdate(address _newTreasury) external
 
 Begins the treasury address update process.
 
-Can be called only by the contract owner. It does not perform
-any parameter validation.
+Can be called only by the contract owner. It does not perform any parameter validation.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newTreasury | address | New treasury address. |
+| Name          | Type    | Description           |
+| ------------- | ------- | --------------------- |
+| \_newTreasury | address | New treasury address. |
 
 ### finalizeTreasuryUpdate
 
@@ -1506,8 +1445,7 @@ function finalizeTreasuryUpdate() external
 
 Finalizes the treasury address update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### governanceDelay
 
@@ -1516,4 +1454,3 @@ function governanceDelay() internal view returns (uint256)
 ```
 
 Gets the governance delay parameter.
-

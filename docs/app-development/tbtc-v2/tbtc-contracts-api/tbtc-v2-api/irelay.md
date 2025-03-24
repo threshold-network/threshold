@@ -1,10 +1,8 @@
-# Solidity API
+# IRelay
 
 ## IRelay
 
-Contains only the methods needed by tBTC v2. The Bitcoin relay
-provides the difficulty of the previous and current epoch. One
-difficulty epoch spans 2016 blocks.
+Contains only the methods needed by tBTC v2. The Bitcoin relay provides the difficulty of the previous and current epoch. One difficulty epoch spans 2016 blocks.
 
 ### getCurrentEpochDifficulty
 
@@ -21,4 +19,3 @@ function getPrevEpochDifficulty() external view returns (uint256)
 ```
 
 Returns the difficulty of the previous epoch.
-

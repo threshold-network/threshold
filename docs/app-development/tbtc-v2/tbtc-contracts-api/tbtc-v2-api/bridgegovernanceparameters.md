@@ -1,4 +1,4 @@
-# Solidity API
+# BridgeGovernanceParameters
 
 ## BridgeGovernanceParameters
 
@@ -530,10 +530,10 @@ Reverts if called before the governance delay elapses.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
+| Name                     | Type    | Description                                       |
+| ------------------------ | ------- | ------------------------------------------------- |
 | changeInitiatedTimestamp | uint256 | Timestamp indicating the beginning of the change. |
-| governanceDelay | uint256 |  |
+| governanceDelay          | uint256 |                                                   |
 
 ### beginDepositDustThresholdUpdate
 
@@ -545,10 +545,10 @@ Begins the deposit dust threshold amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.DepositData |  |
-| _newDepositDustThreshold | uint64 | New deposit dust threshold amount. |
+| Name                      | Type                                          | Description                        |
+| ------------------------- | --------------------------------------------- | ---------------------------------- |
+| self                      | struct BridgeGovernanceParameters.DepositData |                                    |
+| \_newDepositDustThreshold | uint64                                        | New deposit dust threshold amount. |
 
 ### finalizeDepositDustThresholdUpdate
 
@@ -570,10 +570,10 @@ Begins the deposit treasury fee divisor amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.DepositData |  |
-| _newDepositTreasuryFeeDivisor | uint64 | New deposit treasury fee divisor amount. |
+| Name                           | Type                                          | Description                              |
+| ------------------------------ | --------------------------------------------- | ---------------------------------------- |
+| self                           | struct BridgeGovernanceParameters.DepositData |                                          |
+| \_newDepositTreasuryFeeDivisor | uint64                                        | New deposit treasury fee divisor amount. |
 
 ### finalizeDepositTreasuryFeeDivisorUpdate
 
@@ -595,10 +595,10 @@ Begins the deposit tx max fee amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.DepositData |  |
-| _newDepositTxMaxFee | uint64 | New deposit tx max fee amount. |
+| Name                 | Type                                          | Description                    |
+| -------------------- | --------------------------------------------- | ------------------------------ |
+| self                 | struct BridgeGovernanceParameters.DepositData |                                |
+| \_newDepositTxMaxFee | uint64                                        | New deposit tx max fee amount. |
 
 ### finalizeDepositTxMaxFeeUpdate
 
@@ -620,10 +620,10 @@ Begins the deposit reveal ahead period update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.DepositData |  |
-| _newDepositRevealAheadPeriod | uint32 | New deposit reveal ahead period. |
+| Name                          | Type                                          | Description                      |
+| ----------------------------- | --------------------------------------------- | -------------------------------- |
+| self                          | struct BridgeGovernanceParameters.DepositData |                                  |
+| \_newDepositRevealAheadPeriod | uint32                                        | New deposit reveal ahead period. |
 
 ### finalizeDepositRevealAheadPeriodUpdate
 
@@ -645,10 +645,10 @@ Begins the redemption dust threshold amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.RedemptionData |  |
-| _newRedemptionDustThreshold | uint64 | New redemption dust threshold amount. |
+| Name                         | Type                                             | Description                           |
+| ---------------------------- | ------------------------------------------------ | ------------------------------------- |
+| self                         | struct BridgeGovernanceParameters.RedemptionData |                                       |
+| \_newRedemptionDustThreshold | uint64                                           | New redemption dust threshold amount. |
 
 ### finalizeRedemptionDustThresholdUpdate
 
@@ -670,10 +670,10 @@ Begins the redemption treasury fee divisor amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.RedemptionData |  |
-| _newRedemptionTreasuryFeeDivisor | uint64 | New redemption treasury fee divisor amount. |
+| Name                              | Type                                             | Description                                 |
+| --------------------------------- | ------------------------------------------------ | ------------------------------------------- |
+| self                              | struct BridgeGovernanceParameters.RedemptionData |                                             |
+| \_newRedemptionTreasuryFeeDivisor | uint64                                           | New redemption treasury fee divisor amount. |
 
 ### finalizeRedemptionTreasuryFeeDivisorUpdate
 
@@ -695,10 +695,10 @@ Begins the redemption tx max fee amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.RedemptionData |  |
-| _newRedemptionTxMaxFee | uint64 | New redemption tx max fee amount. |
+| Name                    | Type                                             | Description                       |
+| ----------------------- | ------------------------------------------------ | --------------------------------- |
+| self                    | struct BridgeGovernanceParameters.RedemptionData |                                   |
+| \_newRedemptionTxMaxFee | uint64                                           | New redemption tx max fee amount. |
 
 ### finalizeRedemptionTxMaxFeeUpdate
 
@@ -720,10 +720,10 @@ Begins the redemption tx max total fee amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.RedemptionData |  |
-| _newRedemptionTxMaxTotalFee | uint64 | New redemption tx max total fee amount. |
+| Name                         | Type                                             | Description                             |
+| ---------------------------- | ------------------------------------------------ | --------------------------------------- |
+| self                         | struct BridgeGovernanceParameters.RedemptionData |                                         |
+| \_newRedemptionTxMaxTotalFee | uint64                                           | New redemption tx max total fee amount. |
 
 ### finalizeRedemptionTxMaxTotalFeeUpdate
 
@@ -745,10 +745,10 @@ Begins the redemption timeout amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.RedemptionData |  |
-| _newRedemptionTimeout | uint32 | New redemption timeout amount. |
+| Name                   | Type                                             | Description                    |
+| ---------------------- | ------------------------------------------------ | ------------------------------ |
+| self                   | struct BridgeGovernanceParameters.RedemptionData |                                |
+| \_newRedemptionTimeout | uint32                                           | New redemption timeout amount. |
 
 ### finalizeRedemptionTimeoutUpdate
 
@@ -756,8 +756,7 @@ Begins the redemption timeout amount update process.
 function finalizeRedemptionTimeoutUpdate(struct BridgeGovernanceParameters.RedemptionData self, uint256 governanceDelay) external
 ```
 
-Finalizes the redemption timeout amount update
-process.
+Finalizes the redemption timeout amount update process.
 
 Can be called after the governance delay elapses.
 
@@ -771,10 +770,10 @@ Begins the redemption timeout slashing amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.RedemptionData |  |
-| _newRedemptionTimeoutSlashingAmount | uint96 | New redemption timeout slashing amount. |
+| Name                                 | Type                                             | Description                             |
+| ------------------------------------ | ------------------------------------------------ | --------------------------------------- |
+| self                                 | struct BridgeGovernanceParameters.RedemptionData |                                         |
+| \_newRedemptionTimeoutSlashingAmount | uint96                                           | New redemption timeout slashing amount. |
 
 ### finalizeRedemptionTimeoutSlashingAmountUpdate
 
@@ -792,15 +791,14 @@ Can be called after the governance delay elapses.
 function beginRedemptionTimeoutNotifierRewardMultiplierUpdate(struct BridgeGovernanceParameters.RedemptionData self, uint32 _newRedemptionTimeoutNotifierRewardMultiplier) external
 ```
 
-Begins the redemption timeout notifier reward multiplier amount
-update process.
+Begins the redemption timeout notifier reward multiplier amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.RedemptionData |  |
-| _newRedemptionTimeoutNotifierRewardMultiplier | uint32 | New redemption timeout notifier reward multiplier amount. |
+| Name                                           | Type                                             | Description                                               |
+| ---------------------------------------------- | ------------------------------------------------ | --------------------------------------------------------- |
+| self                                           | struct BridgeGovernanceParameters.RedemptionData |                                                           |
+| \_newRedemptionTimeoutNotifierRewardMultiplier | uint32                                           | New redemption timeout notifier reward multiplier amount. |
 
 ### finalizeRedemptionTimeoutNotifierRewardMultiplierUpdate
 
@@ -822,10 +820,10 @@ Begins the moving funds tx max total fee amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.MovingFundsData |  |
-| _newMovingFundsTxMaxTotalFee | uint64 | New moving funds tx max total fee amount. |
+| Name                          | Type                                              | Description                               |
+| ----------------------------- | ------------------------------------------------- | ----------------------------------------- |
+| self                          | struct BridgeGovernanceParameters.MovingFundsData |                                           |
+| \_newMovingFundsTxMaxTotalFee | uint64                                            | New moving funds tx max total fee amount. |
 
 ### finalizeMovingFundsTxMaxTotalFeeUpdate
 
@@ -847,10 +845,10 @@ Begins the moving funds dust threshold amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.MovingFundsData |  |
-| _newMovingFundsDustThreshold | uint64 | New moving funds dust threshold amount. |
+| Name                          | Type                                              | Description                             |
+| ----------------------------- | ------------------------------------------------- | --------------------------------------- |
+| self                          | struct BridgeGovernanceParameters.MovingFundsData |                                         |
+| \_newMovingFundsDustThreshold | uint64                                            | New moving funds dust threshold amount. |
 
 ### finalizeMovingFundsDustThresholdUpdate
 
@@ -872,10 +870,10 @@ Begins the moving funds timeout reset delay amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.MovingFundsData |  |
-| _newMovingFundsTimeoutResetDelay | uint32 | New moving funds timeout reset delay amount. |
+| Name                              | Type                                              | Description                                  |
+| --------------------------------- | ------------------------------------------------- | -------------------------------------------- |
+| self                              | struct BridgeGovernanceParameters.MovingFundsData |                                              |
+| \_newMovingFundsTimeoutResetDelay | uint32                                            | New moving funds timeout reset delay amount. |
 
 ### finalizeMovingFundsTimeoutResetDelayUpdate
 
@@ -897,10 +895,10 @@ Begins the moving funds timeout amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.MovingFundsData |  |
-| _newMovingFundsTimeout | uint32 | New moving funds timeout amount. |
+| Name                    | Type                                              | Description                      |
+| ----------------------- | ------------------------------------------------- | -------------------------------- |
+| self                    | struct BridgeGovernanceParameters.MovingFundsData |                                  |
+| \_newMovingFundsTimeout | uint32                                            | New moving funds timeout amount. |
 
 ### finalizeMovingFundsTimeoutUpdate
 
@@ -922,10 +920,10 @@ Begins the moving funds timeout slashing amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.MovingFundsData |  |
-| _newMovingFundsTimeoutSlashingAmount | uint96 | New moving funds timeout slashing amount. |
+| Name                                  | Type                                              | Description                               |
+| ------------------------------------- | ------------------------------------------------- | ----------------------------------------- |
+| self                                  | struct BridgeGovernanceParameters.MovingFundsData |                                           |
+| \_newMovingFundsTimeoutSlashingAmount | uint96                                            | New moving funds timeout slashing amount. |
 
 ### finalizeMovingFundsTimeoutSlashingAmountUpdate
 
@@ -943,15 +941,14 @@ Can be called after the governance delay elapses.
 function beginMovingFundsTimeoutNotifierRewardMultiplierUpdate(struct BridgeGovernanceParameters.MovingFundsData self, uint32 _newMovingFundsTimeoutNotifierRewardMultiplier) external
 ```
 
-Begins the moving funds timeout notifier reward multiplier amount
-update process.
+Begins the moving funds timeout notifier reward multiplier amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.MovingFundsData |  |
-| _newMovingFundsTimeoutNotifierRewardMultiplier | uint32 | New moving funds timeout notifier reward multiplier amount. |
+| Name                                            | Type                                              | Description                                                 |
+| ----------------------------------------------- | ------------------------------------------------- | ----------------------------------------------------------- |
+| self                                            | struct BridgeGovernanceParameters.MovingFundsData |                                                             |
+| \_newMovingFundsTimeoutNotifierRewardMultiplier | uint32                                            | New moving funds timeout notifier reward multiplier amount. |
 
 ### finalizeMovingFundsTimeoutNotifierRewardMultiplierUpdate
 
@@ -959,8 +956,7 @@ update process.
 function finalizeMovingFundsTimeoutNotifierRewardMultiplierUpdate(struct BridgeGovernanceParameters.MovingFundsData self, uint256 governanceDelay) external
 ```
 
-Finalizes the moving funds timeout notifier reward multiplier
-amount update process.
+Finalizes the moving funds timeout notifier reward multiplier amount update process.
 
 Can be called after the governance delay elapses.
 
@@ -974,10 +970,10 @@ Begins the moving funds commitment gas offset update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.MovingFundsData |  |
-| _newMovingFundsCommitmentGasOffset | uint16 | New moving funds commitment gas offset. |
+| Name                                | Type                                              | Description                             |
+| ----------------------------------- | ------------------------------------------------- | --------------------------------------- |
+| self                                | struct BridgeGovernanceParameters.MovingFundsData |                                         |
+| \_newMovingFundsCommitmentGasOffset | uint16                                            | New moving funds commitment gas offset. |
 
 ### finalizeMovingFundsCommitmentGasOffsetUpdate
 
@@ -999,10 +995,10 @@ Begins the moved funds sweep tx max total fee amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.MovingFundsData |  |
-| _newMovedFundsSweepTxMaxTotalFee | uint64 | New moved funds sweep tx max total fee amount. |
+| Name                              | Type                                              | Description                                    |
+| --------------------------------- | ------------------------------------------------- | ---------------------------------------------- |
+| self                              | struct BridgeGovernanceParameters.MovingFundsData |                                                |
+| \_newMovedFundsSweepTxMaxTotalFee | uint64                                            | New moved funds sweep tx max total fee amount. |
 
 ### finalizeMovedFundsSweepTxMaxTotalFeeUpdate
 
@@ -1010,8 +1006,7 @@ Begins the moved funds sweep tx max total fee amount update process.
 function finalizeMovedFundsSweepTxMaxTotalFeeUpdate(struct BridgeGovernanceParameters.MovingFundsData self, uint256 governanceDelay) external
 ```
 
-Finalizes the moved funds sweep tx max total fee amount update
-process.
+Finalizes the moved funds sweep tx max total fee amount update process.
 
 Can be called after the governance delay elapses.
 
@@ -1025,10 +1020,10 @@ Begins the moved funds sweep timeout amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.MovingFundsData |  |
-| _newMovedFundsSweepTimeout | uint32 | New moved funds sweep timeout amount. |
+| Name                        | Type                                              | Description                           |
+| --------------------------- | ------------------------------------------------- | ------------------------------------- |
+| self                        | struct BridgeGovernanceParameters.MovingFundsData |                                       |
+| \_newMovedFundsSweepTimeout | uint32                                            | New moved funds sweep timeout amount. |
 
 ### finalizeMovedFundsSweepTimeoutUpdate
 
@@ -1046,15 +1041,14 @@ Can be called after the governance delay elapses.
 function beginMovedFundsSweepTimeoutSlashingAmountUpdate(struct BridgeGovernanceParameters.MovingFundsData self, uint96 _newMovedFundsSweepTimeoutSlashingAmount) external
 ```
 
-Begins the moved funds sweep timeout slashing amount update
-process.
+Begins the moved funds sweep timeout slashing amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.MovingFundsData |  |
-| _newMovedFundsSweepTimeoutSlashingAmount | uint96 | New moved funds sweep timeout slashing amount. |
+| Name                                      | Type                                              | Description                                    |
+| ----------------------------------------- | ------------------------------------------------- | ---------------------------------------------- |
+| self                                      | struct BridgeGovernanceParameters.MovingFundsData |                                                |
+| \_newMovedFundsSweepTimeoutSlashingAmount | uint96                                            | New moved funds sweep timeout slashing amount. |
 
 ### finalizeMovedFundsSweepTimeoutSlashingAmountUpdate
 
@@ -1062,8 +1056,7 @@ process.
 function finalizeMovedFundsSweepTimeoutSlashingAmountUpdate(struct BridgeGovernanceParameters.MovingFundsData self, uint256 governanceDelay) external
 ```
 
-Finalizes the moved funds sweep timeout slashing amount
-update process.
+Finalizes the moved funds sweep timeout slashing amount update process.
 
 Can be called after the governance delay elapses.
 
@@ -1073,15 +1066,14 @@ Can be called after the governance delay elapses.
 function beginMovedFundsSweepTimeoutNotifierRewardMultiplierUpdate(struct BridgeGovernanceParameters.MovingFundsData self, uint32 _newMovedFundsSweepTimeoutNotifierRewardMultiplier) external
 ```
 
-Begins the moved funds sweep timeout notifier reward multiplier
-amount update process.
+Begins the moved funds sweep timeout notifier reward multiplier amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.MovingFundsData |  |
-| _newMovedFundsSweepTimeoutNotifierRewardMultiplier | uint32 | New moved funds sweep timeout notifier reward multiplier amount. |
+| Name                                                | Type                                              | Description                                                      |
+| --------------------------------------------------- | ------------------------------------------------- | ---------------------------------------------------------------- |
+| self                                                | struct BridgeGovernanceParameters.MovingFundsData |                                                                  |
+| \_newMovedFundsSweepTimeoutNotifierRewardMultiplier | uint32                                            | New moved funds sweep timeout notifier reward multiplier amount. |
 
 ### finalizeMovedFundsSweepTimeoutNotifierRewardMultiplierUpdate
 
@@ -1089,8 +1081,7 @@ amount update process.
 function finalizeMovedFundsSweepTimeoutNotifierRewardMultiplierUpdate(struct BridgeGovernanceParameters.MovingFundsData self, uint256 governanceDelay) external
 ```
 
-Finalizes the moved funds sweep timeout notifier reward multiplier
-amount update process.
+Finalizes the moved funds sweep timeout notifier reward multiplier amount update process.
 
 Can be called after the governance delay elapses.
 
@@ -1104,10 +1095,10 @@ Begins the wallet creation period amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.WalletData |  |
-| _newWalletCreationPeriod | uint32 | New wallet creation period amount. |
+| Name                      | Type                                         | Description                        |
+| ------------------------- | -------------------------------------------- | ---------------------------------- |
+| self                      | struct BridgeGovernanceParameters.WalletData |                                    |
+| \_newWalletCreationPeriod | uint32                                       | New wallet creation period amount. |
 
 ### finalizeWalletCreationPeriodUpdate
 
@@ -1129,10 +1120,10 @@ Begins the wallet creation min btc balance amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.WalletData |  |
-| _newWalletCreationMinBtcBalance | uint64 | New wallet creation min btc balance amount. |
+| Name                             | Type                                         | Description                                 |
+| -------------------------------- | -------------------------------------------- | ------------------------------------------- |
+| self                             | struct BridgeGovernanceParameters.WalletData |                                             |
+| \_newWalletCreationMinBtcBalance | uint64                                       | New wallet creation min btc balance amount. |
 
 ### finalizeWalletCreationMinBtcBalanceUpdate
 
@@ -1154,10 +1145,10 @@ Begins the wallet creation max btc balance amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.WalletData |  |
-| _newWalletCreationMaxBtcBalance | uint64 | New wallet creation max btc balance amount. |
+| Name                             | Type                                         | Description                                 |
+| -------------------------------- | -------------------------------------------- | ------------------------------------------- |
+| self                             | struct BridgeGovernanceParameters.WalletData |                                             |
+| \_newWalletCreationMaxBtcBalance | uint64                                       | New wallet creation max btc balance amount. |
 
 ### finalizeWalletCreationMaxBtcBalanceUpdate
 
@@ -1179,10 +1170,10 @@ Begins the wallet closure min btc balance amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.WalletData |  |
-| _newWalletClosureMinBtcBalance | uint64 | New wallet closure min btc balance amount. |
+| Name                            | Type                                         | Description                                |
+| ------------------------------- | -------------------------------------------- | ------------------------------------------ |
+| self                            | struct BridgeGovernanceParameters.WalletData |                                            |
+| \_newWalletClosureMinBtcBalance | uint64                                       | New wallet closure min btc balance amount. |
 
 ### finalizeWalletClosureMinBtcBalanceUpdate
 
@@ -1204,10 +1195,10 @@ Begins the wallet max age amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.WalletData |  |
-| _newWalletMaxAge | uint32 | New wallet max age amount. |
+| Name              | Type                                         | Description                |
+| ----------------- | -------------------------------------------- | -------------------------- |
+| self              | struct BridgeGovernanceParameters.WalletData |                            |
+| \_newWalletMaxAge | uint32                                       | New wallet max age amount. |
 
 ### finalizeWalletMaxAgeUpdate
 
@@ -1229,10 +1220,10 @@ Begins the wallet max btc transfer amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.WalletData |  |
-| _newWalletMaxBtcTransfer | uint64 | New wallet max btc transfer amount. |
+| Name                      | Type                                         | Description                         |
+| ------------------------- | -------------------------------------------- | ----------------------------------- |
+| self                      | struct BridgeGovernanceParameters.WalletData |                                     |
+| \_newWalletMaxBtcTransfer | uint64                                       | New wallet max btc transfer amount. |
 
 ### finalizeWalletMaxBtcTransferUpdate
 
@@ -1254,10 +1245,10 @@ Begins the wallet closing period amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.WalletData |  |
-| _newWalletClosingPeriod | uint32 | New wallet closing period amount. |
+| Name                     | Type                                         | Description                       |
+| ------------------------ | -------------------------------------------- | --------------------------------- |
+| self                     | struct BridgeGovernanceParameters.WalletData |                                   |
+| \_newWalletClosingPeriod | uint32                                       | New wallet closing period amount. |
 
 ### finalizeWalletClosingPeriodUpdate
 
@@ -1279,10 +1270,10 @@ Begins the fraud challenge deposit amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.FraudData |  |
-| _newFraudChallengeDepositAmount | uint96 | New fraud challenge deposit amount. |
+| Name                             | Type                                        | Description                         |
+| -------------------------------- | ------------------------------------------- | ----------------------------------- |
+| self                             | struct BridgeGovernanceParameters.FraudData |                                     |
+| \_newFraudChallengeDepositAmount | uint96                                      | New fraud challenge deposit amount. |
 
 ### finalizeFraudChallengeDepositAmountUpdate
 
@@ -1304,10 +1295,10 @@ Begins the fraud challenge defeat timeout amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.FraudData |  |
-| _newFraudChallengeDefeatTimeout | uint32 | New fraud challenge defeat timeout amount. |
+| Name                             | Type                                        | Description                                |
+| -------------------------------- | ------------------------------------------- | ------------------------------------------ |
+| self                             | struct BridgeGovernanceParameters.FraudData |                                            |
+| \_newFraudChallengeDefeatTimeout | uint32                                      | New fraud challenge defeat timeout amount. |
 
 ### finalizeFraudChallengeDefeatTimeoutUpdate
 
@@ -1329,10 +1320,10 @@ Begins the fraud slashing amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.FraudData |  |
-| _newFraudSlashingAmount | uint96 | New fraud slashing amount. |
+| Name                     | Type                                        | Description                |
+| ------------------------ | ------------------------------------------- | -------------------------- |
+| self                     | struct BridgeGovernanceParameters.FraudData |                            |
+| \_newFraudSlashingAmount | uint96                                      | New fraud slashing amount. |
 
 ### finalizeFraudSlashingAmountUpdate
 
@@ -1354,10 +1345,10 @@ Begins the fraud notifier reward multiplier amount update process.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.FraudData |  |
-| _newFraudNotifierRewardMultiplier | uint32 | New fraud notifier reward multiplier amount. |
+| Name                               | Type                                        | Description                                  |
+| ---------------------------------- | ------------------------------------------- | -------------------------------------------- |
+| self                               | struct BridgeGovernanceParameters.FraudData |                                              |
+| \_newFraudNotifierRewardMultiplier | uint32                                      | New fraud notifier reward multiplier amount. |
 
 ### finalizeFraudNotifierRewardMultiplierUpdate
 
@@ -1381,10 +1372,10 @@ It does not perform any parameter validation.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BridgeGovernanceParameters.TreasuryData |  |
-| _newTreasury | address | New treasury address. |
+| Name          | Type                                           | Description           |
+| ------------- | ---------------------------------------------- | --------------------- |
+| self          | struct BridgeGovernanceParameters.TreasuryData |                       |
+| \_newTreasury | address                                        | New treasury address. |
 
 ### finalizeTreasuryUpdate
 
@@ -1395,4 +1386,3 @@ function finalizeTreasuryUpdate(struct BridgeGovernanceParameters.TreasuryData s
 Finalizes the treasury address update process.
 
 Can be called after the governance delay elapses.
-

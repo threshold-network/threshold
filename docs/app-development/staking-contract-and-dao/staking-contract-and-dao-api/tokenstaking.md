@@ -1,19 +1,10 @@
-# Solidity API
+# TokenStaking
 
 ## TokenStaking
 
-TokenStaking is the main staking contract of the Threshold Network.
-Apart from the basic usage of enabling T stakes, it also acts as a
-sort of "meta-staking" contract, accepting existing legacy NU/KEEP
-stakes. Additionally, it serves as application manager for the apps
-that run on the Threshold Network. Note that legacy NU/KEEP staking
-contracts see TokenStaking as an application (e.g., slashing is
-requested by TokenStaking and performed by the legacy contracts).
+TokenStaking is the main staking contract of the Threshold Network. Apart from the basic usage of enabling T stakes, it also acts as a sort of "meta-staking" contract, accepting existing legacy NU/KEEP stakes. Additionally, it serves as application manager for the apps that run on the Threshold Network. Note that legacy NU/KEEP staking contracts see TokenStaking as an application (e.g., slashing is requested by TokenStaking and performed by the legacy contracts).
 
-TokenStaking is upgradeable, using OpenZeppelin's Upgradeability
-framework. As such, it is required to satisfy OZ's guidelines, like
-restrictions on constructors, immutable variables, base contracts and
-libraries. See https://docs.openzeppelin.com/upgrades-plugins/1.x/writing-upgradeable
+TokenStaking is upgradeable, using OpenZeppelin's Upgradeability framework. As such, it is required to satisfy OZ's guidelines, like restrictions on constructors, immutable variables, base contracts and libraries. See https://docs.openzeppelin.com/upgrades-plugins/1.x/writing-upgradeable
 
 ### ApplicationStatus
 
@@ -69,25 +60,25 @@ struct SlashingEvent {
 }
 ```
 
-### SLASHING_REWARD_PERCENT
+### SLASHING\_REWARD\_PERCENT
 
 ```solidity
 uint256 SLASHING_REWARD_PERCENT
 ```
 
-### MIN_STAKE_TIME
+### MIN\_STAKE\_TIME
 
 ```solidity
 uint256 MIN_STAKE_TIME
 ```
 
-### GAS_LIMIT_AUTHORIZATION_DECREASE
+### GAS\_LIMIT\_AUTHORIZATION\_DECREASE
 
 ```solidity
 uint256 GAS_LIMIT_AUTHORIZATION_DECREASE
 ```
 
-### CONVERSION_DIVISOR
+### CONVERSION\_DIVISOR
 
 ```solidity
 uint256 CONVERSION_DIVISOR
@@ -359,14 +350,14 @@ constructor(contract T _token, contract IKeepTokenStaking _keepStakingContract, 
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _token | contract T | Address of T token contract |
-| _keepStakingContract | contract IKeepTokenStaking | Address of Keep staking contract |
-| _nucypherStakingContract | contract INuCypherStakingEscrow | Address of NuCypher staking contract |
-| _keepVendingMachine | contract VendingMachine | Address of Keep vending machine |
-| _nucypherVendingMachine | contract VendingMachine | Address of NuCypher vending machine |
-| _keepStake | contract KeepStake | Address of Keep contract with grant owners |
+| Name                      | Type                            | Description                                |
+| ------------------------- | ------------------------------- | ------------------------------------------ |
+| \_token                   | contract T                      | Address of T token contract                |
+| \_keepStakingContract     | contract IKeepTokenStaking      | Address of Keep staking contract           |
+| \_nucypherStakingContract | contract INuCypherStakingEscrow | Address of NuCypher staking contract       |
+| \_keepVendingMachine      | contract VendingMachine         | Address of Keep vending machine            |
+| \_nucypherVendingMachine  | contract VendingMachine         | Address of NuCypher vending machine        |
+| \_keepStake               | contract KeepStake              | Address of Keep contract with grant owners |
 
 ### initialize
 
@@ -380,12 +371,9 @@ function initialize() external
 function stake(address stakingProvider, address payable beneficiary, address authorizer, uint96 amount) external
 ```
 
-Creates a delegation with `msg.sender` owner with the given
-staking provider, beneficiary, and authorizer. Transfers the
-given amount of T to the staking contract.
+Creates a delegation with `msg.sender` owner with the given staking provider, beneficiary, and authorizer. Transfers the given amount of T to the staking contract.
 
-The owner of the delegation needs to have the amount approved to
-transfer to the staking contract.
+The owner of the delegation needs to have the amount approved to transfer to the staking contract.
 
 ### stakeKeep
 
@@ -393,13 +381,9 @@ transfer to the staking contract.
 function stakeKeep(address stakingProvider) external
 ```
 
-Copies delegation from the legacy KEEP staking contract to T
-staking contract. No tokens are transferred. Caches the active
-stake amount from KEEP staking contract. Can be called by
-anyone.
+Copies delegation from the legacy KEEP staking contract to T staking contract. No tokens are transferred. Caches the active stake amount from KEEP staking contract. Can be called by anyone.
 
-The staking provider in T staking contract is the legacy KEEP
-staking contract operator.
+The staking provider in T staking contract is the legacy KEEP staking contract operator.
 
 ### stakeNu
 
@@ -407,10 +391,7 @@ staking contract operator.
 function stakeNu(address stakingProvider, address payable beneficiary, address authorizer) external
 ```
 
-Copies delegation from the legacy NU staking contract to T
-staking contract, additionally appointing beneficiary and
-authorizer roles. Caches the amount staked in NU staking
-contract. Can be called only by the original delegation owner.
+Copies delegation from the legacy NU staking contract to T staking contract, additionally appointing beneficiary and authorizer roles. Caches the amount staked in NU staking contract. Can be called only by the original delegation owner.
 
 ### setMinimumStakeAmount
 
@@ -418,17 +399,9 @@ contract. Can be called only by the original delegation owner.
 function setMinimumStakeAmount(uint96 amount) external
 ```
 
-Allows the Governance to set the minimum required stake amount.
-This amount is required to protect against griefing the staking
-contract and individual applications are allowed to require
-higher minimum stakes if necessary.
+Allows the Governance to set the minimum required stake amount. This amount is required to protect against griefing the staking contract and individual applications are allowed to require higher minimum stakes if necessary.
 
-Staking providers are not required to maintain a minimum T stake
-all the time. 24 hours after the delegation, T stake can be reduced
-below the minimum stake. The minimum stake in the staking contract
-is just to protect against griefing stake operation. Please note
-that each application may have its own minimum authorization though
-and the authorization can not be higher than the stake.
+Staking providers are not required to maintain a minimum T stake all the time. 24 hours after the delegation, T stake can be reduced below the minimum stake. The minimum stake in the staking contract is just to protect against griefing stake operation. Please note that each application may have its own minimum authorization though and the authorization can not be higher than the stake.
 
 ### approveApplication
 
@@ -436,8 +409,7 @@ and the authorization can not be higher than the stake.
 function approveApplication(address application) external
 ```
 
-Allows the Governance to approve the particular application
-before individual stake authorizers are able to authorize it.
+Allows the Governance to approve the particular application before individual stake authorizers are able to authorize it.
 
 ### increaseAuthorization
 
@@ -445,13 +417,9 @@ before individual stake authorizers are able to authorize it.
 function increaseAuthorization(address stakingProvider, address application, uint96 amount) external
 ```
 
-Increases the authorization of the given staking provider for
-the given application by the given amount. Can only be called by
-the given staking provider’s authorizer.
+Increases the authorization of the given staking provider for the given application by the given amount. Can only be called by the given staking provider’s authorizer.
 
-Calls `authorizationIncreased` callback on the given application to
-notify the application about authorization change.
-See `IApplication`.
+Calls `authorizationIncreased` callback on the given application to notify the application about authorization change. See `IApplication`.
 
 ### requestAuthorizationDecrease
 
@@ -459,16 +427,9 @@ See `IApplication`.
 function requestAuthorizationDecrease(address stakingProvider) external
 ```
 
-Requests decrease of all authorizations for the given staking
-provider on all applications by all authorized amount.
-It may not change the authorized amount immediatelly. When
-it happens depends on the application. Can only be called by the
-given staking provider’s authorizer. Overwrites pending
-authorization decrease for the given staking provider and
-application.
+Requests decrease of all authorizations for the given staking provider on all applications by all authorized amount. It may not change the authorized amount immediatelly. When it happens depends on the application. Can only be called by the given staking provider’s authorizer. Overwrites pending authorization decrease for the given staking provider and application.
 
-Calls `authorizationDecreaseRequested` callback
-for each authorized application. See `IApplication`.
+Calls `authorizationDecreaseRequested` callback for each authorized application. See `IApplication`.
 
 ### approveAuthorizationDecrease
 
@@ -476,11 +437,7 @@ for each authorized application. See `IApplication`.
 function approveAuthorizationDecrease(address stakingProvider) external returns (uint96)
 ```
 
-Called by the application at its discretion to approve the
-previously requested authorization decrease request. Can only be
-called by the application that was previously requested to
-decrease the authorization for that staking provider.
-Returns resulting authorized amount for the application.
+Called by the application at its discretion to approve the previously requested authorization decrease request. Can only be called by the application that was previously requested to decrease the authorization for that staking provider. Returns resulting authorized amount for the application.
 
 ### forceDecreaseAuthorization
 
@@ -488,9 +445,7 @@ Returns resulting authorized amount for the application.
 function forceDecreaseAuthorization(address stakingProvider, address application) external
 ```
 
-Decreases the authorization for the given `stakingProvider` on
-the given disabled `application`, for all authorized amount.
-Can be called by anyone.
+Decreases the authorization for the given `stakingProvider` on the given disabled `application`, for all authorized amount. Can be called by anyone.
 
 ### pauseApplication
 
@@ -498,12 +453,7 @@ Can be called by anyone.
 function pauseApplication(address application) external
 ```
 
-Pauses the given application’s eligibility to slash stakes.
-Besides that stakers can't change authorization to the application.
-Can be called only by the Panic Button of the particular
-application. The paused application can not slash stakes until
-it is approved again by the Governance using `approveApplication`
-function. Should be used only in case of an emergency.
+Pauses the given application’s eligibility to slash stakes. Besides that stakers can't change authorization to the application. Can be called only by the Panic Button of the particular application. The paused application can not slash stakes until it is approved again by the Governance using `approveApplication` function. Should be used only in case of an emergency.
 
 ### disableApplication
 
@@ -511,12 +461,7 @@ function. Should be used only in case of an emergency.
 function disableApplication(address application) external
 ```
 
-Disables the given application. The disabled application can't
-slash stakers. Also stakers can't increase authorization to that
-application but can decrease without waiting by calling
-`forceDecreaseAuthorization` at any moment. Can be called only
-by the governance. The disabled application can't be approved
-again. Should be used only in case of an emergency.
+Disables the given application. The disabled application can't slash stakers. Also stakers can't increase authorization to that application but can decrease without waiting by calling `forceDecreaseAuthorization` at any moment. Can be called only by the governance. The disabled application can't be approved again. Should be used only in case of an emergency.
 
 ### setPanicButton
 
@@ -524,10 +469,7 @@ again. Should be used only in case of an emergency.
 function setPanicButton(address application, address panicButton) external
 ```
 
-Sets the Panic Button role for the given application to the
-provided address. Can only be called by the Governance. If the
-Panic Button for the given application should be disabled, the
-role address should be set to 0x0 address.
+Sets the Panic Button role for the given application to the provided address. Can only be called by the Governance. If the Panic Button for the given application should be disabled, the role address should be set to 0x0 address.
 
 ### setAuthorizationCeiling
 
@@ -535,9 +477,7 @@ role address should be set to 0x0 address.
 function setAuthorizationCeiling(uint256 ceiling) external
 ```
 
-Sets the maximum number of applications one staking provider can
-have authorized. Used to protect against DoSing slashing queue.
-Can only be called by the Governance.
+Sets the maximum number of applications one staking provider can have authorized. Used to protect against DoSing slashing queue. Can only be called by the Governance.
 
 ### topUp
 
@@ -547,8 +487,7 @@ function topUp(address stakingProvider, uint96 amount) external
 
 Increases the amount of the stake for the given staking provider.
 
-The sender of this transaction needs to have the amount approved to
-transfer to the staking contract.
+The sender of this transaction needs to have the amount approved to transfer to the staking contract.
 
 ### topUpKeep
 
@@ -556,9 +495,7 @@ transfer to the staking contract.
 function topUpKeep(address stakingProvider) external
 ```
 
-Propagates information about stake top-up from the legacy KEEP
-staking contract to T staking contract. Can be called only by
-the owner or the staking provider.
+Propagates information about stake top-up from the legacy KEEP staking contract to T staking contract. Can be called only by the owner or the staking provider.
 
 ### topUpNu
 
@@ -566,9 +503,7 @@ the owner or the staking provider.
 function topUpNu(address stakingProvider) external
 ```
 
-Propagates information about stake top-up from the legacy NU
-staking contract to T staking contract. Can be called only by
-the owner or the staking provider.
+Propagates information about stake top-up from the legacy NU staking contract to T staking contract. Can be called only by the owner or the staking provider.
 
 ### unstakeT
 
@@ -576,13 +511,7 @@ the owner or the staking provider.
 function unstakeT(address stakingProvider, uint96 amount) external
 ```
 
-Reduces the liquid T stake amount by the provided amount and
-withdraws T to the owner. Reverts if there is at least one
-authorization higher than the sum of the legacy stake and
-remaining liquid T stake or if the unstake amount is higher than
-the liquid T stake amount. Can be called only by the owner or
-the staking provider. Can only be called when 24h passed since
-the stake has been delegated.
+Reduces the liquid T stake amount by the provided amount and withdraws T to the owner. Reverts if there is at least one authorization higher than the sum of the legacy stake and remaining liquid T stake or if the unstake amount is higher than the liquid T stake amount. Can be called only by the owner or the staking provider. Can only be called when 24h passed since the stake has been delegated.
 
 ### unstakeKeep
 
@@ -590,19 +519,9 @@ the stake has been delegated.
 function unstakeKeep(address stakingProvider) external
 ```
 
-Sets the legacy KEEP staking contract active stake amount cached
-in T staking contract to 0. Reverts if the amount of liquid T
-staked in T staking contract is lower than the highest
-application authorization. This function allows to unstake from
-KEEP staking contract and still being able to operate in T
-network and earning rewards based on the liquid T staked. Can be
-called only by the delegation owner or the staking provider.
-Can only be called when 24h passed since the stake has been
-delegated.
+Sets the legacy KEEP staking contract active stake amount cached in T staking contract to 0. Reverts if the amount of liquid T staked in T staking contract is lower than the highest application authorization. This function allows to unstake from KEEP staking contract and still being able to operate in T network and earning rewards based on the liquid T staked. Can be called only by the delegation owner or the staking provider. Can only be called when 24h passed since the stake has been delegated.
 
-This function (or `unstakeAll`) must be called before
-`undelegate`/`undelegateAt` in Keep staking contract. Otherwise
-provider can be slashed by `notifyKeepStakeDiscrepancy` method.
+This function (or `unstakeAll`) must be called before `undelegate`/`undelegateAt` in Keep staking contract. Otherwise provider can be slashed by `notifyKeepStakeDiscrepancy` method.
 
 ### unstakeNu
 
@@ -610,28 +529,16 @@ provider can be slashed by `notifyKeepStakeDiscrepancy` method.
 function unstakeNu(address stakingProvider, uint96 amount) external
 ```
 
-Reduces cached legacy NU stake amount by the provided amount.
-Reverts if there is at least one authorization higher than the
-sum of remaining legacy NU stake and liquid T stake for that
-staking provider or if the untaked amount is higher than the
-cached legacy stake amount. If succeeded, the legacy NU stake
-can be partially or fully undelegated on the legacy staking
-contract. This function allows to unstake from NU staking
-contract and still being able to operate in T network and
-earning rewards based on the liquid T staked. Can be called only
-by the delegation owner or the staking provider. Can only be
-called when 24h passed since the stake has been delegated.
+Reduces cached legacy NU stake amount by the provided amount. Reverts if there is at least one authorization higher than the sum of remaining legacy NU stake and liquid T stake for that staking provider or if the untaked amount is higher than the cached legacy stake amount. If succeeded, the legacy NU stake can be partially or fully undelegated on the legacy staking contract. This function allows to unstake from NU staking contract and still being able to operate in T network and earning rewards based on the liquid T staked. Can be called only by the delegation owner or the staking provider. Can only be called when 24h passed since the stake has been delegated.
 
-This function (or `unstakeAll`) must be called before `withdraw`
-in NuCypher staking contract. Otherwise NU tokens can't be
-unlocked.
+This function (or `unstakeAll`) must be called before `withdraw` in NuCypher staking contract. Otherwise NU tokens can't be unlocked.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| stakingProvider | address | Staking provider address |
-| amount | uint96 | Amount of NU to unstake in T denomination |
+| Name            | Type    | Description                               |
+| --------------- | ------- | ----------------------------------------- |
+| stakingProvider | address | Staking provider address                  |
+| amount          | uint96  | Amount of NU to unstake in T denomination |
 
 ### unstakeAll
 
@@ -639,12 +546,7 @@ unlocked.
 function unstakeAll(address stakingProvider) external
 ```
 
-Sets cached legacy stake amount to 0, sets the liquid T stake
-amount to 0 and withdraws all liquid T from the stake to the
-owner. Reverts if there is at least one non-zero authorization.
-Can be called only by the delegation owner or the staking
-provider. Can only be called when 24h passed since the stake
-has been delegated.
+Sets cached legacy stake amount to 0, sets the liquid T stake amount to 0 and withdraws all liquid T from the stake to the owner. Reverts if there is at least one non-zero authorization. Can be called only by the delegation owner or the staking provider. Can only be called when 24h passed since the stake has been delegated.
 
 ### notifyKeepStakeDiscrepancy
 
@@ -652,13 +554,7 @@ has been delegated.
 function notifyKeepStakeDiscrepancy(address stakingProvider) external
 ```
 
-Notifies about the discrepancy between legacy KEEP active stake
-and the amount cached in T staking contract. Slashes the staking
-provider in case the amount cached is higher than the actual
-active stake amount in KEEP staking contract. Needs to update
-authorizations of all affected applications and execute an
-involuntary authorization decrease on all affected applications.
-Can be called by anyone, notifier receives a reward.
+Notifies about the discrepancy between legacy KEEP active stake and the amount cached in T staking contract. Slashes the staking provider in case the amount cached is higher than the actual active stake amount in KEEP staking contract. Needs to update authorizations of all affected applications and execute an involuntary authorization decrease on all affected applications. Can be called by anyone, notifier receives a reward.
 
 ### notifyNuStakeDiscrepancy
 
@@ -666,17 +562,9 @@ Can be called by anyone, notifier receives a reward.
 function notifyNuStakeDiscrepancy(address stakingProvider) external
 ```
 
-Notifies about the discrepancy between legacy NU active stake
-and the amount cached in T staking contract. Slashes the
-staking provider in case the amount cached is higher than the
-actual active stake amount in NU staking contract. Needs to
-update authorizations of all affected applications and execute an
-involuntary authorization decrease on all affected applications.
-Can be called by anyone, notifier receives a reward.
+Notifies about the discrepancy between legacy NU active stake and the amount cached in T staking contract. Slashes the staking provider in case the amount cached is higher than the actual active stake amount in NU staking contract. Needs to update authorizations of all affected applications and execute an involuntary authorization decrease on all affected applications. Can be called by anyone, notifier receives a reward.
 
-Real discrepancy between T and Nu is impossible.
-This method is a safeguard in case of bugs in NuCypher staking
-contract
+Real discrepancy between T and Nu is impossible. This method is a safeguard in case of bugs in NuCypher staking contract
 
 ### setStakeDiscrepancyPenalty
 
@@ -684,11 +572,7 @@ contract
 function setStakeDiscrepancyPenalty(uint96 penalty, uint256 rewardMultiplier) external
 ```
 
-Sets the penalty amount for stake discrepancy and reward
-multiplier for reporting it. The penalty is seized from the
-delegated stake, and 5% of the penalty, scaled by the
-multiplier, is given to the notifier. The rest of the tokens are
-burned. Can only be called by the Governance. See `seize` function.
+Sets the penalty amount for stake discrepancy and reward multiplier for reporting it. The penalty is seized from the delegated stake, and 5% of the penalty, scaled by the multiplier, is given to the notifier. The rest of the tokens are burned. Can only be called by the Governance. See `seize` function.
 
 ### setNotificationReward
 
@@ -696,8 +580,7 @@ burned. Can only be called by the Governance. See `seize` function.
 function setNotificationReward(uint96 reward) external
 ```
 
-Sets reward in T tokens for notification of misbehaviour
-of one staking provider. Can only be called by the governance.
+Sets reward in T tokens for notification of misbehaviour of one staking provider. Can only be called by the governance.
 
 ### pushNotificationReward
 
@@ -705,8 +588,7 @@ of one staking provider. Can only be called by the governance.
 function pushNotificationReward(uint96 reward) external
 ```
 
-Transfer some amount of T tokens as reward for notifications
-of misbehaviour
+Transfer some amount of T tokens as reward for notifications of misbehaviour
 
 ### withdrawNotificationReward
 
@@ -714,8 +596,7 @@ of misbehaviour
 function withdrawNotificationReward(address recipient, uint96 amount) external
 ```
 
-Withdraw some amount of T tokens from notifiers treasury.
-Can only be called by the governance.
+Withdraw some amount of T tokens from notifiers treasury. Can only be called by the governance.
 
 ### slash
 
@@ -723,14 +604,9 @@ Can only be called by the governance.
 function slash(uint96 amount, address[] _stakingProviders) external
 ```
 
-Adds staking providers to the slashing queue along with the
-amount that should be slashed from each one of them. Can only be
-called by application authorized for all staking providers in
-the array.
+Adds staking providers to the slashing queue along with the amount that should be slashed from each one of them. Can only be called by application authorized for all staking providers in the array.
 
-This method doesn't emit events for providers that are added to
-the queue. If necessary  events can be added to the application
-level.
+This method doesn't emit events for providers that are added to the queue. If necessary events can be added to the application level.
 
 ### seize
 
@@ -738,14 +614,9 @@ level.
 function seize(uint96 amount, uint256 rewardMultiplier, address notifier, address[] _stakingProviders) external
 ```
 
-Adds staking providers to the slashing queue along with the
-amount. The notifier will receive reward per each provider from
-notifiers treasury. Can only be called by application
-authorized for all staking providers in the array.
+Adds staking providers to the slashing queue along with the amount. The notifier will receive reward per each provider from notifiers treasury. Can only be called by application authorized for all staking providers in the array.
 
-This method doesn't emit events for staking providers that are
-added to the queue. If necessary  events can be added to the
-application level.
+This method doesn't emit events for staking providers that are added to the queue. If necessary events can be added to the application level.
 
 ### processSlashing
 
@@ -753,10 +624,7 @@ application level.
 function processSlashing(uint256 count) external virtual
 ```
 
-Takes the given number of queued slashing operations and
-processes them. Receives 5% of the slashed amount.
-Executes `involuntaryAuthorizationDecrease` function on each
-affected application.
+Takes the given number of queued slashing operations and processes them. Receives 5% of the slashed amount. Executes `involuntaryAuthorizationDecrease` function on each affected application.
 
 ### delegateVoting
 
@@ -764,9 +632,7 @@ affected application.
 function delegateVoting(address stakingProvider, address delegatee) external
 ```
 
-Delegate voting power from the stake associated to the
-`stakingProvider` to a `delegatee` address. Caller must be the
-owner of this stake.
+Delegate voting power from the stake associated to the `stakingProvider` to a `delegatee` address. Caller must be the owner of this stake.
 
 ### transferGovernance
 
@@ -782,8 +648,7 @@ Transfers ownership of the contract to `newGuvnor`.
 function authorizedStake(address stakingProvider, address application) external view returns (uint96)
 ```
 
-Returns the authorized stake amount of the staking provider for
-the application.
+Returns the authorized stake amount of the staking provider for the application.
 
 ### stakes
 
@@ -791,8 +656,7 @@ the application.
 function stakes(address stakingProvider) external view returns (uint96 tStake, uint96 keepInTStake, uint96 nuInTStake)
 ```
 
-Returns staked amount of T, Keep and Nu for the specified
-staking provider.
+Returns staked amount of T, Keep and Nu for the specified staking provider.
 
 All values are in T denomination
 
@@ -820,16 +684,15 @@ Returns staked amount of NU for the specified staking provider.
 function rolesOf(address stakingProvider) external view returns (address owner, address payable beneficiary, address authorizer)
 ```
 
-Gets the stake owner, the beneficiary and the authorizer
-for the specified staking provider address.
+Gets the stake owner, the beneficiary and the authorizer for the specified staking provider address.
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| owner | address | Stake owner address. |
+| Name        | Type            | Description          |
+| ----------- | --------------- | -------------------- |
+| owner       | address         | Stake owner address. |
 | beneficiary | address payable | Beneficiary address. |
-| authorizer | address | Authorizer address. |
+| authorizer  | address         | Authorizer address.  |
 
 ### getApplicationsLength
 
@@ -853,18 +716,9 @@ Returns length of slashing queue
 function requestAuthorizationDecrease(address stakingProvider, address application, uint96 amount) public
 ```
 
-Requests decrease of the authorization for the given staking
-provider on the given application by the provided amount.
-It may not change the authorized amount immediatelly. When
-it happens depends on the application. Can only be called by the
-given staking provider’s authorizer. Overwrites pending
-authorization decrease for the given staking provider and
-application if the application agrees for that. If the
-application does not agree for overwriting, the function
-reverts.
+Requests decrease of the authorization for the given staking provider on the given application by the provided amount. It may not change the authorized amount immediatelly. When it happens depends on the application. Can only be called by the given staking provider’s authorizer. Overwrites pending authorization decrease for the given staking provider and application if the application agrees for that. If the application does not agree for overwriting, the function reverts.
 
-Calls `authorizationDecreaseRequested` callback on the given
-application. See `IApplication`.
+Calls `authorizationDecreaseRequested` callback on the given application. See `IApplication`.
 
 ### getMinStaked
 
@@ -874,21 +728,11 @@ function getMinStaked(address stakingProvider, enum IStaking.StakeType stakeType
 
 Returns minimum possible stake for T, KEEP or NU in T denomination
 
-For example, suppose the given staking provider has 10 T, 20 T worth
-of KEEP, and 30 T worth of NU all staked, and the maximum
-application authorization is 40 T, then `getMinStaked` for
-that staking provider returns:
-* 0 T if KEEP stake type specified i.e.
-min = 40 T max - (10 T + 30 T worth of NU) = 0 T
-* 10 T if NU stake type specified i.e.
-min = 40 T max - (10 T + 20 T worth of KEEP) = 10 T
-* 0 T if T stake type specified i.e.
-min = 40 T max - (20 T worth of KEEP + 30 T worth of NU) < 0 T
-In other words, the minimum stake amount for the specified
-stake type is the minimum amount of stake of the given type
-needed to satisfy the maximum application authorization given
-the staked amounts of the other stake types for that staking
-provider.
+For example, suppose the given staking provider has 10 T, 20 T worth of KEEP, and 30 T worth of NU all staked, and the maximum application authorization is 40 T, then `getMinStaked` for that staking provider returns:
+
+* 0 T if KEEP stake type specified i.e. min = 40 T max - (10 T + 30 T worth of NU) = 0 T
+* 10 T if NU stake type specified i.e. min = 40 T max - (10 T + 20 T worth of KEEP) = 10 T
+* 0 T if T stake type specified i.e. min = 40 T max - (20 T worth of KEEP + 30 T worth of NU) < 0 T In other words, the minimum stake amount for the specified stake type is the minimum amount of stake of the given type needed to satisfy the maximum application authorization given the staked amounts of the other stake types for that staking provider.
 
 ### getAvailableToAuthorize
 
@@ -896,8 +740,7 @@ provider.
 function getAvailableToAuthorize(address stakingProvider, address application) public view returns (uint96 availableTValue)
 ```
 
-Returns available amount to authorize for the specified
-application.
+Returns available amount to authorize for the specified application.
 
 ### delegate
 
@@ -905,14 +748,9 @@ application.
 function delegate(address stakingProvider, address delegatee) internal virtual
 ```
 
-Delegate voting power from the stake associated to the
-`stakingProvider` to a `delegatee` address. Caller must be the owner
-of this stake.
+Delegate voting power from the stake associated to the `stakingProvider` to a `delegatee` address. Caller must be the owner of this stake.
 
-Original abstract function defined in Checkpoints contract had two
-parameters, `delegator` and `delegatee`. Here we override it and
-comply with the same signature but the semantics of the first
-parameter changes to the `stakingProvider` address.
+Original abstract function defined in Checkpoints contract had two parameters, `delegator` and `delegatee`. Here we override it and comply with the same signature but the semantics of the first parameter changes to the `stakingProvider` address.
 
 ### notify
 
@@ -920,10 +758,7 @@ parameter changes to the `stakingProvider` address.
 function notify(uint96 amount, uint256 rewardMultiplier, address notifier, address[] _stakingProviders) internal
 ```
 
-Adds staking providers to the slashing queue along with the
-amount. The notifier will receive reward per each staking
-provider from notifiers treasury. Can only be called by
-application authorized for all staking providers in the array.
+Adds staking providers to the slashing queue along with the amount. The notifier will receive reward per each staking provider from notifiers treasury. Can only be called by application authorized for all staking providers in the array.
 
 ### processSlashing
 
@@ -931,9 +766,7 @@ application authorized for all staking providers in the array.
 function processSlashing(struct TokenStaking.SlashingEvent slashing) internal returns (uint96 tAmountToBurn)
 ```
 
-Processes one specified slashing event.
-Executes `involuntaryAuthorizationDecrease` function on each
-affected application.
+Processes one specified slashing event. Executes `involuntaryAuthorizationDecrease` function on each affected application.
 
 ### authorizationDecrease
 
@@ -949,8 +782,7 @@ Synchronize authorizations (if needed) after slashing stake
 function seizeKeep(struct TokenStaking.StakingProviderInfo stakingProviderStruct, address stakingProvider, uint96 tAmountToSlash, uint256 rewardMultiplier) internal returns (uint96)
 ```
 
-Convert amount from T to Keep and call `seize` in Keep staking contract.
-Returns remainder of slashing amount in T
+Convert amount from T to Keep and call `seize` in Keep staking contract. Returns remainder of slashing amount in T
 
 Note this internal function doesn't update stake checkpoints
 
@@ -960,8 +792,7 @@ Note this internal function doesn't update stake checkpoints
 function seizeNu(struct TokenStaking.StakingProviderInfo stakingProviderStruct, uint96 tAmountToSlash, uint256 rewardMultiplier) internal returns (uint96)
 ```
 
-Convert amount from T to NU and call `slashStaker` in NuCypher staking contract.
-Returns remainder of slashing amount in T
+Convert amount from T to NU and call `slashStaker` in NuCypher staking contract. Returns remainder of slashing amount in T
 
 Note this internal function doesn't update the stake checkpoints
 
@@ -971,8 +802,7 @@ Note this internal function doesn't update the stake checkpoints
 function cleanAuthorizedApplications(struct TokenStaking.StakingProviderInfo stakingProviderStruct, uint256 numberToDelete) internal
 ```
 
-Removes application with zero authorization from authorized
-applications array
+Removes application with zero authorization from authorized applications array
 
 ### newStakeCheckpoint
 
@@ -984,11 +814,11 @@ Creates new checkpoints due to a change of stake amount
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _delegator | address | Address of the staking provider acting as delegator |
-| _amount | uint96 | Amount of T to increment |
-| increase | bool | True if the change is an increase, false if a decrease |
+| Name        | Type    | Description                                            |
+| ----------- | ------- | ------------------------------------------------------ |
+| \_delegator | address | Address of the staking provider acting as delegator    |
+| \_amount    | uint96  | Amount of T to increment                               |
+| increase    | bool    | True if the change is an increase, false if a decrease |
 
 ### increaseStakeCheckpoint
 
@@ -1000,10 +830,10 @@ Creates new checkpoints due to an increment of a stakers' stake
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _delegator | address | Address of the staking provider acting as delegator |
-| _amount | uint96 | Amount of T to increment |
+| Name        | Type    | Description                                         |
+| ----------- | ------- | --------------------------------------------------- |
+| \_delegator | address | Address of the staking provider acting as delegator |
+| \_amount    | uint96  | Amount of T to increment                            |
 
 ### decreaseStakeCheckpoint
 
@@ -1015,10 +845,10 @@ Creates new checkpoints due to a decrease of a stakers' stake
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _delegator | address | Address of the stake owner acting as delegator |
-| _amount | uint96 | Amount of T to decrease |
+| Name        | Type    | Description                                    |
+| ----------- | ------- | ---------------------------------------------- |
+| \_delegator | address | Address of the stake owner acting as delegator |
+| \_amount    | uint96  | Amount of T to decrease                        |
 
 ### getNuAmountInT
 
@@ -1026,11 +856,9 @@ Creates new checkpoints due to a decrease of a stakers' stake
 function getNuAmountInT(address owner, address stakingProvider) internal returns (uint96)
 ```
 
-Returns amount of Nu stake in the NuCypher staking contract for
-the specified staking provider.
-Resulting value in T denomination
+Returns amount of Nu stake in the NuCypher staking contract for the specified staking provider. Resulting value in T denomination
 
-### _transferGovernance
+### \_transferGovernance
 
 ```solidity
 function _transferGovernance(address newGuvnor) internal virtual
@@ -1042,9 +870,7 @@ function _transferGovernance(address newGuvnor) internal virtual
 function getKeepAmountInT(address stakingProvider) internal view returns (uint96)
 ```
 
-Returns amount of Keep stake in the Keep staking contract for
-the specified staking provider.
-Resulting value in T denomination
+Returns amount of Keep stake in the Keep staking contract for the specified staking provider. Resulting value in T denomination
 
 ### convertToT
 
@@ -1052,9 +878,7 @@ Resulting value in T denomination
 function convertToT(uint256 amount, uint256 ratio) internal pure returns (uint96 tAmount, uint256 remainder)
 ```
 
-Returns the T token amount that's obtained from `amount` legacy
-tokens for the given `ratio`, and the remainder that can't be
-converted.
+Returns the T token amount that's obtained from `amount` legacy tokens for the given `ratio`, and the remainder that can't be converted.
 
 ### convertFromT
 
@@ -1062,7 +886,4 @@ converted.
 function convertFromT(uint96 tAmount, uint256 ratio) internal pure returns (uint256 amount, uint96 tRemainder)
 ```
 
-Returns the amount of legacy tokens that's obtained from
-`tAmount` T tokens for the given `ratio`, and the T remainder
-that can't be converted.
-
+Returns the amount of legacy tokens that's obtained from `tAmount` T tokens for the given `ratio`, and the T remainder that can't be converted.

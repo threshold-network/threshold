@@ -1,4 +1,4 @@
-# Solidity API
+# Governable
 
 ## Governable
 
@@ -8,9 +8,7 @@ This file documents a contract which is not yet deployed to Mainnet.
 
 Governable contract.
 
-A constructor is not defined, which makes the contract compatible with
-upgradable proxies. This requires calling explicitly `_transferGovernance`
-function in a child contract.
+A constructor is not defined, which makes the contract compatible with upgradable proxies. This requires calling explicitly `_transferGovernance` function in a child contract.
 
 ### governance
 
@@ -38,9 +36,8 @@ function transferGovernance(address newGovernance) external virtual
 
 Transfers governance of the contract to `newGovernance`.
 
-### _transferGovernance
+### \_transferGovernance
 
 ```solidity
 function _transferGovernance(address newGovernance) internal virtual
 ```
-

@@ -1,21 +1,18 @@
-# Solidity API
+# GovernorParameters
 
 ## GovernorParameters
 
 Abstract contract to handle governance parameters
 
-Based on `GovernorVotesQuorumFraction`, but without being opinionated
-on what's the source of voting power, and extended to handle proposal
-thresholds too. See OpenZeppelin's GovernorVotesQuorumFraction,
-GovernorVotes and GovernorSettings for reference.
+Based on `GovernorVotesQuorumFraction`, but without being opinionated on what's the source of voting power, and extended to handle proposal thresholds too. See OpenZeppelin's GovernorVotesQuorumFraction, GovernorVotes and GovernorSettings for reference.
 
-### FRACTION_DENOMINATOR
+### FRACTION\_DENOMINATOR
 
 ```solidity
 uint256 FRACTION_DENOMINATOR
 ```
 
-### AVERAGE_BLOCK_TIME_IN_SECONDS
+### AVERAGE\_BLOCK\_TIME\_IN\_SECONDS
 
 ```solidity
 uint64 AVERAGE_BLOCK_TIME_IN_SECONDS
@@ -81,8 +78,7 @@ function updateProposalThresholdNumerator(uint256 newNumerator) external virtual
 function setVotingDelay(uint256 newVotingDelay) external virtual
 ```
 
-Update the voting delay. This operation can only be performed
-through a governance proposal. Emits a `VotingDelaySet` event.
+Update the voting delay. This operation can only be performed through a governance proposal. Emits a `VotingDelaySet` event.
 
 ### setVotingPeriod
 
@@ -90,8 +86,7 @@ through a governance proposal. Emits a `VotingDelaySet` event.
 function setVotingPeriod(uint256 newVotingPeriod) external virtual
 ```
 
-Update the voting period. This operation can only be performed
-through a governance proposal. Emits a `VotingPeriodSet` event.
+Update the voting period. This operation can only be performed through a governance proposal. Emits a `VotingPeriodSet` event.
 
 ### quorum
 
@@ -103,8 +98,8 @@ Compute the required amount of voting power to reach quorum
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
+| Name        | Type    | Description                           |
+| ----------- | ------- | ------------------------------------- |
 | blockNumber | uint256 | The block number to get the quorum at |
 
 ### proposalThreshold
@@ -113,12 +108,9 @@ Compute the required amount of voting power to reach quorum
 function proposalThreshold() public view virtual returns (uint256)
 ```
 
-Compute the required amount of voting power to create a proposal
-at the last block height
+Compute the required amount of voting power to create a proposal at the last block height
 
-This function is implemented to comply with Governor API but we
-we will actually use `proposalThreshold(uint256 blockNumber)`,
-as in our DAOs the threshold amount changes according to supply.
+This function is implemented to comply with Governor API but we we will actually use `proposalThreshold(uint256 blockNumber)`, as in our DAOs the threshold amount changes according to supply.
 
 ### proposalThreshold
 
@@ -130,8 +122,8 @@ Compute the required amount of voting power to create a proposal
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
+| Name        | Type    | Description                                       |
+| ----------- | ------- | ------------------------------------------------- |
 | blockNumber | uint256 | The block number to get the proposal threshold at |
 
 ### votingDelay
@@ -142,8 +134,7 @@ function votingDelay() public view virtual returns (uint256)
 
 module:user-config
 
-Delay, in number of block, between the proposal is created and the vote starts. This can be increassed to
-leave time for users to buy voting power, of delegate it, before the voting of a proposal starts.
+Delay, in number of block, between the proposal is created and the vote starts. This can be increassed to leave time for users to buy voting power, of delegate it, before the voting of a proposal starts.
 
 ### votingPeriod
 
@@ -155,34 +146,33 @@ module:user-config
 
 Delay, in number of blocks, between the vote start and vote ends.
 
-NOTE: The {votingDelay} can delay the start of the vote. This must be considered when setting the voting
-duration compared to the voting delay.
+NOTE: The {votingDelay} can delay the start of the vote. This must be considered when setting the voting duration compared to the voting delay.
 
-### _updateQuorumNumerator
+### \_updateQuorumNumerator
 
 ```solidity
 function _updateQuorumNumerator(uint256 newQuorumNumerator) internal virtual
 ```
 
-### _updateProposalThresholdNumerator
+### \_updateProposalThresholdNumerator
 
 ```solidity
 function _updateProposalThresholdNumerator(uint256 proposalNumerator) internal virtual
 ```
 
-### _setVotingDelay
+### \_setVotingDelay
 
 ```solidity
 function _setVotingDelay(uint256 newVotingDelay) internal virtual
 ```
 
-### _setVotingPeriod
+### \_setVotingPeriod
 
 ```solidity
 function _setVotingPeriod(uint256 newVotingPeriod) internal virtual
 ```
 
-### _getPastTotalSupply
+### \_getPastTotalSupply
 
 ```solidity
 function _getPastTotalSupply(uint256 blockNumber) internal view virtual returns (uint256)
@@ -192,7 +182,6 @@ Compute the past total voting power at a particular block
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
+| Name        | Type    | Description                               |
+| ----------- | ------- | ----------------------------------------- |
 | blockNumber | uint256 | The block number to get the vote power at |
-

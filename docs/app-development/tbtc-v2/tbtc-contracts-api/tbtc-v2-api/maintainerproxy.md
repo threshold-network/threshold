@@ -1,12 +1,8 @@
-# Solidity API
+# MaintainerProxy
 
 ## MaintainerProxy
 
-Maintainers are the willing off-chain clients approved by the governance.
-Maintainers proxy calls to the `Bridge` contract via 'MaintainerProxy'
-and are refunded for the spent gas from the `ReimbursementPool`.
-There are two types of maintainers: wallet maintainers and SPV
-maintainers.
+Maintainers are the willing off-chain clients approved by the governance. Maintainers proxy calls to the `Bridge` contract via 'MaintainerProxy' and are refunded for the spent gas from the `ReimbursementPool`. There are two types of maintainers: wallet maintainers and SPV maintainers.
 
 ### bridge
 
@@ -20,14 +16,9 @@ contract Bridge bridge
 mapping(address => uint256) isWalletMaintainer
 ```
 
-Authorized wallet maintainers that can interact with the set of
-functions for wallet maintainers only. Authorization can be
-granted and removed by the governance.
+Authorized wallet maintainers that can interact with the set of functions for wallet maintainers only. Authorization can be granted and removed by the governance.
 
-'Key' is the address of the maintainer. 'Value' represents an index+1
-in the 'maintainers' array. 1 was added so the maintainer index can
-never be 0 which is a reserved index for a non-existent maintainer
-in this map.
+'Key' is the address of the maintainer. 'Value' represents an index+1 in the 'maintainers' array. 1 was added so the maintainer index can never be 0 which is a reserved index for a non-existent maintainer in this map.
 
 ### walletMaintainers
 
@@ -35,9 +26,7 @@ in this map.
 address[] walletMaintainers
 ```
 
-This list of wallet maintainers keeps the order of which wallet
-maintainer should be submitting a next transaction. It does not
-enforce the order but only tracks who should be next in line.
+This list of wallet maintainers keeps the order of which wallet maintainer should be submitting a next transaction. It does not enforce the order but only tracks who should be next in line.
 
 ### isSpvMaintainer
 
@@ -45,14 +34,9 @@ enforce the order but only tracks who should be next in line.
 mapping(address => uint256) isSpvMaintainer
 ```
 
-Authorized SPV maintainers that can interact with the set of
-functions for SPV maintainers only. Authorization can be
-granted and removed by the governance.
+Authorized SPV maintainers that can interact with the set of functions for SPV maintainers only. Authorization can be granted and removed by the governance.
 
-'Key' is the address of the maintainer. 'Value' represents an index+1
-in the 'maintainers' array. 1 was added so the maintainer index can
-never be 0 which is a reserved index for a non-existent maintainer
-in this map.
+'Key' is the address of the maintainer. 'Value' represents an index+1 in the 'maintainers' array. 1 was added so the maintainer index can never be 0 which is a reserved index for a non-existent maintainer in this map.
 
 ### spvMaintainers
 
@@ -60,9 +44,7 @@ in this map.
 address[] spvMaintainers
 ```
 
-This list of SPV maintainers keeps the order of which SPV
-maintainer should be submitting a next transaction. It does not
-enforce the order but only tracks who should be next in line.
+This list of SPV maintainers keeps the order of which SPV maintainer should be submitting a next transaction. It does not enforce the order but only tracks who should be next in line.
 
 ### submitDepositSweepProofGasOffset
 
@@ -70,9 +52,7 @@ enforce the order but only tracks who should be next in line.
 uint256 submitDepositSweepProofGasOffset
 ```
 
-Gas that is meant to balance the submission of deposit sweep proof
-overall cost. Can be updated by the governance based on the current
-market conditions.
+Gas that is meant to balance the submission of deposit sweep proof overall cost. Can be updated by the governance based on the current market conditions.
 
 ### submitRedemptionProofGasOffset
 
@@ -80,9 +60,7 @@ market conditions.
 uint256 submitRedemptionProofGasOffset
 ```
 
-Gas that is meant to balance the submission of redemption proof
-overall cost. Can be updated by the governance based on the current
-market conditions.
+Gas that is meant to balance the submission of redemption proof overall cost. Can be updated by the governance based on the current market conditions.
 
 ### resetMovingFundsTimeoutGasOffset
 
@@ -90,9 +68,7 @@ market conditions.
 uint256 resetMovingFundsTimeoutGasOffset
 ```
 
-Gas that is meant to balance the reset of moving funds timeout
-overall cost. Can be updated by the governance based on the current
-market conditions.
+Gas that is meant to balance the reset of moving funds timeout overall cost. Can be updated by the governance based on the current market conditions.
 
 ### submitMovingFundsProofGasOffset
 
@@ -100,9 +76,7 @@ market conditions.
 uint256 submitMovingFundsProofGasOffset
 ```
 
-Gas that is meant to balance the submission of moving funds proof
-overall cost. Can be updated by the governance based on the current
-market conditions.
+Gas that is meant to balance the submission of moving funds proof overall cost. Can be updated by the governance based on the current market conditions.
 
 ### notifyMovingFundsBelowDustGasOffset
 
@@ -110,9 +84,7 @@ market conditions.
 uint256 notifyMovingFundsBelowDustGasOffset
 ```
 
-Gas that is meant to balance the notification of moving funds below
-dust overall cost. Can be updated by the governance based on the
-current market conditions.
+Gas that is meant to balance the notification of moving funds below dust overall cost. Can be updated by the governance based on the current market conditions.
 
 ### submitMovedFundsSweepProofGasOffset
 
@@ -120,9 +92,7 @@ current market conditions.
 uint256 submitMovedFundsSweepProofGasOffset
 ```
 
-Gas that is meant to balance the submission of moved funds sweep
-proof overall cost. Can be updated by the governance based on the
-current market conditions.
+Gas that is meant to balance the submission of moved funds sweep proof overall cost. Can be updated by the governance based on the current market conditions.
 
 ### requestNewWalletGasOffset
 
@@ -130,9 +100,7 @@ current market conditions.
 uint256 requestNewWalletGasOffset
 ```
 
-Gas that is meant to balance the request of a new wallet overall
-cost. Can be updated by the governance based on the current
-market conditions.
+Gas that is meant to balance the request of a new wallet overall cost. Can be updated by the governance based on the current market conditions.
 
 ### notifyWalletCloseableGasOffset
 
@@ -140,9 +108,7 @@ market conditions.
 uint256 notifyWalletCloseableGasOffset
 ```
 
-Gas that is meant to balance the notification of closeable wallet
-overall cost. Can be updated by the governance based on the current
-market conditions.
+Gas that is meant to balance the notification of closeable wallet overall cost. Can be updated by the governance based on the current market conditions.
 
 ### notifyWalletClosingPeriodElapsedGasOffset
 
@@ -150,9 +116,7 @@ market conditions.
 uint256 notifyWalletClosingPeriodElapsedGasOffset
 ```
 
-Gas that is meant to balance the notification of wallet closing
-period elapsed overall cost. Can be updated by the governance
-based on the current market conditions.
+Gas that is meant to balance the notification of wallet closing period elapsed overall cost. Can be updated by the governance based on the current market conditions.
 
 ### defeatFraudChallengeGasOffset
 
@@ -160,9 +124,7 @@ based on the current market conditions.
 uint256 defeatFraudChallengeGasOffset
 ```
 
-Gas that is meant to balance the defeat fraud challenge
-overall cost. Can be updated by the governance based on the current
-market conditions.
+Gas that is meant to balance the defeat fraud challenge overall cost. Can be updated by the governance based on the current market conditions.
 
 ### defeatFraudChallengeWithHeartbeatGasOffset
 
@@ -170,9 +132,7 @@ market conditions.
 uint256 defeatFraudChallengeWithHeartbeatGasOffset
 ```
 
-Gas that is meant to balance the defeat fraud challenge with heartbeat
-overall cost. Can be updated by the governance based on the current
-market conditions.
+Gas that is meant to balance the defeat fraud challenge with heartbeat overall cost. Can be updated by the governance based on the current market conditions.
 
 ### WalletMaintainerAuthorized
 
@@ -240,8 +200,7 @@ constructor(contract Bridge _bridge, contract ReimbursementPool _reimbursementPo
 function submitDepositSweepProof(struct BitcoinTx.Info sweepTx, struct BitcoinTx.Proof sweepProof, struct BitcoinTx.UTXO mainUtxo, address vault) external
 ```
 
-Wraps `Bridge.submitDepositSweepProof` call and reimburses the
-caller's transaction cost.
+Wraps `Bridge.submitDepositSweepProof` call and reimburses the caller's transaction cost.
 
 See `Bridge.submitDepositSweepProof` function documentation.
 
@@ -251,8 +210,7 @@ See `Bridge.submitDepositSweepProof` function documentation.
 function submitRedemptionProof(struct BitcoinTx.Info redemptionTx, struct BitcoinTx.Proof redemptionProof, struct BitcoinTx.UTXO mainUtxo, bytes20 walletPubKeyHash) external
 ```
 
-Wraps `Bridge.submitRedemptionProof` call and reimburses the
-caller's transaction cost.
+Wraps `Bridge.submitRedemptionProof` call and reimburses the caller's transaction cost.
 
 See `Bridge.submitRedemptionProof` function documentation.
 
@@ -262,8 +220,7 @@ See `Bridge.submitRedemptionProof` function documentation.
 function resetMovingFundsTimeout(bytes20 walletPubKeyHash) external
 ```
 
-Wraps `Bridge.resetMovingFundsTimeout` call and reimburses the
-caller's transaction cost.
+Wraps `Bridge.resetMovingFundsTimeout` call and reimburses the caller's transaction cost.
 
 See `Bridge.resetMovingFundsTimeout` function documentation.
 
@@ -273,8 +230,7 @@ See `Bridge.resetMovingFundsTimeout` function documentation.
 function submitMovingFundsProof(struct BitcoinTx.Info movingFundsTx, struct BitcoinTx.Proof movingFundsProof, struct BitcoinTx.UTXO mainUtxo, bytes20 walletPubKeyHash) external
 ```
 
-Wraps `Bridge.submitMovingFundsProof` call and reimburses the
-caller's transaction cost.
+Wraps `Bridge.submitMovingFundsProof` call and reimburses the caller's transaction cost.
 
 See `Bridge.submitMovingFundsProof` function documentation.
 
@@ -284,8 +240,7 @@ See `Bridge.submitMovingFundsProof` function documentation.
 function notifyMovingFundsBelowDust(bytes20 walletPubKeyHash, struct BitcoinTx.UTXO mainUtxo) external
 ```
 
-Wraps `Bridge.notifyMovingFundsBelowDust` call and reimburses the
-caller's transaction cost.
+Wraps `Bridge.notifyMovingFundsBelowDust` call and reimburses the caller's transaction cost.
 
 See `Bridge.notifyMovingFundsBelowDust` function documentation.
 
@@ -295,8 +250,7 @@ See `Bridge.notifyMovingFundsBelowDust` function documentation.
 function submitMovedFundsSweepProof(struct BitcoinTx.Info sweepTx, struct BitcoinTx.Proof sweepProof, struct BitcoinTx.UTXO mainUtxo) external
 ```
 
-Wraps `Bridge.submitMovedFundsSweepProof` call and reimburses the
-caller's transaction cost.
+Wraps `Bridge.submitMovedFundsSweepProof` call and reimburses the caller's transaction cost.
 
 See `Bridge.submitMovedFundsSweepProof` function documentation.
 
@@ -306,8 +260,7 @@ See `Bridge.submitMovedFundsSweepProof` function documentation.
 function requestNewWallet(struct BitcoinTx.UTXO activeWalletMainUtxo) external
 ```
 
-Wraps `Bridge.requestNewWallet` call and reimburses the
-caller's transaction cost.
+Wraps `Bridge.requestNewWallet` call and reimburses the caller's transaction cost.
 
 See `Bridge.requestNewWallet` function documentation.
 
@@ -317,8 +270,7 @@ See `Bridge.requestNewWallet` function documentation.
 function notifyWalletCloseable(bytes20 walletPubKeyHash, struct BitcoinTx.UTXO walletMainUtxo) external
 ```
 
-Wraps `Bridge.notifyWalletCloseable` call and reimburses the
-caller's transaction cost.
+Wraps `Bridge.notifyWalletCloseable` call and reimburses the caller's transaction cost.
 
 See `Bridge.notifyWalletCloseable` function documentation.
 
@@ -328,8 +280,7 @@ See `Bridge.notifyWalletCloseable` function documentation.
 function notifyWalletClosingPeriodElapsed(bytes20 walletPubKeyHash) external
 ```
 
-Wraps `Bridge.notifyWalletClosingPeriodElapsed` call and reimburses
-the caller's transaction cost.
+Wraps `Bridge.notifyWalletClosingPeriodElapsed` call and reimburses the caller's transaction cost.
 
 See `Bridge.notifyWalletClosingPeriodElapsed` function documentation.
 
@@ -339,8 +290,7 @@ See `Bridge.notifyWalletClosingPeriodElapsed` function documentation.
 function defeatFraudChallenge(bytes walletPublicKey, bytes preimage, bool witness) external
 ```
 
-Wraps `Bridge.defeatFraudChallenge` call and reimburses the
-caller's transaction cost.
+Wraps `Bridge.defeatFraudChallenge` call and reimburses the caller's transaction cost.
 
 See `Bridge.defeatFraudChallenge` function documentation.
 
@@ -350,8 +300,7 @@ See `Bridge.defeatFraudChallenge` function documentation.
 function defeatFraudChallengeWithHeartbeat(bytes walletPublicKey, bytes heartbeatMessage) external
 ```
 
-Wraps `Bridge.defeatFraudChallengeWithHeartbeat` call and
-reimburses the caller's transaction cost.
+Wraps `Bridge.defeatFraudChallengeWithHeartbeat` call and reimburses the caller's transaction cost.
 
 See `Bridge.defeatFraudChallengeWithHeartbeat` function documentation.
 
@@ -361,13 +310,12 @@ See `Bridge.defeatFraudChallengeWithHeartbeat` function documentation.
 function authorizeWalletMaintainer(address maintainer) external
 ```
 
-Authorize a wallet maintainer that can interact with this
-reimbursement pool. Can be authorized by the owner only.
+Authorize a wallet maintainer that can interact with this reimbursement pool. Can be authorized by the owner only.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
+| Name       | Type    | Description                     |
+| ---------- | ------- | ------------------------------- |
 | maintainer | address | Wallet maintainer to authorize. |
 
 ### authorizeSpvMaintainer
@@ -376,13 +324,12 @@ reimbursement pool. Can be authorized by the owner only.
 function authorizeSpvMaintainer(address maintainer) external
 ```
 
-Authorize an SPV maintainer that can interact with this
-reimbursement pool. Can be authorized by the owner only.
+Authorize an SPV maintainer that can interact with this reimbursement pool. Can be authorized by the owner only.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
+| Name       | Type    | Description                  |
+| ---------- | ------- | ---------------------------- |
 | maintainer | address | SPV maintainer to authorize. |
 
 ### unauthorizeWalletMaintainer
@@ -391,24 +338,14 @@ reimbursement pool. Can be authorized by the owner only.
 function unauthorizeWalletMaintainer(address maintainerToUnauthorize) external
 ```
 
-Unauthorize a wallet maintainer that was previously authorized to
-interact with the Maintainer Proxy contract. Can be unauthorized
-by the owner only.
+Unauthorize a wallet maintainer that was previously authorized to interact with the Maintainer Proxy contract. Can be unauthorized by the owner only.
 
-The last maintainer is swapped with the one to be unauthorized.
-The unauthorized maintainer is then removed from the list. An index
-of the last maintainer is changed with the removed maintainer.
-Ex.
-'walletMaintainers' list: [0x1, 0x2, 0x3, 0x4, 0x5]
-'isWalletMaintainer' map: [0x1 -> 1, 0x2 -> 2, 0x3 -> 3, 0x4 -> 4, 0x5 -> 5]
-unauthorize: 0x3
-new 'walletMaintainers' list: [0x1, 0x2, 0x5, 0x4]
-new 'isWalletMaintainer' map: [0x1 -> 1, 0x2 -> 2, 0x4 -> 4, 0x5 -> 3]
+The last maintainer is swapped with the one to be unauthorized. The unauthorized maintainer is then removed from the list. An index of the last maintainer is changed with the removed maintainer. Ex. 'walletMaintainers' list: \[0x1, 0x2, 0x3, 0x4, 0x5] 'isWalletMaintainer' map: \[0x1 -> 1, 0x2 -> 2, 0x3 -> 3, 0x4 -> 4, 0x5 -> 5] unauthorize: 0x3 new 'walletMaintainers' list: \[0x1, 0x2, 0x5, 0x4] new 'isWalletMaintainer' map: \[0x1 -> 1, 0x2 -> 2, 0x4 -> 4, 0x5 -> 3]
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
+| Name                    | Type    | Description                |
+| ----------------------- | ------- | -------------------------- |
 | maintainerToUnauthorize | address | Maintainer to unauthorize. |
 
 ### unauthorizeSpvMaintainer
@@ -417,24 +354,14 @@ new 'isWalletMaintainer' map: [0x1 -> 1, 0x2 -> 2, 0x4 -> 4, 0x5 -> 3]
 function unauthorizeSpvMaintainer(address maintainerToUnauthorize) external
 ```
 
-Unauthorize an SPV maintainer that was previously authorized to
-interact with the Maintainer Proxy contract. Can be unauthorized
-by the owner only.
+Unauthorize an SPV maintainer that was previously authorized to interact with the Maintainer Proxy contract. Can be unauthorized by the owner only.
 
-The last maintainer is swapped with the one to be unauthorized.
-The unauthorized maintainer is then removed from the list. An index
-of the last maintainer is changed with the removed maintainer.
-Ex.
-'spvMaintainers' list: [0x1, 0x2, 0x3, 0x4, 0x5]
-'isSpvMaintainer' map: [0x1 -> 1, 0x2 -> 2, 0x3 -> 3, 0x4 -> 4, 0x5 -> 5]
-unauthorize: 0x3
-new 'spvMaintainers' list: [0x1, 0x2, 0x5, 0x4]
-new 'isSpvMaintainer' map: [0x1 -> 1, 0x2 -> 2, 0x4 -> 4, 0x5 -> 3]
+The last maintainer is swapped with the one to be unauthorized. The unauthorized maintainer is then removed from the list. An index of the last maintainer is changed with the removed maintainer. Ex. 'spvMaintainers' list: \[0x1, 0x2, 0x3, 0x4, 0x5] 'isSpvMaintainer' map: \[0x1 -> 1, 0x2 -> 2, 0x3 -> 3, 0x4 -> 4, 0x5 -> 5] unauthorize: 0x3 new 'spvMaintainers' list: \[0x1, 0x2, 0x5, 0x4] new 'isSpvMaintainer' map: \[0x1 -> 1, 0x2 -> 2, 0x4 -> 4, 0x5 -> 3]
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
+| Name                    | Type    | Description                |
+| ----------------------- | ------- | -------------------------- |
 | maintainerToUnauthorize | address | Maintainer to unauthorize. |
 
 ### updateBridge
@@ -445,10 +372,7 @@ function updateBridge(contract Bridge _bridge) external
 
 Allows the Governance to upgrade the Bridge address.
 
-The function does not implement any governance delay and does not
-check the status of the Bridge. The Governance implementation needs
-to ensure all requirements for the upgrade are satisfied before
-executing this function.
+The function does not implement any governance delay and does not check the status of the Bridge. The Governance implementation needs to ensure all requirements for the upgrade are satisfied before executing this function.
 
 ### updateGasOffsetParameters
 
@@ -458,23 +382,22 @@ function updateGasOffsetParameters(uint256 newSubmitDepositSweepProofGasOffset, 
 
 Updates the values of gas offset parameters.
 
-Can be called only by the contract owner. The caller is responsible
-for validating parameters.
+Can be called only by the contract owner. The caller is responsible for validating parameters.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| newSubmitDepositSweepProofGasOffset | uint256 | New submit deposit sweep proof gas offset. |
-| newSubmitRedemptionProofGasOffset | uint256 | New submit redemption proof gas offset. |
-| newResetMovingFundsTimeoutGasOffset | uint256 | New reset moving funds timeout gas offset. |
-| newSubmitMovingFundsProofGasOffset | uint256 | New submit moving funds proof gas offset. |
-| newNotifyMovingFundsBelowDustGasOffset | uint256 | New notify moving funds below dust gas offset. |
-| newSubmitMovedFundsSweepProofGasOffset | uint256 | New submit moved funds sweep proof gas offset. |
-| newRequestNewWalletGasOffset | uint256 | New request new wallet gas offset. |
-| newNotifyWalletCloseableGasOffset | uint256 | New notify closeable wallet gas offset. |
-| newNotifyWalletClosingPeriodElapsedGasOffset | uint256 | New notify wallet closing period elapsed gas offset. |
-| newDefeatFraudChallengeGasOffset | uint256 | New defeat fraud challenge gas offset. |
+| Name                                          | Type    | Description                                           |
+| --------------------------------------------- | ------- | ----------------------------------------------------- |
+| newSubmitDepositSweepProofGasOffset           | uint256 | New submit deposit sweep proof gas offset.            |
+| newSubmitRedemptionProofGasOffset             | uint256 | New submit redemption proof gas offset.               |
+| newResetMovingFundsTimeoutGasOffset           | uint256 | New reset moving funds timeout gas offset.            |
+| newSubmitMovingFundsProofGasOffset            | uint256 | New submit moving funds proof gas offset.             |
+| newNotifyMovingFundsBelowDustGasOffset        | uint256 | New notify moving funds below dust gas offset.        |
+| newSubmitMovedFundsSweepProofGasOffset        | uint256 | New submit moved funds sweep proof gas offset.        |
+| newRequestNewWalletGasOffset                  | uint256 | New request new wallet gas offset.                    |
+| newNotifyWalletCloseableGasOffset             | uint256 | New notify closeable wallet gas offset.               |
+| newNotifyWalletClosingPeriodElapsedGasOffset  | uint256 | New notify wallet closing period elapsed gas offset.  |
+| newDefeatFraudChallengeGasOffset              | uint256 | New defeat fraud challenge gas offset.                |
 | newDefeatFraudChallengeWithHeartbeatGasOffset | uint256 | New defeat fraud challenge with heartbeat gas offset. |
 
 ### allWalletMaintainers
@@ -492,4 +415,3 @@ function allSpvMaintainers() external view returns (address[])
 ```
 
 Gets an entire array of SPV maintainer addresses.
-

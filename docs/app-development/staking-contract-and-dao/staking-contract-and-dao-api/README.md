@@ -1,6 +1,6 @@
-# Staking Contract and DAO API
+# DAO Contracts API
 
-You can learn about APIs of contracts related to staking and DAO under the following links:
+You can learn about APIs of contracts related to the DAO under the following links:
 
 [BaseTokenholderGovernor](basetokenholdergovernor.md)
 

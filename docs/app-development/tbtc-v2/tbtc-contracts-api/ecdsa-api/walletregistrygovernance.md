@@ -1,9 +1,8 @@
-# Solidity API
+# WalletRegistryGovernance
 
 ## WalletRegistryGovernance
 
-Owns the `WalletRegistry` contract and is responsible for updating
-its governable parameters in respect to the governance delay.
+Owns the `WalletRegistry` contract and is responsible for updating its governable parameters in respect to the governance delay.
 
 ### newGovernanceDelay
 
@@ -507,8 +506,8 @@ Reverts if called before the governance delay elapses.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
+| Name                     | Type    | Description                                       |
+| ------------------------ | ------- | ------------------------------------------------- |
 | changeInitiatedTimestamp | uint256 | Timestamp indicating the beginning of the change. |
 
 ### constructor
@@ -529,9 +528,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newRandomBeacon | address | New random beacon address |
+| Name              | Type    | Description               |
+| ----------------- | ------- | ------------------------- |
+| \_newRandomBeacon | address | New random beacon address |
 
 ### initializeWalletOwner
 
@@ -541,17 +540,13 @@ function initializeWalletOwner(address _walletOwner) external
 
 Initializes the Wallet Owner's address.
 
-Can be called only by the contract owner. It can be called only if
-walletOwner has not been set before. It doesn't enforce a governance
-delay for the initial update. Any subsequent updates should be performed
-with beginWalletOwnerUpdate/finalizeWalletOwnerUpdate with respect
-of a governance delay.
+Can be called only by the contract owner. It can be called only if walletOwner has not been set before. It doesn't enforce a governance delay for the initial update. Any subsequent updates should be performed with beginWalletOwnerUpdate/finalizeWalletOwnerUpdate with respect of a governance delay.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _walletOwner | address | The Wallet Owner's address |
+| Name          | Type    | Description                |
+| ------------- | ------- | -------------------------- |
+| \_walletOwner | address | The Wallet Owner's address |
 
 ### beginGovernanceDelayUpdate
 
@@ -565,9 +560,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newGovernanceDelay | uint256 | New governance delay |
+| Name                 | Type    | Description          |
+| -------------------- | ------- | -------------------- |
+| \_newGovernanceDelay | uint256 | New governance delay |
 
 ### finalizeGovernanceDelayUpdate
 
@@ -577,8 +572,7 @@ function finalizeGovernanceDelayUpdate() external
 
 Finalizes the governance delay update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginWalletRegistryGovernanceTransfer
 
@@ -598,8 +592,7 @@ function finalizeWalletRegistryGovernanceTransfer() external
 
 Finalizes the wallet registry governance transfer process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginWalletOwnerUpdate
 
@@ -613,9 +606,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newWalletOwner | address | New wallet owner address |
+| Name             | Type    | Description              |
+| ---------------- | ------- | ------------------------ |
+| \_newWalletOwner | address | New wallet owner address |
 
 ### finalizeWalletOwnerUpdate
 
@@ -625,8 +618,7 @@ function finalizeWalletOwnerUpdate() external
 
 Finalizes the wallet owner update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginMinimumAuthorizationUpdate
 
@@ -640,9 +632,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newMinimumAuthorization | uint96 | New minimum authorization amount. |
+| Name                      | Type   | Description                       |
+| ------------------------- | ------ | --------------------------------- |
+| \_newMinimumAuthorization | uint96 | New minimum authorization amount. |
 
 ### finalizeMinimumAuthorizationUpdate
 
@@ -652,8 +644,7 @@ function finalizeMinimumAuthorizationUpdate() external
 
 Finalizes the minimum authorization amount update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginAuthorizationDecreaseDelayUpdate
 
@@ -667,9 +658,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newAuthorizationDecreaseDelay | uint64 | New authorization decrease delay |
+| Name                            | Type   | Description                      |
+| ------------------------------- | ------ | -------------------------------- |
+| \_newAuthorizationDecreaseDelay | uint64 | New authorization decrease delay |
 
 ### finalizeAuthorizationDecreaseDelayUpdate
 
@@ -679,8 +670,7 @@ function finalizeAuthorizationDecreaseDelayUpdate() external
 
 Finalizes the authorization decrease delay update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginAuthorizationDecreaseChangePeriodUpdate
 
@@ -694,9 +684,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newAuthorizationDecreaseChangePeriod | uint64 | New authorization decrease change period |
+| Name                                   | Type   | Description                              |
+| -------------------------------------- | ------ | ---------------------------------------- |
+| \_newAuthorizationDecreaseChangePeriod | uint64 | New authorization decrease change period |
 
 ### finalizeAuthorizationDecreaseChangePeriodUpdate
 
@@ -706,8 +696,7 @@ function finalizeAuthorizationDecreaseChangePeriodUpdate() external
 
 Finalizes the authorization decrease change period update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginMaliciousDkgResultSlashingAmountUpdate
 
@@ -721,9 +710,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newMaliciousDkgResultSlashingAmount | uint96 | New malicious DKG result slashing amount |
+| Name                                  | Type   | Description                              |
+| ------------------------------------- | ------ | ---------------------------------------- |
+| \_newMaliciousDkgResultSlashingAmount | uint96 | New malicious DKG result slashing amount |
 
 ### finalizeMaliciousDkgResultSlashingAmountUpdate
 
@@ -731,11 +720,9 @@ Can be called only by the contract owner.
 function finalizeMaliciousDkgResultSlashingAmountUpdate() external
 ```
 
-Finalizes the malicious DKG result slashing amount update
-process.
+Finalizes the malicious DKG result slashing amount update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginMaliciousDkgResultNotificationRewardMultiplierUpdate
 
@@ -743,16 +730,15 @@ delay elapses.
 function beginMaliciousDkgResultNotificationRewardMultiplierUpdate(uint256 _newMaliciousDkgResultNotificationRewardMultiplier) external
 ```
 
-Begins the DKG malicious result notification reward multiplier
-update process.
+Begins the DKG malicious result notification reward multiplier update process.
 
 Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newMaliciousDkgResultNotificationRewardMultiplier | uint256 | New DKG malicious result notification reward multiplier. |
+| Name                                                | Type    | Description                                              |
+| --------------------------------------------------- | ------- | -------------------------------------------------------- |
+| \_newMaliciousDkgResultNotificationRewardMultiplier | uint256 | New DKG malicious result notification reward multiplier. |
 
 ### finalizeMaliciousDkgResultNotificationRewardMultiplierUpdate
 
@@ -760,11 +746,9 @@ Can be called only by the contract owner.
 function finalizeMaliciousDkgResultNotificationRewardMultiplierUpdate() external
 ```
 
-Finalizes the DKG malicious result notification reward
-multiplier update process.
+Finalizes the DKG malicious result notification reward multiplier update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginDkgResultSubmissionGasUpdate
 
@@ -778,9 +762,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newDkgResultSubmissionGas | uint256 | New DKG result submission gas. |
+| Name                        | Type    | Description                    |
+| --------------------------- | ------- | ------------------------------ |
+| \_newDkgResultSubmissionGas | uint256 | New DKG result submission gas. |
 
 ### finalizeDkgResultSubmissionGasUpdate
 
@@ -790,8 +774,7 @@ function finalizeDkgResultSubmissionGasUpdate() external
 
 Finalizes the dkg result submission gas update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginDkgResultApprovalGasOffsetUpdate
 
@@ -805,9 +788,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newDkgResultApprovalGasOffset | uint256 | New DKG result approval gas. |
+| Name                            | Type    | Description                  |
+| ------------------------------- | ------- | ---------------------------- |
+| \_newDkgResultApprovalGasOffset | uint256 | New DKG result approval gas. |
 
 ### finalizeDkgResultApprovalGasOffsetUpdate
 
@@ -817,8 +800,7 @@ function finalizeDkgResultApprovalGasOffsetUpdate() external
 
 Finalizes the dkg result approval gas offset update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginNotifyOperatorInactivityGasOffsetUpdate
 
@@ -832,9 +814,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newNotifyOperatorInactivityGasOffset | uint256 | New operator inactivity notification gas offset |
+| Name                                   | Type    | Description                                     |
+| -------------------------------------- | ------- | ----------------------------------------------- |
+| \_newNotifyOperatorInactivityGasOffset | uint256 | New operator inactivity notification gas offset |
 
 ### finalizeNotifyOperatorInactivityGasOffsetUpdate
 
@@ -844,8 +826,7 @@ function finalizeNotifyOperatorInactivityGasOffsetUpdate() external
 
 Finalizes the notify operator inactivity gas offset update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginNotifySeedTimeoutGasOffsetUpdate
 
@@ -853,16 +834,15 @@ delay elapses.
 function beginNotifySeedTimeoutGasOffsetUpdate(uint256 _newNotifySeedTimeoutGasOffset) external
 ```
 
-Begins the notify seed for DKG delivery timeout gas offset update
-process.
+Begins the notify seed for DKG delivery timeout gas offset update process.
 
 Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newNotifySeedTimeoutGasOffset | uint256 | New seed for DKG delivery timeout notification gas offset |
+| Name                            | Type    | Description                                               |
+| ------------------------------- | ------- | --------------------------------------------------------- |
+| \_newNotifySeedTimeoutGasOffset | uint256 | New seed for DKG delivery timeout notification gas offset |
 
 ### finalizeNotifySeedTimeoutGasOffsetUpdate
 
@@ -870,11 +850,9 @@ Can be called only by the contract owner.
 function finalizeNotifySeedTimeoutGasOffsetUpdate() external
 ```
 
-Finalizes the notify seed for DKG delivery timeout gas offset
-update process.
+Finalizes the notify seed for DKG delivery timeout gas offset update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginNotifyDkgTimeoutNegativeGasOffsetUpdate
 
@@ -888,9 +866,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newNotifyDkgTimeoutNegativeGasOffset | uint256 | New DKG timeout negative gas notification gas offset |
+| Name                                   | Type    | Description                                          |
+| -------------------------------------- | ------- | ---------------------------------------------------- |
+| \_newNotifyDkgTimeoutNegativeGasOffset | uint256 | New DKG timeout negative gas notification gas offset |
 
 ### finalizeNotifyDkgTimeoutNegativeGasOffsetUpdate
 
@@ -900,8 +878,7 @@ function finalizeNotifyDkgTimeoutNegativeGasOffsetUpdate() external
 
 Finalizes the notify DKG timeout negative gas offset update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginReimbursementPoolUpdate
 
@@ -915,9 +892,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newReimbursementPool | address payable | New reimbursement pool. |
+| Name                   | Type            | Description             |
+| ---------------------- | --------------- | ----------------------- |
+| \_newReimbursementPool | address payable | New reimbursement pool. |
 
 ### finalizeReimbursementPoolUpdate
 
@@ -927,8 +904,7 @@ function finalizeReimbursementPoolUpdate() external
 
 Finalizes the reimbursement pool update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginSortitionPoolRewardsBanDurationUpdate
 
@@ -942,9 +918,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newSortitionPoolRewardsBanDuration | uint256 | New sortition pool rewards ban duration. |
+| Name                                 | Type    | Description                              |
+| ------------------------------------ | ------- | ---------------------------------------- |
+| \_newSortitionPoolRewardsBanDuration | uint256 | New sortition pool rewards ban duration. |
 
 ### finalizeSortitionPoolRewardsBanDurationUpdate
 
@@ -954,8 +930,7 @@ function finalizeSortitionPoolRewardsBanDurationUpdate() external
 
 Finalizes the sortition pool rewards ban duration update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginDkgSeedTimeoutUpdate
 
@@ -969,9 +944,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newDkgSeedTimeout | uint256 | New DKG seed timeout in blocks |
+| Name                | Type    | Description                    |
+| ------------------- | ------- | ------------------------------ |
+| \_newDkgSeedTimeout | uint256 | New DKG seed timeout in blocks |
 
 ### finalizeDkgSeedTimeoutUpdate
 
@@ -981,8 +956,7 @@ function finalizeDkgSeedTimeoutUpdate() external
 
 Finalizes the DKG seed timeout update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginDkgResultChallengePeriodLengthUpdate
 
@@ -996,9 +970,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newDkgResultChallengePeriodLength | uint256 | New DKG result challenge period length in blocks |
+| Name                                | Type    | Description                                      |
+| ----------------------------------- | ------- | ------------------------------------------------ |
+| \_newDkgResultChallengePeriodLength | uint256 | New DKG result challenge period length in blocks |
 
 ### finalizeDkgResultChallengePeriodLengthUpdate
 
@@ -1008,8 +982,7 @@ function finalizeDkgResultChallengePeriodLengthUpdate() external
 
 Finalizes the DKG result challenge period length update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginDkgResultChallengeExtraGasUpdate
 
@@ -1023,9 +996,9 @@ Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newDkgResultChallengeExtraGas | uint256 | New DKG result challenge extra gas |
+| Name                            | Type    | Description                        |
+| ------------------------------- | ------- | ---------------------------------- |
+| \_newDkgResultChallengeExtraGas | uint256 | New DKG result challenge extra gas |
 
 ### finalizeDkgResultChallengeExtraGasUpdate
 
@@ -1035,8 +1008,7 @@ function finalizeDkgResultChallengeExtraGasUpdate() external
 
 Finalizes the DKG result challenge extra gas update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginDkgResultSubmissionTimeoutUpdate
 
@@ -1044,16 +1016,15 @@ delay elapses.
 function beginDkgResultSubmissionTimeoutUpdate(uint256 _newDkgResultSubmissionTimeout) external
 ```
 
-Begins the DKG result submission timeout update
-process.
+Begins the DKG result submission timeout update process.
 
 Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newDkgResultSubmissionTimeout | uint256 | New DKG result submission timeout in blocks |
+| Name                            | Type    | Description                                 |
+| ------------------------------- | ------- | ------------------------------------------- |
+| \_newDkgResultSubmissionTimeout | uint256 | New DKG result submission timeout in blocks |
 
 ### finalizeDkgResultSubmissionTimeoutUpdate
 
@@ -1061,11 +1032,9 @@ Can be called only by the contract owner.
 function finalizeDkgResultSubmissionTimeoutUpdate() external
 ```
 
-Finalizes the DKG result submission timeout update
-process.
+Finalizes the DKG result submission timeout update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### beginDkgSubmitterPrecedencePeriodLengthUpdate
 
@@ -1073,16 +1042,15 @@ delay elapses.
 function beginDkgSubmitterPrecedencePeriodLengthUpdate(uint256 _newSubmitterPrecedencePeriodLength) external
 ```
 
-Begins the DKG submitter precedence period length update
-process.
+Begins the DKG submitter precedence period length update process.
 
 Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _newSubmitterPrecedencePeriodLength | uint256 | New DKG submitter precedence period length in blocks |
+| Name                                 | Type    | Description                                          |
+| ------------------------------------ | ------- | ---------------------------------------------------- |
+| \_newSubmitterPrecedencePeriodLength | uint256 | New DKG submitter precedence period length in blocks |
 
 ### finalizeDkgSubmitterPrecedencePeriodLengthUpdate
 
@@ -1090,11 +1058,9 @@ Can be called only by the contract owner.
 function finalizeDkgSubmitterPrecedencePeriodLengthUpdate() external
 ```
 
-Finalizes the DKG submitter precedence period length update
-process.
+Finalizes the DKG submitter precedence period length update process.
 
-Can be called only by the contract owner, after the governance
-delay elapses.
+Can be called only by the contract owner, after the governance delay elapses.
 
 ### withdrawIneligibleRewards
 
@@ -1102,15 +1068,14 @@ delay elapses.
 function withdrawIneligibleRewards(address recipient) external
 ```
 
-Withdraws rewards belonging to operators marked as ineligible
-for sortition pool rewards.
+Withdraws rewards belonging to operators marked as ineligible for sortition pool rewards.
 
 Can be called only by the contract owner.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
+| Name      | Type    | Description                     |
+| --------- | ------- | ------------------------------- |
 | recipient | address | Recipient of withdrawn rewards. |
 
 ### getRemainingGovernanceDelayUpdateTime
@@ -1123,9 +1088,9 @@ Get the time remaining until the governance delay can be updated.
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | Remaining time in seconds. |
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| \[0] | uint256 | Remaining time in seconds. |
 
 ### getRemainingWalletRegistryGovernanceTransferDelayTime
 
@@ -1133,14 +1098,13 @@ Get the time remaining until the governance delay can be updated.
 function getRemainingWalletRegistryGovernanceTransferDelayTime() external view returns (uint256)
 ```
 
-Get the time remaining until the wallet registry governance can
-be transferred.
+Get the time remaining until the wallet registry governance can be transferred.
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | Remaining time in seconds. |
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| \[0] | uint256 | Remaining time in seconds. |
 
 ### getRemainingMimimumAuthorizationUpdateTime
 
@@ -1148,14 +1112,13 @@ be transferred.
 function getRemainingMimimumAuthorizationUpdateTime() external view returns (uint256)
 ```
 
-Get the time remaining until the minimum authorization amount
-can be updated.
+Get the time remaining until the minimum authorization amount can be updated.
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | Remaining time in seconds. |
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| \[0] | uint256 | Remaining time in seconds. |
 
 ### getRemainingAuthorizationDecreaseDelayUpdateTime
 
@@ -1163,14 +1126,13 @@ can be updated.
 function getRemainingAuthorizationDecreaseDelayUpdateTime() external view returns (uint256)
 ```
 
-Get the time remaining until the authorization decrease delay
-can be updated.
+Get the time remaining until the authorization decrease delay can be updated.
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | Remaining time in seconds. |
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| \[0] | uint256 | Remaining time in seconds. |
 
 ### getRemainingAuthorizationDecreaseChangePeriodUpdateTime
 
@@ -1178,14 +1140,13 @@ can be updated.
 function getRemainingAuthorizationDecreaseChangePeriodUpdateTime() external view returns (uint256)
 ```
 
-Get the time remaining until the authorization decrease change
-period can be updated.
+Get the time remaining until the authorization decrease change period can be updated.
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | Remaining time in seconds. |
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| \[0] | uint256 | Remaining time in seconds. |
 
 ### getRemainingMaliciousDkgResultSlashingAmountUpdateTime
 
@@ -1193,14 +1154,13 @@ period can be updated.
 function getRemainingMaliciousDkgResultSlashingAmountUpdateTime() external view returns (uint256)
 ```
 
-Get the time remaining until the malicious DKG result
-slashing amount can be updated.
+Get the time remaining until the malicious DKG result slashing amount can be updated.
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | Remaining time in seconds. |
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| \[0] | uint256 | Remaining time in seconds. |
 
 ### getRemainingMaliciousDkgResultNotificationRewardMultiplierUpdateTime
 
@@ -1208,14 +1168,13 @@ slashing amount can be updated.
 function getRemainingMaliciousDkgResultNotificationRewardMultiplierUpdateTime() external view returns (uint256)
 ```
 
-Get the time remaining until the DKG malicious result
-notification reward multiplier duration can be updated.
+Get the time remaining until the DKG malicious result notification reward multiplier duration can be updated.
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | Remaining time in seconds. |
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| \[0] | uint256 | Remaining time in seconds. |
 
 ### getRemainingSortitionPoolRewardsBanDurationUpdateTime
 
@@ -1223,14 +1182,13 @@ notification reward multiplier duration can be updated.
 function getRemainingSortitionPoolRewardsBanDurationUpdateTime() external view returns (uint256)
 ```
 
-Get the time remaining until the sortition pool rewards ban
-duration can be updated.
+Get the time remaining until the sortition pool rewards ban duration can be updated.
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | Remaining time in seconds. |
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| \[0] | uint256 | Remaining time in seconds. |
 
 ### getRemainingDkgSeedTimeoutUpdateTime
 
@@ -1242,9 +1200,9 @@ Get the time remaining until the DKG seed timeout can be updated.
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | Remaining time in seconds. |
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| \[0] | uint256 | Remaining time in seconds. |
 
 ### getRemainingDkgResultChallengePeriodLengthUpdateTime
 
@@ -1252,14 +1210,13 @@ Get the time remaining until the DKG seed timeout can be updated.
 function getRemainingDkgResultChallengePeriodLengthUpdateTime() external view returns (uint256)
 ```
 
-Get the time remaining until the DKG result challenge period
-length can be updated.
+Get the time remaining until the DKG result challenge period length can be updated.
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | Remaining time in seconds. |
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| \[0] | uint256 | Remaining time in seconds. |
 
 ### getRemainingDkgResultChallengeExtraGasUpdateTime
 
@@ -1273,14 +1230,13 @@ function getRemainingDkgResultChallengeExtraGasUpdateTime() external view return
 function getRemainingDkgResultSubmissionTimeoutUpdateTime() external view returns (uint256)
 ```
 
-Get the time remaining until the DKG result submission timeout
-can be updated.
+Get the time remaining until the DKG result submission timeout can be updated.
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | Remaining time in seconds. |
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| \[0] | uint256 | Remaining time in seconds. |
 
 ### getRemainingWalletOwnerUpdateTime
 
@@ -1292,9 +1248,9 @@ Get the time remaining until the wallet owner can be updated.
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | Remaining time in seconds. |
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| \[0] | uint256 | Remaining time in seconds. |
 
 ### getRemainingDkgSubmitterPrecedencePeriodLengthUpdateTime
 
@@ -1306,9 +1262,9 @@ Get the time remaining until the wallet owner can be updated.
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | Remaining time in seconds. |
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| \[0] | uint256 | Remaining time in seconds. |
 
 ### getRemainingDkgResultSubmissionGasUpdateTime
 
@@ -1316,14 +1272,13 @@ Get the time remaining until the wallet owner can be updated.
 function getRemainingDkgResultSubmissionGasUpdateTime() external view returns (uint256)
 ```
 
-Get the time remaining until the dkg result submission gas can
-be updated.
+Get the time remaining until the dkg result submission gas can be updated.
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | Remaining time in seconds. |
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| \[0] | uint256 | Remaining time in seconds. |
 
 ### getRemainingDkgResultApprovalGasOffsetUpdateTime
 
@@ -1331,14 +1286,13 @@ be updated.
 function getRemainingDkgResultApprovalGasOffsetUpdateTime() external view returns (uint256)
 ```
 
-Get the time remaining until the dkg result approval gas offset
-can be updated.
+Get the time remaining until the dkg result approval gas offset can be updated.
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | Remaining time in seconds. |
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| \[0] | uint256 | Remaining time in seconds. |
 
 ### getRemainingNotifyOperatorInactivityGasOffsetUpdateTime
 
@@ -1346,14 +1300,13 @@ can be updated.
 function getRemainingNotifyOperatorInactivityGasOffsetUpdateTime() external view returns (uint256)
 ```
 
-Get the time remaining until the operator inactivity gas offset
-can be updated.
+Get the time remaining until the operator inactivity gas offset can be updated.
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | Remaining time in seconds. |
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| \[0] | uint256 | Remaining time in seconds. |
 
 ### getRemainingNotifySeedTimeoutGasOffsetUpdateTime
 
@@ -1361,14 +1314,13 @@ can be updated.
 function getRemainingNotifySeedTimeoutGasOffsetUpdateTime() external view returns (uint256)
 ```
 
-Get the time remaining until the seed for DKG delivery timeout
-gas offset can be updated.
+Get the time remaining until the seed for DKG delivery timeout gas offset can be updated.
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | Remaining time in seconds. |
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| \[0] | uint256 | Remaining time in seconds. |
 
 ### getRemainingNotifyDkgTimeoutNegativeGasOffsetUpdateTime
 
@@ -1376,14 +1328,13 @@ gas offset can be updated.
 function getRemainingNotifyDkgTimeoutNegativeGasOffsetUpdateTime() external view returns (uint256)
 ```
 
-Get the time remaining until the DKG timeout negative gas offset
-can be updated.
+Get the time remaining until the DKG timeout negative gas offset can be updated.
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | Remaining time in seconds. |
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| \[0] | uint256 | Remaining time in seconds. |
 
 ### getRemainingReimbursementPoolUpdateTime
 
@@ -1395,9 +1346,9 @@ Get the time remaining until reimbursement pool can be updated.
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | Remaining time in seconds. |
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| \[0] | uint256 | Remaining time in seconds. |
 
 ### getRemainingChangeTime
 
@@ -1405,18 +1356,16 @@ Get the time remaining until reimbursement pool can be updated.
 function getRemainingChangeTime(uint256 changeTimestamp) internal view returns (uint256)
 ```
 
-Gets the time remaining until the governable parameter update
-can be committed.
+Gets the time remaining until the governable parameter update can be committed.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
+| Name            | Type    | Description                                       |
+| --------------- | ------- | ------------------------------------------------- |
 | changeTimestamp | uint256 | Timestamp indicating the beginning of the change. |
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | Remaining time in seconds. |
-
+| Name | Type    | Description                |
+| ---- | ------- | -------------------------- |
+| \[0] | uint256 | Remaining time in seconds. |

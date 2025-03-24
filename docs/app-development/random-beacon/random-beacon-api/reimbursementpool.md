@@ -1,4 +1,4 @@
-# Solidity API
+# ReimbursementPool
 
 ## ReimbursementPool
 
@@ -12,8 +12,7 @@ This file documents a contract which is not yet deployed to Mainnet.
 mapping(address => bool) isAuthorized
 ```
 
-Authorized contracts that can interact with the reimbursment pool.
-Authorization can be granted and removed by the owner.
+Authorized contracts that can interact with the reimbursment pool. Authorization can be granted and removed by the owner.
 
 ### staticGas
 
@@ -22,8 +21,9 @@ uint256 staticGas
 ```
 
 Static gas includes:
-- cost of the refund function
-- base transaction cost
+
+* cost of the refund function
+* base transaction cost
 
 ### maxGasPrice
 
@@ -31,8 +31,7 @@ Static gas includes:
 uint256 maxGasPrice
 ```
 
-Max gas price used to reimburse a transaction submitter. Protects
-against malicious operator-miners.
+Max gas price used to reimburse a transaction submitter. Protects against malicious operator-miners.
 
 ### StaticGasUpdated
 
@@ -92,20 +91,14 @@ function refund(uint256 gasSpent, address receiver) external
 
 Refunds ETH to a spender for executing specific transactions.
 
-Ignoring the result of sending ETH to a receiver is made on purpose.
-For EOA receiving ETH should always work. If a receiver is a smart
-contract, then we do not want to fail a transaction, because in some
-cases the refund is done at the very end of multiple calls where all
-the previous calls were already paid off. It is a receiver's smart
-contract resposibility to make sure it can receive ETH.
-Only authorized contracts are allowed calling this function.
+Ignoring the result of sending ETH to a receiver is made on purpose. For EOA receiving ETH should always work. If a receiver is a smart contract, then we do not want to fail a transaction, because in some cases the refund is done at the very end of multiple calls where all the previous calls were already paid off. It is a receiver's smart contract resposibility to make sure it can receive ETH. Only authorized contracts are allowed calling this function.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
+| Name     | Type    | Description                                             |
+| -------- | ------- | ------------------------------------------------------- |
 | gasSpent | uint256 | Gas spent on a transaction that needs to be reimbursed. |
-| receiver | address | Address where the reimbursment is sent. |
+| receiver | address | Address where the reimbursment is sent.                 |
 
 ### authorize
 
@@ -113,14 +106,13 @@ Only authorized contracts are allowed calling this function.
 function authorize(address _contract) external
 ```
 
-Authorize a contract that can interact with this reimbursment pool.
-Can be authorized by the owner only.
+Authorize a contract that can interact with this reimbursment pool. Can be authorized by the owner only.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _contract | address | Authorized contract. |
+| Name       | Type    | Description          |
+| ---------- | ------- | -------------------- |
+| \_contract | address | Authorized contract. |
 
 ### unauthorize
 
@@ -128,15 +120,13 @@ Can be authorized by the owner only.
 function unauthorize(address _contract) external
 ```
 
-Unauthorize a contract that was previously authorized to interact
-with this reimbursment pool. Can be unauthorized by the
-owner only.
+Unauthorize a contract that was previously authorized to interact with this reimbursment pool. Can be unauthorized by the owner only.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _contract | address | Authorized contract. |
+| Name       | Type    | Description          |
+| ---------- | ------- | -------------------- |
+| \_contract | address | Authorized contract. |
 
 ### setStaticGas
 
@@ -144,14 +134,13 @@ owner only.
 function setStaticGas(uint256 _staticGas) external
 ```
 
-Setting a static gas cost for executing a transaction. Can be set
-by the owner only.
+Setting a static gas cost for executing a transaction. Can be set by the owner only.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _staticGas | uint256 | Static gas cost. |
+| Name        | Type    | Description      |
+| ----------- | ------- | ---------------- |
+| \_staticGas | uint256 | Static gas cost. |
 
 ### setMaxGasPrice
 
@@ -159,14 +148,13 @@ by the owner only.
 function setMaxGasPrice(uint256 _maxGasPrice) external
 ```
 
-Setting a max gas price for transactions. Can be set by the
-owner only.
+Setting a max gas price for transactions. Can be set by the owner only.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _maxGasPrice | uint256 | Max gas price used to reimburse tx submitters. |
+| Name          | Type    | Description                                    |
+| ------------- | ------- | ---------------------------------------------- |
+| \_maxGasPrice | uint256 | Max gas price used to reimburse tx submitters. |
 
 ### withdrawAll
 
@@ -174,13 +162,12 @@ owner only.
 function withdrawAll(address receiver) external
 ```
 
-Withdraws all ETH from this pool which are sent to a given
-address. Can be set by the owner only.
+Withdraws all ETH from this pool which are sent to a given address. Can be set by the owner only.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
+| Name     | Type    | Description                   |
+| -------- | ------- | ----------------------------- |
 | receiver | address | An address where ETH is sent. |
 
 ### withdraw
@@ -189,13 +176,11 @@ address. Can be set by the owner only.
 function withdraw(uint256 amount, address receiver) public
 ```
 
-Withdraws ETH amount from this pool which are sent to a given
-address. Can be set by the owner only.
+Withdraws ETH amount from this pool which are sent to a given address. Can be set by the owner only.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| amount | uint256 | Amount to withdraw from the pool. |
-| receiver | address | An address where ETH is sent. |
-
+| Name     | Type    | Description                       |
+| -------- | ------- | --------------------------------- |
+| amount   | uint256 | Amount to withdraw from the pool. |
+| receiver | address | An address where ETH is sent.     |

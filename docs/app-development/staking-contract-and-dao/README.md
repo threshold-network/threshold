@@ -1,3 +1,3 @@
-# Staking Contract and DAO
+# DAO Contracts
 
-To get familiarized with API of contracts related to staking and DAO, go [here](staking-contract-and-dao-api/generated-docs/index.md).
+To get familiarized with API of contracts related to the DAO, go [here](staking-contract-and-dao-api/generated-docs/index.md).

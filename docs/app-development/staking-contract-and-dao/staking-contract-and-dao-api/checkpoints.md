@@ -1,16 +1,8 @@
-# Solidity API
+# Checkpoints
 
 ## Checkpoints
 
-Abstract contract to support checkpoints for Compound-like voting and
-delegation. This implementation supports token supply up to 2^96 - 1.
-This contract keeps a history (checkpoints) of each account's vote
-power. Vote power can be delegated either by calling the {delegate}
-function directly, or by providing a signature to be used with
-{delegateBySig}. Voting power can be publicly queried through
-{getVotes} and {getPastVotes}.
-NOTE: Extracted from OpenZeppelin ERCVotes.sol.
-This contract is upgrade-safe.
+Abstract contract to support checkpoints for Compound-like voting and delegation. This implementation supports token supply up to 2^96 - 1. This contract keeps a history (checkpoints) of each account's vote power. Vote power can be delegated either by calling the {delegate} function directly, or by providing a signature to be used with {delegateBySig}. Voting power can be publicly queried through {getVotes} and {getPastVotes}. NOTE: Extracted from OpenZeppelin ERCVotes.sol. This contract is upgrade-safe.
 
 ### Checkpoint
 
@@ -21,19 +13,19 @@ struct Checkpoint {
 }
 ```
 
-### _delegates
+### \_delegates
 
 ```solidity
 mapping(address => address) _delegates
 ```
 
-### _checkpoints
+### \_checkpoints
 
 ```solidity
 mapping(address => uint128[]) _checkpoints
 ```
 
-### _totalSupplyCheckpoints
+### \_totalSupplyCheckpoints
 
 ```solidity
 uint128[] _totalSupplyCheckpoints
@@ -53,8 +45,7 @@ Emitted when an account changes their delegate.
 event DelegateVotesChanged(address delegate, uint256 previousBalance, uint256 newBalance)
 ```
 
-Emitted when a balance or delegate change results in changes
-to an account's voting power.
+Emitted when a balance or delegate change results in changes to an account's voting power.
 
 ### checkpoints
 
@@ -88,15 +79,15 @@ Gets the current votes balance for `account`.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
+| Name    | Type    | Description                      |
+| ------- | ------- | -------------------------------- |
 | account | address | The address to get votes balance |
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint96 | The number of current votes for `account` |
+| Name | Type   | Description                               |
+| ---- | ------ | ----------------------------------------- |
+| \[0] | uint96 | The number of current votes for `account` |
 
 ### getPastVotes
 
@@ -104,24 +95,22 @@ Gets the current votes balance for `account`.
 function getPastVotes(address account, uint256 blockNumber) public view returns (uint96)
 ```
 
-Determine the prior number of votes for an account as of
-a block number.
+Determine the prior number of votes for an account as of a block number.
 
-Block number must be a finalized block or else this function will
-revert to prevent misinformation.
+Block number must be a finalized block or else this function will revert to prevent misinformation.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| account | address | The address of the account to check |
+| Name        | Type    | Description                                 |
+| ----------- | ------- | ------------------------------------------- |
+| account     | address | The address of the account to check         |
 | blockNumber | uint256 | The block number to get the vote balance at |
 
 #### Return Values
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint96 | The number of votes the account had as of the given block |
+| Name | Type   | Description                                               |
+| ---- | ------ | --------------------------------------------------------- |
+| \[0] | uint96 | The number of votes the account had as of the given block |
 
 ### getPastTotalSupply
 
@@ -129,16 +118,14 @@ revert to prevent misinformation.
 function getPastTotalSupply(uint256 blockNumber) public view returns (uint96)
 ```
 
-Retrieve the `totalSupply` at the end of `blockNumber`.
-Note, this value is the sum of all balances, but it is NOT the
-sum of all the delegated votes!
+Retrieve the `totalSupply` at the end of `blockNumber`. Note, this value is the sum of all balances, but it is NOT the sum of all the delegated votes!
 
 `blockNumber` must have been already mined
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
+| Name        | Type    | Description                                 |
+| ----------- | ------- | ------------------------------------------- |
 | blockNumber | uint256 | The block number to get the total supply at |
 
 ### delegate
@@ -159,10 +146,10 @@ Moves voting power from one delegate to another
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| src | address | Address of old delegate |
-| dst | address | Address of new delegate |
+| Name   | Type    | Description                                       |
+| ------ | ------- | ------------------------------------------------- |
+| src    | address | Address of old delegate                           |
+| dst    | address | Address of new delegate                           |
 | amount | uint256 | Voting power amount to transfer between delegates |
 
 ### writeCheckpoint
@@ -171,18 +158,15 @@ Moves voting power from one delegate to another
 function writeCheckpoint(uint128[] ckpts, function (uint256,uint256) view returns (uint256) op, uint256 delta) internal returns (uint256 oldWeight, uint256 newWeight)
 ```
 
-Writes a new checkpoint based on operating last stored value
-with a `delta`. Usually, said operation is the `add` or
-`subtract` functions from this contract, but more complex
-functions can be passed as parameters.
+Writes a new checkpoint based on operating last stored value with a `delta`. Usually, said operation is the `add` or `subtract` functions from this contract, but more complex functions can be passed as parameters.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| ckpts | uint128[] | The checkpoints array to use |
-| op | function (uint256,uint256) view returns (uint256) | The function to apply over the last value and the `delta` |
-| delta | uint256 | Variation with respect to last stored value to be used for new checkpoint |
+| Name  | Type                                              | Description                                                               |
+| ----- | ------------------------------------------------- | ------------------------------------------------------------------------- |
+| ckpts | uint128\[]                                        | The checkpoints array to use                                              |
+| op    | function (uint256,uint256) view returns (uint256) | The function to apply over the last value and the `delta`                 |
+| delta | uint256                                           | Variation with respect to last stored value to be used for new checkpoint |
 
 ### lookupCheckpoint
 
@@ -194,10 +178,10 @@ Lookup a value in a list of (sorted) checkpoints.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| ckpts | uint128[] | The checkpoints array to use |
-| blockNumber | uint256 | Block number when we want to get the checkpoint at |
+| Name        | Type       | Description                                        |
+| ----------- | ---------- | -------------------------------------------------- |
+| ckpts       | uint128\[] | The checkpoints array to use                       |
+| blockNumber | uint256    | Block number when we want to get the checkpoint at |
 
 ### maxSupply
 
@@ -213,11 +197,9 @@ Maximum token supply. Defaults to `type(uint96).max` (2^96 - 1)
 function encodeCheckpoint(uint32 blockNumber, uint96 value) internal pure returns (uint128)
 ```
 
-Encodes a `blockNumber` and `value` into a single `uint128`
-checkpoint.
+Encodes a `blockNumber` and `value` into a single `uint128` checkpoint.
 
-`blockNumber` is stored in the first 32 bits, while `value` in the
-remaining 96 bits.
+`blockNumber` is stored in the first 32 bits, while `value` in the remaining 96 bits.
 
 ### decodeBlockNumber
 
@@ -241,8 +223,7 @@ Decodes a voting value from a `uint128` `checkpoint`.
 function decodeCheckpoint(uint128 checkpoint) internal pure returns (uint32 blockNumber, uint96 value)
 ```
 
-Decodes a block number and voting value from a `uint128`
-`checkpoint`.
+Decodes a block number and voting value from a `uint128` `checkpoint`.
 
 ### add
 
@@ -255,4 +236,3 @@ function add(uint256 a, uint256 b) internal pure returns (uint256)
 ```solidity
 function subtract(uint256 a, uint256 b) internal pure returns (uint256)
 ```
-

@@ -1,4 +1,4 @@
-# Solidity API
+# Groups
 
 ## Groups
 
@@ -8,9 +8,7 @@ This file documents a contract which is not yet deployed to Mainnet.
 
 This library is used as a registry of created groups.
 
-This library should be used along with DKG library that ensures linear
-groups creation (only one group creation happens at a time). A candidate
-group has to be popped or activated before adding a new candidate group.
+This library should be used along with DKG library that ensures linear groups creation (only one group creation happens at a time). A candidate group has to be popped or activated before adding a new candidate group.
 
 ### Group
 
@@ -47,18 +45,14 @@ event GroupRegistered(uint64 groupId, bytes groupPubKey)
 function validatePublicKey(struct Groups.Data self, bytes groupPubKey) internal view
 ```
 
-Performs preliminary validation of a new group public key.
-The group public key must be unique and have 128 bytes in length.
-If the validation fails, the function reverts. This function
-must be called first for a public key of a group added with
-`addGroup` function.
+Performs preliminary validation of a new group public key. The group public key must be unique and have 128 bytes in length. If the validation fails, the function reverts. This function must be called first for a public key of a group added with `addGroup` function.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct Groups.Data |  |
-| groupPubKey | bytes | Candidate group public key |
+| Name        | Type               | Description                |
+| ----------- | ------------------ | -------------------------- |
+| self        | struct Groups.Data |                            |
+| groupPubKey | bytes              | Candidate group public key |
 
 ### addGroup
 
@@ -66,20 +60,17 @@ must be called first for a public key of a group added with
 function addGroup(struct Groups.Data self, bytes groupPubKey, bytes32 membersHash) internal
 ```
 
-Adds a new candidate group. The group is stored with group public
-key and group members, but is not yet activated.
+Adds a new candidate group. The group is stored with group public key and group members, but is not yet activated.
 
-The group members list is stored with all misbehaved members filtered out.
-The code calling this function should ensure that the number of
-candidate (not activated) groups is never more than one.
+The group members list is stored with all misbehaved members filtered out. The code calling this function should ensure that the number of candidate (not activated) groups is never more than one.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct Groups.Data |  |
-| groupPubKey | bytes | Generated candidate group public key |
-| membersHash | bytes32 | Keccak256 hash of members that actively took part in DKG. |
+| Name        | Type               | Description                                               |
+| ----------- | ------------------ | --------------------------------------------------------- |
+| self        | struct Groups.Data |                                                           |
+| groupPubKey | bytes              | Generated candidate group public key                      |
+| membersHash | bytes32            | Keccak256 hash of members that actively took part in DKG. |
 
 ### expireOldGroups
 
@@ -87,9 +78,7 @@ candidate (not activated) groups is never more than one.
 function expireOldGroups(struct Groups.Data self) internal
 ```
 
-Goes through groups starting from the oldest one that is still
-active and checks if it hasn't expired. If so, updates the information
-about expired groups so that all expired groups are marked as such.
+Goes through groups starting from the oldest one that is still active and checks if it hasn't expired. If so, updates the information about expired groups so that all expired groups are marked as such.
 
 ### terminateGroup
 
@@ -97,15 +86,14 @@ about expired groups so that all expired groups are marked as such.
 function terminateGroup(struct Groups.Data self, uint64 groupId) internal
 ```
 
-Terminates group with the provided index. Reverts if the group
-is already terminated.
+Terminates group with the provided index. Reverts if the group is already terminated.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct Groups.Data |  |
-| groupId | uint64 | Index in the groupRegistry array. |
+| Name    | Type               | Description                       |
+| ------- | ------------------ | --------------------------------- |
+| self    | struct Groups.Data |                                   |
+| groupId | uint64             | Index in the groupRegistry array. |
 
 ### selectGroup
 
@@ -113,18 +101,14 @@ is already terminated.
 function selectGroup(struct Groups.Data self, uint256 seed) internal returns (uint64)
 ```
 
-Returns an index of a randomly selected active group. Terminated
-and expired groups are not considered as active.
-Before new group is selected, information about expired groups
-is updated. At least one active group needs to be present for this
-function to succeed.
+Returns an index of a randomly selected active group. Terminated and expired groups are not considered as active. Before new group is selected, information about expired groups is updated. At least one active group needs to be present for this function to succeed.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct Groups.Data |  |
-| seed | uint256 | Random number used as a group selection seed. |
+| Name | Type               | Description                                   |
+| ---- | ------------------ | --------------------------------------------- |
+| self | struct Groups.Data |                                               |
+| seed | uint256            | Random number used as a group selection seed. |
 
 ### setGroupLifetime
 
@@ -136,10 +120,10 @@ Setter for group lifetime.
 
 #### Parameters
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct Groups.Data |  |
-| lifetime | uint256 | Lifetime of a group in blocks. |
+| Name     | Type               | Description                    |
+| -------- | ------------------ | ------------------------------ |
+| self     | struct Groups.Data |                                |
+| lifetime | uint256            | Lifetime of a group in blocks. |
 
 ### isGroupTerminated
 
@@ -155,8 +139,7 @@ Checks if group with the given index is terminated.
 function groupLifetimeOf(struct Groups.Data self, bytes32 groupPubKeyHash) internal view returns (uint256)
 ```
 
-Gets the cutoff time until which the given group is considered
-to be active assuming it hasn't been terminated before.
+Gets the cutoff time until which the given group is considered to be active assuming it hasn't been terminated before.
 
 ### isGroupActive
 
@@ -184,8 +167,7 @@ function getGroup(struct Groups.Data self, bytes groupPubKey) internal view retu
 function numberOfActiveGroups(struct Groups.Data self) internal view returns (uint64)
 ```
 
-Gets the number of active groups. Expired and terminated
-groups are not counted as active.
+Gets the number of active groups. Expired and terminated groups are not counted as active.
 
 ### shiftByExpiredGroups
 
@@ -193,8 +175,7 @@ groups are not counted as active.
 function shiftByExpiredGroups(struct Groups.Data self, uint64 selectedIndex) internal view returns (uint64)
 ```
 
-Evaluates the shift of a selected group index based on the number
-of expired groups.
+Evaluates the shift of a selected group index based on the number of expired groups.
 
 ### shiftByTerminatedGroups
 
@@ -202,6 +183,4 @@ of expired groups.
 function shiftByTerminatedGroups(struct Groups.Data self, uint64 selectedIndex) internal view returns (uint64)
 ```
 
-Evaluates the shift of a selected group index based on the number
-of non-expired but terminated groups.
-
+Evaluates the shift of a selected group index based on the number of non-expired but terminated groups.

@@ -1,14 +1,8 @@
-# Solidity API
+# ProxyAdminWithDeputy
 
 ## ProxyAdminWithDeputy
 
-Based on `ProxyAdmin`, an auxiliary contract in OpenZeppelin's
-upgradeability approach meant to act as the admin of a
-`TransparentUpgradeableProxy`. This variant allows an additional
-actor, the "deputy", to perform upgrades, which originally can only
-be performed by the ProxyAdmin's owner. See OpenZeppelin's
-documentation for `TransparentUpgradeableProxy` for more details on
-why a ProxyAdmin is recommended.
+Based on `ProxyAdmin`, an auxiliary contract in OpenZeppelin's upgradeability approach meant to act as the admin of a `TransparentUpgradeableProxy`. This variant allows an additional actor, the "deputy", to perform upgrades, which originally can only be performed by the ProxyAdmin's owner. See OpenZeppelin's documentation for `TransparentUpgradeableProxy` for more details on why a ProxyAdmin is recommended.
 
 ### deputy
 
@@ -46,9 +40,7 @@ function setDeputy(address newDeputy) external
 function upgrade(contract TransparentUpgradeableProxy proxy, address implementation) public virtual
 ```
 
-Upgrades `proxy` to `implementation`. This contract must be the
-admin of `proxy`, and the caller must be this contract's owner
-or the deputy.
+Upgrades `proxy` to `implementation`. This contract must be the admin of `proxy`, and the caller must be this contract's owner or the deputy.
 
 ### upgradeAndCall
 
@@ -56,19 +48,16 @@ or the deputy.
 function upgradeAndCall(contract TransparentUpgradeableProxy proxy, address implementation, bytes data) public payable virtual
 ```
 
-Upgrades `proxy` to `implementation` and calls a function on the
-new implementation. This contract must be the admin of `proxy`,
-and the caller must be this contract's owner or the deputy.
+Upgrades `proxy` to `implementation` and calls a function on the new implementation. This contract must be the admin of `proxy`, and the caller must be this contract's owner or the deputy.
 
-### _setDeputy
+### \_setDeputy
 
 ```solidity
 function _setDeputy(address newDeputy) internal
 ```
 
-### _checkCallerIsOwnerOrDeputy
+### \_checkCallerIsOwnerOrDeputy
 
 ```solidity
 function _checkCallerIsOwnerOrDeputy() internal view
 ```
-
