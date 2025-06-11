@@ -172,6 +172,7 @@
     * [Legacy](resources/contract-addresses/mainnet/legacy.md)
   * [Görli Testnet](resources/contract-addresses/goerli-testnet.md)
   * [Sepolia Testnet](resources/contract-addresses/sepolia-testnet.md)
+* [Security Audits](resources/security-audits.md)
 * [tBTC Pools](https://linktr.ee/earnyield)
 * [Upgrade NU & KEEP to T](resources/upgrade-nu-and-keep-to-t.md)
 * [Contribution](resources/contribution.md)
