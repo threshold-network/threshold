@@ -52,3 +52,12 @@ Delivered in `@keep-network/random-beacon@2.0.0`, `@keep-network/ecdsa@2.0.0` an
 ### Solana
 
 <table><thead><tr><th width="373">Contract</th><th>Address</th></tr></thead><tbody><tr><td>SolanaTBTC (Token)</td><td><a href="https://solscan.io/token/6DNSN2BJsaPFdFFc1zP37kkeNe4Usc1Sqkzr9C9vPWcU">6DNSN2BJsaPFdFFc1zP37kkeNe4Usc1Sqkzr9C9vPWcU</a></td></tr><tr><td>SolanaTBTC (Program)</td><td><a href="https://solscan.io/account/Gj93RRt6QB7FjmyokAD5rcMAku7pq3Fk2Aa8y6nNbwsV">Gj93RRt6QB7FjmyokAD5rcMAku7pq3Fk2Aa8y6nNbwsV</a></td></tr><tr><td>SolanaWormholeGateway</td><td><a href="https://solscan.io/account/87MEvHZCXE3ML5rrmh5uX1FbShHmRXXS32xJDGbQ7h5t">87MEvHZCXE3ML5rrmh5uX1FbShHmRXXS32xJDGbQ7h5t</a></td></tr></tbody></table>
+
+### Starknet
+
+| Contract                 | Address                                                            |
+| ------------------------ | ------------------------------------------------------------------ |
+| StarknetTBTC             | 0x04daa17763b286d1e59b97c283c0b8c949994c361e426a28f743c67bdfe9a32f |
+| L1 StarkGate Bridge      | 0x2111A49ebb717959059693a3698872a0aE9866b9                         |
+| L2 StarkGate Bridge      | 0x067eb1988556edd7543a3c9ee24cc078be35fd49f0b7f264cc0434aeb6dfb09e |
+| StarknetBitcoinDepositor | 0xC9031f76006da0BD4bFa9E02aDf0d448dB3BC155                         |

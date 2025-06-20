@@ -78,6 +78,15 @@ Delivered in `` @keep-network/tbtc-v2-base@1.1.0-sepolia.0` `` NPM package.
 | BaseWormholeGateway | [0xc3D46e0266d95215589DE639cC4E93b79f88fc6C](https://sepolia.basescan.org/address/0xc3D46e0266d95215589DE639cC4E93b79f88fc6C) |
 | L2BitcoinDepositor  | [0xDEbD9aA9BC4845c7Cd2d9a997F82A2Daea540bD5](https://sepolia.basescan.org/address/0xDEbD9aA9BC4845c7Cd2d9a997F82A2Daea540bD5) |
 
+### Starknet Sepolia
+
+| Contract                 | Address                                                            |
+| ------------------------ | ------------------------------------------------------------------ |
+| StarknetTBTC             | 0x05f09ee6e942b869aa159287924156cb9bc4510a447c0cc80a898780434d5c2c |
+| L1 StarkGate Bridge      | 0xF6217de888fD6E6b2CbFBB2370973BE4c36a152D                         |
+| L2 StarkGate Bridge      | 0x01fd5ad689cec587e80a3d380b5b47ff082203e118bdd22b77256ffa379b15d9 |
+| StarknetBitcoinDepositor | 0x40c74a5f0b0e6CC3Ae4E8dD2Db46d372504445DA                         |
+
 ## Threshold USD (thUSD) Protocol Contracts
 
 **Delivered in** `@threshold-network/thusd-core@v1.0.0-sepolia` NPM package.
