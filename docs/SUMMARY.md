@@ -177,5 +177,5 @@
 * [Upgrade NU & KEEP to T](resources/upgrade-nu-and-keep-to-t.md)
 * [Contribution](resources/contribution.md)
 * [Security](resources/security.md)
-* [Brand Assets](https://thresholdnetwork.notion.site/06ca766fc2cd402ab99bfe952a41c5af?v=5d3a1877e34f43d99fb8490190543e0c)
+* [Brand Assets](https://threshold-labs.notion.site/brand-guide)
 * [Links](resources/links.md)
