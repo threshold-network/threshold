@@ -4,9 +4,7 @@ description: A Decentralized, Permissionless Bitcoin Bridge to DeFi
 
 # tBTC Bitcoin Bridge
 
-{% embed url="https://youtu.be/9jnDtNQ_GEc" %}
-tBTC intro video
-{% endembed %}
+<figure><img src="../../.gitbook/assets/Flowchart tBTC v3-01.png" alt=""><figcaption></figcaption></figure>
 
 Existing solutions that bridge Bitcoin to Ethereum require users to send their Bitcoin to an intermediary, in exchange for an ERC-20 token that represents the original asset. This centralized model requires you to trust a third party and is susceptible to censorship, threatening the premise of Bitcoin as sovereign, secure, permissionless digital asset.
 

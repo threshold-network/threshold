@@ -4,6 +4,8 @@ description: Follow along with this guide and leverage your Bitcoin by minting t
 
 # tBTC Minting Walkthrough
 
+<figure><img src="../.gitbook/assets/Flowchart tBTC v3-02.png" alt=""><figcaption></figcaption></figure>
+
 ## Before you start
 
 Here are some things you will need before you start the minting process:
