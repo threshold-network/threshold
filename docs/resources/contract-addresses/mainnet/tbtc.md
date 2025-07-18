@@ -61,3 +61,11 @@ Delivered in `@keep-network/random-beacon@2.0.0`, `@keep-network/ecdsa@2.0.0` an
 | L1 StarkGate Bridge      | [0x2111A49ebb717959059693a3698872a0aE9866b9](https://etherscan.io/address/0x2111A49ebb717959059693a3698872a0aE9866b9#tokentxns)                                          |
 | L2 StarkGate Bridge      | [0x067eb1988556edd7543a3c9ee24cc078be35fd49f0b7f264cc0434aeb6dfb09e](https://voyager.online/contract/0x067eb1988556edd7543a3c9ee24cc078be35fd49f0b7f264cc0434aeb6dfb09e) |
 | StarknetBitcoinDepositor | [0xC9031f76006da0BD4bFa9E02aDf0d448dB3BC155](https://etherscan.io/address/0xC9031f76006da0BD4bFa9E02aDf0d448dB3BC155#tokentxns)                                          |
+
+### Sui
+
+| Contract           | Address                                                                                                                                                                                   |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Sui tBTC           | [0x77045f1b9f811a7a8fb9ebd085b5b0c55c5cb0d1520ff55f7037f89b5da9f5f1](https://suiscan.xyz/mainnet/coin/0x77045f1b9f811a7a8fb9ebd085b5b0c55c5cb0d1520ff55f7037f89b5da9f5f1::TBTC::TBTC/txs) |
+| L1BitcoinDepositor | [0xb810AbD43d8FCFD812d6FEB14fefc236E92a341A](https://etherscan.io/address/0xb810AbD43d8FCFD812d6FEB14fefc236E92a341A)                                                                     |
+| Sui Package ID     | [0x77045f1b9f811a7a8fb9ebd085b5b0c55c5cb0d1520ff55f7037f89b5da9f5f1](https://suiscan.xyz/mainnet/coin/0x77045f1b9f811a7a8fb9ebd085b5b0c55c5cb0d1520ff55f7037f89b5da9f5f1::TBTC::TBTC/txs) |
