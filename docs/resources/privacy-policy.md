@@ -2,7 +2,7 @@
 
 Effective Date: July 1, 2025
 
-Threshold Network (“we”, “our”, or “us”) respects your privacy and is committed to protecting your personal data and complying with any applicable laws and regulations regarding any personal information we may collect about you. This Privacy Policy explains how we collect, use, and protect your information when you use our decentralized application (“DApp”), interact with our website and all of our other properties, products, and services (the “Services”).Your use of the Services is subject to this Policy as well as our [Terms of Service](tbtc-terms-of-use.md). Any material changes to privacy will be reflected in an updated privacy policy.
+Threshold Network (“we”, “our”, or “us”) respects your privacy and is committed to protecting your personal data and complying with any applicable laws and regulations regarding any personal information we may collect about you. This Privacy Policy explains how we collect, use, and protect your information when you use our decentralized application (“DApp”), interact with our website and all of our other properties, products, and services (the “Services”).Your use of the Services is subject to this Policy as well as our [Terms of Service](terms-of-use.md). Any material changes to privacy will be reflected in an updated privacy policy.
 
 If you specifically sign up to receive emails from us, we will store your email address to allow us to send you those emails. You can unsubscribe at any time. We will not attempt to link your email address to your wallet address, IP address, or other personal data.
 
@@ -19,7 +19,7 @@ When you interact with the Services, we collect:
 
 #### How We Use Data
 
-We use the data we collect in accordance with your instructions, including any applicable terms in our [Terms of Service](tbtc-terms-of-use.md), and as required by law. We may also use data for the following purposes:
+We use the data we collect in accordance with your instructions, including any applicable terms in our [Terms of Service](terms-of-use.md), and as required by law. We may also use data for the following purposes:
 
 * Providing the Services. We use the data we collect to provide, maintain, customize and improve our Services and features of our Services.
 * Customer support. We may use information to provide customer support for and answer inquiries about the Services.
@@ -32,7 +32,7 @@ We use the data we collect in accordance with your instructions, including any a
 We may share or disclose the data we collect:
 
 * With service providers. We may share your information with our service providers and vendors to assist us in providing, delivering, and improving the Services. For example, we may share your wallet address with service providers like Infura and Cloudflare to provide technical infrastructure services, your wallet address with blockchain analytics providers to detect, prevent, and mitigate financial crime and other illicit or harmful activities, and your activity on our social media pages with our analytics provider to learn more about you interact with us and the Services.
-* To comply with our legal obligations. We may share your data in the course of litigation, regulatory proceedings, compliance measures, and when compelled by subpoena, court order, or other legal procedure. We may also share data when we believe it is necessary to prevent harm to our users, our Company, or others, and to enforce our agreements and policies, including our [Terms of Service](tbtc-terms-of-use.md).
+* To comply with our legal obligations. We may share your data in the course of litigation, regulatory proceedings, compliance measures, and when compelled by subpoena, court order, or other legal procedure. We may also share data when we believe it is necessary to prevent harm to our users, our Company, or others, and to enforce our agreements and policies, including our [Terms of Service](terms-of-use.md).
 * Safety and Security. We may share data to protect against, investigate, and stop fraudulent, unauthorized, or illegal activity. We may also use it to address security risks, solve potential security issues such as bugs, enforce our agreements, and protect our users, Company, and ecosystem.
 * Business changes. We may transfer or share data to another entity in the event of a merger, acquisition, bankruptcy, dissolution, reorganization, asset or stock sale, or other business transaction.
 * With your consent. We may share your information any other time you provide us with your consent to do so.

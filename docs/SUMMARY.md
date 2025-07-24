@@ -179,5 +179,5 @@
 * [Security](resources/security.md)
 * [Brand Assets](https://threshold-labs.notion.site/brand-guide)
 * [Links](resources/links.md)
-* [tBTC Terms of Use](resources/tbtc-terms-of-use.md)
+* [Terms of Use](resources/terms-of-use.md)
 * [Privacy Policy](resources/privacy-policy.md)
