@@ -9,6 +9,18 @@ description: >-
 
 ## Cross-Chain Integrations
 
+#### Certora - Threshold CCIP Update
+
+* **Date:** 25 Sept 2025
+* **Report:** [View PDF](https://drive.google.com/file/d/1Sxc5qx69qQtqdy7AtscoAHyGaSyqyYJM/view?usp=sharing)
+* **Scope:** Threshold CCIP Update
+
+#### MixBytes() - Cross-Chain Redemptions
+
+* **Date:** 08 Sept 2025
+* **Report:** [View PDF](https://drive.google.com/file/d/1rbVYly_VuW6LdAwhpbgxO8DpNiBn-6Vk/view?usp=sharing)
+* **Scope:** Cross-chain bridge transfers
+
 #### Zellic – Sui Integration (tBTC)
 
 * **Date:** 01 May 2025
