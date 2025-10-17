@@ -19,6 +19,7 @@ Delivered in `@keep-network/random-beacon@2.0.0`, `@keep-network/ecdsa@2.0.0` an
 | Relayer Bot                   | [0x45332eee9b495b1dda896fd53112eaacc10b2c19](https://etherscan.io/address/0x45332eee9b495b1dda896fd53112eaacc10b2c19)      |
 | L1BitcoinDepositor (Arbitrum) | [0x75A6e4A7C8fAa162192FAD6C1F7A6d48992c619A](https://etherscan.io/address/0x75A6e4A7C8fAa162192FAD6C1F7A6d48992c619A)      |
 | L1BitcoinDepositor (Base)     | [0x186D048097c7406C64EfB0537886E3CaE100a1fe](https://etherscan.io/address/0x186D048097c7406C64EfB0537886E3CaE100a1fe)      |
+| L1BTCRedeemerProxy            | [0x5D4d83aaB53B7E7cA915AEB2d4d3f4e03823DbDe](https://etherscan.io/address/0x5D4d83aaB53B7E7cA915AEB2d4d3f4e03823DbDe)      |
 
 ## L2/Other tBTC Application Contracts
 
@@ -29,6 +30,7 @@ Delivered in `@keep-network/random-beacon@2.0.0`, `@keep-network/ecdsa@2.0.0` an
 | ArbitrumTBTC            | [0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40](https://arbiscan.io/address/0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40) |
 | ArbitrumWormholeGateway | [0x1293a54e160D1cd7075487898d65266081A15458](https://arbiscan.io/address/0x1293a54e160D1cd7075487898d65266081A15458) |
 | L2BitcoinDepositor      | [0x1C8d7b744b474c080faADd5BF9AD965Be4258F9e](https://arbiscan.io/address/0x1C8d7b744b474c080faADd5BF9AD965Be4258F9e) |
+| L2BTCRedeemerProxy      | [0xd7Cd996a47b3293d4FEc2dBcF49692370334d9b7](https://arbiscan.io/address/0xd7Cd996a47b3293d4FEc2dBcF49692370334d9b7) |
 
 ### Base (chain ID: 8453)
 
@@ -37,6 +39,7 @@ Delivered in `@keep-network/random-beacon@2.0.0`, `@keep-network/ecdsa@2.0.0` an
 | BaseTBTC            | [0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b](https://basescan.org/token/0x236aa50979d5f3de3bd1eeb40e81137f22ab794b)   |
 | BaseWormholeGateway | [0x09959798B95d00a3183d20FaC298E4594E599eab](https://basescan.org/address/0x09959798b95d00a3183d20fac298e4594e599eab) |
 | L2BitcoinDepositor  | [0xa2A81d9445b4F898b028c96D164bcd6c8C8C512E](https://basescan.org/address/0xa2A81d9445b4F898b028c96D164bcd6c8C8C512E) |
+| L2BTCRedeemerProxy  | [0xe931F1Ac6B00400E1dAD153E184afeE164d2D88B](https://basescan.org/address/0xe931F1Ac6B00400E1dAD153E184afeE164d2D88B) |
 
 ### Optimism (chain ID: 10)
 
