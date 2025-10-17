@@ -1,10 +1,12 @@
 # What is the Threshold Network?
 
-Threshold Network powers tBTC, the Bitcoin standard for DeFi—a trust-minimized way to bring BTC liquidity into the crypto ecosystem while always maintaining a direct settlement path back to native Bitcoin.
+**Threshold Network powers tBTC, the Bitcoin standard in finance, and the most decentralized 1:1 tokenized Bitcoin.**
 
-Unlike other BTC derivatives or wrapped tokens, tBTC is designed to be as close to Bitcoin as possible while enabling seamless participation in DeFi. No complex staking mechanics, no dependency on a single entity—just pure BTC liquidity that always settles back to Bitcoin.
+tBTC enables Bitcoin liquidity to move seamlessly across chains without compromising settlement finality. Built on threshold cryptography and secured by a rotating network of independent node operators, it distributes control of Bitcoin so that no single entity can act alone on funds.&#x20;
 
-Threshold Network's [T token](resources/t-token.md) powers tBTC and is the value accrual asset used to distribute profits from bridge fee via token buybacks.&#x20;
+This structure upholds Bitcoin’s core principles of being trust-minimized, permissionless, and censorship-resistant while maintaining a direct and verifiable path back to native Bitcoin. No complex staking mechanics needed.
+
+Threshold Network's [T token](resources/t-token.md) powers tBTC and serves as the value accrual asset used to distribute profits from bridge fees through token buybacks.&#x20;
 
 ### Fundamentals: Dive a little deeper
 
