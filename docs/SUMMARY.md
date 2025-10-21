@@ -5,6 +5,7 @@
 ## THRESHOLD DASHBOARD
 
 * [tBTC Minting Walkthrough](threshold-dashboard/tbtc-minting-walkthrough.md)
+* [tBTC Deminting Walkthrough](threshold-dashboard/tbtc-deminting-walkthrough.md)
 
 ## Applications
 
