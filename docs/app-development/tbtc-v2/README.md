@@ -1,7 +1,9 @@
 # tBTC
 
-[tBTC ](https://docs.threshold.network/applications/tbtc-v2)is a decentralized, permissionless Bitcoin bridge developed by the Threshold Network designed to bring Bitcoin (BTC) liquidity to Ethereum and other EVM-compatible networks. It allows Bitcoin holders to mint tBTC, an ERC-20 token fully backed 1:1 by BTC, enabling seamless participation in Ethereum's DeFi ecosystem without relying on centralized intermediaries.
+[tBTC](../../threshold-dashboard/tbtc-minting-walkthrough.md) is a decentralized and permissionless onchain representation of Bitcoin, developed by Threshold Network, designed to make Bitcoin (BTC) usable across Ethereum, non-EVM chains, other major blockchain ecosystems, and  institutional financial markets.
 
-By integrating tBTC, developers can bridge the gap between Bitcoin's liquidity and Ethereum's smart contract capabilities. tBTC provides a decentralized, secure and permissionless way to bring BTC into the Ethereum ecosystem enabling innovative DeFi applications and expanding possibilities for cross-chain interactions.&#x20;
+Each tBTC is fully backed 1:1 by native Bitcoin and secured through a decentralized network of independent node operators using threshold cryptography, eliminating reliance on any centralized custodian. This allows Bitcoin holders to access liquidity, yield, and markets across multiple chains while maintaining full control of their BTC.
 
-Utilizing the provided SDKs and developer resources you can seamlessly integrate tBTC into your projects and contribute to the growth of decentralized finance.\
+With its institutional-grade security model, rotating signer set, and transparent onchain operations, tBTC provides a secure, compliant, and trust-minimized foundation for developers and institutions seeking to build or deploy Bitcoin-based applications.
+
+**By integrating tBTC through the available SDKs and developer resources,** projects can seamlessly connect Bitcoin liquidity to both EVM and non-EVM environments, unlocking new opportunities in decentralized finance and cross-chain interoperability.\
