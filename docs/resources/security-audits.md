@@ -7,6 +7,14 @@ description: >-
 
 # Security Audits
 
+## Protocol Upgrades
+
+### Defense by Thesis - Beta Staker Allowlist & Bridge Fee Rebates
+
+* **Date**: 16 Sept 2025
+* **Report:** [View PDF](https://drive.google.com/file/d/1ZGOGCHcGo6r2Plkk1wHvdoWllfqQOl4T/view?usp=sharing)&#x20;
+* **Scope:** See related proposals, [TIP-067](https://forum.threshold.network/t/beta-staker-expansion-tip-067-compensation-adjustment/1113) and [TIP-106](https://forum.threshold.network/t/tip-106-experimenting-with-a-tbtc-fee-rebate-for-locking-t-tokens/1146)
+
 ## Cross-Chain Integrations
 
 #### Certora - Threshold CCIP Update
