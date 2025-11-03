@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # The Path to Permissionlessness
 
 The system was designed from the outset to be fully permissionless - anyone with the minimum amount of T stake, could run a node and have a [proportional chance](wallet-generation.md) of being a custodian.

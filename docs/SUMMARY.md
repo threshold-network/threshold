@@ -2,11 +2,11 @@
 
 * [What is the Threshold Network?](README.md)
 * [tBTC Bitcoin Bridge](tbtc-v2/README.md)
-  * [Fees](tbtc-v2/fees.md)
   * [Wallet Generation](tbtc-v2/wallet-generation.md)
   * [Wallet Signing](tbtc-v2/wallet-signing.md)
   * [The Path to Permissionlessness](tbtc-v2/the-path-to-permissionlessness.md)
   * [Sweeping](tbtc-v2/sweeping.md)
+* [T Token](t-token.md)
 
 ## THRESHOLD DASHBOARD
 
@@ -100,18 +100,11 @@
 
 ## Resources
 
-* [T Token](resources/t-token.md)
 * [Contract Addresses](resources/contract-addresses/README.md)
-  * [Mainnet](resources/contract-addresses/mainnet.md)
-    * [Threshold DAO](resources/contract-addresses/mainnet/threshold-dao.md)
-    * [tBTC](resources/contract-addresses/mainnet/tbtc.md)
-    * [thUSD](resources/contract-addresses/mainnet/thusd.md)
-    * [Legacy](resources/contract-addresses/mainnet/legacy.md)
-  * [Görli Testnet](resources/contract-addresses/goerli-testnet.md)
+  * [Mainnet](resources/contract-addresses/tbtc.md)
   * [Sepolia Testnet](resources/contract-addresses/sepolia-testnet.md)
 * [Security Audits](resources/security-audits.md)
 * [tBTC Pools](https://linktr.ee/earnyield)
-* [Upgrade NU & KEEP to T](resources/upgrade-nu-and-keep-to-t.md)
 * [Security](http://immunefi.com/bug-bounty/thresholdnetwo%E2%80%A6)
 * [Brand Assets](https://threshold-labs.notion.site/brand-guide)
 * [Links](resources/links.md)

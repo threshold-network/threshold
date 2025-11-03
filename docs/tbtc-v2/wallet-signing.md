@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Wallet Signing
 
 The primary wallet responsibility is taking care of Bitcoins deposited by tBTC users. Whenever a wallet needs to move some Bitcoins due to a protocol action (e.g. deposit sweep or redemption), it must assemble an appropriate Bitcoin transaction and sign each transaction's input using the tECDSA signing algorithm. During the tECDSA signing, randomly selected 51-of-100 wallet signers must collaborate to produce a proper signature.

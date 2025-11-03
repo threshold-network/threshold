@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Wallet Generation
 
 Wallets are created periodically based on governance. [`updateWalletParameters`](https://etherscan.io/address/0x5e4861a80b55f035d899f66772117f00fa0e8e7b#writeProxyContract#F32) changes the time between wallets and [`walletParameters`](https://etherscan.io/address/0x5e4861a80b55f035d899f66772117f00fa0e8e7b#readProxyContract#F18) reads it. The time between new wallets is held in `walletCreationPeriod` in number of seconds, so the current value of `1209600` represents 14 days.\
@@ -6,7 +10,7 @@ In order for the wallet to move funds, it produces signatures using a [Threshold
 
 The 100 signers on each wallet are chosen with our [Sortition Pool](https://github.com/keep-network/sortition-pools), and the randomness is provided by the [Random Beacon](https://github.com/keep-network/keep-core/tree/main/pkg/beacon).
 
-The probability that a [Staker](https://dashboard.threshold.network/staking/how-it-works/overview) is chosen to be a Signer is equal to their percentage of the total TBTC Stake. Each Signer is chosen independently. The same Staker can be a signer on the same wallet multiple times. The same Staker can be a Signer on multiple wallets simultaneously.
+The probability that an operator is chosen to be a Signer is equal to their allowlist weighting. Each Signer is chosen independently. The same operator can be a signer on the same wallet multiple times. The same operator can be a Signer on multiple wallets simultaneously.
 
 ## Examples
 

@@ -1,12 +1,10 @@
 ---
 description: >-
   This document explains the basic installation and configuration for the tBTC
-  v2 staking client.
+  v2 client.
 ---
 
-# tBTC v2 Node Setup
-
-This document is intended for members of the community who would like to run their own tBTC v2 node.&#x20;
+# Node Setup
 
 {% hint style="info" %}
 Please be aware that running a node is not an easy task and requires technical skill and commitment to maintaining node uptime and availability.
@@ -25,7 +23,7 @@ The Threshold Network expects certain capabilities for each node running on the 
 * Each node running on the network requires a unique Ethereum Operator Account. The account has to maintain a positive Ether balance at all times.
 * Each node running on the network requires a unique IP address or a unique application port running under the same IP.
 
-### Recommended Machine Types <a href="#_recommended_machine_types" id="_recommended_machine_types"></a>
+### Recommended Machine Types <a href="#recommended_machine_types" id="recommended_machine_types"></a>
 
 {% hint style="info" %}
 While it is possible to run the client on a local machine, this is not recommended.

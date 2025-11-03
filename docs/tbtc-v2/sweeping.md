@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Sweeping
 
 ### What is Sweeping?&#x20;
