@@ -8,4 +8,4 @@ Delivered in `@threshold-network/solidity-contracts@1.2.1` package.
 
 ## Threshold DAO Multisigs
 
-Threshold DAO's multisigs across its various bodies span multiple networks, they can be verified [here](../../../governance/dao/threshold-multisigs.md).
+Threshold DAO's multisigs across its various bodies span multiple networks, they can be verified [here](../../../governance/threshold-multisigs.md).

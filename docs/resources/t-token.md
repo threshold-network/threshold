@@ -1,6 +1,6 @@
 # T Token
 
-The [T token](https://etherscan.io/address/0xCdF7028ceAB81fA0C6971208e83fa7872994beE5) is an ERC-20 token that powers tBTC and serves as the value accrual asset for the Threshold Network.. It is also the governance token for the [Threshold DAO](../governance/dao/), which allows the community to make [collective decisions](../governance/dao/governance-process.md) about the network.
+The [T token](https://etherscan.io/address/0xCdF7028ceAB81fA0C6971208e83fa7872994beE5) is an ERC-20 token that powers tBTC and serves as the value accrual asset for the Threshold Network.. It is also the governance token for the [Threshold DAO](broken-reference), which allows the community to make [collective decisions](../governance/governance-process.md) about the network.
 
 ### Supply
 

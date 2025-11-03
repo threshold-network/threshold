@@ -12,6 +12,6 @@ Threshold Network's [T token](resources/t-token.md) is a governance token and se
 
 Learn the fundamentals of the Threshold Network to get a deeper understanding of our main features:
 
-{% content-ref url="applications/tbtc-v2/" %}
-[tbtc-v2](applications/tbtc-v2/)
+{% content-ref url="tbtc-v2/" %}
+[tbtc-v2](tbtc-v2/)
 {% endcontent-ref %}
