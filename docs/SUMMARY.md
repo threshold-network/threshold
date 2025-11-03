@@ -15,32 +15,30 @@
 
 ## Governance
 
-* [🗳️ Governance Process](governance/governance-process.md)
-* [💰 Threshold Multisigs](governance/threshold-multisigs.md)
+* [Governance Process](governance/governance-process.md)
+* [Threshold Multisigs](governance/threshold-multisigs.md)
 * [Liquid Token Delegation](governance/token-weight-delegation.md)
 * [Vote Delegation](governance/dao-vote-delegation.md)
 
-## Staking & Running a Node
+## tBTC Signer Nodes
 
-* [tBTC v2 Node Setup](staking-and-running-a-node/tbtc-v2-node-setup/README.md)
-  * [Operator Account](staking-and-running-a-node/tbtc-v2-node-setup/operator-account.md)
-  * [Application Authorization & Operator Registration](staking-and-running-a-node/tbtc-v2-node-setup/application-authorization-and-operator-registration.md)
-  * [Network Configuration](staking-and-running-a-node/tbtc-v2-node-setup/network-configuration.md)
-  * [Data Storage](staking-and-running-a-node/tbtc-v2-node-setup/data-storage.md)
-  * [Installation](staking-and-running-a-node/tbtc-v2-node-setup/installation/README.md)
-    * [Docker Installation](staking-and-running-a-node/tbtc-v2-node-setup/installation/docker-installation.md)
-    * [Binary Installation](staking-and-running-a-node/tbtc-v2-node-setup/installation/binary-installation.md)
-  * [Updating tBTC v2 Node](staking-and-running-a-node/tbtc-v2-node-setup/updating-tbtc-v2-node.md)
-  * [Advanced Options](staking-and-running-a-node/tbtc-v2-node-setup/advanced-options/README.md)
-    * [Alternatives to Dashboard](staking-and-running-a-node/tbtc-v2-node-setup/advanced-options/alternatives-to-dashboard.md)
-    * [Logging](staking-and-running-a-node/tbtc-v2-node-setup/advanced-options/logging.md)
-    * [Config File](staking-and-running-a-node/tbtc-v2-node-setup/advanced-options/config-file.md)
-    * [CLI Options](staking-and-running-a-node/tbtc-v2-node-setup/advanced-options/cli-options.md)
-    * [Client Info](staking-and-running-a-node/tbtc-v2-node-setup/advanced-options/client-info.md)
-  * [Frequently Asked Questions](staking-and-running-a-node/tbtc-v2-node-setup/frequently-asked-questions.md)
-  * [Sepolia Testnet](staking-and-running-a-node/tbtc-v2-node-setup/goerli-testnet-staking/README.md)
-    * [Testnet tBTC v2 node Setup](staking-and-running-a-node/tbtc-v2-node-setup/goerli-testnet-staking/testnet-tbtc-v2-node-setup.md)
-* [tBTC Beta Stakers Program](staking-and-running-a-node/tbtc-beta-stakers-program.md)
+* [tBTC Signers](tbtc-signer-nodes/tbtc-signers.md)
+* [Node Setup](tbtc-signer-nodes/tbtc-v2-node-setup/README.md)
+  * [Operator Account](tbtc-signer-nodes/tbtc-v2-node-setup/operator-account.md)
+  * [Network Configuration](tbtc-signer-nodes/tbtc-v2-node-setup/network-configuration.md)
+  * [Data Storage](tbtc-signer-nodes/tbtc-v2-node-setup/data-storage.md)
+  * [Installation](tbtc-signer-nodes/tbtc-v2-node-setup/installation/README.md)
+    * [Docker Installation](tbtc-signer-nodes/tbtc-v2-node-setup/installation/docker-installation.md)
+    * [Binary Installation](tbtc-signer-nodes/tbtc-v2-node-setup/installation/binary-installation.md)
+  * [Updating Nodes](tbtc-signer-nodes/tbtc-v2-node-setup/updating-tbtc-v2-node.md)
+  * [Advanced Options](tbtc-signer-nodes/tbtc-v2-node-setup/advanced-options/README.md)
+    * [Logging](tbtc-signer-nodes/tbtc-v2-node-setup/advanced-options/logging.md)
+    * [Config File](tbtc-signer-nodes/tbtc-v2-node-setup/advanced-options/config-file.md)
+    * [CLI Options](tbtc-signer-nodes/tbtc-v2-node-setup/advanced-options/cli-options.md)
+    * [Client Info](tbtc-signer-nodes/tbtc-v2-node-setup/advanced-options/client-info.md)
+  * [Frequently Asked Questions](tbtc-signer-nodes/tbtc-v2-node-setup/frequently-asked-questions.md)
+  * [Sepolia Testnet](tbtc-signer-nodes/tbtc-v2-node-setup/sepolia-testnet-staking/README.md)
+    * [Testnet Node Setup](tbtc-signer-nodes/tbtc-v2-node-setup/sepolia-testnet-staking/testnet-tbtc-v2-node-setup.md)
 
 ## App Development
 

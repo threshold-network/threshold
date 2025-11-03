@@ -10,14 +10,14 @@ Choose either Docker installation OR Binary installation.
 
 ### Download the Binary
 
-See GitHub for the latest release: [https://github.com/keep-network/keep-core/releases](https://github.com/keep-network/keep-core/releases)
+See GitHub for the latest release: [https://github.com/threshold-network/keep-core/releases](https://github.com/threshold-network/keep-core/releases)
 
 Under Assets, copy the path to the compressed binary and use the command below to download the file. Make relevant adjustments to version as necessary:
 
 {% code overflow="wrap" %}
 ```bash
 cd /home/keep
-wget https://github.com/keep-network/keep-core/releases/download/XX.X.X-XX/keep-client-mainnet-XX.X.X-XX-linux-amd64.tar.gz
+wget https://github.com/threshold-network/keep-core/releases/download/XX.X.X-XX/keep-client-mainnet-XX.X.X-XX-linux-amd64.tar.gz
 ```
 {% endcode %}
 

@@ -1,8 +1,8 @@
 ---
-description: Required network configuration for the tBTC v2 staking client.
+description: Required network configuration for the tBTC v2 client.
 ---
 
-# Network configuration
+# Network Configuration
 
 ### Required Ports
 

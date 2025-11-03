@@ -6,7 +6,7 @@ In order to effectively ship the product, we launched with a permissioned set of
 
 ## TL;DR
 
-* tBTC currently uses a permissioned set of signers (aka [Beta Stakers](../staking-and-running-a-node/tbtc-beta-stakers-program.md)) operating under an honest-majority assumption.
+* tBTC currently uses a permissioned set of signers (aka [Beta Stakers](../tbtc-signer-nodes/tbtc-signers.md)) operating under an honest-majority assumption.
 * The permissioned honest-majority signer set will remain in place until custody is upgraded to a 1-of-N trust assumption using BitVM2 (or an equivalent design).
 
 ## Permissionless Custodianship

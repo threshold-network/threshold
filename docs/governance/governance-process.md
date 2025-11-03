@@ -1,4 +1,4 @@
-# 🗳️ Governance Process
+# Governance Process
 
 ### Lifecycle of a successful proposal
 

@@ -1,10 +1,10 @@
 ---
-description: Optional logging configuration for the tBTC v2 staking client.
+description: Optional logging configuration for the tBTC v2 client.
 ---
 
 # Logging
 
-### Configuration <a href="#_configuration" id="_configuration"></a>
+### Configuration <a href="#configuration" id="configuration"></a>
 
 Logging can be configured with environment variables. Please see sample settings:
 

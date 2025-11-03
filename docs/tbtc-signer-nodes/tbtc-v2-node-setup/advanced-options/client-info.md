@@ -1,5 +1,5 @@
 ---
-description: Client information exposed by the tBTC v2 staking client.
+description: Client information exposed by the tBTC v2 client.
 ---
 
 # Client Info

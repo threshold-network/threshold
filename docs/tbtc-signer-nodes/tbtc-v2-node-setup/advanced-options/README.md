@@ -1,5 +1,5 @@
 ---
-description: Advanced configuration options and tBTC v2 staking client options
+description: Advanced configuration options and tBTC v2 client options
 ---
 
 # Advanced Options
@@ -7,10 +7,6 @@ description: Advanced configuration options and tBTC v2 staking client options
 ### [Logging](logging.md)
 
 Configuration options for logging
-
-### [Alternatives to Dashboard](alternatives-to-dashboard.md)
-
-Alternative application authorization methods to using the Threshold Dashboard.
 
 ### [Config File](config-file.md)
 
@@ -20,4 +16,4 @@ Application configuration can be stored in a file and passed to the application 
 
 ### [Client Info](client-info.md)
 
-Client information exposed by the tBTC v2 staking client.
+Client information exposed by the tBTC v2  client.

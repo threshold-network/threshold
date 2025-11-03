@@ -2,7 +2,7 @@
 description: Compilation of current multisigs for the Threshold Committee
 ---
 
-# 💰 Threshold Multisigs
+# Threshold Multisigs
 
 ## Committee Multisigs
 
