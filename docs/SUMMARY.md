@@ -98,11 +98,13 @@
     * [WalletRegistryGovernance](app-development/tbtc-contracts-api/ecdsa-api/walletregistrygovernance.md)
     * [Wallets](app-development/tbtc-contracts-api/ecdsa-api/wallets.md)
 
+## Contract Addresses
+
+* [Mainnet](contract-addresses/tbtc.md)
+* [Sepolia Testnet](contract-addresses/sepolia-testnet.md)
+
 ## Resources
 
-* [Contract Addresses](resources/contract-addresses/README.md)
-  * [Mainnet](resources/contract-addresses/tbtc.md)
-  * [Sepolia Testnet](resources/contract-addresses/sepolia-testnet.md)
 * [Security Audits](resources/security-audits.md)
 * [tBTC Pools](https://linktr.ee/earnyield)
 * [Security](http://immunefi.com/bug-bounty/thresholdnetwo%E2%80%A6)
