@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # thUSD
 
 ## thUSD Contracts (Ethereum L1)

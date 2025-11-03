@@ -1,5 +1,6 @@
 ---
 description: A Bitcoin-backed Stablecoin
+hidden: true
 ---
 
 # Threshold USD
@@ -18,5 +19,5 @@ Liquity is limited to ETH as the only type of collateral. Threshold USD expand t
 
 Each collateral will be deployed with its own contracts and each new collateral will require a DAO vote with a lengthy time delay before deployment. By having each collateral be its own contract any collateral can easily be deprecated by disallowing minting on that specific contract.&#x20;
 
-All contracts related to thUSD can be found [here](https://app.gitbook.com/o/R2meumXNNad4y1B10iL7/s/WosjlL4zUGUMlcMfuSAp/\~/changes/276/resources/contract-addresses/mainnet/thusd).
+All contracts related to thUSD can be found [here](https://app.gitbook.com/o/R2meumXNNad4y1B10iL7/s/WosjlL4zUGUMlcMfuSAp/~/changes/276/resources/contract-addresses/mainnet/thusd).
 
