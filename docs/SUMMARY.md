@@ -107,7 +107,7 @@
 
 * [Security Audits](resources/security-audits.md)
 * [tBTC Pools](https://linktr.ee/earnyield)
-* [Security](http://immunefi.com/bug-bounty/thresholdnetwo%E2%80%A6)
+* [Security](https://immunefi.com/bug-bounty/thresholdnetwork/information/)
 * [Brand Assets](https://threshold-labs.notion.site/brand-guide)
 * [Links](resources/links.md)
 * [Terms of Use](resources/terms-of-use.md)
