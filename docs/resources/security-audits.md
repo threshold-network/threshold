@@ -9,6 +9,14 @@ description: >-
 
 ## Protocol Upgrades
 
+### **Defense by Thesis - Gasless Minting Feature for the Threshold App**
+
+**Date**: 31 Oct 2025
+
+**Report**: [View PDF](https://drive.google.com/file/d/1RW4Bb3Rd_HdOU8pVxLpIRXCXDYKubeIp/view?usp=sharing)
+
+**Scope:** NativeBTCDepositor contract
+
 ### Defense by Thesis - Beta Staker Allowlist & Bridge Fee Rebates
 
 * **Date**: 16 Sept 2025
