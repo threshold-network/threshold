@@ -1,4 +1,8 @@
-# tBTC Deminting Walkthrough
+---
+hidden: true
+---
+
+# tBTC Unminting Walkthrough
 
 <details>
 
