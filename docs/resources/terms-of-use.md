@@ -1,4 +1,8 @@
-# tBTC Terms of Use
+---
+hidden: true
+---
+
+# Terms of Use
 
 Last updated: July 1, 2025
 
