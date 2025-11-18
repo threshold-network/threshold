@@ -106,7 +106,7 @@
 ## Resources
 
 * [Security Audits](resources/security-audits.md)
-* [tBTC Pools](https://linktr.ee/earnyield)
+* [tBTC Pools](https://app.threshold.network/use-tbtc)
 * [Security](https://immunefi.com/bug-bounty/thresholdnetwork/information/)
 * [Brand Assets](https://threshold-labs.notion.site/brand-guide)
 * [Links](resources/links.md)
