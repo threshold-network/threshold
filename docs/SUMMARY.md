@@ -100,7 +100,7 @@
 
 ## Contract Addresses
 
-* [Mainnet](contract-addresses/tbtc.md)
+* [Mainnet](resources/contract-addresses/mainnet/tbtc.md)
 * [Sepolia Testnet](contract-addresses/sepolia-testnet.md)
 
 ## Resources

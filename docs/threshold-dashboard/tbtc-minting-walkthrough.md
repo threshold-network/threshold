@@ -16,8 +16,7 @@ Here are some things you will need before you start the minting process:
 
 :white\_check\_mark: Bitcoin compatible wallet
 
-:white\_check\_mark: Ethereum compatible wallet\
-
+:white\_check\_mark: Ethereum compatible wallet<br>
 
 If you don't already have one, you'll need to set up a Bitcoin wallet. A solid option to use is Green Wallet. You can download it here:
 
@@ -56,8 +55,7 @@ If you have questions about terminology, you can toggle over to the **How it Wor
 
 ### STEP 2: Make BTC Deposit
 
-1.  In your Bitcoin wallet, take a picture of the QR code of the generated Deposit Address in the tBTC dapp. It will look something like this:\
-
+1.  In your Bitcoin wallet, take a picture of the QR code of the generated Deposit Address in the tBTC dapp. It will look something like this:<br>
 
     <figure><img src="../.gitbook/assets/Step 2 (2).png" alt=""><figcaption></figcaption></figure>
 2. Send your BTC deposit to this Deposit Address from your Bitcoin wallet. The minimum deposit is 0.01 BTC.

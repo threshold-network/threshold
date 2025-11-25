@@ -69,4 +69,4 @@ Estimating the general cost for the self-hosting model is non-trivial due to the
 
 Above assumptions and figures should be used cautiously as it is only intended to provide a general sense of the infrastructure costs. Each prospective Signer node operator should conduct their own estimates based on their individual circumstances.&#x20;
 
-Last but not least, the presented estimate refers only to the infrastructure-related costs of operating a tBTC Signer node. This estimate DOES NOT include human operational costs. Each Signer must include this overhead when making their own estimates.\
+Last but not least, the presented estimate refers only to the infrastructure-related costs of operating a tBTC Signer node. This estimate DOES NOT include human operational costs. Each Signer must include this overhead when making their own estimates.<br>

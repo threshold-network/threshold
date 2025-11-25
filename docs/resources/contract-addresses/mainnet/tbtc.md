@@ -10,20 +10,24 @@ Delivered in `@threshold-network/solidity-contracts@1.2.1` package.
 
 Delivered in `@keep-network/random-beacon@2.0.0`, `@keep-network/ecdsa@2.0.0` and `@keep-network/tbtc-v2@1.6.0` packages.
 
-| Contract                      | Address                                                                                                                    |
-| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Bridge                        | [0x5e4861a80B55f035D899f66772117F00FA0E8e7B](https://etherscan.io/address/0x5e4861a80B55f035D899f66772117F00FA0E8e7B)      |
-| Timelock Controller           | [0x92f2d8b72a7F6a551Be60b9aa4194248E9B4913D](https://etherscan.io/address/0x92f2d8b72a7F6a551Be60b9aa4194248E9B4913D#code) |
-| RandomBeacon                  | [0x5499f54b4A1CB4816eefCf78962040461be3D80b](https://etherscan.io/address/0x5499f54b4A1CB4816eefCf78962040461be3D80b)      |
-| TBTC                          | [0x18084fbA666a33d37592fA2633fD49a74DD93a88](https://etherscan.io/address/0x18084fbA666a33d37592fA2633fD49a74DD93a88)      |
-| TBTCVault                     | [0x9C070027cdC9dc8F82416B2e5314E11DFb4FE3CD](https://etherscan.io/address/0x9C070027cdC9dc8F82416B2e5314E11DFb4FE3CD)      |
-| WalletRegistry                | [0x46d52E41C2F300BC82217Ce22b920c34995204eb](https://etherscan.io/address/0x46d52E41C2F300BC82217Ce22b920c34995204eb)      |
-| WalletProposalValidator       | [0x30019D85a86ABD3cDA1167F4C052690c32FBDEc2](https://etherscan.io/address/0x30019D85a86ABD3cDA1167F4C052690c32FBDEc2)      |
-| RedemptionWatchtower          | [0xB8dF0A949aC45ff8f401553A1dcb742Feb38E6D3](https://etherscan.io/address/0xB8dF0A949aC45ff8f401553A1dcb742Feb38E6D3)      |
-| Relayer Bot                   | [0x45332eee9b495b1dda896fd53112eaacc10b2c19](https://etherscan.io/address/0x45332eee9b495b1dda896fd53112eaacc10b2c19)      |
-| L1BitcoinDepositor (Arbitrum) | [0x75A6e4A7C8fAa162192FAD6C1F7A6d48992c619A](https://etherscan.io/address/0x75A6e4A7C8fAa162192FAD6C1F7A6d48992c619A)      |
-| L1BitcoinDepositor (Base)     | [0x186D048097c7406C64EfB0537886E3CaE100a1fe](https://etherscan.io/address/0x186D048097c7406C64EfB0537886E3CaE100a1fe)      |
-| L1BTCRedeemerProxy            | [0x5D4d83aaB53B7E7cA915AEB2d4d3f4e03823DbDe](https://etherscan.io/address/0x5D4d83aaB53B7E7cA915AEB2d4d3f4e03823DbDe)      |
+| Contract                        | Address                                                                                                                                 |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Bridge                          | [0x5e4861a80B55f035D899f66772117F00FA0E8e7B](https://etherscan.io/address/0x5e4861a80B55f035D899f66772117F00FA0E8e7B)                   |
+| Timelock Controller             | [0x92f2d8b72a7F6a551Be60b9aa4194248E9B4913D](https://etherscan.io/address/0x92f2d8b72a7F6a551Be60b9aa4194248E9B4913D#code)              |
+| RandomBeacon                    | [0x5499f54b4A1CB4816eefCf78962040461be3D80b](https://etherscan.io/address/0x5499f54b4A1CB4816eefCf78962040461be3D80b)                   |
+| TBTC                            | [0x18084fbA666a33d37592fA2633fD49a74DD93a88](https://etherscan.io/address/0x18084fbA666a33d37592fA2633fD49a74DD93a88)                   |
+| TBTCVault                       | [0x9C070027cdC9dc8F82416B2e5314E11DFb4FE3CD](https://etherscan.io/address/0x9C070027cdC9dc8F82416B2e5314E11DFb4FE3CD)                   |
+| VendingMachineV3                | [0x7570a2350183b4BdF7CA74faD3Fc19048E6437e6](https://etherscan.io/address/0x7570a2350183b4BdF7CA74faD3Fc19048E6437e6)                   |
+| WalletRegistry                  | [0x46d52E41C2F300BC82217Ce22b920c34995204eb](https://etherscan.io/address/0x46d52E41C2F300BC82217Ce22b920c34995204eb)                   |
+| WalletProposalValidator         | [0x30019D85a86ABD3cDA1167F4C052690c32FBDEc2](https://etherscan.io/address/0x30019D85a86ABD3cDA1167F4C052690c32FBDEc2)                   |
+| RedemptionWatchtower            | [0xB8dF0A949aC45ff8f401553A1dcb742Feb38E6D3](https://etherscan.io/address/0xB8dF0A949aC45ff8f401553A1dcb742Feb38E6D3)                   |
+| CoveragePool                    | [0x7D7B622C07f216d99eFc3EfB9Cf71872F46D811A](https://etherscan.io/address/0x7D7B622C07f216d99eFc3EfB9Cf71872F46D811A)                   |
+| Relayer Bot                     | [0x45332eee9b495b1dda896fd53112eaacc10b2c19](https://etherscan.io/address/0x45332eee9b495b1dda896fd53112eaacc10b2c19)                   |
+| L1BitcoinDepositor (Arbitrum)   | [0x75A6e4A7C8fAa162192FAD6C1F7A6d48992c619A](https://etherscan.io/address/0x75A6e4A7C8fAa162192FAD6C1F7A6d48992c619A)                   |
+| L1BitcoinDepositor (Base)       | [0x186D048097c7406C64EfB0537886E3CaE100a1fe](https://etherscan.io/address/0x186D048097c7406C64EfB0537886E3CaE100a1fe)                   |
+| L1BTCRedeemerProxy              | [0x5D4d83aaB53B7E7cA915AEB2d4d3f4e03823DbDe](https://etherscan.io/address/0x5D4d83aaB53B7E7cA915AEB2d4d3f4e03823DbDe)                   |
+| LockReleaseTokenPoolUpgradeable | [0x03E342731c08FDDc34cFb43E91cB3a7e424ee0F6](https://etherscan.io/address/0x03E342731c08FDDc34cFb43E91cB3a7e424ee0F6#readProxyContract) |
+| CCIP Router (BOB)               | [0x80226fc0Ee2b096224EeAc085Bb9a8cba1146f7D](https://app.gitbook.com/u/5ZvHe1dPEihYaTeUBdlgZBPVItJ3)                                    |
 
 ## L2/Other tBTC Application Contracts
 
@@ -76,3 +80,8 @@ Delivered in `@keep-network/random-beacon@2.0.0`, `@keep-network/ecdsa@2.0.0` an
 | Sui tBTC           | [0x77045f1b9f811a7a8fb9ebd085b5b0c55c5cb0d1520ff55f7037f89b5da9f5f1](https://suiscan.xyz/mainnet/coin/0x77045f1b9f811a7a8fb9ebd085b5b0c55c5cb0d1520ff55f7037f89b5da9f5f1::TBTC::TBTC/txs) |
 | L1BitcoinDepositor | [0xb810AbD43d8FCFD812d6FEB14fefc236E92a341A](https://etherscan.io/address/0xb810AbD43d8FCFD812d6FEB14fefc236E92a341A)                                                                     |
 | Sui Package ID     | [0x77045f1b9f811a7a8fb9ebd085b5b0c55c5cb0d1520ff55f7037f89b5da9f5f1](https://suiscan.xyz/mainnet/coin/0x77045f1b9f811a7a8fb9ebd085b5b0c55c5cb0d1520ff55f7037f89b5da9f5f1::TBTC::TBTC/txs) |
+
+### BOB
+
+<table><thead><tr><th width="343.90625"></th><th></th></tr></thead><tbody><tr><td>BOB tBTC</td><td><a href="https://explorer.gobob.xyz/token/0xBBa2eF945D523C4e2608C9E1214C2Cc64D4fc2e2">0xBBa2eF945D523C4e2608C9E1214C2Cc64D4fc2e2</a></td></tr><tr><td>Standard Bridge on BOB</td><td><a href="https://explorer.gobob.xyz/address/0x4200000000000000000000000000000000000010">0x4200000000000000000000000000000000000010</a></td></tr><tr><td>BurnFromMintTokenPoolUpgradeable</td><td><a href="https://explorer.gobob.xyz/address/0x36Ee23c94523A05981baaEEaea4BA97cDDe21f6a?tab=read_proxy">0x36Ee23c94523A05981baaEEaea4BA97cDDe21f6a</a></td></tr><tr><td>CCIP Router</td><td><a href="https://app.gitbook.com/u/5ZvHe1dPEihYaTeUBdlgZBPVItJ3">0x827716e74F769AB7b6bb374A29235d9c2156932C</a></td></tr></tbody></table>
+

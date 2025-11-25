@@ -35,8 +35,7 @@ By using the Platform, you understand and acknowledge that:
 * Blockchain and cryptocurrency markets are volatile and may result in significant loss.
 * Smart contracts are subject to bugs, vulnerabilities, and exploits.
 * Your assets may be lost due to user error, technical failures, or malicious activity.
-* Regulatory uncertainty exists, and changes in law may affect your use of the Platform.\
-
+* Regulatory uncertainty exists, and changes in law may affect your use of the Platform.<br>
 
 You assume full responsibility for all risks associated with your use of the Platform.
 
@@ -75,4 +74,4 @@ We reserve the right to update or modify these Terms at any time. Changes will b
 
 For questions regarding these Terms, contact us at: hello@threshold.network
 
-\
+<br>

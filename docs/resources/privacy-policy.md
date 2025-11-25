@@ -73,4 +73,4 @@ To exercise any of your rights under the GDPR, please contact us at hello@thresh
 #### Contact us
 
 If you have any questions, concerns, or complaints about our Privacy Policy or our data collection and processing practices, or if you want to report any security violations to us, or exercise any of your rights under this Privacy Policy, please contact us at the following address: hello@threshold.network.\
-\
+<br>
