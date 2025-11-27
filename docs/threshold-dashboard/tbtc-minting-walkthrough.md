@@ -16,7 +16,7 @@ Here are some things you will need before you start the minting process:\
 
 :white\_check\_mark: Bitcoin compatible wallet (self-custodied)
 
-:white\_check\_mark:Destination Wallet (on supported chains; see the list of supported chains [here](https://docs.threshold.network/contract-addresses/tbtc).)\
+:white\_check\_mark: Destination Wallet (on supported chains; see the list of supported chains [here](https://docs.threshold.network/contract-addresses/tbtc).)\
 \
 **Important Reminders:**
 
