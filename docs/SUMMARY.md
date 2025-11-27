@@ -11,6 +11,7 @@
 ## THRESHOLD DASHBOARD
 
 * [tBTC Minting Walkthrough](threshold-dashboard/tbtc-minting-walkthrough.md)
+* [tBTC Minting Walkthrough (legacy)](threshold-dashboard/tbtc-minting-walkthrough-1.md)
 * [tBTC Unminting Walkthrough](threshold-dashboard/tbtc-unminting-walkthrough.md)
 
 ## Governance
