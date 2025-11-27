@@ -8,11 +8,11 @@
   * [Sweeping](tbtc-v2/sweeping.md)
 * [T Token](t-token.md)
 
-## THRESHOLD DASHBOARD
+## THRESHOLD APP
 
-* [tBTC Minting Walkthrough](threshold-dashboard/tbtc-minting-walkthrough.md)
-* [tBTC Minting Walkthrough (legacy)](threshold-dashboard/tbtc-minting-walkthrough-1.md)
-* [tBTC Unminting Walkthrough](threshold-dashboard/tbtc-unminting-walkthrough.md)
+* [tBTC Minting Walkthrough](threshold-app/tbtc-minting-walkthrough.md)
+* [tBTC Minting Walkthrough (legacy)](threshold-app/tbtc-minting-walkthrough-1.md)
+* [tBTC Unminting Walkthrough](threshold-app/tbtc-unminting-walkthrough.md)
 
 ## Governance
 
