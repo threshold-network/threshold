@@ -13,6 +13,7 @@ Delivered in `@keep-network/random-beacon@2.0.0`, `@keep-network/ecdsa@2.0.0` an
 | Contract                        | Address                                                                                                                                 |
 | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | Bridge                          | [0x5e4861a80B55f035D899f66772117F00FA0E8e7B](https://etherscan.io/address/0x5e4861a80B55f035D899f66772117F00FA0E8e7B)                   |
+| RebateStaking                   | [0x0184739C32edc3471D3e4860c8E39a5f3Ff85A45](https://etherscan.io/address/0x0184739C32edc3471D3e4860c8E39a5f3Ff85A45)                   |
 | Timelock Controller             | [0x92f2d8b72a7F6a551Be60b9aa4194248E9B4913D](https://etherscan.io/address/0x92f2d8b72a7F6a551Be60b9aa4194248E9B4913D#code)              |
 | RandomBeacon                    | [0x5499f54b4A1CB4816eefCf78962040461be3D80b](https://etherscan.io/address/0x5499f54b4A1CB4816eefCf78962040461be3D80b)                   |
 | TBTC                            | [0x18084fbA666a33d37592fA2633fD49a74DD93a88](https://etherscan.io/address/0x18084fbA666a33d37592fA2633fD49a74DD93a88)                   |
