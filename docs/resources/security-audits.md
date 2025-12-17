@@ -57,6 +57,12 @@ description: >-
 
 ## tBTC Bridge Audits
 
+#### Thesis Defense – T Staking Rebates for tBTC
+
+* **Date:** 27 November 2025
+* **Report:** [View Audit 1 PDF](https://drive.google.com/file/d/1ZGOGCHcGo6r2Plkk1wHvdoWllfqQOl4T/view?usp=sharing) - [View Audit 2 PDF](https://drive.google.com/file/d/1QK1jnaoqdtoeyqTD7xz93sSk1BwerFwe/view?usp=sharing)&#x20;
+* **Scope:** Smart contracts for T staking rebates
+
 #### Least Authority – Solana Smart Contracts (tBTC)
 
 * **Date:** 29 August 2023
