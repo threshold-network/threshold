@@ -9,19 +9,23 @@ description: >-
 
 ## Protocol Upgrades
 
-### **Defense by Thesis - Gasless Minting Feature for the Threshold App**
+#### Defense by Thesis - Beta Staker Allowlist & Bridge Fee Rebates
 
-**Date**: 31 Oct 2025
+* **Date:** 27 November 2025
+* **Report:** [View Audit 1 PDF](https://drive.google.com/file/d/1ymBpfc9vihOVA-XccqhpeitnZS208O5u/view) - [View Audit 2 PDF](https://drive.google.com/file/d/1QK1jnaoqdtoeyqTD7xz93sSk1BwerFwe/view?usp=sharing)&#x20;
+* **Scope:** Smart contracts for T staking rebates. See related proposals, [TIP-067](https://forum.threshold.network/t/beta-staker-expansion-tip-067-compensation-adjustment/1113) and [TIP-106](https://forum.threshold.network/t/tip-106-experimenting-with-a-tbtc-fee-rebate-for-locking-t-tokens/1146)&#x20;
 
-**Report**: [View PDF](https://drive.google.com/file/d/1RW4Bb3Rd_HdOU8pVxLpIRXCXDYKubeIp/view?usp=sharing)
+#### **Defense by Thesis - WalletRegistry & EcdsaDkg**
 
-**Scope:** NativeBTCDepositor contract
+* **Date**: 5 November 2025
+* **Report**: [View PDF](https://drive.google.com/file/d/1oQJO-fW4ZUUS_DQovOtaB9CB7U6YT0AP/view?usp=sharing)
+* **Scope:** WalletRegistry and EcdsaDkg smart contracts
 
-### Defense by Thesis - Beta Staker Allowlist & Bridge Fee Rebates
+#### **Defense by Thesis - Gasless Minting Feature for the Threshold App**
 
-* **Date**: 16 Sept 2025
-* **Report:** [View PDF](https://drive.google.com/file/d/1ymBpfc9vihOVA-XccqhpeitnZS208O5u/view)&#x20;
-* **Scope:** See related proposals, [TIP-067](https://forum.threshold.network/t/beta-staker-expansion-tip-067-compensation-adjustment/1113) and [TIP-106](https://forum.threshold.network/t/tip-106-experimenting-with-a-tbtc-fee-rebate-for-locking-t-tokens/1146)
+* **Date**: 31 Oct 2025
+* **Report**: [View PDF](https://drive.google.com/file/d/1RW4Bb3Rd_HdOU8pVxLpIRXCXDYKubeIp/view?usp=sharing)
+* **Scope:** NativeBTCDepositor contract
 
 ## Cross-Chain Integrations
 
@@ -56,12 +60,6 @@ description: >-
 * **Scope:** tBTC integration with the Base blockchain
 
 ## tBTC Bridge Audits
-
-#### Thesis Defense – T Staking Rebates for tBTC
-
-* **Date:** 27 November 2025
-* **Report:** [View Audit 1 PDF](https://drive.google.com/file/d/1ZGOGCHcGo6r2Plkk1wHvdoWllfqQOl4T/view?usp=sharing) - [View Audit 2 PDF](https://drive.google.com/file/d/1QK1jnaoqdtoeyqTD7xz93sSk1BwerFwe/view?usp=sharing)&#x20;
-* **Scope:** Smart contracts for T staking rebates
 
 #### Least Authority – Solana Smart Contracts (tBTC)
 
