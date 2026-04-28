@@ -14,13 +14,13 @@ Instead of centralized intermediaries, tBTC uses a randomly selected group of op
 
 ### Fees
 
-tBTC fees are action-based (i.e. users incur a mint and redemption fee when using the bridge). The **mint and redemption fee is** [**0.2%**](https://etherscan.io/address/0x5e4861a80B55f035D899f66772117F00FA0E8e7B#readProxyContract#F13) **or 20 basis points**. The mint fee was initially offset to support adoption; however, following a recent governance decision, mint fee was reinstated on April 15, 2026. You can read more about the reinstatement [here.](https://www.threshold.network/blog/tbtc-mint-fee-reinstatement)
+tBTC fees are action-based (i.e., users incur a mint and redemption fee when using the bridge). The **mint and redemption fee is** [**0.2%**](https://etherscan.io/address/0x5e4861a80B55f035D899f66772117F00FA0E8e7B#readProxyContract#F13) **or 20 basis points**. The mint fee was initially offset to support adoption; however, following a recent governance decision, the mint fee was reinstated on April 15, 2026. You can read more about the reinstatement [here.](https://www.threshold.network/blog/tbtc-mint-fee-reinstatement)
 
 ### Fee Rebates or Fee Waivers
 
 Minting and redemption fees are set at 20 basis points to support decentralized bridge operations. These fees can be partially or fully offset by staking $T. You can read the full announcement scope [here](https://www.threshold.network/blog/tbtc-redemption-fee-waivers-for-t-stakers).
 
-**Staking $T is optional.** Eligible participants may receive fee waivers in line with protocol parameters. Waivers are applied automatically when using the new Threshold Unified Bitcoin Router accessible at [https://app.threshold.network](https://app.threshold.network/).
+**Staking $T is optional.** Eligible participants receive fee waivers in line with protocol parameters. Waivers are applied automatically when using the new Threshold Unified Bitcoin Router accessible at [https://app.threshold.network](https://app.threshold.network/).
 
 The $T token is available on most decentralized exchanges and major centralized exchanges. To view an illustrative breakdown of how much $T is required to offset minting and redemption fees (assuming a $0.01 token price), refer to the diagram below.
 
