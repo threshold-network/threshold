@@ -7,7 +7,7 @@ description: How to delegate liquid T tokens
 Liquid T holders can delegate their token weights to themselves or a third party for voting on governance proposals.
 
 {% hint style="info" %}
-Delegation is accomplished via an on-chain transaction which costs ETH gas.
+Delegation is performed via an onchain transaction, which incurs ETH gas costs.
 {% endhint %}
 
 1. Go to [https://boardroom.io/threshold](https://boardroom.io/threshold).
