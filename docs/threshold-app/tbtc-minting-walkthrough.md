@@ -21,7 +21,7 @@ Here are some things you will need before you start the minting process:\
 **Important Reminders:**
 
 * _Always download and securely store your deposit receipt._ This JSON file is required to recover your funds in the event of any technical issues during the minting process.&#x20;
-* _Minting may take anywhere from a few minutes to several hours_, depending on the amount of BTC deposited. You can monitor the status at [https://tbtcscan.com](https://www.youtube.com/redirect?event=video_description\&redir_token=QUFFLUhqbUotT2RIcktaUHQ1aUp3d01ud19JNVdxdFpDd3xBQ3Jtc0tuQWVTbmpfM3RyUU5NaDJmNzlQSG5oSDk5V0FZSEhPWlVCbE5ESGw2OG9GNjZzVkVzRUE2bF8ybkxEckZlRUw1MkU1T0JUZEtpaGlGdlg2ZUVfR3VtQWxpVnFmbVFoQVVLbm1mTWhGalNSdmNKTUcxRQ\&q=https%3A%2F%2Ftbtcscan.com%2F\&v=_2nUqzd83gI).&#x20;
+* _Minting may take anywhere from a few minutes to several hours_, depending on the amount of BTC deposited. You can monitor the status at [https://app.threshold.network/explorer](https://app.threshold.network/explorer)
 * _Your BTC recovery address must come from a self-custodied wallet that you control._ Do not use an address from a centralized exchange. &#x20;
 * _Multisig wallets are supported as long as they’re on the correct network._
 
