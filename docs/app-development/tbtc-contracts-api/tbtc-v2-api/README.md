@@ -34,7 +34,7 @@ You can learn about APIs of contracts related to the Bridge under the following 
 
 [IVault](ivault.md)
 
-[L2TBTC](l2tbtc.md)
+[L2tBTC](l2tbtc.md)
 
 [L2WormholeGateway](l2wormholegateway.md)
 
@@ -48,11 +48,11 @@ You can learn about APIs of contracts related to the Bridge under the following 
 
 [Redemption](redemption.md)
 
-[TBTC](tbtc.md)
+[tBTC](tbtc.md)
 
-[TBTCOptimisticMinting](tbtcoptimisticminting.md)
+[tBTCOptimisticMinting](tbtcoptimisticminting.md)
 
-[TBTCVault](tbtcvault.md)
+[tBTCVault](tbtcvault.md)
 
 [VendingMachine](vendingmachine.md)
 

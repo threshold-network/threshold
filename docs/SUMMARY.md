@@ -114,7 +114,7 @@
 
 * [Security Audits](resources/security-audits.md)
 * [tBTC Pools](https://defillama.com/yields?token=TBTC)
-* [Security](https://immunefi.com/bug-bounty/thresholdnetwork/information/)
+* [Bug Bounty](https://immunefi.com/bug-bounty/thresholdnetwork/information/)
 * [Brand Assets](https://www.threshold.network/brand-guide)
 * [Links](resources/links.md)
 * [Terms of Use](resources/terms-of-use.md)
