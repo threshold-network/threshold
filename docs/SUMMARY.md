@@ -12,7 +12,13 @@
 
 * [tBTC Minting Walkthrough](threshold-app/tbtc-minting-walkthrough.md)
 * [tBTC Minting Walkthrough (legacy)](threshold-app/tbtc-minting-walkthrough-1.md)
-* [tBTC Unminting Walkthrough](threshold-app/tbtc-unminting-walkthrough.md)
+
+## FOR INSTITUTIONS
+
+* [Verifiable Bitcoin Accounts](for-institutions/verifiable-bitcoin-accounts/README.md)
+  * [Onboarding Process](for-institutions/verifiable-bitcoin-accounts/onboarding-process.md)
+  * [Technical Diagram](for-institutions/verifiable-bitcoin-accounts/technical-diagram.md)
+  * [Understanding PSBT](for-institutions/verifiable-bitcoin-accounts/understanding-psbt.md)
 
 ## Governance
 
