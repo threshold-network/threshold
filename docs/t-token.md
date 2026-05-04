@@ -8,8 +8,6 @@ Historically, the T token was formed through the merger of two entities, NU and 
 
 The initial supply of T was established by the DAO at launch as 10Billion T with the following allocation during launch:
 
-<figure><img src=".gitbook/assets/Screenshot 2026-05-04 at 10.26.26 PM.png" alt=""><figcaption></figcaption></figure>
-
 * 4.5B T allocated to NU token holders&#x20;
 * 4.5B T allocated to KEEP token holders&#x20;
 * 1B T allocated to the Threshold DAO treasury
@@ -25,6 +23,8 @@ An additional **1.155B tokens** were minted during the network's inflationary bo
   * Treasury Supply - [https://api.threshold.network/supply/t/treasury](https://api.threshold.network/supply/t/treasury)
 
 ### T Staking for tBTC Fee Rebates/ Waivers
+
+<figure><img src=".gitbook/assets/Threshold Network, Honest Majority.png" alt=""><figcaption></figcaption></figure>
 
 Since the beginning of 2026, T token holders have been able to [stake their T to receive fee rebates and waivers ](https://www.threshold.network/blog/tbtc-redemption-fee-waivers-for-t-stakers)when minting tBTC and redeeming BTC. With the reinstatement of minting fees announced [\[here\]](https://www.threshold.network/blog/tbtc-mint-fee-reinstatement), staking T has become even more valuable for reducing costs when using tBTC on the Threshold Bridge.
 
