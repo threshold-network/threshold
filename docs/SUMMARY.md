@@ -1,24 +1,21 @@
 # Table of contents
 
 * [What is the Threshold Network?](README.md)
+* [T Token](t-token.md)
 * [tBTC Bitcoin Bridge](tbtc-v2/README.md)
   * [Wallet Generation](tbtc-v2/wallet-generation.md)
   * [Wallet Signing](tbtc-v2/wallet-signing.md)
   * [The Path to Permissionlessness](tbtc-v2/the-path-to-permissionlessness.md)
   * [Sweeping](tbtc-v2/sweeping.md)
-* [T Token](t-token.md)
+* [Verifiable Bitcoin Accounts](verifiable-bitcoin-accounts/README.md)
+  * [Onboarding Process](verifiable-bitcoin-accounts/onboarding-process.md)
+  * [Technical Diagram](verifiable-bitcoin-accounts/technical-diagram.md)
+  * [Understanding PSBT](verifiable-bitcoin-accounts/understanding-psbt.md)
 
 ## THRESHOLD APP
 
 * [tBTC Minting Walkthrough](threshold-app/tbtc-minting-walkthrough.md)
 * [tBTC Minting Walkthrough (legacy)](threshold-app/tbtc-minting-walkthrough-1.md)
-
-## FOR INSTITUTIONS
-
-* [Verifiable Bitcoin Accounts](for-institutions/verifiable-bitcoin-accounts/README.md)
-  * [Onboarding Process](for-institutions/verifiable-bitcoin-accounts/onboarding-process.md)
-  * [Technical Diagram](for-institutions/verifiable-bitcoin-accounts/technical-diagram.md)
-  * [Understanding PSBT](for-institutions/verifiable-bitcoin-accounts/understanding-psbt.md)
 
 ## Governance
 
