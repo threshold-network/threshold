@@ -113,7 +113,7 @@
 ## Resources
 
 * [Security Audits](resources/security-audits.md)
-* [tBTC Pools](https://defillama.com/yields?token=TBTC)
+* [tBTC Yield Markets](https://app.threshold.network/use-tbtc)
 * [Bug Bounty](https://immunefi.com/bug-bounty/thresholdnetwork/information/)
 * [Brand Assets](https://www.threshold.network/brand-guide)
 * [Links](resources/links.md)
