@@ -1,12 +1,13 @@
 # Table of contents
 
 * [What is the Threshold Network?](README.md)
-* [T Token](t-token.md)
+* [T Token](t-token/README.md)
+  * [Staking T Tokens](t-token/staking-t-tokens.md)
 * [tBTC Bitcoin Bridge](tbtc-v2/README.md)
   * [Wallet Generation](tbtc-v2/wallet-generation.md)
   * [Wallet Signing](tbtc-v2/wallet-signing.md)
-  * [The Path to Permissionlessness](tbtc-v2/the-path-to-permissionlessness.md)
   * [Sweeping](tbtc-v2/sweeping.md)
+  * [The Path to Permissionlessness](tbtc-v2/the-path-to-permissionlessness.md)
 * [Verifiable Bitcoin Accounts](verifiable-bitcoin-accounts/README.md)
   * [Onboarding Process](verifiable-bitcoin-accounts/onboarding-process.md)
   * [Technical Diagram](verifiable-bitcoin-accounts/technical-diagram.md)
@@ -17,7 +18,6 @@
 * [tBTC Minting Walkthrough](threshold-app/tbtc-minting-walkthrough.md)
 * [tBTC Unminting Walkthrough](threshold-app/tbtc-unminting-walkthrough.md)
 * [tBTC Swap & Bridge Guide](threshold-app/tbtc-swap-and-bridge-guide.md)
-* [T Staking Guide](threshold-app/t-staking-guide.md)
 * [tBTC Minting Walkthrough (legacy)](threshold-app/tbtc-minting-walkthrough-1.md)
 
 ## Governance
@@ -112,6 +112,7 @@
 
 ## Resources
 
+* [Research](resources/research.md)
 * [Security Audits](resources/security-audits.md)
 * [tBTC Yield Markets](https://app.threshold.network/use-tbtc)
 * [Bug Bounty](https://immunefi.com/bug-bounty/thresholdnetwork/information/)

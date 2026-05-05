@@ -1,3 +1,7 @@
+---
+description: A comprehensive guide for tBTC Signers
+---
+
 # tBTC Signers
 
 Threshold Network allows authorized signers to participate in tBTC minting, redemptions, and custody. These signers ensure key operations run properly without interruptions.

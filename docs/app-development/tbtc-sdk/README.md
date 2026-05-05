@@ -1,3 +1,7 @@
+---
+description: Build with Bitcoin using Threshold's tBTC SDK
+---
+
 # tBTC SDK
 
 tBTC SDK is a TypeScript library that provides effortless access to the fundamental features of the tBTC Bitcoin bridge. The SDK allows developers to integrate tBTC into their own applications and offer the power of trustless tokenized Bitcoin to their users.

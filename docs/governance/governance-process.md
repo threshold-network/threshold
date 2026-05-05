@@ -1,3 +1,7 @@
+---
+description: Discover how you can participate in Threshold Governance Process
+---
+
 # Governance Process
 
 ### Lifecycle of a successful proposal

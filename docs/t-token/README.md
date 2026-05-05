@@ -24,7 +24,7 @@ An additional **1.155B tokens** were minted during the network's inflationary bo
 
 ### T Staking for tBTC Fee Rebates/ Waivers
 
-<figure><img src=".gitbook/assets/Threshold Network, Honest Majority.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Threshold Network, Honest Majority.png" alt=""><figcaption></figcaption></figure>
 
 Since the beginning of 2026, T token holders have been able to [stake their T to receive fee rebates and waivers ](https://www.threshold.network/blog/tbtc-redemption-fee-waivers-for-t-stakers)when minting tBTC and redeeming BTC. With the reinstatement of minting fees announced [\[here\]](https://www.threshold.network/blog/tbtc-mint-fee-reinstatement), staking T has become even more valuable for reducing costs when using tBTC on the Threshold Bridge.
 
@@ -36,4 +36,4 @@ You can refer to the diagram below for an illustrative breakdown of how much you
 To start staking T Tokens, you can visit. [https://app.threshold.network/stake](https://app.threshold.network/stake)
 {% endhint %}
 
-<figure><img src=".gitbook/assets/T Staking Diagram by Threshold Network -.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/T Staking Diagram by Threshold Network -.png" alt=""><figcaption></figcaption></figure>

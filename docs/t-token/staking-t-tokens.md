@@ -2,5 +2,5 @@
 hidden: true
 ---
 
-# T Staking Guide
+# Staking T Tokens
 

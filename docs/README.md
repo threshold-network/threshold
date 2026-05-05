@@ -6,4 +6,4 @@ tBTC enables Bitcoin liquidity to move seamlessly across chains without compromi
 
 This structure upholds Bitcoin’s core principles of being trust-minimized, permissionless, and censorship-resistant while maintaining a direct and verifiable path back to native Bitcoin. No complex staking mechanics needed.
 
-Threshold Network's [T token](t-token.md) is the value accrual and governance asset for the network.
+Threshold Network's [T token](t-token/) is the value accrual and governance asset for the network.
