@@ -1,6 +1,7 @@
 ---
 description: Follow along with this guide and leverage your Bitcoin by minting tBTC.
 hidden: true
+noIndex: true
 ---
 
 # tBTC Minting Walkthrough (legacy)
