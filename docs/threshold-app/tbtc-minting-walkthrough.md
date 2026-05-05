@@ -40,10 +40,6 @@ After you've created your wallet, select `Bitcoin` as your network..
 
 {% embed url="https://www.youtube.com/watch?v=_2nUqzd83gI" %}
 
-{% hint style="info" %}
-If you have questions about terminology, you can toggle over to the **How it Works** page in the dapp to learn more. You can also dive into documentation on [wallet generation](https://docs.threshold.network/applications/tbtc-v2/wallet-generation) and [bridge permissionlessness](https://docs.threshold.network/applications/tbtc-v2/the-path-to-permissionlessness) in the docs.
-{% endhint %}
-
 ### Congrats — you minted! &#x20;
 
 :tada: You've successfully minted tBTC! :tada:

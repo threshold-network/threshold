@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Wallet Generation
 
 Wallets are created periodically based on governance. [`updateWalletParameters`](https://etherscan.io/address/0x5e4861a80b55f035d899f66772117f00fa0e8e7b#writeProxyContract#F32) changes the time between wallets and [`walletParameters`](https://etherscan.io/address/0x5e4861a80b55f035d899f66772117f00fa0e8e7b#readProxyContract#F18) reads it. The time between new wallets is held in `walletCreationPeriod` in number of seconds, so the current value of `1209600` represents 14 days.\

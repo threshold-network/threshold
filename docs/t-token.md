@@ -30,10 +30,10 @@ Since the beginning of 2026, T token holders have been able to [stake their T to
 
 The [Explorer page](https://app.threshold.network/explorer?tab=staking) in the app will continue to display rebates or fee waivers earned through staking T. Because rebates now apply to both minting and redemption fees, they will appear across both transaction types.&#x20;
 
+You can refer to the diagram below for an illustrative breakdown of how much you can save on mint and redemption fees by staking T.
+
 {% hint style="info" %}
 To start staking T Tokens, you can visit. [https://app.threshold.network/stake](https://app.threshold.network/stake)
 {% endhint %}
-
-For estimation purposes, you can refer to the diagram below for an illustrative breakdown of how much you can save on mint and redemption fees by staking T.
 
 <figure><img src=".gitbook/assets/T Staking Diagram by Threshold Network -.png" alt=""><figcaption></figcaption></figure>
