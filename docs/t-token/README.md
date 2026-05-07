@@ -1,5 +1,5 @@
 ---
-description: 'A comprehensive guide to understand Threshold''s utility token: T'
+description: 'A comprehensive guide to understand Threshold''s token: T'
 ---
 
 # T Token
