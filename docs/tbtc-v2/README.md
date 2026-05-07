@@ -26,8 +26,11 @@ tBTC fees are action-based (i.e., users incur a mint and redemption fee when usi
 
 ### Fee Rebates or Fee Waivers
 
-Minting and redemption fees are set at 20 basis points to support decentralized bridge operations. These fees can be partially or fully offset by [staking $T](https://app.threshold.network/stake). You can read the full announcement scope [\[here\]](https://www.threshold.network/blog/tbtc-redemption-fee-waivers-for-t-stakers).
+Minting and redemption fees are set at 20 basis points to support decentralized bridge operations. However, these fees can be partially or fully offset by [staking $T](https://app.threshold.network/stake).&#x20;
 
 **Staking $T is optional.** Eligible participants receive fee waivers in line with protocol parameters, and waivers are applied automatically when using the new Threshold Unified Bitcoin Router, accessible at [https://app.threshold.network](https://app.threshold.network).
 
-The $T token is available on most decentralized exchanges and major centralized exchanges. To learn more about the T token, or to see an illustrative breakdown of how much $T is required to offset minting and redemption fees, please visit the [T Token page](https://docs.threshold.network/t-token). You can also begin staking your T tokens today at [https://app.threshold.network/stake](https://app.threshold.network/stake).
+{% hint style="info" %}
+To learn more about T Token Staking and its benefits, **visit this** [**page**](../t-token/) **or read the** [**release article.**](https://www.threshold.network/blog/tbtc-redemption-fee-waivers-for-t-stakers)
+{% endhint %}
+
