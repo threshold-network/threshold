@@ -12,7 +12,7 @@ Choose either Docker installation OR Binary installation.
 
 See GitHub for the latest release: [https://github.com/threshold-network/keep-core/releases](https://github.com/threshold-network/keep-core/releases)
 
-Under Assets, copy the path to the compressed binary and use the command below to download the file. Make relevant adjustments to version as necessary:
+Under Assets, copy the path to the compressed binary and use the command below to download the file. Make relevant adjustments to the version as necessary:
 
 {% code overflow="wrap" %}
 ```bash
@@ -41,7 +41,7 @@ You can save some time and prevent misspelling a file name by typing the first f
 
 To launch the tBTC v2 client, several configuration flags and environmental values need to be set. For simplicity, a bash script can be used rather than typing or pasting all the flags into the console.&#x20;
 
-The following flags must be set at minimum:
+The following flags must be set at a minimum:
 
 ```bash
 --ethereum.url "wss://mainnet-ETH-enpoint-here"

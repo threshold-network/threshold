@@ -4,8 +4,6 @@ description: This page will show you how to launch a tBTC v2 node on the testnet
 
 # Testnet Node Setup
 
-
-
 {% hint style="danger" %}
 This is a TESTNET guide document.
 {% endhint %}
@@ -29,7 +27,7 @@ The preferred OS is Ubuntu.
 
 ## **Ethereum API**
 
-A Keep Node requires a connection to a WebSocket Ethereum API. You should obtain a WS API URL from a service provider (e.g. [Alchemy](https://www.alchemy.com/), [Infura](https://www.infura.io/), [Ankr](https://www.ankr.com/rpc-service/)) or run your own Ethereum node (e.g. [Geth](https://geth.ethereum.org/)).
+A Keep Node requires a connection to a WebSocket Ethereum API. You should obtain a WS API URL from a service provider (e.g., [Alchemy](https://www.alchemy.com/), [Infura](https://www.infura.io/), [Ankr](https://www.ankr.com/rpc-service/)) or run your own Ethereum node (e.g. [Geth](https://geth.ethereum.org/)).
 
 The client requires an Ethereum Key File of an Operator Account to connect to the Ethereum chain. This account is created in a subsequent step using Geth (GoEthereum).
 
@@ -56,7 +54,7 @@ Use a password manager to generate a strong password and store it safely. It wil
 
 {% hint style="warning" %}
 Avoid passwords that contain the following characters: ', ", \`, $\
-These characters may be interpreted as part of the configuration which can lead to undesirable outcomes that may be extremely time intensive to correct.
+These characters may be interpreted as part of the configuration, which can lead to undesirable outcomes that may be extremely time-intensive to correct.
 {% endhint %}
 
 Once the process completes, your public key will be displayed. Take note of your Operator Account public key.
@@ -85,23 +83,23 @@ The node exposes metrics and diagnostics services for monitoring. A network port
 | Status  | clientInfo.port | TCP      | 9601    |
 
 {% hint style="info" %}
-A Diagnostics Port has to be exposed publicly, for the rewards allocation.
+A Diagnostics Port has to be exposed publicly for the rewards allocation.
 {% endhint %}
 
 ### **Announced Addresses**
 
 An Announced Address is a layered addressing information (`multiaddress`/`multiaddr`) announced to the Threshold Network that is used by peers to connect with your node, e.g.: `/dns4/bootstrap-0.test.keep.network/tcp/3919` or `/ip4/104.154.61.116/tcp/3919`.
 
-If the machine you’re running your node is not exposing a public IP (e.g. it is behind NAT) you should set the `network.AnnouncedAddresses` (flag: `--network.announcedAddresses`) configuration property to an addresses (`ip4` or `dns4`) under which your node is reachable for the public.
+If the machine you’re running your node on is not exposing a public IP (e.g., it is behind NAT), you should set the `network.AnnouncedAddresses` (flag: `--network.announcedAddresses`) configuration property to an address (`ip4` or `dns4`) under which your node is reachable for the public.
 
-To read more about `multiaddress` see the [libp2p docummentation](https://docs.libp2p.io/reference/glossary/#multiaddr).
+To read more about  `multiaddress` see the [libp2p documentation](https://docs.libp2p.io/reference/glossary/#multiaddr).
 
 ## Create Folder Structure
 
 The client requires two persistent directories. These directories will store configuration files and data generated and used by the client. It is highly recommended to create frequent backups of these directories. Loss of these data may be catastrophic and may lead to slashing.
 
-{% hint style="info" %}
-It is crucial to ensure the data directory is persisted and backed up on a regular basis.
+{% hint style="warning" %}
+It is crucial to ensure that the data directory is persisted and backed up regularly.
 {% endhint %}
 
 #### Create folders for tBTC v2 client
@@ -134,7 +132,7 @@ cd ~/operator-key
 Contained within the `operator-key` directory is the account key file (operator key file), its name will be similar to the following: \
 `UTC--2018-11-01T06-23-57.810787758Z--fa3da235947aab49d439f3bcb46effd1a7237e32`
 
-copy (not move!) this account key file to the `config` directory created above
+**Copy (not move!)** this account key file to the `config` directory created above
 
 ```bash
 ls -la
@@ -230,9 +228,9 @@ The path shown in the example configuration will differ from yours. Make sure it
 
 ## Client Startup
 
-Unless the `--detach` flag was removed from the startup script, there will be no console output. In order to check your node, retrieve the Docker logs.
+Unless the `--detach` flag was removed from the startup script; there will be no console output. To check your node, retrieve the Docker logs.
 
-First, find your Docker instance identification, it'll be a random combination of words, e.g. `stinky_brownie`:
+First, find your Docker instance identification; it'll be a random combination of words, e.g. `stinky_brownie`:
 
 ```bash
 sudo docker ps
