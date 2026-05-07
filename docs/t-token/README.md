@@ -28,11 +28,15 @@ An additional **1.155B tokens** were minted during the network's inflationary bo
   * Circulating Supply - [https://api.threshold.network/supply/t/circulating](https://api.threshold.network/supply/t/circulating)
   * Treasury Supply - [https://api.threshold.network/supply/t/treasury](https://api.threshold.network/supply/t/treasury)
 
+***
+
 ### Where to access T Tokens
 
 **T TOKEN** trades across most major centralized exchanges (Coinbase, Binance, Kraken, KuCoin, Bybit) and leading decentralized exchanges (Uniswap, Curve, Balancer), with deployments across the Bitcoin, Ethereum, and Binance ecosystems. This gives both institutional and retail participants direct access to the token through fiat on-ramps or self-custodied wallets.
 
 For a complete, real-time view of every venue where T is traded, including current pricing, volume, and the full list of active spot markets, refer to [CoinMarketCap's Threshold market page](https://coinmarketcap.com/currencies/threshold/).
+
+***
 
 ### Using T Tokens
 
