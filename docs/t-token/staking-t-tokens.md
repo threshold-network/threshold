@@ -16,10 +16,6 @@ The [Explorer page](https://app.threshold.network/explorer?tab=staking) in the a
 **Staking T is optional;** it is not required when using, minting, or bridging tBTC.&#x20;
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/Threshold Network, Honest Majority.png" alt=""><figcaption></figcaption></figure>
-
-***
-
 Staking T (Threshold Tokens) returns a share of the tBTC mint and redemption fees to stakers as rebates. The breakdown below shows exactly how much you can save at each fee tier, giving you a clear basis to evaluate whether staking T offsets the cost of your expected tBTC activity.
 
 <figure><img src="../.gitbook/assets/T Token Staking chart  Threshold Network.png" alt=""><figcaption></figcaption></figure>
