@@ -23,9 +23,9 @@ This example illustrates a few properties mentioned earlier:
 
 ### Statistics
 
-If Carol has a 35% chance of being a particular Signer, what are chances that Carol has at least 51 of the 100 seats (and could control the wallet by herself)?
+If Carol has a 35% chance of being a particular Signer, what are the chances that Carol has at least 51 of the 100 seats (and could control the wallet by herself)?
 
-The number of Signers that Carol controls on a wallet is modeled by the [Binomial Distribution](https://en.wikipedia.org/wiki/Binomial_distribution). From wikipedia:
+The number of Signers that Carol controls on a wallet is modeled by the [Binomial Distribution](https://en.wikipedia.org/wiki/Binomial_distribution). From Wikipedia:
 
 > A Binomial distribution with parameters `n` and `p` is the [discrete probability distribution](https://en.wikipedia.org/wiki/Discrete_probability_distribution) of the number of successes in a sequence of `n` [independent](https://en.wikipedia.org/wiki/Statistical_independence) [experiments](https://en.wikipedia.org/wiki/Experiment_\(probability_theory\)), each asking a [yes–no question](https://en.wikipedia.org/wiki/Yes%E2%80%93no_question), and each with its own [Boolean](https://en.wikipedia.org/wiki/Boolean-valued_function)-valued [outcome](https://en.wikipedia.org/wiki/Outcome_\(probability\)): _success_ (with probability `p`) or _failure_ (with probability `1−p`).
 
@@ -39,7 +39,7 @@ It's the last figure: "Cumulative probability: P(X>51)" that's relevant. That sa
 
 The next important question is "The probability that Carol controls a Wallet is low, but it only needs to happen once for things to be bad. What is the probability that she controls _any_ wallet in the next 2 years?"
 
-A wallet is generated every 14 days, so over the next 2 years, the system would generate \~52 wallets. Each wallet has a `1 - 0.00074 = .99926` or 99.926% chance of _not_ being controlled by Carol. That means we can exponentiate:
+A wallet is generated every 14 days, so over the next 2 years, the system will generate \~52 wallets. Each wallet has a `1 - 0.00074 = .99926` or 99.926% chance of _not_ being controlled by Carol. That means we can exponentiate:
 
 $$
 0.99926^{52} = .9622
@@ -51,9 +51,9 @@ As of writing, the \*largest\* Staker controls [\~8.83% of the Stake](https://du
 
 ### Sybil Resistance
 
-The only thing that a Staker accomplishes by splitting up their Stake into multiple identities is making the system appear to be more diverse.
+The only thing a Staker accomplishes by splitting their Stake into multiple identities is making the system appear more diverse.
 
-For example, say that Alice split up her Stake equally into 5 accounts: Alice1, Alice2, Alice3, Alice4, and Alice5. Now, rather than Alice having a 25% chance to be a Signer, each account has a 5% chance which collectively add up to 25%.
+For example, say that Alice split up her Stake equally into 5 accounts: Alice1, Alice2, Alice3, Alice4, and Alice5. Now, rather than Alice having a 25% chance to be a Signer, each account has a 5% chance, which collectively adds up to 25%.
 
 To use the example from earlier: Alice has 250M T, Bob has 400M T, and Carol has 350M T staked. Alice has her T split into 50M for each identity. Alice1 would own 50M/1000M = 5%.\
 \

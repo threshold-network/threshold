@@ -8,7 +8,7 @@ Existing solutions that bridge Bitcoin to DeFi require users to send their Bitco
 
 In contrast, tBTC is a decentralized and trust-minimized bridge between Bitcoin and DeFi. It provides Bitcoin holders with secure, open access to the broader DeFi ecosystem, allowing you to unlock the value of your Bitcoin by borrowing and lending, minting stablecoins, providing liquidity, and more.
 
-{% hint style="success" %}
+{% hint style="info" %}
 The New Unified Bitcoin Router by Threshold enables seamless tBTC minting, deminting, cross-chain bridging, and staking - all in one platform. It supports gasless minting and detects T staking rebates in real time. **Mint tBTC now at** [**https://app.threshold.network/**](https://app.threshold.network/)
 {% endhint %}
 
@@ -33,4 +33,3 @@ Minting and redemption fees are set at 20 basis points to support decentralized 
 {% hint style="info" %}
 To learn more about T Token Staking and its benefits, **visit this** [**page**](../t-token/) **or read the** [**release article.**](https://www.threshold.network/blog/tbtc-redemption-fee-waivers-for-t-stakers)
 {% endhint %}
-

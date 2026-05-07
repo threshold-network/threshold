@@ -4,7 +4,7 @@ description: 'A comprehensive guide to understand Threshold''s utility token: T'
 
 # T Token
 
-The [T token](https://etherscan.io/address/0xCdF7028ceAB81fA0C6971208e83fa7872994beE5) is an ERC-20 token that powers tBTC and serves as the value accrual asset for the Threshold Network. As of late, the T token is fully diluted. [\[Check price here\]](https://coinmarketcap.com/currencies/threshold/)
+The [T token](https://etherscan.io/address/0xCdF7028ceAB81fA0C6971208e83fa7872994beE5) is an ERC-20 token that powers tBTC and serves as the value accrual asset for the Threshold Network. As of late, the T token is fully diluted.&#x20;
 
 ### T Token History and Supply
 
@@ -20,21 +20,20 @@ An additional **1.155B tokens** were minted during the network's inflationary bo
 
 ***
 
-### Supply Endpoints
+### Supply Endpoints&#x20;
 
 * Supply API endpoint - [https://api.threshold.network/supply/t](https://api.threshold.network/supply/t)
-* Specific Values:
-  * Total Supply - [https://api.threshold.network/supply/t/total](https://api.threshold.network/supply/t/total)
-  * Circulating Supply - [https://api.threshold.network/supply/t/circulating](https://api.threshold.network/supply/t/circulating)
-  * Treasury Supply - [https://api.threshold.network/supply/t/treasury](https://api.threshold.network/supply/t/treasury)
+* Total Supply - [https://api.threshold.network/supply/t/total](https://api.threshold.network/supply/t/total)
+* Circulating Supply - [https://api.threshold.network/supply/t/circulating](https://api.threshold.network/supply/t/circulating)
+* Treasury Supply - [https://api.threshold.network/supply/t/treasury](https://api.threshold.network/supply/t/treasury)
 
 ***
 
 ### Where to access T Tokens
 
-**T TOKEN** trades across most major centralized exchanges (Coinbase, Binance, Kraken, KuCoin, Bybit) and leading decentralized exchanges (Uniswap, Curve, Balancer), with deployments across the Bitcoin, Ethereum, and Binance ecosystems. This gives both institutional and retail participants direct access to the token through fiat on-ramps or self-custodied wallets.
+**T Token** trades across most major centralized exchanges (Coinbase, Binance, Kraken, KuCoin, Bybit) and leading decentralized exchanges (Uniswap, Curve, Balancer), with deployments across the Bitcoin, Ethereum, and Binance ecosystems. This gives both institutional and retail participants direct access to the token through fiat on-ramps or self-custodied wallets.
 
-For a complete, real-time view of every venue where T is traded, including current pricing, volume, and the full list of active spot markets, refer to [CoinMarketCap's Threshold market page](https://coinmarketcap.com/currencies/threshold/).
+For a complete, real-time view of every venue where T is traded, including current pricing, volume, and the full list of active spot markets, refer to [CoinMarketCap's T Markets page](https://coinmarketcap.com/currencies/threshold/).
 
 ***
 
@@ -46,7 +45,7 @@ T tokens give holders two ways to participate in Threshold Network.&#x20;
 2. **The second is staking:** by staking T, holders earn fee waivers and rebates on every tBTC mint and redemption, capturing a share of the real economic activity flowing through the network.
 
 {% hint style="info" %}
-For a complete walkthrough of how governance works, including the proposal lifecycle, voting thresholds, and timelock periods, see the [Threshold Governance Process](https://docs.threshold.network/governance/governance-process).&#x20;
+For a complete walkthrough of how governance works, see the [Threshold Governance Process](https://docs.threshold.network/governance/governance-process).&#x20;
 
 For the staking mechanics and the fee savings available to stakers, see [Staking T Tokens](https://docs.threshold.network/t-token/staking-t-tokens).
 {% endhint %}
