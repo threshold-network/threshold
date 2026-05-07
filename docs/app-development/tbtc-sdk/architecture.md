@@ -2,7 +2,7 @@
 
 The following diagram presents the architecture of the tBTC SDK and its place in the ecosystem:
 
-<figure><img src="../../.gitbook/assets/tbtc-sdk-diagram.png" alt=""><figcaption><p>tBTC SDK Architecture</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/tBTC SDK Architecture Diagram.png" alt=""><figcaption></figcaption></figure>
 
 As you can see, the SDK consists of several major parts:
 
@@ -16,7 +16,7 @@ The `TBTC` component is the main entry point to the SDK. It provides different w
 
 ### Feature services
 
-The role of the SDK feature services is to provide seamless access to the core features of the tBTC bridge. The most important feature services of the SDK are:
+The SDK feature services provide seamless access to the core features of the tBTC bridge. The most important features of the SDK are:
 
 * **Deposits:** deposit and mint flow for BTC depositors
 * **Redemptions:** unmint and redeem flow for TBTC redeemers&#x20;
@@ -27,7 +27,7 @@ The role of the SDK feature services is to provide seamless access to the core f
 Shared libraries are reusable modules that provide cross-cutting concerns leveraged by multiple feature services and the `TBTC` component. The main shared libraries of the SDK are:
 
 * **Bitcoin**: interfaces and utilities necessary to interact with the Bitcoin chain
-* **Contracts**: chain-agnostic interfaces allowing to interact with tBTC smart contracts
+* **Contracts**: chain-agnostic interfaces allowing interaction with tBTC smart contracts
 * **Electrum**: Electrum-based implementation of the Bitcoin client
-* **Ethereum**: implementations of tBTC smart contract interfaces for Ethereum chain
+* **Ethereum**: implementations of tBTC smart contract interfaces for the Ethereum chain
 * **Utils**: general utility functions
