@@ -79,7 +79,7 @@ Spending conditions are written directly in Bitcoin Script and validated by ever
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                BITCOIN SCRIPT ENFORCEMENT MODEL                  │
+│                BITCOIN SCRIPT ENFORCEMENT MODEL                 │
 └─────────────────────────────────────────────────────────────────┘
 
    VBA UTXO (with embedded Bitcoin Script)
@@ -183,7 +183,7 @@ Every VBA includes layered recovery paths that operate without requiring counter
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                  RECOVERY ARCHITECTURE                           │
+│                  RECOVERY ARCHITECTURE                          │
 └─────────────────────────────────────────────────────────────────┘
 
    FAILURE SCENARIO 1: Signer network disrupted
