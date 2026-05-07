@@ -13,13 +13,19 @@ Since the beginning of 2026, T token holders have been able to [stake their T to
 The [Explorer page](https://app.threshold.network/explorer?tab=staking) in the app will continue to display rebates or fee waivers earned through staking T. Because rebates now apply to both minting and redemption fees, they will appear across both transaction types.&#x20;
 
 {% hint style="warning" %}
-**Staking T is optional,** not required to use tBTC. To start staking, visit [app.threshold.network/stake](https://app.threshold.network/stake).
+**Staking T is optional;** it is not required when using, minting, or bridging tBTC.&#x20;
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/Threshold Network, Honest Majority.png" alt=""><figcaption></figcaption></figure>
+
+***
 
 Staking T (Threshold Tokens) returns a share of the tBTC mint and redemption fees to stakers as rebates. The breakdown below shows exactly how much you can save at each fee tier, giving you a clear basis to evaluate whether staking T offsets the cost of your expected tBTC activity.
 
 <figure><img src="../.gitbook/assets/T Token Staking chart  Threshold Network.png" alt=""><figcaption></figcaption></figure>
 
-The $T token is available on most decentralized exchanges and major centralized exchanges. You can also begin staking your T tokens today at [https://app.threshold.network/stake](https://app.threshold.network/stake).
+***
+
+$T is available on most decentralized exchanges and major centralized exchanges, giving anyone a path to participate. Staking T is the operational backbone of Threshold Network: stakers provide the security that backs tBTC and earn a share of every fee the protocol generates, aligning incentives between the network and the people who secure it.
+
+> **Start staking T and get tBTC mint/ redemption fee waivers today** <a href="https://app.threshold.network/stake" class="button primary">Stake T Tokens</a>
