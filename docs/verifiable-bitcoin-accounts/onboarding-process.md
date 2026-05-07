@@ -56,5 +56,6 @@ A dedicated **account manager** is assigned to your account for ongoing operatio
 
 Every stage of VBA onboarding produces a verifiable artifact: a qualified mandate, a reviewed architecture, a signed agreement, a tested workflow. By execution, the framework governing your capital is fully understood, fully documented, and fully under your control.
 
-> Contact us to learn more about Verifiable Bitcoin Accounts  <a href="https://threshold.network/contact" class="button primary">Contact Us</a>
-
+{% hint style="success" %}
+Contact us to learn more about Verifiable Bitcoin Accounts  <a href="https://threshold.network/contact" class="button secondary">Contact Us</a>
+{% endhint %}
