@@ -9,33 +9,26 @@ Verifiable Bitcoin Accounts (VBA) combine three layers: the institution's existi
 VBA is custody-agnostic. The institution's existing custody arrangement holds the controlling signing key throughout the account's lifecycle.
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                    CUSTODY COMPATIBILITY                         │
-└─────────────────────────────────────────────────────────────────┘
+      ┌─────────────────────────────────────────────────────────────────────────┐
+      │                            CUSTODY COMPATIBILITY                        │
+      └─────────────────────────────────────────────────────────────────────────┘
 
-  ┌─────────────────────┐    ┌─────────────────────┐
-  │ QUALIFIED CUSTODIAN │    │   MPC NETWORK       │
-  │                     │    │                     │
-  │ • Anchorage         │    │ • Fireblocks (MPC)  │
-  │ • Fireblocks Trust  │    │ • Copper            │
-  │ • BitGo             │    │ • Custom MPC setups │
-  │ • BNY Mellon        │    │                     │
-  └──────────┬──────────┘    └──────────┬──────────┘
-             │                          │
-             │      ┌─────────────────────┐
-             │      │   SELF-CUSTODY      │
-             │      │                     │
-             │      │ • HSM-based signing │
-             │      │ • Multi-sig wallets │
-             │      │ • Hardware wallets  │
-             │      └──────────┬──────────┘
-             │                 │
-             └─────────────────┴────────┐
-                                        ▼
-                          ┌──────────────────────────┐
-                          │  PSBT SIGNING INTERFACE  │
-                          │  (BIP-174 Compatible)    │
-                          └──────────────────────────┘
+      ┌─────────────────────┐    ┌─────────────────────┐  ┌─────────────────────┐
+      │ QUALIFIED CUSTODIAN │    │    MPC NETWORK      │  │    SELF-CUSTODY     │
+      │                     │    │                     │  │                     │
+      │ • Anchorage         │    │ • Fireblocks (MPC)  │  │ • HSM-based signing │
+      │ • Fireblocks Trust  │    │ • Copper            │  │ • Multi-sig wallets │
+      │ • BitGo             │    │ • Custom MPC setups │  │ • Hardware wallets  │
+      │ • BNY Mellon        │    │                     │  │                     │
+      └──────────┬──────────┘    └──────────┬──────────┘  └──────────┬──────────┘
+                 │                          │                        │
+                 │                          │                        │
+                 └──────────────────────────┐────────────────────────┘ 
+                                            ▼
+                              ┌──────────────────────────┐
+                              │  PSBT SIGNING INTERFACE  │
+                              │  (BIP-174 Compatible)    │
+                              └──────────────────────────┘
 ```
 
 **Key principle:** No asset migration is required. The custody relationship that the institution already maintains continues to govern the asset throughout the VBA's lifecycle.
@@ -51,19 +44,19 @@ Every VBA enforces a multi-party quorum. No single entity holds unilateral spend
 │                  MULTI-PARTY CONTROL FLOW                       │
 └─────────────────────────────────────────────────────────────────┘
 
-  ┌─────────────┐   ┌──────────────┐   ┌──────────────┐
-  │ INSTITUTION │   │  THRESHOLD   │   │   OPTIONAL   │
-  │  (or its    │   │   SIGNER     │   │  CO-SIGNERS  │
-  │  custodian) │   │   NETWORK    │   │              │
-  │             │   │              │   │ • Compliance │
-  │  Signing    │   │  Signing     │   │ • Fund Admin │
-  │  Key A      │   │  Key B       │   │ • Recovery   │
-  │             │   │  (threshold  │   │   Agent      │
-  │             │   │   nodes)     │   │              │
-  └──────┬──────┘   └──────┬───────┘   └────── ┬──────┘
-         │                 │                   │
-         │                 │                   │
-         └─────────────────┼───────────────────┘
+  ┌─────────────┐   ┌──────────────┐  
+  │ INSTITUTION │   │  THRESHOLD   │   
+  │  (or its    │   │   SIGNER     │  
+  │  custodian) │   │   NETWORK    │  
+  │             │   │              │   
+  │  Signing    │   │  Signing     │ 
+  │  Key A      │   │  Key B       │  
+  │             │   │  (threshold  │   
+  │             │   │   nodes)     │  
+  └──────┬──────┘   └──────┬───────┘   
+         │                 │                
+         │                 │                   
+         └─────────────────
                            │
                            ▼
               ┌──────────────────────────┐
