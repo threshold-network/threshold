@@ -40,38 +40,33 @@ VBA is custody-agnostic. The institution's existing custody arrangement holds th
 Every VBA enforces a multi-party quorum. No single entity holds unilateral spending authority.
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                  MULTI-PARTY CONTROL FLOW                       │
-└─────────────────────────────────────────────────────────────────┘
-
-  ┌─────────────┐   ┌──────────────┐  
-  │ INSTITUTION │   │  THRESHOLD   │   
-  │  (or its    │   │   SIGNER     │  
-  │  custodian) │   │   NETWORK    │  
-  │             │   │              │   
-  │  Signing    │   │  Signing     │ 
-  │  Key A      │   │  Key B       │  
-  │             │   │  (threshold  │   
-  │             │   │   nodes)     │  
-  └──────┬──────┘   └──────┬───────┘   
-         │                 │                
-         │                 │                   
-         └─────────────────
-                           │
-                           ▼
-              ┌──────────────────────────┐
-              │   QUORUM EVALUATION      │
-              │                          │
-              │   e.g., 2-of-3 or 3-of-5 │
-              │   threshold required     │
-              └──────────┬───────────────┘
-                         │
-                         ▼
-              ┌──────────────────────────┐
-              │    PSBT FULLY SIGNED     │
-              │                          │
-              │   Broadcast to Bitcoin   │
-              └──────────────────────────┘
+      ┌─────────────────────────────────────────────────────────────────────────┐
+      │                          MULTI-PARTY CONTROL FLOW                       │
+      └─────────────────────────────────────────────────────────────────────────┘
+      ┌───────────────────────────────┐         ┌───────────────────────────────┐  
+      │          INSTITUTION          │         │          THRESHOLD            │  
+      │      (or its custodian)       │         │     DECENTRALIZED NETWORK     │   
+      │                               │         │                               │ 
+      │         Signing Key A         │         │         Signing Key B         │
+      │                               │         │       (Threshold Nodes)       │   
+      └──────────────┬────────────────┘         └──────────────┬────────────────┘                      │         │                               │    │                 │                
+                     │                                         │                       
+                     └─────────────────────┐───────────────────┘ 
+                                           │   
+                                           ▼
+                             ┌──────────────────────────┐
+                             │   QUORUM EVALUATION      │
+                             │                          │
+                             │   e.g., 2-of-3 or 3-of-5 │
+                             │   threshold required     │
+                             └─────────────┬────────────┘
+                                           │
+                                           ▼        
+                             ┌──────────────────────────┐
+                             │     PSBT FULLY SIGNED    │
+                             │                          │
+                             │   Broadcast to Bitcoin   │
+                             └──────────────────────────┘
 ```
 
 **Enforcement:** The quorum threshold is encoded in the Bitcoin Script governing the UTXO. Any transaction below the threshold is rejected by the Bitcoin network at the consensus layer.
@@ -223,14 +218,14 @@ Every VBA includes layered recovery paths that operate without requiring counter
 
 ***
 
-### Layer 6: Account Lifecycle
+### Complete Lifecycle Summary
 
 A complete view of how a VBA progresses from setup through operation to potential recovery.
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                    VBA LIFECYCLE                                 │
-└─────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────┐
+│                    VBA LIFECYCLE                     │
+└──────────────────────────────────────────────────────┘
 
   PHASE 1: SETUP
   ┌────────────────────────────────────────────────────┐
@@ -268,15 +263,15 @@ A complete view of how a VBA progresses from setup through operation to potentia
   ┌────────────────────────────────────────────────────┐
   │ Path A: Normal Exit                                │
   │   Multi-party quorum unwinds positions             │
-  │   Capital returns to institution's custody         │
+  │   Capital returns to the institution's custod      │
   │                                                    │
   │ Path B: Liquidation-Triggered Migration            │
   │   Pre-defined migration path executes              │
-  │   Capital settles to whitelisted destination       │
+  │   Capital settles on the whitelisted destination   │
   │                                                    │
   │ Path C: Recovery (Counterparty Failure)            │
   │   Recovery path activates per Script conditions    │
-  │   Institution recovers capital independently       │
+  │   The institution recovers capital independently   │
   └────────────────────────────────────────────────────┘
 ```
 
