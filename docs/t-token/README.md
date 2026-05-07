@@ -46,6 +46,9 @@ T tokens give holders two ways to participate in Threshold Network.&#x20;
 
 {% hint style="info" %}
 For a complete walkthrough of how governance works, see the [Threshold Governance Process](https://docs.threshold.network/governance/governance-process).&#x20;
+{% endhint %}
 
+{% hint style="info" %}
 For the staking mechanics and the fee savings available to stakers, see [Staking T Tokens](https://docs.threshold.network/t-token/staking-t-tokens).
 {% endhint %}
+
