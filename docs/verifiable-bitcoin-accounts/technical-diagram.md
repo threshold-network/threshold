@@ -124,11 +124,11 @@ Spending conditions are written directly in Bitcoin Script and validated by ever
 
 ### Layer 4: Liquidation & Migration Path
 
-When a position is liquidated in an approved venue, Threshold signers execute the predefined migration path automatically.
+When a position is liquidated in an approved venue, Threshold signers automatically execute the predefined migration path.
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│              LIQUIDATION & MIGRATION FLOW                        │
+│              LIQUIDATION & MIGRATION FLOW                       │
 └─────────────────────────────────────────────────────────────────┘
 
   ┌──────────────────────┐

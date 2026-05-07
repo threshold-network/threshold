@@ -1,3 +1,7 @@
+---
+description: 'A comprehensive guide to understand Threshold''s utility token: T'
+---
+
 # T Token
 
 The [T token](https://etherscan.io/address/0xCdF7028ceAB81fA0C6971208e83fa7872994beE5) is an ERC-20 token that powers tBTC and serves as the value accrual asset for the Threshold Network. As of late, the T token is fully diluted. [\[Check price here\]](https://coinmarketcap.com/currencies/threshold/)
@@ -22,18 +26,5 @@ An additional **1.155B tokens** were minted during the network's inflationary bo
   * Circulating Supply - [https://api.threshold.network/supply/t/circulating](https://api.threshold.network/supply/t/circulating)
   * Treasury Supply - [https://api.threshold.network/supply/t/treasury](https://api.threshold.network/supply/t/treasury)
 
-### T Staking for tBTC Fee Rebates/ Waivers
+### Where to access T Tokens
 
-<figure><img src="../.gitbook/assets/Threshold Network, Honest Majority.png" alt=""><figcaption></figcaption></figure>
-
-Since the beginning of 2026, T token holders have been able to [stake their T to receive fee rebates and waivers ](https://www.threshold.network/blog/tbtc-redemption-fee-waivers-for-t-stakers)when minting tBTC and redeeming BTC. With the reinstatement of minting fees announced [\[here\]](https://www.threshold.network/blog/tbtc-mint-fee-reinstatement), staking T has become even more valuable for reducing costs when using tBTC on the Threshold Bridge.
-
-The [Explorer page](https://app.threshold.network/explorer?tab=staking) in the app will continue to display rebates or fee waivers earned through staking T. Because rebates now apply to both minting and redemption fees, they will appear across both transaction types.&#x20;
-
-You can refer to the diagram below for an illustrative breakdown of how much you can save on mint and redemption fees by staking T.
-
-{% hint style="info" %}
-To start staking T Tokens, you can visit. [https://app.threshold.network/stake](https://app.threshold.network/stake)
-{% endhint %}
-
-<figure><img src="../.gitbook/assets/T Staking Diagram by Threshold Network -.png" alt=""><figcaption></figcaption></figure>
