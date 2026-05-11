@@ -8,17 +8,18 @@ Verifiable Bitcoin Accounts (VBA) combine three layers: the institution's existi
 
 Any key management system that can sign Bitcoin transactions and produce BIP-174 (PSBT) compatible partial signatures can participate as depositor (D), custodian (C), or signer (S).
 
-<pre><code><strong>       +--------------------------------------------------------------------------+
-</strong><strong>       |                           CUSTODY COMPATIBILITY                          |
-</strong>       +--------------------------------------------------------------------------+
+```
+       +--------------------------------------------------------------------------+
+       |                           CUSTODY COMPATIBILITY                          |
+       +--------------------------------------------------------------------------+
 
        +----------------------+  +----------------------+  +----------------------+
        | QUALIFIED CUSTODIAN  |  |    THRESHOLD MPC     |  |     SELF-CUSTODY     |
        | (holds key C or D)   |  |    (holds key S)     |  |     (holds key D)    |
        |                      |  |                      |  |                      |
        | - Any regulated      |  | - tECDSA threshold   |  | - HSM-based signing  |
-<strong>       |   custodian that     |  |   signing (e.g.,     |  | - Hardware wallets   |
-</strong>       |   supports PSBT      |  |   keep-core nodes)   |  | - MPC wallets        |
+       |   custodian that     |  |   signing (e.g.,     |  | - Hardware wallets   |
+       |   supports PSBT      |  |   keep-core nodes)   |  | - MPC wallets        |
        | - MPC or HSM-based   |  | - Produces single    |  |                      |
        |   key management     |  |   aggregated pubkey  |  |                      |
        |                      |  |   for Bitcoin Script |  |                      |
@@ -39,7 +40,7 @@ Any key management system that can sign Bitcoin transactions and produce BIP-174
                         |     FINALIZED BITCOIN TRANSACTION    |
                         |  Broadcast + SPV-proven to Ethereum  |
                         +--------------------------------------+
-</code></pre>
+```
 
 #### Template-to-role mapping
 
