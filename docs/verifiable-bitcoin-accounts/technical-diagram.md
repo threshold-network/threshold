@@ -244,7 +244,8 @@ When a position is liquidated in an approved venue, Threshold signers automatica
 
 Every VBA includes layered recovery paths that operate without requiring counterparty cooperation.
 
-<pre><code>+-----------------------------------------------------------------------+
+```
++-----------------------------------------------------------------------+
 |                         RECOVERY ARCHITECTURE                         |
 +-----------------------------------------------------------------------+
 
@@ -253,8 +254,8 @@ FAILURE SCENARIO 1: Signer network disrupted
 |
 +-- Recovery Path A: Joint depositor + custodian recovery (EARLY_EXIT)
 |   |
-<strong>|   +-- Threshold signers NOT required
-</strong>|   +-- Depositor key (D) + custodian key (C) sign
+|   +-- Threshold signers NOT required
+|   +-- Depositor key (D) + custodian key (C) sign
 |   +-- 2-of-2 OP_CHECKMULTISIG on Bitcoin Script
 |   +-- REQUIRES a timelock: locktime = maturityHeight - beta
 |       (activates BEFORE full maturity, but still time-gated)   
@@ -271,7 +272,7 @@ FAILURE SCENARIO 2: Both signer network AND custodian unavailable
 |    +-- Locktime = maturityHeight + delta2
 |        (longest timelock, set at account creation) 
 +-- Activates automatically when the timelock expires
-</code></pre>
+```
 
 #### Enforcement Mechanism:
 
