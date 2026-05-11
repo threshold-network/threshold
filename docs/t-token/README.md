@@ -31,7 +31,7 @@ An additional **1.155B tokens** were minted during the network's inflationary bo
 
 ### Where to access T Tokens
 
-**T Token** trades across most major centralized exchanges (Coinbase, Binance, Kraken, KuCoin, Bybit) and leading decentralized exchanges (Uniswap, Curve, Balancer), with deployments across the Bitcoin, Ethereum, and Binance ecosystems. This gives both institutional and retail participants direct access to the token through fiat on-ramps or self-custodied wallets.
+**T Token** trades across most major centralized exchanges (Coinbase, Binance, Kraken, KuCoin, Bybit) and leading decentralized exchanges (Uniswap, Curve, Balancer). This gives both institutional and retail participants direct access to the token through fiat on-ramps or self-custodied wallets.
 
 For a complete, real-time view of every venue where T is traded, including current pricing, volume, and the full list of active spot markets, refer to [CoinMarketCap's T Markets page](https://coinmarketcap.com/currencies/threshold/).
 
