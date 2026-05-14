@@ -7,3 +7,8 @@ tBTC enables Bitcoin liquidity to move seamlessly across chains without compromi
 This structure upholds Bitcoin’s core principles of being trust-minimized, permissionless, and censorship-resistant while maintaining a direct and verifiable path back to native Bitcoin. No complex staking mechanics needed.
 
 Threshold Network's [T token](t-token/) is the value accrual and governance asset for the network.
+
+{% hint style="info" %}
+Threshold Network is managed by **T Network Labs (TLabs)** since February 2025, following the DAO Proposal [TIP-098](https://forum.threshold.network/t/tip-098-the-future-of-threshold/1012). _MacLane Wilkison and Callan Sarre_ lead operations, development, and maintenance of the protocol and tBTC.
+{% endhint %}
+
