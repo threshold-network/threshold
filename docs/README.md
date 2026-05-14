@@ -9,6 +9,6 @@ This structure upholds Bitcoin’s core principles of being trust-minimized, per
 Threshold Network's [T token](t-token/) is the value accrual and governance asset for the network.
 
 {% hint style="info" %}
-Threshold Network has been managed by **Threshold Labs (TLabs) since February 2025,** following the approval of DAO Proposal [TIP-098](https://forum.threshold.network/t/tip-098-the-future-of-threshold/1012) and [TIP-100](https://forum.threshold.network/t/tip-100-the-future-of-threshold-continued/1033). Threshold Labs, led by _MacLane Wilkison and Callan Sarre,_ handles operations, development, and maintenance of the protocol and tBTC.
+Threshold Network has been managed by **Threshold Labs (TLabs) since February 2025,** following the approval of DAO proposals [TIP-098](https://forum.threshold.network/t/tip-098-the-future-of-threshold/1012) and [TIP-100](https://forum.threshold.network/t/tip-100-the-future-of-threshold-continued/1033). Threshold Labs, led by _MacLane Wilkison and Callan Sarre,_ handles operations, development, and growth of the protocol and tBTC.
 {% endhint %}
 
