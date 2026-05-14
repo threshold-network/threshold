@@ -42,11 +42,12 @@ For a complete, real-time view of every venue where T is traded, including curre
 T tokens give holders two ways to participate in Threshold Network.&#x20;
 
 1. **The first is governance:** T holders can vote on proposals that determine how the protocol evolves, from product priorities to fee adjustments to treasury allocation.&#x20;
-2. **The second is staking:** by staking T, holders earn fee waivers and rebates on every tBTC mint and redemption, capturing a share of the real economic activity flowing through the network.
 
 {% hint style="info" %}
 For a complete walkthrough of how governance works, see the [Threshold Governance Process](https://docs.threshold.network/governance/governance-process).&#x20;
 {% endhint %}
+
+2. **The second is staking:** by staking T, holders earn fee waivers and rebates on every tBTC mint and redemption, capturing a share of the real economic activity flowing through the network.
 
 {% hint style="info" %}
 For the staking mechanics and the fee savings available to stakers, see [Staking T Tokens](https://docs.threshold.network/t-token/staking-t-tokens).
