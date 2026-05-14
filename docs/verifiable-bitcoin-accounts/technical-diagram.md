@@ -53,53 +53,53 @@ Any key management system that can sign Bitcoin transactions and produce BIP-174
 ## Layer 2: Multi-Party Control Model
 
 ```
- +----------------------------------------------------------------------------------------+
- |                                 MULTI-PARTY CONTROL FLOW                               |
- +----------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------+
+|                              MULTI-PARTY CONTROL FLOW                            |
++----------------------------------------------------------------------------------+
 
- +---------------------------+    +------------------------+    +-------------------------+
- |        INSTITUTION        |    |    SIGNER NETWORK      |    |        CUSTODIAN        | 
- |       Signing Key D       |    |     Signing Key S      |    |      Signing Key C      |
- |        (depositor)        |    | (single aggregated key |    |       (qc_v1 only)      |
- |                           |    | may be tECDSA-managed  |    |                         |
- |                           |    |       off-chain)       |    |                         |
- +---------------------------+    +------------------------+    +-------------------------+
-              |                               |                             |
-              |                               |                             |
-              +-------------------------------+-----------------------------+
-                                              |
-                                              v
-                 +-------------------------------------------------------+
-                 |                    PATH SELECTION                     |
-                 |                                                       |
-                 |     COOPERATIVE:  D + C + S (3-of-3 CHECKMULTISIG)    |
-                 |     MIGRATION:    S + C     (2-of-2 CHECKMULTISIG)    |
-                 |     EARLY_EXIT:   D + C     (2-of-2 CHECKMULTISIG)    |
-                 |     LAST_RESORT:  D only    (1-of-1 CHECKSIG)         |
-                 +-------------------------------------------------------+
-                                              |
-                                              v
-                 +-------------------------------------------------------+
-                 |               SBT CONSTRUCTION (BIP-174)              |  
-                 |                                                       |
-                 |  Each signer adds partial sig to PSBT independently   |
-                 +-------------------------------------------------------+
-                                              |
-                                              v
-                 +-------------------------------------------------------+
-                 |                   PSBT FULLY SIGNED                   |  
-                 |                                                       |
-                 |                Broadcast to Bitcoin network           |
-                 +-------------------------------------------------------+
-                                              |
-                                              v
-                 +-------------------------------------------------------+
-                 |                   SPV PROOF SUBMITTED                 |  
-                 |                                                       |
-                 |             CovenantBitcoinTxProofVerifier            |
-                 |               validates proof on Ethereum             |
-                 |         CovenantAuthority updates reserve state       |
-                 +-------------------------------------------------------+
+ +-----------------------+    +------------------------+    +----------------------+
+ |      INSTITUTION      |    |     SIGNER NETWORK     |    |      CUSTODIAN       | 
+ |     Signing Key D     |    |      Signing Key S     |    |     Signing Key C    |
+ |      (depositor)      |    | (single aggregated key |    |     (qc_v1 only)     |
+ |                       |    | may be tECDSA-managed  |    |                      |
+ |                       |    |       off-chain)       |    |                      |
+ +-----------------------+    +------------------------+    +----------------------+
+            |                             |                             |
+            |                             |                             |
+            +-----------------------------+-----------------------------+
+                                          |
+                                          v         
+              +-------------------------------------------------------+
+              |                    PATH SELECTION                     |
+              |                                                       |
+              |     COOPERATIVE:  D + C + S (3-of-3 CHECKMULTISIG)    |
+              |     MIGRATION:    S + C     (2-of-2 CHECKMULTISIG)    |
+              |     EARLY_EXIT:   D + C     (2-of-2 CHECKMULTISIG)    |
+              |     LAST_RESORT:  D only    (1-of-1 CHECKSIG)         |
+              +-------------------------------------------------------+
+                                          |
+                                          v
+              +-------------------------------------------------------+
+              |               SBT CONSTRUCTION (BIP-174)              |  
+              |                                                       |
+              |  Each signer adds partial sig to PSBT independently   |
+              +-------------------------------------------------------+
+                                          |
+                                          v
+              +-------------------------------------------------------+
+              |                   PSBT FULLY SIGNED                   |  
+              |                                                       |
+              |                Broadcast to Bitcoin network           |
+              +-------------------------------------------------------+
+                                          |
+                                          v                    
+              +-------------------------------------------------------+
+              |                   SPV PROOF SUBMITTED                 |  
+              |                                                       |
+              |             CovenantBitcoinTxProofVerifier            |
+              |               validates proof on Ethereum             |
+              |         CovenantAuthority updates reserve state       |
+              +-------------------------------------------------------+
                 
 ```
 
@@ -150,9 +150,9 @@ _Validated by: Every Bitcoin full node (script validity only)_
 #### self\_v1 Template (Self-custody, no custodian)
 
 ```
-+-------------------------------------------------------------------------+
-|              BITCOIN SCRIPT ENFORCEMENT MODEL (self_v1)                 |
-+-------------------------------------------------------------------------+
++-----------------------------------------------------------------+
+|           BITCOIN SCRIPT ENFORCEMENT MODEL (self_v1)            |
++-----------------------------------------------------------------+
 
 Keys: D = depositor, S = signer (no custodian in this template)
 
@@ -178,62 +178,59 @@ Keys: D = depositor, S = signer (no custodian in this template)
 When a position is liquidated in an approved venue, Threshold signers automatically execute the predefined migration path.
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│              LIQUIDATION & MIGRATION FLOW                       │
-└─────────────────────────────────────────────────────────────────┘
+  ┌──────────────────────────────────────────────────────────┐
+  │              LIQUIDATION & MIGRATION FLOW                │
+  └──────────────────────────────────────────────────────────┘
 
   ┌──────────────────────┐
-  │  ONCHAIN VENUE       │   Liquidation event triggered
-  │  (Aave, Morpho,      │   (e.g., LTV breach, oracle price)
-  │   Curve, Yield Basis)│
+  │    ONCHAIN VENUE     │   Liquidation event triggered
+  │   (Aave, Morpho,     │   (e.g., LTV breach, oracle price)
+  │  Curve, Yield Basis) │
   └──────────┬───────────┘
              │
              ▼
   ┌──────────────────────┐
-  │  THRESHOLD SIGNERS   │   Independent verification
+  │   THRESHOLD SIGNERS  │   Independent verification
   │                      │   of onchain state
-  │  • Direct read of    │
-  │    contract state    │
-  │  • No external oracle│
-  │  • No off-chain      │
-  │    coordination      │
+  │ • Direct read of     │
+  │   contract state     │
+  │ • No external oracle │
+  │ • No off-chain       │
+  │   coordination       │
   └──────────┬───────────┘
              │
              ▼
   ┌──────────────────────┐
-  │  QUORUM EVALUATION   │   Threshold signers reach
+  │   QUORUM EVALUATION  │   Threshold signers reach
   │                      │   quorum agreement
-  │  Each signer verifies│
+  │ Each signer verifies │
   │  conditions are met  │
   └──────────┬───────────┘
              │
              ▼
   ┌──────────────────────┐
-  │  PRE-CONSTRUCTED     │   Migration PSBT signed
-  │  MIGRATION PSBT      │   by quorum
+  │    PRE-CONSTRUCTED   │   Migration PSBT signed
+  │     MIGRATION PSBT   │   by quorum
   │                      │
-  │  Destination:        │
-  │  Pre-defined at      │
-  │  account setup       │
+  │     Destination:     │
+  │    Pre-defined at    │
+  │    account setup     │
   └──────────┬───────────┘
              │
              ▼
   ┌──────────────────────┐
-  │  BROADCAST TO        │
-  │  BITCOIN NETWORK     │
+  │     BROADCAST TO     │
+  │   BITCOIN NETWORK    │
   └──────────┬───────────┘
              │
-        ┌────┴────┐
-        ▼         ▼
-  ┌──────────┐  ┌──────────────────┐
-  │ THRESHOLD│  │ PRE-APPROVED     │
-  │ BRIDGE   │  │ COUNTERPARTY     │
-  │          │  │ ADDRESS          │
-  │ (Default)│  │                  │
-  │          │  │ (Where venue's   │
-  │          │  │  settlement      │
-  │          │  │  requires it)    │
-  └──────────┘  └──────────────────┘
+        ┌────┴────────────────────────────┐
+        ▼                                 ▼           
+  ┌──────────────────────┐  ┌───────────────────────────┐
+  │   THRESHOLD BRIDGE   │  │       PRE-APPROVED        │
+  │      (Default)       │  │    COUNTERPARTY ADDRESS   │
+  │                      │  │  (Where venue settlement  │
+  │                      │  │         requires it)      │
+  └──────────────────────┘  └───────────────────────────┘
 ```
 
 **Critical property:** The migration destination is whitelisted at account setup. Signers do not exercise discretion about where capital goes. They verify a predefined condition and execute a predefined action.
@@ -262,7 +259,7 @@ FAILURE SCENARIO 1: Signer network disrupted
 +-- Reserve state must be in EXITING on Ethereum (CovenantAuthority)
 
 
-FAILURE SCENARIO 2: Both signer network AND custodian unavailable
+FAILURE SCENARIO 2: Both signer network AND custodian are unavailable
 |
 +-- Recovery Path B: Depositor solo recovery (LAST_RESORT)
 |    |
@@ -285,9 +282,9 @@ Recovery paths encoded in Bitcoin Script (P2WSH).  However, the reserve state ma
 A complete view of how a VBA progresses from setup through operation to potential recovery.
 
 ```
-┌──────────────────────────────────────────────────────┐
-│                    VBA LIFECYCLE                     │
-└──────────────────────────────────────────────────────┘
+  ┌────────────────────────────────────────────────────┐
+  │                   VBA LIFECYCLE                    │
+  └────────────────────────────────────────────────────┘
 
   PHASE 1: SETUP
   ┌────────────────────────────────────────────────────┐
