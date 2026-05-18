@@ -2,8 +2,6 @@
 description: >-
   VBA is built based on what institutions actually need for Institutional
   Bitcoin deployment.
-hidden: true
-noIndex: true
 ---
 
 # Verifiable Bitcoin Accounts

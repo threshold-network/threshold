@@ -1,5 +1,7 @@
 ---
 description: A Simple Step-by step guide to kickstart VBA onboarding
+hidden: true
+noIndex: true
 ---
 
 # Onboarding Process

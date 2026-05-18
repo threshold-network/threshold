@@ -1,2 +1,7 @@
-# Technical Diagram
+---
+hidden: true
+noIndex: true
+---
+
+# Whitepaper
 
